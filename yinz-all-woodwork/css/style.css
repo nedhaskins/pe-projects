@@ -1,0 +1,74 @@
+/*Yinz All Woodwork CSS Styling */
+
+ @import "reset.css";
+
+
+
+/* SITE CODE*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+html {
+	background-color: black;
+	color: white;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+h1 {
+/*	font-size: clamp(20px, 5vw, 50px)*/
+	text-align: center;
+}
+
+
+.inner-column {
+	max-width: 500px;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+
+
+/*BORDER VISIBILITY - turn on or off!*/
+
+
+main {
+	border: 3px dashed white;
+	background-color: green;
+}
+
+body {
+	border: 3px solid green;
+}
+
+footer {
+	border: 3px solid rosybrown;
+	margin-top: 20px;
+}
+
+
+.inner-column {
+	border: 10px solid yellow;
+	background-color: green;
+}
+
+
+.module-1 {
+	border: 3px dashed yellow;
+}
+
+.object-1 {
+	background-color: yellow;
+	border: 3px solid black;
+}

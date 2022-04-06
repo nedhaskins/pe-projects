@@ -1,0 +1,51 @@
+
+
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+}
+
+
+
+body {
+	background-color: salmon;
+	font-family: sans-serif;
+	line-height: 1.5;
+	text-align: center;
+}
+
+h1{
+	background-color: palegreen;
+	padding: 10px;
+	font-family: Trattatello, sans-serif;
+
+}
+
+nav{
+	background-color: cornsilk;
+	padding: 10px;
+}
+
+p {
+	background-color: orange;
+	padding: 10px;
+}
+
+ul {
+	background-color: yellow;
+	padding: 10px;
+}
+
+
+li, li a {
+	color: white;
+	font-style: italic;
+	list-style: none;
+	background-color: black;
+	padding: 10px;
+}
