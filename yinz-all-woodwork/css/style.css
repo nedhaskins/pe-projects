@@ -16,7 +16,12 @@ html {
 	color: white;
 }
 
-nav a {
+
+nav {
+	display: inline-block;
+}
+
+.navbar a {
 	color: white;
 	text-decoration: none;
 }
@@ -57,11 +62,27 @@ footer {
 	margin-top: 20px;
 }
 
+nav {
+	border: 3px solid yellow;
+	width: 100%;
+}
+
+nav a {
+	border: 3px solid pink;
+	color: pink;
+}
 
 .inner-column {
 	border: 10px solid yellow;
 	background-color: green;
 }
+
+
+.last-module {
+	border: 3px dashed cyan;
+}
+
+
 
 
 .module-1 {
@@ -72,3 +93,4 @@ footer {
 	background-color: yellow;
 	border: 3px solid black;
 }
+
