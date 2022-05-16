@@ -1,0 +1,349 @@
+@import "reset.css";
+
+/* SITE CODE*/
+
+/*SETUP.CSS IN PROGRESS*/
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+/*DISPLAY SETTINGS*/
+
+
+.navbar {
+	display: block;
+	width: 100%;
+}
+
+nav ul { /*parent of list items*/
+	display:flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+nav a {
+	display: block;
+}
+
+
+.inner-column {
+	display: block;
+}
+
+.textbox-1, .picture-1, .textbox-2, .picture-2 {
+	display: block;
+}
+
+.picture-1, .picture-2 {
+	max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*STYLING*/
+
+html {
+	background-color: black;
+}
+
+.inner-column {
+	background-color: black;
+}
+
+/*HEADER*/
+
+.navbar {
+	background-color: black;
+}
+
+nav a {
+	color: inherit;
+	text-decoration: none;
+	padding: 10px;
+	/*border: 3px solid white;*/
+}
+
+nav a:hover {
+	color: white;
+}
+
+nav li {
+	font-size: 18px;
+	text-align: center;
+/*	border: 3px solid orange;*/
+}
+
+.header-block-1 { /*replace with header block */
+	/*position: relative;*/
+	border: 5px solid red;
+	background-image: url("../images/woodshop.jpeg");
+	padding: 100px 0px 100px 0px; /*this allows the text to appear in
+	the center!*/
+}
+
+header h1 {
+	background-color: black;
+	color: yellow;
+}
+
+header h1 {
+	font-family: "Saira Stencil One";
+	font-size: clamp(40px, 5vw, 50px);
+	text-align: center;
+}
+
+header nav {
+	background-color: black;
+	color: yellow;
+	font-family: "Cabin Sketch";
+	/*position: absolute;*/
+	bottom: 0;
+}
+
+
+/*MODULES*/
+
+.modules {
+	/*border: 5px dashed red;*/
+
+}
+
+.inner-column {
+	/*border: 3px dashed orange;*/
+	margin: 0px 30px 0px 30px;
+
+}
+
+.module-1, .module-2, .module-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*border: 3px solid lime;*/
+	color: white;
+}
+
+.module-1 .textbox, .module-3 .textbox {
+	text-align: center;
+}
+
+.module-1 .textbox h2 {
+	color: white;
+	font-family: "Cabin Sketch";
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+ .module-1 .textbox p {
+ 	color: white;
+	font-family: "Cabin Sketch";
+	font-size: 20px;
+	margin-top: 30px;
+ }
+
+.picture-1 {
+	margin-top: 30px;
+}
+
+
+.module-2 h2 {
+	color: white;
+	font-family: "Cabin Sketch";
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.insta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.insta-logo {
+	margin-top: 30px;
+	max-width: 70px;
+}
+
+.saw {
+	max-width: 60%;
+	margin-top: 30px;
+}
+
+
+.picture-2 {
+	margin-top: 30px;
+}
+
+ .module-3 .textbox p {
+ 	color: white;
+	font-family: "Cabin Sketch";
+	font-size: 20px;
+	margin: 30px 0px 30px 0px;
+ }
+
+.hours {
+	font-family: "Cabin Sketch";
+}
+
+.hours table {
+	display: inline-block;
+	text-align: center;
+}
+
+
+/*FOOTER*/
+
+
+footer {
+	background-color: firebrick;
+}
+
+footer h1 {
+	color: white;
+	font-family: "Cabin Sketch";
+	text-align: center;
+	padding: 30px;
+}
+
+
+
+
+/*These values are for everything smaller than 512px! */
+
+/*Media queries */
+
+/*You could also organize these by individual section.*/
+
+
+@media (min-width: 512px) {
+
+
+	html {
+		background-color: yellow;
+	}
+
+	.modules {
+		display: flex;
+		justify-content: center;
+
+		/*border: 3px dashed yellow;*/
+	}
+
+
+	.inner-column {
+		/*border: 3px dashed orange;*/
+		max-width: 700px;
+
+	}
+
+	.module-1, .module-3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: space-between;
+		padding: 40px;
+		/*border: 3px solid lime;*/
+	}
+
+	.module-1 .textbox h2 {
+		margin-top: 0px;
+	}
+
+
+
+
+
+
+	.picture-1 {
+		max-width: 30%;
+		margin: 30px;
+	}
+
+	.module-2, .module-3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.module-2 h2, .saw {
+		margin: 0px;
+	}
+
+
+
+	.insta, .saw, .hours {
+		width: 30%;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.hours table{
+		font-size: 15px;
+	}
+
+
+
+	.module-3 .textbox, .picture-2 {
+		max-width: 30%;
+	}
+}
+
+/*
+	
+
+	.textbox-1, .picture-1, .textbox-2, .picture-2 {
+	display: inline-block;
+	width: 49%;
+	vertical-align: middle;
+	}
+
+	.inner-column {
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.module-1, .module-2 {
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+
+	.insta-logo {
+		max-width: 50px;
+	}
+*/
+
+
+
+
+}
+

@@ -96,15 +96,15 @@ main {
 .insta, .endphoto, .hours {
 	display: inline-block;
 	width: 32%;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	text-align: center;
 }
 
-.insta-text, .insta-logo {
+/*.insta-text, .insta-logo {
 	display: block;
 	padding: 20px;
 
-}
+}*/
 
 /*The above code states that these two elements will display
 as inline-block and will go next to each other.*/
