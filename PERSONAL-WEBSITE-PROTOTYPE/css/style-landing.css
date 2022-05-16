@@ -10,34 +10,30 @@ html {
 
 body {
 	/*border: 5px solid lime;*/
-	background-image: url('../landing-background-sans-text.jpg');
+	background-image: url('../images/landing-background-sans-text.jpg');
 	background-size: cover;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding: 300px 0px 300px 0px;
-
-
+	padding: 300px 40px 300px 40px;
 
 }
 
-.landing-text {
+.landing-link {
 	border: 5px solid red;
 	width: 80vw;
 	fill: #cb0000;
-	fill-rule: nonzero;
 	stroke: #000;
 	stroke-width: 14.58px;
 }
 
-.landing-text a:hover {
+.landing-link:hover {
 	fill: yellow;
 }
 
-@media (min-width: 600px) {
-	.landing-text {
-	border: 5px solid green;
-	width: 60vw;
+@media (min-width: 714px) {
+	svg {
+	max-width: 714px;
 	}
 }

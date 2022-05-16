@@ -1,5 +1,9 @@
 @import "reset.css";
 
+* {
+	box-sizing: border-box;
+}
+
 
 .big-screen-view {
 	display: none;
@@ -9,6 +13,8 @@ body {
 	/*border: 5px solid lime;*/
 	background-image: url('../images/homepage-background.jpg');
 	background-size: cover;
+	display: flex;
+	justify-content: center;
 }
 .small-screen-view {
 	/*border: 3px solid blue;*/
@@ -32,7 +38,7 @@ padding: 100px 0px 100px 0px;
 	text-decoration: none;
 	text-align: center;
 	-webkit-text-stroke: 1px black;
-	color: red;
+	color: #cb0000;
 }
 
 .links a:hover {
@@ -57,12 +63,13 @@ padding: 100px 0px 100px 0px;
 	.big-screen-view {
 		/*border: 3px solid blue;*/
 		display: block;
-		padding: 80px;
+
+		padding: 30px;
 	}
 
 	.big-screen-view a {
 		font-family: 'VampiroOne-Regular', 'Vampiro One';
-		font-size: 277.14px;
+		font-size: 290px;
 		fill: #cb0000;
 		stroke: #000;
 		stroke-width: 16.26px;"
@@ -72,3 +79,11 @@ padding: 100px 0px 100px 0px;
 		fill: yellow;
 	}
 }
+
+@media (min-width: 714px) {
+	.big-screen-view {
+		max-width: 714px;
+	}
+}
+
+
