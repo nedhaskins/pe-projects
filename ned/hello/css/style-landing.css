@@ -1,0 +1,37 @@
+@import "reset.css";
+
+
+html {
+
+}
+
+
+
+
+body {
+	background-image: url('../images/landing-background-sans-text.jpg');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding: 300px 40px 300px 40px;
+
+}
+
+
+.landing-link {
+	width: 80vw;
+	fill: #88211a;
+	stroke: #000;
+	stroke-width: 14.58px;
+
+}
+
+.landing-link:hover {
+	fill: yellow;
+}
+
+@media (min-width: 714px) {
+	svg {
+	max-width: 714px;
+	}
+}

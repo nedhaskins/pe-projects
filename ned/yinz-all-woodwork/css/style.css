@@ -98,7 +98,7 @@ nav li {
 
 .header-block-1 { /*replace with header block */
 	/*position: relative;*/
-	border: 5px solid red;
+	/*border: 5px solid red;*/
 	background-image: url("../images/woodshop.jpeg");
 	padding: 100px 0px 100px 0px; /*this allows the text to appear in
 	the center!*/
