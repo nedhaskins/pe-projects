@@ -23,19 +23,17 @@
 
 ?>
 
-<?php echo $monsters[0]; ?>
-
 <!--The answer you've been looking for.-->
 
 <?php foreach ($monsters as $m) {
 
 	$story = "My favorite food is " . $m["fav_food"] . " and I am " . $m["age"] . " years old.";
 	$status = $m["adopted"];
+	$statusMessage = "Needs a home.";
+
 
 	if ($status == 1) { //if this is true:
-		$status = "Adopted!";
-	} else {
-		$status = "Needs a home! ";
+		$statusMessage = "Adopted!";
 	}
 
 ?>
@@ -47,7 +45,7 @@
 			<picture class='portrait'>
 			<img src='<?=$m["portrait"]?>'width='200'></picture>
 			<p class='story'><?=$story?></p>
-			<p class='status'><?=$status?></p>
+			<p class='status'><?=$statusMessage?></p>
 		</monster-card>
 
 	</li>
