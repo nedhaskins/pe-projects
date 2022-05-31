@@ -12,7 +12,7 @@
 		return $monster;
 	}
 
-	$mrbanana = monsterGenerator(1066, "Mr. Banana", "tomatoes", 10, false, 'portraits/mr-banana.jpg');
+	$mrbanana = monsterGenerator(1066, "Fallout", "tomatoes", 10, false, 'portraits/mr-banana.jpg');
 	$fragoo = monsterGenerator(3155, "Fragoo", "Twix bars", 8, false, "portraits/fragoo.jpg");
 	$reads = monsterGenerator(3478, "Miss Reads-A-Lot", "Madeline cookies and tea", 9, true, "portraits/miss-reads-a-lot.jpg");
 	$shadow = monsterGenerator(3155, "Shadow", "hot sauce", 4, false, "portraits/shadow.jpg");
