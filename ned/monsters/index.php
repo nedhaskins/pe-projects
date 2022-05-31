@@ -18,7 +18,7 @@
 
 		<page-left>
 			<header>
-				<h1>MONSTERS</h1>
+				<h1>MONSTERS WITH A Z</h1>
 				<h2>-for adoption-</h2>
 
 
