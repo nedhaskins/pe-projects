@@ -1,0 +1,178 @@
+@import "reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--main-text-color: #88211a;
+}
+
+body {
+	/*border: 5px solid lime;*/
+	background-image: url('../images/homepage-background.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*NAVBAR*/
+
+
+.navbar {
+	/*border: 5px solid red;*/
+	display: flex;
+	/*flex-direction: column;*/
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (min-width: 400px) {
+	.navbar {
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 900px) {
+	.navbar {
+		justify-content: space-evenly;
+	}
+}
+
+.navbar a {
+	text-decoration: none;
+	font-family: "Ceviche One";
+	color: var(--main-text-color);
+	font-size: 30px;
+	text-align: center;
+	padding: 20px;
+	-webkit-text-stroke: 1px black;
+}
+
+.navbar a:hover {
+	color: yellow;
+}
+
+a.active {
+	color: yellow;
+}
+
+.resume {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGE CONTENT*/
+
+.page-content {
+	display: flex;
+	justify-content: center;
+	/*border: 5px solid green;*/
+}
+
+inner-column {
+	display: block;
+	/*border: 5px solid blue;*/
+	max-width: 700px;
+}
+
+inner-column h1 {
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: "Ceviche One";
+	font-size: 50px;
+	color: var(--main-text-color);
+	text-align: center;
+	-webkit-text-stroke: 1px black;
+}
+
+
+p {
+	margin-top: 20px;
+	font-family: "Hammersmith One";
+	padding: 0px 40px 0px 40px;
+	line-height: 1.5;
+	font-size: 20px;
+	color: var(--main-text-color);
+}
+
+p:nth-of-type(4){
+	margin-bottom: 60px;
+}
+
+
+/*LIST ELEMENTS*/
+
+a {
+	text-decoration: none;
+}
+
+
+li h2 {
+	/*border: 3px solid lime;*/
+	font-family: "Ceviche One";
+	text-align: center;
+	color: var(--main-text-color);
+	font-size: 35px;
+	margin-top: 20px;
+	-webkit-text-stroke: 1px black;
+}
+
+li h2:hover {
+	color: yellow;
+}
+
+li h2:nth-of-type(1) {
+	margin-top: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*CONTACT PAGE ELEMENTS*/
+
+@media (min-width: 462px) {
+
+	.lets-talk {
+		margin-top: 80px;
+	}
+
+	.contact-paragraph {
+		margin-top: 40px;
+	}
+}
+
+/*FORM ELEMENTS*/
+
+.field.text {
+	display: flex;
+	flex-direction: column;
+	max-width: 200px;
+}
+
+
+/*EMAIL LINK*/
+
+.email-link h1 {
+	margin-top: 80px;
+}
+
+
+
