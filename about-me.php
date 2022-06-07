@@ -18,17 +18,7 @@
 
 	<body>
 
-		<nav class="navbar">
-
-				<a href="home.html">Home</a>
-				<a class="active" href="#">About Me</a>
-				<a href="projects.html">Projects</a>
-				<a href="https://nedhaskins.substack.com">Blog</a>
-				<a href="https://codepen.io/nedhaskins">Codepens</a>
-				<a href="https://github.com/nedhaskins">GitHub</a>
-				<a href="contact.html">Contact</a>
-
-		</nav>
+	<?php include('navbar.php'); ?>
 
 		<section class="page-content">
 
