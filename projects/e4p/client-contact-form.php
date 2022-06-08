@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
 <?php 
 
 //$stuff = $_POST;  //$stuff will be where all the submitted stuff from the form lives on the server
@@ -18,44 +32,12 @@
 ?>
 
 
-<style>
-	
-	label, input, button {
-		border: 3px solid red;
-	}
-
-	label, input {
-		display: block; /*just setting these up as block-level
-		elements instead of inline-block*/
-	}
-
-	form {
-		max-width: 400px;
-		border: 1px solid green;
-	}
-
-	.field {
-		border: 3px solid blue;
-		display: flex;
-		flex-direction: column;
-	}
- 
-	.field label {
-		font-size: 14px;
-		margin-bottom: 4px;
-	}
-
-	button[type="submit"], .field + .field {
-		margin-top: 10px ;
-	}
-
-
 
 </style>
 
 <form method='POST'>
 
-	<p>Client Contact Form</p>
+	<h1>Client Contact Form</h1>
 
 
 	<div class='field'>

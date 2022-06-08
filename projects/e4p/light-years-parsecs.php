@@ -47,20 +47,20 @@
 
 	<h1>Star Data Entry Sheet</h1>
 
-	<div class="field">
+	<field>
 		<label>Star name</label>
 		<input type='text' name='starname' value="Enter here">
-	</div>
+	</field>
 
-	<div class='field'>
+	<field>
 		<label>Distance from Earth in light years</label>
 		<input type='number' name='lydistance'> 
-	</div>
+	</field>
 
-	<div class='field'>
+	<field>
 		<label>Luminosity in lumens</label>
 		<input type='number' name='luminosity'>
-	</div>
+	</field>
 
 	<button type='submit' name='submitted'>Submit
 	</button>
