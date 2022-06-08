@@ -51,23 +51,23 @@ $berries = 0;
 
 <form method='POST'>
 
-	<p>Berry Count-O-Matic</p>
+	<h1>Berry Count-O-Matic</h1>
 
-	<div class='field'>
+	<field>
 
 		<label>Number of guests</label>
 		<input type='number' name='guests' value='<?=$guests?>'> <!--the "name" attribute is pointing to the actual "name" that this is going to be referred to elsewhere in the code, like in CSS for styling, and in the resulting array when data is entered by the user -->
 
-	</div>
+	</field>
 
-	<div class='field'>
+	<field>
 
 		<label>Berries per guest</label>
 		<input type='number' name='berries' value='<?=$berries?>'>
 
 	<!--when the form comes back after a $_POST, the values will have the previous values in there already. -->
 
-	</div>
+	</field>
 
 
 	<button type='submit' name='submitted'>Submit

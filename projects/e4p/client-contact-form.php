@@ -40,19 +40,19 @@
 	<h1>Client Contact Form</h1>
 
 
-	<div class='field'>
+	<field>
 
 		<label>Email</label>
 		<input type='email' name='email'> <!--the "name" attribute is pointing to the actual "name" that this is going to be referred to elsewhere in the code, like in CSS for styling, and in the resulting array when data is entered by the user -->
 
-	</div>
+	</field>
 
-	<div class='field'>
+	<field>
 
 		<label>Message</label>
 		<input type='text' name='message'>
 
-	</div>
+	</field>
 
 
 	<button type='submit' name='submitted'>Submit

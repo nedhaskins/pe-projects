@@ -16,6 +16,7 @@
 		<li><a href="berries.php" >Berry Count-O-Matic</a></li>
 		<li><a href="client-contact-form.php" >Client Contact Form</a></li>
 		<li><a href="light-years-parsecs.php" >Star Data Entry Form</a></li>
+		<li><a href="08-pizza-party.php" >Exercises for Programmers #8 - Pizza Party</a></li>
 
 	</ul>
 
