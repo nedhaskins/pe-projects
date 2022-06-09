@@ -10,25 +10,43 @@
 <body>
 
 	<?php
+	//Figure out how many people
+	$people = 4;
+	//Figure out how many pizzas
+	$pizzas = 2;
+	//Figure out how many slices
+	$slicesPerPizza = 9;
 
-		$people = 0;
-		$pizzas = 0;
 
-		if ( isset($_POST['submit']) ) {
-			
-			if ( isset ($_POST['people']) ) {
-				$people = $_POST['people'];
-				if ($people >= 0) {
-				$people = $_POST['people'];
-				}
-			}
+	//See if there was any user input
 
-			if ( isset ($_POST['pizzas']) ) {
-				if ($pizzas >= 0) {
-				$pizzas = $_POST['pizzas'];
-				}
-			}
+	if ( isset($_POST['submit']) ) {
+
+			//Assess any new values
+
+		if ( isset ($_POST['people']) ) {
+			$people = $_POST['people'];
 		}
+
+		if ( isset ($_POST['pizzas']) ) {
+			$pizzas = $_POST['pizzas'];
+		}
+	}
+
+
+	//Do calculations
+	$totalSlices = $pizzas * $slicesPerPizza;
+	$remainder = $totalSlices % $people; //look at how the modulo works here!
+	$slicesPerPerson = ($totalSlices - $remainder) / $people;
+
+	//Create message
+	$message = "There are $slicesPerPerson slices per person and $remainder slices left over.";
+
+
+
+	//Display message
+
+
 
 	?>
 
@@ -39,12 +57,12 @@
 
 		<field>
 			<label>How many people are at the party?</label>
-			<input type='number' name='people' min='1'>
+			<input type='number' name='people' min='1' value='<?php echo $people; ?>' required>
 		</field>
 
 		<field>
 			<label>How many pizzas are there?</label>
-			<input type='number' name='pizzas'min='1'>
+			<input type='number' name='pizzas'min='1' value="<?=$pizzas?>" required>
 		</field>
 
 		<button type='submit' name='submit'>Submit</button>
@@ -56,38 +74,9 @@
 
 	<?php
 
-		$pizzaSlices = $pizzas * 8;
-	//the number of slices in a pizza
+	echo $message;
 
-		$sliceShare = $pizzaSlices / $people;
-	//the number of slices each person gets
-
-		if ($sliceShare % 2 == 0) {
-			$sliceShare = floor($sliceShare);
-		}
-
-		$remainder = $pizzaSlices - ($people * $sliceShare);
-
-		//Order here is very important -- the remainder variable has to be defined AFTERWARD because we have to floor the number of slices first to HAVE a remainder.
-
-		if ($people == 1) {
-			echo "<p class='output'>There is 1 person at the party.</p>";
-		} else {
-			echo "<p class='output'>There are " . $people . " people at the party.</p>";
-		}
-
-		if ($pizzas == 1) {
-			echo "<p class='output'>There is 1 pizza.</p>";
-		} else {
-			echo "<p class='output'>There are " . $pizzas . " pizzas.</p>";
-		}
-
-		echo "<p class='output'>Each person gets " . $sliceShare . " slices.</p>";
-
-		echo "<p class='output'>There are " . $remainder . " slices left over.</p>";
-	?>
-
-
+?>
 
 </body>
 </html>

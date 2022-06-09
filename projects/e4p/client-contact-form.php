@@ -50,7 +50,8 @@
 	<field>
 
 		<label>Message</label>
-		<input type='text' name='message'>
+		<textarea name='message' rows='12' cols='30'>"enter a message"
+		</textarea>
 
 	</field>
 
