@@ -1,0 +1,26 @@
+{
+	"id": 711,
+	"partNumber": "LSXOLV",
+	"brand": "KEF",
+	"name": "LSX Wirereless Music System",
+	"productCategory": "Bluetooth / Wireless Speakers",
+	"image": "images/ksf-red.webp",
+	"condition": "refurbished",
+	"available": "in_stock",
+	"stockIsLow": true,
+
+	"priceInDollars": 1250.00,
+	"salePriceInDollars": 999.99,
+	"warrantyInYears": 2,
+	"freeShipping": true,
+
+	"avgCustomerReview": 4.3,
+
+	"specifications": {
+		"maxSPLinDB": 102,
+		"bluetoothRangeinMeters": 10,
+		"bluetoothMemory": 8,
+		"weightinKg": 3.6,
+
+	}
+}
