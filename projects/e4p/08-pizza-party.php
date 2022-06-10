@@ -15,7 +15,7 @@
 	//Figure out how many pizzas
 	$pizzas = 2;
 	//Figure out how many slices
-	$slicesPerPizza = 9;
+	$slicesPerPizza = 8;
 
 
 	//See if there was any user input
@@ -39,6 +39,13 @@
 	$remainder = $totalSlices % $people; //look at how the modulo works here!
 	$slicesPerPerson = ($totalSlices - $remainder) / $people;
 
+	//The way this code works, you didn't need to use the floor() function....you used the modulo to get the remainder.
+
+	//x = (160-  (160 % 85)) / 85
+
+	// = (160-75) / 85
+
+
 	//Create message
 	$message = "There are $slicesPerPerson slices per person and $remainder slices left over.";
 
@@ -57,7 +64,7 @@
 
 		<field>
 			<label>How many people are at the party?</label>
-			<input type='number' name='people' min='1' value='<?php echo $people; ?>' required>
+			<input type='number' name='people' min='1' value='<?php echo $people; ?>' required> <!--the 'required' requires input to move forward! -->
 		</field>
 
 		<field>
