@@ -36,7 +36,7 @@
 		$statusMessage = "Adopted!";
 	}
 
-?>
+?> //
 
 	<li class='monster'>
 
