@@ -46,18 +46,26 @@ $products = $audiophileData['products'];
 			<div class='price'>
 				<p>$<?=$price?></p>
 
-				<?php if ( is_numeric($product['stock']) ) {
-					echo "<p class='inventorystatus' style='font-weight: 700; color: green;'>In Stock</p>";
-				} elseif ($product['stock'] = "Low") {
-					echo "<p class='inventorystatus' style='font-weight: 700; color: yellow;'>Low stock!</p>";
-				} elseif ($product['stock'] = "Sold Out") {
-					echo "<p class='inventorystatus' style='font-weight: 700; color: red;'>Sold out!</p>";
-				} else {
-					echo "<p class='inventorystatus' style='font-weight: 700; color: green;'>In Stock</p>";
-						}
-				 ?>
+				<?php if ( is_numeric($product['stock']) ) { ?>
+
+					<p class='inventorystatus' style='font-weight: 700; color: green;'>In Stock</p>
+
+
+				<?php } elseif ($product['stock'] == "Low") { ?>
+
+					<p class='inventorystatus' style='font-weight: 700; color: yellow;'>Low stock!</p>
+
+
+				<?php } elseif ($product['stock'] == "Sold Out") { ?>
+					<p class='inventorystatus' style='font-weight: 700; color: red;'>Sold out!</p>
+
+
+				<?php } else { ?>
+					<p class='inventorystatus' style='font-weight: 700; color: green;'>In Stock</p>
+				<?php } ?>
 
 			</div>
+
 
 		</div>
 
