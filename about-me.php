@@ -29,7 +29,22 @@
 				<a href="contact.html">Contact</a>
 
 		</nav>
+		<?php
 
+		$pageName = basename($_SERVER['PHP_SELF']);
+
+
+		echo $pageName;
+
+		$parts = explode(".", $pageName);
+
+		//print_r($parts);
+
+		echo $parts[0];
+
+ 		//if explode(lowercase text plus hyphen) equals current name, 
+ 		//put this class on this link
+?>
 		<section class="page-content">
 
 			<inner-column>

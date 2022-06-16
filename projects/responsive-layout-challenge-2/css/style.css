@@ -31,8 +31,13 @@ inner-column {
 	}
 
 	inner-column {
-		min-width: 700px;
+
+		width: 100%;
 		max-width: 900px;
+
+		/*min-width: 700px;
+		max-width: 900px;*/ /* This isn't necessary -- there won't be any extra space
+		if it's set to flex.  Only the min-width is needed. */
 	}
 }
 
@@ -95,7 +100,8 @@ diptych inner-column {
 @media (min-width: 700px) {
 	diptych inner-column {
 		flex-direction: row;
-		max-width: 700px;
+		/*max-width: 700px;*/ /*this was why
+		it wasn't as wide...*/
 	}
 }
 
@@ -191,6 +197,14 @@ article-section inner-column {
 	margin-bottom: 30px;
 }
 
+.article-card {
+	margin-top: 10px;
+}
+
+.article {
+	margin-top: 10px;
+}
+
 .article-heading, .article-card, .article {
 	border: 3px solid black;
 	padding: 50px 10px 30px 10px;
@@ -214,10 +228,6 @@ article-section inner-column {
 
 :is(.article-card, .article) button {
 		margin-top: 10px;
-}
-
-.article {
-	margin-top: 10px;
 }
 
 @media (min-width: 700px) {
@@ -279,4 +289,14 @@ site-footer {
 	border: 3px solid blue;
 	display: block;
 }
+
+
+@media (insert criteria here  {
+
+	@import;
+}
+
+
+
+
 

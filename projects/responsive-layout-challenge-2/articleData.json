@@ -1,0 +1,44 @@
+{
+    "articleData":
+    {
+        "article-card":
+        {
+            "title": "This is a mini-call-to-action.",
+            "teaser": "This is the card for the rest of the articles.",
+            "buttonText": "ANSWER THE CALL"
+        },
+        "articles":
+        {
+            "article-1":
+            {
+                "title": "The title for an article.",
+                "teaser": "The whetting of the appetite",
+                "buttonText": "The tasting"
+            },
+            "article-2":
+            {
+                "title": "The beginning",
+                "teaser": "You better believe it",
+                "buttonText": "I DON'T BELIEVE IT"
+            },
+            "article-3":
+            {
+                "title": "The beginning",
+                "teaser": "Enough text to give you an idea of what the article's about.",
+                "buttonText": "Answer the call"
+            },
+            "article-4":
+            {
+                "title": "Deadpool",
+                "teaser": "Some stuff that's relevant to the title",
+                "buttonText": "PUSH ME"
+            },
+            "article-5":
+            {
+                "title": "The final article",
+                "teaser": "Full of hope and vision, this article is worth reading.",
+                "buttonText": "TRY IT"
+            }
+        }
+    }
+}

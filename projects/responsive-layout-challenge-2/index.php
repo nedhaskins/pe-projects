@@ -2,7 +2,6 @@
 	<html lang="en">
 		<head>
 			<meta charset="utf-8">
-			<!DOCTYPE html>
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="css/style.css">
 				<title></title>
@@ -59,55 +58,14 @@
 
 						<div class='article-group'>
 
-							<div class='article-card'>
-								
-								<h1>This is a mini-call-to-action.</h1>
-								<p>A mini-call-to-action.</p>
-								<button>ANSWER THE CALL</button>
 
-							</div>
+						<?php include('articles.php'); ?>
 
-							<div class='article'>
-								
-								<h1>The title for an article.</h1>
-								<p>Just enough info for you to decide if you want to keep reading.</p>
-								<button>KEEP READING</button>
-
-							</div>
-
-							<div class='article'>
-								
-								<h1>The title for an article.</h1>
-								<p>Just enough info for you to decide if you want to keep reading.</p>
-								<button>KEEP READING</button>
-
-							</div>
-
-							<div class='article'>
-								
-								<h1>The title for an article.</h1>
-								<p>Just enough info for you to decide if you want to keep reading.</p>
-								<button>KEEP READING</button>
-
-							</div>
-
-							<div class='article'>
-								
-								<h1>The title for an article.</h1>
-								<p>Just enough info for you to decide if you want to keep reading.</p>
-								<button>KEEP READING</button>
-
-							</div>
-
-							<div class='article'>
-								
-								<h1>The title for an article.</h1>
-								<p>Just enough info for you to decide if you want to keep reading.</p>
-								<button>KEEP READING</button>
-
-							</div>
+				
 
 						</div> <!--article-group-->
+
+						
 					</inner-column>
 				</article-section>
 
