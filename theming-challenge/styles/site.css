@@ -1,0 +1,99 @@
+/* 
+	BTW in case it isn't obvious... the whole PSSST-CSS idea is a joke 
+	like... (it's just CSS)
+*/
+
+/* P reset */
+@import 'preset.css';
+
+/* S etup */
+@import 'setup.css';
+
+/* S setings */
+@import 'settings.css';
+/*@import 'developer-styles.css';*/
+
+/* S tructure */
+@import 'structure.css';
+
+/* T ypography */
+@import 'typography.css';
+
+/* C omponents */
+@import 'components.css';
+
+/* S tuff (modules) */
+@import 'modules.css';
+
+/* S ections and more stuff */
+
+/* then other contextual styles */
+body {
+	background-color: var(--white);
+	color: var(--ink);
+}
+
+img {
+	padding: 20px;
+}
+
+
+section.welcome {
+/*	background-image: url('../images/shoreline.jpeg');*/
+}
+
+section:is(.sign-up, .get-involved) inner-column {
+	max-width: var(--tight);
+}
+
+
+
+
+section.sign-up {
+	background-image: url('../images/shoreline-2.jpeg');
+}
+
+
+section.get-involved {
+	background-color: var(--tradewinds);
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+
+	body {
+		background-color: #00175c;
+	} 
+
+	section.sign-up {
+		color: var(--black);
+	}
+
+
+
+	section.sign-up .button {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	section.get-involved {
+		background-color: #221b19;
+		color: var(--white);
+	}
+
+	h3.strong-voice {
+		color: white;
+	}
+
+	call-to-action a.button {
+		background-color: #00175c;
+	}
+
+.get-involved inner-column call-to-action .heading.attention-voice {
+    color: white;
+ 	}
+}
+
+/*extra comment*/
