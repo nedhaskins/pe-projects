@@ -33,7 +33,7 @@
 		"four" => [
 			"heading" => "6-Month Plan",
 			"goals" => [
-				"Be on the job with entry-level contract work and/or an apprenticeship or internship that has a minimum compensation of $60k or equivalent and allows for continued in-depth practice of HTML, CSS, PHP and Javascript via web design / implementation projects"
+				"Be on the job with entry-level contract work and/or an apprenticeship or internship that has a minimum compensation of $60k or equivalent and allows for continued in-depth practice of HTML, CSS, PHP and JavaScript via web design / implementation projects"
 			],	
 		],
 
