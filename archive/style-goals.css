@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+	body {
+		background-color: cornsilk;
+		color: brown;
+		font-family: Hoefler Text;
+		line-height: 1.2;
+		max-width:  600px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	
+	}
+
+	em {
+		font-style: oblique;
+	}
+
+	h1{
+		font-family: Trattatello;
+		font-size: 50px;
+	}
+
+	h2{
+		font-family: Trattatello;
+		font-size: 35px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	p {
+		font-size: 25px;
+	}
