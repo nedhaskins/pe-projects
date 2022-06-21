@@ -8,7 +8,11 @@ graphic-diptych {
 }
 
 graphic-diptych p {
-	margin-top: 20px;
+	margin: 20px 0px 0px 20px;
+}
+
+graphic-diptych :is(picture, text-content) {
+		padding: 50px;
 }
 
 @media (min-width:  700px) {
