@@ -34,6 +34,15 @@ body {
 }
 
 
+.strong-voice	{
+	color: var(--cadorange);
+}
+
+.attention-voice {
+	color: var(--black);
+	/*padding: 0px 30px;*/
+}
+
 section.welcome {
 /*	background-image: url('../images/shoreline.jpeg');*/
 }
@@ -41,6 +50,38 @@ section.welcome {
 section:is(.sign-up, .get-involved) inner-column {
 	max-width: var(--tight);
 }
+
+
+/* CALL TO ACTION MODULE */
+
+
+
+
+call-to-action .story { /*this scopes the <p> element according to the module it's contained in! */
+
+color: black/*var(--tradewinds)*/;
+}
+
+call-to-action .button {
+	background-color: var(--sandybeach);
+	color: var(--tradewinds);
+	/*margin-left: 20px;*/
+}
+
+
+@media (prefers-color-scheme: dark) {
+	call-to-action .story {
+		color: var(--tradewinds);
+		}
+
+	.get-involved inner-column call-to-action .heading.attention-voice {
+    color: white;
+ 	}
+}
+
+
+
+
 
 
 
@@ -51,6 +92,13 @@ section.sign-up {
 	background-position: center;
 
 }
+
+
+
+
+
+
+
 
 
 section.get-involved {
@@ -75,7 +123,7 @@ section.get-involved {
 	}
 
 	section.sign-up .button {
-		background-color: var(--black);
+		background-color: #682811;
 		color: var(--white);
 	}
 
@@ -92,9 +140,7 @@ section.get-involved {
 		background-color: #00175c;
 	}
 
-	.get-involved inner-column call-to-action .heading.attention-voice {
-    color: white;
- 	}
+
 }
 
 /*extra comment*/

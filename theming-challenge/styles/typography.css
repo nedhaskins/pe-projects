@@ -1,8 +1,7 @@
 /* Should we pull in @fonts here? */
 
 .loud-voice	{
-	color: var(--tradewinds);
-	font-family: "Rock Salt";
+	font-family: "Yuji Boku";
 	font-size: clamp(36px, 5vw, 60px);
 }
 @media (min-width: 600px) {
@@ -11,19 +10,16 @@
 	}
 }
 
-h1.loud-voice {
+/*h1.loud-voice {
 	padding: 0px 30px;
 }
-
+*/
 .attention-voice	{
-	font-family: "Rock Salt";
+	font-family: "Yuji Boku";
 	font-size: 30px;
 }
 
-h2.heading.attention-voice {
-	color: var(--black);
-	padding: 0px 30px;
-}
+
 
 
 @media (prefers-color-scheme: dark) {
@@ -33,42 +29,39 @@ h2.heading.attention-voice {
 }
 
 
-
-articles-intro header .attention-voice {
-	margin-top: 35px;
-}
-
-.strong-voice	{
-	color: var(--black);
-	font-family: "Rock Salt";
+.strong-voice {
+	font-family: "Yuji Boku";
 	font-weight: 700;
-	font-size:  1rem;
+	font-size:  1.5rem;
 
 }
 
-h1.strong-voice {
+/*h1.strong-voice {
 	margin-left: 20px;
-}
+}*/
 
 
-h1.title.strong-voice, p.teaser {
+/*h1.title.strong-voice, p.teaser {
 	margin: 10px 20px 10px 20px;
-}
+}*/
 
 
 @media (prefers-color-scheme: dark){
 	h1.title.strong-voice{
 	color: var(--cadorange);
-}
+	}
 	.title.strong-voice {
 	color: var(--white);
 	}
 	
 }
 
+
+
+
+
 .calm-voice, p, li {
 	font-family: "Josefin Sans";
-	color: var(--tradewinds);
 	font-size: 1rem;
 	line-height: 1.4;
 }
@@ -86,23 +79,11 @@ h1.title.strong-voice, p.teaser {
 
 
 
-p.story {
-	color: #676767;
-	padding: 0px 20px;
-}
 
 
-@media (prefers-color-scheme: dark) {
-	p.story {
-	color: var(--tradewinds);
-	}
-}
 
-call-to-action a.button {
-	background-color: var(--sandybeach);
-	color: var(--tradewinds);
-	margin-left: 20px;
-}
+
+
 
 p + p {
 	margin-top: 1em;
@@ -112,15 +93,14 @@ h2 + p {
 	margin-top: 20px;
 }
 
+
+h1 + p {
+margin-top: 10px;
+}
+
 code {
 	font-family: monospace;
 	font-size: 1.1em;
 	color: green;
 }
 
-li.article {
-	background-color: var(--sandybeach);
-	padding-bottom: 20px;
-	margin: 20px;
-	box-shadow: 2px 2px var(--x11gray);
-}
