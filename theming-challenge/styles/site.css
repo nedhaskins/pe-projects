@@ -43,6 +43,19 @@ body {
 	/*padding: 0px 30px;*/
 }
 
+
+
+@media (prefers-color-scheme: dark) {
+	.attention-voice {
+	color: var(--tradewinds);
+	/*padding: 0px 30px;*/
+}
+
+}
+
+
+
+
 section.welcome {
 /*	background-image: url('../images/shoreline.jpeg');*/
 }
@@ -59,7 +72,7 @@ section:is(.sign-up, .get-involved) inner-column {
 
 call-to-action .story { /*this scopes the <p> element according to the module it's contained in! */
 
-color: black/*var(--tradewinds)*/;
+color: black;
 }
 
 call-to-action .button {
@@ -123,7 +136,7 @@ section.get-involved {
 	}
 
 	section.sign-up .button {
-		background-color: #682811;
+		background-color: #471300;
 		color: var(--white);
 	}
 
