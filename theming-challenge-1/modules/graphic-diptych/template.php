@@ -1,9 +1,9 @@
 
 <graphic-diptych>
 
-	<picture>
+<!-- 	<picture>
 		<img src='images/nags-head.jpeg' alt='$todo'>
-	</picture>
+	</picture> -->
 	
 	<text-content>
 		<h1 class='loud-voice'>This is a graphic diptych</h1>

@@ -49,7 +49,7 @@ body {
 	.attention-voice {
 	color: var(--tradewinds);
 	/*padding: 0px 30px;*/
-}
+	}
 
 }
 
@@ -57,8 +57,32 @@ body {
 
 
 section.welcome {
-/*	background-image: url('../images/shoreline.jpeg');*/
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/nags-head.jpeg');
+	background-size: cover;
+	background-position: center;
 }
+
+@media (prefers-color-scheme: dark) {
+
+	section.welcome {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/nags-head.jpeg');
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section:is(.sign-up, .get-involved) inner-column {
 	max-width: var(--tight);
@@ -87,7 +111,7 @@ call-to-action .button {
 		color: var(--tradewinds);
 		}
 
-	.get-involved inner-column call-to-action .heading.attention-voice {
+	call-to-action .heading {
     color: white;
  	}
 }
@@ -99,7 +123,7 @@ call-to-action .button {
 
 
 
-section.sign-up {
+section.get-involved {
 	background-image: url('../images/shoreline-2.jpeg');
 	background-size: cover;
 	background-position: center;
@@ -114,7 +138,7 @@ section.sign-up {
 
 
 
-section.get-involved {
+section.sign-up {
 	background-color: var(--tradewinds);
 
 }
@@ -126,9 +150,13 @@ section.get-involved {
 
 	body {
 		background-color: #00175c;
-	} 
+	}
 
-	section.sign-up {
+
+
+
+
+	section.get-involved {
 		color: var(--black);
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/shoreline-2.jpeg');
 		background-size: cover;
@@ -140,7 +168,7 @@ section.get-involved {
 		color: var(--white);
 	}
 
-	section.get-involved {
+	section.sign-up {
 		background-color: #221b19;
 		color: var(--white);
 	}
