@@ -9,7 +9,7 @@
 		<meta name='description' content='PSSST (CSS)'>
 		<meta property='og:image' content='A CSS methodology so great, it needed a name.'>
 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt|Josefin+Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt|Yuji+Boku|Josefin+Sans">
 
 		<link rel='stylesheet' href='styles/site.css'>
 	</head>
