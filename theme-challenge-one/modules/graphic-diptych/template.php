@@ -6,9 +6,9 @@
 	</picture> -->
 	
 	<text-content>
-		<h1 class='loud-voice'>This is a graphic diptych</h1>
+		<h1 class='loud-voice'>Outer&nbsp;Banks Vacation&nbsp;Rentals</h1>
 
-		<p>What a fun thing that we have here</p>
+		<p>Enjoy peace and tranquility among the waves.</p>
 	</text-content>
 
 </graphic-diptych>

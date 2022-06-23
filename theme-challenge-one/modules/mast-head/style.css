@@ -29,6 +29,10 @@ mast-head nav a:not(.home) {
 	padding: .5em .5em;
 }
 
+.user-menu ul li .button {
+	margin: 0;
+}
+
 @media (min-width:  600px) {
 	mast-head {
 		display: flex;
