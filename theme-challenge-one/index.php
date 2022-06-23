@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt|Yuji+Boku|Josefin+Sans">
 
 		<link rel='stylesheet' href='styles/site.css'>
+		<title>Theme Challenge One - Beach Vacation Rentals</title>
 	</head>
 
 
