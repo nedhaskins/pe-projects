@@ -12,7 +12,9 @@ graphic-diptych picture {
 	box-shadow: 4px 4px var(--x11gray);
 }
 
-
+graphic-diptych h1 {
+	margin-bottom: 20px;
+}
 
 
 

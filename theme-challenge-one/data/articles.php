@@ -2,32 +2,32 @@
 
 $articles = [
 	[
-		"heading" => "Article or product",
+		"heading" => "First Wind 394",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
 		"thumbnail" => "house-1.jpg",
 	],
 	[
-		"heading" => "Destination",
+		"heading" => "Salt Palace 485",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
 		"thumbnail" => "house-2.jpg",
 	],
 	[
-		"heading" => "Story or something",
+		"heading" => "Sweet Melissa 526g",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
 		"thumbnail" => "house-3.jpg",
 	],
 	[
-		"heading" => "Banana tandori",
+		"heading" => "Obxscape 545",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
 		"thumbnail" => "house-4.jpg",
 	],
 	[
-		"heading" => "Bar B Q",
+		"heading" => "Sun Over Beach 524",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
 		"thumbnail" => "house-5.jpg",
 	],
 	[
-		"heading" => "Marsala",
+		"heading" => "So Lucki 566",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
 		"thumbnail" => "house-6.jpg",
 	],

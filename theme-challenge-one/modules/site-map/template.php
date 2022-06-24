@@ -11,81 +11,85 @@
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Home</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Outer Banks Info</a>
 			</li>
 		</ul>
 	</nav>
 
 
 	<nav class='x-menu'>
-		<h3 class='strong-voice'>Menu heading here</h3>
+		<h3 class='strong-voice'>Duck</h3>
 
 		<ul>
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Phone</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Email</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Address</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>View Map and Directions</a>
 			</li>
 		</ul>
 	</nav>
 
 	<nav class='x-menu'>
-		<h3 class='strong-voice'>Menu heading here</h3>
-		
+		<h3 class='strong-voice'>Kitty Hawk</h3>
+
 		<ul>
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Phone</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Email</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Address</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>View Map and Directions</a>
 			</li>
 		</ul>
 	</nav>
 
 	<nav class='x-menu'>
-		<h3 class='strong-voice'>Menu heading here</h3>
-		
+		<h3 class='strong-voice'>Hatteras</h3>
+
 		<ul>
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Phone</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Email</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Address</a>
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>View Map and Directions</a>
 			</li>
 		</ul>
 	</nav>
+
+
+
+
 
 
 </site-map>

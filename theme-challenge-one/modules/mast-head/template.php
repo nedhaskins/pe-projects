@@ -10,11 +10,11 @@
 			</li>
 
 			<li>
-				<a href='#'>Some page</a>
+				<a href='#'>Home</a>
 			</li>
 
 			<li>
-				<a href='#'>Some other page</a>
+				<a href='#'>Outer Banks Info</a>
 			</li>
 		</ul>
 	</nav>
