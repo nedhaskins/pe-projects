@@ -1,0 +1,14 @@
+
+call-to-action {
+	display: block;
+	/*border: 4px solid orange;*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 7vh 2vh;
+}
+
+call-to-action .button {
+	margin-top: 20px;
+	font-family: "Rock Salt";
+}

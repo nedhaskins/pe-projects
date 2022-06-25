@@ -1,0 +1,39 @@
+
+graphic-diptych {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	padding: 14vh 5vh;
+}
+
+
+graphic-diptych picture {
+	margin: 15px;
+	box-shadow: 4px 4px var(--x11gray);
+}
+
+graphic-diptych h1 {
+	margin-bottom: 20px;
+}
+
+
+
+text-content .loud-voice {
+		color: var(--tradewinds);
+}
+
+@media (min-width:  700px) {
+	graphic-diptych {
+		/*flex-direction: row;*/
+		align-items: center;
+		grid-gap: 6vh;
+	}
+
+	graphic-diptych h1 {
+	margin-bottom: 40px;
+}
+
+	graphic-diptych :is(picture, text-content) {
+		flex-basis: 50%;
+	}
+}
