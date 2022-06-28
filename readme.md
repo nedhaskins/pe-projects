@@ -14,4 +14,8 @@ The **projects** folder contains completed class projects. The ones I feel repre
 
 https://www.peprojects.dev/alpha-4/ned/projects/
 
+Please also visit my home base on the web!
+
+http://www.nedhaskins.io
+
 Thanks for visiting!  Enjoy exploring!
