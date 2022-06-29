@@ -1,0 +1,60 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'components.css';
+
+
+body {
+	background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9)), url('../images/i-95.jpeg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+
+	font-family: 'Josefin Sans';
+	
+	padding: 20px;
+}
+
+
+
+
+nav a {
+	text-decoration: underline;
+	padding: 10px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+
+}
+
+h1 {
+	font-family: 'Ceviche One';
+	font-size: 40px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+
+p + p {
+	margin-top: 10px;
+}
+
+
+/*.page-content {
+	border: 3px dashed lime;
+}*/
+
+picture {
+	max-width: 175px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}

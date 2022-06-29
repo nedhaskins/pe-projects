@@ -1,3 +1,5 @@
+<h2>Video Samples</h2>
+
 <ul>
 
 <li><a href='#'>Video 1</a></li>
