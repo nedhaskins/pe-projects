@@ -1,7 +1,6 @@
 {	"highways": {
 
-		"sr20": {
-		
+		"sr20" : {
 			"id" : "sr20",
 			"type" : "stateRoute",
 			"name" : "State Route 20",
@@ -11,7 +10,9 @@
 			"endPoint" : "Wilderness"
 		},
 
+	 
 		"sr7": {
+			"id": "sr7",
 			"type" : "stateRoute",
 			"name" : "State Route 7",
 			"thumbnail" : "sr7.png",
@@ -21,6 +22,7 @@
 		},
 
 		"sr-76": {
+			"id" : "sr76",
 			"type" : "stateRoute",
 			"name" : "State Route 76",
 			"thumbnail" : "sr-76.png",
@@ -30,6 +32,7 @@
 		},
 
 		"i-66": {
+			"id" : "i66",
 			"type" : "interstate",
 			"name" : "Interstate 66",
 			"thumbnail" : "i-66.png",
@@ -39,6 +42,7 @@
 		},
 
 		"i81": {
+			"id" : "i81",
 			"type" : "interstate",
 			"name" : "Interstate 81",
 			"thumbnail" : "i-81.png",

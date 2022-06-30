@@ -8,6 +8,9 @@
 
 <a href='?page=home'>Home</a>
 <a href='?page=routeList'>Route List</a>
+<a href='?page=interstate'>Interstate List</a>
+<a href='?page=USroute'>US Route List</a>
+<a href='?page=stateroute'>State Route List</a>
 <a href='?page=create'>Create a Route</a>
 
 </nav>
