@@ -6,39 +6,7 @@
 	} else {
 		$page = 'home'; //default
 	}
-
-	$routeData = [
-		
-		[	
-			"id" => "sr20",
-			"name" => "State Route 20",
-			"thumbnail" => "sr-20.png",
-			"lengthInMiles" => 89.79,
-			"startPoint" => "Dillwyn",
-			"endPoint" => "Wilderness",
-		],
-
-		[
-			"id" => "sr7",
-			"name" => "State Route 7",
-			"thumbnail" => "sr7.png",
-			"lengthInMiles" => 72.75,
-			"startPoint" => "Winchester",
-			"endPoint" => "Alexandria",
-		],
-
-		[
-			"id" => "sr76",
-			"name" => "State Route 76",
-			"thumbnail" => "sr-76.png",
-			"lengthInMiles" => 13.04,
-			"startPoint" => "Midlothian",
-			"endPoint" => "Richmond",
-		],
-	];	
-
 ?>
-
 
 <!doctype html>
 <html>
@@ -86,6 +54,16 @@
 
 		<?php	if($page == "routeList") { ?>
 
+			<?php
+
+			$json = file_get_contents("data.json");
+
+			$highwayData = json_decode($json, true);
+
+			$routeData = $highwayData['highways'];
+
+			?>
+
 			<ul>
 				<?php foreach ($routeData as $route) { ?>
 					<li class='route-card'>
@@ -130,6 +108,49 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 			<?php } ?>
+		<?php } ?>
+
+		<?php if($page == 'create') { ?>
+
+			<?php if ( isset($_POST['add']) ) {
+				echo "added";
+				}	
+			?>
+
+			<h1>Enter the route's info here!</h1>
+
+			<form method='POST'>
+
+				<select name="routes" id="route-select">
+					<option value="">What type of route is this?</option>
+					<option value="">Interstate</option>
+					<option value="">State Route</option>
+				</select>
+
+				<field>
+					<label>Route Name</label>
+					<input>
+				</field>
+
+				<field>
+					<label>Length in Miles</label>
+					<input type='number'>
+				</field>
+
+				<field>
+					<label>Starting Location</label>
+					<input>
+				</field>
+
+				<field>
+					<label>End Location</label>
+					<input>
+				</field>
+
+				<button type="submit" name='add'>Add route</button>
+
+			</form>
+
 		<?php } ?>
 	</main>
 </body>
