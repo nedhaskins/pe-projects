@@ -8,6 +8,7 @@
 
 <a href='?page=home'>Home</a>
 <a href='?page=routeList'>Route List</a>
+<a href='?page=create'>Create a Route</a>
 
 </nav>
 

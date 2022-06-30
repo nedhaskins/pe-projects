@@ -41,4 +41,14 @@
 			"startPoint" => "Strasburg",
 			"endPoint" => "Washington DC",
 		],
+
+		[
+			"id" => "i81",
+			"type" => "interstate",
+			"name" => "Interstate 81",
+			"thumbnail" => "i-81.png",
+			"lengthInMiles" => 854.89,
+			"startPoint" => "Dandridge TN",
+			"endPoint" => "Hill Island ON",
+		],
 	];	

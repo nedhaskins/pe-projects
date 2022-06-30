@@ -1,34 +1,38 @@
 <?php if ( isset($_POST['add']) ) {
-
-echo "added";
-}
-
-
+	echo "added";
+	}	
 ?>
 
-
-<h1>Enter route info</h1>
-
-
-
-
+<h1>Enter the route's info here!</h1>
 
 <form method='POST'>
+
+	<select name="routes" id="route-select">
+		<option value="">What type of route is this?</option>
+		<option value="">Interstate</option>
+		<option value="">State Route</option>
+	</select>
+
 	<field>
-		<label>Type</label>
+		<label>Route Name</label>
 		<input>
 	</field>
 
 	<field>
-		<label>Range</label>
-		<input type='range' min="1" max="5">
-	</field>
-
-	<field>
-		<label>Price</label>
+		<label>Length in Miles</label>
 		<input type='number'>
 	</field>
 
-	<button type="submit">Add route</button>
+	<field>
+		<label>Starting Location</label>
+		<input>
+	</field>
+
+	<field>
+		<label>End Location</label>
+		<input>
+	</field>
+
+	<button type="submit" name='add'>Add route</button>
 
 </form>

@@ -1,3 +1,7 @@
 .route-name, .length-in-miles, .start-point, .end-point {
+	line-height: 1.8;
+}
+
+.route-name {
 	margin-top: 10px;
 }
