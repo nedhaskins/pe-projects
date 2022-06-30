@@ -23,7 +23,7 @@
 <?php if (isset($detail) ) { ?>
 
 
-<h1><?=$detail['name']?></h1>
+<h1 class='loud-voice'><?=$detail['name']?></h1>
 
 
 <picture>

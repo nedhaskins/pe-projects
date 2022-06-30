@@ -2,7 +2,7 @@
 <h2>Explore the roads of the Old Dominion.</h2>
 
 
-
+<div class='line one'></div>
 
 <nav class="site-menu">
 
@@ -10,3 +10,5 @@
 <a href='?page=routeList'>Route List</a>
 
 </nav>
+
+<div class='line two'></div>

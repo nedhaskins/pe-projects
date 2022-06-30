@@ -1,14 +1,7 @@
-<?php
-	$page = null;
-
-	if( isset($_GET['page']) ) {
-		$page = $_GET['page']; // url?page=string
-	} else {
-		$page = 'home'; //default
-	}
-?>
-
 <!doctype html>
+
+<?php require('router.php'); ?>
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -30,23 +23,11 @@
 
 <body>
 	<header>
-		<?php include('site-menu.php'); ?>
+		<?php include('header.php'); ?>
 	</header>
 
 	<main class='page-content'>
-		<?php
-			if($page == "home") {
-				include('home.php');
-			}
-
-			if($page == "routeList") {
-				include('routeList.php');
-			}
-
-			if($page == "detail") {
-				include('detail.php');
-			}
-		?>
+		<?php getTemplate($page); ?> <!--Whenever there's a bunch of repeating code...think about how you can refactor it or turn it into a function. -->
 	</main>
 </body>
 </html>
