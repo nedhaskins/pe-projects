@@ -2,11 +2,31 @@
 	box-sizing: border-box;
 }
 
+header, .page-content {
+	/*border: 3px solid green;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+inner-column {
+/*	border: 3px solid red;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 900px;
+}
 
 a {
 	display: block;
 	text-decoration: none;
 	color: inherit;
+}
+
+p {
+	margin-top: 30px;
 }
 
 p a {

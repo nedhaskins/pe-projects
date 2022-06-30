@@ -26,7 +26,7 @@
 <h1 class='loud-voice'><?=$detail['name']?></h1>
 
 
-<picture>
+<picture class='detail-image'>
 	<img src="images/<?=$detail['thumbnail']?>" alt="">
 </picture>
 

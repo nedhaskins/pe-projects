@@ -1,7 +1,9 @@
-//If the type of the item from the dataset equals the $_GET value //for the page....
+<!--If the type of the item from the dataset equals the $_GET value //for the page....
 
 
-//return all of the objects with that type.
+return all of the objects with that type.
+
+Putting all of the filtered objects into an array enables that array to be called later if needed!-->
 
 <?php
 

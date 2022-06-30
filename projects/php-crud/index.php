@@ -23,11 +23,15 @@
 
 <body>
 	<header>
-		<?php include('header.php'); ?>
+		<inner-column>
+			<?php include('header.php'); ?>
+		</inner-column>
 	</header>
 
 	<main class='page-content'>
-		<?php getTemplate($page); ?> <!--Whenever there's a bunch of repeating code...think about how you can refactor it or turn it into a function. -->
+		<inner-column>
+			<?php getTemplate($page); ?> <!--Whenever there's a bunch of repeating code...think about how you can refactor it or turn it into a function. -->
+		<inner-column>
 	</main>
 </body>
 </html>
