@@ -1,8 +1,3 @@
-//If the type of the item from the dataset equals the $_GET value //for the page....
-
-
-//return all of the objects with that type.
-
 <?php
 
 $json = file_get_contents("data.json");
