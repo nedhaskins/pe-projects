@@ -2,7 +2,7 @@
 
 		"sr20" : {
 			"id" : "sr20",
-			"type" : "stateroute",
+			"type" : "state-route",
 			"name" : "State Route 20",
 			"thumbnail" : "sr-20.png",
 			"lengthInMiles" : 89.79,
@@ -13,7 +13,7 @@
 	 
 		"sr7": {
 			"id": "sr7",
-			"type" : "stateroute",
+			"type" : "state-route",
 			"name" : "State Route 7",
 			"thumbnail" : "sr7.png",
 			"lengthInMiles" : 72.75,
@@ -23,7 +23,7 @@
 
 		"sr-76": {
 			"id" : "sr76",
-			"type" : "stateroute",
+			"type" : "state-route",
 			"name" : "State Route 76",
 			"thumbnail" : "sr-76.png",
 			"lengthInMiles" : 13.04,
@@ -53,7 +53,7 @@
 
 		"us33": {
 			"id" : "us33",
-			"type" : "USroute",
+			"type" : "us-route",
 			"name" : "US 33",
 			"thumbnail" : "us-33.png",
 			"lengthInMiles" : 135.6,
@@ -63,7 +63,7 @@
 
 		"us301": {
 			"id" : "us301",
-			"type" : "USroute",
+			"type" : "us-route",
 			"name" : "US 301",
 			"thumbnail" : "us-301.png",
 			"lengthInMiles" : 142.7,
@@ -73,7 +73,7 @@
 
 		"us60": {
 			"id" : "us60",
-			"type" : "USroute",
+			"type" : "us-route",
 			"name" : "US 60",
 			"thumbnail" : "us-60.png",
 			"lengthInMiles" : 302.7,

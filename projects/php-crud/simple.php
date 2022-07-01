@@ -35,7 +35,7 @@
 <nav class="site-menu">
 
 <a href='?page=home'>Home</a>
-<a href='?page=routeList'>Route List</a>
+<a href='?page=route-list'>Route List</a>
 
 </nav>
 	</header>
@@ -52,7 +52,7 @@
 			<p>I hope you find your visit to be informative and fun!</p>					
 		<?php } ?>
 
-		<?php	if($page == "routeList") { ?>
+		<?php	if($page == "route-list") { ?>
 
 			<?php
 

@@ -33,5 +33,8 @@
 			<?php getTemplate($page); ?> <!--Whenever there's a bunch of repeating code...think about how you can refactor it or turn it into a function. -->
 		<inner-column>
 	</main>
+	<footer>
+		<p>July 1, 2022 version 1</p>
+	</footer>
 </body>
 </html>

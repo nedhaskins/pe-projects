@@ -8,6 +8,7 @@
 body {
 
 	--anakiwa: #8acde4;
+	--lightgreen: #4af2a1;
 
 	background: linear-gradient( rgba(127, 161, 173, 0.8), rgba(127, 161, 173, 0.9)), url('../images/i-95.jpeg');
 	background-size: cover;
@@ -38,6 +39,10 @@ body {
 nav a {
 	text-decoration: underline;
 	padding: 10px;
+}
+
+nav a.active {
+	color: var(--lightgreen);
 }
 
 nav {

@@ -86,7 +86,7 @@
 			<option value="" selected="true" disabled="disabled">What type of route is this?</option>
 			<option value="interstate">Interstate</option>
 
-			<option value="stateRoute">State Route</option>
+			<option value="state-route">State Route</option>
 
 			<option value="usRoute">US Route</option>
 
