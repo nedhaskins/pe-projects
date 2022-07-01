@@ -47,7 +47,6 @@ echo gettype($routeType);
 			<?php if($routeTypeError) { ?>
 				<p class='error'><?=$routeTypeError?></p>
 
-
 			<?php } ?>
 
 		</select>
@@ -59,4 +58,4 @@ echo gettype($routeType);
 
 <?php 
 
-//show($routeType); ?>
+var_dump($_POST["route-type"]); ?>
