@@ -1,6 +1,12 @@
-<?php include('route-data.php'); ?>
+<?php
 
+$json = file_get_contents("data.json");
 
+$highwayData = json_decode($json, true);
+
+$routeData = $highwayData['highways'];
+
+?>
 
 <?php
 
