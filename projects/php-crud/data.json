@@ -69,6 +69,16 @@
 			"lengthInMiles" : 142.7,
 			"startPoint" : "Skippers",
 			"endPoint" : "Dahlgren"
+		},
+
+		"us60": {
+			"id" : "us60",
+			"type" : "USroute",
+			"name" : "US 60",
+			"thumbnail" : "us-60.png",
+			"lengthInMiles" : 302.7,
+			"startPoint" : "Callaghan",
+			"endPoint" : "Virginia Beach"
 		}
 	}
 }
