@@ -2,8 +2,8 @@
 
 	//First initialize the variables.  None of them have any value yet, as nothing has been entered by the user.
 
-	$routeType = null;
-	$routeName = null;
+	$routeType = "";
+	$routeName = "";
 	$lengthInMiles = 0;
 	$startLocation = "";
 	$endLocation = "";
@@ -30,7 +30,7 @@
 				//if the option chosen is not an empty string
 					$hasRouteType = true;
 				} else {
-					$routeTypeError = "Please add a route type.";
+					$routeTypeError = "Please select a route type.";
 				}
 				//the logic for this error appearing appears in the HTML below
 			}
@@ -82,14 +82,20 @@
 <form method='POST'>
 	<field>
 		<label>Route Type</label>
-		<select name="route-type" id="route-type">
+		<select name="route-type" id="route-type" required="required">
 			<option value="" selected="true" disabled="disabled">What type of route is this?</option>
 			<option value="interstate">Interstate</option>
 
 			<option value="stateRoute">State Route</option>
+
+			<option value="usRoute">US Route</option>
+
 			<?php if($routeTypeError) { ?>
-			<p class='error'><?=$routeTypeError?></p>
-		<?php } ?>
+				<p class='error'><?=$routeTypeError?></p>
+
+
+			<?php } ?>
+
 		</select>
 	</field>
 
