@@ -1,4 +1,4 @@
- @import 'reset.css';
+@import 'reset.css';
 @import 'setup.css';
 @import 'components.css';
 @import 'route-card.css';
@@ -60,16 +60,14 @@ nav {
 	border: 3px dashed lime;
 }*/
 
-picture {
+/*picture {
 	width: 50%;
-}
+}*/
 
 ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	gap: 20px;
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-gap: 20px;
 }
 
 

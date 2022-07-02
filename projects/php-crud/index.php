@@ -25,7 +25,7 @@
 <body>
 	<header>
 		<inner-column>
-			<?php include('header.php'); ?>
+			<?php include('modules/header.php'); ?>
 		</inner-column>
 	</header>
 

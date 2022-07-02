@@ -1,6 +1,6 @@
 <?php
 
-$json = file_get_contents("data.json");
+$json = file_get_contents("data/data.json");
 
 $highwayData = json_decode($json, true);
 
