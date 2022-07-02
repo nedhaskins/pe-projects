@@ -1,5 +1,6 @@
 <!doctype html>
 
+<?php include('functions.php'); ?>
 <?php require('router.php'); ?>
 
 <html>

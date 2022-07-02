@@ -1,3 +1,6 @@
+<?php include('modules/site-menu.php'); ?>
+
+
 <h1>Highways of Virginia</h1>
 <h2>Explore the roads of the Old Dominion.</h2>
 
