@@ -10,9 +10,10 @@
 	<link rel="stylesheet" href="css/site.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ceviche+One|Josefin+Sans">
 
-	<!--Metadata
-		<meta name='description' content='PSSST (CSS)'>
-	<meta property='og:image' content=''> -->
+<!--Metadata -->
+	<meta property='og:image' content='https://peprojects.dev/alpha-4/ned/projects/php-crud/images/i-95.jpeg'> 
+	<meta name='description' content='Resource for information on Virginia highways and byways.'>
+
 
 	<?php if($page == 'home') { ?>
 		<title>Highways of Virginia</title>
