@@ -8,18 +8,6 @@
 	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
 }
 
-.route-card picture {
-border: 3px solid green;
-/*aspect-ratio: 1 / 1;
-width: 100%;*/
-}
-
-.route-card img {
-/*	width: 100%;
-	height: 100%;*/
-	object-fit: cover;
-}
-
 .route-card .text-content {
 	display: flex;
 	flex-direction: column;

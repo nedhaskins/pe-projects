@@ -20,8 +20,11 @@
 	$startLocationError = false;
 	$endLocationError = false;
 
+	$formSubmitted = isset($_POST["submitted"]);
 
-	if( isset($_POST["add"]) ) {
+	$response = "";
+
+	if($formSubmitted) {
 
 			if( isset($_POST['route-type']) ) {
 				$routeType = $_POST['route-type'];
@@ -51,7 +54,7 @@
 				if( intval($lengthInMiles) > 0 ) {
 					$hasLengthInMiles = true;
 				} else {
-					$lengthInMilesError = "Please add a route length.";
+					$lengthInMilesError = "Please add a valid route length!";
 				}
 			}
 	
@@ -74,6 +77,26 @@
 					$endLocationError = "Please add an end location.";
 				}
 			}
+
+		if($routeType && $routeName && $lengthInMiles && $startLocation && $endLocation) {
+
+			$newRoute = [
+				'type' => $routeType, 
+				'name' => $routeName,
+				'lengthInMiles' => $lengthInMiles,
+				'startPoint' => $startLocation,
+				'endPoint' => $endLocation,
+			];
+
+			$routeBucket = json_encode($newRoute);
+
+			file_put_contents('data/route-bucket.json', $routeBucket);
+
+			$response = "Data encoded and placed in file successfully.";
+		} else {
+
+			$response = "Data encoding error!";
+		}
 	}	
 ?>
 
@@ -131,6 +154,7 @@
 		<?php } ?>
 	</field>
 
-	<button class='route-button' type="submit" name='add'>Add route</button>
+	<button class='route-button' type="submit" name='submitted'>Add route</button>
 
+	<p class='form-response'><?=$response?></p>
 </form>
