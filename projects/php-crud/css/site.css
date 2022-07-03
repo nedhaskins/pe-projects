@@ -13,7 +13,7 @@ body {
 	--lightgreen: #4af2a1;
 	--amazon: #36745c;
 
-	background: linear-gradient( rgba(127, 161, 173, 0.8), rgba(127, 161, 173, 0.9)), url('../images/i-95.jpeg');
+	background: linear-gradient( rgba(130, 170, 155, 0.8), rgba(130, 170, 155, 0.8)), url('../images/i-95.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
