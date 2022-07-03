@@ -35,7 +35,7 @@
 		<inner-column>
 	</main>
 	<footer>
-		<p>July 1, 2022 version 1</p>
+		<p>last edit July 2 @ 21:25</p>
 	</footer>
 </body>
 </html>
