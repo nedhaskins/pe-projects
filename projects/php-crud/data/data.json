@@ -4,7 +4,7 @@
 			"id" : "sr20",
 			"type" : "state-route",
 			"name" : "State Route 20",
-			"thumbnail" : "sr-20.png",
+			"thumbnail" : "sr-20.jpg",
 			"lengthInMiles" : 89.79,
 			"startPoint" : "Dillwyn",
 			"endPoint" : "Wilderness"
@@ -15,7 +15,7 @@
 			"id": "sr7",
 			"type" : "state-route",
 			"name" : "State Route 7",
-			"thumbnail" : "sr7.png",
+			"thumbnail" : "sr-7.jpg",
 			"lengthInMiles" : 72.75,
 			"startPoint" : "Winchester",
 			"endPoint" : "Alexandria"
@@ -25,7 +25,7 @@
 			"id" : "sr76",
 			"type" : "state-route",
 			"name" : "State Route 76",
-			"thumbnail" : "sr-76.png",
+			"thumbnail" : "sr-76.jpg",
 			"lengthInMiles" : 13.04,
 			"startPoint" : "Midlothian",
 			"endPoint" : "Richmond"
@@ -35,7 +35,7 @@
 			"id" : "i66",
 			"type" : "interstate",
 			"name" : "Interstate 66",
-			"thumbnail" : "i-66.png",
+			"thumbnail" : "i-66.jpg",
 			"lengthInMiles" : 76.38,
 			"startPoint" : "Strasburg",
 			"endPoint" : "Washington DC"
@@ -45,7 +45,7 @@
 			"id" : "i81",
 			"type" : "interstate",
 			"name" : "Interstate 81",
-			"thumbnail" : "i-81.png",
+			"thumbnail" : "i-81.jpg",
 			"lengthInMiles" : 854.89,
 			"startPoint" : "Dandridge TN",
 			"endPoint" : "Hill Island ON"
@@ -55,7 +55,7 @@
 			"id" : "us33",
 			"type" : "us-route",
 			"name" : "US 33",
-			"thumbnail" : "us-33.png",
+			"thumbnail" : "us-33.jpg",
 			"lengthInMiles" : 135.6,
 			"startPoint" : "Rawley Springs",
 			"endPoint" : "Richmond"
@@ -65,7 +65,7 @@
 			"id" : "us301",
 			"type" : "us-route",
 			"name" : "US 301",
-			"thumbnail" : "us-301.png",
+			"thumbnail" : "us-301.jpg",
 			"lengthInMiles" : 142.7,
 			"startPoint" : "Skippers",
 			"endPoint" : "Dahlgren"
@@ -75,7 +75,7 @@
 			"id" : "us60",
 			"type" : "us-route",
 			"name" : "US 60",
-			"thumbnail" : "us-60.png",
+			"thumbnail" : "us-60.jpg",
 			"lengthInMiles" : 302.7,
 			"startPoint" : "Callaghan",
 			"endPoint" : "Virginia Beach"

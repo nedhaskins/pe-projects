@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'setup.css';
+@import 'header.css';
 @import 'typography.css';
 @import 'components.css';
 @import 'forms.css';
@@ -19,38 +20,7 @@ body {
 }
 
 
-.line {
-	border: 1px solid black;
-	width: 60%;
-}
 
-.line.one {
-	margin-top: 10px;
-}
-
-.line.two {
-	margin-bottom: 20px;
-}
-
-nav a {
-	text-decoration: underline;
-	padding: 10px;
-}
-
-nav a.active {
-	color: var(--lightgreen);
-}
-
-nav {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-
-}
-
-header h1 {
-	margin-top: 20px;
-}
 
 
 /*.page-content {
