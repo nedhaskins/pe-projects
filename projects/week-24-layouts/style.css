@@ -17,7 +17,7 @@ html {
 body {
 	background-color: var(--sweetcorn);
 
-	height: 100vh;
+
 }
 
 @media(min-width: 960px) {
@@ -25,6 +25,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+		height: 100vh;
 	}
 }
 
@@ -89,7 +90,7 @@ picture-section {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
-  		grid-gap: 20px;
+		grid-gap: 10px;
 	}
 }
 
