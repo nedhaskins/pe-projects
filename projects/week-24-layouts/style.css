@@ -10,10 +10,17 @@
 
 
 html {
+
+	--falured: hsl(3, 65%, 31%);
+	--sweetcorn: hsl(52, 87%, 72%);
 	font-family: sans-serif;
 	font-size: 20px;
+	color: var(--falured);
 }
 
+body {
+	background-color: var(--sweetcorn);
+}
 
 
 
@@ -34,7 +41,7 @@ picture {
 /*STRUCTURE*/
 
 inner-column {
-	/*border: 3px solid red;*/
+	margin: 30px;
 }
 
 
@@ -45,15 +52,17 @@ inner-column, article-section {
 
 
 
-@media (min-width:  1080px) {
+@media (min-width:  960px) {
 
 	inner-column {
 		display: flex;
 		flex-direction: row;
+		gap: 40px;
 	}
 }
 
 picture-section {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -122,8 +131,9 @@ picture {
 }
 
 .line {
-	border: 1px solid black;
+	border: 1px solid var(--falured);
 	width: 90%;
+
 }
 
 
@@ -148,6 +158,15 @@ h3 {
 h3, p, picture, .line {
 	margin-top: 20px;
 }
+
+@media(min-width: 600px) {
+
+	picture {
+		margin-top: 0px;
+	}
+}
+
+
 
 .heading-voice {
 	font-weight: 700;
