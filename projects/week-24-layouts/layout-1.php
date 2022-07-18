@@ -31,9 +31,7 @@ $images = $data['images'];
 			<div class='articles'>
 				<?php foreach ($articles as $article) { ?>
 					<div class='article'>
-						<div class='line-wrapper'>
-							<div class=line></div>
-						</div>
+						<div class=line></div>
 						<h3 class='heading-voice'><?=$article['title']?></h3>
 						<p class='copy-voice'><?=$article['content']?></p>
 					</div><!--article-->
