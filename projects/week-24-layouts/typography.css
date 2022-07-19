@@ -1,0 +1,21 @@
+
+
+
+
+
+.heading-voice {
+	font-weight: 700;
+}
+
+.copy-voice {
+	font-size: 1rem;
+}
+
+.teaser-voice {
+	font-style: italic;
+}
+
+
+p.copy-voice {
+	margin-top: 8px;
+}

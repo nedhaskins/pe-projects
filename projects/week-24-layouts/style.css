@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import 'typography.css';
 
 
 
@@ -9,6 +10,12 @@ html {
 
 	--falured: hsl(3, 65%, 31%);
 	--sweetcorn: hsl(52, 87%, 72%);
+
+	--ink: ;
+	--paper: ;
+	--color: ;
+	--highlight: ;
+
 	font-family: sans-serif;
 	font-size: 16px;
 	color: var(--falured);
@@ -16,16 +23,13 @@ html {
 
 body {
 	background-color: var(--sweetcorn);
-
-
+	/*margin: 20px;*/
 }
 
-@media(min-width: 960px) {
+@media(min-width: 600px) {
 	body {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	height: 100vh;
 	}
 }
 
@@ -35,8 +39,19 @@ img {
 	height: auto;
 }
 
-picture {
+picture, svg {
 	display: block;
+}
+
+logo {
+	display: block;
+	width: 24%;
+}
+
+@media(min-width: 960px) {
+	svg {
+		max-height: 90px;
+	}
 }
 
 /*STRUCTURE*/
@@ -52,17 +67,24 @@ inner-column, article-section {
 }
 
 
-
+/* commented out for Layout 2 */
 @media (min-width:  960px) {
 
 	inner-column {
-		display: flex;
-		flex-direction: row;
+/*		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 40px;
+		gap: 40px;*/
 		max-width: 1200px;
 	}
 }
+
+
+/*@media(min-width: 960px) {
+	inner-column {
+		max-height: 600px;
+	}
+}*/
 
 picture-section {
 	margin-top: 20px;
@@ -80,19 +102,49 @@ picture-section {
 	}
 }
 
-.articles {
-	/*border: 3px solid red;*/
+.article + .article {
+	margin-top: 20px;
 }
+
+.article:last-of-type {
+	margin-bottom: 50px;
+}
+
 
 @media(min-width: 600px) {
 
 	.articles {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 		grid-gap: 10px;
 	}
+
+	.article + .article {
+		margin-top: 0px;
+	}
+
+	.article {
+		border: 3px solid black;
+		padding: 14px;
+	}
+
+	.article:last-of-type {
+	margin-bottom: 0px;
+	}
+
 }
+
+
+/*@media(min-width: 960px) {
+	.articles {
+		max-height: 400px;
+	}
+}
+*/
+
+
+
 
 .article-heading {
 	display: flex;
@@ -102,13 +154,28 @@ picture-section {
 
 .line {
 	border: 1px solid var(--falured);
-	width: 90%;
+	width: 70%;
 
+}
+
+@media(min-width: 600px) {
+	.line {
+	display: none;
+	}
 }
 
 
 h3.heading-voice {
+	font-weight: 700;
 }
+
+@media(min-width: 600px) {
+footer {
+	margin: 30px 0px 30px 0px;
+}
+}
+
+
 
 
 
@@ -122,7 +189,7 @@ img {
 
 h2 {
 	font-size: 2.3rem;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 h2 + p {
@@ -135,17 +202,11 @@ h3 {
 
 }
 
-h3, p, picture, .line {
-	margin-top: 20px;
+h3, picture, .line {
+	margin: 16px 0px 16px 0px;
 }
 
-.heading-voice {
-	font-weight: 700;
-}
 
-.copy-voice {
-	font-size: 1rem;
-}
 
 @media(min-width: 600px) {
 
@@ -154,5 +215,24 @@ h3, p, picture, .line {
 	}
 }
 
+
+
+@media(min-width: 600px) {
+
+	.text-wrapper {
+		display: flex;
+		justify-content: left;
+		width: 55%;
+		margin-top: 15px;
+	}
+
+	.text-wrapper p {
+		color: var(--sweetcorn);
+		background-color: var(--falured);
+		line-height: 1.6;
+		padding: 20px;
+	}
+	}
+}
 
 
