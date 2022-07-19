@@ -1,5 +1,6 @@
 
-<!doctype html>
+
+
 
 <?php
 
@@ -8,9 +9,11 @@ $rate = 0;
 $years = 0;
 $compounds = 0;
 
-$valueError = false;
+
 
 if( isset($_POST['submitted']) ) {
+
+
 
 	if( isset($_POST['principal']) ) {
 		$principal = (float)$_POST['principal'] ?? 0; // null coalescing operator
@@ -55,6 +58,10 @@ if( isset($_POST['submitted']) ) {
 		}
 	}
 
+
+	if($compounds != 0) {
+
+
 	$percentageRate = $rate / 100;
 
 	$futureValue = $principal * pow(1 +($percentageRate / $compounds), $compounds * $years);
@@ -62,11 +69,13 @@ if( isset($_POST['submitted']) ) {
 	$roundedPrincipal = number_format($principal, 2, '.', ',');
 
 	$roundedFinal = number_format($futureValue, 2, '.', ',');
+}
 
 }
 
 ?>
 
+<!doctype html>
 
 <html>
 <head>
@@ -127,8 +136,7 @@ if( isset($_POST['submitted']) ) {
 
 <output>
 	
-
-	<p>$<?=$roundedPrincipal?> invested at <?=$rate?>% for <?=$years?> years compounded <?=$compounds?> times per year is $<?=$roundedFinal?>.
+<p>$<?=$roundedPrincipal?> invested at <?=$rate?>% for <?=$years?> years compounded <?=$compounds?> times per year is $<?=$roundedFinal?>.
 
 </output>
 
