@@ -67,9 +67,13 @@ if( isset($_POST['submitted']) ) {
 	<button type='submit' name='submitted'>How many gallons?</button>
 </form>
 
+<?php if($length && $width) { ?>
+
 <output>
 	
 	<p>You will need to purchase <?=$gallons?> gallons of paint to cover <?=$area?> square feet.</p>
 
 </output>
+
+<?php } ?>
 
