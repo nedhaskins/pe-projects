@@ -4,18 +4,11 @@
 
 /*SETUP.CSS IN PROGRESS*/
 
-* {
-	box-sizing: border-box;
-}
 
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
 
 :root {
 	--main-text-color: #811e18;
+	--sweetcorn: hsl(52, 87%, 72%);
 }
 
 body {
@@ -26,6 +19,7 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	font-family: 'Baskerville';
+	margin: 20px;
 }
 
 h1 {
@@ -146,4 +140,16 @@ form p {
 
 .feedback {
 	color: lime;
+}
+
+
+output {
+	background-color: black;
+	padding: 20px;
+	font-family: 'Courier';
+	color: hsl(122, 83%, 77%);
+}
+
+.error {
+	color: var(--sweetcorn);
 }

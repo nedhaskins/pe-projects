@@ -20,7 +20,7 @@
 
 	//See if there was any user input
 
-	if ( isset($_POST['submit']) ) {
+	if ( isset($_POST['submitted']) ) {
 
 			//Assess any new values
 
@@ -72,7 +72,7 @@
 			<input type='number' name='pizzas'min='1' value="<?=$pizzas?>" required>
 		</field>
 
-		<button type='submit' name='submit'>Submit</button>
+		<button type='submit' name='submitted'>Submit</button>
 
 	</form>
 
