@@ -3,12 +3,14 @@
 
 <?php
 
+$principal = 0;
+$rate = 0;
+$years = 0;
+$compounds = 0;
 
-//no variables need to be defined in this space.  They will be created when there's a $_POST value.
-
+$valueError = false;
 
 if( isset($_POST['submitted']) ) {
-
 
 	if( isset($_POST['principal']) ) {
 		$principal = (float)$_POST['principal'] ?? 0; // null coalescing operator
@@ -24,7 +26,7 @@ if( isset($_POST['submitted']) ) {
 	if( isset($_POST['rate']) ) {
 		$rate = (float)$_POST['rate'];
 		if ($rate > 0) {
-			$hasRate = true;
+		$hasRate = true;
 		} else {
 		$valueError = "Please enter a value!";
 		}
@@ -40,13 +42,22 @@ if( isset($_POST['submitted']) ) {
 		} else {
 		$valueError = "Please enter a value!";
 		}
+	}
 
+	if( isset($_POST['compounds']) ) {
+		$compounds = (float)$_POST['compounds'];
+
+		if ($compounds > 0) {
+		$hasCompounds = true;
+
+		} else {
+		$valueError = "Please enter a value!";
+		}
 	}
 
 	$percentageRate = $rate / 100;
 
-	$futureValue = $principal * (1 + ($percentageRate * $years));
-
+	$futureValue = $principal * pow(1 +($percentageRate / $compounds), $compounds * $years);
 
 	$roundedPrincipal = number_format($principal, 2, '.', ',');
 
@@ -66,7 +77,7 @@ if( isset($_POST['submitted']) ) {
 </head>
 <body>
 
-<h1>#12 - Computing Simple Interest</h1>
+<h1>#13 - Determining Compound Interest</h1>
 
 <form method='POST'>
 	<field>
@@ -74,7 +85,7 @@ if( isset($_POST['submitted']) ) {
 		<input name='principal' type='number' value='<?=$principal?>' step= '0.01' min='0'>
 
 		<?php if($valueError) { ?>
-				<p class='error'><?=$valueError?></p>
+			<p class='error'><?=$valueError?></p>
 		<?php } ?>
 		
 	</field>
@@ -84,7 +95,7 @@ if( isset($_POST['submitted']) ) {
 		<input name='rate' type='number' value='<?=$rate?>' step= '0.01' min='0'>
 
 		<?php if($valueError) { ?>
-				<p class='error'><?=$valueError?></p>
+			<p class='error'><?=$valueError?></p>
 		<?php } ?>
 	</field>
 
@@ -93,24 +104,31 @@ if( isset($_POST['submitted']) ) {
 		<input name='years' type='number' value='<?=$years?>' step= '0.01' min='0'>
 
 		<?php if($valueError) { ?>
-				<p class='error'><?=$valueError?></p>
+			<p class='error'><?=$valueError?></p>
 		<?php } ?>
 	</field>
+
+	<field>
+		<label>Enter the number of compoundings per year.</label>
+		<input name='compounds' type='number' value='<?=$compounds?>' step= '0.01' min='0'>
+
+		<?php if($valueError) { ?>
+			<p class='error'><?=$valueError?></p>
+		<?php } ?>
+	</field>
+
 
 	<button type='submit' name='submitted'>Submit info</button>
 </form>
 
 
 
-<?php if($principal && $rate && $years) { ?>
+<?php if($principal && $rate && $years && $compounds) { ?>
 
 <output>
 	
 
-
-	<p>The principal amount is $<?=$roundedPrincipal?>.</p>
-	<p>The interest rate is <?=$rate?>%.</p>
-	<p>After <?=$years?> years at <?=$rate?>%, the value of the principal will be $<?=$roundedFinal?>.
+	<p>$<?=$roundedPrincipal?> invested at <?=$rate?>% for <?=$years?> years compounded <?=$compounds?> times per year is $<?=$roundedFinal?>.
 
 </output>
 
