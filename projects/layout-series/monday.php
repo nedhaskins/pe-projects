@@ -2,11 +2,13 @@
 
 <?php
 
-$json = file_get_contents("layout-2.json");
+$json = file_get_contents("data/data.json");
 
 $data = json_decode($json, true);
 
 $articles = $data['articles'];
+
+$images = $data['images'];
 
 ?>
 
@@ -14,7 +16,7 @@ $articles = $data['articles'];
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title></title>
 </head>
 <body>
@@ -23,16 +25,13 @@ $articles = $data['articles'];
 
 		<article-section>
 			<div class='article-heading'>
-				<h4 class='teaser-voice'>Little teaser</h4>
 				<h2 class='heading-voice'>Heading level 2</h2>
 				<p class='copy-voice'>This is some body text. This is some body text. This is some body text. This is some body text.</p>
 			</div>
 			<div class='articles'>
 				<?php foreach ($articles as $article) { ?>
 					<div class='article'>
-						<logo>
-							<?php include('logo.svg'); ?>
-						</logo>
+						<div class=line></div>
 						<h3 class='heading-voice'><?=$article['title']?></h3>
 						<p class='copy-voice'><?=$article['content']?></p>
 					</div><!--article-->
@@ -40,13 +39,13 @@ $articles = $data['articles'];
 			</div>
 		</article-section>
 
-		<footer>
-			<div class='line'></div>
-			<div class='text-wrapper'>
-				<p>This is some body text. This is some body text. This is some body text. This is some body text.</p>
-			</div>
-		</footer>
-
+		<picture-section>
+			<?php foreach ($images as $image) { ?>
+				<picture>
+						<img src='<?=$image['image']?>' alt="">
+				</picture>
+			<?php } ?>
+		</picture-section>
 
 	</inner-column>
 

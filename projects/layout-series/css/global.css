@@ -1,0 +1,10 @@
+
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+
+

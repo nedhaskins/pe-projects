@@ -96,6 +96,7 @@ form :is(input, button) {
 form label {
 	color: #f6e579;
 	text-align: center;
+	font-size: 26px;
 }
 
 form input {

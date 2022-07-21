@@ -1,0 +1,21 @@
+{
+	"heading" : "Today's News Stories!",
+
+	"opening" : "All the news that's legible. No refunds.",
+
+	"articles" : [
+	{
+		"title" : "Florida Man Wins Lottery",
+		"content" : "The man only expected to get a bag of Doritos and a small lotto prize, but he got a whole lot more thanks to Lady Luck.  The ecstatic man was spotted yesterday evening on Marshall Street doing backflips in the street and singing songs from the first Black Sabbath album. "
+	},
+
+	{	
+		"title" : "Onions Proven to Narrow Waistline",
+		"content" : "The sweet, savory vegetable might be just what you need to shed those bothersome extra inches.  Call today for a free bag."
+	},
+
+	{	
+		"title" : "Cheese Proven to Increase Happiness",
+		"content" : "Scientists were on their way to drop off this case study but stopped at the wine and cheese shop instead. The case study found that mozzarella, brie, muenster, and a glass of Malbec is proven to do more for your frame of mind than five overpriced therapy sessions."
+	}]
+}
