@@ -1,3 +1,7 @@
+/*This section contains elements that will be constant across ALL files.
+Put the custom elements in the root style.css. */
+
+
 article-section {
 	display: block;
 
@@ -16,8 +20,3 @@ article-section header {
 }
 
 
-@media(min-width: 500px) {
-	article-section header {
-		padding: 20px 20px 88px 20px; 
-	}
-}

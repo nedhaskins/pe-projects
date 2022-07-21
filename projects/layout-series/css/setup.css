@@ -16,18 +16,8 @@ img {
 	height: auto;
 }
 
-picture, svg {
+picture, svg, logo {
 	display: block;
 }
 
-logo {
-	display: block;
-	width: 24%;
-}
-
-@media(min-width: 960px) {
-	svg {
-		max-height: 90px;
-	}
-}
 
