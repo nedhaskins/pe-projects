@@ -28,6 +28,7 @@
 	.drop-downs .articles {
 		display: flex;
 		flex-direction: column;
+		width: 35%;
 	}
 }
 
