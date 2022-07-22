@@ -1,0 +1,65 @@
+{
+	"header" : {
+		"teaser" : "Introducing the thing you've been waiting for...",
+		"title" : "Using a drop-down element",
+		"copy" : "Some stuff that's a placeholder 'cause that's how we do."
+		},
+
+	"section-1" : [
+		{
+			"teaser" : "Introducing the thing you've been waiting for..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		}],
+	
+
+
+
+
+		[{
+			"teaser" : "Introducing the thing you've been waiting for..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		},
+		{
+			"title" : "Drop-down bonanza",
+			"content" : "This copy will either win an award for \"best copy\" or be swept under the rug (after this dropdown's closed..."
+		}]
+	]
+}

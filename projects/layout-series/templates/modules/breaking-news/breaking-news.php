@@ -1,6 +1,7 @@
 <article-section>
 	
 	<header>
+		<h4 class='teaser-voice'><?=$teaser?></h4>
 		<h2 class='heading-voice'><?=$heading?></h2>
 		<p class='copy-voice'><?=$opening?></p>
 	</header>

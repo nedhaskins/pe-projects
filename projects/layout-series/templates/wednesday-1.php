@@ -1,6 +1,6 @@
 <?php
 
-$json = file_get_contents("data/wednesday-2.json");
+$json = file_get_contents("../data/wednesday-1.json");
 
 $data = json_decode($json, true);
 
@@ -14,7 +14,7 @@ $opening = $data['opening'];
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<title></title>
 </head>
 <body>
@@ -22,7 +22,7 @@ $opening = $data['opening'];
 	<section class='breaking-news'>
 		<inner-column>
 
-			<?php include('article-section.php');?>
+			<?php include('modules/breaking-news/breaking-news.php');?>
 
 		</inner-column>
 	</section>
