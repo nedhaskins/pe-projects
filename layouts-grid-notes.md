@@ -18,7 +18,7 @@
 
 - The idea of putting in elements for screen-readers only is coming up again.  Hide the heading so it doesn’t take up its own grid cell.
 
-- Using grid {gap}  to create the space between the text and photos without haveing to set and then undo margin-top (in a flex setup)
+- Using grid {gap}  to create the space between the text and photos without having to set and then undo margin-top (in a flex setup)
 
 Lots of considerations to make about a layout before the code makes an appearance.  Will text boxes align with images?  What “guides” will be followed?
 
