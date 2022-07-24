@@ -10,6 +10,7 @@
 @import '../templates/modules/breaking-news/breaking-news.css';
 @import '../templates/modules/drop-downs/drop-downs.css';
 @import '../templates/modules/two-pillars/two-pillars.css';
+@import '../templates/modules/loose-screw/loose-screw.css';
 
 
 
@@ -18,4 +19,10 @@
 
 }
 
+
+.index-line {
+	border: 3px solid var(--ink);
+	margin-top: 30px;
+	width: 80%;
+}
 

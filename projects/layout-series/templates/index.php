@@ -28,18 +28,21 @@
 		</inner-column>
 	</section>
 
-	<section class='loose-screw'>
+	<section class='two-pillars'>
+
+	<div class='index-line'></div>
+	
 		<inner-column>
 
-			<?php include('modules/loose-screw/loose-screw.php'); ?>
+			<?php include('modules/two-pillars/two-pillars.php'); ?>
 
 		</inner-column>
 	</section>
 
-	<section class='two-pillars'>
+	<section class='loose-screw'>
 		<inner-column>
 
-			<?php include('modules/two-pillars/two-pillars.php'); ?>
+			<?php include('modules/loose-screw/loose-screw.php'); ?>
 
 		</inner-column>
 	</section>
