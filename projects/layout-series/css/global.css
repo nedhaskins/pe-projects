@@ -1,5 +1,5 @@
 
-body {
+html {
 	background-color: var(--paper);
 	color: var(--ink);
 	font-family: sans-serif;
@@ -8,3 +8,9 @@ body {
 
 
 
+@media (prefers-color-scheme: dark) {
+	html {
+	background-color: var(--ink);
+	color: var(--paper);
+}
+}

@@ -3,11 +3,13 @@ html {
 	--falured: hsl(3, 65%, 31%);
 	--sweetcorn: hsl(52, 87%, 72%);
 
-	--ink: hsl(3, 65%, 31%);
-	--paper: hsl(52, 87%, 72%);
+	--ink: var(--falured);
+	--paper: var(--sweetcorn);
 	--color: red;
 	--highlight: blue;
 
-
-	
 }
+
+
+
+

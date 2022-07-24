@@ -10,9 +10,29 @@
 	color: var(--ink);
 }
 
+
+@media (prefers-color-scheme: dark) {
+
+	.copy-voice {
+		color: var(--paper);
+	}
+
+	.dark-background {
+		background-color: var(--ink);
+	}
+
+	.lightcolor {
+		color: var(--ink);
+	}
+
+}
+
+
 .teaser-voice {
 	font-style: italic;
 }
+
+
 
 
 p.copy-voice {
@@ -20,11 +40,11 @@ p.copy-voice {
 }
 
 .dark-background {
-	background-color: var(--falured);
+	background-color: var(--ink);
 }
 
 .lightcolor {
-	color: var(--sweetcorn);
+	color: var(--paper);
 }
 
 /*TYPOGRAPHY*/
