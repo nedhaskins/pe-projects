@@ -1,0 +1,34 @@
+.loose-screw {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.loose-screw inner-column {
+	width: 100%;
+}
+
+shirts, tattoos, artists, guest-artists {
+	display: block;
+}
+
+/*all photos have these attributes */
+
+
+/*
+.loose-screw {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('homepage-background.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+*/
+
+
+
+picture { 
+	border: 3px solid var(--ink);
+}
+
+figcaption {
+	color: green;
+}

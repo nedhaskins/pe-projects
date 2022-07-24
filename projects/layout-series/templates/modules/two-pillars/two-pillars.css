@@ -9,10 +9,9 @@
 }
 
 .two-pillars .site-header {
-
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 30px;
     gap: 20px;
 }

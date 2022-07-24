@@ -31,7 +31,7 @@
 	<section class='two-pillars'>
 
 	<div class='index-line'></div>
-	
+
 		<inner-column>
 
 			<?php include('modules/two-pillars/two-pillars.php'); ?>
@@ -40,6 +40,9 @@
 	</section>
 
 	<section class='loose-screw'>
+
+	<div class='index-line'></div>
+
 		<inner-column>
 
 			<?php include('modules/loose-screw/loose-screw.php'); ?>
