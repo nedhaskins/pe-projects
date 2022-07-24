@@ -15,7 +15,7 @@
 	<section class='breaking-news'>
 		<inner-column>
 
-			<?php include('modules/breaking-news/breaking-news.php');?>
+			<?php //include('modules/breaking-news/breaking-news.php');?>
 
 		</inner-column>
 	</section>
@@ -23,7 +23,7 @@
 	<section class='drop-downs'>
 		<inner-column>
 
-			<?php include('modules/drop-downs/drop-downs.php'); ?>
+			<?php //include('modules/drop-downs/drop-downs.php'); ?>
 
 		</inner-column>
 	</section>

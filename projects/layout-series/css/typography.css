@@ -7,6 +7,7 @@
 
 .copy-voice {
 	font-size: 1rem;
+	color: var(--ink);
 }
 
 .teaser-voice {
@@ -43,16 +44,18 @@ h2 + p {
 }
 
 
-h3 {
-	font-size: 1.25rem;
-
+h3.heading-voice {
+	font-size: 1.5rem;
 }
 
-h3, picture, .line {
+
+/*GET RID OF THIS */
+
+/*h3, picture, .line {
 	margin: 16px 0px 16px 0px;
 }
-
-
+*/
+/*--------------*/
 
 @media(min-width: 600px) {
 

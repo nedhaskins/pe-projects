@@ -1,7 +1,7 @@
 
 <header class='site-header'>
 
-	<h1 class='heading-voice'>Tattoo Shop</h1>
+	<h1 class='heading-voice'>Tattoo Shop 1</h1>
 
 
 	<nav class='navbar'>

@@ -4,31 +4,53 @@
 	align-items: center;
 }
 
+
+
+
 .loose-screw inner-column {
-	width: 100%;
+	width: 80%;
+	margin-bottom: 30px;
 }
 
-shirts, tattoos, artists, guest-artists {
-	display: block;
+
+.loose-screw .site-header {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
 }
 
-/*all photos have these attributes */
+.loose-screw h3.heading-voice {
+		margin: 16px 0px 16px 0px;
+		text-align: center;
+}
 
 
-/*
-.loose-screw {
-		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('homepage-background.jpg');
-		background-size: cover;
-		background-position: center;
+
+@media(min-width: 600px) {
+	.loose-screw picture-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: start;
 	}
-*/
+}
 
 
 
 picture { 
-	border: 3px solid var(--ink);
+/*	width: clamp(266px, 58vw, 400px);*/
+	padding: 18px;
+	text-align: center;
+}
+
+
+.shop-photo img {
+		filter: hue-rotate(90deg);
+		max-width: 300px;
+		border: 3px solid var(--ink);
 }
 
 figcaption {
-	color: green;
+	color: var(--ink);
+	padding: 12px;
+	font-size: 22px;
 }
