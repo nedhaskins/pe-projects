@@ -1,0 +1,195 @@
+.two-pillars {
+
+
+}
+
+.two-pillars inner-column {
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.two-pillars .site-header {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+
+.two-pillars .navbar ol {
+	display: flex;
+}
+
+
+.two-pillars .navbar a {
+	display: block;
+	text-decoration: none;
+	color: var(--ink);
+	padding: 10px;
+}
+
+photo-module, footer-top, box {
+	display: block;
+}
+
+.two-pillars call-to-action {
+	display: flex;
+	align-items: center;
+}
+
+.two-pillars photo-module {
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('homepage-background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.two-pillars footer {
+	background-color: var(--paper);
+
+	margin: 0px;
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+.two-pillars footer-top {
+	background-color: var(--paper);
+	border: 3px solid black;
+	padding: 18px;
+/*	margin: -50px 100px 0px 100px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transform: translate(0%, -50%);
+}
+
+.two-pillars footer-top h2 {
+	margin: 0px;
+}
+
+
+
+
+
+.two-pillars call-to-action {
+	margin-top: 10px;
+	gap: 20px;
+}
+
+
+.two-pillars h2.heading-voice {
+	font-size: 1.5rem;
+}
+
+.two-pillars footer .copy-voice {
+	font-size: 0.8rem;
+}
+
+.two-pillars footer button {
+	margin-top: -41px;
+	margin-bottom: 40px;
+	background-color: var(--ink);
+	color: var(--paper);
+	padding: 19px;
+}
+
+.two-pillars box {
+	background-color: var(--falured);
+	width: 40px;
+	height: 40px;
+}
+
+.two-pillars h2 + p {
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+
+
+	.two-pillars header {
+
+	}
+
+
+
+	.two-pillars photo-module {
+			}
+
+
+
+
+	.two-pillars footer {
+		
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+
+	.two-pillars header {
+
+	}
+
+
+
+
+	.two-pillars photo-module {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('homepage-background.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: 80px;
+	}
+
+
+
+
+	.two-pillars footer {
+		
+	}
+
+
+}
+
