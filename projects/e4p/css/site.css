@@ -14,8 +14,6 @@
 	--sweetcorn: hsl(52, 87%, 72%);
 }
 
-
-
 body {
 	font-size: 16px;
 	color: #81201b;
@@ -26,18 +24,14 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	font-family: 'Baskerville';
-	margin: 20px;
+	margin: 20px 20px 50px 20px;
 }
-
-
 
 .link-container {
 	 display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
-
 
 
 a:link {

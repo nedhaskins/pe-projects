@@ -1,5 +1,5 @@
 inner-column.e4p {
-	max-width: 400px;
+	max-width: 600px;
 }
 
 
@@ -9,7 +9,7 @@ inner-column.e4p {
 .attention-voice {
 	color: var(--falured);
 	font-family: 'Baskerville';
-	font-size: 1.9rem;
+	font-size: 2.7rem;
 	letter-spacing: 0.2em;
    padding: 27px;
 	text-align: center;
