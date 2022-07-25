@@ -16,7 +16,7 @@
 	//the above deals with what key-value pairs show in in the URL
 
 	function getTemplate($page) {
-		include($page . ".php");
+		include("templates/pages/" . $page . ".php");
 	}
 
 ?>

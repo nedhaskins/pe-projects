@@ -1,0 +1,11 @@
+{
+    "id": "home",
+    "title": "Welcome",
+    "intro": "You've made it!",
+    "sections": [
+        {
+            "module": "big-heading",
+            "heading": "My latest work"
+        }
+    ]
+}

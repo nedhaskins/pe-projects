@@ -12,7 +12,7 @@ function currentPage() {
 //and put them in the corresponding HTML
 function pageData() {
 	$page = currentPage();
-	$filePath = ("data/$page.json");
+	$filePath = ("data/pages/$page.json");
 	$json = file_get_contents($filePath);
 	if(!$json) {
 		$json = file_get_contents('data/404.json');
@@ -22,12 +22,12 @@ function pageData() {
 }
 
 function renderPageTemplate() {
-	$filePath = "pages/" . "standard" . ".php"; //changed from currentPage();
+	$filePath = "templates/pages/" . "standard" . ".php"; //changed from currentPage();
 	$pageData = pageData();
 	if( file_get_contents($filePath) ) {
 		include($filePath);
 	} else {
-		include('pages/404.php');
+		include('templates/pages/404.php');
 	}
 }
 

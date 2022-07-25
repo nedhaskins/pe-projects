@@ -1,5 +1,5 @@
 <?php
 
-include('utilities.php');
+include('functions/utilities.php');
 
-include('routing.php');
+include('functions/routing.php');

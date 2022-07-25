@@ -1,0 +1,16 @@
+{
+    "id": "style-guide",
+    "title": "Style guide",
+    "intro": "Where the styles will guide you",
+    "sections": [
+        {
+            "module": "big-heading"
+        },
+        {
+            "module": "call-to-action"
+        },
+        {
+            "module": "graphic-diptych"
+        }
+    ]
+}
