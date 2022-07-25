@@ -11,7 +11,7 @@ $tax = 0;
 $subtotal = 0;
 $valueError = "";
 
-$json = file_get_contents('state-tax.json');
+$json = file_get_contents('../data/state-tax.json');
 $data = json_decode($json, true);
 $states = $data['states'];
 
@@ -62,7 +62,7 @@ $total = $subtotal + ($subtotal * ($tax / 100));
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
 

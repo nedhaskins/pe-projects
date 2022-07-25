@@ -1,4 +1,7 @@
 @import "reset.css";
+@import 'typography.css';
+@import 'e4p.css';
+@import 'settings.css';
 
 /* SITE CODE*/
 
@@ -11,7 +14,11 @@
 	--sweetcorn: hsl(52, 87%, 72%);
 }
 
+
+
 body {
+	font-size: 16px;
+	color: #81201b;
 	background-color: #f6e579;
 	display: flex;
 	flex-direction: column;
@@ -22,30 +29,21 @@ body {
 	margin: 20px;
 }
 
-h1 {
-	color: var(--main-text-color);
-	font-family: 'Baskerville';
-	font-size: 36px;
-	font-weight: 700;
-	padding: 40px;
-	text-align: center;
-}
+
 
 .link-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	 display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.link-container li {
-	margin-top: 30px;
-}
+
+
 
 a:link {
-	color: var(--main-text-color);
+	color: var(--falured);
 	text-decoration: none;
 	font-family: 'Baskerville';
-	font-style: italic;
 }
 
 a:visited {

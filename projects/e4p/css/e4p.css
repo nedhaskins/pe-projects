@@ -1,0 +1,32 @@
+code-choice, list-module {
+	display: block;
+	margin-top: 29px;
+}
+
+
+
+.e4p-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+/*    justify-content: center;*/
+    gap: 7px;
+    margin-top: 13px;
+}
+
+
+.e4p-image {
+	width: 30px;
+	height: 30px;
+}
+
+
+.link-container li {
+	border: 3px solid var(--falured);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+list-module ul {
+	margin-left: 50px;
+}
