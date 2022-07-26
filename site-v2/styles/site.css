@@ -7,6 +7,9 @@
 body {
 /*border: 5px dashed yellow;*/
 height: 100vh;
+background-color: var(--sweetcorn);
+color: var(--falured);
+
 
 }
 
