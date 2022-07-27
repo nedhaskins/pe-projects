@@ -1,3 +1,8 @@
+
+
+
+
+<!-- 
 # Goals
 
 The goal of the site is to facilitate a job offer, ideally one in which I can design and work with layouts and create templates for layouts -- but at this juncture any entry-level job works.
@@ -16,9 +21,9 @@ The viewer should not have to guess at the purpose of the page -- or about anyth
  - An immediate feeling of visual balance, following by a feeling of relaxation and quiet stability
  - Designed in such a way that a recruiter will be immediately intrigued and will want to have a conversation. The site needs to immediately reflect my understanding of CSS and layout principles.
 
-- A dark mode in place
+- A dark mode in place -->
 
-
+<!-- 
 ## Main menu.  Icons next to social links.
 
 - Goals
@@ -39,9 +44,9 @@ The viewer should not have to guess at the purpose of the page -- or about anyth
 - 5 year plan
 - 1 year plan
 - 6 month plan
-- 3 month plan
+- 3 month plan -->
 
-## Resume
+<!-- ## Resume
 
 Change current setup to have bulleted points to make more readable.
 
@@ -57,11 +62,7 @@ Change current setup to have bulleted points to make more readable.
 		- Beauty.  The role of open space in design.
 		- The UX piece. 
 		- The accessibility piece.
-
-## Contact
-
-- Header - let's get started on a project!!
-- Form with client / recruiter / employer's name, email, and a detailed description of why they want to talk to me and what they're currently looking for.  Need a way to distinguish between the different types of people who might reach out - maybe a radio button specifying what type of person they are?  Developer / Recruiter / Employer / Person who just wants to talk.
+ -->
 
 ## Substack / Github / Codepen
 
@@ -84,17 +85,17 @@ Change current setup to have bulleted points to make more readable.
 
 Which projects to choose?  The ones that look the best visually and are perfectly functional
 
-## E4P exercises
+<!-- ## E4P exercises
 
 - **Header**
 
 - Explain the purpose of the exercises
 
-	- Exercise detail link - explain how the form works, what you had to do with the code to make it work the way it needed to 
-
+	- Exercise detail link - explain how the form works, what you had to do with the code to make it work the way it needed to  -->
+<!-- 
 ## Style guide
 
-- Details all of the style elements used on the site
+- Details all of the style elements used on the site -->
 
 ## Layout garden
 
