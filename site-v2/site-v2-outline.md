@@ -93,28 +93,26 @@ The viewer should not have to guess at the purpose of the page -- or about anyth
 
 	These layouts are an exploration of the capabilities of CSS.  Some of these were prompts given to us in the Design for the Web course; others I found through my research and I replicated them for practice and to learn some new properties.
 
+	- Purpose of the site.  Why are you doing these layouts?  To explore as many different types of layouts and CSS properties as possible and to use them in concert to make a harmonious endpiece that can serve as a template for future projects.
 
+	- Link to layout detail page (component)
 
-		- Purpose of the site.  Why are you doing these layouts?  To explore as many different types of layouts and CSS properties as possible and to use them in concert to make a harmonious endpiece that can serve as a template for future projects.
+	- Layout detail page: #4
+		- Text: This layout stood out to me for its use of relative/absolute positioning. I recreated the box transformation on this page by using the CSS transform:translate prperty.
+			- Relative / absolute positioning?
 
-		- Link to layout detail page (component)
-
-		- Layout detail page: #4
-			- Text: This layout stood out to me for its use of relative/absolute positioning. I recreated the box transformation on this page by using the CSS transform:translate prperty.
-				- Relative / absolute positioning?
-
-				- Case study?
-					- Title / subtitle; goal
-						- Loop through exach example
-							- Figure (if not title, figure caption?)
-								- Figure caption
-								- Link
-								- Alt text
-							- Real-world example
-							- What I tried (lead-in background)
-								- Paragraph
-							- What didn't work (examples / lessons learned)
-								- Paragraph
+			- Case study?
+				- Title / subtitle; goal
+					- Loop through exach example
+						- Figure (if not title, figure caption?)
+							- Figure caption
+							- Link
+							- Alt text
+						- Real-world example
+						- What I tried (lead-in background)
+							- Paragraph
+						- What didn't work (examples / lessons learned)
+							- Paragraph
 
 - ## Writing
 
