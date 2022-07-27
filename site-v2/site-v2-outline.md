@@ -91,7 +91,7 @@ The viewer should not have to guess at the purpose of the page -- or about anyth
 
 	- ### Layout Garden
 
-	These layout are an exploration of the capabilities of CSS.  Some of these were prompts given to us in the Design for the Web course; others I found through my research and they inspired me to 
+	These layouts are an exploration of the capabilities of CSS.  Some of these were prompts given to us in the Design for the Web course; others I found through my research and I replicated them for practice and to learn some new properties.
 
 
 
