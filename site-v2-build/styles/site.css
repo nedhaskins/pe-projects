@@ -1,0 +1,147 @@
+@import 'reset.css';
+@import 'settings.css';
+@import 'setup.css';
+@import 'typography.css';
+	
+
+body {
+background-color: var(--sweetcorn);
+color: var(--falured);
+}
+
+
+gridwrapper {
+	/*border: 5px solid brown;*/
+	height: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	flex-basis: auto;
+}
+
+@media(min-width: 572px) {
+	gridwrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);	
+	}
+}
+
+
+gridbox {
+	display: block;
+}
+
+
+gridbox.one {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	/*border:3px solid orange;*/
+}
+
+@media(min-width: 572px) {
+
+	gridbox.one {
+		display: flex;
+		align-items: center;
+		text-align: right;
+		justify-content: right;
+		grid-row: 1/4;
+		grid-column: 1/2;
+	}
+}
+
+
+
+
+
+gridbox.two {
+	/*position: relative;*/
+	/*border:3px solid red;*/
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	grid-row: 2/4;
+	grid-column: 2/3;
+}
+
+.shape {
+	/*width: 40vw;*/
+	display: block;
+	/*border: 2px dashed black;*/
+	max-width: 360px;
+	/*transform: translate(0%, -25%);*/
+}
+
+
+
+@media(min-width: 572px) {
+
+	gridbox.two {
+		display: block;
+		/*border:3px solid red;*/
+		grid-row: 2/4;
+		grid-column: 2/3;
+	}
+
+	.shape {
+		margin-top: 9vh;
+		/*width: 40vw;*/
+		display: block;
+		/*border: 2px dashed black;*/
+		max-width: 360px;
+		/*transform: translate(0%, -25%);*/
+	}
+
+}
+
+
+
+gridbox.three {
+	flex-grow: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*border:3px solid lime;*/
+}
+
+
+@media(min-width: 572px) {
+	gridbox.three {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+}
+
+@media(max-width: 572px) {
+
+	gridbox.three .navbar {
+	margin-left: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+gridbox.three .navbar {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	width: 80%;
+	/*border: 3px solid blue;*/
+}
+
+gridbox.three .navbar a {
+	padding: 10px 0px 10px 0px;
+	/*border: 3px solid red;*/
+/*	width: 15vw;*/
+}

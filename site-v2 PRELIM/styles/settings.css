@@ -1,0 +1,17 @@
+html {
+
+/*COLORS*/
+
+	--falured: hsl(3, 65%, 31%);
+	--sweetcorn: hsl(52, 87%, 72%);
+
+
+/* TEXT SIZING */
+	
+
+	--goldenRatio: 1.618033;
+	--floor: 24px;
+	--stepOne: var(--floor) * var(--goldenRatio);
+	--stepTwo: var(--stepOne) * var(--goldenRatio);
+	--stepThree: var(--stepTwo) * var(--goldenRatio);
+	}
