@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "slug": "home"
+    },
+    {
+        "id": 2,
+        "slug": "about"
+    },
+    {
+        "id": 3,
+        "slug": "the-lab",
+        "items": [
+            {
+                "slug": "e4p",
+                "name": "exercises for programmers",
+                "filepath": "../the-lab/e4p/index.php"
+            },
+            {
+                "slug": "layout-garden",
+                "name": "layout garden",
+                "filepath": "../the-lab/layout-garden/index.php"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "slug": "projects",
+        "items": [
+            {
+                "slug": "that-food-truck",
+                "name": "that food truck",
+                "filepath": "../projects/that-food-truck/index.html"
+            },
+            {
+                "slug": "responsive-layout",
+                "name": "responsive layout",
+                "filepath": "../the-lab/responsive-layout/index.html"
+            },
+            {
+                "slug": "theme-challenge",
+                "name": "outer banks vacation rentals",
+                "filepath": "../the-lab/theme-challenge/index.php"
+            },
+            {
+                "slug": "php-crud",
+                "name": "highways of virginia",
+                "filepath": "../the-lab/php-crud/index.php"
+            },
+        ]
+    },
+    {
+        "id": 5,
+        "slug": "contact"
+    }
+]

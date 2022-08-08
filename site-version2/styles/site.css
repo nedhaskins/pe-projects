@@ -31,12 +31,14 @@ gridbox:is(.page-content, .navbar, .logo) {
 
 
 gridbox.page-content {
-	grid-column: 1 / 6;
+	grid-column: 1 / 8;
 	grid-row: 1 / 7;
+	height: 100vh;
+	overflow: scroll;
 }
 
 gridbox.navbar {
-	grid-column: span 6;
+	grid-column: span 5;
 	grid-row: 1 / 2;
 	/*border: 3px dashed green;*/
 	display: flex;
@@ -45,7 +47,7 @@ gridbox.navbar {
 }
 
 gridbox.logo {
-	grid-column: span 6;
+	grid-column: span 5;
 	grid-row: 2 / 7;
 }
 

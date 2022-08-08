@@ -1,15 +1,26 @@
 <?php
 
-// function showErrors() {
-//   ini_set('display_errors', '1');
-//   ini_set('display_startup_errors', '1');
-//   error_reporting(E_ALL);
-// }
-// showErrors();
+function showErrors() {
+  ini_set('display_errors', '1');
+  ini_set('display_startup_errors', '1');
+  error_reporting(E_ALL);
+}
+showErrors();
 
 function queryString() {
 	return $_SERVER['QUERY_STRING'];
 }
+
+
+
+function show($things) {
+  echo "<code class='show-code'>";
+  echo '<pre>';
+  print_r($things);
+  echo '</pre>';
+  echo '</code>';
+  }
+
 
 
 
@@ -38,7 +49,7 @@ function getPageData() {
 function fetchPage() {
   $filepath = "templates/pages/" . activePage() . "/" . activePage() . ".php";
   $pageData = getPageData();
-  if( file_get_contents($filepath) ) {
+  if( file_exists($filepath) ) {
     include($filepath);
   } else {
     include('templates/pages/404/404.php');
