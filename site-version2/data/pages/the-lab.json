@@ -7,28 +7,28 @@
         {
             "slug": "layout-garden",
             "name": "layout garden",
-            "image": "../../../images/layout-garden.png",
+            "image": "images/layout-garden.png",
             "url": "",
             "description": "Digging into CSS with both heels."
         },
         {
             "slug": "exercises-for-programmers",
             "name": "exercises for programmers",
-            "image": "../../../images/e4p.png",
+            "image": "images/e4p.png",
             "url": "",
             "description": "PHP and JavaScript applications written to solve problems from Brian Hogan's practice book."
         },
         {
             "slug": "github",
             "name": "github",
-            "image": "../../../images/github.png",
+            "image": "images/github.png",
             "url": "https://github.com/nedhaskins",
             "description": "Repositories for past and present projects."
         },
         {
             "slug": "codepens",
             "name": "codepens",
-            "image": "../../../images/codepen.png",
+            "image": "images/codepen.png",
             "url": "https://codepen.io/nedhaskins",
             "description": "Little experiments with CSS and Javascript. I'm currently digging into CSS Grid and animations with CSS, Javascript, and SVGs."
         }

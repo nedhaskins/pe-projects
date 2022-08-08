@@ -3,7 +3,7 @@
         "id": 1,
         "name": "that food truck",
         "copy": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
-        "image": "../../../images/los-angeles-skyline.jpeg",
+        "image": "images/los-angeles-skyline.jpeg",
         "url": "",
         "languages": ["HTML", "CSS"],
         "keywords": ["Pre-Responsive", "Theming", "Client Relations"]
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "responsive layout challenge",
         "copy": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
-        "image": "../../../images/saigon-skyline.jpeg",
+        "image": "images/saigon-skyline.jpeg",
         "url": "",
         "languages": ["HTML", "CSS"],
         "keywords": ["Responsive"]
@@ -21,7 +21,7 @@
         "id": 3,
         "name": "outer banks vacation rentals",
         "copy": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible ",
-        "image": "../../../images/shoreline-2.jpeg",
+        "image": "images/shoreline-2.jpeg",
         "url": "",
         "languages": ["HTML", "CSS", "PHP"],
         "keywords": ["Responsive", "Framework", "Theming", "Research"]
@@ -30,7 +30,7 @@
         "id": 4,
         "name": "highways of virginia",
         "copy": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
-        "image": "../../../images/i-95.jpeg",
+        "image": "images/i-95.jpeg",
         "url": "",
         "languages": ["HTML", "CSS", "PHP"],
         "keywords": ["Responsive", "Routing", "Theming"]
