@@ -1,4 +1,4 @@
-<link rel="stylesheet" href='../../../styles/site.css'>
+<!-- <link rel="stylesheet" href='../../../styles/site.css'> -->
 
 
 <section class='projects'>
