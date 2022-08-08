@@ -1,0 +1,108 @@
+/* Should we pull in @fonts here? */
+
+.loud-voice	{
+	font-family: "Yuji Boku";
+	font-size: clamp(40px, 7vw, 50px);
+	text-align: center;
+}
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font */
+	}
+}
+
+/*h1.loud-voice {
+	padding: 0px 30px;
+}
+*/
+.attention-voice	{
+	font-family: "Yuji Boku";
+	font-size: 30px;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+	h2.heading.attention-voice {
+	color: var(--white);
+	}
+}
+
+
+.strong-voice {
+	font-family: "Yuji Boku";
+	font-weight: 700;
+	font-size:  1.5rem;
+
+}
+
+/*h1.strong-voice {
+	margin-left: 20px;
+}*/
+
+
+/*h1.title.strong-voice, p.teaser {
+	margin: 10px 20px 10px 20px;
+}*/
+
+
+@media (prefers-color-scheme: dark){
+	h1.title.strong-voice{
+	color: var(--cadorange);
+	}
+	.title.strong-voice {
+	color: var(--white);
+	}
+	
+}
+
+
+
+
+
+.calm-voice, p, li {
+	font-family: "Josefin Sans";
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+:is(.calm-voice, p, li) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p, li) strong {
+	font-weight: 700;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+
+
+
+
+
+
+
+
+
+p + p {
+	margin-top: 1em;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+
+h1 + p {
+margin-top: 10px;
+text-align: center;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
+

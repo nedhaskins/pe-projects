@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "name": "Pizza Party",
+            "file": "modules/08-pizza-party.php",
+            "image": "images/8.svg"
+        },
+        {
+            "name": "Paint Calculator",
+            "file": "modules/09-paint-calculator.php",
+            "image": "images/9.svg"
+        },
+        {
+            "name": "Self Checkout",
+            "file": "modules/10-self-checkout.php",
+            "image": "images/10.svg"
+        },
+        {
+            "name": "Currency Conversion",
+            "file": "modules/11-currency-conversion.php",
+            "image": "images/11.svg"
+        },
+        {
+            "name": "Computing Simple Interest",
+            "file": "modules/12-computing-simple-interest.php",
+            "image": "images/12.svg"
+        },
+        {
+            "name": "Determining Compound Interest",
+            "file": "modules/13-determining-compound-interest.php",
+            "image": "images/13.svg"
+        },
+        {
+            "name": "Tax Calculator",
+            "file": "modules/14-tax-calculator.php",
+            "image": "images/14.svg"
+        },
+        {
+            "name": "Legal Driving Age",
+            "file": "modules/16-legal-driving-age.php",
+            "image": "images/16.svg"
+        }
+    ]
+}

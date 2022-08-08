@@ -1,0 +1,16 @@
+
+html {
+	background-color: var(--paper);
+	color: var(--ink);
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+	html {
+	background-color: var(--ink);
+	color: var(--paper);
+}
+}

@@ -1,0 +1,16 @@
+inner-column.e4p {
+	max-width: 600px;
+}
+
+
+
+
+
+.attention-voice {
+	color: var(--falured);
+	font-family: 'Baskerville';
+	font-size: 2.7rem;
+	letter-spacing: 0.2em;
+   padding: 27px;
+	text-align: center;
+}

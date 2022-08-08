@@ -1,0 +1,40 @@
+
+.goals {
+	margin: 27px;
+	display: flex;
+	flex-direction: column;
+}
+
+.goals h3 {
+	margin-top: 28px;
+}
+
+
+.goals li {
+	line-height: 1.3em;
+	margin-top: 18px;
+	font-size: 0.9rem;
+}
+
+li.goal-item  {
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+.goal-line {
+	border: 2px solid var(--ink);
+	margin-top: 27px;
+}
+
+@media(prefers-color-scheme: dark) {
+
+.goal-line {
+	border: 1px solid var(--ink-dark);
+}
+
+}

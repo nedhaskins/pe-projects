@@ -1,0 +1,48 @@
+/*STRUCTURE*/
+
+body {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 20px;
+
+}
+
+
+inner-column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media (min-width: 715px){
+	inner-column {
+	max-width: 1400px;
+	min-height: 100vh;
+	padding: 0px 40px 0px 40px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	}
+}
+
+
+
+
+/*ABOUT-NAVBAR COMPONENT*/
+
+
+
+.about-navbar {
+	margin-bottom: 30px;
+}
+
+.about-navbar ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.about-navbar li:hover {
+	color: white;
+}

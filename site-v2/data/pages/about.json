@@ -1,0 +1,190 @@
+[
+    {
+        "id": 1,
+        "slug": "bio",
+        "name": "bio",
+        "sections": [
+            {
+                "header": "web designer",
+                "copy": [
+                    "I began studying Python and SQL in the fall of 2019; after two years of study I had built a foundational knowledge base in database design, architecture, and implementation and gained experience with Apache Airflow and various applications within Amazon Web Services. I obtained an AWS Cloud Practitioner certification in July 2021.",
+                    "I enrolled in Perpetual Education's Design for the Web course in February 2022 and am currently focusing on front-end development. Through Affinity Designer, I've rediscovered my passion for visual design. I love optimizing code and have recently gotten pretty hooked on the Wordpress framework and building out custom frameworks of my own."
+                ]
+            },
+            {
+                "header": "musician",
+                "copy": [
+                    "I've been a cellist since I was 10. My Virginia-based booking agency, Ninja Strings, provides live music for public and private events across the Eastern Seaboard."
+                ]
+            },
+            {
+                "header": "current projects",
+                "copy": [
+                    "I have a strong interest in CSS and layouts.  I'm working my way through the books <em>Exercises for Programmers</em> and <em>Mazes for Programmers</em> to keep my programming and algorithmic senses sharp."
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "slug": "design-philosophy",
+        "name": "design philosophy",
+        "sections": [
+            {
+                "header": "beauty and functionality",
+                "copy": [
+                    "Keep it simple.  Use geometry to your advantage.  Follow the natural laws of visual design.  Space dictates the feel of the content.  Don't include anything that doesn't serve a practical purpose."
+                ]
+            },
+            {
+                "header": "it's a self-sustaining framework",
+                "copy": [
+                    "Build systems that are consistent across all components of the site.  Use templating, classes, and dynamic data collection to your advantage.  Set it up so you can change similar elements on the fly."
+                ]
+            },
+            {
+                "header": "learning is a forever journey",
+                "copy": [
+                    "If you're not learning, you're not sharpening your skills. A thirst for knowledge is essential.  Stay on the cutting edge of everything happening in this amazing world by reading and conversing every day.  Write about your experiences.  Share what you've learned."
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "slug": "resume",
+        "name": "resume",
+        "sections": [
+            {
+                "jobs": [
+                    {
+                        "jobTitle": "Apprentice",
+                        "company": "Perpetual Education",
+                        "city": "Los Angeles, CA",
+                        "startDate": "February 2022",
+                        "endDate": "present",
+                        "description": "Design for the Web is a course focused on providing an in-depth, challenging, and holistic approach to teaching all aspects of the web design process.  During this course, we have honed our skills in HTML, CSS, PHP and JavaScript, always putting user experience and ease of access at the forefront of our work; understood time management, team building, and content strategy to be essential to the overall success of any project; and engaged in weekly, intense projects that continuously integrate all of our skills and push us to the next level of understanding and personal achievement."
+                    },
+                    {
+                        "jobTitle": "Principal",
+                        "company": "Ninja Strings",
+                        "city": "Richmond, VA",
+                        "startDate": "April 2013",
+                        "endDate": "present",
+                        "description": "I lead operations, finance and sales for a booking agency for musicians in central Virginia. We were engaged by the Virginia Museum of History and Culture in 2020 to provide music for the opening gala of their exhibit \"Agents of Change: Female Activism in Virginia\". I single-handedly grew the business from its inception to generate $33k of revenue in 2021."
+                    },
+                    {
+                        "jobTitle": "Director of String Orchestras",
+                        "company": "Elko Middle School",
+                        "city": "Henrico, VA",
+                        "startDate": "October 2013",
+                        "endDate": "May 2021",
+                        "description": "I assumed responsibility for the school's strings program. I introduced my students to the fundamentals of string technique, taught them practice methods they could use use away from the classroom, and prepared them for two live concert performances per year as well as a graded county-wide assessment in the spring."
+                    },
+                    {
+                        "jobTitle": "Inbound Support Services Representative",
+                        "company": "Amazon.com, Inc.",
+                        "city": "Richmond, VA / Chester, VA",
+                        "startDate": "October 2013",
+                        "endDate": "May 2021",
+                        "description": "My team communicated with catalog and seller support staff throughout the company to fulfill vendor and customer requests for photo or dimensional updates of items, item pricing changes, and detection and removal of third-party 'knockoff' items in the warehouse. We were the last line of defense against all problems found in inbound inventory; we focused on FIFO methodology and prioritized the removal of items that required multiple ISS reps."
+                    },
+                    {
+                        "jobTitle": "Graduate Teaching Assistant",
+                        "company": "University of New Mexico",
+                        "city": "Albuquerque, NM",
+                        "startDate": "August 2008",
+                        "endDate": "May 2009",
+                        "description": "I led the cello section of the Univeristy Symphony Orchestra and was cellist in the Abe Franck quartet, a fellowship quartet composed of graduate-level musicians. I won the school's 2009 concerto competition."
+                    }
+                ]
+            },
+            {
+                "education": [
+                    {
+                        "name": "Perpetual Education",
+                        "awarded": "Currently enrolled",
+                        "startDate": "February 2022",
+                        "endDate": "present"
+                    },
+                    {
+                        "name": "University of New Mexico",
+                        "awarded": "",
+                        "startDate": "August 2008",
+                        "endDate": "May 2009"
+                    },
+                    {
+                        "name": "Florida State University",
+                        "awarded": "Bachelor of Music, Cello Performance",
+                        "startDate": "August 2008",
+                        "endDate": "May 2009"
+                    }
+                ]
+            },
+            {
+                "certs": [
+                    {
+                        "name": "AWS Certified Cloud Practitioner",
+                        "awarded": "July 2021"
+                    },
+                    {
+                        "name": "Astronomer Certification for Apache Airflow Fundamentals",
+                        "awarded": "August 2021"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "slug": "goals",
+        "name": "goals",
+        "sections": [
+            {
+                "heading": "daily action items",
+                "goals": [
+                    "Start daily work early in the day (before 9 a.m.)",
+                    "Have specific tasks for each day of the week (i.e. write a blogpost, add a module to the CSS garden)",
+                    "Make time for daily layout practice"
+                ]
+            },
+            {
+                "heading": "1-month plan",
+                "goals": [
+                    "Obtain a level of comfort with JavaScript equal to that which I have with PHP",
+                    "Demonstrated improvement in CSS skills, layout implementation, and dynamic data population",
+                    "Work more with Affinity Designer's tools and try more complex uses of the Pen Tool"
+                ]
+            },
+            {
+                "heading": "2-month plan",
+                "goals": [
+                    "Be ready for the job market with a comprehensive personal site and a portfolio of class projects and case studies, with a high probability of being extended a job offer",
+                    "Have a clear idea of what roles I am best suited for in the current job market",
+                    "Be working on at least one client project with stakeholders",
+                    "Have practice with mock interviews, code pairing and speedruns to prepare for in-person job interviews",
+                    "Have a solid record of communication and collaboration on GitHub (regular commits of or contributions to projects), Discord, Reddit, et al."
+                ]
+            },
+            {
+                "heading": "6-month plan",
+                "goals": [
+                    "Be on the job with entry-level contract work and/or an apprenticeship or internship that has a minimum compensation of $70k or equivalent and allows for continued in-depth practice of HTML, CSS, PHP and JavaScript via web design / implementation projects"
+                ]
+            },
+            {
+                "heading": "1-year plan",
+                "goals": [
+                    "Be working on more advanced projects requiring specialized knowledge with minimum compensation of $80 - 90k or equivalent",
+                    "Have a solid pool of resources - colleagues, discussion groups, Discord channels - to consult for any technical issues encountered in my work environment"
+                ]
+            },
+            {
+                "heading": "5-year plan",
+                "goals": [
+                    "Be financially secure, living in a tiny house deep in the woods with a garden. I want the option to work remotely and to be able to travel at any time.  I want to have developed a reputation as a talented and reliable developer, with a strong client and networking base and a consistent stream of either contract or consulting work with $150k+ compensation annually."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,59 @@
+/* TEXT SIZING / TYPOGRAPHY */
+
+html {
+	--floor: 27px;
+	--steponeHalf: 1.272019rem; /* floor * golden ratio^0.5 */
+	--stepOne: 1.618033rem; /* floor * golden ratio */
+	--stepTwo: 2.058171rem; /* floor * golden ratio^1.5 */
+	--stepThree: 2.618034rem; /* floor * golden ratio^2 */
+
+	font-size: var(--floor);
+
+	}
+
+body {
+	font-family: 'Baskerville';
+}
+
+em {
+	font-style: italic;
+}
+
+
+h1 {
+	font-size: var(--stepTwo);
+}
+
+h2 {
+	font-size: var(--stepOne);
+}
+
+h3 {
+	font-size: var(--steponeHalf);
+}
+
+.title-voice {
+	letter-spacing: 0.3em;
+}
+
+.attention-voice {
+	font-style: italic;
+	letter-spacing: 0.2em;
+}
+
+.job-voice {
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+
+/*-----------------*/
+
+
+
+.navbar .link {
+	font-size: 	font-size: var(--floor);
+	font-style: italic;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}

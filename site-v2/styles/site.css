@@ -1,0 +1,138 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'settings.css';
+@import 'structure.css';
+@import 'typography.css';
+
+@import '../templates/pages/home/style.css';
+@import '../templates/pages/projects/style.css';
+@import '../templates/pages/the-lab/style.css';
+@import '../templates/pages/404/style.css';
+
+
+@import '../templates/subpages/bio/style.css';
+@import '../templates/subpages/goals/style.css';
+@import '../templates/subpages/design-philosophy/style.css';
+@import '../templates/subpages/resume/style.css';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HOME TEMPLATE ELEMENTS*/
+
+
+gridbox {
+	display: block;
+}
+
+gridbox:is(.page-content, .navbar, .logo) {
+		/*border: 3px dashed black;*/
+		margin: 5px;
+}
+
+
+gridbox.page-content {
+	grid-column: 1 / 6;
+	grid-row: 1 / 7;
+}
+
+gridbox.navbar {
+	grid-column: span 6;
+	grid-row: 1 / 2;
+	/*border: 3px dashed green;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+gridbox.logo {
+	grid-column: span 6;
+	grid-row: 2 / 7;
+}
+
+
+
+/*NAVBAR ELEMENTS*/
+
+.navbar nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: clamp(15px, 3vw, 31px);
+	margin: 20px;
+}
+
+.navbar nav a {
+	/*border: 3px dashed blue;*/
+}
+
+
+
+/*SVG BOX ELEMENTS*/
+
+artifact {
+	display: flex;
+	/*border: 5px solid brown;*/
+	max-width: 410px;
+}
+
+svg {
+	display: block;
+	/*border: 3px dashed purple;*/
+}
+
+svg .windmill {
+	fill: var(--ink);
+	stroke: none;
+}
+
+svg .curve {
+	fill: none;
+	stroke: var(--ink);
+	stroke-width: 4.17px;
+
+}
+
+@media(prefers-color-scheme: dark) {
+	svg .windmill {
+	fill: var(--ink-dark);
+	}
+
+	svg .curve {
+	stroke: var(--ink-dark);
+	}
+}
+
+
+
+
+
+
+
+
+/*Put all of the elemts if they're unique to this page--no matter what they are --  in this template.
+The things that will go across the entire site -- the text classes, the colors -- those go in the site.css.
+

@@ -1,0 +1,81 @@
+.drop-downs {
+	padding: 20px;
+}
+
+
+
+
+.drop-downs .articles {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+.drop-downs h2 + p {
+	margin-bottom: 0px;
+}
+
+
+@media(min-width: 900px) {
+
+
+
+	.drop-downs inner-column {
+		display: flex;
+		gap: 48px;
+	}
+
+	.drop-downs .articles {
+		display: flex;
+		flex-direction: column;
+		width: 35%;
+	}
+}
+
+
+
+
+.drop-downs article {
+/*	border: 3px solid green;*/
+border-bottom: 1px solid black;
+}
+
+
+.drop-downs details {
+	position: relative;
+}
+
+.drop-downs details[open] {
+	margin-bottom: 20px;
+}
+
+
+.drop-downs summary {
+	margin: 15px 0px 15px 0px;
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+.drop-downs summary:after {
+	content: "\FF0B";
+	position: absolute;
+	right: 0px;
+}
+
+.drop-downs details[open] summary:after {
+	content: "\FF0D";
+	margin-bottom: 20px;
+}
+
+
+
+
+.drop-downs h4.teaser-voice {
+	margin: 55px 0px 20px 0px;
+}

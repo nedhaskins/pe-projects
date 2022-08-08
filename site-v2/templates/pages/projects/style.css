@@ -1,0 +1,35 @@
+.projects {
+	margin: 27px;
+}
+
+
+.project {
+	padding: 50px;
+	margin-top: 70px;
+}
+
+
+
+
+.projects h2 {
+	text-align: center;
+}
+
+.projects .body-copy {
+	margin-top: 28px;
+	line-height: 1.3em;
+}
+
+
+.project > * {
+	color: var(--paper);
+}
+
+
+
+.project p {
+	font-size: 0.9rem;
+	margin-top: 20px;
+}
+
+

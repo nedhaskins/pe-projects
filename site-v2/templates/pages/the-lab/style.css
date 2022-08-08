@@ -1,0 +1,35 @@
+.the-lab {
+	margin: 27px;
+}
+
+
+.lab-item {
+	padding: 50px;
+	margin-top: 70px;
+}
+
+
+
+
+.the-lab h2 {
+	text-align: center;
+}
+
+.the-lab .body-copy {
+	margin-top: 28px;
+	line-height: 1.3em;
+}
+
+
+.project > * {
+	color: var(--paper);
+}
+
+
+
+.lab-item p {
+	font-size: 0.9rem;
+	margin-top: 20px;
+}
+
+

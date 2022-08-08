@@ -1,0 +1,28 @@
+/*SETTINGS*/
+
+html {
+--sweetcorn: #f6e579;
+--falured: #81201b;
+--phthaloblue: #04167d;
+--gulfblue: #00175c;
+--tolopea: #160f46;
+
+--paper: var(--sweetcorn);
+--ink: var(--falured);
+
+--paper-dark: var(--tolopea);
+--ink-dark: var(--sweetcorn);
+
+}
+
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+}
+
+@media(prefers-color-scheme: dark) {
+	body {
+		background-color: var(--paper-dark);
+		color: var(--ink-dark);
+	}
+}
