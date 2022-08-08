@@ -21,7 +21,7 @@
 }
 
 
-.project > * {
+.lab-item > * {
 	color: var(--paper);
 }
 

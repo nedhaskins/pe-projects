@@ -1,6 +1,21 @@
 <?php include('functions.php'); ?>
 
-<link rel='stylesheet' href='styles/site.css'>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='styles/site.css'>
+	<title>Ned Haskins - Web Designer - Richmond, VA</title>
+
+</head>
+<body>
+
+
+
+
+
+
 
 <inner-column>
 
@@ -36,4 +51,7 @@
 
 
 </inner-column>
+
+</body>
+</html>
 
