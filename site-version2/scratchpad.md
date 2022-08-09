@@ -1,6 +1,32 @@
 <!-- 
-	style=
-	'background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$//item['image']?>");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;' -->
+	 -->
+
+
+
+
+
+	
+<?php
+
+if( isset($_GET['slug']) ) {	
+
+	foreach ($list as $item) {
+		$itemSlug = $item['slug'];
+		$itemURL = $item['url'];
+
+		//These both have to be defined in the loop,
+		//as they're unique to each object.
+		// echo $itemSlug;
+		// echo $itemURL;
+
+		if($itemSlug == $_GET['slug']) {
+
+			if($itemURL == "") {
+				include("the-lab/" . $itemSlug . "/index.php");
+			} else {
+				header("Location: " . $itemURL);
+				exit;
+			}
+		}
+	}
+}

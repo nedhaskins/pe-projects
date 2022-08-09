@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "slug": "that-food-truck",
         "name": "that food truck",
         "copy": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
         "image": "images/los-angeles-skyline.jpeg",
@@ -10,6 +11,7 @@
     },
     {
         "id": 2,
+        "slug": "responsive-layout-challenge",
         "name": "responsive layout challenge",
         "copy": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
         "image": "images/saigon-skyline.jpeg",
@@ -19,6 +21,7 @@
     },
     {
         "id": 3,
+        "slug": "theme-challenge",
         "name": "outer banks vacation rentals",
         "copy": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible ",
         "image": "images/shoreline-2.jpeg",
@@ -28,6 +31,7 @@
     },
     {
         "id": 4,
+        "slug": "php-crud",
         "name": "highways of virginia",
         "copy": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
         "image": "images/i-95.jpeg",
