@@ -8,7 +8,11 @@
 
 
 <?php foreach($pageData as $project) { ?>
-	<div class='project'>
+	<div class='project' style=
+	'background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$project['image']?>");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;'>
 
 		<a class='attention-voice' href="projects/<?=$project['slug']?>/index.php"><?=$project['name']?></a>
 		<p><?=$project['copy']?></p>
