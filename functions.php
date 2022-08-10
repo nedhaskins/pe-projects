@@ -47,12 +47,12 @@ function getPageData() {
 
 
 function fetchPage() {
-  $filepath = "templates/pages/" . activePage() . "/" . activePage() . ".php";
+  $filepath = "templates/pages/" . activePage() . ".php";
   $pageData = getPageData();
   if( file_exists($filepath) ) {
     include($filepath);
   } else {
-    include('templates/pages/404/404.php');
+    include('templates/pages/404.php');
   }
 }
 

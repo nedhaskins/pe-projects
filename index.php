@@ -16,7 +16,7 @@
 	<gridbox class='navbar'>
 
 	<nav>
-		<a class='link' href="index.php" alt="">home</a>
+		<a class='link' href="?page=home" alt="">home</a>
 		<a class='link' href="?page=about" alt="">about me</a>
 		<a class='link' href="?page=projects" alt="">projects</a>
 		<a class='link' href="?page=the-lab" alt="">the lab</a>
