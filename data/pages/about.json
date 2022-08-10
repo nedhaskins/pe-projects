@@ -31,6 +31,7 @@
         "name": "design philosophy",
         "sections": [
             {
+                "type": "standard-copy",
                 "header": "beauty and functionality",
                 "copy": [
                     "Keep it simple.  Use geometry to your advantage.  Follow the natural laws of visual design.  Space dictates the feel of the content.  Don't include anything that doesn't serve a practical purpose."

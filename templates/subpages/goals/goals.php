@@ -20,20 +20,12 @@ $goalSections = $pageData[3]['sections'];
 
 	<ul class='goal-list'>
 
-		<?php foreach ($goalSections as $section) { ?>
-			<li class='goal-section'>
-			<h3 class='attention-voice'><?=$section["heading"]?></h3>
-			<ul>
-				<?php foreach ($section["goals"] as $goal) { ?>
-					<li class='goal-item'><?=$goal?></li>
-				<?php } ?>
-			</ul>
-		</li>
-		<?php	} ?>
+		<?php foreach ($goalSections as $section) {
+			
+			include("templates/modules/goals-module.php");
+
+		} ?>
 
 	</ul>
 
 </section>
-
-</body>
-</html>
