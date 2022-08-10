@@ -1,0 +1,12 @@
+.contact {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+ }
+
+ .contact p {
+ 	line-height: 1.3em;
+ 	margin-top: 20px;
+ }

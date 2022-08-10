@@ -7,6 +7,7 @@
 @import '../templates/pages/home/style.css';
 @import '../templates/pages/projects/style.css';
 @import '../templates/pages/the-lab/style.css';
+@import '../templates/pages/contact/style.css';
 @import '../templates/pages/404/style.css';
 
 
@@ -14,6 +15,10 @@
 @import '../templates/subpages/goals/style.css';
 @import '../templates/subpages/design-philosophy/style.css';
 @import '../templates/subpages/resume/style.css';
+
+
+@import '../templates/modules/goals-module/style.css';
+@import '../templates/modules/link-card/style.css';
 
 
 

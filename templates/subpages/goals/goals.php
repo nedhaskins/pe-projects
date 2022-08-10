@@ -22,7 +22,7 @@ $goalSections = $pageData[3]['sections'];
 
 		<?php foreach ($goalSections as $section) {
 			
-			include("templates/modules/goals-module.php");
+			include("templates/modules/goals-module/template.php");
 
 		} ?>
 
