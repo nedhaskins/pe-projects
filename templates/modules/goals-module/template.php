@@ -8,8 +8,8 @@
 </li>
 
 
-			//if main page type == style-guide {
+	<!-- 		//if main page type == style-guide {
 				include dummy-data
 			}
-
+ -->
 			

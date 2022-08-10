@@ -1,42 +1,76 @@
-[
-    {
-        "id": 1,
-        "slug": "that-food-truck",
-        "name": "that food truck",
-        "copy": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
-        "image": "images/los-angeles-skyline.jpeg",
-        "url": "",
-        "languages": ["HTML", "CSS"],
-        "keywords": ["Pre-Responsive", "Theming", "Client Relations"]
-    },
-    {
-        "id": 2,
-        "slug": "responsive-layout-challenge",
-        "name": "responsive layout challenge",
-        "copy": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
-        "image": "images/saigon-skyline.jpeg",
-        "url": "",
-        "languages": ["HTML", "CSS"],
-        "keywords": ["Responsive"]
-    },
-    {
-        "id": 3,
-        "slug": "theme-challenge",
-        "name": "outer banks vacation rentals",
-        "copy": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible ",
-        "image": "images/shoreline-2.jpeg",
-        "url": "",
-        "languages": ["HTML", "CSS", "PHP"],
-        "keywords": ["Responsive", "Framework", "Theming", "Research"]
-    },
-    {
-        "id": 4,
-        "slug": "php-crud",
-        "name": "highways of virginia",
-        "copy": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
-        "image": "images/i-95.jpeg",
-        "url": "",
-        "languages": ["HTML", "CSS", "PHP"],
-        "keywords": ["Responsive", "Routing", "Theming"]
-    }
-]
+{
+    "slug": "projects",
+    "title": "projects",
+    "intro": "Push your limits. All the time. My current areas of focus include digging deeper into the capabilities of CSS, the history and future of layouts on the Web, dynamic programming, and modular systems. These projects showcase some of the end results of my explorations.",
+    "sections": [
+        {
+            "id": 1,
+            "slug": "that-food-truck",
+            "name": "that food truck",
+            "description": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
+            "image": "images/los-angeles-skyline.jpeg",
+            "url": "",
+            "languages": [
+                "HTML",
+                "CSS"
+            ],
+            "keywords": [
+                "Pre-Responsive",
+                "Theming",
+                "Client Relations"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "responsive-layout-challenge",
+            "name": "responsive layout challenge",
+            "description": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
+            "image": "images/saigon-skyline.jpeg",
+            "url": "",
+            "languages": [
+                "HTML",
+                "CSS"
+            ],
+            "keywords": [
+                "Responsive"
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "theme-challenge",
+            "name": "outer banks vacation rentals",
+            "description": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible ",
+            "image": "images/shoreline-2.jpeg",
+            "url": "",
+            "languages": [
+                "HTML",
+                "CSS",
+                "PHP"
+            ],
+            "keywords": [
+                "Responsive",
+                "Framework",
+                "Theming",
+                "Research"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "php-crud",
+            "name": "highways of virginia",
+            "description": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
+            "image": "images/i-95.jpeg",
+            "url": "",
+            "languages": [
+                "HTML",
+                "CSS",
+                "PHP"
+            ],
+            "keywords": [
+                "Responsive",
+                "Routing",
+                "Theming"
+            ]
+        }
+    ]
+}

@@ -11,12 +11,10 @@
 @import '../templates/pages/404/style.css';
 
 
-@import '../templates/subpages/bio/style.css';
-@import '../templates/subpages/goals/style.css';
-@import '../templates/subpages/design-philosophy/style.css';
-@import '../templates/subpages/resume/style.css';
+@import '../templates/subpages/goals.css';
+@import '../templates/subpages/resume.css';
 
-
+@import '../templates/modules/header-and-text/style.css';
 @import '../templates/modules/goals-module/style.css';
 @import '../templates/modules/link-card/style.css';
 

@@ -1,10 +1,5 @@
 <?php include('templates/components/about-navbar.php');
 
-
-
-
-
-
 //this will be a function
 
 if( isset($_GET['id']) ) {
@@ -15,11 +10,11 @@ if( isset($_GET['id']) ) {
 		// echo $subpageID;
 
 		if($subpageID == $_GET['id']) {
-			include("templates/subpages/" . $subpage['slug'] . "/" . $subpage['slug'] . ".php");
+			include("templates/subpages/" . $subpage['slug'] . ".php");
 		}
 	}
 } else {
-	include("templates/subpages/bio/bio.php");
+	include("templates/subpages/bio.php");
 }
 
 ?>

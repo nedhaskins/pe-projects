@@ -1,9 +1,8 @@
 {
-    "id": 3,
     "slug": "the-lab",
-    "header": "the lab",
-    "copy": "I'm always experimenting.  Here are some things I've got in the works.",
-    "unordered-list": [
+    "title": "the lab",
+    "intro": "I'm always experimenting.  Here are some things I've got in the works.",
+    "sections": [
         {
             "slug": "layout-garden",
             "name": "layout garden",
