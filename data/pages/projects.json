@@ -10,7 +10,7 @@
             "description": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
             "image": "images/los-angeles-skyline.jpeg",
             "url": "",
-            "caseStudy": "",
+            "caseStudy": {},
             "languages": [
                 "HTML",
                 "CSS"
@@ -28,7 +28,7 @@
             "description": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
             "image": "images/saigon-skyline.jpeg",
             "url": "",
-            "caseStudy": "",
+            "caseStudy": {},
             "languages": [
                 "HTML",
                 "CSS"
@@ -46,18 +46,18 @@
             "url": "",
             "caseStudy":
             {
-                "title": "Case study header",
-                "copy": "This goes into more detail about this project!",
+                "title": "outer banks vacation rentals",
+                "copy": "Theming, CSS frameworks, and replication.",
                 "sections": [
                     {
-                        "subheader": "Part 1",
+                        "subheader": "Research",
                         "copy": "Some basic info about the project. This text is some placeholder text. This text is some placeholder text. This text is some placeholder text.",
                         "image-header": "Here's an example image",
                         "image": "images/collage.jpg",
                         "figcaption": "Some detail info about the image"
                     },
                     {
-                        "subheader": "Part 2",
+                        "subheader": "Building the project",
                         "copy": "How the project is progressing. This text is some placeholder text. This text is some placeholder text. This text is some placeholder text.",
                         "image-header": "Here's an example image",
                         "image": "images/collage.jpg",
@@ -91,6 +91,7 @@
             "description": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
             "image": "images/i-95.jpeg",
             "url": "",
+            "caseStudy": {},
             "languages": [
                 "HTML",
                 "CSS",

@@ -39,4 +39,6 @@
 		<h3 class='attention-voice'>Conclusion</h3>
 		<p class='body-copy'>Some basic info about the project. This text is some placeholder text. This text is some placeholder text. This text is some placeholder text.</p>
 
+		<a href="">Link to the project</a>
+
 
