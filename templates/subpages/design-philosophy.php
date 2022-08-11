@@ -9,6 +9,8 @@ $sections = $pageData[1]['sections'];
 
 <section class='design-philosophy'>
 
-<?php include('templates/modules/header-and-text/template.php'); ?>
+	<?php foreach($sections as $section) { 
+		include('templates/modules/header-and-text/template.php');
+	} ?>
 
 </section>

@@ -14,6 +14,7 @@ $sections = $pageData[0]['sections'];
 
 <section class='bio'>
 
-<?php include('templates/modules/header-and-text/template.php'); ?>
-
+	<?php foreach($sections as $section) {
+		include('templates/modules/header-and-text/template.php');
+	} ?>
 </section>

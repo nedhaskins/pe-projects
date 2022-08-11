@@ -2,11 +2,11 @@
 
 <section class='subheader-figure-caption'>
 
-  <h3 class='attention-voice'>A picture's worth many words.</h2>
+  <h3 class='attention-voice'><?$section['image-header']?></h3>
 
     <picture>
-      <img src="../../images/collage.jpg" alt="Placeholder collage image">
-      <figcaption class='body-copy'>Here's some text that gives some deeper insight into this part of the project.</figcaption>
+      <img src="<?=$section['image']?>" alt="<?=$section['alt']?>">
+      <figcaption class='body-copy'>"<?=$section['figcaption']?>"</figcaption>
     </picture>
 
 </section>

@@ -54,20 +54,23 @@
                     {
                         "moduleType": "subheader-and-text",
                         "header": "Research",
-                        "copy": "We chose a theme and looked up sites using this theme."
+                        "copy": [
+                            "We chose a theme and looked up sites using this theme."
+                        ]
                     },
                     {
                         "moduleType": "subheader-figure-caption",
-                        "header": "Building the project",
-                        "copy": "We edited the CSS styling with minimal, if any, changes to the HTML to achieve the theme.",
                         "image-header": "Here's an example image",
-                        "image": "images/shoreline-2.jpeg",
-                        "figcaption": "Some detail info about the image"
+                        "image": "../../images/shoreline-2.jpeg",
+                        "alt": "Picture of a shoreline",
+                        "figcaption": "We edited the CSS styling with minimal, if any, changes to the HTML to achieve the theme."
                     },
                     {
                         "moduleType": "subheader-and-text",
                         "header": "Conclusion",
-                        "copy": "Frameworks offer a lot of freedom even if it doesn't appear so at first."
+                        "copy": [
+                            "Frameworks offer a lot of freedom even if it doesn't appear so at first."
+                        ]
                     }
                 ]
             },
