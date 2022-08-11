@@ -30,3 +30,35 @@ if( isset($_GET['slug']) ) {	<------NOT NEEDED - the home page can do without it
 Looks like you didn't need the isset after all in the other one.  The errors came back only on the home page, and those wouldn't show normally.
 
 Those error messages were throwing you off!  Users won't always see those.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+
+$sections = $pageData['sections'];
+
+
+foreach($sections as $section) {
+	$hasCaseStudy = ($caseStudy != "");
+
+	if($hasCaseStudy) {
+
+	 ?>

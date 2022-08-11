@@ -1,0 +1,16 @@
+.subheader-figure-caption img {
+	max-width: 344px;
+	padding: 10px;
+	border: 3px solid var(--ink);
+
+}
+
+@media(prefers-color-scheme: dark) {
+.subheader-figure-caption img {
+	border: 3px solid var(--ink-dark);
+	}
+}
+
+figcaption {
+	font-size: 0.9rem;	
+}

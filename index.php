@@ -31,7 +31,7 @@
 	<gridbox class='logo'>
 
 		<artifact>
-			<?php include('full-logo.svg'); ?>
+			<?php include('images/full-logo.svg'); ?>
 		</artifact>
 
 	</gridbox>

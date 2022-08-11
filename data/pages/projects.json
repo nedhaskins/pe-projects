@@ -10,6 +10,7 @@
             "description": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
             "image": "images/los-angeles-skyline.jpeg",
             "url": "",
+            "caseStudy": "",
             "languages": [
                 "HTML",
                 "CSS"
@@ -27,6 +28,7 @@
             "description": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
             "image": "images/saigon-skyline.jpeg",
             "url": "",
+            "caseStudy": "",
             "languages": [
                 "HTML",
                 "CSS"
@@ -42,6 +44,34 @@
             "description": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible ",
             "image": "images/shoreline-2.jpeg",
             "url": "",
+            "caseStudy":
+            {
+                "title": "Case study header",
+                "copy": "This goes into more detail about this project!",
+                "sections": [
+                    {
+                        "subheader": "Part 1",
+                        "copy": "Some basic info about the project. This text is some placeholder text. This text is some placeholder text. This text is some placeholder text.",
+                        "image-header": "Here's an example image",
+                        "image": "images/collage.jpg",
+                        "figcaption": "Some detail info about the image"
+                    },
+                    {
+                        "subheader": "Part 2",
+                        "copy": "How the project is progressing. This text is some placeholder text. This text is some placeholder text. This text is some placeholder text.",
+                        "image-header": "Here's an example image",
+                        "image": "images/collage.jpg",
+                        "figcaption": "Some detail info about the image"
+                    },
+                    {
+                        "subheader": "Conclusion",
+                        "copy": "How the project came out and lessons learned. This text is some placeholder text. This text is some placeholder text. This text is some placeholder text.",
+                        "image-header": "",
+                        "image": "",
+                        "figcaption": ""
+                    }
+                ]
+            },
             "languages": [
                 "HTML",
                 "CSS",
