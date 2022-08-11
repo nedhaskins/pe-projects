@@ -26,7 +26,7 @@
 
 		<!--if it is a local project and has a case study-->
 		<?php } elseif ($hasCaseStudy && !$isExternalLink) { ?>
-			<a class='attention-voice' href="?page=case-study" target="">
+			<a class='attention-voice' href="?page=case-study&slug=<?=$item['slug']?>" target="">
 				<?=$item['name']?>			
 			</a>
 
