@@ -1,0 +1,27 @@
+graphic-list {
+    display: block;
+    padding: var(--modulePadding);
+}
+
+
+
+
+.graphic-list .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4rem;
+/*    justify-content: center;*/
+    gap: 15px;
+    margin-top: 22px;
+}
+
+
+.e4p-image {
+	width: 45px;
+	height: 45px;
+}
+
+.graphic-list ul {
+    margin-left: 50px;
+}

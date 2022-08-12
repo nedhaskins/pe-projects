@@ -11,24 +11,29 @@
 </head>
 <body>
 
-<inner-column>
+<!-- <inner-column> -->
 
-	<gridbox class='navbar'>
-		<?php include('navbar.php'); ?>
-	</gridbox>
+	<header>
 
-	<gridbox class='logo'>
-		<artifact>
-			<?php include('images/full-logo.svg'); ?>
-		</artifact>
-	</gridbox>
+		<div class='site-menu'>
 
+			<nav class='navbar'>
+				<?php include('navbar.php'); ?>
+			</nav>
 
-	<gridbox class='page-content'>
+			<div class='logo'>
+				<?php include('images/full-logo.svg'); ?>
+			</div>
+
+		</div>
+
+	</header>
+
+	<main class='page-content'>
 		<?php fetchPage(); ?>
-	</gridbox>
+	</main>
 
-</inner-column>
+<!-- </inner-column> -->
 
 </body>
 </html>

@@ -71,9 +71,9 @@ foreach($sections as $section) {
 
 - [ ] Any properties that could use global variables?
 
+- [ ] Edit e4p SVGs to have light and dark mode
 
-
-
+- [ ] Light-and-dark mode toggle for whole site, to be put in site-menu
 
 
 

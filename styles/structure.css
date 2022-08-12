@@ -1,6 +1,6 @@
 /*STRUCTURE*/
 
-body {
+/*body {
 
 display: flex;
 flex-direction: row;
@@ -25,7 +25,7 @@ inner-column {
 	grid-template-columns: repeat(12, 1fr);
 	}
 }
-
+*/
 
 /*STANDARD MODULE PADDING*/
 

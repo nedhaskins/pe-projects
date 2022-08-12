@@ -1,0 +1,56 @@
+{
+    "sections": [
+        {
+            "header": "exercises for programmers",
+            "copy": [
+                "These exercises are taken from Brian Hogan's <em>Exercises for Programmers</em> book.  These 57 exercises explore the main concepts in programming and demonstrate how to use conditonal statements, functions, etc. to work out practical problems.  The exercises are written in PHP and JavaScript."
+            ],
+            "buttons": [
+                "PHP",
+                "JavaScript"
+            ],
+            "items": [
+                {
+                    "name": "Pizza Party",
+                    "file": "modules/08-pizza-party.php",
+                    "image": "images/e4p/8.svg"
+                },
+                {
+                    "name": "Paint Calculator",
+                    "file": "modules/09-paint-calculator.php",
+                    "image": "images/e4p/9.svg"
+                },
+                {
+                    "name": "Self Checkout",
+                    "file": "modules/10-self-checkout.php",
+                    "image": "images/e4p/10.svg"
+                },
+                {
+                    "name": "Currency Conversion",
+                    "file": "modules/11-currency-conversion.php",
+                    "image": "images/e4p/11.svg"
+                },
+                {
+                    "name": "Computing Simple Interest",
+                    "file": "modules/12-computing-simple-interest.php",
+                    "image": "images/e4p/12.svg"
+                },
+                {
+                    "name": "Determining Compound Interest",
+                    "file": "modules/13-determining-compound-interest.php",
+                    "image": "images/e4p/13.svg"
+                },
+                {
+                    "name": "Tax Calculator",
+                    "file": "modules/14-tax-calculator.php",
+                    "image": "images/e4p/14.svg"
+                },
+                {
+                    "name": "Legal Driving Age",
+                    "file": "modules/16-legal-driving-age.php",
+                    "image": "images/e4p/16.svg"
+                }
+            ]
+        }
+    ]
+}
