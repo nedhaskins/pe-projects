@@ -1,4 +1,10 @@
 
+.header-and-text {
+	padding: var(--modulePadding);
+}
+
+
+
 .header-and-text p {
 	line-height: 1.3em;
 }

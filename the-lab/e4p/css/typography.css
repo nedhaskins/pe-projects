@@ -11,6 +11,6 @@ inner-column.e4p {
 	font-family: 'Baskerville';
 	font-size: 2.7rem;
 	letter-spacing: 0.2em;
-   padding: 27px;
+   padding: 27px;  /*var(--modulePadding);*/
 	text-align: center;
 }

@@ -27,14 +27,19 @@ inner-column {
 }
 
 
+/*STANDARD MODULE PADDING*/
 
+body {
+	--modulePadding: 27px 27px 0px 27px;
+
+}
 
 /*ABOUT-NAVBAR COMPONENT*/
 
 
 
 .about-navbar {
-	margin-bottom: 30px;
+padding: var(--modulePadding);
 }
 
 .about-navbar ul {

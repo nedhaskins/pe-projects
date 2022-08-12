@@ -1,5 +1,5 @@
 .resume {
-	margin: 27px;
+	padding: var(--modulePadding);;
 	display: flex;
 	flex-direction: column;
 }

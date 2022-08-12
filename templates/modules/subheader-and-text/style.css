@@ -1,8 +1,13 @@
 
-.header-and-text p {
+.subheader-and-text {
+	padding: var(--modulePadding);
+}
+
+
+.subheader-and-text p {
 	line-height: 1.3em;
 }
 
-.header-and-text :is(p, p + h2) {
+.subheader-and-text :is(p, p + h2) {
 	margin-top: 28px;
 }

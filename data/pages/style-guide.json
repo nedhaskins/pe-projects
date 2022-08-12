@@ -1,8 +1,16 @@
 {
     "slug": "style-guide",
-    "title": "style guide",
-    "intro": "Here's a guide to all of the modules you can find on this site!",
+    "header": "style guide",
+    "copy": "Here's a guide to all of the modules you can find on this site!",
     "sections": [
+        
+        {
+            "type": "font-overview"
+        },
+
+
+
+
         {
             "type": "404"
         },
@@ -10,7 +18,20 @@
             "type": "contact-form"
         },
         {
-            "type": "goals-module"
+            "type": "goals-module",
+            "sections": [
+                    {
+                        "jobTitle": "Apprentice",
+                        "company": "Perpetual Education",
+                        "city": "Los Angeles, CA",
+                        "startDate": "February 2022",
+                        "endDate": "present",
+                        "description": "Design for the Web is a course focused on providing an in-depth, challenging, and holistic approach to teaching all aspects of the web design process.  During this course, we have honed our skills in HTML, CSS, PHP and JavaScript, always putting user experience and ease of access at the forefront of our work; understood time management, team building, and content strategy to be essential to the overall success of any project; and engaged in weekly, intense projects that continuously integrate all of our skills and push us to the next level of understanding and personal achievement."
+                    }
+                ]
+        },
+         {
+            "type": "resume-section"
         },
         {
             "type": "header-and-text"

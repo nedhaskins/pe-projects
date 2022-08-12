@@ -14,12 +14,18 @@
 @import '../templates/subpages/goals.css';
 @import '../templates/subpages/resume.css';
 
+
 @import '../templates/modules/landing-page/style.css';
 @import '../templates/modules/header-and-text/style.css';
+@import '../templates/modules/subheader-and-text/style.css';
 @import '../templates/modules/goals-module/style.css';
 @import '../templates/modules/link-card/style.css';
 @import '../templates/modules/subheader-figure-caption/style.css';
 @import '../templates/modules/contact-form/style.css';
+
+@import '../templates/modules/font-overview/style.css';
+
+
 @import '../templates/modules/404/style.css';
 
 
@@ -33,7 +39,7 @@ gridbox {
 
 gridbox:is(.page-content, .navbar, .logo) {
 		/*border: 3px dashed black;*/
-		margin: 5px;
+		/*margin: 5px;*/
 }
 
 
@@ -113,10 +119,24 @@ svg .curve {
 
 
 
+.line {
+	border: 2px solid var(--ink);
+	margin-top: 27px;
+}
+
+@media(prefers-color-scheme: dark) {
+
+.line {
+	border: 1px solid var(--ink-dark);
+}
+
+}
 
 
 
 
-/*Put all of the elemts if they're unique to this page--no matter what they are --  in this template.
+
+
+/*Put all of the elements if they're unique to this page--no matter what they are --  in this template.
 The things that will go across the entire site -- the text classes, the colors -- those go in the site.css.
 

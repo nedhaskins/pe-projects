@@ -1,6 +1,6 @@
 
 .goals {
-	margin: 27px;
+	padding: var(--modulePadding);
 	display: flex;
 	flex-direction: column;
 }
@@ -8,17 +8,3 @@
 
 
 
-
-
-.goal-line {
-	border: 2px solid var(--ink);
-	margin-top: 27px;
-}
-
-@media(prefers-color-scheme: dark) {
-
-.goal-line {
-	border: 1px solid var(--ink-dark);
-}
-
-}

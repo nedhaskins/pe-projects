@@ -4,7 +4,7 @@
 .four-oh-four {
 	width: 100%;
 	height: 100%;
-		margin: 27px;
+padding: var(--modulePadding);
 }
 
 .four-oh-four h1 {

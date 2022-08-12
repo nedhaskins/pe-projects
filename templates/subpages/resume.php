@@ -20,7 +20,7 @@ $certs = $pageData[2]['sections'][2]['certs'];
 	<?php foreach ($jobs as $job) { ?>
 
 		<li>
-			<h3 class='job-voice'><?=$job['jobTitle']?></h3>
+			<h3 class='bold-voice'><?=$job['jobTitle']?></h3>
 			<p class='info'><em><?=$job['company']?></em>, <?=$job['city']?>, <em><?=$job['startDate']?>-<?=$job['endDate']?></em></p>
 			<p class='description'><?=$job['description']?></p>
 		</li>
@@ -35,7 +35,7 @@ $certs = $pageData[2]['sections'][2]['certs'];
 	<?php foreach ($education as $item) { ?>
 
 		<li>
-			<h3 class='job-voice'><?=$item['name']?></h3>
+			<h3 class='bold-voice'><?=$item['name']?></h3>
 			<p class='info'><?=$item['awarded']?></p>
 		
 			<p class='description'><em><?=$item['startDate']?>-<?=$item['endDate']?></em></p>
@@ -51,7 +51,7 @@ $certs = $pageData[2]['sections'][2]['certs'];
 	<?php foreach ($certs as $cert) { ?>
 
 		<li>
-			<h3 class='job-voice'><?=$cert['name']?></h3>
+			<h3 class='bold-voice'><?=$cert['name']?></h3>
 			<p class='description'><em><?=$cert['awarded']?></em></p>
 		</li>
 			

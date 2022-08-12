@@ -36,20 +36,6 @@ Those error messages were throwing you off!  Users won't always see those.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
 
 
@@ -62,3 +48,42 @@ foreach($sections as $section) {
 	if($hasCaseStudy) {
 
 	 ?>
+
+
+
+
+
+}}
+
+
+
+
+
+
+
+## Stuff to add to the site / styling to-do list
+
+- [ ] Animate the windmill
+
+- [ ] Some kind of checkered div line to separate modules in the style guide
+
+- [ ] Add "case-study" logo to link-cards
+
+- [ ] Any properties that could use global variables?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ $goalSections = $pageData[3]['sections'];
 	<h1 class='attention-voice'>goals</h1>
 	<h3 class='attention-voice'>updated August 2, 2022</h3>
 
-	<div class='goal-line'></div>
+	<div class='line'></div>
 
 	<ul class='goal-list'>
 
