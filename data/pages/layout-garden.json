@@ -1,0 +1,17 @@
+{
+    "sections": [
+        {
+            "header": "layout garden",
+            "copy": ["Welcome! I'm trying some new things out with each module that I add to this page."],
+            "items": [
+                {
+                    "name": "Layout 1",
+                    "file": "modules/layouts/",
+                    "image": ""
+                },
+              
+                
+            ]
+        }
+    ]
+}

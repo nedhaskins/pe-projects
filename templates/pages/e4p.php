@@ -16,11 +16,9 @@ $sections = $pageData['sections'];
 			include('templates/modules/header-and-text/template.php');
 		} ?>
 
-
-		<?php include('templates/modules/button-list/template.php'); ?>
-
-
-
+		<?php foreach($sections as $section) {
+			include('templates/modules/button-list/template.php');
+		} ?>
 
 
 		<?php foreach($sections as $section) {

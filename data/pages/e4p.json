@@ -5,49 +5,56 @@
             "copy": [
                 "These exercises are taken from Brian Hogan's <em>Exercises for Programmers</em> book.  These 57 exercises explore the main concepts in programming and demonstrate how to use conditonal statements, functions, etc. to work out practical problems.  The exercises are written in PHP and JavaScript."
             ],
-            "buttons": [
-                "PHP",
-                "JavaScript"
+            "buttons" : [
+                "PHP", "Javascript"
             ],
             "items": [
                 {
-                    "name": "Pizza Party",
-                    "file": "modules/08-pizza-party.php",
+                    "id": 8,
+                    "slug": "08-pizza-party",
+                    "name": "Pizza Party",                 
                     "image": "images/e4p/8.svg"
                 },
                 {
+                    "id": 9,
+                    "slug": "09-paint-calculator",
                     "name": "Paint Calculator",
-                    "file": "modules/09-paint-calculator.php",
                     "image": "images/e4p/9.svg"
                 },
                 {
+                    "id": 10,
+                    "slug": "10-self-checkout",
                     "name": "Self Checkout",
-                    "file": "modules/10-self-checkout.php",
                     "image": "images/e4p/10.svg"
                 },
                 {
+                    "id": 11,
+                    "slug": "11-currency-conversion",
                     "name": "Currency Conversion",
-                    "file": "modules/11-currency-conversion.php",
                     "image": "images/e4p/11.svg"
                 },
                 {
+                    "id": 12,
+                    "slug": "12-computing-simple-interest",
                     "name": "Computing Simple Interest",
-                    "file": "modules/12-computing-simple-interest.php",
                     "image": "images/e4p/12.svg"
                 },
                 {
+                    "id": 13,
+                    "slug": "13-determining-compound-interest",
                     "name": "Determining Compound Interest",
-                    "file": "modules/13-determining-compound-interest.php",
                     "image": "images/e4p/13.svg"
                 },
                 {
+                    "id": 14,
+                    "slug": "14-tax-calculator",
                     "name": "Tax Calculator",
-                    "file": "modules/14-tax-calculator.php",
                     "image": "images/e4p/14.svg"
                 },
                 {
+                    "id": 16,
+                    "slug": "16-legal-driving-age",
                     "name": "Legal Driving Age",
-                    "file": "modules/16-legal-driving-age.php",
                     "image": "images/e4p/16.svg"
                 }
             ]
