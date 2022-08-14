@@ -20,7 +20,7 @@
 	
 		<!--if it is a local project and has no case study-->
 		<?php if (!$hasCaseStudy && !$isExternalLink) { ?>
-			<a class='attention-voice' href="<?=$pageData['slug']?>/<?=$item['slug']?>/index.php">
+			<a class='attention-voice' href="?page=<?=$item['slug']?>">
 				<?=$item['name']?>
 			</a>
 

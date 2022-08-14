@@ -13,56 +13,56 @@
             "items": [
                 {
                     "id": 8,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "08-pizza-party",
                     "name": "Pizza Party",
                     "image": "images/e4p/8.svg"
                 },
                 {
                     "id": 9,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "09-paint-calculator",
                     "name": "Paint Calculator",
                     "image": "images/e4p/9.svg"
                 },
                 {
                     "id": 10,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "10-self-checkout",
                     "name": "Self Checkout",
                     "image": "images/e4p/10.svg"
                 },
                 {
                     "id": 11,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "11-currency-conversion",
                     "name": "Currency Conversion",
                     "image": "images/e4p/11.svg"
                 },
                 {
                     "id": 12,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "12-computing-simple-interest",
                     "name": "Computing Simple Interest",
                     "image": "images/e4p/12.svg"
                 },
                 {
                     "id": 13,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "13-determining-compound-interest",
                     "name": "Determining Compound Interest",
                     "image": "images/e4p/13.svg"
                 },
                 {
                     "id": 14,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "14-tax-calculator",
                     "name": "Tax Calculator",
                     "image": "images/e4p/14.svg"
                 },
                 {
                     "id": 16,
-                    "page": "exercise",
+                    "pageType": "exercise",
                     "slug": "16-legal-driving-age",
                     "name": "Legal Driving Age",
                     "image": "images/e4p/16.svg"

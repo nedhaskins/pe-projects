@@ -2,8 +2,10 @@
 			<ul>
 				<?php foreach ($section['items'] as $item) { ?>
 					<li class='list-item'>
-						<picture class='e4p-image'><?php include($item['image']); ?></picture>
-						<a href="?page=<?=$item['page']?>&slug=<?=$item['slug']?>"><?=$item['name']?></a>
+						<?php if($item['image'] != "") { ?>
+							<picture class='e4p-image'><?php include($item['image']); ?></picture>
+						<?php } ?>
+						<a href="?page=<?=$item['pageType']?>&slug=<?=$item['slug']?>"><?=$item['name']?></a>
 					</li>
 				<?php } ?>
 			</ul>
