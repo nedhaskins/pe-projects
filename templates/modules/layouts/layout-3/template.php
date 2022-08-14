@@ -1,14 +1,4 @@
-<?php
-$json = file_get_contents('data/pages/layout.json');
-$pageData = json_decode($json, true);
-$sections = $pageData['sections'];
 
-
-// $articles = $data['articles'];
-// $heading = $data['heading'];
-// $opening = $data['opening'];
-
-?>
 
 <section class='breaking-news'>
 	<inner-column>
@@ -16,7 +6,7 @@ $sections = $pageData['sections'];
 			<header>
 				<?php $items = $section['items']; ?>
 					<h2 class='heading-voice'><?=$items['heading']?></h2>
-					<p class='copy-voice'><?=$items['$opening']?></p>
+					<p class='copy-voice'><?=$items['opening']?></p>
 					
 			</header>
 

@@ -8,10 +8,8 @@
 			</div>
 			<div class='articles'>
 
-			<?php foreach($sections as $section) {
 
-
-			$items = $section['items'];
+			<?php $items = $section['items'];
 
 				foreach ($items['articles'] as $article) { ?>
 					<div class='article'>
@@ -21,9 +19,7 @@
 						<h3 class='heading-voice'><?=$article['title']?></h3>
 						<p class='copy-voice'><?=$article['content']?></p>
 					</div><!--article-->
-				<?php } 
-
-			}?>
+				<?php } ?>
 			</div>
 		</article-section>
 
