@@ -1,24 +1,3 @@
-<!doctype html>
-
-<?php
-
-$json = file_get_contents("layout-2.json");
-
-$data = json_decode($json, true);
-
-$articles = $data['articles'];
-
-?>
-
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<title></title>
-</head>
-<body>
-
 	<inner-column>
 
 		<article-section>
@@ -28,7 +7,13 @@ $articles = $data['articles'];
 				<p class='copy-voice'>This is some body text. This is some body text. This is some body text. This is some body text.</p>
 			</div>
 			<div class='articles'>
-				<?php foreach ($articles as $article) { ?>
+
+			<?php foreach($sections as $section) {
+
+
+			$items = $section['items'];
+
+				foreach ($items['articles'] as $article) { ?>
 					<div class='article'>
 						<logo>
 							<?php include('logo.svg'); ?>
@@ -36,7 +21,9 @@ $articles = $data['articles'];
 						<h3 class='heading-voice'><?=$article['title']?></h3>
 						<p class='copy-voice'><?=$article['content']?></p>
 					</div><!--article-->
-				<?php } ?>
+				<?php } 
+
+			}?>
 			</div>
 		</article-section>
 

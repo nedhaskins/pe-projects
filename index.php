@@ -13,9 +13,15 @@
 
 <!-- <inner-column> -->
 
+<?php if( $_GET['page'] != 'layout' && !isset ($_GET['slug'] ) ) { ?>
+
+
 	<header>
 
 		<div class='site-menu'>
+
+
+
 
 			<nav class='navbar'>
 				<?php include('navbar.php'); ?>
@@ -28,6 +34,8 @@
 		</div>
 
 	</header>
+
+<?php } ?> 
 
 	<main class='page-content'>
 		<?php fetchPage(); ?>

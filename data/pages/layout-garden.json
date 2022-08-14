@@ -13,6 +13,34 @@
                     "name": "Layout 1",
                     "slug": "layout-1",
                     "image": ""
+                },
+                {
+
+                    "pageType": "layout",
+                    "name": "Layout 2",
+                    "slug": "layout-2",
+                    "image": ""
+                },
+                 {
+
+                    "pageType": "layout",
+                    "name": "Layout 3",
+                    "slug": "layout-3",
+                    "image": ""
+                },
+                 {
+
+                    "pageType": "layout",
+                    "name": "Layout 4",
+                    "slug": "layout-4",
+                    "image": ""
+                },
+                 {
+
+                    "pageType": "layout",
+                    "name": "Layouts 5 - 6",
+                    "slug": "layouts-5-6",
+                    "image": ""
                 }
             ]
         }
