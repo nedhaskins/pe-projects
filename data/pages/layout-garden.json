@@ -38,8 +38,15 @@
                  {
 
                     "pageType": "layout",
-                    "name": "Layouts 5 - 6",
-                    "slug": "layouts-5-6",
+                    "name": "Layout 5",
+                    "slug": "layout-5",
+                    "image": ""
+                },
+                {
+
+                    "pageType": "layout",
+                    "name": "Layout 6",
+                    "slug": "layout-6",
                     "image": ""
                 }
             ]
