@@ -4,12 +4,11 @@ $json = file_get_contents('data/pages/projects.json');
 $pageData = json_decode($json, true);
 $sections = $pageData['sections'];
 
-foreach($sections as $section) {
+foreach($sections as $MainSection) {
 
-	$caseStudy = $section['caseStudy'];
+	$caseStudy = $MainSection['caseStudy'];
 
-	if($section['slug'] == $_GET['slug']) {
-		echo $section ['slug']; ?>
+	if($MainSection['slug'] == $_GET['slug']) { ?>
 
 		<section class='case-study'>
 
@@ -19,10 +18,15 @@ foreach($sections as $section) {
 			<?php	foreach($caseStudy['sections'] as $section) {
 				$moduleType = $section['moduleType'];
 				include("templates/modules/$moduleType/template.php");	
-			} 
+			} ?>
 
-		echo "</section>";
+
+
+
+			<a class='external-link' href="projects/<?=$MainSection['slug']?>/index.<?=$MainSection['siteXtensionType']?>">Link to the project</a> 
+
+		</section>
 	
-	} 
+	<?php }
 
-} ?>
+	} ?>
