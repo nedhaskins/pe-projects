@@ -9,40 +9,49 @@
 	<title>Ned Haskins - Web Designer - Richmond, VA</title>
 
 </head>
-<body>
-
-<!-- <inner-column> -->
-
-<?php if( $_GET['page'] != 'layout' && !isset ($_GET['slug'] ) ) { ?>
 
 
-	<header>
+<?php
 
-		<div class='site-menu'>
+if( isset($_GET['page']) ) {
+$page = $_GET['page']; 
+} else {
+	$page = 'home';
+}
 
+if( isset($_GET['slug']) ) {
+$slug = $_GET['slug'];
+}
 
+if($page == 'layout' && isset($_GET['slug'] ) ) { ?>
 
+	<body class='layout'>
+		<main class='page-content'>
+			<p>This will have a different body class.</p>
+			<?php fetchPage(); ?>
+		</main>
 
-			<nav class='navbar'>
-				<?php include('navbar.php'); ?>
-			</nav>
+	</body>
 
-			<div class='logo'>
-				<?php include('images/full-logo.svg'); ?>
+<?php } else { ?>            
+
+	<body class='index'>
+		<header>
+			<div class='site-menu'>
+				<nav class='navbar'>
+					<?php include('navbar.php'); ?>
+				</nav>
+				<div class='logo'>
+					<?php include('images/full-logo.svg'); ?>
+				</div>
 			</div>
+		</header>
 
-		</div>
+		<main class='page-content'>
+			<?php fetchPage(); ?>
+		</main>
+	</body>
 
-	</header>
+<?php } ?>
 
-<?php } ?> 
-
-	<main class='page-content'>
-		<?php fetchPage(); ?>
-	</main>
-
-<!-- </inner-column> -->
-
-</body>
 </html>
-

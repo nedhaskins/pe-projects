@@ -6,7 +6,7 @@ $sections = $pageData['sections'];
 ?>
 <a href="?page=layout-garden">Back to Layout Garden</a>
 
-<section class='layout'>
+
 <?php
 
 //I need only the specified template to return here.
@@ -18,14 +18,22 @@ $sections = $pageData['sections'];
 
 foreach($sections as $section) {
 
-		if($section['slug'] == $_GET['slug']) {
-			include("templates/modules/layouts/" . $section['slug'] . "/template.php");
-		} //  else {
-		// 		include("index.php");
-		// }
-	} ?>
+	if($section['slug'] == $_GET['slug']) { ?>
+
+		<section class='<?=$section['slug']?>'>
+
+			<?php	include("templates/modules/layouts/" . $section['slug'] . "/template.php");
+			} ?>
 
 
-</section>
+<!-- 			//  else {
+			// 		include("index.php");
+			// } -->
+
+		</section>
+
+<?php } ?>
+
+
 
 <!--Uses same logic as the about subpage. -->

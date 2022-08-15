@@ -1,24 +1,9 @@
-@import 'reset.css';
 
 
 
-/*SETUP*/
 
 
-html {
 
-	--falured: hsl(3, 65%, 31%);
-	--sweetcorn: hsl(52, 87%, 72%);
-	font-family: sans-serif;
-	font-size: 16px;
-	color: var(--falured);
-}
-
-body {
-	background-color: var(--sweetcorn);
-
-
-}
 
 @media(min-width: 960px) {
 	body {
@@ -29,15 +14,6 @@ body {
 	}
 }
 
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-picture {
-	display: block;
-}
 
 /*STRUCTURE*/
 

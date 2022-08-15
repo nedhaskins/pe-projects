@@ -27,6 +27,44 @@ inner-column {
 }
 */
 
+
+/*BODY CLASS STYLES */
+
+body.index {
+	border: 6px solid var(--cgred);
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	gap: 20px;
+
+	grid-template-rows: auto 1fr;
+	/*background-image: linear-gradient(30deg, white, gray);*/
+
+}
+
+body.layout {
+	display: block;
+}
+
+
+@media (min-width: 700px) and (min-height: 600px) {
+	body.index {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	header {
+		order: 2;
+	}
+
+	header .site-menu {
+		position: sticky;
+		top: 0;
+	}
+}
+
+
+
 /*STANDARD MODULE PADDING*/
 
 body {

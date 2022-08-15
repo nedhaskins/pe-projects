@@ -23,6 +23,12 @@
 @import '../templates/modules/graphic-list/style.css';
 @import '../templates/modules/button-list/style.css';
 
+@import '../templates/modules/layouts/layout-1/style.css';
+
+
+
+
+
 
 @import '../templates/modules/subheader-figure-caption/style.css';
 @import '../templates/modules/contact-form/style.css';
@@ -34,57 +40,6 @@
 
 
 
-/*HOME TEMPLATE ELEMENTS*/
-
-
-/*gridbox {
-	display: block;
-}
-
-
-gridbox.page-content {
-	grid-column: 1 / 8;
-	grid-row: 1 / 7;
-	height: 100vh;
-	overflow: scroll;
-}
-
-gridbox.navbar {
-	grid-column: span 5;
-	grid-row: 1 / 2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-gridbox.logo {
-	grid-column: span 5;
-	grid-row: 2 / 7;
-}
-*/
-
-
-
-
-/*LAYOUT REVISIONS 8.11.22*/
-
-body {
-	border: 6px solid var(--cgred);
-	min-height: 100vh;
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	gap: 20px;
-
-	grid-template-rows: auto 1fr;
-	/*background-image: linear-gradient(30deg, white, gray);*/
-
-}
-
-header {
-	/*border: 6px solid cyan;*/
-	/*padding: 10px;*/
-}
 
 header .site-menu {
 	/*border: 6px solid #e23f53;*/
@@ -96,20 +51,7 @@ main {
 	padding: 20px;
 }
 
-@media (min-width: 700px) and (min-height: 600px) {
-	body {
-		grid-template-columns: 1fr 1fr;
-	}
 
-	header {
-		order: 2;
-	}
-
-	header .site-menu {
-		position: sticky;
-		top: 0;
-	}
-}
 
 /*MAIN - PAGE CONTENT */
 
@@ -183,7 +125,6 @@ svg .curve {
 }
 
 }
-
 
 
 
