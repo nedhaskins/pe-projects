@@ -112,8 +112,15 @@
 	}
 
 	.layout-2 .article {
-		border: 3px solid black;
+		border: 3px solid var(--black);
 		padding: 14px;
+	}
+
+	@media(prefers-color-scheme: dark) {
+
+		.layout-2 .article {
+		border: 3px solid var(--ink-dark);
+		}
 	}
 
 	.layout-2 .article:last-of-type {
@@ -140,7 +147,7 @@
 
 
 .layout-2 .line {
-	border: 1px solid var(--falured);
+	border: 1px solid var(--ink);
 	width: 70%;
 
 }
@@ -214,10 +221,19 @@
 	}
 
 	.layout-2 .text-wrapper p {
-		color: var(--sweetcorn);
-		background-color: var(--falured);
+		color: var(--paper);
+		background-color: var(--ink);
 		line-height: 1.6;
 		padding: 20px;
 	}
+
+	@media(prefers-color-scheme: dark) {
+
+		.layout-2 .text-wrapper p {
+		color: var(--black);
+		}
 	}
+
+
+
 }

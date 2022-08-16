@@ -6,7 +6,7 @@ $pageData = json_decode($json, true);
 $sections = $pageData['sections'];
 
 ?>
-<a href="?page=layout-garden">Back to Layout Garden</a>
+<a class='garden-link' href="?page=layout-garden">Back to Layout Garden</a>
 
 
 <?php

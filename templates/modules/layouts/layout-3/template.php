@@ -1,7 +1,7 @@
 
 
 
-	<inner-column>
+
 		<article-section>
 			<header>
 				<?php $items = $section['items']; ?>
@@ -24,5 +24,5 @@
 					<?php } ?>
 			</div>
 		</article-section>
-	</inner-column>
+
 

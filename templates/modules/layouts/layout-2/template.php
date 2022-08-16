@@ -1,4 +1,4 @@
-	<inner-column>
+
 
 		<article-section>
 			<div class='article-heading'>
@@ -31,7 +31,7 @@
 		</footer>
 
 
-	</inner-column>
+
 
 </body>
 </html>

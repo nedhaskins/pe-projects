@@ -6,12 +6,14 @@ html {
 --tolopea: #160f46;
 --desire: #e23f53;
 --cgred: #dd3b30;
+--x11gray: #bcbcbc;
+--black: #000000;
 
---paper: var(--sweetcorn);
---ink: var(--falured);
+--paper: var(--x11gray);
+--ink: var(--cgred);
 
---paper-dark: var(--tolopea);
---ink-dark: var(--sweetcorn);
+--paper-dark: var(--black);
+--ink-dark: var(--cgred);
 
 }
 

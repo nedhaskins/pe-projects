@@ -1,5 +1,5 @@
 html {
-	--floor: 27px;
+	--floor: 16px;
 	--stepOne: 1.272019rem; /* floor * golden ratio^0.5 */
 	--stepTwo: 1.618033rem; /* floor * golden ratio */
 	--stepThree: 2.058171rem; /* floor * golden ratio^1.5 */
@@ -11,7 +11,7 @@ html {
 
 
 body {
-	font-family: 'sans serif';
+	font-family: sans-serif;
 }
 
 
@@ -39,4 +39,9 @@ h3 {
 .bold-voice {
 	font-weight: 600;
 	letter-spacing: 0.1em;
+}
+
+.garden-link {
+	padding: 20px 0px 0px 20px;
+	text-decoration: underline;
 }

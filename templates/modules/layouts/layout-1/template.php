@@ -1,4 +1,3 @@
-	<inner-column>
 
 		<article-section>
 			<div class='article-heading'>
@@ -34,4 +33,3 @@
 		} ?>
 		</picture-section>
 
-	</inner-column>

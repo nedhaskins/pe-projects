@@ -7,13 +7,32 @@
 
 
 .layout-3 header {
-	color: var(--ink);
+	background-color: var(--ink);
+	font-weight: 700;
 }
+
+
+.layout-3 header :is(h2, p) {
+	color: var(--paper);
+}
+
+@media (prefers-color-scheme: dark) {
+	.layout-3 header :is(h2, p) {
+		color: var(--paper-dark);
+	}
+}
+
+
+
 
 
 
 article-section, logo {
 	display: block;
+}
+
+article-section {
+	margin-top: 20px;
 }
 
 
@@ -38,6 +57,7 @@ article-section header {
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
+	gap: 14px;
 }
 
 
@@ -55,6 +75,7 @@ article-section header {
 	.layout-3 .articles {
 		position: absolute;
 		transform: translate(0, -100px);
+
 	}
 
 	.layout-3 .articles article {
@@ -62,19 +83,16 @@ article-section header {
 		padding: 16px;
 		background-color: var(--paper);
 	}
-}
 
-@media(min-width: 600px) {
-
-
-	.layout-3 .articles {
-		display: flex;
-		flex-direction: column;
+	@media(prefers-color-scheme: dark) {
+		.layout-3 .articles article {
+			border: 3px solid var(--paper);
+		}
 	}
-
 }
 
-@media(min-width: 900px) {
+
+@media(min-width: 700px) {
 	.layout-3 logo {
 		width: 99px;
 		height: 99px;
@@ -100,7 +118,9 @@ article-section header {
 
 @media(prefers-color-scheme: dark) {
 
-	.index-line {
+	.layout-3 .articles article {
+		background-color: var(--black);
 		border: 3px solid var(--paper);
+
 	}
 }

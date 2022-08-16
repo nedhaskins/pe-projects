@@ -41,7 +41,6 @@ $slug = $_GET['slug'];
 
 	<body class='layout'>
 		<main class='page-content'>
-			<p>This will have a different body class.</p>
 			<?php fetchPage(); ?>
 		</main>
 

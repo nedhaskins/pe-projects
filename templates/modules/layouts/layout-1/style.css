@@ -1,6 +1,4 @@
 .layout-1 {
-	background-color: black;
-	color: white;
 	font-family: sans-serif;
 	font-size: 16px;
 }
@@ -19,7 +17,7 @@
 /*STRUCTURE*/
 
 .layout-1 inner-column {
-padding: 30px;
+padding: 20px;
 }
 
 
@@ -76,7 +74,7 @@ padding: 30px;
 
 
 .layout-1 .line {
-	border: 1px solid var(--falured);
+	border: 1px solid var(--ink);
 	width: 90%;
 
 }
@@ -92,20 +90,6 @@ padding: 30px;
 	max-width: 600px;
 }
 
-.layout-1 h2 {
-	font-size: 1.6rem;
-}
-
-.layout-1 h2 + p {
-	margin-bottom: 40px;
-}
-
-
-.layout-1 h3 {
-	font-size: 0.8rem;
-
-}
-
 .layout-1 h3, .layout-1 p, .layout-1 picture, .layout-1 .line {
 	margin-top: 20px;
 }
@@ -114,9 +98,6 @@ padding: 30px;
 	font-weight: 700;
 }
 
-.layout-1 .copy-voice {
-	font-size: 0.6rem;
-}
 
 @media(min-width: 600px) {
 
@@ -124,37 +105,3 @@ padding: 30px;
 		margin-top: 0px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

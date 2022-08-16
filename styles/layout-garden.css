@@ -7,7 +7,3 @@
 @import '../templates/modules/layouts/layout-1/style.css';
 @import '../templates/modules/layouts/layout-2/style.css';
 @import '../templates/modules/layouts/layout-3/style.css';
-
-body {
-	background-color: var(--paper);
-}
