@@ -1,47 +1,4 @@
-@import 'reset.css';
-@import 'typography.css';
 
-
-
-/*SETUP*/
-
-
-html {
-
-	--falured: hsl(3, 65%, 31%);
-	--sweetcorn: hsl(52, 87%, 72%);
-
-	--ink: ;
-	--paper: ;
-	--color: ;
-	--highlight: ;
-
-	font-family: sans-serif;
-	font-size: 16px;
-	color: var(--falured);
-}
-
-body {
-	background-color: var(--sweetcorn);
-	/*margin: 20px;*/
-}
-
-@media(min-width: 600px) {
-	body {
-	display: flex;
-	justify-content: center;
-	}
-}
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-picture, svg {
-	display: block;
-}
 
 logo {
 	display: block;
@@ -54,37 +11,10 @@ logo {
 	}
 }
 
-/*STRUCTURE*/
-
-inner-column {
-	margin: 30px;
-}
-
-
-
-inner-column, article-section {
+article-section {
 	display: block;
 }
 
-
-/* commented out for Layout 2 */
-@media (min-width:  960px) {
-
-	inner-column {
-/*		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 40px;*/
-		max-width: 1200px;
-	}
-}
-
-
-/*@media(min-width: 960px) {
-	inner-column {
-		max-height: 600px;
-	}
-}*/
 
 picture-section {
 	margin-top: 20px;
@@ -165,57 +95,11 @@ picture-section {
 }
 
 
-h3.heading-voice {
-	font-weight: 700;
-}
-
 @media(min-width: 600px) {
 footer {
 	margin: 30px 0px 30px 0px;
 }
 }
-
-
-
-
-
-
-/*TYPOGRAPHY*/
-
-
-img {
-	max-width: 600px;
-}
-
-h2 {
-	font-size: 2.3rem;
-	margin-top: 15px;
-}
-
-h2 + p {
-	margin-bottom: 40px;
-}
-
-
-h3 {
-	font-size: 1.25rem;
-
-}
-
-h3, picture, .line {
-	margin: 16px 0px 16px 0px;
-}
-
-
-
-@media(min-width: 600px) {
-
-	picture {
-		margin-top: 0px;
-	}
-}
-
-
 
 @media(min-width: 600px) {
 

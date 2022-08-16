@@ -5,40 +5,13 @@
 
 
 
-@media(min-width: 960px) {
-	body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-		height: 100vh;
-	}
-}
 
-
-/*STRUCTURE*/
-
-inner-column {
-	margin: 30px;
-}
-
-
-
-inner-column, article-section {
+article-section {
 	display: block;
 }
 
 
 
-@media (min-width:  960px) {
-
-	inner-column {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 40px;
-		max-width: 1200px;
-	}
-}
 
 picture-section {
 	margin-top: 20px;
@@ -82,53 +55,6 @@ picture-section {
 
 }
 
-
-h3.heading-voice {
-}
-
-
-
-
-/*TYPOGRAPHY*/
-
-
-img {
-	max-width: 600px;
-}
-
-h2 {
-	font-size: 2.3rem;
-	margin-top: 30px;
-}
-
-h2 + p {
-	margin-bottom: 40px;
-}
-
-
-h3 {
-	font-size: 1.25rem;
-
-}
-
-h3, p, picture, .line {
-	margin-top: 20px;
-}
-
-.heading-voice {
-	font-weight: 700;
-}
-
-.copy-voice {
-	font-size: 1rem;
-}
-
-@media(min-width: 600px) {
-
-	picture {
-		margin-top: 0px;
-	}
-}
 
 
 

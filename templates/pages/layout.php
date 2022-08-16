@@ -1,3 +1,5 @@
+
+
 <?php
 $json = file_get_contents('data/pages/layout.json');
 $pageData = json_decode($json, true);
@@ -22,6 +24,8 @@ foreach($sections as $section) {
 
 		<section class='<?=$section['slug']?>'>
 
+			<inner-column>
+
 			<?php	include("templates/modules/layouts/" . $section['slug'] . "/template.php");
 			} ?>
 
@@ -29,7 +33,7 @@ foreach($sections as $section) {
 <!-- 			//  else {
 			// 		include("index.php");
 			// } -->
-
+			</inner-column>
 		</section>
 
 <?php } ?>

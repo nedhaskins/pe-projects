@@ -56,11 +56,11 @@
 
 
 	?>
-
+<section class='exercise'>
 
 	<form method='POST'>
 
-		<h1>Exercise 8 - Pizza Party</h1>
+		<h2 class='title-voice'>Exercise 8 - Pizza Party</h1>
 
 		<field>
 			<label>How many people are at the party?</label>
@@ -76,15 +76,7 @@
 
 	</form>
 
+	<output><?=$message?></output>
 
-
-
-	<?php
-
-	echo $message;
-
-?>
-
-</body>
-</html>
+</section>
 

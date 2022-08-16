@@ -1,0 +1,42 @@
+html {
+	--floor: 27px;
+	--stepOne: 1.272019rem; /* floor * golden ratio^0.5 */
+	--stepTwo: 1.618033rem; /* floor * golden ratio */
+	--stepThree: 2.058171rem; /* floor * golden ratio^1.5 */
+	--stepFour: 2.618034rem; /* floor * golden ratio^2 */
+
+	font-size: var(--floor);
+
+}
+
+
+body {
+	font-family: 'sans serif';
+}
+
+
+h1 {
+	font-size: var(--stepThree);
+}
+
+h2 {
+	font-size: var(--stepTwo);
+}
+
+h3 {
+	font-size: var(--stepOne);
+}
+
+.title-voice {
+	letter-spacing: 0.3em;
+}
+
+.attention-voice {
+	font-style: italic;
+	letter-spacing: 0.2em;
+}
+
+.bold-voice {
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}

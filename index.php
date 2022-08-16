@@ -1,17 +1,6 @@
-<?php include('functions.php'); ?>
-
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet' href='styles/site.css'>
-	<title>Ned Haskins - Web Designer - Richmond, VA</title>
-
-</head>
+<?php include('functions.php');
 
 
-<?php
 
 if( isset($_GET['page']) ) {
 $page = $_GET['page']; 
@@ -23,7 +12,32 @@ if( isset($_GET['slug']) ) {
 $slug = $_GET['slug'];
 }
 
-if($page == 'layout' && isset($_GET['slug'] ) ) { ?>
+
+?>
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<?php if($page == 'layout') { ?>
+
+	<link rel='stylesheet' href='styles/layout-garden.css'>
+
+<?php } else { ?>
+
+	<link rel='stylesheet' href='styles/site.css'>
+
+<?php } ?>
+
+	<title>Ned Haskins - Web Designer - Richmond, VA</title>
+
+
+</head>
+
+<?php if($page == 'layout' && isset($_GET['slug'] ) ) { ?>
 
 	<body class='layout'>
 		<main class='page-content'>

@@ -36,4 +36,4 @@ if( isset($_GET['slug']) ) {
 
 </section>
 
-<!--Uses same logic as the about --> subpage.
+<!--Uses same logic as the about  subpage. -->

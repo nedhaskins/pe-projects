@@ -1,0 +1,18 @@
+inner-column {
+	display: block;
+/*	flex-direction: column;*/
+		max-width: 1400px; /*default*/
+		padding: 10px;
+}
+
+
+@media (min-width: 715px){
+	inner-column {
+
+	padding: 0px 40px 0px 40px;
+
+	}
+}
+
+
+/*maybe a min-height 100vh for body? */

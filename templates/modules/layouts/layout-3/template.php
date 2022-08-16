@@ -1,6 +1,6 @@
 
 
-<section class='breaking-news'>
+
 	<inner-column>
 		<article-section>
 			<header>
@@ -25,4 +25,4 @@
 			</div>
 		</article-section>
 	</inner-column>
-</section>
+
