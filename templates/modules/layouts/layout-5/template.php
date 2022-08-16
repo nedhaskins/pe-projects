@@ -1,4 +1,9 @@
 
+
+
+
+
+
 <header class='site-header'>
 
 	<h1 class='heading-voice'>Tattoo Shop 1</h1>

@@ -1,7 +1,5 @@
 <?php include('functions.php');
 
-
-
 if( isset($_GET['page']) ) {
 $page = $_GET['page']; 
 } else {
@@ -12,9 +10,7 @@ if( isset($_GET['slug']) ) {
 $slug = $_GET['slug'];
 }
 
-
 ?>
-
 
 <!doctype html>
 <html>
