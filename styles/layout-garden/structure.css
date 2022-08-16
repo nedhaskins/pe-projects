@@ -1,7 +1,7 @@
 inner-column {
 	display: block;
 /*	flex-direction: column;*/
-		max-width: 1400px; /*default*/
+		max-width: 1920px; /*default*/
 		padding: 10px;
 }
 
