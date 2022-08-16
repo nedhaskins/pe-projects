@@ -1,111 +1,69 @@
+<?php
+
+$title = $section['items']['title'];
+$sections = $section['items']['sections'];
+
+?>
+
 <!-- <section class='header'> -->
 <header class='site-header'>
 
-	<h1 class='heading-voice'>Tattoo Shop 2</h1>
+	<h1 class='heading-voice'><?=$title?></h1>
 
 </header>
 
 <shirts>
 
-	<h3 class='heading-voice'>Shirts</h3>
+<?php
+	$heading = $sections[0]['heading'];
+	$images = $sections[0]['images']; ?>
+
+	<h3 class='heading-voice'><?=$heading?></h3>
 
 	<picture-section>	
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/shirt-1.webp' alt="">
-			<figcaption class='copy-voice'>Apparel</figcaption>
-		</picture>
 
-		<!--The filepath is from INDEX, not from where the PHP script lives!-->
+		<?php foreach($images as $image) { ?>
 
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/shirt-2.webp' alt="">
-			<figcaption class='copy-voice'>Manager's Collection</figcaption>
-		</picture>
+			<picture class='shop-photo'>
+				<img src='<?=$image['image']?>' alt="">
+				<figcaption class='copy-voice'><?=$image['figcaption']?></figcaption>
+			</picture>
 
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/poster-1.webp' alt="">
-			<figcaption class='copy-voice'>Posters</figcaption>
-		</picture>
+		<?php } ?>
+
 	</picture-section>
 
 </shirts>
 
 <tattoos>
-	
-	<h3 class='heading-voice'>Tattoos</h3>
+	<?php
+		$heading = $sections[1]['heading'];
+		$pictures = $sections[1]['pictures'];?>
+
+	<h3 class='heading-voice'><?=$heading?></h3>
+
 	<picture-section>	
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/mandalorian.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/bird.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/octolantern.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/tiger-fish.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/mandalorian.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='templates/modules/layouts/layout-6/images/bird.webp' alt="">
-		</picture>
+		<?php foreach($pictures as $picture) { ?>
+				<picture class='shop-photo'>
+					<img src='<?=$picture?>' alt="">
+				</picture>
+		<?php } ?>
 	</picture-section>
-
 </tattoos>
 
-
-
 <artists>
+	<?php
+	$heading = $sections[2]['heading'];
+	$pictures = $sections[2]['pictures'];?>
 	
 	<h3 class='heading-voice'>Artists</h3>
+
 	<picture-section>	
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/mandalorian.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/bird.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/octolantern.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/tiger-fish.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/mandalorian.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/bird.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/octolantern.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/tiger-fish.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/mandalorian.webp' alt="">
-		</picture>
-
-		<picture class='shop-photo'>
-			<img src='../templates/modules/layouts/layout-6/images/bird.webp' alt="">
-		</picture>
+		<?php foreach($pictures as $picture) { ?>
+			<picture class='shop-photo'>
+				<img src='<?=$picture?>' alt="">
+			</picture>
+		<?php } ?>
 	</picture-section>
 
 </artists>

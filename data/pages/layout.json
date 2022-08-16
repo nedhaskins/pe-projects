@@ -196,47 +196,47 @@
             {
                 "title": "Tattoo Shop 2",
                 "sections": [
-                    [
-                        {
-                            "heading": "Shirts"
-                        },
-                        {
-                            "image": "templates/modules/layouts/layout-6/images/shirt-1.webp",
-                            "figcaption": "Apparel"
-                        },
-                        {
-                            "image": "templates/modules/layouts/layout-6/images/shirt-2.webp",
-                            "figcaption": "Manager's Collection"
-                        },
-                        {
-                            "image": "templates/modules/layouts/layout-6/images/poster-1.webp",
-                            "figcaption": "Posters"
-                        }
-                    ],
+                    {
+                        "heading": "Shirts",
+                        "images": [
+                            {
+                                "image": "templates/modules/layouts/layout-6/images/shirt-1.webp",
+                                "figcaption": "Apparel"
+                            },
+                            {
+                                "image": "templates/modules/layouts/layout-6/images/shirt-2.webp",
+                                "figcaption": "Manager's Collection"
+                            },
+                            {
+                                "image": "templates/modules/layouts/layout-6/images/poster-1.webp",
+                                "figcaption": "Posters"
+                            }
+                        ]
+                    },
                     {
                         "heading": "Tattoos",
                         "pictures": [
                             "templates/modules/layouts/layout-6/images/mandalorian.webp",
-                            "templates/modules/layouts/layout-6/images/bird.web",
+                            "templates/modules/layouts/layout-6/images/bird.webp",
                             "templates/modules/layouts/layout-6/images/octolantern.webp",
                             "templates/modules/layouts/layout-6/images/tiger-fish.webp",
                             "templates/modules/layouts/layout-6/images/mandalorian.webp",
-                            "templates/modules/layouts/layout-6/images/bird.web"
+                            "templates/modules/layouts/layout-6/images/bird.webp"
                         ]
                     },
                     {
                         "heading": "Artists",
                         "pictures": [
                             "templates/modules/layouts/layout-6/images/mandalorian.webp",
-                            "templates/modules/layouts/layout-6/images/bird.web",
+                            "templates/modules/layouts/layout-6/images/bird.webp",
                             "templates/modules/layouts/layout-6/images/octolantern.webp",
                             "templates/modules/layouts/layout-6/images/tiger-fish.webp",
                             "templates/modules/layouts/layout-6/images/mandalorian.webp",
-                            "templates/modules/layouts/layout-6/images/bird.web",
+                            "templates/modules/layouts/layout-6/images/bird.webp",
                             "templates/modules/layouts/layout-6/images/octolantern.webp",
                             "templates/modules/layouts/layout-6/images/tiger-fish.webp",
                             "templates/modules/layouts/layout-6/images/mandalorian.webp",
-                            "templates/modules/layouts/layout-6/images/bird.web"
+                            "templates/modules/layouts/layout-6/images/bird.webp"
                         ]
                     }
                 ]
