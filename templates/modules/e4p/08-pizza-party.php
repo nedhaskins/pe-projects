@@ -1,5 +1,9 @@
 
 	<?php
+
+	$fields = $exercise['form']['fields'];
+	$button = $exercise['button'];
+
 	//Figure out how many people
 	$people = 4;
 	//Figure out how many pizzas
@@ -23,7 +27,6 @@
 		}
 	}
 
-
 	//Do calculations
 	$totalSlices = $pizzas * $slicesPerPizza;
 	$remainder = $totalSlices % $people; //look at how the modulo works here!
@@ -35,33 +38,27 @@
 
 	// = (160-75) / 85
 
-
 	//Create message
 	$message = "There are $slicesPerPerson slices per person and $remainder slices left over.";
 
-
-
 	//Display message
-
-
 
 	?>
 
-	<h2 class='title-voice'>#8 - Pizza Party</h2>
+	<h2 class='title-voice'><?=$exercise['name']?></h2>
 
 	<form method='POST'>
 
-		<field>
-			<label>How many people are at the party?</label>
-			<input type='number' name='people' min='1' value='<?php echo $people; ?>' required> <!--the 'required' requires input to move forward! -->
-		</field>
+		<?php foreach($fields as $field) { ?>
 
-		<field>
-			<label>How many pizzas are there?</label>
-			<input type='number' name='pizzas'min='1' value="<?=$pizzas?>" required>
-		</field>
+			<field>
+				<label><?=$field['label']?></label>
+				<input type='<?=$field['label']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='<?=$field['value']?>' required>
+			</field>
 
-		<button type='submit' name='submitted'>Submit</button>
+		<?php } ?>
+
+		<button type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
 
 	</form>
 

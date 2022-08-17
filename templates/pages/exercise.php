@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents('data/pages/e4p.json');
+$json = file_get_contents('data/pages/exercise.json');
 $pageData = json_decode($json, true);
 $exercises = $pageData['exercises'];
 

@@ -1,6 +1,10 @@
 
-
 <?php
+
+	$fields = $exercise['form']['fields'];
+	$button = $exercise['button'];
+
+
 
 $won = 30000000000;
 $rate = 1324.35;
@@ -49,20 +53,21 @@ if( isset($_POST['submitted']) ) {
 }
 ?>
 
-<h1>#11 - Currency Conversion</h1>
+<h1><?=$exercise['name']?></h1>
 
 <form method='POST'>
-	<field>
-		<label>How many won are you exchanging?</label>
-		<input name='won' type='number' value='<?=$won?>' step= '0.01' min='0'>
-	</field>
+
+<?php foreach($fields as $field) { ?>
+
 
 	<field>
-		<label>What is the exchange rate?</label>
-		<input name='rate' type='number' value='<?=$rate?>' step= '0.01' min='0'>
+		<label><?=$field['label']?></label>
+		<input  type='<?=$field['type']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='<?=$won?>' step= '<?=$field['step']?>' >
 	</field>
 
-	<button type='submit' name='submitted'>Get the current rate</button>
+<?php } ?>
+
+	<button type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
 </form>
 
 <output>

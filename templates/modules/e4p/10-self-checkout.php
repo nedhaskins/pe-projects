@@ -1,5 +1,9 @@
 <?php
 
+	$fields = $exercise['form']['fields'];
+	$button = $exercise['button'];
+
+
 $valueError = false;
 $subtotal = false;
 
@@ -50,47 +54,21 @@ if( isset($_POST['submitted']) ) {
 
 ?>
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/site.css">
-	<title></title>
-</head>
-<body>
-
-</body>
-</html>
-
-<h1>#10 - Self Checkout</h1>
+<h1><?=$exercise['name']?></h1>
 
 <form method='POST'>
-	<field>
-		<label>Enter the price of item 1.</label>
-		<input name='price-1' type='number' value='<?=$price1?>' step= '0.01' min='0'>
-	<?php if($valueError) { ?>
-		<p class='error'><?=$valueError?></p>
-	<?php } ?>
-	</field>
+
+	<?php foreach ($fields as $field) { ?>
 
 	<field>
-		<label>Enter the price of item 2.</label>
-		<input name='price-2' type='number' value='<?=$price2?>' step= '0.01' min='0'>
-	<?php if($valueError) { ?>
-		<p class='error'><?=$valueError?></p>
-	<?php } ?>
+		<label><?=$field['label']?></label>
+		<input type='<?=$field['type']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='<?=$price1?>' step= '<?=$field['step']?>'>
+		<?php if($valueError) { ?>
+			<p class='error'><?=$valueError?></p>
+		<?php } ?>
 	</field>
 
-	<field>
-		<label>Enter the price of item 3.</label>
-		<input name='price-3' type='number' value='<?=$price3?>' step= '0.01' min='0'>
-	<?php if($valueError) { ?>
-		<p class='error'><?=$valueError?></p>
 	<?php } ?>
-	</field>
-	
-	
-	
 
 	<button type='submit' name='submitted'>Calculate total</button>
 </form>
