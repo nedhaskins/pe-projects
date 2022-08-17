@@ -15,6 +15,6 @@ $section = $pageData;
 
 		<?php include('templates/modules/button-list/template.php'); ?>
 
-		<?php include('Templates/modules/graphic-list/template.php'); ?>
+		<?php include('templates/modules/graphic-list/template.php'); ?>
 
 	</section>
