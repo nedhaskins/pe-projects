@@ -4,6 +4,7 @@
 
 <?php
 $age = 0;
+$valueError = false;
 
 if( isset($_POST['submitted']) ) {
 

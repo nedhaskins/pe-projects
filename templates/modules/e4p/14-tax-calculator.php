@@ -4,7 +4,7 @@ $tax = 0;
 $subtotal = 0;
 $valueError = "";
 
-$json = file_get_contents('../data/state-tax.json');
+$json = file_get_contents('data/e4p/state-tax.json');
 $data = json_decode($json, true);
 $states = $data['states'];
 
