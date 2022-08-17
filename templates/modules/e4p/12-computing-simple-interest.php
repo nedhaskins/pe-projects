@@ -1,9 +1,10 @@
 
-<!doctype html>
+
 
 <?php
 
-
+$valueError = false;
+$principal = false;
 //no variables need to be defined in this space.  They will be created when there's a $_POST value.
 
 

@@ -23,7 +23,7 @@
 @import '../templates/modules/graphic-list/style.css';
 @import '../templates/modules/button-list/style.css';
 
-
+@import '../templates/modules/e4p/style.css';
 
 
 
@@ -54,7 +54,7 @@ main {
 /*MAIN - PAGE CONTENT */
 
 .page-content {
-	border: 6px solid var(--desire);
+	/*border: 6px solid var(--cgred);*/
 
 }
 

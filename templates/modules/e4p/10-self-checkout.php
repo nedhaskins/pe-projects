@@ -1,6 +1,7 @@
-<!doctype html>
-
 <?php
+
+$valueError = false;
+$subtotal = false;
 
 if( isset($_POST['submitted']) ) {
 

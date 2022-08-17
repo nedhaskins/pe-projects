@@ -1,13 +1,3 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../css/site.css">
-		<title></title>
-	</head>
-	
-<body>
 
 	<?php
 	//Figure out how many people
@@ -56,11 +46,10 @@
 
 
 	?>
-<section class='exercise'>
+
+	<h2 class='title-voice'>#8 - Pizza Party</h2>
 
 	<form method='POST'>
-
-		<h2 class='title-voice'>Exercise 8 - Pizza Party</h1>
 
 		<field>
 			<label>How many people are at the party?</label>
@@ -77,6 +66,3 @@
 	</form>
 
 	<output><?=$message?></output>
-
-</section>
-

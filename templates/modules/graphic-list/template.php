@@ -1,11 +1,11 @@
 		<section class='graphic-list'>
 			<ul>
-				<?php foreach ($section['items'] as $item) { ?>
+				<?php foreach ($section['exercises'] as $exercise) { ?>
 					<li class='list-item'>
-						<?php if($item['image'] != "") { ?>
-							<picture class='e4p-image'><?php include($item['image']); ?></picture>
+						<?php if($exercise['image'] != "") { ?>
+							<picture class='e4p-image'><?php include($exercise['image']); ?></picture>
 						<?php } ?>
-						<a href="?page=<?=$item['pageType']?>&slug=<?=$item['slug']?>"><?=$item['name']?></a>
+						<a href="?page=<?=$exercise['pageType']?>&slug=<?=$exercise['slug']?>"><?=$exercise['name']?></a>
 					</li>
 				<?php } ?>
 			</ul>

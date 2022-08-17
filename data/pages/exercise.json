@@ -1,0 +1,74 @@
+[
+    {
+        "id": 8,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "08-pizza-party",
+        "name": "Pizza Party",
+        "image": "images/e4p/8.svg"
+    },
+    {
+        "id": 9,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "09-paint-calculator",
+        "name": "Paint Calculator",
+        "image": "images/e4p/9.svg"
+    },
+    {
+        "id": 10,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "10-self-checkout",
+        "name": "Self Checkout",
+        "image": "images/e4p/10.svg"
+    },
+    {
+        "id": 11,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "11-currency-conversion",
+        "name": "Currency Conversion",
+        "image": "images/e4p/11.svg"
+    },
+    {
+        "id": 12,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "12-computing-simple-interest",
+        "name": "Computing Simple Interest",
+        "image": "images/e4p/12.svg"
+    },
+    {
+        "id": 13,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "13-determining-compound-interest",
+        "name": "Determining Compound Interest",
+        "image": "images/e4p/13.svg"
+    },
+    {
+        "id": 14,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "14-tax-calculator",
+        "name": "Tax Calculator",
+        "image": "images/e4p/14.svg"
+    },
+    {
+        "id": 16,
+        "pageType": "exercise",
+        "language": "PHP",
+        "slug": "16-legal-driving-age",
+        "name": "Legal Driving Age",
+        "image": "images/e4p/16.svg"
+    },
+    {
+        "id": 1,
+        "pageType": "exercise",
+        "language": "JavaScript",
+        "slug": "01-saying-hello",
+        "name": "Saying Hello",
+        "image": "images/e4p/1.svg"
+    }
+]

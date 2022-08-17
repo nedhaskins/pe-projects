@@ -1,6 +1,8 @@
-<!doctype html>
 
 <?php
+
+$valueError = false;
+$length = false;
 
 if( isset($_POST['submitted']) ) {
 
@@ -34,19 +36,7 @@ if( isset($_POST['submitted']) ) {
 
 ?>
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/site.css">
-	<title></title>
-</head>
-<body>
-
-</body>
-</html>
-
-<h1>#9 - Paint Calculator</h1>
+<h2 class='title-voice'>#9 - Paint Calculator</h1>
 
 <form method='POST'>
 	<field>

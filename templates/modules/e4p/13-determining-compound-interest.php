@@ -3,7 +3,7 @@
 
 
 <?php
-
+$valueError = false;
 $principal = 0;
 $rate = 0;
 $years = 0;

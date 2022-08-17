@@ -31,7 +31,7 @@ inner-column {
 /*BODY CLASS STYLES */
 
 body.index {
-	border: 6px solid var(--cgred);
+	/*border: 6px solid var(--cgred);*/
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: auto;
@@ -67,6 +67,11 @@ body.layout {
 }
 
 
+inner-column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*STANDARD MODULE PADDING*/
 
@@ -92,3 +97,21 @@ padding: var(--modulePadding);
 .about-navbar li:hover {
 	color: white;
 }
+
+/*STYLES SPECIFIC TO E4P DETAIL PAGE*/
+
+.exercise, .exercise-column {
+	height: 100%;
+}
+
+
+
+.attention-voice.e4p {
+	text-align: center;
+}
+
+
+.exercise-column {
+	max-width: 450px;
+}
+
