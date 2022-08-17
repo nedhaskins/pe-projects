@@ -55,8 +55,12 @@ main {
 
 .page-content {
 	border: 6px solid var(--desire);
-	height: 100%;
+
 }
+
+
+
+
 
 
 /*NAVBAR ELEMENTS*/
@@ -70,6 +74,27 @@ main {
 .navbar nav a {
 	/*border: 3px dashed blue;*/
 }
+
+
+
+/*LOGO - SVG PARENT ELEMENTS*/
+
+
+.logo {
+	padding: 40px;
+    max-width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 700px) and (min-height: 600px) {
+	.logo {
+    	margin-top: 129px;
+    }
+}
+
+
 
 
 

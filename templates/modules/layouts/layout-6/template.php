@@ -25,7 +25,7 @@ $sections = $section['items']['sections'];
 		<?php foreach($images as $image) { ?>
 
 			<picture class='shop-photo'>
-				<img src='<?=$image['image']?>' alt="">
+				<img src='templates/modules/layouts/layout-6/images/<?=$image['image']?>' alt="">
 				<figcaption class='copy-voice'><?=$image['figcaption']?></figcaption>
 			</picture>
 
@@ -45,7 +45,7 @@ $sections = $section['items']['sections'];
 	<picture-section>	
 		<?php foreach($pictures as $picture) { ?>
 				<picture class='shop-photo'>
-					<img src='<?=$picture?>' alt="">
+					<img src='templates/modules/layouts/layout-6/images/<?=$picture?>' alt="">
 				</picture>
 		<?php } ?>
 	</picture-section>
@@ -61,7 +61,7 @@ $sections = $section['items']['sections'];
 	<picture-section>	
 		<?php foreach($pictures as $picture) { ?>
 			<picture class='shop-photo'>
-				<img src='<?=$picture?>' alt="">
+				<img src='templates/modules/layouts/layout-6/images/<?=$picture?>' alt="">
 			</picture>
 		<?php } ?>
 	</picture-section>

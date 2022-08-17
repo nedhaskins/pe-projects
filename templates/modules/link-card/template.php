@@ -6,8 +6,11 @@
 
 		$itemURL = $item['url'];
 		$isExternalLink = ($itemURL !== "");
+		
 		$caseStudy = $item['caseStudy'];
+
 		$hasCaseStudy = ($caseStudy != []); //brackets needed here...because the object's been translated into a PHP array
+		
 
 		?>
 
