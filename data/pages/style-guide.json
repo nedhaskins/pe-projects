@@ -3,51 +3,69 @@
     "header": "style guide",
     "copy": "Here's a guide to all of the modules you can find on this site!",
     "sections": [
-        
         {
             "type": "font-overview"
         },
-
-
-
-
+        {
+            "type": "home",
+            "heading": "Landing-page text"
+        },
+        {
+            "type": "header-and-text",
+            "header": "Header - step two",
+            "copy": [
+                "Here's some sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            ]
+        },
+        {
+            "type": "subheader-and-text",
+            "header": "Header - step two",
+            "copy": [
+                "Here's some sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            ]
+        },
+        {
+            "type": "subheader-figure-caption",
+            "image-header": "A picture's worth a thousand words.",
+            "image": "images/collage.jpg",
+            "alt": "Some text for screen readers.",
+            "figcaption": "The above photo has some embedded text for screen readers!"
+        },
+        {
+            "type": "goals",
+            "heading": "Goals module",
+            "goals": [
+                "One goal",
+                "Another goal",
+                "A third goal"
+            ]
+        },
         {
             "type": "404"
+        },
+        {
+            "type": "button-list"
         },
         {
             "type": "contact-form"
         },
         {
-            "type": "goals-module",
-            "lastUpdated": "Date of last revision",
-            "sections": [
-                    {
-                        "jobTitle": "Apprentice",
-                        "company": "Perpetual Education",
-                        "city": "Los Angeles, CA",
-                        "startDate": "February 2022",
-                        "endDate": "present",
-                        "description": "Design for the Web is a course focused on providing an in-depth, challenging, and holistic approach to teaching all aspects of the web design process.  During this course, we have honed our skills in HTML, CSS, PHP and JavaScript, always putting user experience and ease of access at the forefront of our work; understood time management, team building, and content strategy to be essential to the overall success of any project; and engaged in weekly, intense projects that continuously integrate all of our skills and push us to the next level of understanding and personal achievement."
-                    }
-                ]
-        },
-         {
-            "type": "resume-section"
+            "type": "form"
         },
         {
-            "type": "header-and-text"
+            "type": "goals-module"
+        },
+        {
+            "type": "graphic-list"
         },
         {
             "type": "landing-page"
         },
         {
+            "type": "layouts"
+        },
+        {
             "type": "link-card"
-        },
-        {
-            "type": "subheader-and-text"
-        },
-        {
-            "type": "subheader-figure-caption"
         },
         {
             "type": "import",

@@ -83,6 +83,17 @@ foreach($sections as $section) {
 
 
 
+<!-- <?php //foreach($pageData['sections'] as $section) {
+
+	//include('templates/modules/'.$section['type']. "/template.php");
+
+ } ?> -->
+
+ ^^^ style-guide logic
+
+
+
+
 
 
 

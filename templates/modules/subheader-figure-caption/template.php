@@ -6,7 +6,7 @@
 
     <picture>
       <img src="<?=$section['image']?>" alt="<?=$section['alt']?>">
-      <figcaption class='body-copy'>"<?=$section['figcaption']?>"</figcaption>
+      <figcaption class='body-copy'><?=$section['figcaption']?></figcaption>
     </picture>
 
 </section>

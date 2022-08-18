@@ -6,25 +6,26 @@ $pageData = json_decode($json, true);
 //change to an if statement that grabs the ID
 //when you refactor this!
 
-$sections = $pageData[3]['sections'];
+$goals = $pageData[3];
+$sections = $goals['sections'];
 
 ?>
 
 <section class='goals'>
 
-	<h1 class='attention-voice'>goals</h1>
-	<h3 class='attention-voice'>updated August 2, 2022</h3>
+	<h1 class='attention-voice'><?=$goals['name']?></h1>
+	<h3 class='attention-voice'><?=$goals['updated']?></h3>
 
-	<div class='line'></div>
+<div class='line'></div>
 
-	<ul class='goal-list'>
+
+
+
 
 		<?php foreach ($sections as $section) {
 			
 			include("templates/modules/goals-module/template.php");
 
 		} ?>
-
-	</ul>
 
 </section>

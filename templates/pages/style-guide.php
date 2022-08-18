@@ -1,97 +1,30 @@
-<?php
 
-
-$json = file_get_contents('data/pages/style-guide.json');
-$pageData = json_decode($json, true);
-
-?>
-
-<!--  -->
 <section class='<?=$pageData['slug']?>'>
 
-<section class='header-and-text'>
-  <h2 class='attention-voice'>style guide</h2>
-  <p class='body-copy'>This page is a guide to all of the elements and modules used on this site.</p>
-</section>
-
-
-
-	<!-- So what will this page do?
-
-	This page will pull in the individual styles for each module, and the JSON file will hold data for each module the same way it does for the actual page content.
-	 -->
+	<section class='header-and-text'>
+	  <h2 class='attention-voice'><?=$pageData['header']?></h2>
+	  <p class='body-copy'><?=$pageData['copy']?></p>
+	</section>
 
 	<div class='line'></div>
 
+	<?php foreach ($pageData['sections'] as $section) {
 
-	<!--FONT OVERVIEW-->
-
-	<?php include('templates/modules/font-overview/template.php'); ?>
-
-	<div class='line'></div>
-
-
-
-<section class='home'>
-	<h1 class='title-voice'>Landing-page text</h1>
-</section>
-
-
-<div class='line'></div>
-
-<!--HEADER + TEXT-->
-
-<section class='header-and-text'>
-  <h2 class='attention-voice'>Header - step two</h2>
-  <p class='body-copy'>Here's some sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</section>
-
-<div class='line'></div>
-
-<!--SUBHEADER + TEXT-->
-
-<section class='subheader-and-text'>
-  <h3 class='attention-voice'>Header - step one</h3>
-  <p class='body-copy'>Here's some sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</section>
-
-<div class='line'></div>
-
-<!--SUBHEADER + FIG + CAPTION -->
-
-<section class='subheader-figure-caption'>
-
-  <h3 class='attention-voice'>A picture's worth a thousand words.</h3>
-
-    <picture>
-      <img src="images/collage.jpg" alt="Some text for screen readers.">
-      <figcaption class='body-copy'>The above photo has some embedded text for screen readers!</figcaption>
-    </picture>
-
-</section>
-
-<div class='line'></div>
-
-<!--GOALS-->
-
-<section class='goals'>
-
-	<h1 class='attention-voice'>goals module</h1>
-	<h3 class='attention-voice'>Date of last revision</h3>
-
-	<div class='line'></div>
-
-	<ul class='goal-list'>
-
-		<?php foreach ($sections as $section) {
+		echo "<div class='line'></div>";
 			
-			include("templates/modules/goals-module/template.php");
+			include('templates/modules/' . $section['type'] . '/template.php');
 
 		} ?>
 
 	</ul>
 
 </section>
+
+
+
+
+
+
 
 <div class='line'></div>
 
