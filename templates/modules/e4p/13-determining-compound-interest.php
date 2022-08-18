@@ -3,6 +3,12 @@
 
 
 <?php
+
+
+	$fields = $exercise['form']['fields'];
+	$button = $exercise['button'];
+
+
 $valueError = false;
 $principal = 0;
 $rate = 0;
@@ -75,59 +81,25 @@ if( isset($_POST['submitted']) ) {
 
 ?>
 
-<!doctype html>
-
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="../css/site.css">
-</head>
-<body>
-
-<h1>#13 - Determining Compound Interest</h1>
+<h2 class='title-voice'><?=$exercise['name']?></h1>
 
 <form method='POST'>
+
+	<?php foreach($fields as $field) { ?>
+
 	<field>
-		<label>Enter the principal amount.</label>
-		<input name='principal' type='number' value='<?=$principal?>' step= '0.01' min='0'>
+		<label><?=$field['label']?></label>
+		<input  type='<?=$field['type']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='0' step= '<?=$field['step']?>' >
 
 		<?php if($valueError) { ?>
-			<p class='error'><?=$valueError?></p>
+				<p class='error'><?=$valueError?></p>
 		<?php } ?>
 		
 	</field>
 
-	<field>
-		<label>Enter the interest rate (%).</label>
-		<input name='rate' type='number' value='<?=$rate?>' step= '0.01' min='0'>
+<?php } ?>
 
-		<?php if($valueError) { ?>
-			<p class='error'><?=$valueError?></p>
-		<?php } ?>
-	</field>
-
-	<field>
-		<label>Enter the number of years.</label>
-		<input name='years' type='number' value='<?=$years?>' step= '0.01' min='0'>
-
-		<?php if($valueError) { ?>
-			<p class='error'><?=$valueError?></p>
-		<?php } ?>
-	</field>
-
-	<field>
-		<label>Enter the number of compoundings per year.</label>
-		<input name='compounds' type='number' value='<?=$compounds?>' step= '0.01' min='0'>
-
-		<?php if($valueError) { ?>
-			<p class='error'><?=$valueError?></p>
-		<?php } ?>
-	</field>
-
-
-	<button type='submit' name='submitted'>Submit info</button>
+	<button type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
 </form>
 
 
@@ -141,7 +113,3 @@ if( isset($_POST['submitted']) ) {
 </output>
 
 <?php } ?>
-
-</body>
-</html>
-

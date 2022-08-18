@@ -88,7 +88,7 @@ main {
     justify-content: center;
 }
 
-@media (min-width: 700px) and (min-height: 600px) {
+@media (min-width: 900px) and (min-height: 600px) {
 	.logo {
     	margin-top: 129px;
     }

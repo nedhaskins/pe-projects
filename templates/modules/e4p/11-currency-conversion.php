@@ -53,7 +53,7 @@ if( isset($_POST['submitted']) ) {
 }
 ?>
 
-<h1><?=$exercise['name']?></h1>
+<h2 class='title-voice'><?=$exercise['name']?></h1>
 
 <form method='POST'>
 

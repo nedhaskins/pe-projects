@@ -144,7 +144,39 @@
             "language": "PHP",
             "slug": "12-computing-simple-interest",
             "name": "Computing Simple Interest",
-            "image": "images/e4p/12.svg"
+            "image": "images/e4p/12.svg",
+            "form":
+            {
+                "fields": [
+                    {
+                        "label": "Enter the principal amount.",
+                        "type": "number",
+                        "name": "principal",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "Enter the interest rate (%)",
+                        "type": "number",
+                        "name": "rate",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "Enter the number of years.",
+                        "type": "number",
+                        "name": "years",
+                        "min": 0,
+                        "step": 0.01
+                    }
+                ]
+            },
+            "button":
+            {
+                "type": "submit",
+                "name": "submitted",
+                "text": "Calculate total"
+            }
         },
         {
             "id": 13,
@@ -152,7 +184,46 @@
             "language": "PHP",
             "slug": "13-determining-compound-interest",
             "name": "Determining Compound Interest",
-            "image": "images/e4p/13.svg"
+            "image": "images/e4p/13.svg",
+            "form":
+            {
+                "fields": [
+                    {
+                        "label": "Enter the principal amount.",
+                        "type": "number",
+                        "name": "principal",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "Enter the interest rate (%)",
+                        "type": "number",
+                        "name": "rate",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "Enter the number of years.",
+                        "type": "number",
+                        "name": "years",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "Enter the number of compoundings per year.",
+                        "type": "number",
+                        "name": "compounds",
+                        "min": 0,
+                        "step": 0.01
+                    }
+                ]
+            },
+            "button":
+            {
+                "type": "submit",
+                "name": "submitted",
+                "text": "Calculate total"
+            }
         },
         {
             "id": 14,
@@ -160,7 +231,30 @@
             "language": "PHP",
             "slug": "14-tax-calculator",
             "name": "Tax Calculator",
-            "image": "images/e4p/14.svg"
+            "image": "images/e4p/14.svg",
+            "form":
+            {
+                "fields": [
+                    {
+                        "label": "Enter the subtotal.",
+                        "type": "number",
+                        "name": "subtotal",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "Enter the state's abbreviation.",
+                        "type": "text",
+                        "name": "state"
+                    }
+                ]
+            },
+            "button":
+            {
+                "type": "submit",
+                "name": "submitted",
+                "text": "Submit"
+            }
         },
         {
             "id": 16,
@@ -168,15 +262,23 @@
             "language": "PHP",
             "slug": "16-legal-driving-age",
             "name": "Legal Driving Age",
-            "image": "images/e4p/16.svg"
-        },
-        {
-            "id": 1,
-            "pageType": "exercise",
-            "language": "JavaScript",
-            "slug": "01-saying-hello",
-            "name": "Saying Hello",
-            "image": "images/e4p/1.svg"
+            "image": "images/e4p/16.svg",
+            "form":
+            {
+                "field":
+                {
+                    "label": "What is your age?",
+                    "type": "number",
+                    "name": "age",
+                    "value": ""
+                }
+            },
+            "button":
+            {
+                "type": "submit",
+                "name": "submitted",
+                "text": "Submit"
+            }
         }
     ]
 }

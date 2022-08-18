@@ -1,5 +1,11 @@
 <?php
 
+
+	$fields = $exercise['form']['fields'];
+	$button = $exercise['button'];
+
+
+
 $tax = 0;
 $subtotal = 0;
 $valueError = "";
@@ -50,37 +56,26 @@ $total = $subtotal + ($subtotal * ($tax / 100));
 
 ?>
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="../css/site.css">
-</head>
-<body>
-
-<h1>#14 - State Sales Tax Calculator</h1>
+<h2 class='title-voice'><?=$exercise['name']?></h1>
 
 <form method='POST'>
 
+<?php 
+
+foreach($fields as $field) { ?>
+
+
 	<field>
-			<label>Enter the subtotal.</label>
-			<input name='subtotal' type='number' step='0.01' min='0'>
+			<label><?=$field['label']?></label>
+			<input type='<?=$field['type']?>'name='<?=$field['name']?>' min='<?=$field['min']?>' step='<?=$field['step']?>' >
 			<?php if($valueError) { ?>
 				<p class='error'><?=$valueError?></p>
 			<?php } ?>
 	</field>
 
+<?php } ?>
 
-
-	<field>
-			<label>Enter the state's abbreviation.</label>
-			<input name='state' type='text'>
-			<?php if($valueError) { ?>
-			<p class='error'><?=$valueError?></p>
-			<?php } ?>
-	</field>
-<button type='submit' name="submitted">Submit</button>
+<button type='<?=$button['type']?>' name="<?=$button['name']?>"><?=$button['text']?></button>
 
 </form>
 
@@ -99,6 +94,3 @@ $total = $subtotal + ($subtotal * ($tax / 100));
 <?php } ?>
 
 </output>
-
-</body>
-</html>

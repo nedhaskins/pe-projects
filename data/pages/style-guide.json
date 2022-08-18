@@ -19,6 +19,7 @@
         },
         {
             "type": "goals-module",
+            "lastUpdated": "Date of last revision",
             "sections": [
                     {
                         "jobTitle": "Apprentice",
@@ -47,6 +48,10 @@
         },
         {
             "type": "subheader-figure-caption"
+        },
+        {
+            "type": "import",
+            "filepath": "templates/pages/e4p/08-pizza-party.php"
         }
     ]
 }

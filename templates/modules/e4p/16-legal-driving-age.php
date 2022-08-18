@@ -3,6 +3,14 @@
 
 
 <?php
+
+	$field = $exercise['form']['field'];
+	$button = $exercise['button'];
+
+
+
+
+
 $age = 0;
 $valueError = false;
 
@@ -22,23 +30,12 @@ if( isset($_POST['submitted']) ) {
 
 ?>
 
-<!doctype html>
-
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="../css/site.css">
-</head>
-<body>
-
-<h1>#16 - Legal Driving Age</h1>
+<h2 class='title-voice'><?=$exercise['name']?></h1>
 
 <form method='POST'>
 	<field>
-		<label>What is your age?</label>
-		<input name='age' type='number' value='<?=$sage?>'>
+		<label><?=$field['label']?></label>
+		<input type='<?=$field['type']?>' name='<?=$field['name']?>'  value='<?=$field['value']?>'>
 
 		<?php if($valueError) { ?>
 			<p class='error'><?=$valueError?></p>

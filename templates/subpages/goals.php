@@ -6,7 +6,7 @@ $pageData = json_decode($json, true);
 //change to an if statement that grabs the ID
 //when you refactor this!
 
-$goalSections = $pageData[3]['sections'];
+$sections = $pageData[3]['sections'];
 
 ?>
 
@@ -19,7 +19,7 @@ $goalSections = $pageData[3]['sections'];
 
 	<ul class='goal-list'>
 
-		<?php foreach ($goalSections as $section) {
+		<?php foreach ($sections as $section) {
 			
 			include("templates/modules/goals-module/template.php");
 

@@ -47,7 +47,8 @@ body.layout {
 }
 
 
-@media (min-width: 700px) and (min-height: 600px) {
+@media (min-width: 900px) and (min-height: 600px) {
+	/*changed this from 700 to 900*/
 	body.index {
 		grid-template-columns: 1fr 1fr;
 	}

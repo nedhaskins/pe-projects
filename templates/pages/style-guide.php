@@ -1,3 +1,12 @@
+<?php
+
+
+$json = file_get_contents('data/pages/style-guide.json');
+$pageData = json_decode($json, true);
+
+?>
+
+<!--  -->
 <section class='<?=$pageData['slug']?>'>
 
 <section class='header-and-text'>
@@ -74,7 +83,7 @@
 
 	<ul class='goal-list'>
 
-		<?php foreach ($goalSections as $section) {
+		<?php foreach ($sections as $section) {
 			
 			include("templates/modules/goals-module/template.php");
 
