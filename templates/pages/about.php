@@ -4,13 +4,13 @@
 
 if( isset($_GET['id']) ) {
 
-	foreach ($pageData as $subpage) {
-		$subpageID = $subpage['id'];
+	foreach ($pageData as $section) {
+		$sectionID = $section['id'];
 
 		// echo $subpageID;
 
-		if($subpageID == $_GET['id']) {
-			include("templates/subpages/" . $subpage['slug'] . ".php");
+		if($sectionID == $_GET['id']) {
+			include("templates/subpages/" . $section['slug'] . ".php");
 		}
 	}
 } else {

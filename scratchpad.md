@@ -76,6 +76,8 @@ foreach($sections as $section) {
 - [ ] Light-and-dark mode toggle for whole site, to be put in site-menu
 
 
+- [ ] Links increase in size - quick animation when hovered over
+
 
 
 

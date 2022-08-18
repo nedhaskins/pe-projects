@@ -1,9 +1,7 @@
-
-
 <section class='four-oh-four'>
 
-<h1 class='title-voice'><?=$pageData['heading']?></h1>
+<h1 class='title-voice'><?=$section['heading']?></h1>
 
-<h2 class='attention-voice'><?=$pageData['copy']?></h2>
+<h2 class='attention-voice'><?=$section['copy']?></h2>
 
 </section>

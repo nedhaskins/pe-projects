@@ -32,44 +32,82 @@
             "figcaption": "The above photo has some embedded text for screen readers!"
         },
         {
-            "type": "goals",
-            "heading": "Goals module",
-            "goals": [
-                "One goal",
-                "Another goal",
-                "A third goal"
+            "type": "goals-module",
+            "name": "Goals module",
+            "updated": "Date of last revision",
+            "sections": [
+                {
+                    "heading": "Goal timeline",
+                    "goals": [
+                        "One goal",
+                        "Another goal",
+                        "A third goal"
+                    ]
+                },
+                {
+                    "heading": "Goal timeline",
+                    "goals": [
+                        "One goal",
+                        "Another goal",
+                        "A third goal"
+                    ]
+                }
             ]
         },
         {
-            "type": "404"
+            "type": "404",
+            "heading": "404!",
+            "copy": "The page wasn't found."
         },
         {
-            "type": "button-list"
+            "type": "button-list",
+            "name": "Button list",
+            "buttons": [
+                "A subpage link",
+                "Another subpage link"
+            ]
         },
         {
             "type": "contact-form"
         },
         {
-            "type": "form"
+            "type": "graphic-list",
+            "items": [
+                {
+                    "image": "images/e4p/1.svg",
+                    "pageType": "Default type",
+                    "slug": "Default slug",
+                    "name": "A page link"
+                },
+                {
+                    "image": "images/e4p/14.svg",
+                    "pageType": "Default type",
+                    "slug": "Default slug",
+                    "link": "#",
+                    "name": "Another page link"
+                }
+            ]
         },
         {
-            "type": "goals-module"
+            "type": "link-card",
+            "links": [
+                {
+                    "image": "images/collage.jpg",
+                    "slug": "#",
+                    "name": "Link card",
+                    "description": "This is used to link to projects, lab items and outside links. Some projects will have case studies attached."
+                },
+                {
+                    "image": "images/collage.jpg",
+                    "slug": "#",
+                    "name": "Link card",
+                    "description": "This is used to link to projects, lab items and outside links. Some projects will have case studies attached."
+                }
+            ]
         },
         {
-            "type": "graphic-list"
-        },
-        {
-            "type": "landing-page"
-        },
-        {
-            "type": "layouts"
-        },
-        {
-            "type": "link-card"
-        },
-        {
-            "type": "import",
-            "filepath": "templates/pages/e4p/08-pizza-party.php"
+            "type": "form",
+            "filepath": "11-currency-conversion"
         }
     ]
 }
