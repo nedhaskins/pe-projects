@@ -1,7 +1,10 @@
+		<?php
 
-
-	
-
+		$name = $name ?? "example-link-card";
+		$description = $description ?? "example-description";
+		$hasCaseStudy = $hasCaseStudy ?? false;
+		$isExternalLink = $isExternalLink ?? false;
+?>
 
 		<div class='link-card' style=
 		'background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$image?>");

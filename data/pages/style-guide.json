@@ -89,25 +89,40 @@
             ]
         },
         {
-            "type": "link-card",
-            "links": [
-                {
-                    "image": "images/collage.jpg",
-                    "slug": "#",
-                    "name": "Link card",
-                    "description": "This is used to link to projects, lab items and outside links. Some projects will have case studies attached."
-                },
-                {
-                    "image": "images/collage.jpg",
-                    "slug": "#",
-                    "name": "Link card",
-                    "description": "This is used to link to projects, lab items and outside links. Some projects will have case studies attached."
-                }
-            ]
+            "type": "link-card"
         },
         {
             "type": "form",
-            "filepath": "11-currency-conversion"
+            "filepath": "templates/modules/e4p/11-currency-conversion",
+            "id": 11,
+            "pageType": "exercise",
+            "language": "PHP",
+            "slug": "11-currency-conversion",
+            "name": "Currency Conversion",
+            "image": "images/e4p/11.svg",
+            "form": {
+                "fields": [
+                    {
+                        "label": "How many won are you exchanging?",
+                        "type": "number",
+                        "name": "won",
+                        "min": 0,
+                        "step": 0.01
+                    },
+                    {
+                        "label": "What is the exchange rate?",
+                        "type": "number",
+                        "name": "rate",
+                        "min": 0,
+                        "step": 0.01
+                    }
+                ]
+            },
+            "button": {
+                "type": "submit",
+                "name": "submitted",
+                "text": "Calculate total"
+            }
         }
     ]
 }

@@ -1,1 +1,1 @@
-<?php include("templates/modules/e4p/$section[filepath].php"); ?>
+<?php include("$section[filepath].php"); ?>

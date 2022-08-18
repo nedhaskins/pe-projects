@@ -1,9 +1,18 @@
 
+
+
+
 <?php
 
-	$fields = $exercise['form']['fields'];
-	$button = $exercise['button'];
 
+//Get data from either the e4p.json or the styleguide.json.
+//Data already exists in e4p.json.
+//Styleguide can reflect the same data.
+
+
+	$fields = $exercise['form']['fields'] ?? $section['form']['fields'];
+	$button = $exercise['button'] ?? $section['button'];
+	$name = $exercise['name'] ?? $section['name'];
 
 
 $won = 30000000000;
@@ -53,7 +62,7 @@ if( isset($_POST['submitted']) ) {
 }
 ?>
 
-<h2 class='title-voice'><?=$exercise['name']?></h1>
+<h2 class='title-voice'><?=$name?></h1>
 
 <form method='POST'>
 
