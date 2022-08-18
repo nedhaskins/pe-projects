@@ -10,19 +10,14 @@
 @import '../templates/pages/contact/style.css';
 @import '../templates/pages/404/style.css';
 
-
-@import '../templates/subpages/goals.css';
-@import '../templates/subpages/resume.css';
-
-
-@import '../templates/modules/landing-page/style.css';
+@import '../templates/modules/home/style.css';
 @import '../templates/modules/header-and-text/style.css';
 @import '../templates/modules/subheader-and-text/style.css';
 @import '../templates/modules/goals-module/style.css';
+@import '../templates/modules/resume-module/style.css';
 @import '../templates/modules/link-card/style.css';
 @import '../templates/modules/graphic-list/style.css';
 @import '../templates/modules/button-list/style.css';
-
 @import '../templates/modules/e4p/style.css';
 
 

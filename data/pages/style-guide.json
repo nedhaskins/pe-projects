@@ -100,7 +100,8 @@
             "slug": "11-currency-conversion",
             "name": "Currency Conversion",
             "image": "images/e4p/11.svg",
-            "form": {
+            "form":
+            {
                 "fields": [
                     {
                         "label": "How many won are you exchanging?",
@@ -118,11 +119,57 @@
                     }
                 ]
             },
-            "button": {
+            "button":
+            {
                 "type": "submit",
                 "name": "submitted",
                 "text": "Calculate total"
             }
+        },
+        {
+            "type": "resume-module",
+            "jobs": [
+                {
+                    "jobTitle": "Job 1",
+                    "company": "A company",
+                    "city": "Miami, FL",
+                    "startDate": "Start date",
+                    "endDate": "end date",
+                    "description": "Job description"
+                },
+                {
+                    "jobTitle": "Job 2",
+                    "company": "A company",
+                    "city": "Portland, OR",
+                    "startDate": "Start date",
+                    "endDate": "end date",
+                    "description": "Job description"
+                }
+            ],
+            "education": [
+                {
+                    "name": "Education 1",
+                    "awarded": "Currently enrolled",
+                    "startDate": "February 2022",
+                    "endDate": "present"
+                },
+                {
+                    "name": "Education 2",
+                    "awarded": "",
+                    "startDate": "August 2008",
+                    "endDate": "May 2009"
+                }
+            ],
+            "certs": [
+                {
+                    "name": "Certification 1",
+                    "awarded": "July 2021"
+                },
+                {
+                    "name": "Certification 2",
+                    "awarded": "August 2021"
+                }
+            ]
         }
     ]
 }

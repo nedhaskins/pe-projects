@@ -4,6 +4,7 @@
 		$description = $description ?? "example-description";
 		$hasCaseStudy = $hasCaseStudy ?? false;
 		$isExternalLink = $isExternalLink ?? false;
+		$image = $link['image'] ?? "images/collage.jpg";
 ?>
 
 		<div class='link-card' style=

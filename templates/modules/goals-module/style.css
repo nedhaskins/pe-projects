@@ -1,3 +1,15 @@
+
+.goals {
+	padding: var(--modulePadding);
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+
+
 .goals h3 {
 	margin-top: 28px;
 }

@@ -1,6 +1,4 @@
-<?php $section = $pageData['section'];
-
-var_dump($section); ?>
+<?php $section = $pageData['section']; ?>
 
 <section class='home'>
 
