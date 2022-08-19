@@ -34,14 +34,24 @@
 
 
 
-header .site-menu {
-	/*border: 6px solid #e23f53;*/
-	padding: 20px;
+
+.site-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--modulePadding);
 }
+
+
+
+
+
+
+
 
 main {
 	/*border: 6px solid lime;*/
-	padding: 20px;
+/*	padding: 20px;*/
 }
 
 
@@ -60,6 +70,12 @@ main {
 
 /*NAVBAR ELEMENTS*/
 
+
+.navbar {
+	display: flex;
+	justify-content: center;
+}
+
 .navbar ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -76,11 +92,8 @@ main {
 
 
 .logo {
-	padding: 40px;
-    max-width: 460px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	/*padding: 40px;*/
+	margin-top: 27px;
 }
 
 @media (min-width: 900px) and (min-height: 600px) {
@@ -93,13 +106,8 @@ main {
 
 
 
-/*SVG BOX ELEMENTS*/
+/*SVG ELEMENTS*/
 
-artifact {
-	display: flex;
-	/*border: 5px solid brown;*/
-	max-width: 410px;
-}
 
 svg {
 	display: block;

@@ -1,5 +1,5 @@
 html {
-	--floor: 16px;
+	--floor: 13px;
 	--stepOne: 1.272019rem; /* floor * golden ratio^0.5 */
 	--stepTwo: 1.618033rem; /* floor * golden ratio */
 	--stepThree: 2.058171rem; /* floor * golden ratio^1.5 */

@@ -15,9 +15,9 @@
 	$name = $exercise['name'] ?? $section['name'];
 
 
-$won = 30000000000;
+$won = false;
 $rate = 1324.35;
-$dollars = 0;
+$dollars = false;
 $rounded_won = 0;
 $rounded_dollars = 0;
 
