@@ -1,8 +1,10 @@
 {
     "slug": "projects",
-    "title": "projects",
-    "intro": "Push your limits. All the time. My current areas of focus include digging deeper into the capabilities of CSS, the history and future of layouts on the Web, dynamic programming, and modular systems. These projects showcase some of the end results of my explorations.",
-    "sections": [
+    "header": "projects",
+    "copy": [
+        "Push your limits. All the time. My current areas of focus include digging deeper into the capabilities of CSS, the history and future of layouts on the Web, dynamic programming, and modular systems. These projects showcase some of the end results of my explorations."
+    ],
+    "projects": [
         {
             "id": 1,
             "slug": "that-food-truck",

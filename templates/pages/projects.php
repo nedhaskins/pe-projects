@@ -1,15 +1,17 @@
 <section class="<?=$pageData['slug']?>">
 
-<h2 class='attention-voice'><?=$pageData['title']?></h2>
-<p class='body-copy'><?=$pageData['intro']?></p>
-
 <?php
-$sections = $pageData['sections'];
+
+$section = $pageData;
+
+include('templates/modules/header-and-text/template.php'); 
+
+$projects = $section['projects'];
 
 	//$linkcard = $section; // coming from section loop in parent file (either the-lab or projects
 
 
-	foreach($sections as $link) {
+	foreach($projects as $link) {
 		$name = $link['name'];
 		$slug = $link['slug'];
 		$image = $link['image'];

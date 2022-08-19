@@ -2,9 +2,9 @@
 
 $json = file_get_contents('data/pages/projects.json');
 $pageData = json_decode($json, true);
-$sections = $pageData['sections'];
+$projects = $pageData['projects'];
 
-foreach($sections as $MainSection) {
+foreach($projects as $MainSection) {
 
 	$caseStudy = $MainSection['caseStudy'];
 

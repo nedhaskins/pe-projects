@@ -1,8 +1,10 @@
 {
     "slug": "the-lab",
-    "title": "the lab",
-    "intro": "I'm always experimenting.  Here are some things I've got in the works.",
-    "sections": [
+    "header": "the lab",
+    "copy": [
+        "I'm always experimenting.  Here are some things I've got in the works."
+    ],
+    "labItems": [
         {
             "slug": "layout-garden",
             "name": "layout garden",
