@@ -1,7 +1,7 @@
 
 
 .link-card {
-	padding: 50px;
+	padding: 27px;
 	margin-top: 27px;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$item['image']?>");
 	background-size: cover;
@@ -11,7 +11,7 @@
 
 
 .link-card a {
-	font-size: var(--stepTwo);
+	font-size: var(--stepOne);
 }
 
 .projects, .the-lab h2 {

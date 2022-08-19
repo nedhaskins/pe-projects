@@ -1,3 +1,6 @@
+
+
+
 <section class='header-and-text'>
 
   <h2 class='attention-voice'><?=$section['header']?></h2>

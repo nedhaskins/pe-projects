@@ -43,15 +43,8 @@
                         "Another goal",
                         "A third goal"
                     ]
-                },
-                {
-                    "heading": "Goal timeline",
-                    "goals": [
-                        "One goal",
-                        "Another goal",
-                        "A third goal"
-                    ]
                 }
+                
             ]
         },
         {
@@ -136,40 +129,20 @@
                     "startDate": "Start date",
                     "endDate": "end date",
                     "description": "Job description"
-                },
-                {
-                    "jobTitle": "Job 2",
-                    "company": "A company",
-                    "city": "Portland, OR",
-                    "startDate": "Start date",
-                    "endDate": "end date",
-                    "description": "Job description"
-                }
-            ],
+                }  ],
             "education": [
                 {
                     "name": "Education 1",
                     "awarded": "Currently enrolled",
                     "startDate": "February 2022",
                     "endDate": "present"
-                },
-                {
-                    "name": "Education 2",
-                    "awarded": "",
-                    "startDate": "August 2008",
-                    "endDate": "May 2009"
                 }
             ],
             "certs": [
                 {
                     "name": "Certification 1",
                     "awarded": "July 2021"
-                },
-                {
-                    "name": "Certification 2",
-                    "awarded": "August 2021"
-                }
-            ]
+                }]
         }
     ]
 }
