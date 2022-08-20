@@ -30,6 +30,7 @@ inner-column {
 
 /*BODY CLASS STYLES */
 
+
 body.index {
 	/*border: 6px solid var(--cgred);*/
 	min-height: 100vh;
@@ -39,6 +40,7 @@ body.index {
 
 
 	grid-template-rows: auto 1fr;
+		margin-bottom: 27px;
 	/*background-image: linear-gradient(30deg, white, gray);*/
 }
 
@@ -87,7 +89,9 @@ body {
 
 
 .about-navbar {
-padding: var(--modulePadding);
+	padding: var(--modulePadding);
+	display: flex;
+	justify-content: center;
 }
 
 .about-navbar ul {

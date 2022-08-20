@@ -138,7 +138,6 @@ svg .curve {
 
 
 
-
 .line {
 	border: 2px solid var(--ink);
 	margin-top: 27px;
@@ -146,9 +145,37 @@ svg .curve {
 
 @media(prefers-color-scheme: dark) {
 
-.line {
-	border: 1px solid var(--ink-dark);
+	.line {
+		border: 1px solid var(--ink-dark);
+	}
+
 }
+
+.linktype-1 {
+    text-decoration: underline;
+    font-style: italic;
+    padding: var(--modulePadding);
+    letter-spacing: 0.2em;
+}
+
+.attention-voice.case-study, .body-copy.case-study {
+	padding: var(--modulePadding);
+}
+
+.bio picture {
+	display: flex;
+	justify-content: center;
+	border: 3px solid var(--ink);
+	padding: 10px;
+	margin: 27px 0px 0px 27px;
+	max-width: 264px;
+}
+
+@media(prefers-color-scheme: dark) {
+
+	.bio picture {
+		border: 3px solid var(--ink-dark);
+	}
 
 }
 

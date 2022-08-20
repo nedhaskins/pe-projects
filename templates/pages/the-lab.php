@@ -10,7 +10,6 @@ $labItems = $section['labItems'];
 
 	//$linkcard = $section; // coming from section loop in parent file (either the-lab or projects
 
-
 	foreach($labItems as $link) {
 		$name = $link['name'];
 		$slug = $link['slug'];

@@ -10,10 +10,10 @@ foreach($caseStudies as $caseStudy) {
 
 		<section class='case-study'>
 
-			<a href='?page=projects'>Back to Projects</a>
+			<a class='linktype-1' href='?page=projects'>Back to Projects</a>
 
-			<h2 class='attention-voice'><?=$caseStudy['header']?></h2>
-			<p class='body-copy'><?=$caseStudy['copy']?></p>
+			<h2 class='attention-voice case-study'><?=$caseStudy['header']?></h2>
+			<p class='body-copy case-study'><?=$caseStudy['copy']?></p>
 
 			<?php	foreach($caseStudy['sections'] as $section) {
 				$moduleType = $section['moduleType'];
@@ -23,7 +23,7 @@ foreach($caseStudies as $caseStudy) {
 
 
 
-			<a class='external-link' href="projects/<?=$caseStudy['slug']?>/index.<?=$caseStudy['siteXtensionType']?>">Link to the project</a> 
+			<a class='linktype-1' href="projects/<?=$caseStudy['slug']?>/index.<?=$caseStudy['siteXtensionType']?>">Link to the project</a> 
 
 		</section>
 	
