@@ -11,6 +11,6 @@ I look forward to hearing from you!</p>
 
 <h2 class='attention-voice'>e-mail</h2>
 
-<h3 class='title-voice'>hello@nedhaskins.io</h3>
+<h3 class='title-voice'>hello@<wbr>nedhaskins.io</h3>
 
 </section>

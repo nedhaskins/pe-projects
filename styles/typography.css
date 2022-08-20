@@ -1,7 +1,8 @@
 /* TEXT SIZING / TYPOGRAPHY */
 
 html {
-	--floor: 15px;
+	--floor: calc(14px + 1vw);
+
 	--stepOne: 1.272019rem; /* floor * golden ratio^0.5 */
 	--stepTwo: 1.618033rem; /* floor * golden ratio */
 	--stepThree: 2.058171rem; /* floor * golden ratio^1.5 */

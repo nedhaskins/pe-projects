@@ -44,7 +44,6 @@
                         "A third goal"
                     ]
                 }
-                
             ]
         },
         {
@@ -129,7 +128,8 @@
                     "startDate": "Start date",
                     "endDate": "end date",
                     "description": "Job description"
-                }  ],
+                }
+            ],
             "education": [
                 {
                     "name": "Education 1",
@@ -142,7 +142,8 @@
                 {
                     "name": "Certification 1",
                     "awarded": "July 2021"
-                }]
+                }
+            ]
         }
     ]
 }
