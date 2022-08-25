@@ -1,0 +1,32 @@
+{
+	"links": [
+		{
+			"slug": "home",
+			"name": "home"
+		},
+		{
+			"slug": "about",
+			"name": "about"
+		},
+		{
+			"slug": "projects",
+			"name": "projects"
+		},
+		{
+			"slug": "the-lab",
+			"name": "the lab"
+		},
+		{
+			"slug": "substack",
+			"name": "substack"
+		},
+		{
+			"slug": "style-guide",
+			"name": "style guide"
+		},
+		{
+			"slug": "contact",
+			"name": "contact"
+		}
+	]
+}

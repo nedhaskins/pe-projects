@@ -86,6 +86,11 @@ main {
 	/*border: 3px dashed blue;*/
 }
 
+.navbar a.active {
+	font-weight: 700;
+	color: green;
+}
+
 
 
 /*LOGO - SVG PARENT ELEMENTS*/
