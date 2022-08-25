@@ -172,6 +172,92 @@ function rectRoom() {
 
 //8 - Pizza Party
 
+
+//Prompt for the number of people
+//Prompt for the number of pizzas
+//find the total number of slices based on the number of pizzas
+//Total slices = number of slices per pizza times number of pizzas
+//Remainder = get a number that allows you to divide a certain number of slices evenly among everyone.
+
+
+
+function pizzaParty() {
+
+	var people = prompt("How many people are at the party?");
+	var pizzas = prompt("How many pizzas are there?");
+	var slicesPerPizza = prompt("How many slices are there per pizza?")
+
+	var totalSlices = Number(pizzas) * Number(slicesPerPizza);
+	var remainder = Number(totalSlices) % Number(people);
+	var slicesPerPerson = (totalSlices - remainder) / people;
+
+	if(people && pizzas) {
+		message = "Each person will get " + slicesPerPerson + ". There will be " + remainder + " slices left over.";
+		alert(message);
+	} else {
+		alert("Please enter the info correctly, brah.");
+	}
+}
+
 //9 - Paint Calculator
 
+//Prompt for the length of the ceiling
+//Prompt for the width of the ceiling
+
+//Number of gallons needed will be the ceiling value of the area divided by the number of gallons per square foot
+//Return a message stating how many gallons will be needed
+
+function PaintCalc() {
+
+		var length = prompt("What is the length of the ceiling?");
+		var width = prompt("What is the width of the ceiling?");
+
+		var area = Number(length * width);
+
+		const paint = 350;
+
+		var gallons = Math.ceil(area / paint);
+
+		if(length && width) {
+			message = "You will need " + gallons + " gallons of paint to cover " + area + " square feet.";
+			alert(message);
+		} else {
+			alert("Please enter the info correctly, brah.");
+	}
+}
+
 //10 - Self Checkout
+
+//Have prompts to get the cost of the three items
+//Have a constant for the tax amount per item
+
+//Multiply the subtotal by the tax, then deliver the total in an output
+
+function checkout() {
+
+	var price1 = prompt("Enter the price of item 1.");
+	var quantity1 = prompt("Enter the quantity of item 1.");
+
+	var price2 = prompt("Enter the price of item 2.");
+	var quantity2 = prompt("Enter the quantity of item 2.");
+
+	var price3 = prompt("Enter the price of item 3.");
+	var quantity3 = prompt("Enter the quantity of item 3.");
+
+	var subtotal = Number((price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3));
+
+	var tax = 0.055;
+
+	var formattedSubtotal = new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(subtotal);
+
+	var formattedTax = new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(subtotal * tax);
+
+	var formattedTotal = new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(subtotal + (subtotal * tax));
+
+	if(price1 && quantity1 && price2 && quantity2 && price3 && quantity3) {
+		message = "Subtotal: " + formattedSubtotal + "\n" + "Tax: " + formattedTax + "\n" + "Total: " + formattedTotal;
+		alert(message);
+	} else {
+		alert("One of the fields wasn't filled in correctly!")
+	}
+}
