@@ -142,6 +142,35 @@ svg .curve {
 
 }
 
+@keyframes random-spin {
+	25% {
+		transform: rotate(60deg);	
+	}
+	
+	50%{
+		transform: rotate(-45deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.windmill {
+	animation: random-spin 12s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+.object {
+	overflow: visible;
+}
+
+
+
+
+
+
 @media(prefers-color-scheme: dark) {
 	svg .windmill {
 	fill: var(--ink-dark);
@@ -151,6 +180,13 @@ svg .curve {
 	stroke: var(--ink-dark);
 	}
 }
+
+
+
+
+
+
+
 
 
 
@@ -204,10 +240,15 @@ svg .curve {
 }
 
 @media (min-width: 900px) {
-	.style-guide .home {
+	.style-guide .home, .style-guide .four-oh-four {
 		min-height: auto;
 	}
+
+	.style-guide .link-container {
+		gap: 15px;
+	}
 }
+
 
 
 
