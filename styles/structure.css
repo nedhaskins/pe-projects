@@ -31,7 +31,7 @@ inner-column {
 /*BODY CLASS STYLES */
 
 
-body.index {
+body.index, body.landing-404 {
 	/*border: 6px solid var(--cgred);*/
 	min-height: 100vh;
 	display: grid;
@@ -51,7 +51,7 @@ body.layout {
 
 @media (min-width: 900px) and (min-height: 600px) {
 	/*changed this from 700 to 900*/
-	body.index {
+	body.index, body.landing-404 {
 		grid-template-columns: 1fr 1fr;
 			gap: 20px;
 	}

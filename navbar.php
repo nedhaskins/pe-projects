@@ -20,9 +20,13 @@ if( isset($_GET['page']) ) {
 
 foreach($links as $link) {
 
-	if($link['slug'] == $currentPage) { ?>
+	if($link['slug'] == $currentPage && $link['slug'] != 'substack') { ?>
 
 		<li><a class='active' href="?page=<?=$link['slug']?>" alt="">*<?=$link['name']?></a></li>
+
+	<?php } elseif($link['slug'] == 'substack') { ?>
+
+		<li><a class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a></li>
 
 	<?php } else { ?>
 

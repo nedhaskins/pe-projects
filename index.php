@@ -30,16 +30,32 @@ $slug = $_GET['slug'];
 
 	<title>Ned Haskins - Web Designer - Richmond, VA</title>
 
-
 </head>
 
-<?php if($page == 'layout' && isset($_GET['slug'] ) ) { ?>
+<?php if($page == 'home' || $page == '404') { ?>
+
+	<body class='landing-404'>
+		<header>
+			<div class='site-menu'>
+				<nav class='navbar'>
+					<?php include('navbar.php'); ?>
+				</nav>
+				<div class='logo'>
+					<?php include('images/full-logo.svg'); ?>
+				</div>
+			</div>
+		</header>
+		<main class='page-content'>
+			<?php fetchPage(); ?>
+		</main>
+	</body>
+
+<?php } elseif($page == 'layout' && isset($_GET['slug'] ) ) { ?>
 
 	<body class='layout'>
 		<main class='page-content'>
 			<?php fetchPage(); ?>
 		</main>
-
 	</body>
 
 <?php } else { ?>            

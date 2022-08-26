@@ -105,6 +105,13 @@ main {
 	margin-top: 27px;
 }
 
+
+.landing-404 .logo {
+	margin-top: 103px;
+}
+
+
+
 @media (min-width: 900px) and (min-height: 600px) {
 	.logo {
     	margin-top: 129px;
@@ -171,9 +178,13 @@ svg .curve {
 	padding: var(--modulePadding);
 }
 
-.bio picture {
+.bio picture-wrapper {
 	display: flex;
 	justify-content: center;
+}
+
+
+.bio picture {
 	border: 3px solid var(--ink);
 	padding: 10px;
 	margin: 27px 0px 0px 27px;
