@@ -22,7 +22,7 @@ foreach($links as $link) {
 
 	if($link['slug'] == $currentPage) { ?>
 
-		<li><a class='active' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a></li>
+		<li><a class='active' href="?page=<?=$link['slug']?>" alt="">*<?=$link['name']?></a></li>
 
 	<?php } else { ?>
 

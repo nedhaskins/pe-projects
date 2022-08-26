@@ -87,10 +87,14 @@ main {
 }
 
 .navbar a.active {
-	font-weight: 700;
-	color: green;
+	opacity: 39%;
+	font-style: italic;
+	letter-spacing: 0.1em;
 }
 
+.navbar a:hover {
+	color: white;
+}
 
 
 /*LOGO - SVG PARENT ELEMENTS*/
@@ -184,6 +188,15 @@ svg .curve {
 
 }
 
+.style-guide .home h1.title-voice {
+	margin-top: 0px;
+}
+
+@media (min-width: 900px) {
+	.style-guide .home {
+		min-height: auto;
+	}
+}
 
 
 

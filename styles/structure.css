@@ -64,11 +64,13 @@ body.layout {
 		position: sticky;
 		top: 0;
 	}
+}
 
-	.page-content {
+
+/*	.page-content {
 	grid-row: 1 / 3;
-}
-}
+	}	
+}*/
 
 
 inner-column {
