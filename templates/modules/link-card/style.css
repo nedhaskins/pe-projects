@@ -29,9 +29,9 @@
 	height: 100%;
 }
 
-.projects, .the-lab h2 {
+/*.projects, .the-lab h2 {
 	text-align: center;
-}
+}*/
 
 .link-card > * {
 	color: var(--paper);
