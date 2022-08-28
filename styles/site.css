@@ -86,7 +86,7 @@ main {
 	/*border: 3px dashed blue;*/
 }
 
-.navbar a.active {
+.navbar a.active, .about-navbar a.active {
 	opacity: 39%;
 	font-style: italic;
 	letter-spacing: 0.1em;

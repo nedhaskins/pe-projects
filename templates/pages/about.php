@@ -1,9 +1,9 @@
 <?php include('templates/components/about-navbar.php');
 
+
 //this will be a function
 
 if( isset($_GET['id']) ) {
-
 	foreach ($pageData as $section) {
 		$sectionID = $section['id'];
 
@@ -14,6 +14,9 @@ if( isset($_GET['id']) ) {
 		}
 	}
 } else {
+	
+	$_GET['id'] = 1;
+
 	include("templates/subpages/bio.php");
 }
 

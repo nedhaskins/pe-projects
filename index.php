@@ -18,19 +18,21 @@ $slug = $_GET['slug'];
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<?php if($page == 'layout') { ?>
+	<?php if($page == 'layout') { ?>
 
-	<link rel='stylesheet' href='styles/layout-garden.css'>
+		<link rel='stylesheet' href='styles/layout-garden.css'>
 
-<?php } else { ?>
+	<?php } else { ?>
 
-	<link rel='stylesheet' href='styles/site.css'>
+		<link rel='stylesheet' href='styles/site.css'>
 
-<?php } ?>
+	<?php } ?>
 
 	<title>Ned Haskins - Web Designer - Richmond, VA</title>
 
 </head>
+
+
 
 <?php if($page == 'home' || $page == '404') { ?>
 
