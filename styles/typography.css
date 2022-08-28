@@ -57,7 +57,7 @@ p {
 
 /*------COMPONENTS------*/
 
-.navbar .link {
+.navbar .link, .about-navbar .link {
 	font-size: 	font-size: var(--floor);
 	font-style: italic;
 	letter-spacing: 0.1em;

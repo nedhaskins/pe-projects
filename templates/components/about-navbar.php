@@ -2,7 +2,7 @@
 	<ul>
 		<?php foreach($pageData as $subpage) { ?>
 			
-			<li class="attention-voice">
+			<li>
 			
 			<?php if($subpage['id'] == $_GET['id']) { ?>
 				<a class='active' href='?page=about&id=<?=$subpage['id']?>'>
