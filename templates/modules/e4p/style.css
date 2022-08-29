@@ -1,3 +1,8 @@
+.exercise {
+	padding: var(--modulePadding);
+}
+
+
 .exercise inner-column {
 	display: flex;
 	flex-direction: column;
@@ -10,8 +15,15 @@ field, label, input, output {
 	display: block;
 }
 
+field{
+	margin-top: var(--standardTopMargin);
+}
+
+field:first-of-type {
+	margin-top: 0px;
+}
+
 .exercise h2 {
-	margin-top: 17px;
 	text-align: center;
 	letter-spacing: 0.2em;
 }
@@ -21,7 +33,7 @@ form {
 	border: 3px solid var(--ink);
 	margin-top: 20px;
 	padding: 28px;
-	border-radius: 20px;
+/*	border-radius: 20px;*/
 }
 
 
@@ -35,8 +47,55 @@ form {
 
 
 input {
-	margin: 15px 0px 15px 0px;
+	font-family: 'Baskerville';
+	font-size: var(--stepOne);
+	margin-top: var(--standardTopMargin);
+
 }
+
+
+.form-text {
+	font-size: var(--stepOne);
+}
+
+
+.form-button {
+	background-color: var(--paper);
+	color: var(--ink);
+	border: 3px solid var(--ink);
+	margin-top: var(--standardTopMargin);
+	font-family: 'Baskerville';
+	padding: 12px;
+	font-size: var(--stepOne);
+}
+
+.form-button:hover {
+	background-color: var(--ink);
+	color: var(--paper);
+	border: 3px solid var(--paper);
+}
+
+@media(prefers-color-scheme: dark) {
+
+	.form-button {
+		background-color: var(--paper-dark);
+		color: var(--ink-dark);
+		border: 3px solid var(--ink-dark);
+	}
+
+	.form-button:hover {
+		background-color: var(--ink-dark);
+		color: var(--paper-dark);
+		border: 3px solid var(--paper-dark);
+	}
+
+
+}
+
+
+
+
+
 
 output {
 display: block;

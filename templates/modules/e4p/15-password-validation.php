@@ -51,11 +51,11 @@ if ( isset($_POST['submitted']) ) {
 <form method="POST">
 	<div class="field">
 		<p>Please enter the password.</p>
-		<label>password</label>
+		<label class='form-text'>password</label>
 		<input name="userEntry" value="" placeholder="..." required>
 	</div>
 
-	<button type="submit" name="submitted">Submit</button>
+	<button class='form-button' type="submit" name="submitted">Submit</button>
 </form>
 
 <output><?=$output?></output>

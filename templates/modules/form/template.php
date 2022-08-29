@@ -1,4 +1,4 @@
-<section class='exercise'>
+ <section class='exercise'>
 
 <?php include("$section[filepath].php"); ?>
 

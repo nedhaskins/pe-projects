@@ -34,7 +34,7 @@ if( isset($_POST['submitted']) ) {
 
 <form method='POST'>
 	<field>
-		<label><?=$field['label']?></label>
+		<label class='form-text'><?=$field['label']?></label>
 		<input type='<?=$field['type']?>' name='<?=$field['name']?>'  value='<?=$field['value']?>'>
 
 		<?php if($valueError) { ?>
@@ -42,7 +42,7 @@ if( isset($_POST['submitted']) ) {
 		<?php } ?>
 		
 	</field>
-	<button type='submit' name='submitted'>Submit info</button>
+	<button class='form-button' type='submit' name='submitted'>Submit info</button>
 </form>
 
 

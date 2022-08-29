@@ -70,18 +70,18 @@ if( isset($_POST['submitted']) ) {
 
 
 	<field>
-		<label><?=$field['label']?></label>
+		<label class='form-text'><?=$field['label']?></label>
 		<input  type='<?=$field['type']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='<?=$won?>' step= '<?=$field['step']?>' >
 	</field>
 
 <?php } ?>
 
-	<button type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
+	<button class='form-button' type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
 </form>
 
 <output>
 	
-	<p>Exchanging ₩<?=$rounded_won?> at a rate of <?=$rate?>.</p>
+	<p>Exchanging ₩<?=$rounded_won?> at a rate of <?=$rate?> won/dollar.</p>
 	<p>You will get $<?=$rounded_dollars?>.</p>
 
 </output>

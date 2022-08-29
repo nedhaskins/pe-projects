@@ -61,7 +61,7 @@ if( isset($_POST['submitted']) ) {
 	<?php foreach ($fields as $field) { ?>
 
 	<field>
-		<label><?=$field['label']?></label>
+		<label class='form-text'><?=$field['label']?></label>
 		<input type='<?=$field['type']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='<?=$price1?>' step= '<?=$field['step']?>'>
 		<?php if($valueError) { ?>
 			<p class='error'><?=$valueError?></p>
@@ -70,7 +70,7 @@ if( isset($_POST['submitted']) ) {
 
 	<?php } ?>
 
-	<button type='submit' name='submitted'>Calculate total</button>
+	<button class='form-button' type='submit' name='submitted'>Calculate total</button>
 </form>
 
 <?php if($subtotal && $tax && $total) { ?>

@@ -88,7 +88,7 @@ if( isset($_POST['submitted']) ) {
 	<?php foreach($fields as $field) { ?>
 
 	<field>
-		<label><?=$field['label']?></label>
+		<label class='form-text'><?=$field['label']?></label>
 		<input  type='<?=$field['type']?>' name='<?=$field['name']?>' min='<?=$field['min']?>' value='0' step= '<?=$field['step']?>' >
 
 		<?php if($valueError) { ?>
@@ -99,7 +99,7 @@ if( isset($_POST['submitted']) ) {
 
 <?php } ?>
 
-	<button type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
+	<button class='form-button' type='<?=$button['type']?>' name='<?=$button['name']?>'><?=$button['text']?></button>
 </form>
 
 

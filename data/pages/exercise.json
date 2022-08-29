@@ -110,7 +110,7 @@
             "pageType": "exercise",
             "language": "PHP",
             "slug": "11-currency-conversion",
-            "name": "Currency Conversion",
+            "name": "Won to Dollars",
             "image": "images/e4p/11.svg",
             "form":
             {
