@@ -60,6 +60,15 @@ $slug = $_GET['slug'];
 		</main>
 	</body>
 
+<?php } elseif($page == 'exercise' && isset($GET['slug'] ) ) { ?>
+
+	<body class='e4p-detail'>
+		<?php include('templates/modules/graphic-list.php');
+?>
+<!--come back to this and finish it!-->
+
+
+
 <?php } else { ?>            
 
 	<body class='index'>
