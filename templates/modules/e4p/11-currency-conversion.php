@@ -10,9 +10,9 @@
 //Styleguide can reflect the same data.
 
 
-	$fields = $exercise['form']['fields'] ?? $section['form']['fields'];
-	$button = $exercise['button'] ?? $section['button'];
-	$name = $exercise['name'] ?? $section['name'];
+	$fields = $exercise['form']['fields'] ?? $module['form']['fields'];
+	$button = $exercise['button'] ?? $module['button'];
+	$name = $exercise['name'] ?? $module['name'];
 
 
 $won = false;

@@ -2,11 +2,11 @@
 
 <section class='subheader-figure-caption'>
 
-  <h3 class='attention-voice'><?=$section['image-header']?></h3>
+  <h3 class='attention-voice'><?=$imageHeader?></h3>
 
     <picture>
-      <img src="<?=$section['image']?>" alt="<?=$section['alt']?>">
-      <figcaption class='body-copy'><?=$section['figcaption']?></figcaption>
+      <img src="<?=$image?>" alt="<?=$alt?>">
+      <figcaption class='body-copy'><?=$figCaption?></figcaption>
     </picture>
 
 </section>

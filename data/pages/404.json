@@ -1,7 +1,4 @@
 {
-    "section":
-    {
-        "heading": "404!",
-        "copy": "The page wasn't found. :/"
-    }
+    "header": "404!",
+    "copy": "The page wasn't found. :/"
 }

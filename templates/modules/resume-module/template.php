@@ -2,9 +2,9 @@
 
 <?php
 
-$jobs = $jobs ?? $section['jobs'];
-$education = $education ?? $section['education'];
-$certs = $certs ?? $section['certs'];
+$jobs = $section['jobs'] ?? $module['jobs'];
+$education = $section['jobs'] ?? $module['education'];
+$certs = $section['jobs'] ?? $module['certs'];
 
 
 ?>

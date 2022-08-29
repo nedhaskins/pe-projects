@@ -16,6 +16,10 @@ $sections = $pageData[0]['sections'];
 	</picture-wrapper>
 
 	<?php foreach($sections as $section) {
+
+		$header = $section['header'];
+		$copy = $section['copy'];
+
 		include('templates/modules/header-and-text/template.php');
 	} ?>
 </section>

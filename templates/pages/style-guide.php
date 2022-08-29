@@ -1,4 +1,5 @@
 
+
 <section class="<?=$pageData['slug']?>">
 
 	<section class='header-and-text'>
@@ -6,11 +7,41 @@
 	  <p class='body-copy'><?=$pageData['copy']?></p>
 	</section>
 
-	<?php foreach ($pageData['sections'] as $section) {
+	<?php foreach ($pageData['modules'] as $module) {
+
+		$type = $module['type'];
+		$header = $module['header'] ?? false;
+		$copy = $module['copy'] ?? false;
+
+		$imageHeader = $module['image-header'] ?? false;
+		$image = $module['image'] ?? false;
+		$alt = $module['alt'] ?? false;
+		$figCaption = $module['figcaption'] ?? false;
+
+		$name = $module['name'] ?? false;
+		$updated = $module['updated'] ?? false;
+		$buttons = $module['buttons'] ?? false;
+
+		$items = $module['items'] ?? false;
+
+		$description = $module['description'] ?? false;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		echo "<div class='line'></div>";
 			
-			include('templates/modules/' . $section['type'] . '/template.php');
+			include('templates/modules/' . $module['type'] . '/template.php');
 
 		} ?>
 

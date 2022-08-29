@@ -1,7 +1,5 @@
 		<?php
 
-		$name = $name ?? "example-link-card";
-		$description = $description ?? "example-description";
 		$hasCaseStudy = $hasCaseStudy ?? false;
 		$isExternalLink = $isExternalLink ?? false;
 		$image = $link['image'] ?? "images/collage.jpg";
@@ -13,9 +11,26 @@
 		background-position: center;
 		background-repeat: no-repeat;'>
 
-	
+
+
+
+
+		
+
+		<?php if($_GET['page'] == 'style-guide') { ?>
+
+				<a class='attention-voice' href="#"><?=$name?>
+				</a>
+
+
+
+
+
+
+
+
 		<!--if it is a local project and has no case study-->
-		<?php if (!$hasCaseStudy && !$isExternalLink) { ?>
+		<?php } elseif (!$hasCaseStudy && !$isExternalLink) { ?>
 			<a class='attention-voice' href="?page=<?=$slug?>">
 				<?=$name?>
 			</a>

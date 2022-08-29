@@ -1,6 +1,6 @@
 		<section class='graphic-list'>
 			<ul>
-				<?php foreach ($section['items'] as $item) { ?>
+				<?php foreach ($items as $item) { ?>
 					<li class='list-item'>
 						<?php if($item['image'] != "") { ?>
 							<picture class='e4p-image'><?php include($item['image']); ?></picture>

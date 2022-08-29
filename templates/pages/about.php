@@ -2,11 +2,13 @@
 
 //this will be a function
 
-foreach ($pageData as $section) {
-	$sectionID = $section['id'];
+foreach ($pageData as $subpage) {
+	$subpageID = $subpage['id'];
+	$name = $subpage['name'];
+	$updated = $subpage['updated'] ?? false;
 
-	if($sectionID == $_GET['id']) {
-		include("templates/subpages/" . $section['slug'] . ".php");
+	if($subpageID == $_GET['id']) {
+		include("templates/subpages/" . $subpage['slug'] . ".php");
 	}
 }
 

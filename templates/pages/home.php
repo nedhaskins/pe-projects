@@ -1,7 +1,16 @@
-<?php $section = $pageData['section']; ?>
+<?php 
+
+
+$header = $pageData['header'] ?? $module['header'];
+
+
+
+
+
+?>
 
 <section class='home'>
 
-<h1 class='title-voice'><?=$section['heading']?></h1>
+<?php include('templates/modules/home/template.php'); ?>
 
 </section>

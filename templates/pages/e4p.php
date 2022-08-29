@@ -5,6 +5,8 @@ $json = file_get_contents('data/pages/e4p.json');
 $pageData = json_decode($json, true);
 
 $section = $pageData;
+$buttons = $section['buttons'];
+$pageName = $section['name'];
 
 ?> 
 

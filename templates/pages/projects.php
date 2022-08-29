@@ -2,11 +2,12 @@
 
 <?php
 
-$section = $pageData;
+$header = $pageData['header'];
+$copy = $pageData['copy'];
 
 include('templates/modules/header-and-text/template.php'); 
 
-$projects = $section['projects'];
+$projects = $pageData['projects'];
 
 	//$linkcard = $section; // coming from section loop in parent file (either the-lab or projects
 

@@ -1,5 +1,8 @@
+
+
+
 <section class='home'>
 
-<h1 class='title-voice'><?=$section['heading']?></h1>
+	<h1 class='title-voice'><?=$header?></h1>
 
 </section>

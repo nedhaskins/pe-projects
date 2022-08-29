@@ -2,13 +2,13 @@
     "slug": "style-guide",
     "header": "style guide",
     "copy": "Here's a guide to all of the modules you can find on this site!",
-    "sections": [
+    "modules": [
         {
             "type": "font-overview"
         },
         {
             "type": "home",
-            "heading": "Landing-page text"
+            "header": "Landing-page text"
         },
         {
             "type": "header-and-text",
@@ -48,7 +48,7 @@
         },
         {
             "type": "404",
-            "heading": "404!",
+            "header": "404!",
             "copy": "The page wasn't found."
         },
         {
@@ -81,7 +81,9 @@
             ]
         },
         {
-            "type": "link-card"
+            "type": "link-card",
+            "name": "Link-card",
+            "description": "Here's some example text. Exciting stuff. Loren ipsum."
         },
         {
             "type": "form",

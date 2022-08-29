@@ -1,5 +1,4 @@
 
-<?php $section = $pageData['section']; ?>
 
 
 

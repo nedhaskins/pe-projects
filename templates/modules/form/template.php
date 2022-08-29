@@ -1,5 +1,11 @@
  <section class='exercise'>
 
-<?php include("$section[filepath].php"); ?>
+   <?php 
+
+      $filepath = $section['filepath'] ?? $module['filepath'];
+
+      include("$filepath.php");
+
+   ?>
 
 </section>

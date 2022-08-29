@@ -24,7 +24,7 @@
 			text-align: right;
 		}
 
-	text-wrapper.four-oh-four {
-		width: 100%;
+	.four-oh-four text-wrapper {
+	width: 100%;
 	}
 }

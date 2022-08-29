@@ -3,9 +3,9 @@
 
 <section class='header-and-text'>
 
-  <h2 class='attention-voice'><?=$section['header']?></h2>
-    <?php foreach($section['copy'] as $copy) { ?>
-      <p class='body-copy'><?=$copy?></p>
+  <h2 class='attention-voice'><?=$header?></h2>
+    <?php foreach($copy as $copyitem) { ?>
+      <p class='body-copy'><?=$copyitem?></p>
     <?php } ?>
 
 </section>
