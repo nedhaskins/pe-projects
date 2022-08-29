@@ -116,6 +116,11 @@ main {
 	.logo {
     	margin-top: 129px;
     }
+
+    .landing-404 .logo {
+	margin-top: 129px;
+}
+
 }
 
 
