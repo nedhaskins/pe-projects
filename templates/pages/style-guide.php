@@ -25,19 +25,10 @@
 		$items = $module['items'] ?? false;
 
 		$description = $module['description'] ?? false;
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
+		$jobs = $module['jobs'] ?? false;
+		$certs = $module['certs'] ?? false;
+		$education = $module['education'] ?? false;
 
 		echo "<div class='line'></div>";
 			

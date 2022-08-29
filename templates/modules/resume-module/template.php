@@ -1,13 +1,4 @@
 
-
-<?php
-
-$jobs = $section['jobs'] ?? $module['jobs'];
-$education = $section['jobs'] ?? $module['education'];
-$certs = $section['jobs'] ?? $module['certs'];
-
-
-?>
 <section class='resume'>
 <!-- <inner-column> -->
 
