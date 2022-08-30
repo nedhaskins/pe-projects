@@ -89,20 +89,4 @@ body {
 
 
 
-/*STYLES SPECIFIC TO E4P DETAIL PAGE*/
-
-.exercise, .exercise-column {
-	height: 100%;
-}
-
-
-
-.attention-voice.e4p {
-	text-align: center;
-}
-
-
-.exercise-column {
-	max-width: 450px;
-}
 

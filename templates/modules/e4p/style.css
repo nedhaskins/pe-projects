@@ -1,3 +1,30 @@
+
+
+
+
+/*STYLES SPECIFIC TO E4P DETAIL PAGE*/
+
+.exercise, .exercise-column {
+	height: 100%;
+}
+
+
+
+.attention-voice.e4p {
+	text-align: left;
+}
+
+
+.exercise-column {
+	max-width: 450px;
+}
+
+
+
+
+
+
+
 .exercise {
 	padding: var(--modulePadding);
 }
@@ -6,7 +33,7 @@
 .exercise inner-column {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+/*	align-items: center;*/
 	justify-content: space-evenly;
 }
 
@@ -24,8 +51,9 @@ field:first-of-type {
 }
 
 .exercise h2 {
-	text-align: center;
+	text-align: left;
 	letter-spacing: 0.2em;
+	margin-top: 13px;
 }
 
 form {
