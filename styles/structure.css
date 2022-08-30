@@ -87,25 +87,7 @@ body {
 
 }
 
-/*ABOUT-NAVBAR COMPONENT*/
 
-
-
-.about-navbar {
-	padding: var(--modulePadding);
-	display: flex;
-	justify-content: center;
-}
-
-.about-navbar ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-}
-
-.about-navbar li:hover {
-	color: white;
-}
 
 /*STYLES SPECIFIC TO E4P DETAIL PAGE*/
 
