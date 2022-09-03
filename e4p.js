@@ -1,3 +1,7 @@
+document.body.style.backgroundColor = "black";
+document.body.style.color = "white";
+
+
 //Exercise 1 - Saying Hello
 
 function basicMessage() {
@@ -7,15 +11,22 @@ function basicMessage() {
 		alert(message);
 	} else {
 		alert("You didn't enter your name, hoss.");
-		basicMessage();
+		return;
 	}
 }
 
-var startButton = document.createElement('button');
+var buttonEx1 = document.createElement('button');
 
-startButton.addEventListener('click', basicMessage);
+buttonEx1.addEventListener('click', basicMessage);
+document.body.appendChild(buttonEx1);
+buttonEx1.style.padding = '30px';
+buttonEx1.textContent = 'Saying Hello';
 
-document.body.appendChild(startButton);
+
+
+
+
+
 
 
 //2 - Counting Characters
@@ -35,9 +46,16 @@ function getStringLength() {
 		alert(message);
 	} else {
 		alert("You didn't enter anything.");
-		getStringLength();
+		return;
 	}
 }
+
+var buttonEx2 = document.createElement('button');
+
+buttonEx2.addEventListener('click', getStringLength);
+document.body.appendChild(buttonEx2);
+buttonEx2.style.padding = '30px';
+buttonEx2.textContent = 'Counting Characters';
 
 //3 - Printing Quotes
 
