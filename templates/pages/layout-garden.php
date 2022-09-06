@@ -13,11 +13,18 @@ $sections = $pageData['sections'];
 
 
 		<?php foreach($sections as $section) {
+
+			$header = $section['header'];
+			$copy = $section['copy'];
+
 			include('templates/modules/header-and-text/template.php');
 		} ?>
 
 
 		<?php foreach($sections as $section) {
+
+			$items = $section['items'];
+
 			include('templates/modules/graphic-list/template.php');
 		} ?>
 

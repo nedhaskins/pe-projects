@@ -31,7 +31,7 @@
             "name": "codepens",
             "image": "images/codepen.png",
             "url": "https://codepen.io/nedhaskins",
-            "description": "Little experiments with CSS and Javascript. I'm currently digging into CSS Grid and animations with CSS, Javascript, and SVGs."
+            "description": "Little experiments with CSS and JavaScript. I'm currently digging into CSS-Grid and animations with CSS, JavaScript, and SVGs."
         }
     ]
 }
