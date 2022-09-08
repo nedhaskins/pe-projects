@@ -1,0 +1,57 @@
+
+
+
+
+
+
+"modules": {
+
+"navigation": {},
+
+
+"hero":
+
+"center-content":
+
+
+"feature": {
+
+	"header": "Etiam nulla lectus molestie at vulputate.",
+	"text": "Neque, pulvinar vestibulum non aliquam.",
+	"image": "",
+
+
+
+
+
+	"feature-list": {
+	"image": "components/feature-numbers/1.svg",
+	"subheader": "Sit quam gravida",
+	"subtext": "Et hendrerit turpis habitant cursus semper ultrices in nunc. Erat eget etiam senectus vestibulum risus."
+	},
+
+
+
+
+
+
+
+
+
+
+
+"clients":
+
+
+"call-to-action":
+
+
+"faqs":
+
+
+"footer":
+
+
+
+
+}

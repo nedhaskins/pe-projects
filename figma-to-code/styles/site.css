@@ -1,0 +1,33 @@
+@import 'reset.css';
+@import 'setup.css';
+
+@import 'settings.css';
+
+
+
+
+@import 'structure.css';
+@import 'typography.css';
+
+
+@import '../templates/modules/navigation/style.css';
+@import '../templates/modules/hero/style.css';
+@import '../templates/modules/feature/style.css';
+@import '../templates/modules/clients/style.css';
+@import '../templates/modules/call-to-action/style.css';
+@import '../templates/modules/faqs/style.css';
+@import '../templates/modules/footer/style.css';
+
+
+
+
+
+
+.page-content > * {
+	border: 3px solid red;
+}
+
+
+logo {
+	display: block;
+}

@@ -1,0 +1,19 @@
+.clients picture img {
+	border-radius: 100%;
+}
+
+.client-name {
+	font-size: 14px;
+}
+
+
+.client-reviews {
+	display: flex;
+	flex-direction: column;
+}
+
+@media(min-width: 600px) {
+	.client-reviews {
+		flex-direction: row;
+	}
+}

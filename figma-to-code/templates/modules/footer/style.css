@@ -1,0 +1,49 @@
+footer {
+	background-color: var(--royalBlue);
+}
+
+
+
+
+.link-column a {
+	line-height: 1.21rem;
+}
+
+
+.subscribe-module {
+
+	background-color: var(--palatinateBlue);
+	display: block;
+	width: 30%;
+}
+
+.footer-top {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-bottom {
+	border: 3px solid yellow;
+}
+
+
+footer nav ul {
+		display: flex;
+	flex-direction: row;	
+
+}
+
+
+.icon-section {
+	display: flex;
+	flex-direction: row;	
+
+}
+
+
+.footer-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+
+}
