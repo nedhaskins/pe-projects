@@ -1,8 +1,8 @@
-<section class='navigation one'>
+<section class='navigation two'>
 
 	<logo>
 		
-	<?php include('images/logoipsum.svg'); ?>
+	<?php include('images/logoipsum-dark.svg'); ?>
 
 	</logo>
 
@@ -18,7 +18,7 @@
 	</nav>
 
 
-	<div class="navigation-right">
+	<div class='navigation-right'>
 
 		<?php include('images/language.svg'); ?>
 

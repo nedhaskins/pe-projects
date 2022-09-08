@@ -3,3 +3,28 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 }
+
+.navigation.two {
+	background-color: var(--royalBlue);
+	color: white;
+}
+
+
+
+.navigation.one svg path.outline {
+	stroke: #616161;
+}
+
+.navigation.one svg path.text {
+	fill: #616161;
+}
+
+
+
+.navigation.two svg path.outline {
+	stroke: white;
+}
+
+.navigation.two svg path.text {
+	fill: white;
+}

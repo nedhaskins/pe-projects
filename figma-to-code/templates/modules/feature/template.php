@@ -1,4 +1,4 @@
-<section class="feature">
+ <section class="feature">
 
 	<div class="feature-head">
 		<?php include('components/header-and-text/template.php'); ?>
