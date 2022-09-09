@@ -5,7 +5,7 @@
 
 
 
-<section class='call-to-action'>
+<section class='call-to-action one'>
 	
 	<div class="cta-card">
 

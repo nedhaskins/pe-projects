@@ -3,33 +3,6 @@ footer {
 }
 
 
-.email-submit {
-	display: flex;
-	flex-direction: row;
-	margin-top: 20px;
-}
-
-
-
-
-.email-submit button {
-	display: block;
-	border: 0;
-	border-radius: 0 6px 6px 0;
-	background-color: var(--royalBlue);
-	padding: 10px;
-}
-
-
-.email-submit svg path {
-	stroke: white;
-}
-
-
-.link-column a {
-	line-height: 1.21rem;
-}
-
 
 .subscribe-module {
 
@@ -39,9 +12,15 @@ footer {
 	padding: 30px;
 }
 
-.email-submit input {
-	flex-basis: 100%;
+
+
+
+
+.link-column a {
+	line-height: 1.21rem;
 }
+
+
 
 
 

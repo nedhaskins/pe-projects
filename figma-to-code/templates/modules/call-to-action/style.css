@@ -4,3 +4,8 @@
 	margin: 40px;
 
 }
+
+.call-to-action.two .button-wrapper {
+	display: flex;
+	flex-direction: row;
+}

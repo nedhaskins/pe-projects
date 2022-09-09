@@ -1,4 +1,4 @@
-<section class="clients">
+<section class="clients one">
 
 
 	<div class='header'>
@@ -11,6 +11,10 @@
 
 	<div class='client-reviews'>
 
+		<div class="chevron-wrapper">
+			<?php include('images/chevron-left.svg'); ?>
+		</div>
+
 
 		<div class="client-review">
 
@@ -41,8 +45,14 @@
 			</picture>
 
 			<p class='client-name'>This Guy Watson</p>
-
 		</div>
+
+		<div class="chevron-wrapper">
+			<?php include('images/chevron-right.svg'); ?>
+		</div>
+
+
+
 
 	</div> <!--client reviews-->
 

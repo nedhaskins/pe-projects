@@ -22,9 +22,13 @@
 			<?php include('templates/modules/hero/template-2.php'); ?>
 
 
+<?php include('templates/modules/center-content/template-2.php'); ?>
 
+<?php include('templates/modules/feature/template-2.php'); ?>
 
+<?php include('templates/modules/clients/template-2.php'); ?>
 
+<?php include('templates/modules/call-to-action/template-2.php'); ?>
 
 
 

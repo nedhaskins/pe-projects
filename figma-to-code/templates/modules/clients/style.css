@@ -7,13 +7,32 @@
 }
 
 
-.client-reviews {
+.clients.one .client-reviews {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 @media(min-width: 600px) {
 	.client-reviews {
 		flex-direction: row;
 	}
+}
+
+
+.clients.two .client-reviews {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+.clients.two .review-text {
+	display: flex;
+	flex-direction: row;
+}
+
+.clients.two .client-info {
+	display: flex;
+	flex-direction: row;
 }

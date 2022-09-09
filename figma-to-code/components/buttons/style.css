@@ -1,0 +1,40 @@
+
+
+.get-free-quotes, .free-signup {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-radius: 16px;
+}
+
+
+
+.get-free-quotes, .get-free-quotes button {
+		background-color: var(--royalBlue);
+}
+
+
+
+
+.free-signup {
+		color: var(--royalBlue);
+}
+
+.free-signup, .free-signup button {
+		background-color: white;
+}
+
+.get-free-quotes button, .free-signup button {
+	border: 0;
+	padding: 0;
+
+}
+
+.get-free-quotes svg path {
+	stroke: white;
+}
+
+.free-signup svg path {
+	stroke: var(--royalBlue);
+}

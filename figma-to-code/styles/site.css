@@ -10,6 +10,12 @@
 @import 'typography.css';
 
 
+
+@import '../components/buttons/style.css';
+
+
+
+
 @import '../templates/modules/navigation/style.css';
 @import '../templates/modules/hero/style.css';
 @import '../templates/modules/feature/style.css';

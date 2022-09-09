@@ -6,7 +6,6 @@
 
 
 .feature-item {
-	border: 3px solid blue;
 	display: flex;
 	flex-direction: row;
 }
@@ -28,4 +27,28 @@
 	.feature {
 		flex-direction: row;
 	}
+}
+
+/*FEATURE LIST TWO*/
+
+
+.feature-list.two {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+@media (min-width: 600px) {
+	.feature-list.two {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+}
+
+
+.feature-list.two .feature-item {
+	flex-direction: column;
+	align-items: start;
+	border: 1px solid var(--zircon);
+	border-radius: 10%;
 }

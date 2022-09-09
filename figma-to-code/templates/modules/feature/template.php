@@ -12,7 +12,7 @@
 
 
 
-	<div class="feature-list">
+	<div class="feature-list one">
 
 		<div class="feature-item">
 
