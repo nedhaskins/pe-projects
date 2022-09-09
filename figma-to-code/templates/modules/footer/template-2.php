@@ -1,4 +1,4 @@
-<footer class="footer one">
+<footer class="footer two">
 	
 
 
@@ -56,10 +56,10 @@
 
 </section>
 
-<section class="footer-bottom  ">
+<section class="footer-bottom">
 
 	<logo>
-		<?php include('images/logoipsum-dark.svg'); ?>
+		<?php include('images/logoipsum.svg'); ?>
 	</logo>
 
 
@@ -76,19 +76,19 @@
 
 		<a href="http://www.linkedin.com">
 			<div class='svg-wrapper'>	
-				<?php include('images/linkedin.svg'); ?>
+				<?php include('images/linkedin-light.svg'); ?>
 			</div>
 		</a>
 
 		<a href="http://www.facebook.com">
 			<div class='svg-wrapper'>
-				<?php include('images/facebook.svg'); ?>
+				<?php include('images/facebook-light.svg'); ?>
 			</div>
 		</a>
 
 		<a href="http://www.facebook.com">
 			<div class='svg-wrapper'>
-				<?php include('images/twitter.svg'); ?>
+				<?php include('images/twitter-light.svg'); ?>
 			</div>
 		</a>
 

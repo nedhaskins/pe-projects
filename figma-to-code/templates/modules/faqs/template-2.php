@@ -1,9 +1,10 @@
-<section class="faqs one">
+<section class="faqs two">
 
 
 <h3>Frequently Asked Questions</h3>
 
 <p>Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.</p>
+
 
 
 
@@ -41,6 +42,3 @@
 		</article>
 
 </div>
-
-
-</section>

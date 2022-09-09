@@ -1,0 +1,36 @@
+.faqs.two .dropdowns article {
+border-bottom: 1px solid var(--ink-dark);
+}
+
+
+.faqs.two .dropdowns details {
+	position: relative;
+}
+
+.faqs.two .dropdowns details[open] {
+	margin-bottom: 20px;
+}
+
+
+.faqs.two .dropdowns summary {
+	margin: 15px 0px 15px 0px;
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+.faqs.two .dropdowns summary:before {
+	content: url('../../../images/plus-sign.svg');
+/*	position: absolute;
+	right: 0px;*/
+}
+
+.faqs.two .dropdowns details[open] summary:before {
+	content: url('../../../images/minus-sign.svg');
+/*	margin-bottom: 20px;*/
+}

@@ -1,15 +1,26 @@
-footer {
+footer.one {
 	background-color: var(--royalBlue);
+}
+
+
+footer.two {
+	background-color: white;
 }
 
 
 
 .subscribe-module {
-
-	background-color: var(--palatinateBlue);
 	display: flex;
 	flex-direction: column;
 	padding: 30px;
+}
+
+footer.one .subscribe-module {
+		background-color: var(--palatinateBlue);
+}
+
+footer.two .subscribe-module {
+		background-color: var(--zumthor);
 }
 
 
