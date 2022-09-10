@@ -1,8 +1,16 @@
 <section class="center-content three">
 
-	<p>Rhoncus, accumsan dictum</p>
+	<inner-column>
 
-	<h1>Etiam nulla lectus amet nunc molestie at vulputate.</h1>
+			<div class="header-and-text"> <!--with h2 heading-->
+
+					<p class='eyebrow'>Rhoncus, Accumsan Dictum</p>
+
+					<h2>Etiam Nulla Lectus Amet Nunc</h2>
+
+					<p class='text'>Neque, pulvinar vestibulum non aliquam.</p>
+
+				</div>
 
 
 	<div class='content-list'>
@@ -31,5 +39,7 @@
 
 
 	<!--component-->
+
+</inner-column>
 
 </section>

@@ -1,5 +1,7 @@
 <section class="center-content two">
 
+	<inner-column>
+
 				<logo>
 					
 					<?php include('images/cloud-icon.svg'); ?>
@@ -7,9 +9,14 @@
 
 				</logo>
 
-				<p>Rhoncus, accumsan dictum</p>
+				<div class="header-and-text"> <!--with h2 heading-->
 
-				<?php include('components/header-and-text/template.php'); ?>
+					<p class='eyebrow'>Rhoncus, accumsan dictum</p>
+
+					<h2>Etiam nulla lectus amet nunc molestie at vulputate.</h2>
+					<p>Neque, pulvinar vestibulum non aliquam.</p>
+
+				</div>
 
 				<logo>
 					

@@ -69,6 +69,23 @@
 	stroke: var(--royalBlue);
 }
 
+.see-all {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+	margin-top: 68px;
+}
+
+
 .see-all p {
 	font-size: 20px;
+	line-height: 24.2px;
+	letter-spacing: 0.46px;
+	text-align: center;
+	color: var(--royalBlue);
+}
+
+.see-all logo svg {
+	stroke: var(--royalBlue);
 }

@@ -2,8 +2,15 @@
 
 	<inner-column>
 
-		<?php include('components/header-and-text/template.php'); ?>
+		
+<div class="header-and-text">
 
+	<p class='eyebrow'>Rhoncus, accumsan dictum</p>
+
+	<h2>Etiam nulla lectus amet nunc molestie at vulputate.</h2>
+	<p>Neque, pulvinar vestibulum non aliquam.</p>
+
+</div>
 		<picture>
 			<?php include('images/iframe-video.svg'); ?>
 		</picture>
