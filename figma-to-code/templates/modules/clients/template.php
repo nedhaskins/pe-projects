@@ -1,7 +1,7 @@
 <section class="clients one">
 
 
-	<div class='header'>
+	<div class='header-and-text'>
 		
 		<h3>What Our Clients Say</h3>
 		<p>Neque, pulvinar vestibulum non aliquam.</p>
@@ -12,43 +12,55 @@
 	<div class='client-reviews'>
 
 		<div class="chevron-wrapper">
-			<?php include('images/chevron-left.svg'); ?>
+			<div class="chevron-left">
+				<?php include('images/chevron-left.svg'); ?>
+			</div>
 		</div>
 
 
 		<div class="client-review">
 
-			<picture>
+			<logo class="five-stars">
 				<?php include('images/five-stars.svg'); ?>
-			</picture>
+			</logo>
 
-			<p>“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
+			<p class="review">“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
 
-			<picture>
-				<img src='images/client-photo.jpeg' alt="Client photo">
-			</picture>
 
-			<p class='client-name'>This Guy Watson</p>
+			<div class="client-block">
+				<picture>
+					<img src='images/client-photo.jpeg' alt="Client photo">
+				</picture>
+
+				<p class='client-name'>This Guy Watson</p>
+			</div>
 
 		</div>
 
 		<div class="client-review">
 
-			<picture>
+			<logo>
 				<?php include('images/five-stars.svg'); ?>
-			</picture>
+			</logo>
 
-			<p>“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
+			<p class="review">“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
 
-			<picture>
-				<img src='images/client-photo.jpeg' alt="Client photo">
-			</picture>
+			<div class="client-block">
+				<picture>
+					<img src='images/client-photo.jpeg' alt="Client photo">
+				</picture>
 
-			<p class='client-name'>This Guy Watson</p>
+				<p class='client-name'>This Guy Watson</p>
+			</div>
+
 		</div>
+
+
 
 		<div class="chevron-wrapper">
-			<?php include('images/chevron-right.svg'); ?>
+			<div class="chevron-right">
+				<?php include('images/chevron-right.svg'); ?>
+			</div>
 		</div>
 
 

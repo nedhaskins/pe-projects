@@ -1,15 +1,44 @@
+.clients.one .header-and-text h3 {
+	line-height: 58.09px;
+	letter-spacing: 0.2px;
+	text-align: center;
+}
+
+.clients.one .header-and-text p {
+	margin-top: 16px;
+	color: var(--sonicSilver);
+	text-align: center;
+}
+
+
+
+.review {
+	line-height: 32px;
+	letter-spacing: 0.2px;
+}
+
+
 .clients picture img {
 	border-radius: 100%;
 }
 
+.clients picture {
+	width: 40px;
+	height: 40px;
+}
+
 .client-name {
 	font-size: 14px;
+	margin-top: 8px;
 }
 
 
 .clients.one .client-reviews {
 	display: flex;
 	flex-direction: row;
+	padding: 20px;
+	margin-top: 50px;
+	gap: 42px;
 }
 
 @media(min-width: 600px) {
@@ -43,4 +72,34 @@
 		display: flex;
 		flex-direction: row;
 	}
+}
+
+.client-review p {
+	margin-top: 27px;
+}
+
+
+.client-block, .chevron-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.client-block {
+	margin-top: 27px;
+}
+
+.client-block p {
+	margin-top: 8px;
+}
+
+
+
+
+
+
+.chevron-left, .chevron-right {
+	width: 50px;
+	height: 50p;
 }
