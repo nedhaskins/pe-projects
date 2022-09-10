@@ -63,3 +63,12 @@
 	background-color: white;
 	color: var(--royalBlue);
 }
+
+.navigation.three .signup {
+	background-color: white;
+	color: var(--royalBlue);
+	border: 1px solid var(--royalBlue);
+		padding: 8px 22px;
+	border-radius: 5px;
+	letter-spacing: 0.46px;
+}

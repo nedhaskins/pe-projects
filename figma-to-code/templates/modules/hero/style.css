@@ -8,12 +8,23 @@
 	background-image: url('../../../images/backgrounds/hero-background1.svg');
 }
 
-.hero.one p {
+:is(.hero.one, .hero.two) p {
 	font-size: 20px;
 	line-height: 24.2px;
 	letter-spacing: 0.2px;
 	text-align: center;
+	margin-top: 16px;
 }
+
+.hero.three p {
+	line-height: 30px;
+	text-align: center;
+	color: white;
+}
+
+
+
+/* HEADER TEXT */
 
 
 .hero.one h1 {
@@ -22,9 +33,33 @@ font-size: 64px;
 line-height: 77.45px;
 letter-spacing: 1.2px;
 text-align: center;
-
-
 }
+
+
+.hero.two h2 {
+font-weight: 700;
+font-size: 56px;
+line-height: 67.77px;
+letter-spacing: 1.2px;
+text-align: center;
+}
+
+.hero.three h1 {
+font-weight: 700;
+font-size: 56px;
+line-height: 80px;
+letter-spacing: 3.2px;
+text-align: center;
+color: white;
+}
+
+
+
+
+
+
+/*MODULE CHARACTERISTICS*/
+
 
 .hero.two {
 	background-image: url('../../../images/backgrounds/hero-background2.svg');
@@ -34,8 +69,8 @@ text-align: center;
 }
 
 
-:is(.hero.one, .hero.two) inner-column {
-		margin-left: auto;
+:is(.hero.one, .hero.two, .hero.three) inner-column {
+	margin-left: auto;
 	margin-right: auto;
 	max-width: 974px;
 	padding-top: 195.5px;

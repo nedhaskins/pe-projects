@@ -1,11 +1,12 @@
 
 			<section class="hero two">
-				<h1>Arco Suscipit Massa Aliquam Proin Amet</h1>
+
+				<inner-column>
+				<h2>Arco Suscipit Massa Aliquam<br>Proin Amet</h2>
 				<p>Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor,</p>
-				<div class="hero-buttons">
-					
-				</div>
+		
+		
 
-				<?php include('components/buttons/hero-buttons.php'); ?>
-
+			<?php include('components/buttons/hero-buttons.php'); ?>
+				</inner-column>
 			</section>
