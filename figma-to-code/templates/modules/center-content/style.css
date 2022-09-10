@@ -43,17 +43,26 @@
 	margin-top: 32px;
 }
 
-.center-content.one picture {
+.center-content.one picture, .center-content.two .learn-more {
 	margin-top: 60px;
 
 }
 
-.center-content.two logo {
-	padding-top: 60px;
+
+.center-content.two .icon-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
+.center-content.two .cloud {
+	width: 60px;
+	height: 60px;
+}
 
-
+.center-content.two p {
+	color: var(--sonicSilver);
+}
 
 .center-content.three .content-list {
 	display: grid;

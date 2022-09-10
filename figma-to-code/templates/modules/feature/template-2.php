@@ -1,7 +1,6 @@
 <section class='feature two'>		
 
 	<inner-column>
-		
 	<div class="header-and-text">
 
 		<h3>Etiam nulla lectus amet nunc molestie at vulputate.</h3>

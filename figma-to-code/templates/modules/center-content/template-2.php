@@ -2,12 +2,11 @@
 
 	<inner-column>
 
-				<logo>
-					
-					<?php include('images/cloud-icon.svg'); ?>
-
-
-				</logo>
+				<div class='icon-wrapper'>
+					<logo class='cloud'>
+						<?php include('images/cloud-icon.svg'); ?>
+					</logo>
+				</div>
 
 				<div class="header-and-text"> <!--with h2 heading-->
 
@@ -18,12 +17,11 @@
 
 				</div>
 
-				<logo>
-					
-					<?php include('images/learn-more.svg'); ?>
-
-
-				</logo>
+				<div class='icon-wrapper'>
+					<logo class='learn-more'>
+						<?php include('images/learn-more.svg'); ?>
+					</logo>
+				</div>
 
 				<!--component-->
 			

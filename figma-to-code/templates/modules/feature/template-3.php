@@ -1,4 +1,6 @@
 <section class="feature three">
+
+	<inner-column>
 	
 	<?php include('components/header-and-text/template.php'); ?>
 
@@ -97,7 +99,7 @@
 		</div>
 
 	</div> <!--feature-list-->
-
+</inner-column>
 
 
 </section>
