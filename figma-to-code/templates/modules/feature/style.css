@@ -27,19 +27,23 @@
 	.feature {
 		flex-direction: row;
 	}
+
+	.feature.two, .feature.three {
+		flex-direction: column;
+	}
 }
 
 /*FEATURE LIST TWO*/
 
 
-.feature-list.two {
+.feature-list.two, .feature-list.three {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
 
 @media (min-width: 600px) {
-	.feature-list.two {
+	.feature-list.two, .feature-list.three        {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 20px;
 	}
@@ -52,3 +56,7 @@
 	border: 1px solid var(--zircon);
 	border-radius: 10%;
 }
+
+
+/*FEATURE TEMPLATE 3*/
+

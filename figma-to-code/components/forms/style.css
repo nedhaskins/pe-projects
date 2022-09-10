@@ -22,3 +22,9 @@
 .email-submit svg path {
 	stroke: white;
 }
+
+
+.email-submit-2 input {
+	background: url('../../images/envelope.svg') no-repeat;
+
+}

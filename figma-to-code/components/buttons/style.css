@@ -38,3 +38,7 @@
 .free-signup svg path {
 	stroke: var(--royalBlue);
 }
+
+.see-all p {
+	font-size: 20px;
+}

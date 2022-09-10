@@ -13,31 +13,31 @@
 
 		<article>
 			<details>
-				<summary>How soon will my order ship?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>How soon will my order ship?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam.</p> 
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>Are there any warranty exclusions?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>Are there any warranty exclusions?</summary>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. 
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>Are there any return exclusions?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>Are there any return exclusions?</summary>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. 
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>Will I be charged for a replacement item?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>Will I be charged for a replacement item?</summary>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. 
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>How can I track my orders and payment?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>How can I track my orders and payment?</summary>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. 
 			</details>
 		</article>
 

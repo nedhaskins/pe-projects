@@ -21,6 +21,7 @@
 
 @import '../templates/modules/navigation/style.css';
 @import '../templates/modules/hero/style.css';
+@import '../templates/modules/center-content/style.css';
 @import '../templates/modules/feature/style.css';
 @import '../templates/modules/clients/style.css';
 @import '../templates/modules/call-to-action/style.css';

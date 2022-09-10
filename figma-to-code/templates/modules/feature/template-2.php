@@ -1,4 +1,6 @@
-		
+<section class='feature two'>		
+
+
 <div class="header-and-text">
 
 	<h3>Etiam nulla lectus amet nunc molestie at vulputate.</h3>
@@ -69,3 +71,5 @@
 	</div>
 
 </div> <!--feature-list-->
+
+</section>

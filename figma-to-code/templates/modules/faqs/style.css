@@ -1,11 +1,20 @@
-.faqs.two .dropdowns article {
+/*.faqs.two .dropdowns article {
 border-bottom: 1px solid var(--ink-dark);
 }
-
+*/
 
 .faqs.two .dropdowns details {
 	position: relative;
 }
+
+
+.faqs.two .dropdowns details p {
+	border-left: 3px solid black;
+	margin-left: 20px;
+	padding-left: 10px;
+}
+
+
 
 .faqs.two .dropdowns details[open] {
 	margin-bottom: 20px;
@@ -34,3 +43,61 @@ border-bottom: 1px solid var(--ink-dark);
 	content: url('../../../images/minus-sign.svg');
 /*	margin-bottom: 20px;*/
 }
+
+
+/*FAQS TEMPLATE THREE*/
+
+
+@media (min-width: 600px) {
+	.faqs.three {
+		display: flex;
+		flex-direction: row;
+	}
+
+
+}
+
+
+
+
+.faqs.three .dropdowns details {
+	position: relative;
+}
+
+
+.faqs.three .dropdowns details p {
+	border-left: 3px solid black;
+	margin-left: 20px;
+	padding-left: 10px;
+}
+
+
+
+.faqs.three .dropdowns details[open] {
+	margin-bottom: 20px;
+}
+
+
+.faqs.three .dropdowns summary {
+	margin: 15px 0px 15px 0px;
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+
+.faqs.three .dropdowns summary:after {
+	content: url('../../../images/chevron-right.svg');
+/*	position: absolute;
+	right: 0px;*/
+}
+
+.faqs.three .dropdowns details[open] summary:after {
+	content: url('../../../images/chevron-up.svg');
+/*	margin-bottom: 20px;*/
+}
+

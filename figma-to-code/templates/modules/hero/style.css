@@ -13,3 +13,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+.hero.three {
+	background-color: var(--royalBlue);
+}
+
+.hero.three h1 {
+	text-transform: uppercase;
+}

@@ -5,7 +5,24 @@
 
 }
 
+
+
+
+
 .call-to-action.two .button-wrapper {
 	display: flex;
 	flex-direction: row;
+}
+
+
+
+
+
+@media(min-width: 600px) {
+
+	.call-to-action.three {
+		display: flex;
+		flex-direction: row;
+		
+	}
 }
