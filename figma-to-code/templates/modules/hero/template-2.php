@@ -6,6 +6,6 @@
 					
 				</div>
 
-				<button class='get-started'>Get Started</button>
+				<?php include('components/buttons/hero-buttons.php'); ?>
 
 			</section>

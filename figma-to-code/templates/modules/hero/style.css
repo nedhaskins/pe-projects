@@ -27,7 +27,7 @@ text-align: center;
 }
 
 .hero.two {
-	background-image: url('../../../images/backgrounds/hero-background2.png');
+	background-image: url('../../../images/backgrounds/hero-background2.svg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -54,29 +54,7 @@ padding-bottom: 195.5px;
 	text-transform: uppercase;
 }
 
-.hero-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 30px;
-	margin-top: 52px;
-
+.hero.two .start-free-trial {
+	display: none;
 }
 
-
-/*SOME BUTTONS - BELONGS IN COMPONENTS*/
-
-.get-started {
-	background-color: var(--royalBlue);
-	color: white;
-}
-
-.start-free-trial {
-	background-color: white;
-	color: var(--royalBlue);
-	border: 1px solid var(--royalBlue);
-}
-
-.get-started, .start-free-trial {
-	padding: 15px 50px;
-}

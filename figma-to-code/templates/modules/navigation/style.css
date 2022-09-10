@@ -3,7 +3,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	padding: 22px 120px 22px 120px;
+	padding: 22px 120px;
 }
 
 .navigation.two {
@@ -49,7 +49,7 @@
 	fill: white;
 }
 
-.navigation.one .login {
+.navigation .login {
 	border: none;
 	background-color: var(--royalBlue);
 	color: white;
@@ -57,4 +57,9 @@
 	border-radius: 5px;
 	letter-spacing: 0.46px;
 
+}
+
+.navigation.two .login {
+	background-color: white;
+	color: var(--royalBlue);
 }

@@ -22,7 +22,7 @@
 
 		<?php include('images/language.svg'); ?>
 
-		<button class='login'>Login</button>
+		<a class='login' href="#">Login</a>  
 
 
 	</div>

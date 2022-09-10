@@ -1,3 +1,33 @@
+/* GET STARTED, START FREE TRIAL */
+
+.hero-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 52px;
+
+}
+
+
+
+
+.get-started {
+	background-color: var(--royalBlue);
+	color: white;
+}
+
+.start-free-trial {
+	background-color: white;
+	color: var(--royalBlue);
+	border: 1px solid var(--royalBlue);
+}
+
+.get-started, .start-free-trial {
+	padding: 15px 50px;
+}
+
+
 
 
 .get-free-quotes, .free-signup {
