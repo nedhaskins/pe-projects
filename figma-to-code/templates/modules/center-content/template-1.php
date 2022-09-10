@@ -1,15 +1,14 @@
-		<section class="center-content one">
-				<p>Rhoncus, accumsan dictum</p>
+<section class="center-content one">
 
-				<?php include('components/header-and-text/template.php'); ?>
+	<inner-column>
 
-				<picture>
-					<?php include('images/iframe-video.svg'); ?>
-				</picture>
+		<?php include('components/header-and-text/template.php'); ?>
 
+		<picture>
+			<?php include('images/iframe-video.svg'); ?>
+		</picture>
 
-				<!--component-->
+	</inner-column>
+		<!--component-->
 
-
-			
-			</section>
+</section> 

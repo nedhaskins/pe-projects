@@ -21,12 +21,31 @@
 }
 
 
+.feature.one .eyebrow {
+	display: none;
+}
+
+
+
+
+
+
+
+.feature.one .feature-head p {
+	margin-top: 24px;
+}
+
 
 @media (min-width: 600px) {
 
 	.feature {
 		flex-direction: row;
 	}
+
+	.feature.one {
+		padding: 80px 120px;
+	}
+
 
 	.feature.two, .feature.three {
 		flex-direction: column;

@@ -1,4 +1,38 @@
+.center-content.one inner-column {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+
+
+
 .center-content.three .content-list {
 	display: flex;
 	flex-direction: row;
+}
+
+.center-content.one h1 {
+	margin-top: 24px;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 67.77px;
+	letter-spacing: 0.2px;
+	text-align: center;
+}
+
+
+.center-content.one p {
+	font-size: 20px;
+	line-height: 24.2px;
+	letter-spacing: 0.2px;
+	text-align: center;
+}
+
+.center-content.one h1 + p {
+	margin-top: 32px;
+}
+
+.center-content.one picture {
+	margin-top: 60px;
+
 }

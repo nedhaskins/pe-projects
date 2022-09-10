@@ -1,10 +1,10 @@
- <section class="feature one">
+  <section class="feature one">
 
 	<div class="feature-head">
 		<?php include('components/header-and-text/template.php'); ?>
 
 		<picture>
-			<?php include('images/neutral-photo.svg'); ?>
+			<?php include('images/feature-one-photo.php'); ?>
 		</picture>
 
 	</div>

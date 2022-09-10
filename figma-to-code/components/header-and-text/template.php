@@ -3,7 +3,7 @@
 
 	<p class='eyebrow'>Rhoncus, accumsan dictum</p>
 
-	<h1>Etiam nulla lectus amet nunc molestie at vulputate.</h1>
+	<h3>Etiam nulla lectus amet nunc molestie at vulputate.</h3>
 	<p>Neque, pulvinar vestibulum non aliquam.</p>
 
 </div>
