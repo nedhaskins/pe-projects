@@ -99,7 +99,7 @@
 
 
 
-.chevron-left, .chevron-right {
+:is(.chevron-left, .chevron-right) svg {
 	width: 50px;
-	height: 50p;
+	height: 50px;
 }
