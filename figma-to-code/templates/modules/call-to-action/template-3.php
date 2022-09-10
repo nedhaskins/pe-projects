@@ -14,9 +14,9 @@
 
 	</div> <!--cta-top-->
 
-		<picture>
-			<?php include('images/neutral-photo.php'); ?>
-		</picture>
+	<picture>
+		<?php include('images/neutral-photo.php'); ?>
+	</picture>
 
 
 

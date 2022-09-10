@@ -38,3 +38,7 @@ svg {
 	display: block;
 	width: 100%;
 	}
+
+logo, inner-column {
+	display: block;
+}

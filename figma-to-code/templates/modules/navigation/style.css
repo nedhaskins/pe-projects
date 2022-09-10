@@ -1,7 +1,9 @@
 .navigation {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: space-evenly;
+	padding: 22px 120px 22px 120px;
 }
 
 .navigation.two {
@@ -9,6 +11,24 @@
 	color: white;
 }
 
+
+
+.navigation nav a {
+	font-size: 14px;
+}
+
+.navigation nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.navigation-right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
 
 
 .navigation.one svg path.outline {
@@ -27,4 +47,14 @@
 
 .navigation.two svg path.text {
 	fill: white;
+}
+
+.navigation.one .login {
+	border: none;
+	background-color: var(--royalBlue);
+	color: white;
+	padding: 8px 22px;
+	border-radius: 5px;
+	letter-spacing: 0.46px;
+
 }

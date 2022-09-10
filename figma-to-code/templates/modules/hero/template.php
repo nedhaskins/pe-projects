@@ -1,14 +1,28 @@
 
 			<section class="hero one">
-				<h1>Suscipit Massa Aliquam Proin Amet</h1>
-				<p>Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor,</p>
-				<div class="hero-buttons">
-					
+
+				<inner-column>
+
+					<div class="header-and-text">
+
+					<h1>Suscipit Massa Aliquam<br>Proin Amet</h1>
+					<p>Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor,</p>
+
 				</div>
 
-				<button class='get-started'>Get Started</button>
 
-				<button class='start-free-trial'>Start Free Trial</button>
+
+
+
+	
+				<div class='hero-buttons'>
+
+					<a class='get-started'>Get Started</a>
+
+					<a class='start-free-trial'>Start Free Trial</a>
+				</div>
+
+			</inner-column>
 
 
 			</section>
