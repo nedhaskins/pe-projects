@@ -1,3 +1,7 @@
+
+
+
+
 .clients.one .header-and-text h3 {
 	line-height: 58.09px;
 	letter-spacing: 0.2px;
@@ -9,6 +13,11 @@
 	color: var(--sonicSilver);
 	text-align: center;
 }
+
+.client-name {
+	color: var(--sonicSilver);
+}
+
 
 
 
@@ -34,11 +43,15 @@
 
 
 .clients.one .client-reviews {
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	padding: 20px;
 	margin-top: 50px;
 	gap: 42px;
+	max-width: 1094px;
 }
 
 @media(min-width: 600px) {
@@ -73,6 +86,10 @@
 		flex-direction: row;
 	}
 }
+.client-review {
+	padding: 26px 10px;
+}
+
 
 .client-review p {
 	margin-top: 27px;
