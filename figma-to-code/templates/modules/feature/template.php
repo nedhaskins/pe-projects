@@ -33,7 +33,7 @@
 
 			<div class="feature-wrapper">
 				<logo>
-					<?php include('components/feature-numbers/1.svg'); ?>
+					<?php include('components/feature-numbers/2.svg'); ?>
 				</logo>
 			</div>
 
@@ -48,7 +48,7 @@
 
 			<div class="feature-wrapper">
 				<logo>
-					<?php include('components/feature-numbers/1.svg'); ?>
+					<?php include('components/feature-numbers/3.svg'); ?>
 				</logo>
 			</div>
 
@@ -63,7 +63,7 @@
 
 			<div class="feature-wrapper">
 				<logo>
-					<?php include('components/feature-numbers/1.svg'); ?>
+					<?php include('components/feature-numbers/4.svg'); ?>
 				</logo>
 			</div>
 
@@ -78,7 +78,7 @@
 
 			<div class="feature-wrapper">
 				<logo>
-					<?php include('components/feature-numbers/1.svg'); ?>
+					<?php include('components/feature-numbers/5.svg'); ?>
 				</logo>
 			</div>
 
