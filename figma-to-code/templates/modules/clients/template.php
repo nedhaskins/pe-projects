@@ -9,7 +9,7 @@
 	</div>
 
 
-	<div class='client-reviews'>
+	<div class='client-reviews one'>
 
 		<div class="chevron-wrapper">
 			<div class="chevron-left">

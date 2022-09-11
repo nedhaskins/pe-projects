@@ -1,7 +1,7 @@
 <section class="clients two">
 
 
-	<div class='header'>
+	<div class='header-and-text'>
 		
 		<h3>What Our Clients Say</h3>
 		<p>Neque, pulvinar vestibulum non aliquam.</p>
@@ -9,16 +9,16 @@
 	</div>
 
 
-	<div class='client-reviews'>
+	<div class='client-reviews two'>
 
 
 		<div class="review-text">
 			<div class="chevron-wrapper">
 				<?php include('images/chevron-left.svg'); ?>
 			</div>
-			<p>“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
+			<p class="review">“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
 			<div class="chevron-wrapper">
-				<?php include('images/chevron-right.svg'); ?>
+				<?php include('images/chevron-circle-right.svg'); ?>
 			</div>
 		</div>
 

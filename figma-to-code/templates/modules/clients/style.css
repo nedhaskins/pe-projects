@@ -1,14 +1,16 @@
 
+.clients.one, .clients.two {
+	padding: 80px 120px;
+}
 
 
-
-.clients.one .header-and-text h3 {
+:is(.clients.one, .clients.two) .header-and-text h3 {
 	line-height: 58.09px;
 	letter-spacing: 0.2px;
 	text-align: center;
 }
 
-.clients.one .header-and-text p {
+:is(.clients.one, .clients.two) .header-and-text p {
 	margin-top: 16px;
 	color: var(--sonicSilver);
 	text-align: center;
@@ -21,11 +23,26 @@
 
 
 
-.review {
+p.review {
 	line-height: 32px;
 	letter-spacing: 0.2px;
+	font-size: 20px;
 }
 
+/*CLIENT REVIEWS TWO MODULE */
+
+
+.client-reviews.two {
+	margin-top: 50px;
+}
+
+
+
+.client-reviews.two .review {
+	font-size: 40px;
+	line-height: 54px;
+	text-align: center;
+}
 
 .clients picture img {
 	border-radius: 100%;
@@ -42,7 +59,7 @@
 }
 
 
-.clients.one .client-reviews {
+.clients.one .client-reviews.one {
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -53,6 +70,18 @@
 	gap: 42px;
 	max-width: 1094px;
 }
+
+.clients.two .client-reviews.two {
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
 
 @media(min-width: 600px) {
 	.client-reviews {
@@ -69,9 +98,10 @@
 
 
 
-.clients.two .review-text {
+.client-reviews.two .review-text {
 	display: flex;
 	flex-direction: row;
+
 }
 
 .clients.two .client-info {
