@@ -26,10 +26,11 @@
 
 
 		<div class="client-info">
-
-			<picture>
-				<img src='images/neutral-avatar.svg' alt="Blank photo">
-			</picture>
+			<div class="client-icon-wrapper">
+				<picture class="client-photo">
+					<img src='images/neutral-avatar.svg' alt="Blank photo">
+				</picture>
+			</div>
 
 			<div>
 				<p class='client-name'>This Guy Watson</p>

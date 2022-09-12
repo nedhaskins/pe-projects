@@ -1,5 +1,5 @@
 <section class="clients three">
-	<div class='header'>
+	<div class='header-and-text'>
 		
 		<h3>What Our Clients Say</h3>
 		<p>Neque, pulvinar vestibulum non aliquam.</p>
@@ -8,15 +8,15 @@
 	
 	<div class="client-review">
 
-		<picture>
+		<logo class="neutral-photo">
 			<?php include('images/neutral-photo.php'); ?>
-		</picture>
+		</logo>
 
 
 		<div class="review-text">
-			<p>“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis portitor.”</p>
+			<p class="review">“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis portitor.”</p>
 
-			<p><em>Courtney Henry</em> - Marketing Coordinator</p>
+			<p class="client-info"><em>Courtney Henry</em> - Marketing Coordinator</p>
 		</div>
 
 	</div>

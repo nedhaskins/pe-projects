@@ -1,16 +1,16 @@
 
-.clients.one, .clients.two {
+.clients {
 	padding: 80px 120px;
 }
 
 
-:is(.clients.one, .clients.two) .header-and-text h3 {
+.clients .header-and-text h3 {
 	line-height: 58.09px;
 	letter-spacing: 0.2px;
 	text-align: center;
 }
 
-:is(.clients.one, .clients.two) .header-and-text p {
+.clients .header-and-text p {
 	margin-top: 16px;
 	color: var(--sonicSilver);
 	text-align: center;
@@ -48,7 +48,7 @@ p.review {
 	border-radius: 100%;
 }
 
-.clients picture {
+.clients .client-photo {
 	width: 40px;
 	height: 40px;
 }
@@ -107,6 +107,9 @@ p.review {
 .clients.two .client-info {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+	gap: 20px;
 }
 
 
@@ -149,4 +152,71 @@ p.review {
 :is(.chevron-left, .chevron-right) svg {
 	width: 50px;
 	height: 50px;
+}
+
+.clients.two .client-name {
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.2px;
+}
+
+.clients.two .client-job {
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0.2px;
+}
+
+.clients.two .client-icon-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+/*CLIENTS TEMPLATE THREE */
+
+.clients.three .client-review {
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+}
+
+
+@media(min-width: 600px) {
+	.clients.three .client-review {
+		flex-direction: row;
+		gap: 38px;
+	}
+}
+
+
+
+
+.clients.three .neutral-photo {
+	max-width: 652px;
+	max-height: 472px;
+}
+
+@media(min-width: 600px) {
+	.clients.three .neutral-photo {
+		width: 652px;
+		height: 472px;
+	}
+}
+
+
+
+.clients.three .review-text .review {
+	font-size: 32px;
+			letter-spacing: 0.2px;
+		line-height: 48px;
+
+}
+
+.clients.three .review-text .client-info {
+	font-size: 20px;
+
+		color: var(--sonicSilver);
+
 }

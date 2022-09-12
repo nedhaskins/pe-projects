@@ -142,7 +142,7 @@
 }
 
 
-.feature-list.two h4 {
+:is(.feature-list.two, .feature-list.three) h4 {
 	margin-top: 22px;
 }
 

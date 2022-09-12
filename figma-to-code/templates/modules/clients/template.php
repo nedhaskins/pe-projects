@@ -28,7 +28,7 @@
 
 
 			<div class="client-block">
-				<picture>
+				<picture class="client-photo">
 					<img src='images/client-photo.jpeg' alt="Client photo">
 				</picture>
 
