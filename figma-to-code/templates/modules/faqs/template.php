@@ -4,9 +4,6 @@
 
 		<?php include('components/header-and-text/template.php'); ?>
 
-
-
-
 			<div class='dropdowns'>
 
 

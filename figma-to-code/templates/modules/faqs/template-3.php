@@ -1,13 +1,10 @@
 <section class="faqs three">
 	
+<inner-column>
 
-<div class="header-and-text">
+	<div class="header-wrapper">
 
-
-<h3>Frequently Asked Questions</h3>
-
-<p>Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.</p>
-
+		<?php include('components/header-and-text/template.php'); ?>
 </div>
 
 <div class='dropdowns'>
@@ -45,7 +42,7 @@
 
 </div>
 
-
+</inner-column>
 
 
 </section>
