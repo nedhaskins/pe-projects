@@ -24,6 +24,7 @@ border-bottom: 1px solid var(--ink-dark);
 @media(min-width: 900px) {
 	.faqs.three inner-column {
 		flex-direction: row;
+		gap: 70px;
 	}
 
 	.faqs.three .header-wrapper {
