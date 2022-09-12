@@ -1,21 +1,15 @@
 @import 'reset.css';
 @import 'setup.css';
-
 @import 'settings.css';
-
-
-
-
 @import 'structure.css';
 @import 'typography.css';
 
 
 
 @import '../components/buttons/style.css';
-
-
 @import '../components/forms/style.css';
 @import '../components/header-and-text/style.css';
+@import '../components/subscribe/style.css';
 
 
 

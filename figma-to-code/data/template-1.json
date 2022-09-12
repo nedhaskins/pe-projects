@@ -4,7 +4,7 @@
 
 
 
-"modules": {
+"modules": {},
 
 "navigation": {},
 
@@ -47,6 +47,24 @@
 
 
 "faqs":
+
+
+
+"dropdowns": [{
+
+	"article":
+		{
+			"summary": "How soon will my order ship?",
+			"text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+		},
+		{
+		"summary": "Are there any warranty exclusions?",
+		"text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+		},
+	
+
+}]
+]
 
 
 "footer":

@@ -1,0 +1,17 @@
+.subscribe-module {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+/*	width: 338px;
+	height: 256px;*/
+}
+
+
+.subscribe-module .text {
+	font-size: 12px;
+	line-height: 20.4px;
+	text-align: left;
+	vertical-align: top;
+	opacity: 70%;
+	margin-top: 18px;
+}

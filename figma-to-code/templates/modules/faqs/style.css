@@ -3,6 +3,40 @@ border-bottom: 1px solid var(--ink-dark);
 }
 */
 
+
+
+
+
+
+/*FAQS ONE*/
+
+.faqs.one inner-column {
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+}
+
+
+
+.faqs.one .eyebrow {
+	display: none;
+}
+
+
+
+
+
+.faqs.one .dropdowns {
+	margin-top: 70px;
+}
+
+
+
+
+
+
+
+
 .faqs.two .dropdowns details {
 	position: relative;
 }
