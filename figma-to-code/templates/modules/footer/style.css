@@ -23,11 +23,16 @@ footer.one .subscribe-module {
 }
 
 
-:is(.footer.one) .text, a {
+.footer.one .text, .footer.one a {
 	color: var(--lavenderBlue);
 }
 
 
+
+
+.footer.two .text, .footer.two a {
+	color: var(--sonicSilver);
+}
 
 
 
@@ -60,16 +65,6 @@ footer a {
 	line-height: 1.21rem;
 	margin-top: 12px;
 
-}
-
-
-:is(.footer.one) .text, a {
-	color: var(--lavenderBlue);
-}
-
-
-:is(.footer.two) .text, a {
-	color: var(--sonicSilver);
 }
 
 

@@ -4,6 +4,42 @@ border-bottom: 1px solid var(--ink-dark);
 */
 
 
+.faqs.one {
+	padding: 80px 0px 80px 0px;
+}
+
+
+:is(.faqs.one) .header-and-text {
+	text-align: center;
+}
+
+
+
+:is(.faqs.one) p {
+	color: var(--sonicSilver);
+	margin-top: 16px;
+}
+
+
+.faqs summary {
+
+	display: flex;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+
+	letter-spacing: 0.2px;
+	justify-content: space-between;
+
+
+}
+
+
+
+
+
 
 
 
@@ -11,9 +47,11 @@ border-bottom: 1px solid var(--ink-dark);
 /*FAQS ONE*/
 
 .faqs.one inner-column {
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 1200px;
+	max-width: 843px;
 }
 
 
@@ -112,9 +150,10 @@ border-bottom: 1px solid var(--ink-dark);
 }
 
 
-.faqs.three .dropdowns summary {
+:is(.faqs.one, .faqs.three) .dropdowns summary {
 	margin: 15px 0px 15px 0px;
 	list-style-type: none;
+	text-transform: capitalize;
 }
 
 
@@ -124,14 +163,14 @@ border-bottom: 1px solid var(--ink-dark);
 
 
 
-.faqs.three .dropdowns summary:after {
+:is(.faqs.one, .faqs.three) .dropdowns summary:after {
 	content: url('../../../images/chevron-right.svg');
-/*	position: absolute;
-	right: 0px;*/
+	padding-top: 2px;
 }
 
-.faqs.three .dropdowns details[open] summary:after {
+:is(.faqs.one, .faqs.three) .dropdowns details[open] summary:after {
 	content: url('../../../images/chevron-up.svg');
+		padding-top: 2px;
 /*	margin-bottom: 20px;*/
 }
 
