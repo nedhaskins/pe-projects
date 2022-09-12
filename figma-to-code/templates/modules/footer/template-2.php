@@ -18,7 +18,7 @@
 	</div>
 
 	<div class="link-column">
-		<p>Information</p>
+		<p class="loud-voice">Information</p>
 		<ul>	
 			<li><a href="#">Diam orci</a></li>
 			<li><a href="#">Mi feugiat</a></li>
@@ -27,7 +27,7 @@
 	</div>
 
 	<div class="link-column">
-		<p>Company</p>
+		<p class="loud-voice">Company</p>
 		<ul>	
 			<li><a href="#">Diam orci</a></li>
 			<li><a href="#">Mi feugiat</a></li>
@@ -38,18 +38,7 @@
 
 
 
-	<div class="subscribe-module">
-
-
-		<p class="loud-voice">Subscribe</p>
-
-
-
-		<?php include('components/forms/email-submit.php'); ?>
-
-		<p>Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi.</p>
-		
-	</div>
+	<?php include('components/subscribe/template.php'); ?>
 
 
 

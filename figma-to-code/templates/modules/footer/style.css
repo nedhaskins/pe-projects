@@ -14,6 +14,22 @@ footer.one .links {
 	gap: 5vw;
 }
 
+footer.one .loud-voice {
+	color: white;
+}
+
+footer.one .subscribe-module {
+		background-color: var(--palatinateBlue);
+}
+
+
+:is(.footer.one) .text, a {
+	color: var(--lavenderBlue);
+}
+
+
+
+
 
 
 
@@ -27,27 +43,33 @@ footer.two {
 
 
 
-footer.one .subscribe-module {
-		background-color: var(--palatinateBlue);
+
+
+footer.two .loud-voice {
+	color: black;
 }
 
 
 
-footer.one .loud-voice {
-	color: white;
-}
 
-footer .text, footer a {
-	color: var(--lavenderBlue);
-}
 
 footer a {
-
 	line-height: 19px;
 	text-align: left;
 	vertical-align: top;
+	line-height: 1.21rem;
+	margin-top: 12px;
+
+}
 
 
+:is(.footer.one) .text, a {
+	color: var(--lavenderBlue);
+}
+
+
+:is(.footer.two) .text, a {
+	color: var(--sonicSilver);
 }
 
 
@@ -68,12 +90,6 @@ footer.two .subscribe-module {
 
 
 
-
-
-.link-column a {
-	line-height: 1.21rem;
-	margin-top: 12px;
-}
 
 
 
