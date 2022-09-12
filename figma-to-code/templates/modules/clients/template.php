@@ -46,7 +46,7 @@
 			<p class="review">“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”</p>
 
 			<div class="client-block">
-				<picture>
+				<picture class="client-photo">
 					<img src='images/client-photo.jpeg' alt="Client photo">
 				</picture>
 

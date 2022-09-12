@@ -1,16 +1,10 @@
+<div class="form-wrapper">
 
+	<form class='email-submit-2'>
 
-<form class='email-submit-2'>
+		<input type='email'>
+		<button type='submit' name='submitted'>Sign Up</button>
 
-	<input type='email'>
-	
+	</form>
 
-
-
-
-
-
-<button type='submit'>Sign Up</button>
-
-
-</form>
+</div>

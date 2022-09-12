@@ -1,22 +1,109 @@
-.cta-card {
-	background-color: #f7f9fe;
-	border: 3px solid blue;
-	margin: 40px;
+.call-to-action.one inner-column {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 
 }
 
 
-
-
-
-.call-to-action.two .button-wrapper {
+.call-to-action.three inner-column {
+		max-width: 1200px;	
 	display: flex;
 	flex-direction: row;
+	gap: 48px;
+	padding: 91px 60px;
 }
 
 
 
 
+
+
+
+
+
+:is(.call-to-action.one, .call-to-action.two) .header-and-text {
+	text-align: center;
+}
+
+.call-to-action .header {
+	margin-top: 24px;
+	text-transform: capitalize;
+}
+
+
+:is(.call-to-action.one, .call-to-action.two) .text {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.cta-card {
+	background-color: #f7f9fe;
+	margin: 40px;
+	padding: 60px 124px;
+
+}
+
+
+
+
+
+.button-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 48px;
+	gap: 32px;
+}
+
+
+
+/*CALL-TO-ACTION THREE*/
+
+
+.call-to-action.three .eyebrow {
+	display: none;
+}
+
+.call-to-action.three .text {
+	margin-top: 16px;
+}
+
+
+.call-to-action.three .cta-top {
+	padding: 76.5px 0px 76.5px 0px;
+}
+
+
+.call-to-action.three .cta-top, .call-to-action.three picture {
+	flex: 1;
+}
+
+
+.call-to-action.three picture {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+
+.call-to-action.three .form-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 48px;
+}
 
 @media(min-width: 600px) {
 

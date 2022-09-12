@@ -31,11 +31,14 @@
 
 
 .get-free-quotes, .free-signup {
-
+	width: 204px;
+	height: 44px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: space-evenly;
-	border-radius: 16px;
+	padding: 12.5px 22px;
+
 }
 
 
@@ -45,17 +48,29 @@
 }
 
 
-
+.get-free-quotes {
+		color: white;
+}
 
 .free-signup {
 		color: var(--royalBlue);
+		border: 1px solid var(--royalBlue);
 }
 
 .free-signup, .free-signup button {
 		background-color: white;
 }
 
-.get-free-quotes button, .free-signup button {
+:is(.get-free-quotes, .free-signup) p {
+	font-size: 16px;
+	line-height: 19.36px;
+	letter-spacing: 0.46px;
+	text-align: center;
+
+}
+
+
+:is(.get-free-quotes, .free-signup) button {
 	border: 0;
 	padding: 0;
 
@@ -68,6 +83,14 @@
 .free-signup svg path {
 	stroke: var(--royalBlue);
 }
+
+
+
+
+/*SEE ALL*/
+
+
+
 
 .see-all {
 	display: flex;

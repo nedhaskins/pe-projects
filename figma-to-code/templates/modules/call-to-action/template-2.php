@@ -1,9 +1,10 @@
 <section class='call-to-action two'>
+
+	<inner-column>
 	
 	<div class="cta-card">
 
-		<h3>Etiam nulla lectus amet nunc 
-		molestie at vulputate.</h3>
+			<?php include('components/header-and-text/template.php'); ?>
 
 		<div class="button-wrapper">
 			<?php include('components/buttons/get-free-quotes.php'); ?>
@@ -12,4 +13,8 @@
 
 	</div>
 
+		</inner-column>
+
 </section>
+
+

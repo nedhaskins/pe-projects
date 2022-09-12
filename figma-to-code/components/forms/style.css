@@ -24,7 +24,40 @@
 }
 
 
+
+
+
+/* EMAIL SUBMIT 2 */
+
+.email-submit-2 {
+	display: flex;
+	gap: 16px;
+	width: 485px;
+	height: 44px;
+}
+
 .email-submit-2 input {
 	background: url('../../images/envelope.svg') no-repeat;
-
+	flex-basis: 100%;
+	padding: 10px 0px 10px 15px;
 }
+
+
+.email-submit-2 button {
+	width: 102px;
+	border: 0;
+	border-radius: 5px;
+
+	background-color: var(--royalBlue);
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.46px;
+	vertical-align: top;
+}
+
+
+
+
+
