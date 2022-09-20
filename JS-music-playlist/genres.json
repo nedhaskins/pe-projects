@@ -1,0 +1,131 @@
+{
+	"genre-count": 1452,
+	"genres": [
+		{
+			"disambiguation": "",
+			"name": "2 tone",
+			"id": "18797864-41b0-4602-8241-adbee761774c"
+		},
+		{
+			"disambiguation": "",
+			"id": "db325bd7-ae64-40bd-966a-a3af3cef8bb9",
+			"name": "2-step"
+		},
+		{
+			"disambiguation": "",
+			"name": "aak",
+			"id": "bdc421e1-0164-4c14-9927-4217bfb25667"
+		},
+		{
+			"disambiguation": "",
+			"id": "62d54c07-87f0-428c-9d4a-62129ef6fc14",
+			"name": "aboio"
+		},
+		{
+			"id": "e009a9c2-c20c-40d9-9bb6-4e098676ea9c",
+			"name": "abstract hip hop",
+			"disambiguation": ""
+		},
+		{
+			"name": "acid breaks",
+			"id": "c755b4da-de34-4d64-909a-9447833315ce",
+			"disambiguation": ""
+		},
+		{
+			"disambiguation": "",
+			"name": "acid house",
+			"id": "54c01942-22fd-4184-9877-1db0089b18f1"
+		},
+		{
+			"name": "acid jazz",
+			"id": "7dc2b20f-3953-4874-b9bf-41b8ba06d20c",
+			"disambiguation": ""
+		},
+		{
+			"id": "ef063b60-3206-466c-a7d8-7d317fcdf9fc",
+			"name": "acid rock",
+			"disambiguation": ""
+		},
+		{
+			"disambiguation": "",
+			"id": "ba64013e-27bb-4f14-a530-8d25b296e0da",
+			"name": "acid techno"
+		},
+		{
+			"disambiguation": "",
+			"name": "acid trance",
+			"id": "267433bc-721d-4d60-8455-e6ed1e0b922f"
+		},
+		{
+			"id": "37f85b9c-c3fc-4b5a-8545-51aeb78c8786",
+			"name": "acoustic blues",
+			"disambiguation": ""
+		},
+		{
+			"id": "9f1412ce-d501-4312-8336-37052f5d2ba9",
+			"name": "acoustic chicago blues",
+			"disambiguation": ""
+		},
+		{
+			"disambiguation": "",
+			"id": "00055e8b-b951-46e2-af1e-58b5624e7952",
+			"name": "acoustic rock"
+		},
+		{
+			"id": "1fe1e0e3-b1fd-4b56-ab97-5a0517341579",
+			"name": "acoustic texas blues",
+			"disambiguation": ""
+		},
+		{
+			"name": "afoxê",
+			"id": "d2d6de50-4dd8-4838-92ac-aa6d1e600bba",
+			"disambiguation": ""
+		},
+		{
+			"disambiguation": "",
+			"id": "7f1133a5-0d7b-43e6-b238-7dbf2a7de1e2",
+			"name": "african blues"
+		},
+		{
+			"id": "41569e0d-9b3f-4ad0-8ddc-85da7cf66e5b",
+			"name": "afro rock",
+			"disambiguation": ""
+		},
+		{
+			"name": "afro trap",
+			"id": "243975aa-1250-4429-8bd3-97080af44cf7",
+			"disambiguation": ""
+		},
+		{
+			"id": "cdb11433-1ff1-4c88-be16-717567e1342f",
+			"name": "afro-cuban jazz",
+			"disambiguation": ""
+		},
+		{
+			"disambiguation": "",
+			"name": "afro-funk",
+			"id": "fc00175b-2be9-4d73-ba91-27b3ca827223"
+		},
+		{
+			"id": "6f33d775-b4e2-473c-a7db-e34c525cc52d",
+			"name": "afro-jazz",
+			"disambiguation": ""
+		},
+		{
+			"disambiguation": "",
+			"id": "fcc58a18-9326-4c92-8b29-c294d44379c3",
+			"name": "afrobeat"
+		},
+		{
+			"id": "52349b68-9cad-496e-8785-00d53f410246",
+			"name": "afroswing",
+			"disambiguation": ""
+		},
+		{
+			"id": "c6d1e78b-ac82-4bb8-89d5-21e3226dc906",
+			"name": "agbadza",
+			"disambiguation": ""
+		}
+	],
+	"genre-offset": 0
+}

@@ -22,6 +22,13 @@
 	<body>
 
 		<main class='page-content'>
+
+
+
+
+
+
+<!--foreach item in the JSON object, loop through that object and return all the data.  This block is a function.  Use JSON decode, etc.-->
 			
 			<?php include('templates/modules/navigation/template.php'); ?>
 

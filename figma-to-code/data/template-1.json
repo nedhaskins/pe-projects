@@ -6,7 +6,12 @@
 
 "modules": {},
 
-"navigation": {},
+"navigation": {
+	"image-left": "../images/logoipsum.svg",
+	"links": [
+		"Home", "Updates", "Services", "Features", "About Us"]
+	}
+},
 
 
 "hero":

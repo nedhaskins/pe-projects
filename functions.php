@@ -13,7 +13,7 @@ function queryString() {
 
 
 
-function show($things) {
+function show($things) { //$things = any set variable
   echo "<code class='show-code'>";
   echo '<pre>';
   print_r($things);

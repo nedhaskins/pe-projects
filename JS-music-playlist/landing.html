@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+
+<main>
+
+
+</main>
+
+
+<button id="home">Home </button>
+
+<button id="signin-page">Sign in</button>
+
+<button id="new-user">New user</button>
+
+</main>
+
+
+<script>
+	
+	const outlet = document.querySelector('main');
+
+	const homeButton = document.queryselector('home');
+
+	const signinButton = document.querySelector('#signin');
+	const newUserButton = document.querySelector('#new-user');
+
+	var siteTitle = "Music playlist app";
+
+	outlet.innerHTML = `<h1>${siteTitle}</h1>
+
+	<p>This app creates a custom setlist based on the choices you make!</p>
+
+	<p>The app draws from the Musicbrainz database, a public source of music data containing info on millions of songs from around the world.</p>`;
+
+	signinButton.addEventListener('click', function() {
+		outlet.innerHTML = `<form>
+
+		<label>Username</label>
+
+		<input type='text'>
+
+		<label>Password</label>
+
+		<input type='password'>
+
+		<button type='submit'>Submit</button>
+		</form>`
+	});
+
+	newUserButton.addEventListener('click', function() {
+		alert('create new user')
+	});
+
+</script>
+
+</body>
+</html>
+

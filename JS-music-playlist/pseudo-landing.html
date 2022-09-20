@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<body>
+
+//Landing page//
+
+<h1>Music Playlist App</h1>
+
+
+
+
+
+
+
+
+
+
+<form>
+
+	<label>Username</label>
+	<input type='text'>
+
+	<label>Password</label>
+	<input type='text'> <!--password option available-->
+
+	 <!--radio buttons in this slot - switch between seen and unseen password-->
+
+	<button type='submit'>Submit</button>
+
+	<a href="#">New User</a> <!--go to another page, new user, new password-->
+
+</form>
+
+<script>
+
+	var users = [
+		{
+			"username": "ned",
+			"password": "hashbrowns"
+		},
+		{
+			"username": "user2",
+			"password": "broccoli"
+		}
+	];
+
+
+	function checkPassword(userName, passWord) {
+
+		users.forEach(
+
+			function (user) {
+
+			if (user.username == userName) { //lowercase is the JSON object key
+				console.log('User exists');
+
+				if(user.password == passWord) {
+					console.log('Password matches'); //return escapes the loop
+					return true;
+
+				} else {
+					console.log("Password doesn't match...");
+					return false;
+				}
+			}
+		}
+
+
+		)
+		return true;
+	}
+
+
+
+
+
+
+	function assert(name, input, expectedOutput) {
+		console.log(name);
+		console.log(input, expectedOutput);
+		if(input == expectedOutput) {
+			console.log('PASS');
+		} else {
+			console.log('FAIL');
+		}
+	}
+
+
+	assert('User and password are correct', checkPassword('user2', 'broccoli'), true);
+
+
+
+	assert('User correct, password incorrect', checkPassword('user2', 'bacon'), false);
+
+
+
+	assert('User incorrect', checkPassword('user3', 'broccoli'), false);
+
+
+
+
+
+	checkPassword('user2', 'broccoli');
+
+
+
+
+
+	// document.body.style.backgroundColor = 'black';
+	// 	document.body.style.color = 'white';
+	
+	var form = document.querySelector('form');
+
+	form.addEventListener('submit' //the event it's listening for
+		, function(event) { 
+
+		event.preventDefault();
+		console.log(event)
+
+
+	} );
+
+
+
+
+//if (user) && if there's a password & if they match
+
+
+//alert 'successfully logged in'
+
+//else
+
+//alert 'info wasn't entered correctly'
+
+</script>
+
+
+
+
+<footer> <!--think about consistent options across all pages / forms -->
+	
+Switch User
+
+Log Out
+
+</footer>
+</body>
+</html>
