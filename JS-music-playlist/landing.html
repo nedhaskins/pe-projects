@@ -10,55 +10,382 @@
 
 
 <main>
-
-
 </main>
 
 
-<button id="home">Home </button>
 
-<button id="signin-page">Sign in</button>
 
-<button id="new-user">New user</button>
-
-</main>
 
 
 <script>
 	
 	const outlet = document.querySelector('main');
 
-	const homeButton = document.queryselector('home');
+	function renderTemplate(template) {
+		outlet.innerHTML = template;
+	}
 
-	const signinButton = document.querySelector('#signin');
-	const newUserButton = document.querySelector('#new-user');
 
 	var siteTitle = "Music playlist app";
 
-	outlet.innerHTML = `<h1>${siteTitle}</h1>
+	var landingTemplate =
 
-	<p>This app creates a custom setlist based on the choices you make!</p>
+		`<h1>${siteTitle}</h1>
+		<p>This app creates a custom setlist based on the choices you make!
+		</p><p>The app draws from the Musicbrainz database, a public source of music data containing info on millions of songs from around the world.</p>
 
-	<p>The app draws from the Musicbrainz database, a public source of music data containing info on millions of songs from around the world.</p>`;
+		<footer class="landing">
+			<nav>
+				<button id="login-page">Login page</button>
+				<button id="new-user">New user</button>
+			</nav>
+		</footer>`;
 
-	signinButton.addEventListener('click', function() {
-		outlet.innerHTML = `<form>
+	var loginTemplate = 
 
-		<label>Username</label>
+		`<h1>login page</h1> 
+		<form>
+			<label>Username</label>
+			<input type='text'>
 
-		<input type='text'>
+			<label>Password</label>
+			<input type='text'>
 
-		<label>Password</label>
+			<button id="home">Home</button>
 
-		<input type='password'>
+			<button id="new-user">New user</button>
 
-		<button type='submit'>Submit</button>
-		</form>`
+			<button id="user-signin">Sign in</button>
+		</form>`;
+
+	var newUserTemplate = `
+
+		<h1>create a username and password below!</h1>
+			<form>
+
+			<label>Username</label>
+			<input type='text'>
+
+			<label>Password</label>
+			<input type='text'>
+
+			<button id="create-signin">Create & sign in</button>
+
+			<button id="home">Home</button>
+
+		</form>`;
+
+
+	var welcomeNewTemplate = 
+
+		`<h1>welcome, (username)!</h1>
+
+		<p>This is your first time here.</p>
+		<p>Let's make your first setlist!</p>
+
+		<button id="create-new-list">Let's go</button>
+
+		<footer class="signed-in two">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="signout">Sign out</button>
+
+		</footer>`; 
+
+	var welcomeBackTemplate = 
+
+		`<h1>welcome back, (username)!</h1>
+
+		<p>You can either create a new setlist now or retreive one you've already made.</p>
+
+
+		<button id="create-new-list">Create new list</button>
+
+		<button id="view-setlists">View setlists</button>
+
+
+		<footer class="signed-in two">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="signout">Sign out</button>
+
+		</footer>`;
+
+	// var traitsTemplate = 
+
+	// 	`<h1>choose your traits!</h1>
+
+	// 	<form>
+
+	// 		<div class="field radio">
+	// 			<input id="genre" type='radio'>
+	// 			<label for="genre">genre</label>
+	// 		</div>
+
+	// 		<div class="field radio">
+	// 			<input id="decade" type='radio'>
+	// 			<label for="decade">decade</label>
+	// 		</div>
+
+	// 		<div class="field radio">
+	// 			<input id="speed" type='radio'>
+	// 			<label for="speed">speed</label>
+	// 		</div>
+
+	// 	</form>
+
+	// 	<button id="choose-genres">Choose genres =></button>
+
+	// 	<footer class="signed-in two">
+
+	// 		<div class="username">
+	// 			<p>Username</p>
+	// 		</div>
+	// 		<button id="signout">Sign out</button>
+
+	// 	</footer>`;
+
+
+	var genreTemplate =
+
+		`<h1>choose your genres!</h1>
+
+		<form>
+
+			<div class="field radio">
+				<input id="jazz" type='radio'>
+				<label for="jazz">jazz</label>
+			</div>
+
+			<div class="field radio">
+				<input id="country" type='radio'>
+				<label for="country">country</label>
+			</div>
+
+			<div class="field radio">
+				<input id="rock" type='radio'>
+				<label for="rock">rock</label>
+			</div>
+
+			<div class="field radio">
+				<input id="bollywood" type='radio'>
+				<label for="bollywood">bollywood</label>
+			</div>
+
+			<div class="field radio">
+				<input id="classical" type='radio'>
+				<label for="classical">classical</label>
+			</div>
+
+		</form>
+
+		<button id="choose-decade">Choose decade =></button>
+
+		<footer class="signed-in one">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="home">Home</button>
+			<button id="signout">Sign out</button>
+
+		</footer>`;
+
+	var decadeTemplate = 
+
+		`<h1>choose a decade!</h1>
+
+		<div class='field range'>
+			<input type='range' min='1000' max='2022'>
+			<label></label>
+		</div>
+
+		<button id="choose-speed">Choose speed =></button>
+
+		<footer class="signed-in one">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="home">Home</button>
+			<button id="signout">Sign out</button>
+
+		</footer>`;
+
+
+
+
+	var speedTemplate = 
+
+		`<h1>pick your speed...</h1>
+
+		<form>
+			<div class="field radio">
+				<input id="single-speed" type='radio'>
+				<label for="single-speed">Single speed</label>
+			</div>
+
+			<div class="field radio">
+				<input id="range" type='radio'>
+				<label for="range">range</label>
+			</div>
+
+		</form>
+
+
+		  <div class='field range'>
+		    <input type='range' min='60' max='180'>
+		    <label></label>
+		  </div>
+		
+
+
+		<form>
+
+		<div class="field radio">
+			<input id="description" type='radio'>
+			<label for="description">Description</label>
+		</div>
+
+		<div class="field radio">
+			<input id="bpm" type='radio'>
+			<label for="bpm">bpm</label>
+		</div>
+
+		</form>
+
+
+		<button id="create-setlist">Create setlist =></button>
+
+		<footer class="signed-in one">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="home">Home</button>
+			<button id="signout">Sign out</button>
+
+		</footer>`;
+
+	var newSetlistTemplate = 
+
+		`<h1>setlist (name here)</h1>
+
+
+		<ul class="setlist">
+			<li>song</li>
+			<li>song</li>
+			<li>song</li>
+		</ul>
+
+		<p>This list will be automatically saved in your profile.</p>
+
+
+		<button id="create-new-list">Create new list</button>
+
+		<button id="view-setlists">View setlists</button>
+
+
+		<footer class="signed-in">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="home">Home</button>
+			<button id="signout">Sign out</button>
+
+		</footer>`;
+
+
+	var viewSetlistsTemplate =
+
+		`<h1>Click on a setlist to view it!</h1>
+
+		<ul class="setlist-view">
+			<li id="setlist1">setlist</li>
+			<li id="setlist2">setlist</li>
+			<li id="setlist3">setlist</li>
+		</ul>
+
+
+		<button id="create-new-list">Create new list</button>
+
+
+		<footer class="signed-in one">
+
+			<div class="username">
+				<p>Username</p>
+			</div>
+			<button id="home">Home</button>
+			<button id="signout">Sign out</button>
+
+		</footer>`;
+
+
+
+	outlet.innerHTML = landingTemplate;
+
+
+	window.addEventListener('click', function (event) {
+
+
+		if(event.target.matches('#home')) {
+			outlet.innerHTML = landingTemplate;
+		}
+		if(event.target.matches('#signout')) {
+			outlet.innerHTML = landingTemplate;
+		}
+
+		//combine the above two
+
+
+		if(event.target.matches('#login-page')) {
+			outlet.innerHTML = loginTemplate;
+		}
+
+		if(event.target.matches('#new-user')) {
+			outlet.innerHTML = newUserTemplate;
+		}
+
+		if(event.target.matches('#create-signin')) {
+			outlet.innerHTML = welcomeNewTemplate;
+		}
+
+
+
+		if(event.target.matches('#user-signin')) {
+			outlet.innerHTML = welcomeBackTemplate;
+		}
+
+
+
+
+
+		if(event.target.matches('#create-new-list')) {
+			outlet.innerHTML = genreTemplate;
+		}
+
+		if(event.target.matches('#choose-decade')) {
+			outlet.innerHTML = decadeTemplate;
+		}
+
+		if(event.target.matches('#choose-speed')) {
+			outlet.innerHTML = speedTemplate;
+		}
+	
+		if(event.target.matches('#create-setlist')) {
+			outlet.innerHTML = newSetlistTemplate;
+		}
+		if(event.target.matches('#view-setlists')) {
+			outlet.innerHTML = viewSetlistsTemplate;
+		}
+
 	});
 
-	newUserButton.addEventListener('click', function() {
-		alert('create new user')
-	});
 
 </script>
 
