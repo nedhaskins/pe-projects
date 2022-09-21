@@ -53,8 +53,6 @@
 
 			<button id="home">Home</button>
 
-			<button id="new-user">New user</button>
-
 			<button id="user-signin">Sign in</button>
 		</form>`;
 
@@ -320,7 +318,6 @@
 			<div class="username">
 				<p>Username</p>
 			</div>
-			<button id="home">Home</button>
 			<button id="signout">Sign out</button>
 
 		</footer>`;
@@ -336,6 +333,13 @@
 		if(event.target.matches('#home')) {
 			outlet.innerHTML = landingTemplate;
 		}
+
+		//IF EVENT TARGET matches home and user is not logged in
+
+
+
+
+
 		if(event.target.matches('#signout')) {
 			outlet.innerHTML = landingTemplate;
 		}
