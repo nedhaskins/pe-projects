@@ -26,6 +26,30 @@
 	}
 
 
+
+
+	function renderFooterLanding() {
+		return `<footer class="landing">
+			<nav>
+				<button id="login-page">Login page</button>
+				<button id="new-user">New user</button>
+			</nav>
+		</footer>`;
+	}
+
+
+
+
+
+	var userInputs = {
+		"genre": undefined,
+		"decade": undefined,
+		"speed": undefined
+	};
+
+
+
+
 	var siteTitle = "Music playlist app";
 
 	var landingTemplate =
@@ -34,22 +58,17 @@
 		<p>This app creates a custom setlist based on the choices you make!
 		</p><p>The app draws from the Musicbrainz database, a public source of music data containing info on millions of songs from around the world.</p>
 
-		<footer class="landing">
-			<nav>
-				<button id="login-page">Login page</button>
-				<button id="new-user">New user</button>
-			</nav>
-		</footer>`;
+		${renderFooterLanding()}`;
 
 	var loginTemplate = 
 
 		`<h1>login page</h1> 
 		<form>
 			<label>Username</label>
-			<input type='text'>
+			<input class="username" type='text'>
 
 			<label>Password</label>
-			<input type='text'>
+			<input class="password" type='text'>
 
 			<button id="home">Home</button>
 
@@ -148,34 +167,38 @@
 	// 	</footer>`;
 
 
+
+		//for radio options...if they all have the same name they'll be aware of each other
 	var genreTemplate =
 
 		`<h1>choose your genres!</h1>
 
-		<form>
+
+
+		<form class="genre-form">
 
 			<div class="field radio">
-				<input id="jazz" type='radio'>
+				<input name="genre-option"id="jazz" type='radio'>
 				<label for="jazz">jazz</label>
 			</div>
 
 			<div class="field radio">
-				<input id="country" type='radio'>
+				<input name="genre-option"id="country" type='radio'>
 				<label for="country">country</label>
 			</div>
 
 			<div class="field radio">
-				<input id="rock" type='radio'>
+				<input name="genre-option"id="rock" type='radio'>
 				<label for="rock">rock</label>
 			</div>
 
 			<div class="field radio">
-				<input id="bollywood" type='radio'>
+				<input name="genre-option"id="bollywood" type='radio'>
 				<label for="bollywood">bollywood</label>
 			</div>
 
 			<div class="field radio">
-				<input id="classical" type='radio'>
+				<input name="genre-option"id="classical" type='radio'>
 				<label for="classical">classical</label>
 			</div>
 
@@ -193,13 +216,30 @@
 
 		</footer>`;
 
+	function selectGenre(selectedGenre){
+		//put the selected radio option as a value in userInputs
+		userInputs.genre = selectedGenre;
+	}
+
+
+
+
+
+	// window.addEventListener('input', function(event) {
+	// 	//if an option is checked
+	// 	console.log(event.target('id'));
+	// });
+
+
+
+
 	var decadeTemplate = 
 
 		`<h1>choose a decade!</h1>
 
 		<div class='field range'>
-			<input type='range' min='1000' max='2022'>
-			<label></label>
+			<input id="decade-value" type='range' min='1000' max='2022'>
+			<label for="decade-value">1990</label>
 		</div>
 
 		<button id="choose-speed">Choose speed =></button>
@@ -323,8 +363,48 @@
 		</footer>`;
 
 
+		//default page
+	outlet.innerHTML = loginTemplate;
+	document.querySelector('input.username').value = 'ned';
+	document.querySelector('input.password').value = 'hashbrowns';
 
-	outlet.innerHTML = landingTemplate;
+
+	var users = [
+		{
+			"username": "ned",
+			"password": "hashbrowns"
+		},
+		{
+			"username": "user2",
+			"password": "broccoli"
+		}
+	];
+
+
+
+
+
+	function signinUser(users, userName, passWord) {
+		
+		//look at list of users
+		for (const user of users) {
+			console.log(user.username);
+		
+			//if username exists
+			if(userName == user.username && passWord == user.password) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+
+	console.log(signinUser(users, 'ned', 'break'));
+
+
+
+
+
 
 
 	window.addEventListener('click', function (event) {
@@ -335,10 +415,6 @@
 		}
 
 		//IF EVENT TARGET matches home and user is not logged in
-
-
-
-
 
 		if(event.target.matches('#signout')) {
 			outlet.innerHTML = landingTemplate;
@@ -362,19 +438,48 @@
 
 
 		if(event.target.matches('#user-signin')) {
-			outlet.innerHTML = welcomeBackTemplate;
+
+			var form = event.target.closest('form');
+			var givenUserName = form.querySelector('input.username').value;
+			var givenPassword = form.querySelector('input.password').value;
+
+			if (signinUser(users, givenUserName, givenPassword) ) {
+				outlet.innerHTML = welcomeBackTemplate;
+			} else {
+				alert("The password didn't match!");
+			}
 		}
-
-
-
 
 
 		if(event.target.matches('#create-new-list')) {
 			outlet.innerHTML = genreTemplate;
 		}
 
+
+
 		if(event.target.matches('#choose-decade')) {
+
+
+			let output = document.querySelector('input[name="genre-option"]:checked').id;
+
+			userInputs.genre = output;
+
+			console.log(output);
+			console.log(userInputs.genre);
 			outlet.innerHTML = decadeTemplate;
+
+			document.querySelector('input#decade-value')
+				.addEventListener('input', function() {
+				console.log('hi');
+				document.querySelector('label[for="decade-value"]').textContent = this.value;
+				users.decade = this.value;
+				console.log('hi');
+				console.log(this.value);
+				console.log(this);
+
+
+			});
+
 		}
 
 		if(event.target.matches('#choose-speed')) {
@@ -389,6 +494,24 @@
 		}
 
 	});
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>

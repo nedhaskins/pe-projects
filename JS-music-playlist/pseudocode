@@ -1,0 +1,44 @@
+
+
+
+
+
+
+userInputs = {
+	"genre": "",
+	"decade": "",
+	"speed": ""
+}
+
+
+
+//button on the genre page
+genreSubmitButton = takes user input and pushes it to the above variable
+
+
+
+
+//button on the decade page
+decadeSubmitButton = takes user input and pushes it to the above variable
+
+
+//button on the speed page
+speedSubmitButton = takes user input and pushes it to the above variable...and also directs the user to the page with the final setlist
+
+
+
+//on the backend...there needs to be logic to do the following:
+
+--find 10 songs at random that contain values that match the criteria that the user's chosen
+
+--there needs to be logic to make that correlation between key-values in the database and key-values in the empty variable (object) that the user's filling up
+
+
+
+//finally...
+
+
+
+the setlist page will return each key-value pair from the above object, formatted for readability
+
+
