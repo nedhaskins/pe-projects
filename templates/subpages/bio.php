@@ -11,7 +11,7 @@ $sections = $pageData[0]['sections'];
 <section class='bio'>
 	<picture-wrapper>
 		<picture>
-			<img src='images/site-photo.jpeg' alt="Photo of Ned Haskins">
+			<img src='images/new-portrait.png' alt="Photo of Ned Haskins">
 		</picture>
 	</picture-wrapper>
 

@@ -252,6 +252,7 @@ svg .curve {
 	padding: 10px;
 	margin: 27px 0px 0px 27px;
 	max-width: 264px;
+	filter: sepia(125%);
 }
 
 @media(prefers-color-scheme: dark) {
