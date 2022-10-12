@@ -20,83 +20,110 @@
 	$startLocationError = false;
 	$endLocationError = false;
 
+
 	$formSubmitted = isset($_POST["submitted"]);
 
-	$response = "";
+	$response = "";  //default reponse can be set
+
+	function createNewRoute($type, $name, $length, $start, $end) {
+
+		$newRoute = [
+			'type' => $type, 
+			'name' => $name,
+			'lengthInMiles' => $length,
+			'startPoint' => $start,
+			'endPoint' => $end,
+		];
+
+		$jsonFile = file_get_contents('data/route-bucket.json');
+
+		//turn JSON into PHP
+		$phpArray = json_decode($jsonFile, true);
+
+		//push to the "JSON object"
+		$resultArray = array_push($phpArray, $newRoute);
+
+		//put it back into JSON format
+		$encoded = json_encode($resultArray);
+
+		file_put_contents('data/route-bucket.json', $encoded);
+
+		echo $encoded;
+
+		$response = "IT WORKED :)";
+
+		echo $newRoute;
+
+	};
 
 	if($formSubmitted) {
 
-			if( isset($_POST['route-type']) ) {
-				$routeType = $_POST['route-type'];
+		if( isset($_POST['route-type']) ) {
+			$routeType = $_POST['route-type'];
 
-				if($routeType) {
-				//if the option chosen is not an empty string
-					$hasRouteType = true;
-				} else {
-					$routeTypeError = "Please select a route type.";
-				}
-				//the logic for this error appearing appears in the HTML below
+			if($routeType) {
+			//if the option chosen is not an empty string
+				$hasRouteType = true;
+			} else {
+				$routeTypeError = "Please select a route type.";
 			}
+			//the logic for this error appearing appears in the HTML below
+		}
 
-			if( isset($_POST['route-name']) ) {
-				$routeName = $_POST['route-name'];
+		if( isset($_POST['route-name']) ) {
+			$routeName = $_POST['route-name'];
 
-				if( strlen($routeName) > 0 ) {
-					$hasRouteName = true;
-				} else {
-					$routeNameError = "Please add a route name.";
-				}
+			if( strlen($routeName) > 0 ) {
+				$hasRouteName = true;
+			} else {
+				$routeNameError = "Please add a route name.";
 			}
-	
-			if( isset($_POST['length-in-miles']) ) {
-				$lengthInMiles = $_POST['length-in-miles'];
+		}
 
-				if( intval($lengthInMiles) > 0 ) {
-					$hasLengthInMiles = true;
-				} else {
-					$lengthInMilesError = "Please add a valid route length!";
-				}
+		if( isset($_POST['length-in-miles']) ) {
+			$lengthInMiles = $_POST['length-in-miles'];
+
+			if( intval($lengthInMiles) > 0 ) {
+				$hasLengthInMiles = true;
+			} else {
+				$lengthInMilesError = "Please add a valid route length!";
 			}
-	
-			if( isset($_POST['start-location']) ) {
-				$startLocation = $_POST['start-location'];
+		}
 
-				if( strlen($startLocation) > 0 ) {
-					$hasStartLocation = true;
-				} else {
-					$startLocationError = "Please add a starting location.";
-				}
+		if( isset($_POST['start-location']) ) {
+			$startLocation = $_POST['start-location'];
+
+			if( strlen($startLocation) > 0 ) {
+				$hasStartLocation = true;
+			} else {
+				$startLocationError = "Please add a starting location.";
 			}
+		}
 
-			if( isset($_POST['end-location']) ) {
-				$endLocation = $_POST['end-location'];
+		if( isset($_POST['end-location']) ) {
+			$endLocation = $_POST['end-location'];
 
-				if( strlen($endLocation) > 0 ) {
-					$hasEndLocation = true;
-				} else {
-					$endLocationError = "Please add an end location.";
-				}
+			if( strlen($endLocation) > 0 ) {
+				$hasEndLocation = true;
+			} else {
+				$endLocationError = "Please add an end location.";
 			}
+		}
 
-		if($routeType && $routeName && $lengthInMiles && $startLocation && $endLocation) {
+		$isDataFilledOut = $routeType && $routeName && $lengthInMiles && $startLocation && $endLocation;
 
-			$newRoute = [
-				'type' => $routeType, 
-				'name' => $routeName,
-				'lengthInMiles' => $lengthInMiles,
-				'startPoint' => $startLocation,
-				'endPoint' => $endLocation,
-			];
+		if($isDataFilledOut) {
 
-			$routeBucket = json_encode($newRoute);
+			createNewRoute();
 
-			file_put_contents('data/route-bucket.json', $routeBucket);
+			$response = "successful";
 
-			$response = "Data encoded and placed in file successfully.";
 		} else {
-
 			$response = "Data encoding error!";
 		}
+
+	} else {
+		echo "Form hasn't been submitted yet.";
 	}	
 ?>
 
