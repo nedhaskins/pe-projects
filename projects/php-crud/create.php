@@ -40,6 +40,8 @@
 		//turn JSON into PHP
 		$phpArray = json_decode($jsonFile, true);
 
+		print_r($phpArray);
+
 		//push to the "JSON object"
 		$resultArray = array_push($phpArray, $newRoute);
 
@@ -52,7 +54,7 @@
 
 		$response = "IT WORKED :)";
 
-		echo $newRoute;
+		var_dump($newRoute);
 
 	};
 
@@ -114,7 +116,7 @@
 
 		if($isDataFilledOut) {
 
-			createNewRoute();
+			createNewRoute($routeType, $routeName, $lengthInMiles, $startLocation, $endLocation);
 
 			$response = "successful";
 

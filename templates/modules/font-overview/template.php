@@ -1,9 +1,10 @@
 
 <font-overview>
 
-  <h1 class="body-copy">Baskerville</h1>
 
-  <div class="example step-three">Step 3
+<div class="jean-luc">
+  <h1 class="body-copy">JeanLuc</h1>
+  <div class="big-size">
       <div class="letters">
         abcdefghijklm<br>nopqrstuvwxyz      </div>
       <div class="symbols">
@@ -11,8 +12,7 @@
       <div class="numbers">
         12345678910</div>
   </div>
-
-  <div class="example step-two">Step 2
+  <div class="small-size">
       <div class="letters">
         abcdefghijklm<br>nopqrstuvwxyz      </div>
       <div class="symbols">
@@ -20,24 +20,28 @@
       <div class="numbers">
         12345678910</div>
   </div>
+</div>
 
-  <div class="example step-one">Step 1
+<div class="futura">
+  <h1 class="body-copy">Futura PT</h1>
+  <div class="big-size">
       <div class="letters">
-        abcdefghijklmnopqrstuvwxyz      </div>
+        abcdefghijklm<br>nopqrstuvwxyz      </div>
       <div class="symbols">
         !@#$%^&amp;*()_+[]{}: “ ” &lt;&gt;'?,.\/:;</div>
       <div class="numbers">
         12345678910</div>
   </div>
-
-  <div class="example floor">Floor
+  <div class="small-size">
       <div class="letters">
-        abcdefghijklmnopqrstuvwxyz      </div>
+        abcdefghijklm<br>nopqrstuvwxyz      </div>
       <div class="symbols">
         !@#$%^&amp;*()_+[]{}: “ ” &lt;&gt;'?,.\/:;</div>
       <div class="numbers">
         12345678910</div>
   </div>
+</div>
+
 
   <div class='example voices'>
     <div class='title-voice'>Title-voice</div>

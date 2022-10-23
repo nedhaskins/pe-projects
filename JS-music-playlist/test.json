@@ -1,0 +1,780 @@
+{
+	"created": "2022-10-17T16:37:25.250Z",
+	"count": 36993,
+	"offset": 0,
+	"artists": [
+		{
+			"id": "01d5cd2b-fb02-4df8-b553-32059efafdbc",
+			"type": "Group",
+			"type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+			"score": 100,
+			"name": "Genre",
+			"sort-name": "Genre",
+			"country": "GB",
+			"area":
+			{
+				"id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "United Kingdom",
+				"sort-name": "United Kingdom",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "Late 70s UK jazz rock band",
+			"life-span":
+			{
+				"ended": null
+			},
+			"tags": [
+				{
+					"count": 1,
+					"name": "jazz rock"
+				}
+			]
+		},
+		{
+			"id": "816763db-923e-428e-a243-35496ca70e7f",
+			"score": 99,
+			"name": "Genre",
+			"sort-name": "Genre",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "4aa403a5-df08-4910-91fb-1883366b5452",
+			"score": 85,
+			"name": "Genre Peak",
+			"sort-name": "Genre Peak",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "047b5aa3-b884-4f11-aaca-6ecb163ac422",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 84,
+			"name": "D-Genre",
+			"sort-name": "D-Genre",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "73f5dd67-3fd9-4aac-b80a-5e2ad3ef9e21",
+			"score": 84,
+			"name": "New Genre",
+			"sort-name": "New Genre",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "e90879d1-6f42-4b6e-a4b4-42c98f7e15a6",
+			"score": 83,
+			"name": "Genre Police",
+			"sort-name": "Genre Police",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "14114923-37e4-42f5-a22b-c657c7c0d7fb",
+			"score": 83,
+			"name": "YK Genre",
+			"sort-name": "YK Genre",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "ebac0055-8bc3-472c-9f7b-80d051d796fd",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 83,
+			"name": "Deux Genre",
+			"sort-name": "Deux Genre",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "d22ae960-3292-4c92-9716-fd0c71c5c8bf",
+			"score": 83,
+			"name": "Unknown Genre",
+			"sort-name": "Unknown Genre",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "ac4e05e9-1870-4197-a019-946f023c2674",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 73,
+			"gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+			"name": "Sound Without Genre",
+			"sort-name": "Sound Without Genre",
+			"gender": "male",
+			"life-span":
+			{
+				"begin": "1999-12",
+				"ended": null
+			}
+		},
+		{
+			"id": "04fdcf09-84d0-459e-8780-7456ed7e527e",
+			"type": "Group",
+			"type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+			"score": 73,
+			"name": "Go Genre Everything",
+			"sort-name": "Go Genre Everything",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "3237fa1a-c4b1-4e0e-8cbc-34bab6506c72",
+			"score": 73,
+			"name": "Genre Louis Davids",
+			"sort-name": "Genre Louis Davids",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "425805b9-3ffc-4b2c-bd85-52a9081097da",
+			"type": "Group",
+			"type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+			"score": 73,
+			"name": "Junk Jungle Genre",
+			"sort-name": "Junk Jungle Genre",
+			"area":
+			{
+				"id": "51dc37b5-ea3e-4960-9b3c-e5c368389b86",
+				"type": "City",
+				"type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+				"name": "Kyoto",
+				"sort-name": "Kyoto",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "6202816d-3bd7-40f6-8b66-a133eb8b8003",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 72,
+			"gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+			"name": "Jean-Paul Genré",
+			"sort-name": "Genré, Jean-Paul",
+			"gender": "male",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "d6c9d191-aeb2-4b48-b112-a8a1803ae86a",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 71,
+			"gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+			"name": "Rock",
+			"sort-name": "Rock",
+			"gender": "male",
+			"country": "US",
+			"area":
+			{
+				"id": "489ce91b-6658-3307-9877-795b68554c98",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "United States",
+				"sort-name": "United States",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"begin-area":
+			{
+				"id": "1d591c7e-0c1b-41b3-b642-3122a31ff14a",
+				"type": "City",
+				"type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+				"name": "Brownsville",
+				"sort-name": "Brownsville",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "US rapper Jahmal Bush aka Da Rockness Monstah",
+			"ipis": [
+				"00338012393"
+			],
+			"isnis": [
+				"0000000372723219"
+			],
+			"life-span":
+			{
+				"begin": "1975-11-04",
+				"ended": null
+			},
+			"aliases": [
+				{
+					"sort-name": "Alkatraz",
+					"type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+					"name": "Alkatraz",
+					"locale": null,
+					"type": "Artist name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Bummyflyjab",
+					"type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+					"name": "Bummyflyjab",
+					"locale": null,
+					"type": "Artist name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Rockness Monstas, Da",
+					"name": "Da Rockness Monstas",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Youngjamen",
+					"type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+					"name": "Youngjamen",
+					"locale": null,
+					"type": "Artist name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Bush, Jahmal",
+					"type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+					"name": "Jahmal Bush",
+					"locale": null,
+					"type": "Legal name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Rockness Monstah",
+					"name": "Rockness Monstah",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Donrocko",
+					"type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+					"name": "Donrocko",
+					"locale": null,
+					"type": "Artist name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Rockness Monsta",
+					"type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+					"name": "Rockness Monsta",
+					"locale": null,
+					"type": "Artist name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Rockness",
+					"name": "Rockness",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				}
+			],
+			"tags": [
+				{
+					"count": 3,
+					"name": "hip hop"
+				}
+			]
+		},
+		{
+			"id": "aba64937-3334-4c65-90a1-4e6b9d4d7ada",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 70,
+			"gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+			"name": "Aesop Rock",
+			"sort-name": "Aesop Rock",
+			"gender": "male",
+			"country": "US",
+			"area":
+			{
+				"id": "489ce91b-6658-3307-9877-795b68554c98",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "United States",
+				"sort-name": "United States",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"begin-area":
+			{
+				"id": "d10f48e4-8a40-428f-8d24-61f63066245e",
+				"type": "City",
+				"type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+				"name": "Syosset",
+				"sort-name": "Syosset",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"ipis": [
+				"00430252208"
+			],
+			"isnis": [
+				"0000000447155392"
+			],
+			"life-span":
+			{
+				"begin": "1976-05-11",
+				"ended": null
+			},
+			"aliases": [
+				{
+					"sort-name": "Bavitz, Ian",
+					"name": "Ian Bavitz",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Bavitz, Ian Matthias",
+					"type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+					"name": "Ian Matthias Bavitz",
+					"locale": null,
+					"type": "Legal name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Aseop Rock",
+					"name": "Aseop Rock",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				}
+			],
+			"tags": [
+				{
+					"count": 0,
+					"name": "rap"
+				},
+				{
+					"count": 5,
+					"name": "hip hop"
+				},
+				{
+					"count": 0,
+					"name": "usa"
+				},
+				{
+					"count": 0,
+					"name": "new york"
+				},
+				{
+					"count": 0,
+					"name": "hiphop"
+				},
+				{
+					"count": 0,
+					"name": "us"
+				},
+				{
+					"count": 0,
+					"name": "hip hop rnb and dance hall"
+				},
+				{
+					"count": 2,
+					"name": "alternative hip hop"
+				},
+				{
+					"count": 0,
+					"name": "abstract hip hop"
+				},
+				{
+					"count": 1,
+					"name": "conscious hip hop"
+				},
+				{
+					"count": 0,
+					"name": "east coast hip hop"
+				}
+			]
+		},
+		{
+			"id": "ad0ecd8b-805e-406e-82cb-5b00c3a3a29e",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 69,
+			"gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+			"name": "Kid Rock",
+			"sort-name": "Kid Rock",
+			"gender": "male",
+			"country": "US",
+			"area":
+			{
+				"id": "489ce91b-6658-3307-9877-795b68554c98",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "United States",
+				"sort-name": "United States",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"begin-area":
+			{
+				"id": "3511412c-14cb-4c1f-a43c-5d98ea97b956",
+				"type": "City",
+				"type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+				"name": "Romeo",
+				"sort-name": "Romeo",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "American singer/rapper",
+			"ipis": [
+				"00197631632",
+				"00197632041"
+			],
+			"isnis": [
+				"0000000114765053",
+				"0000000368592412"
+			],
+			"life-span":
+			{
+				"begin": "1971-01-17",
+				"ended": null
+			},
+			"aliases": [
+				{
+					"sort-name": "Shazam, Bobby",
+					"type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+					"name": "Bobby Shazam",
+					"locale": null,
+					"type": "Artist name",
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Ritchie, Robert James",
+					"name": "Robert James Ritchie",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "Robert J Ritchie",
+					"name": "Robert J Ritchie",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				},
+				{
+					"sort-name": "R.J. Ritchie",
+					"name": "R.J. Ritchie",
+					"locale": null,
+					"type": null,
+					"primary": null,
+					"begin-date": null,
+					"end-date": null
+				}
+			],
+			"tags": [
+				{
+					"count": 4,
+					"name": "rock"
+				},
+				{
+					"count": 2,
+					"name": "rap"
+				},
+				{
+					"count": 2,
+					"name": "american"
+				},
+				{
+					"count": 0,
+					"name": "hip hop"
+				},
+				{
+					"count": 2,
+					"name": "singer"
+				},
+				{
+					"count": 2,
+					"name": "hard rock"
+				},
+				{
+					"count": 2,
+					"name": "country"
+				},
+				{
+					"count": 2,
+					"name": "country rock"
+				},
+				{
+					"count": 1,
+					"name": "southern rock"
+				},
+				{
+					"count": 2,
+					"name": "pop rock"
+				},
+				{
+					"count": 1,
+					"name": "rap metal"
+				},
+				{
+					"count": 2,
+					"name": "rapper"
+				},
+				{
+					"count": 1,
+					"name": "rap rock"
+				}
+			]
+		},
+		{
+			"id": "80ed7e3d-94e6-4cd7-9950-6b52b51b4a21",
+			"type": "Group",
+			"type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+			"score": 69,
+			"name": "R.O.C.K.",
+			"sort-name": "R.O.C.K.",
+			"country": "FI",
+			"area":
+			{
+				"id": "6a264f94-6ff1-30b1-9a81-41f7bfabd616",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "Finland",
+				"sort-name": "Finland",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "ff47cbd2-a99d-4074-aca1-20a192c1aef7",
+			"type": "Group",
+			"type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+			"score": 68,
+			"name": "Rock",
+			"sort-name": "Rock",
+			"country": "GB",
+			"area":
+			{
+				"id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "United Kingdom",
+				"sort-name": "United Kingdom",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "UK progressive trance trio",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "c4a5630e-9b09-4d9b-9725-ab1fdc096d08",
+			"score": 68,
+			"name": "Rock",
+			"sort-name": "Rock",
+			"country": "FR",
+			"area":
+			{
+				"id": "08310658-51eb-3801-80de-5a0739207115",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "France",
+				"sort-name": "France",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "French artwork",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "f9493370-254e-4fd9-ba95-744a64c7eca8",
+			"score": 68,
+			"name": "Rock",
+			"sort-name": "Rock",
+			"country": "FI",
+			"area":
+			{
+				"id": "6a264f94-6ff1-30b1-9a81-41f7bfabd616",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "Finland",
+				"sort-name": "Finland",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "Finnish Popular Music",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "25655ba8-002e-40b7-a806-a7bcc3c44a63",
+			"type": "Person",
+			"type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+			"score": 68,
+			"gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+			"name": "Rock",
+			"sort-name": "Rock",
+			"gender": "male",
+			"country": "US",
+			"area":
+			{
+				"id": "489ce91b-6658-3307-9877-795b68554c98",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "United States",
+				"sort-name": "United States",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "US percussionist",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "34b28587-b932-413c-8405-ec968a0b3a51",
+			"type": "Group",
+			"type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+			"score": 68,
+			"name": "Rock",
+			"sort-name": "Rock",
+			"country": "DE",
+			"area":
+			{
+				"id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+				"type": "Country",
+				"type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+				"name": "Germany",
+				"sort-name": "Germany",
+				"life-span":
+				{
+					"ended": null
+				}
+			},
+			"disambiguation": "Band from Hamburg, Germany",
+			"life-span":
+			{
+				"begin": "2007",
+				"ended": null
+			}
+		},
+		{
+			"id": "629db217-de6d-4578-9f55-ea108b491636",
+			"score": 68,
+			"name": "Rock",
+			"sort-name": "Rock",
+			"disambiguation": "Credited on Obscene Underground Volume 2",
+			"life-span":
+			{
+				"ended": null
+			}
+		},
+		{
+			"id": "b5871c60-97cb-4e9e-9e8c-1ddd70b4cedc",
+			"score": 68,
+			"name": "Rock",
+			"sort-name": "Rock",
+			"disambiguation": "Probably Houston rapper",
+			"life-span":
+			{
+				"ended": null
+			}
+		}
+	]
+}
