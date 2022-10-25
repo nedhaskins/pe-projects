@@ -18,26 +18,49 @@ if ( isset($_POST['submitted']) ) {
         $name = 'State Route';
     }
 
-    $updatedHighway = array(
-        'id' => uniqid('highway'),
-        'type' => $_POST['route-type'],
-        'number' => $_POST['route-number'],
-        'name' => $name . " " . $_POST['route-number'],
-        'length' => $_POST['length-in-miles'],
-        'startLocation' => $_POST['start-location'],
-        'endLocation' => $_POST['end-location'],
-        'description' => $_POST['description'],
-        'image' => uploadImageFile()
-    );
+    
+
+    //Change only the elements of the original array that the user has changed.   
+
+
+//if some info != original info
+
+    //if there's a $_POst
+
+    foreach($highway as $key => $value) {
+        if( $_POST[$key] == $value ) {
+            //if it matches the original value
+        } else {
+            $highway[$key] == $_POST[$key];
+        }
+    }
+
+    // $updatedHighway = array(
+    //     'id' => 
+    //     'type' => $_POST['route-type'],
+    //     'number' => $_POST['route-number'],
+    //     'name' => $name . " " . $_POST['route-number'],
+    //     'length' => $_POST['length-in-miles'],
+    //     'startLocation' => $_POST['start-location'],
+    //     'endLocation' => $_POST['end-location'],
+    //     'description' => $_POST['description'],
+    //     'image' => uploadImageFile()
+    // );
 
 
     foreach($highways as $highway) {
         if($highway['id'] == $_GET['slug']) {
-
-            $highway = $updatedHighway;    
+  
     
             //this is the thing that needs to deviate from the original
             // array_push($phpArray, $highway); //($destination_array, $values)
+
+
+
+
+
+
+
 
             $encoded = json_encode($highways);
 

@@ -2,11 +2,12 @@
 
 
 $routeType = "";
-$routeNumber = "99";
+$number = "99";
 $lengthInMiles = "99";
 $startLocation = "Start location";
 $endLocation = "End location";
 $routeImage = "images/US_522.svg";
+$buttonMessage = 'Add route';
 
 if ( isset($_POST['submitted']) ) {
 

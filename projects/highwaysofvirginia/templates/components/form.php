@@ -17,7 +17,7 @@ enctype="multipart/form-data">
 
     <field>
         <label>Route Number</label>
-        <input name='route-number' type='number' min="1" max="999" value='<?=$routeNumber?>' required>
+        <input name='route-number' type='number' min="1" max="999" value='<?=$number?>' required>
     </field>
         <field>
         <label>Length in Miles</label>
@@ -39,6 +39,6 @@ enctype="multipart/form-data">
         <textarea cols=32 rows=10 name='description' type='text' value='' required></textarea>
     </field>
 
-    <button class='route-button' type="submit" name='submitted'>Add route</button>
-    
+    <button class='route-button' type="submit" name='submitted'><?=$buttonMessage?></button>
+
 </form>

@@ -7,27 +7,7 @@ $json = file_get_contents($filepath);
 
 $highways = json_decode($json, true);
 
-foreach ($highways as $highway) {
-
-if ($highway['id'] == $slug) {
-
-//     array_push($_FILES, $highway['image']);
-
-// var_dump($_FILES);
-
-//upload the image file to $_FILES first thing & put the right code right here
-
-//is it possible to check if there's already an image file in the JSON object??
-
-    $type = $highway['type'];
-    $number = $highway['number'];
-    $lengthInMiles = $highway['length'];
-    $startLocation = $highway['startLocation'];
-    $endLocation = $highway['endLocation'];
-    $routeImage = $highway['image'];
-    $description = $highway['description'];
-
-    ?>
+?>
 
     <form action="php-scripts/update-script.php" method="POST"
     enctype="multipart/form-data">

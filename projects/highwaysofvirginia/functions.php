@@ -7,22 +7,25 @@ function showErrors() {
 }
 showErrors();
 
+function getHighways() {
+    $filepath = 'data/highways.json';
+    $json = file_get_contents($filepath);
+    return json_decode($json, true);
+}
 
-// function getHighways() {
-//     $filepath = 'data/highways.json';
-//     $json = file_get_contents($filepath);
-//     return json_decode($json, true);
-// }
-
+function getHighwayById($id) {
+  $highways = getHighways();
+  foreach($highways as $highway) {
+    if($id == $highway['id']) {
+      return $highway;
+    }
+  }
+}
 
 function encodeJSON($phpArray) {
   $encoded = json_encode($phpArray);
   return($encoded);
 }
-
-
-
-
 
 function uploadImageFile() {
 
