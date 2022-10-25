@@ -28,6 +28,9 @@ if ( isset($_POST['submitted']) ) {
         'image' => uploadImageFile()
     );
 
+
+
+    //this is the thing that needs to deviate from the original
     array_push($phpArray, $highway); //($destination_array, $values)
 
     $encoded = json_encode($phpArray);

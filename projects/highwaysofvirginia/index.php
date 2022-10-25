@@ -1,5 +1,6 @@
-<?php require('router.php'); ?>
 <?php include('functions.php'); ?>
+<?php require('router.php'); ?>
+
 
 <!doctype html>
 <html>
@@ -14,35 +15,8 @@
 
     <?php include('navbar.php');
 
-    if($page == 'home') {
-    include('templates/pages/home.php');
-    }
-
-    if($page == 'create') {
-        include('templates/pages/create.php');
-    }
-
-    if($page == 'route') {
-        include('templates/pages/route.php');
-    }
-
-    if($page == 'routes') {
-        include('templates/pages/routes.php');
-    }
-
-    if($page == 'update') {
-        include('templates/pages/update.php');
-    }
-
-    if($page == 'delete') {
-        include('templates/pages/delete.php');
-    }
-
-    if($page == 'success') {
-        include('templates/pages/success.php');
-    }
     
-    ?>
+    pageTemplate($page); ?>
 
 </body>
 </html>

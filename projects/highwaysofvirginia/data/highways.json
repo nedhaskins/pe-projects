@@ -1,23 +1,24 @@
 [
 	{
-		"id": "highway6354352164676",
+		"id": "highway6356bbcaa82df",
 		"type": "state-route",
-		"number": "522",
-		"name": "State Route 522",
-		"length": "1200",
-		"startLocation": "Powhatan",
-		"endLocation": "Pennsylvania",
-		"image": "images/63543521646894.92873577.jpg"
+		"number": "7",
+		"name": "State Route 7",
+		"length": "99",
+		"startLocation": "Start location",
+		"endLocation": "End location",
+		"description": "ROUTE 7 BABAAYYYYY",
+		"image": "images/6356bbcaa82ff8.96326584.svg"
 	},
 	{
-		"id": "highway635437637b6a3",
-		"type": "state-route",
-		"number": "76",
-		"name": "State Route 76",
-		"length": "18",
-		"startLocation": "chesterfield",
-		"endLocation": "richmond",
-		"description": "Powhite Parkway",
-		"image": null
+		"id": "highway6356da3f183e8",
+		"type": "us-route",
+		"number": "522",
+		"name": "US Route 522",
+		"length": "99",
+		"startLocation": "Start location",
+		"endLocation": "End location",
+		"description": "THIS IS US ROUTE 522",
+		"image": "images/6356da3f1840b1.08875139.svg"
 	}
 ]

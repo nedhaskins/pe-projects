@@ -30,7 +30,4 @@ $slug = $_GET['slug'] ?? false;
 
 
 
-
-
-
 <!--The goal is to popfulate the fields below with the date from the requested single highway.

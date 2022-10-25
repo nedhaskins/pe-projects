@@ -48,13 +48,13 @@ $routeImage = "images/US_522.svg";
 
 ?>
 
-<form action="upload-script.php" method="POST"
+<form action="php-scripts/create-script.php" method="POST"
 enctype="multipart/form-data">
 
 
 
     <field>
-        <input type="file" name="image-file" value='<?=$routeImage?>'>
+        <input type="file" name="image-file">
 
     </field>
 

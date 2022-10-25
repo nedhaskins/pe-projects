@@ -9,9 +9,15 @@ $highways = json_decode($json, true);
 
 foreach ($highways as $highway) {
 
-echo $highway['id'];
-
 if ($highway['id'] == $slug) {
+
+//     array_push($_FILES, $highway['image']);
+
+// var_dump($_FILES);
+
+//upload the image file to $_FILES first thing & put the right code right here
+
+//is it possible to check if there's already an image file in the JSON object??
 
     $type = $highway['type'];
     $number = $highway['number'];
@@ -21,25 +27,40 @@ if ($highway['id'] == $slug) {
     $routeImage = $highway['image'];
     $description = $highway['description'];
 
-    var_dump($_FILES);
-
     ?>
 
-    <form action="upload-script.php" method="POST"
+    <form action="php-scripts/update-script.php" method="POST"
     enctype="multipart/form-data">
 
         <field>
-            <input type="file" name="image-file" value='<?=$routeImage?>'>
+
+                <input type="file" name="image-file">
 
         </field>
 
         <field>
             <label>Route Type</label>
+
             <select name="route-type" id="route-type" required>
+
                 <option value="" selected="true" disabled>What type of route is this?</option>
-                <option value="interstate" selected>Interstate</option>
-                <option value="state-route">State Route</option>
-                <option value="us-route">US Route</option>
+
+                <!--The attribute "selected" should appear for the current route-type of the item.-->
+
+                <?php
+
+                $options = [
+                    'interstate' => 'Interstate',
+                    'us-route' => 'US Route',
+                    'state-route' => 'State Route'
+                ];
+
+                foreach( $options as $k => $v ) {
+                    echo "<option value=\"$k\"" . ( $k === $highway['type'] ? 'selected' : '' ) . "/>$v</option>\n";
+                }
+
+                ?>
+
             </select>
         </field>
 
@@ -74,3 +95,6 @@ if ($highway['id'] == $slug) {
     <?php }
 
 } ?>
+
+
+//overwrite only the data for the object whose id matches the current page slug
