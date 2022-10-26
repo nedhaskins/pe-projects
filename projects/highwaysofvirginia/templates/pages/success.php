@@ -1,5 +1,8 @@
 <h1>Success page</h1>
 
+$slug = 
+
+<?php getHighwayById($slug)
 
 <picture>
 	<img src="<?=$highway['image']?>" alt="">

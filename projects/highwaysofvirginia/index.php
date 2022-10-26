@@ -14,9 +14,7 @@
 
     <h1>Highways of Virginia</h1>
 
-    <?php include('navbar.php');
-
-    
+<?php
     pageTemplate($page); ?>
 
 </body>

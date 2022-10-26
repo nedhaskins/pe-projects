@@ -10,3 +10,8 @@ picture {
 	border: 2px solid white;
 	padding:  5px;
 }
+
+
+nav a {
+	color:  yellow;
+}

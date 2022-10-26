@@ -1,44 +1,75 @@
 <?php
 
+
+$highways = getHighways();
+
 //Page variables
 
 $slug = $_GET['slug'] ?? false;
 $buttonMessage = 'Update route';
-$highway = getHighwayById($slug);
-$type = $highway['type'];
-$number = $highway['number'];
-$lengthInMiles = $highway['length'];
-$startLocation = $highway['startLocation'];
-$endLocation = $highway['endLocation'];
-$image = $highway['image'];
-$description = $highway['description'];
 
-?>
+foreach($highways as $highway) {
+	if( $highway['id'] == $slug ) {
 
-<h1>Update Route Info</h1>
-
-<picture>
-	<img src="<?=$image?>" alt="todo">
-</picture>
-
-<?php
-
-if (isset($_POST['submitted']) ) {
-
-   foreach($highway as $key => $value) {
-     if( $_POST[$key] == $value ) {
-     		$highway[$key] = $value;
-         //if it matches the original value
-     } else {
-         $highway[$key] == $_POST[$key];
-     }
- 	}
+	$id = $highway['id'];
+	$type = $highway['type'];
+	$number = $highway['number'];
+	$lengthInMiles = $highway['length'];
+	$startLocation = $highway['startLocation'];
+	$endLocation = $highway['endLocation'];
+	$image = $highway['image'];
+	$description = $highway['description'];
+	}
 }
-//if the form is submitted -- figure out how to amend array to add new changes!!!!
 
+include('templates/components/form.php');
+
+
+if ( isset($_POST['submitted']) ) {
+
+	 if($_POST['route-type'] == 'interstate') {
+	     $name = 'Interstate';
+	 } elseif($_POST['route-type'] == 'us-route') {
+	     $name = 'US Route';
+	 } elseif($_POST['route-type'] == 'state-route') {
+	     $name = 'State Route';
+	 }
+
+	 $updatedHighway = array(
+
+	     'id' => $highway['id'],
+	     'type' => $_POST['route-type'],
+	     'number' => $_POST['route-number'],
+	     'name' => $name . " " . $_POST['route-number'],
+	     'length' => $_POST['length-in-miles'],
+	     'startLocation' => $_POST['start-location'],
+	     'endLocation' => $_POST['end-location'],
+	     'description' => $_POST['description'],
+	     'image' => uploadImageFile()
+	 
+	 );
+
+	$index = array_search($id, $highways);
+
+	$highways[$index] = $updatedHighway;
+
+
+
+
+
+    $encoded = json_encode($highways);
+
+    if( file_put_contents('data/highways.json', $encoded) ) {
+       echo "The route was successfully updated!";
+       // header("Location: templates/pages/success.php");
+    }
+}
 ?>
 
-<?php include('templates/components/form.php'); ?>
-
-
-<!--The goal is to popfulate the fields below with the date from the requested single highway.
+<nav>
+    <ul>
+        <li><a href='?'>Home</a></li>
+        <li><a href='?page=route-list'>Route List</a></li>
+        <li><a href='?page=create'>Create a route</a></li>
+    </ul>
+</nav>

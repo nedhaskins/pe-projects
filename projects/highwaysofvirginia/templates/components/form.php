@@ -2,18 +2,50 @@
 enctype="multipart/form-data">
 
     <field>
-        <input type="file" name="image-file">
+        <input type="file" name="image-file" href="<?=$image?>">
     </field>
 
-    <field>
-        <label>Route Type</label>
-        <select name="route-type" id="route-type" required>
-            <option value="" selected="true" disabled>What type of route is this?</option>
-            <option value="interstate" selected>Interstate</option>
-            <option value="state-route">State Route</option>
-            <option value="us-route">US Route</option>
-        </select>
-    </field>
+    <?php if($page == 'create') { ?>
+
+        <field>
+            <label>Route Type</label>
+            <select name="route-type" id="route-type" required>
+                <option value="" selected="true" disabled>What type of route is this?</option>
+                <option value="interstate" selected>Interstate</option>
+                <option value="state-route">State Route</option>
+                <option value="us-route">US Route</option>
+            </select>
+        </field>
+
+    <?php } elseif($page == 'update') { ?>
+
+         <field>
+            <label>Route Type</label>
+
+            <select name="route-type" id="route-type" required>
+
+                <option value="" selected="true" disabled>What type of route is this?</option>
+
+                <!--The attribute "selected" should appear for the current route-type of the item.-->
+
+                <?php
+
+                $options = [
+                    'interstate' => 'Interstate',
+                    'us-route' => 'US Route',
+                    'state-route' => 'State Route'
+                ];
+
+                foreach( $options as $k => $v ) {
+                    echo "<option value=\"$k\"" . ( $k === $highway['type'] ? 'selected' : '' ) . "/>$v</option>\n";
+                }
+
+                ?>
+
+            </select>
+        </field>
+
+    <?php } ?>
 
     <field>
         <label>Route Number</label>
@@ -35,8 +67,8 @@ enctype="multipart/form-data">
     </field>
 
     <field>
-        <label>Descrption</label>
-        <textarea cols=32 rows=10 name='description' type='text' value='' required></textarea>
+        <label>Description</label>
+        <textarea cols=32 rows=10 name='description' type='text' value='' required><?=$description?></textarea>
     </field>
 
     <button class='route-button' type="submit" name='submitted'><?=$buttonMessage?></button>

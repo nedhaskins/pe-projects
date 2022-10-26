@@ -1,5 +1,4 @@
-<?php //include('functions.php');
-
+<?php
 
 $routeType = "";
 $number = "99";
@@ -7,7 +6,10 @@ $lengthInMiles = "99";
 $startLocation = "Start location";
 $endLocation = "End location";
 $routeImage = "images/US_522.svg";
+$description = "Add a description";
 $buttonMessage = 'Add route';
+
+include('templates/components/form.php');
 
 if ( isset($_POST['submitted']) ) {
 
@@ -35,30 +37,17 @@ if ( isset($_POST['submitted']) ) {
         'image' => uploadImageFile()
     );
 
-    //this is the thing that needs to deviate from the original
-    array_push($phpArray, $highway); //($destination_array, $values)
+    array_push($phpArray, $highway);
 
     $encoded = json_encode($phpArray);
 
-    if( file_put_contents($filepath, $encoded) ) { //you need to append, not overwrite
-
-    	echo "Success! Everything worked, brah. :))))";
-   	header("Location: templates/pages/success.php");
-    
-    } 
-
-
-    //here is where to navigate to success.php
-
-    // include('templates/pages/success.php');
-
-    //this page should itself be success.php??
+    if( file_put_contents($filepath, $encoded) ) {
+       include('templates/pages/success.php');
+       // header("Location: templates/pages/success.php");
+    }
 }
+
+
 
 ?>
 
-
-
-<h1>Create New Route</h1>
-
-<?php include('templates/components/form.php'); ?>
