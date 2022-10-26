@@ -11,7 +11,7 @@ function getHighways() {
     $filepath = 'data/highways.json';
     $json = file_get_contents($filepath);
     return json_decode($json, true);
-}
+} 
 
 function getHighwayById($id) {
   $highways = getHighways();
@@ -135,11 +135,5 @@ function initializeDatabase()
 
 
 
-function getHighways()
-{
-    $json = file_get_contents("data/highways.json");
-    $data = json_decode($json, true);
-    return $data;
-}
 
 

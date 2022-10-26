@@ -27,13 +27,7 @@ if ( isset($_POST['submitted']) ) {
 
     //if there's a $_POst
 
-    foreach($highway as $key => $value) {
-        if( $_POST[$key] == $value ) {
-            //if it matches the original value
-        } else {
-            $highway[$key] == $_POST[$key];
-        }
-    }
+  
 
     // $updatedHighway = array(
     //     'id' => 

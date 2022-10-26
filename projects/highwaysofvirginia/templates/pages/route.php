@@ -22,6 +22,14 @@ foreach($highways as $highway) {
 
 		<p><?=$highway['description']?></p>
 
+
+		<button>
+			<a href="?page=update&slug=<?=$highway['id']?>">Update route info</a>
+		</button>
+		<button>
+			<a href="">Delete route</a>
+		</button>
+
 <!--include extra modules with cool descriptions of cool places later on -->
 
 <?php }
