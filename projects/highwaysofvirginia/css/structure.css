@@ -1,0 +1,92 @@
+/*STRUCTURE*/
+
+/*body {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 20px;
+
+}
+
+
+inner-column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media (min-width: 715px){
+	inner-column {
+	max-width: 1400px;
+	min-height: 100vh;
+	padding: 0px 40px 0px 40px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	}
+}
+*/
+
+
+/*BODY CLASS STYLES */
+
+
+body.index, body.landing-404 {
+	/*border: 6px solid var(--cgred);*/
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+
+
+	grid-template-rows: auto 1fr;
+		margin-bottom: 27px;
+	/*background-image: linear-gradient(30deg, white, gray);*/
+}
+
+body.layout {
+	display: block;
+}
+
+
+@media (min-width: 900px) and (min-height: 600px) {
+	/*changed this from 700 to 900*/
+	body.index, body.landing-404 {
+		grid-template-columns: 1fr 1fr;
+			/*gap: 20px;*/
+	}
+
+	header {
+		order: 2;
+	}
+
+	header .site-menu {
+		position: sticky;
+		top: 0;
+	}
+}
+
+
+/*	.page-content {
+	grid-row: 1 / 3;
+	}	
+}*/
+
+
+inner-column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*STANDARD MODULE PADDING*/
+
+body {
+	--modulePadding: 27px 27px 0px 27px;
+	--standardTopMargin: 27px;
+
+}
+
+
+
+

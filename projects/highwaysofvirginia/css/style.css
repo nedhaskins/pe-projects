@@ -1,0 +1,12 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+
+
+
+
+picture {
+	max-width:  200px;
+	border: 2px solid white;
+	padding:  5px;
+}
