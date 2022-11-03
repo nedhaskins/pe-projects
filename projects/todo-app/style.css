@@ -3,6 +3,14 @@ html {
 	background-color:  var(--paper);
 }
 
+
+body {
+	background-color: black;
+	color: yellow;
+}
+
+
+
 form, field {
 	display: grid;
 	gap: 20px;

@@ -34,10 +34,19 @@ class ToDoApp {
 		this.renderToDos(this.todos);		
 	}
 
-	toggleComplete(id) {
+	// toggleComplete(id) {
+	// 	for (let i = 0; i < this.todos.length; i++) {
+	// 		if (this.todos[i].id == id) {
+	// 			this.todos[i].complete = !this.todos[i].complete;
+	// 		}
+	// 	}
+	// 	this.renderToDos(this.todos);		
+	// }
+
+	complete(id) {
 		for (let i = 0; i < this.todos.length; i++) {
 			if (this.todos[i].id == id) {
-				this.todos[i].complete = !this.todos[i].complete;
+				this.todos[i].complete = true;
 			}
 		}
 		this.renderToDos(this.todos);		
@@ -85,9 +94,21 @@ class ToDoApp {
 				this.remove(id);
 			}
 
+			// if(event.target.textContent == 'complete') {
+			// 	const id = event.target.closest('li').dataset.id;
+			// 	this.toggleComplete(id);
+			// }
+
 			if(event.target.textContent == 'complete') {
 				const id = event.target.closest('li').dataset.id;
-				this.toggleComplete(id);
+
+				const toDoCard = (event.target.closest('todo-card'));
+
+				if(toDoCard.classList != 'complete') {
+					this.complete(id);
+				} else {
+					toDoCard.classList = false;
+				}
 			}
 		});
 	}

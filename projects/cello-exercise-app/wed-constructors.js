@@ -34,9 +34,9 @@ function CelloExerciseBook(author, title) {
 		console.log(`Added exercise #${number} to ${this.title}`);
 	}
 
-	this.showExercise = function(searchId) {
+	this.showExercise = function(id) {
 		const found = this.exercises.find( function(exercise) {
-			return (exercise.id == searchId);
+			return (exercise.id == id);
 		})
 		if(found) {
 			console.log(`This is exercise #${found.id} from ${this.title}`);
@@ -45,27 +45,27 @@ function CelloExerciseBook(author, title) {
 		}
 	}
 
-	this.showSkills = function(searchId) {
+	this.showSkills = function(id) {
 		const found = this.exercises.find( function(exercise) {
-			return (exercise.id == searchId);
+			return (exercise.id == id);
 		})
 		if(found) {
 			var skills = found.skills;
-			console.log(`Exercise #${searchId} from ${this.title} focuses on:`);
+			console.log(`Exercise #${id} from ${this.title} focuses on:`);
 			skills.forEach( function(skill) {
 				console.log(skill);
 			});
 		}	
 	}
 
-	this.addSkill = function(searchId, skill) {
+	this.addSkill = function(id, skill) {
 		const found = this.exercises.find( function(exercise) {
-			return (exercise.id == searchId);
+			return (exercise.id == id);
 		})
 		if(found) {
 			var skills = found.skills;
 			skills.push(skill);
-			console.log(`Added ${skill} to exercise#${searchId}.`);
+			console.log(`Added ${skill} to exercise#${id}.`);
 		}
 	}
 }

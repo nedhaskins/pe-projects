@@ -6,26 +6,28 @@ class CelloExerciseBook {
 		this.exercises = [],
 		this.leftHandExercises =  [],
 		this.bowArmExercises =  [],
-		this.exerciseIdMaker = 1
 		this.$form = document.querySelector('form');
 		this.$input = this.$form.querySelector('input');
 		this.$output = document.querySelector('output');
+
+		this.addEventListeners();
 	}
 
-	addExercise(number, skills) {
+	addExercise(id, skills) {
 		//initialize the variable to be added
 		const exercise = {
-			id: this.exerciseIdMaker++,
+			id: id,
 			skills: skills,
 			complete: false,
 		};
 
 		this.exercises = [...this.exercises, exercise];
 		//does the same thing as the push method
-		console.log(`Added exercise #${number} to ${this.title}`);
+		console.log(`Added exercise #${id} to ${this.title}`);
 		this.renderExercises(this.exercises);
 	}
 
+	//this function may not be wholly needed for this app - look at all the repetition...
 	findExerciseById(searchId) { //remember 'searchId' can be any word!
 		return this.exercises.find( function(exercise) {
 			return (exercise.id == searchId);
@@ -41,49 +43,57 @@ class CelloExerciseBook {
 		}
 	}
 
-	removeExercise(searchId) {
-		const found = this.findExerciseById(searchId);
-		if(found) {
+	removeExercise(id) {
 			const filtered = this.exercises.filter( function(exercise) {
-				return exercise.id != searchId;
+				return exercise.id != id;
 			})
-			console.log(`Exercise #${found.id} was taken out of the book.`);
 			this.exercises = [...filtered];
-		}
+			this.renderExercises(this.exercises);
+			console.log(`Exercise #${id} was taken out of the book.`);
 	}
 
-	completeExercise(searchId) {
+	completeExercise(id) {
 		for (let i = 0; i < this.exercises.length; i++) {
-			if ( this.exercises[i].id == searchId ) {
+			if ( this.exercises[i].id == id ) {
 				this.exercises[i].complete = true;
 				console.log(`Exercise #${this.exercises[i].id} is marked complete.`)
 			}
 		}
+		this.renderExercises(this.exercises);
 	}
 
 	renderExercise(exercise) {
-		return `
-			<li data-id="${exercise.id}">
-				<exercise-card class=${exercise.complete ? "complete" : ""}>
-					<h2>Exercise #${exercise.id}</h2>
-					<actions>
-						<button>remove</button>
-						<button rel="toggle">complete</button>
-					</actions>
-				</exercise-card>
-			</li>
-		`;
-	}	
+		var skills = exercise.skills;
+
+			return `
+				<li data-id="${exercise.id}">
+					<exercise-card class=${exercise.complete ? "complete" : ""}>
+						<h2>Exercise #${exercise.id}</h2>
+						<ul> ${ skills } </ul>
+						<actions>
+							<button>Add skill</button>
+							<button>Remove exercise</button>
+							<button rel="toggle">Mark complete</button>
+						</actions>
+					</exercise-card>
+				</li>
+			`;
+	}
 
 	renderExercises() {
 		var template = "<ul>";
-
 		this.exercises.forEach( (exercise) => {
 			template += this.renderExercise(exercise);
 		});
 		template += "</ul>";
 		this.$output.innerHTML = template;
 	}
+
+	renderSkills(skills) {
+		skills.forEach( function (skill) {
+			return `<li>${skill}</li>`;
+		});
+	}	
 
 	showSkills(searchId) {
 		const found = this.exercises.find( function(exercise) {
@@ -111,7 +121,6 @@ class CelloExerciseBook {
 
 	addEventListeners() {
 
-		//the arrow function frees the internal elements 
 		this.$form.addEventListener('submit', (event) => {
 			event.preventDefault();
 			this.addExercise( this.$input.value );
@@ -121,37 +130,31 @@ class CelloExerciseBook {
 
 		this.$output.addEventListener('click', (event) => {
 
-			if(event.target.textContent == 'remove') {
+			if(event.target.textContent == 'Remove exercise') {
 				const id = event.target.closest('li').dataset.id;
-				this.remove(id);
+				this.removeExercise(id);
 			}
 
-			if(event.target.textContent == 'complete') {
+			if(event.target.textContent == 'Mark complete') {
 				const id = event.target.closest('li').dataset.id;
-
-				const toDoCard = (event.target.closest('exercise-card'));
-
-				if(toDoCard.classList != 'complete') {
-					this.complete(id);
-				} else {
-					toDoCard.classList = false;
-				}
+				this.completeExercise(id);
 			}
+
 		});
 	}
 }
 
 const popperHighSchool = new CelloExerciseBook("David Popper", "High School of Cello Playing");
 
-popperHighSchool.addExercise(1, ["spiccato", "triplets"]);
+// popperHighSchool.addExercise(1, ["spiccato", "triplets"]);
 
 
 
 
 
-
+popperHighSchool.addExercise(1, ["triplets", "spicatto"]);
 popperHighSchool.addExercise(2, ["slurs", "large shifts"]);
-// popperHighSchool.addExercise(3, ["intonation", "chromatic runs"]);
+popperHighSchool.addExercise(3, ["intonation", "chromatic runs"]);
 
 // popperHighSchool.removeExercise(1); //works
 // popperHighSchool.completeExercise(2); //works
