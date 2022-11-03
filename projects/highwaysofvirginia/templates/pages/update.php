@@ -1,6 +1,5 @@
 <?php
 
-
 $highways = getHighways();
 
 //Page variables
@@ -24,7 +23,6 @@ foreach($highways as $highway) {
 
 include('templates/components/form.php');
 
-
 if ( isset($_POST['submitted']) ) {
 
 	 if($_POST['route-type'] == 'interstate') {
@@ -37,7 +35,7 @@ if ( isset($_POST['submitted']) ) {
 
 	 $updatedHighway = array(
 
-	     'id' => $highway['id'],
+	     'id' => uniqid('highway'),
 	     'type' => $_POST['route-type'],
 	     'number' => $_POST['route-number'],
 	     'name' => $name . " " . $_POST['route-number'],
@@ -53,17 +51,14 @@ if ( isset($_POST['submitted']) ) {
 
 	$highways[$index] = $updatedHighway;
 
+   $encoded = json_encode($highways);
 
-
-
-
-    $encoded = json_encode($highways);
-
-    if( file_put_contents('data/highways.json', $encoded) ) {
-       echo "The route was successfully updated!";
-       // header("Location: templates/pages/success.php");
-    }
+	if( file_put_contents('data/highways.json', $encoded) ) {
+	 echo "The route was successfully updated!";
+	 // header("Location: templates/pages/success.php");
+	}
 }
+
 ?>
 
 <nav>
