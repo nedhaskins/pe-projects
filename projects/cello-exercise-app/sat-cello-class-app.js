@@ -10,7 +10,17 @@ class CelloExerciseBook {
 		this.$input = this.$form.querySelector('input');
 		this.$output = document.querySelector('output');
 
+		this.setUpApp();
 		this.addEventListeners();
+	}
+
+	setUpApp() {
+		const data = JSON.parse( localStorage.getItem('celloExercises') ) || [];
+		data.forEach( (exerciseData) => {
+			this.exercises = [...this.exercises, exerciseData];	
+		});
+		console.log(this.exercises);
+		this.renderExercises();
 	}
 
 	addExercise(number, skills) {
@@ -21,10 +31,15 @@ class CelloExerciseBook {
 			complete: false,
 		};
 
+		//if the number of the new exercise isn't equal to any other number (so it doesn't make copies)
+
 		this.exercises = [...this.exercises, exercise];
 		//does the same thing as the push method
 		console.log(`Added exercise #${number} to ${this.title}`);
 		this.renderExercises(this.exercises);
+		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
+
+		//otherwise..."This exercise's already in the database!"
 	}
 
 	//this function may not be wholly needed for this app - look at all the repetition...
@@ -62,10 +77,12 @@ class CelloExerciseBook {
 		this.renderExercises(this.exercises);
 	}
 
-	renderExercises() {
+	renderExercises(number) {
 		var template = "<ul>";
-		this.exercises.forEach( (exercise) => {
+		this.exercises.forEach( (exercise, index, array) => {
 			template += this.renderExercise(exercise);
+			console.log(index);
+			console.log(array);
 		});
 		template += "</ul>";
 		this.$output.innerHTML = template;
@@ -73,11 +90,11 @@ class CelloExerciseBook {
 
 	renderExercise(exercise) {
 		var skills = exercise.skills;
-
 			return `
 				<li data-id="${exercise.number}">
 					<exercise-card class=${exercise.complete ? "complete" : ""}>
 						<h2>Exercise #${exercise.number}</h2>
+						<ul>${ this. renderSkills(skills) }</ul>
 						<actions>
 							<button>Add skill</button>
 							<button>Remove exercise</button>
@@ -90,12 +107,12 @@ class CelloExerciseBook {
 
 	
 
-	// renderSkills(skills) {
-	// 	skills.forEach( function (skill) {
-	// 		return `<li>${skill}</li>`;
-	// 		console.log("test");
-	// 	});
-	// }
+	renderSkills(skills) {
+		skills.forEach( function (skill) {
+			return `<li>${skill}</li>`;
+			console.log("test");
+		});
+	}
 
 
 
@@ -156,17 +173,17 @@ const popperHighSchool = new CelloExerciseBook("David Popper", "High School of C
 
 
 
-popperHighSchool.addExercise(1, ["triplets", "spiccato"]);
-popperHighSchool.addExercise(2, ["slurs", "large shifts"]);
-popperHighSchool.addExercise(3, ["intonation", "chromatic runs"]);
+// popperHighSchool.addExercise(1, ["triplets", "spiccato"]);
+// popperHighSchool.addExercise(2, ["slurs", "large shifts"]);
+// popperHighSchool.addExercise(3, ["intonation", "chromatic runs"]);
 
-// popperHighSchool.removeExercise(1); //works
-// popperHighSchool.completeExercise(2); //works
+// // popperHighSchool.removeExercise(1); //works
+// // popperHighSchool.completeExercise(2); //works
 
 
-// popperHighSchool.showSkills(2); //works
+// // popperHighSchool.showSkills(2); //works
 
-popperHighSchool.addExercise(10);
-popperHighSchool.addSkill(10, "key changes");
-popperHighSchool.addSkill(2, "chromatic runs"); //works
-popperHighSchool.addSkill(2, "chromatic runs"); //works
+// popperHighSchool.addExercise(10);
+// popperHighSchool.addSkill(10, "key changes");
+// popperHighSchool.addSkill(2, "chromatic runs"); //works
+// popperHighSchool.addSkill(2, "chromatic runs"); //works
