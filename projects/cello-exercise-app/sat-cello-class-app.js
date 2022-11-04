@@ -4,6 +4,7 @@ class CelloExerciseBook {
 		this.author = author;
 		this.title = title;
 		this.exercises = [],
+		this.skills = [],
 		this.leftHandExercises =  [],
 		this.bowArmExercises =  [],
 		this.$form = document.querySelector('form');
@@ -38,6 +39,7 @@ class CelloExerciseBook {
 		console.log(`Added exercise #${number} to ${this.title}`);
 		this.renderExercises(this.exercises);
 		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
+		console.log(this.exercises);
 
 		//otherwise..."This exercise's already in the database!"
 	}
@@ -59,30 +61,31 @@ class CelloExerciseBook {
 	}
 
 	removeExercise(number) {
-			const filtered = this.exercises.filter( function(exercise) {
-				return exercise.number != number;
-			})
-			this.exercises = [...filtered];
-			this.renderExercises(this.exercises);
-			console.log(`Exercise #${number} was taken out of the book.`);
+		const filtered = this.exercises.filter( function(exercise) {
+			return exercise.number != number;
+		})
+		this.exercises = [...filtered];
+		this.renderExercises();
+		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
+		console.log(`Exercise #${number} was taken out of the book.`);
+		console.log(this.exercises);
 	}
 
-	completeExercise(number) {
+	toggleCompleteExercise(number) {
 		for (let i = 0; i < this.exercises.length; i++) {
 			if ( this.exercises[i].number == number ) {
-				this.exercises[i].complete = true;
-				console.log(`Exercise #${this.exercises[i].number} is marked complete.`)
+				this.exercises[i].complete = !this.exercises[i].complete;
+				console.log(`Exercise #${this.exercises[i].number} has been toggled.`)
 			}
 		}
 		this.renderExercises(this.exercises);
+		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
 	}
 
 	renderExercises(number) {
 		var template = "<ul>";
 		this.exercises.forEach( (exercise, index, array) => {
 			template += this.renderExercise(exercise);
-			console.log(index);
-			console.log(array);
 		});
 		template += "</ul>";
 		this.$output.innerHTML = template;
@@ -94,9 +97,10 @@ class CelloExerciseBook {
 				<li data-id="${exercise.number}">
 					<exercise-card class=${exercise.complete ? "complete" : ""}>
 						<h2>Exercise #${exercise.number}</h2>
-						<ul>${ this. renderSkills(skills) }</ul>
+						<ul>${ this.renderSkills(skills) }</ul>
 						<actions>
 							<button>Add skill</button>
+							<input />
 							<button>Remove exercise</button>
 							<button rel="toggle">Mark complete</button>
 						</actions>
@@ -105,16 +109,13 @@ class CelloExerciseBook {
 			`;
 	}
 
-	
-
 	renderSkills(skills) {
 		skills.forEach( function (skill) {
 			return `<li>${skill}</li>`;
 			console.log("test");
 		});
+
 	}
-
-
 
 	logSkills(number) {
 		const found = this.exercises.find( function(exercise) {
@@ -146,10 +147,13 @@ class CelloExerciseBook {
 			event.preventDefault();
 			this.addExercise( this.$input.value );
 			this.$input.value = "";
-			console.log('exercises: ', this.exercises);
 		});
 
 		this.$output.addEventListener('click', (event) => {
+
+			if(event.target.textContent == 'Add skill') {
+				//add the skill to the unordered list of skills
+			}
 
 			if(event.target.textContent == 'Remove exercise') {
 				const id = event.target.closest('li').dataset.id;
@@ -158,7 +162,7 @@ class CelloExerciseBook {
 
 			if(event.target.textContent == 'Mark complete') {
 				const id = event.target.closest('li').dataset.id;
-				this.completeExercise(id);
+				this.toggleCompleteExercise(id);
 			}
 
 		});
