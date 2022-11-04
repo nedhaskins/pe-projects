@@ -1,6 +1,6 @@
 html {
 	--paper: rgb(0,0,0,.3);
-	background-color:  var(--paper);
+	background-color:  #a85bdf;
 }
 
 form, field {

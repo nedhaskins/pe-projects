@@ -82,7 +82,7 @@ class CelloExerciseBook {
 		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
 	}
 
-	renderExercises(number) {
+	renderExercises() {
 		var template = "<ul>";
 		this.exercises.forEach( (exercise, index, array) => {
 			template += this.renderExercise(exercise);
@@ -92,12 +92,12 @@ class CelloExerciseBook {
 	}
 
 	renderExercise(exercise) {
-		var skills = exercise.skills;
+		var number = exercise.number;
 			return `
 				<li data-id="${exercise.number}">
 					<exercise-card class=${exercise.complete ? "complete" : ""}>
 						<h2>Exercise #${exercise.number}</h2>
-						<ul>${ this.renderSkills(skills) }</ul>
+						<ul class="skill-list">${ this.renderSkills(number) }</ul>
 						<actions>
 							<button>Add skill</button>
 							<input />
@@ -109,12 +109,19 @@ class CelloExerciseBook {
 			`;
 	}
 
-	renderSkills(skills) {
-		skills.forEach( function (skill) {
-			return `<li>${skill}</li>`;
-			console.log("test");
-		});
-
+	renderSkills(number) {
+		const found = this.exercises.find( function(exercise) {
+			return (exercise.number == number);
+		})
+		if(found) {
+			var skills = found.skills;
+			var template = "<ul>";
+			skills.forEach( function (skill) {
+				template += `<li>${skill}</li>`;
+			});
+			template += "</ul>";
+			return template;
+		}
 	}
 
 	logSkills(number) {
@@ -137,6 +144,8 @@ class CelloExerciseBook {
 		if(found) {
 			var skills = found.skills;
 			skills.push(skill);
+			this.renderExercises();
+			localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
 			console.log(`Added ${skill} to exercise #${number}.`);
 		}
 	}
@@ -177,7 +186,7 @@ const popperHighSchool = new CelloExerciseBook("David Popper", "High School of C
 
 
 
-// popperHighSchool.addExercise(1, ["triplets", "spiccato"]);
+// ç
 // popperHighSchool.addExercise(2, ["slurs", "large shifts"]);
 // popperHighSchool.addExercise(3, ["intonation", "chromatic runs"]);
 
