@@ -99,8 +99,10 @@ class CelloExerciseBook {
 						<h2>Exercise #${exercise.number}</h2>
 						<ul class="skill-list">${ this.renderSkills(number) }</ul>
 						<actions>
-							<button>Add skill</button>
-							<input />
+							<input-field>
+								<button >Add skill</button>
+								<input />
+							</input-field>
 							<button>Remove exercise</button>
 							<button rel="toggle">Mark complete</button>
 						</actions>
@@ -115,11 +117,11 @@ class CelloExerciseBook {
 		})
 		if(found) {
 			var skills = found.skills;
-			var template = "<ul>";
+			var template = "";
 			skills.forEach( function (skill) {
 				template += `<li>${skill}</li>`;
 			});
-			template += "</ul>";
+		
 			return template;
 		}
 	}
@@ -161,8 +163,13 @@ class CelloExerciseBook {
 		this.$output.addEventListener('click', (event) => {
 
 			if(event.target.textContent == 'Add skill') {
-				//add the skill to the unordered list of skills
+				let number = event.target.closest('li').dataset.id;
+				let $input = event.target.closest('input');
+				console.log(number);
+			
+				$input.value = "";
 			}
+			
 
 			if(event.target.textContent == 'Remove exercise') {
 				const id = event.target.closest('li').dataset.id;
