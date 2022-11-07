@@ -84,7 +84,7 @@ class CelloExerciseBook {
 
 	renderExercises() {
 		var template = "<ul>";
-		this.exercises.forEach( (exercise, index, array) => {
+		this.exercises.forEach( (exercise) => {
 			template += this.renderExercise(exercise);
 		});
 		template += "</ul>";
@@ -100,7 +100,7 @@ class CelloExerciseBook {
 						<ul class="skill-list">${ this.renderSkills(number) }</ul>
 						<actions>
 							<input-field>
-								<button >Add skill</button>
+								<button>Add skill</button>
 								<input />
 							</input-field>
 							<button>Remove exercise</button>
@@ -119,7 +119,10 @@ class CelloExerciseBook {
 			var skills = found.skills;
 			var template = "";
 			skills.forEach( function (skill) {
-				template += `<li>${skill}</li>`;
+				template += `
+				<li>${skill}</li>
+				<button>Remove skill</button>
+				`;
 			});
 		
 			return template;
@@ -152,6 +155,24 @@ class CelloExerciseBook {
 		}
 	}
 
+
+	removeSkill(number, removed) {
+		const found = this.exercises.find( function(exercise) {
+			return (exercise.number == number);
+		})
+		if(found) {
+			var skills = found.skills;
+			for( let i = 0; i < skills.length; i++  ) {
+				if( skills[i] == removed ) {
+					skills.splice( skills[i], 1);
+				}
+			}
+		this.renderExercises();
+		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
+		console.log(`The skill "${removed}" was taken out of exercise #${number}.`);
+		}
+	}
+
 	addEventListeners() {
 
 		this.$form.addEventListener('submit', (event) => {
@@ -165,6 +186,13 @@ class CelloExerciseBook {
 			if(event.target.textContent == 'Add skill') {
 				let number = event.target.closest('li').dataset.id;
 				let $input = event.target.closest('input-field').querySelector('input');
+				this.addSkill(number, $input.value);
+			
+				$input.value = "";
+			}
+
+			if(event.target.textContent == 'Remove skill') {
+				let number = event.target.closest('li').dataset.id;
 				this.addSkill(number, $input.value);
 			
 				$input.value = "";
