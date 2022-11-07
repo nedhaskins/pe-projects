@@ -164,8 +164,8 @@ class CelloExerciseBook {
 
 			if(event.target.textContent == 'Add skill') {
 				let number = event.target.closest('li').dataset.id;
-				let $input = event.target.closest('input');
-				console.log(number);
+				let $input = event.target.closest('input-field').querySelector('input');
+				this.addSkill(number, $input.value);
 			
 				$input.value = "";
 			}
