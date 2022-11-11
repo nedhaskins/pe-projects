@@ -15,5 +15,5 @@
 
 
 <button>
-	<a href='route-list.php'>Back to route list</a>
+	<a href='?page=route-list'>Back to route list</a>
 </button>

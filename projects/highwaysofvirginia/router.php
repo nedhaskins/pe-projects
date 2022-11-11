@@ -12,9 +12,8 @@ function pageTemplate($page){
 
 
 
-
-    if($page == 'home') {
-    include('templates/pages/home.php');
+if($page == 'home') {
+	include('templates/pages/home.php');
     }
 
     if($page == 'create') {
@@ -26,7 +25,7 @@ function pageTemplate($page){
     }
 
     if($page == 'route-list') {
-        include('templates/pages/route-list.php');
+    include('templates/pages/route-list.php');
     }
 
     if($page == 'update') {

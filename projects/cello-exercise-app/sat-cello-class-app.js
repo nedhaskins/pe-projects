@@ -94,7 +94,7 @@ class CelloExerciseBook {
 	renderExercise(exercise) {
 		var number = exercise.number;
 			return `
-				<li data-id="${exercise.number}">
+				<li id="exercise" data-id="${exercise.number}">
 					<exercise-card class=${exercise.complete ? "complete" : ""}>
 						<h2>Exercise #${exercise.number}</h2>
 						<ul class="skill-list">${ this.renderSkills(number) }</ul>
@@ -120,8 +120,10 @@ class CelloExerciseBook {
 			var template = "";
 			skills.forEach( function (skill) {
 				template += `
-				<li>${skill}</li>
-				<button>Remove skill</button>
+					<skill-wrapper>
+						<li>${skill}</li>
+						<button>Remove skill</button>
+					</skill-wrapper>
 				`;
 			});
 		
@@ -162,15 +164,18 @@ class CelloExerciseBook {
 		})
 		if(found) {
 			var skills = found.skills;
-			for( let i = 0; i < skills.length; i++  ) {
+			for (let i = 0; i < skills.length; i++) {
 				if( skills[i] == removed ) {
-					skills.splice( skills[i], 1);
+					console.log(removed);
+
+					skills.splice(i, 1);
 				}
 			}
+		}
 		this.renderExercises();
 		localStorage.setItem('celloExercises', JSON.stringify(this.exercises));
 		console.log(`The skill "${removed}" was taken out of exercise #${number}.`);
-		}
+		console.log(skills);
 	}
 
 	addEventListeners() {
@@ -186,19 +191,20 @@ class CelloExerciseBook {
 			if(event.target.textContent == 'Add skill') {
 				let number = event.target.closest('li').dataset.id;
 				let $input = event.target.closest('input-field').querySelector('input');
-				this.addSkill(number, $input.value);
-			
-				$input.value = "";
+				if($input.value == "") {
+					alert(`Type a skill in!`);
+				} else {
+					this.addSkill(number, $input.value);
+					$input.value = "";
+				}		
 			}
 
 			if(event.target.textContent == 'Remove skill') {
-				let number = event.target.closest('li').dataset.id;
-				this.addSkill(number, $input.value);
-			
-				$input.value = "";
+				let number = event.target.closest('#exercise').dataset.id;
+				let skill = event.target.closest('skill-wrapper').querySelector('li').textContent;
+				this.removeSkill(number, skill);
 			}
 			
-
 			if(event.target.textContent == 'Remove exercise') {
 				const id = event.target.closest('li').dataset.id;
 				this.removeExercise(id);
@@ -218,7 +224,7 @@ const popperHighSchool = new CelloExerciseBook("David Popper", "High School of C
 // popperHighSchool.addExercise(1, ["spiccato", "triplets"]);
 
 
-
+// popperHighSchool.removeSkill(1, "one");
 
 
 // ç
