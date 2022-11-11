@@ -1,25 +1,23 @@
 <?php
 
-$highways = getHighways();
-
-//Page variables
-
 $slug = $_GET['slug'] ?? false;
+
+$highway = getHighwayById($slug);
+
 $buttonMessage = 'Update route';
 
-foreach($highways as $highway) {
-	if( $highway['id'] == $slug ) {
+$id = $highway['id'];
+$type = $highway['type'];
+$number = $highway['number'];
+$lengthInMiles = $highway['length'];
+$startLocation = $highway['startLocation'];
+$endLocation = $highway['endLocation'];
+$image = $highway['image'];
+$description = $highway['description'];
 
-	$id = $highway['id'];
-	$type = $highway['type'];
-	$number = $highway['number'];
-	$lengthInMiles = $highway['length'];
-	$startLocation = $highway['startLocation'];
-	$endLocation = $highway['endLocation'];
-	$image = $highway['image'];
-	$description = $highway['description'];
-	}
-}
+
+show($highway);
+
 ?>
 
 <picture>
@@ -43,30 +41,44 @@ if ( isset($_POST['submitted']) ) {
 		$name = 'State Route';
 	}
 
-	$updatedHighway = array(
 
-		'id' => uniqid('highway'),
-		'type' => $_POST['route-type'],
-		'number' => $_POST['route-number'],
-		'name' => $name . " " . $_POST['route-number'],
-		'length' => $_POST['length-in-miles'],
-		'startLocation' => $_POST['start-location'],
-		'endLocation' => $_POST['end-location'],
-		'description' => $_POST['description'],
-		'image' => uploadImageFile()
 
-	);
 
-	$index = array_search($id, $highways);
 
-	$highways[$index] = $updatedHighway;
 
-	$encoded = json_encode($highways);
 
-	if( file_put_contents('data/highways.json', $encoded) ) {
-		echo "The route was successfully updated!";
-	// header("Location: templates/pages/success.php");
-	}
+
+
+
+
+
+
+
+
+	// $updatedHighway = array(
+
+	// 	'id' => uniqid('highway'),
+	// 	'type' => $_POST['route-type'],
+	// 	'number' => $_POST['route-number'],
+	// 	'name' => $name . " " . $_POST['route-number'],
+	// 	'length' => $_POST['length-in-miles'],
+	// 	'startLocation' => $_POST['start-location'],
+	// 	'endLocation' => $_POST['end-location'],
+	// 	'description' => $_POST['description'],
+	// 	'image' => uploadImageFile()
+
+	// );
+
+	// $index = array_search($id, $highways);
+
+	// $highways[$index] = $updatedHighway;
+
+	// $encoded = json_encode($highways);
+
+	// if( file_put_contents('data/highways.json', $encoded) ) {
+	// 	echo "The route was successfully updated!";
+	// // header("Location: templates/pages/success.php");
+	// }
 }
 
 ?>
