@@ -12,12 +12,12 @@ foreach( $highways as $highwayId => $highwayData) {
 		saveDatabase($highways);
 
 		$deletedData = $highwayData;
-	}
+	}	
+}
 
-	if( isset($deletedData) ) {
+if( isset($deletedData) ) {
 		echo $deletedData['name'] . " was taken out of the database.";
 	}
-}
 ?>
 <button>
 	<a href="?page=home">Back to home page</a>
