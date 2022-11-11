@@ -37,7 +37,7 @@ enctype="multipart/form-data">
                 ];
 
                 foreach( $options as $k => $v ) {
-                    echo "<option value=\"$k\"" . ( $k === $highway['type'] ? 'selected' : '' ) . "/>$v</option>\n";
+                    echo "<option value=\"$k\"" . ( $k === $type ? 'selected' : '' ) . "/>$v</option>\n";
                 }
 
                 ?>

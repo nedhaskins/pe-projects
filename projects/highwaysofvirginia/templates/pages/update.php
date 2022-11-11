@@ -20,42 +20,52 @@ foreach($highways as $highway) {
 	$description = $highway['description'];
 	}
 }
+?>
+
+<picture>
+	<img src="<?=$image?>" alt="todo">
+</picture>
+
+<?php
+
 
 include('templates/components/form.php');
 
 if ( isset($_POST['submitted']) ) {
 
-	 if($_POST['route-type'] == 'interstate') {
-	     $name = 'Interstate';
-	 } elseif($_POST['route-type'] == 'us-route') {
-	     $name = 'US Route';
-	 } elseif($_POST['route-type'] == 'state-route') {
-	     $name = 'State Route';
-	 }
+	if($_POST['route-type'] == 'interstate') {
+		$name = 'Interstate';
 
-	 $updatedHighway = array(
+	} elseif($_POST['route-type'] == 'us-route') {
+		$name = 'US Route';
 
-	     'id' => uniqid('highway'),
-	     'type' => $_POST['route-type'],
-	     'number' => $_POST['route-number'],
-	     'name' => $name . " " . $_POST['route-number'],
-	     'length' => $_POST['length-in-miles'],
-	     'startLocation' => $_POST['start-location'],
-	     'endLocation' => $_POST['end-location'],
-	     'description' => $_POST['description'],
-	     'image' => uploadImageFile()
-	 
-	 );
+	} elseif($_POST['route-type'] == 'state-route') {
+		$name = 'State Route';
+	}
+
+	$updatedHighway = array(
+
+		'id' => uniqid('highway'),
+		'type' => $_POST['route-type'],
+		'number' => $_POST['route-number'],
+		'name' => $name . " " . $_POST['route-number'],
+		'length' => $_POST['length-in-miles'],
+		'startLocation' => $_POST['start-location'],
+		'endLocation' => $_POST['end-location'],
+		'description' => $_POST['description'],
+		'image' => uploadImageFile()
+
+	);
 
 	$index = array_search($id, $highways);
 
 	$highways[$index] = $updatedHighway;
 
-   $encoded = json_encode($highways);
+	$encoded = json_encode($highways);
 
 	if( file_put_contents('data/highways.json', $encoded) ) {
-	 echo "The route was successfully updated!";
-	 // header("Location: templates/pages/success.php");
+		echo "The route was successfully updated!";
+	// header("Location: templates/pages/success.php");
 	}
 }
 
