@@ -1,0 +1,33 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+
+
+body {
+	background-color: gray;
+}
+
+
+
+picture {
+	max-width:  200px;
+	border: 2px solid white;
+	padding:  5px;
+}
+
+
+nav a {
+	color:  yellow;
+}
+
+
+
+pre {
+		background-color: black;
+	color: lime;
+}
+
+.route-list {
+	font-weight: 700;
+	color: purple;
+}

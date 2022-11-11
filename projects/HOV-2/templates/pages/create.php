@@ -3,12 +3,12 @@
 $highways = getHighways();
 
 $routeType = "";
-$number = "";
-$lengthInMiles = "";
-$startLocation = "";
-$endLocation = "";
-$routeImage = "";
-$description = "";
+$number = "99";
+$lengthInMiles = "99";
+$startLocation = "Start location";
+$endLocation = "End location";
+$routeImage = "images/US_522.svg";
+$description = "Add a description";
 $buttonMessage = 'Add route';
 
 include('templates/components/form.php');
@@ -24,6 +24,7 @@ if ( isset($_POST['submitted']) ) {
     }
 
     $highway = array(
+        'id' => uniqid('highway'),
         'type' => $_POST['route-type'],
         'number' => $_POST['route-number'],
         'name' => $name . " " . $_POST['route-number'],
@@ -34,8 +35,7 @@ if ( isset($_POST['submitted']) ) {
         'image' => uploadImageFile()
     );
 
-    $highways[uniqid('route')] = $highway;
-
+    array_push($highways, $highway);
     $encoded = json_encode($highways);
 
     if( file_put_contents('data/highways.json', $encoded) ) {
@@ -45,10 +45,6 @@ if ( isset($_POST['submitted']) ) {
 }
 
 ?>
-
-<button>
-    <a href='?page=route-list'>Back to route list</a>
-</button>
 
 <button>
     <a href="?page=home">Back to home page</a>

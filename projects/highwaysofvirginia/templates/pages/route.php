@@ -12,6 +12,17 @@ $highwayData = getHighwayById($_GET['slug']); ?>
 <p><?=$highwayData['description']?></p>
 
 
+
+
+
+
+
+<button>
+	<a href="?page=home">Home page</a>
+</button>
+<button>
+	<a href="?page=route-list">Route list</a>
+</button>
 <button>
 	<a href="?page=update&slug=<?=$_GET['slug']?>">Update route info</a>
 </button>

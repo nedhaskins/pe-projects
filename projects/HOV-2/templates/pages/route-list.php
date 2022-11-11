@@ -1,10 +1,15 @@
 <?php
 
-$highways = getHighways();
+$json = file_get_contents("data/highways.json");
 
-if( empty($highways) ) {
-	echo "There aren't any routes yet!  Click on \"Create Route\" to create one.";
+if(!$json) {
+	echo "<p>There aren't any routes yet!  Click on \"Create Route\" to create one.</p>";
+	$highways = [];
+	$json = json_encode($highways);
+	file_put_contents("data/highways.json", $json);
 }
+
+$highways = json_decode($json, true); 
 
  ?>
 
@@ -34,16 +39,16 @@ if( empty($highways) ) {
 <ul class="route-list">
 	<?php
 	if( isset ($_POST['submitted']) ) {
-		foreach($highways as $highwayId => $highwayData) {
-			if($_POST['route-filter'] == $highwayData['type']) { ?>
+		foreach($highways as $highway) {
+			if($_POST['route-filter'] == $highway['type']) { ?>
 				<li>
-					<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
+					<a href="?page=route&slug=<?=$highway['id']?>"><?=$highwayData['name']?></a>
 				</li>
 		<?php }
 		}
 	} else {
-		foreach($highways as $highwayId => $highwayData) { ?>
-				<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
+		foreach($highways as $highway) { ?>
+				<a href="?page=route&slug=<?=$highway['id']?>"><?=$highway['name']?></a>
 			</li>
 	<?php }
 	} ?>

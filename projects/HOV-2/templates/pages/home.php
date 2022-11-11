@@ -11,6 +11,7 @@
     <ul>
         <li><a href='?'>Home</a></li>
         <li><a href='?page=route-list'>Route List</a></li>
+        <li><a href='?page=route-search'>Route Search</a></li>
         <li><a href='?page=create'>Create Route</a></li>
     </ul>
 </nav>

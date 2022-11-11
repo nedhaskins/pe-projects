@@ -1,0 +1,286 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'settings.css';
+@import 'structure.css';
+@import 'typography.css';
+
+@import '../templates/components/style.css';
+
+@import '../templates/pages/home/style.css';
+@import '../templates/pages/projects/style.css';
+@import '../templates/pages/the-lab/style.css';
+@import '../templates/pages/contact/style.css';
+@import '../templates/pages/404/style.css';
+
+@import '../templates/modules/home/style.css';
+@import '../templates/modules/header-and-text/style.css';
+@import '../templates/modules/subheader-and-text/style.css';
+@import '../templates/modules/goals-module/style.css';
+@import '../templates/modules/resume-module/style.css';
+@import '../templates/modules/link-card/style.css';
+@import '../templates/modules/graphic-list/style.css';
+@import '../templates/modules/button-list/style.css';
+@import '../templates/modules/e4p/style.css';
+@import '../templates/modules/subheader-figure-caption/style.css';
+@import '../templates/modules/contact-form/style.css';
+@import '../templates/modules/font-overview/style.css';
+@import '../templates/modules/404/style.css';
+
+
+.site-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--modulePadding);
+}
+
+
+
+
+
+
+
+
+main {
+	/*border: 6px solid lime;*/
+/*	padding: 20px;*/
+}
+
+
+
+/*MAIN - PAGE CONTENT */
+
+.page-content {
+	/*border: 6px solid var(--cgred);*/
+
+}
+
+
+
+
+
+
+/*NAVBAR ELEMENTS*/
+
+
+.navbar {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.navbar nav a {
+	/*border: 3px dashed blue;*/
+}
+
+.navbar .active, .about-navbar .active {
+	opacity: 75%;
+	font-style: italic;
+	letter-spacing: 0.1em;
+}
+
+.navbar a:hover {
+	color: white;
+}
+
+
+.navbar .active, .navbar .inactive {
+	display: flex;
+	align-items: center;
+}
+
+.link-logo {
+	width: 5%;
+	margin-right: 10px;
+}
+
+.link-logo svg {
+	fill: var(--ink);
+}
+
+.inactive svg {
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/*LOGO - SVG PARENT ELEMENTS*/
+
+
+.logo {
+	/*padding: 40px;*/
+	margin-top: 27px;
+}
+
+
+.landing-404 .logo {
+	margin-top: 103px;
+}
+
+
+
+@media (min-width: 900px) and (min-height: 600px) {
+	.logo {
+    	margin-top: 129px;
+    }
+
+    .landing-404 .logo {
+		margin-top: 129px;
+ 	}
+
+}
+
+
+
+
+
+/*SVG ELEMENTS*/
+
+
+svg {
+	display: block;
+	/*border: 3px dashed purple;*/
+}
+
+svg .windmill {
+	fill: var(--ink);
+	stroke: none;
+}
+
+svg .curve {
+	fill: none;
+	stroke: var(--ink);
+	stroke-width: 4.17px;
+
+}
+
+@keyframes random-spin {
+	25% {
+		transform: rotate(60deg);	
+	}
+	
+	50%{
+		transform: rotate(-45deg);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.windmill {
+	animation: random-spin 12s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+.object {
+	overflow: visible;
+}
+
+
+
+
+
+
+@media(prefers-color-scheme: dark) {
+
+	.active svg {
+	fill: var(--ink-dark);
+	}
+
+	svg .windmill {
+	fill: var(--ink-dark);
+	}
+
+	svg .curve {
+	stroke: var(--ink-dark);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.line {
+	border: 2px solid var(--ink);
+	margin-top: 27px;
+}
+
+@media(prefers-color-scheme: dark) {
+
+	.line {
+		border: 1px solid var(--ink-dark);
+	}
+
+}
+
+.linktype-1 {
+    text-decoration: underline;
+    font-style: italic;
+    padding: var(--modulePadding);
+    letter-spacing: 0.2em;
+}
+
+.attention-voice.case-study, .body-copy.case-study {
+	padding: var(--modulePadding);
+}
+
+.bio picture-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+
+.bio picture {
+	border: 3px solid var(--ink);
+	padding: 10px;
+	margin: 27px 0px 0px 27px;
+	max-width: 264px;
+	filter: sepia(125%);
+}
+
+@media(prefers-color-scheme: dark) {
+
+	.bio picture {
+		border: 3px solid var(--ink-dark);
+	}
+
+}
+
+.style-guide .home h1.title-voice {
+	margin-top: 0px;
+}
+
+@media (min-width: 900px) {
+	.style-guide .home, .style-guide .four-oh-four {
+		min-height: auto;
+	}
+
+	.style-guide .link-container {
+		gap: 27px;
+	}
+}
+
+
+
+
+
+/*Put all of the elements if they're unique to this page--no matter what they are --  in this template.
+The things that will go across the entire site -- the text classes, the colors -- those go in the site.css.
+
