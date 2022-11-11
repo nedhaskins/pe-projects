@@ -46,3 +46,6 @@ if ( isset($_POST['submitted']) ) {
 
 ?>
 
+<button>
+    <a href="?page=home">Back to home page</a>
+</button>

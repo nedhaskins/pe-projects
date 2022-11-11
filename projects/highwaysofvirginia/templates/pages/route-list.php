@@ -1,9 +1,17 @@
 <?php
 
 $json = file_get_contents("data/highways.json");
-$highways = json_decode($json, true);
 
-?>
+if(!$json) {
+	echo "<p>There aren't any routes yet!  Click on \"Create Route\" to create one.</p>";
+	$highways = [];
+	$json = json_encode($highways);
+	file_put_contents("data/highways.json", $json);
+}
+
+$highways = json_decode($json, true); 
+
+ ?>
 
 <h2>List of current routes</h2>
 
@@ -28,7 +36,7 @@ $highways = json_decode($json, true);
   </field>
 </form>
 
-<ul>
+<ul class="route-list">
 	<?php
 	if( isset ($_POST['submitted']) ) {
 		foreach($highways as $highwayId => $highwayData) {

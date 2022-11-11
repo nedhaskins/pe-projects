@@ -30,7 +30,6 @@ if ( isset($_POST['submitted']) ) {
 	}
 
 	$highway = array(
-		'id' => uniqid('highway'),
 		'type' => $_POST['route-type'],
 		'number' => $_POST['route-number'],
 		'name' => $name . " " . $_POST['route-number'],

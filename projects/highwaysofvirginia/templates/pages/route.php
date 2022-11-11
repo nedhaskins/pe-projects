@@ -16,7 +16,7 @@ $highwayData = getHighwayById($_GET['slug']); ?>
 	<a href="?page=update&slug=<?=$_GET['slug']?>">Update route info</a>
 </button>
 <button>
-	<a href="">Delete route</a>
+	<a href="?page=delete&slug=<?=$_GET['slug']?>">Delete route</a>
 </button>
 
 <!--include extra modules with cool descriptions of cool places later on -->

@@ -3,6 +3,10 @@
 @import 'typography.css';
 
 
+body {
+	background-color: gray;
+}
+
 
 
 picture {
@@ -14,4 +18,16 @@ picture {
 
 nav a {
 	color:  yellow;
+}
+
+
+
+pre {
+		background-color: black;
+	color: lime;
+}
+
+.route-list {
+	font-weight: 700;
+	color: purple;
 }

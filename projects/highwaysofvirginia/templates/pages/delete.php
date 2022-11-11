@@ -1,7 +1,24 @@
-<h1>Delete Route Page</h1>
+<h3>Delete Route Page</h3>
 
+<?php
 
+$highways = getHighways();
 
+$currentHighwayId = $_GET['slug'];
 
+foreach( $highways as $highwayId => $highwayData) {
+	if( $currentHighwayId == $highwayId) {
+		unset($highways[$currentHighwayId]);
+		saveDatabase($highways);
 
-<p><?=$highway['name']?> was successfully deleted from the database.</p>
+		$deletedData = $highwayData;
+	}
+
+	if( isset($deletedData) ) {
+		echo $deletedData['name'] . " was taken out of the database.";
+	}
+}
+?>
+<button>
+	<a href="?page=home">Back to home page</a>
+</button>
