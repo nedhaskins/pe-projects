@@ -1,40 +1,20 @@
 <?php
 
-$slug = $_GET['slug'] ?? false;
-$buttonMessage = 'Update route';
+$highways = getHighways();
 
-$filepath = 'data/highways.json';
-$json = file_get_contents($filepath);
-$highways =  json_decode($json, true);
+//Pulling in the current highway data (before updating)
+$currentHighwayId = $_GET['slug'];
+$highway = getHighwayById($currentHighwayId);
 
-foreach($highways as $highway) {
+$type = $highway['type'];
+$number = $highway['number'];
+$lengthInMiles = $highway['length'];
+$startLocation = $highway['startLocation'];
+$endLocation = $highway['endLocation'];
+$image = $highway['image'] ?? false;
+$description = $highway['description'];
 
-	if( $highway['id'] == $slug ) {
-
-		$id = $highway['id'];
-		$type = $highway['type'];
-		$number = $highway['number'];
-		$lengthInMiles = $highway['length'];
-		$startLocation = $highway['startLocation'];
-		$endLocation = $highway['endLocation'];
-		$image = $highway['image'];
-		$description = $highway['description'];
-
-		show($highway);
-		show($id);
-	}
-
-}
-
-
-?>
-
-<picture>
-	<img src="<?=$image?>" alt="todo">
-</picture>
-
-<?php
-
+$buttonMessage = 'Update highway';
 include('templates/components/form.php');
 
 if ( isset($_POST['submitted']) ) {
@@ -58,67 +38,27 @@ if ( isset($_POST['submitted']) ) {
 		'startLocation' => $_POST['start-location'],
 		'endLocation' => $_POST['end-location'],
 		'description' => $_POST['description'],
-		'image' => uploadImageFile(),
+		'image' => uploadImageFile() ?? $image,
 	);
 
+	$highways[$currentHighwayId] = $highway;
 
+	$json = json_encode($highways);
+	file_put_contents('data/highways.json', $json);
 
-	//replace $highways[index] with $updatedHighway.
-
-
-	$index = array_search($id, $highways);
-
-
-
-var_dump($highways[$index]);
-
-	//the above value is equal to the FIRST item in the array!
-
-	$highways[$index] = $highway;
-	
-	$encoded = json_encode($highways);
-
-	if( file_put_contents("data/highways.json", $encoded) ) {
-		echo "Nice work. You did it!";
-		// show($updatedHighway);
-
-	}
+	echo "<p class='success'>The route was successfully updated!</p>";
 
 }
 
-
-
-
-
-
-
-
-
-
-	// $updatedHighway = array(
-
-	// 	'id' => uniqid('highway'),
-	// 	'type' => $_POST['route-type'],
-	// 	'number' => $_POST['route-number'],
-	// 	'name' => $name . " " . $_POST['route-number'],
-	// 	'length' => $_POST['length-in-miles'],
-	// 	'startLocation' => $_POST['start-location'],
-	// 	'endLocation' => $_POST['end-location'],
-	// 	'description' => $_POST['description'],
-	// 	'image' => uploadImageFile()
-
-	// );
-
-	// 
-
-	// $encoded = json_encode($highways);
-
-	// if( file_put_contents('data/highways.json', $encoded) ) {
-	// 	echo "The route was successfully updated!";
-	// // header("Location: templates/pages/success.php");
-	// }
-
 ?>
+
+
+<?php show($highway); ?>
+
+<picture>
+	<img src="<?=$highway['image']?>" alt="todo">
+</picture>
+
 
 <nav>
     <ul>

@@ -74,8 +74,6 @@ function uploadImageFile() {
 		} else {
         echo "There was an error uploading this file!! :/";
       }
-	} else {
-      echo "You can't upload this type of file here. :/";
 	}
 }		
 

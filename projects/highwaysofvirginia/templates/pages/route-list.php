@@ -50,6 +50,5 @@ $highways = json_decode($json, true);
     <ul>
         <li><a href='?'>Home</a></li>
         <li><a href='?page=create'>Create</a></li>
-        <li><a href='?page=update'>Update</a></li>
     </ul>
 </nav>
