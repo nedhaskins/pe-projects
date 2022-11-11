@@ -31,17 +31,16 @@ $highways = json_decode($json, true);
 <ul>
 	<?php
 	if( isset ($_POST['submitted']) ) {
-		foreach($highways as $highway) {
-			if($_POST['route-filter'] == $highway['type']) { ?>
+		foreach($highways as $highwayId => $highwayData) {
+			if($_POST['route-filter'] == $highwayData['type']) { ?>
 				<li>
-					<a href="?page=route&slug=<?=$highway['id']?>"><?=$highway['name']?></a>
+					<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
 				</li>
 		<?php }
 		}
 	} else {
-		foreach($highways as $highway) { ?>
-			<li>
-				<a href="?page=route&slug=<?=$highway['id']?>"><?=$highway['name']?></a>
+		foreach($highways as $highwayId => $highwayData) { ?>
+				<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
 			</li>
 	<?php }
 	} ?>

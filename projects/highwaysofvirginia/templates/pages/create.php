@@ -1,5 +1,7 @@
 <?php
 
+$highways = getHighways();
+
 $routeType = "";
 $number = "99";
 $lengthInMiles = "99";
@@ -13,10 +15,6 @@ include('templates/components/form.php');
 
 if ( isset($_POST['submitted']) ) {
 
-    $filepath = 'data/highways.json';
-    $json = file_get_contents($filepath);
-    $phpArray = json_decode($json, true) ?? [];
-
     if($_POST['route-type'] == 'interstate') {
         $name = 'Interstate';
     } elseif($_POST['route-type'] == 'us-route') {
@@ -26,7 +24,6 @@ if ( isset($_POST['submitted']) ) {
     }
 
     $highway = array(
-        'id' => uniqid('highway'),
         'type' => $_POST['route-type'],
         'number' => $_POST['route-number'],
         'name' => $name . " " . $_POST['route-number'],
@@ -37,17 +34,15 @@ if ( isset($_POST['submitted']) ) {
         'image' => uploadImageFile()
     );
 
-    array_push($phpArray, $highway);
+    $highways[uniqid('route')] = $highway;
 
-    $encoded = json_encode($phpArray);
+    $encoded = json_encode($highways);
 
-    if( file_put_contents($filepath, $encoded) ) {
+    if( file_put_contents('data/highways.json', $encoded) ) {
        include('templates/pages/success.php');
        // header("Location: templates/pages/success.php");
     }
 }
-
-
 
 ?>
 

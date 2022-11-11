@@ -24,9 +24,9 @@ function getHighways() {
 
 function getHighwayById($id) {
 	$highways = getHighways();
-	foreach($highways as $highway) {
-		if($id == $highway['id']) {
-			return $highway;
+	foreach($highways as $highwayId => $highwayData) {
+		if($highwayId == $id) {
+			return $highwayData;
 		}
 	}
 }
