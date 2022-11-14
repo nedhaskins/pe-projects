@@ -41,13 +41,16 @@ if ( isset($_POST['submitted']) ) {
 		'image' => uploadImageFile() ?? $image,
 	);
 
-	for($i = 0; $i < count($highways); $i++) {
-		if($highways[$i]['id'] == $currentHighwayId) {
-			$highways[$i] = $highway;
-		}
-	}
+	// for($i = 0; $i < count($highways); $i++) {
+	// 	if($highways[$i]['id'] == $currentHighwayId) {
+	// 		$highways[$i] = $highway;
+	// 	}
+	// }
 
+	$index = array_search($currentHighwayId, $highway);
+	var_dump($index);
 
+	$highways[$index] = $highway;
 	
 
 	$json = json_encode($highways);

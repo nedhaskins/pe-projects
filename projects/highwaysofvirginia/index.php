@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <meta property='og:image' content='https://peprojects.dev/alpha-4/ned/projects/php-crud/images/i-95.jpeg'> 
     <meta name='description' content='Resource for information on Virginia highways and byways.'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
