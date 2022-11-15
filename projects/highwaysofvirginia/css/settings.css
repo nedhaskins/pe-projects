@@ -10,6 +10,10 @@ html {
 --cgred: #dd3b30;
 --palegreen: #95f598;
 
+--anakiwa: #8acde4;
+--lightgreen: #4af2a1;
+--amazon: #36745c;
+
 --paper: var(--sweetcorn);
 --ink: var(--falured);
 
@@ -18,14 +22,9 @@ html {
 
 }
 
-body {
-	background-color: var(--paper);
-	color: var(--ink);
-}
 
 @media(prefers-color-scheme: dark) {
 	body {
-		background-color: var(--paper-dark);
-		color: var(--ink-dark);
+	
 	}
 }

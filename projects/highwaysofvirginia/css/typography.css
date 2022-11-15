@@ -14,6 +14,7 @@ html {
 
 body {
 	font-family: 'Baskerville';
+	color: wheat;
 }
 
 em {
@@ -22,11 +23,17 @@ em {
 
 
 h1 {
+	font-family: 'Permanent Marker';
+	color: yellow;
 	font-size: var(--stepThree);
+	text-align: center;
 }
 
 h2 {
-	font-size: var(--stepThree);
+	font-family: 'Permanent Marker';
+	color: white;
+	font-size: var(--stepTwo);
+	text-align: center;
 }
 
 h3 {
@@ -34,14 +41,12 @@ h3 {
 }
 
 p {
-	font-size: var(--floor);
+	color: white;
+	font-size: 22px;
+	letter-spacing: 0.1em;
+	text-align: center;
 }
 
-/*@media(min-width: 900px) {
-	.body-copy {
-		font-size: 0.9rem;
-	}
-}*/
 
 .title-voice {
 	letter-spacing: 0.3em;
@@ -55,6 +60,19 @@ p {
 .bold-voice {
 	font-weight: 600;
 	letter-spacing: 0.1em;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 28px;
+}
+
+nav li {
+	display: inline-block;
+	border: 3px solid yellow;
+	padding: 15px;
+
 }
 
 

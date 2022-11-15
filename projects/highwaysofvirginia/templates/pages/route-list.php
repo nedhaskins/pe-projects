@@ -8,25 +8,26 @@ if( empty($highways) ) {
 
  ?>
 
-<h2>List of current routes</h2>
+<h2>Route List</h2>
 
-<p>From here, you can view all routes or filter them by type.</p>
+<p>From here, you can view all routes or filter them by type, or create a new route.</p>
+
+<p>Each detail page has information about each route.  You can edit the current data or delete the route from the database from that page.</p>
 
 <form method="POST">
 	<field>
-      <label>Filter routes by type</label>
+      <label>What type of route are you looking for?</label>
 
       <select name="route-filter" id="route-filter" required>
 
-          <option value="" selected disabled>What kind of routes are you looking for?</option>
-
+      	<option value="all-routes">All routes</option>
       	<option value="interstate">Interstate</option>
       	<option value="us-route">US Route</option>
       	<option value="state-route">State Route</option>
      
       </select>
 
-      <button type="submit" name="submitted">Filter routes</button>
+      <button class="form-button" type="submit" name="submitted">Filter routes</button>
 
   </field>
 </form>
@@ -39,10 +40,15 @@ if( empty($highways) ) {
 				<li>
 					<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
 				</li>
+		<?php } elseif($_POST['route-filter'] == 'all-routes') { ?>
+				<li>
+					<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
+				</li>
 		<?php }
 		}
 	} else {
 		foreach($highways as $highwayId => $highwayData) { ?>
+			<li>
 				<a href="?page=route&slug=<?=$highwayId?>"><?=$highwayData['name']?></a>
 			</li>
 	<?php }
@@ -52,6 +58,6 @@ if( empty($highways) ) {
 <nav>
     <ul>
         <li><a href='?'>Home</a></li>
-        <li><a href='?page=create'>Create</a></li>
+        <li><a href='?page=create'>Create a new route</a></li>
     </ul>
 </nav>
