@@ -29,6 +29,11 @@ h1 {
 	text-align: center;
 }
 
+.main-header-text {
+	margin-top: 30px;
+}
+
+
 h2 {
 	font-family: 'Permanent Marker';
 	color: white;
@@ -47,43 +52,7 @@ p {
 	text-align: center;
 }
 
-
-.title-voice {
-	letter-spacing: 0.3em;
-}
-
-.attention-voice {
-	font-style: italic;
-	letter-spacing: 0.2em;
-}
-
-.bold-voice {
-	font-weight: 600;
-	letter-spacing: 0.1em;
-}
-
-nav ul {
-	display: flex;
-	justify-content: center;
-	gap: 28px;
-}
-
-nav li {
-	display: inline-block;
-	border: 3px solid yellow;
-	padding: 15px;
-
-}
-
-
-
-
-
-/*------COMPONENTS------*/
-
-.navbar .link, .about-navbar .link {
-	font-size: 	font-size: var(--floor);
-	font-style: italic;
-	letter-spacing: 0.1em;
-	text-decoration: none;
+.success {
+	margin-top: 10px;
+	color: var(--fadedlime);
 }

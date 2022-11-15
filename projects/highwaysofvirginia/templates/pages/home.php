@@ -12,7 +12,7 @@
 
 
 
-<nav>
+<nav class="page-menu">
     <ul>
         <li><a href='?page=route-list'>View the routes</a></li>
     </ul>

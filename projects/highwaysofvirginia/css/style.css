@@ -10,26 +10,19 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	height: 100vh;
-
-
+	min-height: 100vh;
 }
 
 picture {
 	max-width:  200px;
-	border: 2px solid white;
-	padding:  5px;
 }
-
-
-nav a {
-	color:  yellow;
-}
-
 
 pre {
 	background-color: black;
 	color: lime;
+	font-family: 'Courier';
+	font-size: 16px;
+	padding: 20px;
 }
 
 inner-column {
@@ -37,10 +30,12 @@ inner-column {
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
-/*	border: 3px solid red;*/
-	max-width: 500px;
-		height: 100%;
-
+	align-items: center;
 	justify-content: space-evenly;
+	max-width: 500px;
+	min-height: 100vh;
 }
 
+.update-photo {
+	padding: 20px;
+}

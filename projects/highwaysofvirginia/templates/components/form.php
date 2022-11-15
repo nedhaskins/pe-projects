@@ -1,7 +1,8 @@
-<form method="POST"
+<form class="create-update-form" method="POST"
 enctype="multipart/form-data">
 
     <field>
+        <label>Highway Shield Photo</label>
         <input type="file" name="image-file" href="<?=$image?>">
     </field>
 
@@ -66,11 +67,12 @@ enctype="multipart/form-data">
         <input name='end-location' type='text' value='<?=$endLocation?>' required>
     </field>
 
-    <field>
+    <field class="description-field">
         <label>Description</label>
         <textarea cols=32 rows=10 name='description' type='text' value='' required><?=$description?></textarea>
     </field>
-
-    <button class='route-button' type="submit" name='submitted'><?=$buttonMessage?></button>
+    <button-wrapper class="form-button-wrapper">
+        <button class='form-button' type="submit" name='submitted'><?=$buttonMessage?></button>
+    </button-wrapper>
 
 </form>

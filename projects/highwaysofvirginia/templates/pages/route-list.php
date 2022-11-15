@@ -1,3 +1,6 @@
+
+
+
 <?php
 
 $highways = getHighways();
@@ -14,7 +17,7 @@ if( empty($highways) ) {
 
 <p>Each detail page has information about each route.  You can edit the current data or delete the route from the database from that page.</p>
 
-<form method="POST">
+<form class="filter-form" method="POST">
 	<field>
       <label>What type of route are you looking for?</label>
 
@@ -25,10 +28,8 @@ if( empty($highways) ) {
       	<option value="us-route">US Route</option>
       	<option value="state-route">State Route</option>
      
-      </select>
-
-      <button class="form-button" type="submit" name="submitted">Filter routes</button>
-
+      </select> 
+  	<button class="form-button" type="submit" name="submitted">Filter routes</button>
   </field>
 </form>
 
@@ -55,7 +56,7 @@ if( empty($highways) ) {
 	} ?>
 </ul>
 
-<nav>
+<nav class="page-menu">
     <ul>
         <li><a href='?'>Home</a></li>
         <li><a href='?page=create'>Create a new route</a></li>
