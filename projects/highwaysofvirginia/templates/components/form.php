@@ -1,3 +1,17 @@
+<?php
+
+$type = $highway['type'];
+$number = $highway['number'];
+$lengthInMiles = $highway['length'];
+$startLocation = $highway['startLocation'];
+$endLocation = $highway['endLocation'];
+$image = $highway['image'] ?? false;
+$description = $highway['description'];
+
+$buttonMessage = 'Update highway';
+
+?>
+
 <form class="create-update-form" method="POST"
 enctype="multipart/form-data">
 

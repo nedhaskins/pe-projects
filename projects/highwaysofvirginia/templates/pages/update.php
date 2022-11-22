@@ -4,24 +4,9 @@
 
 	<?php
 
-	$highways = getHighways();
-
 	//Pulling in the current highway data (before updating)
 	$currentHighwayId = $_GET['slug'];
 	$highway = getHighwayById($currentHighwayId);
-
-	$type = $highway['type'];
-	$number = $highway['number'];
-	$lengthInMiles = $highway['length'];
-	$startLocation = $highway['startLocation'];
-	$endLocation = $highway['endLocation'];
-	$image = $highway['image'] ?? false;
-	$description = $highway['description'];
-
-	$buttonMessage = 'Update highway';
-
-
-	include('templates/components/form.php');
 
 	if ( isset($_POST['submitted']) ) {
 
@@ -46,6 +31,7 @@
 			'image' => uploadImageFile() ?? $image,
 		);
 
+		$highways = getHighways();
 		$highways[$currentHighwayId] = $highway;
 
 		$json = json_encode($highways);
@@ -53,14 +39,9 @@
 
 		echo "<p class='success'>The route was successfully updated!</p>";
 
-		$type = $_POST['type'];
-		$number = $_POST['number'];
-		$lengthInMiles = $_POST['length'];
-		$startLocation = $_POST['startLocation'];
-		$endLocation = $_POST['endLocation'];
-		$image = $_POST['image'] ?? false;
-		$description = $_POST['description'];		
 	}
+
+	include('templates/components/form.php');
 
 	?>
 
