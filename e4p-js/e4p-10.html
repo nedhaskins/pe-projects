@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title></title>
+</head>
+<body>
+
+<h1>item checkout<h1>
+	<p>Enter the name and cost of some items -- this app will show the total cost.  You can add as many items as you like -- or remove items.</p>
+
+<div class="item-info">
+	<form>
+		<div class="item-row">
+			<label for="name">Enter the item name.</label>
+			<input data-id="name" type="text">
+			<label for="cost">Enter the item cost.</label>
+			<input data-id="cost" type="number">
+		</div>
+		<button type="submit">Add item to total</button>
+	</form>
+</div>
+
+<table>
+	<tbody>
+	</tbody>
+</table>
+
+<div class="item-total">
+	<h2>Total</h2>
+	<span class="total"></span>
+</div>
+
+
+<script>
+
+console.clear();
+	
+const $form = document.querySelector('form');
+const $output = document.querySelector('tbody');
+const $totalOutput = document.querySelector('span.total');
+
+var items = [{name: 'squash', cost :2}, {name: 'lettuce', cost:3}];
+var prices = [];
+
+
+function renderItem(item) {
+	return `
+	<tr class="item-wrapper">
+		<td>${item.name}</td>
+		<td>${item.cost}</td>
+	</tr>
+	`;
+}
+//divs will be <tr>s
+//ps will be <td>s
+
+
+function renderItems() {
+	var template = "";
+	items.forEach( function (item) {
+		template += renderItem(item);
+	});
+	$output.innerHTML = template;
+	$totalOutput.innerHTML = getTotal();
+}
+
+
+function addItem(item) {
+	items = [...items, item];
+	renderItems();
+}
+
+
+
+
+// function getPrices() {
+// 	items.forEach( function(item) {
+// 		prices = [...prices, item.cost];				  	
+// 	});
+// }
+
+// function findTotalCost(prices) {
+// 	const sum = prices.reduce((a, b) => a + b, 0);
+// 	return sum;
+// }
+
+function getTotal() {
+	let total = 0;
+	items.forEach( function(item) {
+		total = total + Number(item.cost);
+	});
+	return total;
+}
+
+
+
+
+renderItems();
+addItem({name:'orange', cost:'30'});
+
+
+getTotal();
+
+//Take all of the cost values from each of the item fields.  The data-id for the cost fields is cost.
+//The array is going to be made up of all items that have a data-id of cost.
+
+function handleAddItem() {
+	let name = $form.querySelector('input[data-id="name"]');
+	let cost = $form.querySelector('input[data-id="cost"]');
+	var item = {
+		name: name.value,
+		cost: cost.value
+	};
+	addItem(item);
+}
+
+
+$form.addEventListener('submit', function(event) {
+	event.preventDefault();
+	handleAddItem();
+
+});
+
+</script>
+
+</body>
+</html>
