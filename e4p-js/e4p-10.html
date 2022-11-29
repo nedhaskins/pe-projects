@@ -7,32 +7,49 @@
 	<title></title>
 </head>
 <body>
+<inner-column>
 
-<h1>item checkout<h1>
-	<p>Enter the name and cost of some items -- this app will show the total cost.  You can add as many items as you like -- or remove items.</p>
+<h1>item checkout</h1>
+
+<div class="rectangle-wrapper">
+	<div class="rectangle">
+	</div>
+</div>
+
+
+
+
+
+
+
+<p>Enter the name and cost of some items -- this app will show the total cost.  You can add as many items as you like -- or remove items.</p>
 
 <div class="item-info">
 	<form>
-		<div class="item-row">
-			<label for="name">Enter the item name.</label>
-			<input data-id="name" type="text">
-			<label for="cost">Enter the item cost.</label>
-			<input data-id="cost" type="number">
-		</div>
-		<button type="submit">Add item to total</button>
+		<label for="name">item</label>
+		<input data-id="name" type="text">
+		<label for="cost">amount</label>
+		<input data-id="cost" type="number">
+		<button type="submit">add item</button>
 	</form>
 </div>
 
-<table>
-	<tbody>
-	</tbody>
-</table>
-
-<div class="item-total">
-	<h2>Total</h2>
-	<span class="total"></span>
+<div class="item-table">
+	<table>
+		<tbody>
+		</tbody>
+	</table>
 </div>
 
+<div class="item-total">
+	<table>
+		<tbody>
+			<td>Total</td>
+			<td class="cost total"></td>
+		</tbody>
+	</table>
+</div>
+</inner-column>
 
 <script>
 
@@ -40,7 +57,7 @@ console.clear();
 	
 const $form = document.querySelector('form');
 const $output = document.querySelector('tbody');
-const $totalOutput = document.querySelector('span.total');
+const $totalOutput = document.querySelector('td.total');
 
 var items = [{name: 'squash', cost :2}, {name: 'lettuce', cost:3}];
 var prices = [];
@@ -50,7 +67,7 @@ function renderItem(item) {
 	return `
 	<tr class="item-wrapper">
 		<td>${item.name}</td>
-		<td>${item.cost}</td>
+		<td class="cost">${item.cost}</td>
 	</tr>
 	`;
 }

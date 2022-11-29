@@ -1,24 +1,156 @@
+@import 'reset.css';
 
-	
+
+
+
+
+/*SETUP*/
+
+html {
+	--defaultPadding: 20px;
+	--defaultMarginTop: 20px;
+}
+
 body {
-/*	background-color: black;*/
-	color: #e02f07;
+	color: var(--vermilion);
+	font-family: 'Baskerville';
+}
+
+inner-column {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: var(--defaultPadding);
+	max-width: 600px;
 }
 
 button {
-	background-color: #e02f07;
+	background-color: var(--vermilion);
 	padding: 10px;
+	border-radius: 15px;
+	font-family: 'Baskerville';
+	color: white;
 }
 
 .item-row, button {
 	margin-top: 20px;
 }
 
+form, label, input {
+	display: block;
+}
 
+input {
+	margin-top: 10px;
+}
+
+input + label {
+	margin-top: 10px;
+}
 
 output {
 	display: block;
 	margin-top: 30px;
-	border: 3px solid #e02f07;
+	border: 3px solid var(--vermilion);
 	padding: 40px;
 }
+
+.item-info {
+	margin-top: var(--defaultMarginTop);
+	padding: var(--defaultPadding);
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: var(--coralcandy);
+}
+
+
+
+
+/*VARIABLES / SETTINGS*/
+
+html {
+	--vermilion: #e02f07;
+	--coralcandy: #f5cfce;
+}
+
+
+
+
+
+/*TYPOGRAPHY*/
+
+h1 {
+	color: black;
+	font-size: 44px;
+	font-style: italic;
+	letter-spacing: 0.25em;
+}
+
+p {
+	font-size: 24px;
+	color: black;
+}
+
+label {
+	text-decoration: none;
+	font-size: 24px;
+}
+
+input {
+	font-size: 20px;
+	font-family: 'Baskerville';
+}
+
+
+
+
+/*TABLE PROPERTIES*/
+
+.item-table {
+	margin-top: var(--defaultMarginTop);
+	border: 1px solid black;
+	border-radius: 20px 20px 0px 0px;
+	padding: 0px 20px 0px 20px;
+}
+
+.item-total {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	background-color: var(--vermilion);
+	padding: 0px 20px 0px 20px;
+	color: white;
+}
+
+table {
+	width: 100%;
+}
+
+
+td {
+	padding: 12px;
+	width: 50%;
+}
+
+.cost {
+	text-align: right;
+}
+
+
+/*E4P-10 STYLES*/
+
+.rectangle-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: right;
+	padding: 10px 0px 10px 0px;
+}
+
+.rectangle {
+/*	margin-top: var(--defaultMarginTop);*/
+	padding: 5px;
+	width: 60%;
+	background-color: var(--vermilion);
+}
+
