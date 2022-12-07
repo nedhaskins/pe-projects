@@ -1,0 +1,14 @@
+{
+  "name": "node-example",
+  "version": "0.0.0",
+  "description": "Practice project",
+  "main": "index.js",
+  "scripts":
+  {
+    "start": "node-example.js"
+  },
+  "dependencies":
+  {
+    "uuid": "^9.0.0"
+  }
+}
