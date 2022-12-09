@@ -1,20 +1,23 @@
 import http from "node:http";
 import fs from "node:fs";
 
+var projectFiles = []
 
 fs.readdir('./', function(error, files) {
 	if(error) return console.log('error', error);
-
-	files.forEach( function(file) {
-
-		const components = file.split('.');
-		const fileName = (components[0]);
-	})
+	console.log(files);
+	
 });
 
 
-const server = http.createServer( function(request, response) {
 
+
+
+
+
+
+const server = http.createServer( function(request, response) {
+		
 	response.setHeader('Content-Type', 'text/html');
 
 	if (request.url == '/home') {
@@ -56,7 +59,7 @@ const server = http.createServer( function(request, response) {
 			response.end();
 		});
 	}
-})
+});
 
 
 const PORT = 7777;
@@ -65,5 +68,3 @@ const HOSTNAME = 'localhost';
 server.listen(PORT, HOSTNAME, function() {
 	console.log(`Server is running at http://${HOSTNAME}:${PORT}`);
 });
-
-//if
