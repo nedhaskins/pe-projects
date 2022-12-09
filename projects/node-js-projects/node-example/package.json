@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "description": "Practice project",
   "main": "index.js",
-  "scripts":
-  {
-    "start": "node-example.js"
+  "type": "module",
+  "scripts": {
+    "start": "node-example.js",
+    "watch": "nodemon index.js"
   },
-  "dependencies":
-  {
+  "dependencies": {
+    "lodash": "^4.17.21",
     "uuid": "^9.0.0"
   }
 }

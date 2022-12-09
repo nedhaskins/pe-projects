@@ -1,0 +1,41 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'settings.css';
+@import 'structure.css';
+@import 'typography.css';
+
+
+body {
+	background: linear-gradient( rgba(76, 45, 18, 0.6), rgba(76, 45, 18, 0.6)), url('../images/main-background.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+picture {
+	max-width:  200px;
+}
+
+pre {
+	background-color: black;
+	color: lime;
+	font-family: 'Courier';
+	font-size: 16px;
+	padding: 20px;
+}
+
+inner-column {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 500px;
+	min-height: 100vh;
+}
+
+.update-photo {
+	padding: 20px;
+}

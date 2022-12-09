@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.update-page {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	margin: 20px 0px 30px 0px;
+}
+
+
+
+
+
+.route-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.route-list li {
+	margin-top: 18px;
+}
+
+
+/*MENUS*/
+
+
+.route-menu ul {
+	display: flex;
+	justify-content: center;
+	gap: 28px;
+}
+
+.route-menu li a {
+	display: inline-block;
+	border: 3px solid var(--fadedlime);
+	font-size: 20px;
+	color: var(--fadedlime);
+	padding: 15px;
+	text-align: center;
+}
+
+.route-menu li a:hover {
+	background-color: var(--fadedlime);
+	color: black;
+}
+
+
+
+.page-menu ul {
+	display: flex;
+	justify-content: center;
+	gap: 28px;
+}
+
+.page-menu li a {
+	display: inline-block;
+	border: 3px solid yellow;
+	font-size: 20px;
+	color: yellow;
+	padding: 15px;
+	text-align: center;
+}
+
+.page-menu li a:hover {
+	background-color: yellow;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORM ELEMENTS*/
+
+
+.form-button-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.form-button {
+	background-color: yellow;
+	color: black;
+	margin-top: 20px;
+	padding: 8px;
+	width: 30%;
+}
+
+
+.filter-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.filter-form field {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.filter-form select {
+	margin-top: 20px;
+	padding: 8px;
+	font-family: 'Baskerville';
+	text-align: center;
+	width: 60%;
+}
+
+
+
+
+.create-update-form {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.create-update-form field {
+	margin-top: 10px;
+}
+
+.create-update-form label {
+	margin-right: 20px;
+}
+
+.create-update-form .description-field {
+	display: flex;
+}@import 'reset.css';
+@import 'setup.css';
+@import 'settings.css';
+@import 'structure.css';
+@import 'typography.css';
+
+
+body {
+	background: linear-gradient( rgba(76, 45, 18, 0.6), rgba(76, 45, 18, 0.6)), url('../images/main-background.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+picture {
+	max-width:  200px;
+}
+
+pre {
+	background-color: black;
+	color: lime;
+	font-family: 'Courier';
+	font-size: 16px;
+	padding: 20px;
+}
+
+inner-column {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 500px;
+	min-height: 100vh;
+}
+
+.update-photo {
+	padding: 20px;
+}
