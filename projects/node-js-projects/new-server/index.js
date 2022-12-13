@@ -13,6 +13,40 @@ fs.readdir('./', function(error, files) {
 	console.log(dirFiles);
 });
 
+const server = http.createServer( function(request, response) {
+		
+	response.setHeader('Content-Type', 'text/html');
+
+	dirFiles.forEach( function(file) {
+
+		//note the difference between file name and path name
+
+		if (request.url == `/${file}`) {
+			fs.readFile(file, 'utf8', (err, data) => {
+				if(err) {
+					return console.error(err);
+				}
+				response.statusCode = '200';
+				response.write(data);
+				response.end();
+			});
+	 	}
+	})
+
+
+	// response.statusCode = '404';
+	// response.end();		
+});
+
+const PORT = 7777;
+const HOSTNAME = 'localhost';
+
+server.listen(PORT, HOSTNAME, function() {
+	console.log(`Server is running at http://${HOSTNAME}:${PORT}`);
+});
+
+
+
 // const server = http.createServer( function(request, response) {
 		
 // 	response.setHeader('Content-Type', 'text/html');
@@ -31,40 +65,6 @@ fs.readdir('./', function(error, files) {
 // 		}
 // 	 })
 // });
-
-const server = http.createServer( function(request, response) {
-		
-	response.setHeader('Content-Type', 'text/html');
-
-	dirFiles.forEach( function(file) {
-
-		
-		//note the difference between file name and path name
-
-		if (request.url == `/${file}`) {
-			fs.readFile(file, 'utf8', (err, data) => {
-				if(err) {
-					return console.error(err);
-				}
-				response.statusCode = '200';
-				response.write(data);
-				response.end();
-			});
-	 	}
-	})
-
-
-	response.statusCode = '404';
-	response.end();		
-});
-
-
-
-
-
-
-
-
 
 
 
@@ -113,12 +113,6 @@ const server = http.createServer( function(request, response) {
 // 	}
 // });
 
-const PORT = 7777;
-const HOSTNAME = 'localhost';
-
-server.listen(PORT, HOSTNAME, function() {
-	console.log(`Server is running at http://${HOSTNAME}:${PORT}`);
-});
-
+	
 
 

@@ -1,0 +1,50 @@
+class MonsterApp {
+
+	constructor (id, name age, favFood, adopted, portrait) {
+		this.name = name;
+		this.age = age;
+		this.favFoods = [];
+		this.adopted = adopted.
+		this.monsters = [];
+	}
+
+	setUpApp() {
+		const data = JSON.parse( localStorage.getItem('monsterData') ) || []
+		data.forEach (monster) =
+
+		this.monsters = [...this.monsters, monsterData];
+		console.log('Monster data was entered succesfully---')
+		this.renderMonsters();
+
+	}
+
+
+	renderMonsters() {
+		var template = "<ul>";
+		this.monsters.forEach( (monster) => {
+			template += this.renderMonster(monster);
+
+		});
+		template += "</ul>";
+		this.$output.innerHTML = template;
+	}
+
+	renderMonster(monster) {
+		var name = monster.name;
+			return `
+				<li> id="monster" data-id="${exercise.id}">
+					<monster-card class=${monster.adopted = false ?? true}>
+						<h2>${monster.name}</h2>
+						<p>${monster.name} is ${monster.age} years old!</p>
+					</monster-card>
+				</li>
+			`;
+	}
+
+	addEventListeners () {
+		//Go to single monster-card
+	}
+
+
+
+}

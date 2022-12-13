@@ -1,0 +1,10 @@
+<% monsters.forEach( function(monster) { %>
+
+	<li id="monster">
+		<monster-card class=<% monster.adopted %> >
+			<h2><% monster.name %></h2>
+			<p><% monster.name %> is <% monster.age %> years old!</p>
+		</monster-card>
+	</li>
+
+<% }); %>

@@ -1,0 +1,24 @@
+[
+	{
+		"name": "Wanda",
+		"age": "15",
+		"favFoods": [
+			"squash",
+			"sausage",
+			"parsnips"
+		],
+		"adopted": false,
+		"image": "public/images/orangina.jpg"
+	},
+	{
+		"name": "Shadow",
+		"age": "22",
+		"favFoods": [
+			"grapes",
+			"steak",
+			"lettuce"
+		],
+		"adopted": false,
+		"image": "public/images/shadow.jpg"
+	}
+]
