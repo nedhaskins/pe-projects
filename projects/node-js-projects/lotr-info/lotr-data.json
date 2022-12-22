@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Elendil",
+		"description": "Father of Isildur and Anarion."
+	},
+	{
+		"name": "Thingol",
+		"description": "King of Doriath, Lúthien's father"
+	},
+	{
+		"name": "Gandalf",
+		"description": "Leader of the fellowship of the Ring"
+	},
+	{
+		"charName": "arrr",
+		"description": "arrr"
+	},
+	{
+		"charName": "Gildor",
+		"description": "rivendell"
+	}
+]

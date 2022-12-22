@@ -3,13 +3,13 @@
 		"slug": "that-food-truck",
 		"siteXtensionType": "html",
 		"header": "that food truck",
-		"copy": "Creating a basic web presence. Client relations.",
+		"copy": "Creating a minimalist web presence for a client.",
 		"sections": [
 			{
 				"moduleType": "subheader-and-text",
-				"header": "Research",
+				"header": "Description",
 				"copy": [
-					"Some placeholder text for now."
+					"The client needed a simple landing page with a description of their business and contact information.  The project reflects my understanding of HTML after about a month and a half of study."
 				]
 			},
 			{
@@ -17,13 +17,13 @@
 				"image-header": "Here's an example image",
 				"image": "images/los-angeles-skyline.jpeg",
 				"alt": "Los Angeles skyline",
-				"figcaption": "Some placeholder text for now."
+				"figcaption": "I used this background photo on the site landing to convey a feeling of excitement in an urban setting."
 			},
 			{
 				"moduleType": "subheader-and-text",
-				"header": "Conclusion",
+				"header": "Summary",
 				"copy": [
-					"Some placeholder text for now."
+					"This project forced us into the arenas of content strategy, client relations, and foundational user experience."
 				]
 			}
 		]
@@ -38,22 +38,14 @@
 				"moduleType": "subheader-and-text",
 				"header": "Research",
 				"copy": [
-					"Some placeholder text for now."
+					"At this point in the Design for the Web course we had spoken a lot about responsive web design.  What elements make a site successfully responsive?  How can a designer take a site from breakpoint to breakpoint in a way that keeps the content at the center of the user experience?  With this project we aimed to coalesce our understanding of these elements into a single-page showcase."
 				]
 			},
 			{
 				"moduleType": "subheader-figure-caption",
 				"image-header": "Here's an example image",
 				"image": "images/saigon-skyline.jpeg",
-				"alt": "Saigon skyline",
-				"figcaption": "Some placeholder text for now."
-			},
-			{
-				"moduleType": "subheader-and-text",
-				"header": "Conclusion",
-				"copy": [
-					"Some placeholder text for now."
-				]
+				"alt": "Saigon skyline"
 			}
 		]
 	},
@@ -65,9 +57,9 @@
 		"sections": [
 			{
 				"moduleType": "subheader-and-text",
-				"header": "Research",
+				"header": "Description",
 				"copy": [
-					"We chose a theme and looked up sites using this theme."
+					"For this project we were provided a CSS framework.  We were to choose a theme that a business or other entity could use and build out a site using only the elements in that framework."
 				]
 			},
 			{
@@ -81,7 +73,7 @@
 				"moduleType": "subheader-and-text",
 				"header": "Conclusion",
 				"copy": [
-					"Frameworks offer a lot of freedom even if it doesn't appear so at first."
+					"CSS frameworks offer a great deal of freedom even if it doesn't appear so at first. The more vanilla code a developer knows and can utilize, the more personalized they can make their projects.  In general, it appears that certain structural components such as headers and footers can have a definite appearance in a framework, relieving the developer of the need to design and position these elements."
 				]
 			}
 		]
@@ -90,13 +82,13 @@
 		"slug": "highwaysofvirginia",
 		"siteXtensionType": "php",
 		"header": "highways of virginia",
-		"copy": "Dynamically creating pages with PHP scripts",
+		"copy": "Dynamically creating pages with PHP scripts.  Full CRUD (create-read-updae-delete functionality).",
 		"sections": [
 			{
 				"moduleType": "subheader-and-text",
-				"header": "Research",
+				"header": "Description",
 				"copy": [
-					"Some placeholder text for now."
+					"At this point in the course we had been working with PHP for some time.  The goal here was to create a site that demonstrated knowledge of GET and POST requests and how forms add dynamic functionality to a page by allowing a user to make and receive these requests."
 				]
 			},
 			{
@@ -104,13 +96,13 @@
 				"image-header": "Here's an example image",
 				"image": "images/i-95.jpeg",
 				"alt": "Interstate 95",
-				"figcaption": "Some placeholder text for now."
+				"figcaption": "The site allows the user to view, enter, update, and delete data for roads and highways in the state of Virginia."
 			},
 			{
 				"moduleType": "subheader-and-text",
 				"header": "Conclusion",
 				"copy": [
-					"Some placeholder text for now."
+					"I dove deep with this project and gained a great deal of confidence with PHP. Reading the documentation was essential to making critical choices and eliminating non-working solutions for this project."
 				]
 			}
 		]
