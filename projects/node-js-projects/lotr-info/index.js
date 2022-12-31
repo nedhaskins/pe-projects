@@ -6,7 +6,7 @@ import fileSystem from 'node:fs';
 const app = express();
 
 //the file will change when updated (not a static file)
-// import lotrData from './lotr-data.json' assert { type: 'json' };
+import lotrData from './lotr-data.json' assert { type: 'json' };
 
 const PORT = 1535;
 
@@ -43,7 +43,7 @@ app.get('/', function(request, response) {
 app.post('/add-character', function(request, response) {
 
 
-	//createNewFile
+	//createNewFile - what if there's no file yet?
 
 	// 1 - parse the user input and turn it into an object
 	console.log(request.body);
