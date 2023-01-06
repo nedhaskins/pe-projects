@@ -46,7 +46,7 @@ if( isset($_POST['submitted']) ) {
 
 	show($formContent);
 
-	mail('info@ninjastrings.net', 'TEST EMAIL', $formContent);
+	mail('info@ninjastrings.net', 'TEST EMAIL', 'test content');
 
 };
 
