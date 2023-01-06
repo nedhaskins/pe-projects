@@ -31,6 +31,8 @@ if( isset($_POST['submitted']) ) {
 
 	mail('info@ninjastrings.net', 'TEST EMAIL', 'test content');
 
+	echo "Command received";
+
 };
 
 
@@ -53,7 +55,7 @@ if( isset($_POST['submitted']) ) {
 
 		<field>
 			<label>Name</label>
-			<input name='name' type='text' value='<?=$name?>'>
+			<input name='name' type='text'>
 		</field>
 
 		<button type="submit" name="submitted">Submit</button>
