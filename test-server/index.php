@@ -12,12 +12,9 @@
 
 if( isset($_POST['submitted']) ) {
 
-	$to = 'info@ninjastrings.net';
-	$subject = 'TEST EMAIL';
-	$from = "exampleEmail@thing.com";
-   $headers = "From:" . $from;
+	$name = $_POST['name'];
 	
-	mail('info@ninjastrings.net', 'big KAHUNA', 'BIG KAHUNA');
+	mail('info@ninjastrings.net', 'big KAHUNA', $name);
 
 	echo "Command received";
 
