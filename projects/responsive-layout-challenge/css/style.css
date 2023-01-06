@@ -358,9 +358,9 @@ be in the center of the viewport now!*/
 
 
 
-STRUCTURE VISUALIZATION
+/* STRUCTURE VISUALIZATION */
 
-* {
+/** {
 	color:  white;
 }
 
@@ -398,4 +398,4 @@ html {
 
 .site-footer {
 	border: 3px solid green;
-}
+}*/
