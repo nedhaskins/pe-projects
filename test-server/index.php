@@ -17,7 +17,7 @@ if( isset($_POST['submitted']) ) {
 	$from = "exampleEmail@thing.com";
    $headers = "From:" . $from;
 	
-	mail($to, $subject, 'test content', $headers);
+	mail('info@ninjastrings.net', 'big KAHUNA', 'BIG KAHUNA');
 
 	echo "Command received";
 
