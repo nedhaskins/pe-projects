@@ -12,24 +12,12 @@
 
 if( isset($_POST['submitted']) ) {
 
-	$formContent = "
-		Name: " . $_POST['name'] ."\n"
-	;
+	$to = 'info@ninjastrings.net';
+	$subject = 'TEST EMAIL';
+	$from = "exampleEmail@thing.com";
+   $headers = "From:" . $from;
 	
-
-	// array(
-	// 	'name' => $_POST['name'],
-	// 	'emailAddress' => $_POST['email-address'],
-	// 	'phoneNumber' => $_POST['phone-number'],
-	// 	'eventDate' => $_POST['event-date'],
-	// 	'eventTime' => $_POST['event-time'],
-	// 	'eventLocation' => $_POST['event-location'],
-	// 	'message' => $_POST['message'],
-	// );
-
-	show($formContent);
-
-	mail('info@ninjastrings.net', 'TEST EMAIL', 'test content');
+	mail($to, $subject, 'test content', $headers);
 
 	echo "Command received";
 
