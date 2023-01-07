@@ -131,37 +131,37 @@ if($formSubmitted) {
 
 		<field>
 			<label>Name</label>
-			<input name='name' type='text'>
+			<input name='name' type='text' required>
 		</field>
 
 		<field>
 			<label>Email Address</label>
-			<input name='email-address' type='email' >
+			<input name='email-address' type='email' required>
 		</field>
 
 		<field>
 			<label>Phone Number</label>
-			<input name='phone-number' type='tel' >
+			<input name='phone-number' type='tel' required>
 		</field>
 
 		<field>
 			<label>Event Date</label>
-			<input name='event-date' type='date' >
+			<input name='event-date' type='date' required>
 		</field>
 
 		<field>
 			<label>Event Start Time</label>
-			<input name='event-time' type='time' >
+			<input name='event-time' type='time' required>
 		</field>
 
 		<field>
 			<label>Event Location</label>
-			<input name='event-location' type='text' >
+			<input name='event-location' type='text' required>
 		</field>
 		
 		<field>
 			<label>Message</label>
-			<textarea name='message' rows='20' ></textarea>
+			<textarea name='message' rows='20' required></textarea>
 		</field>
 
 		<button type="submit" name="submitted">Submit</button>
