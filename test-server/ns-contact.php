@@ -1,10 +1,23 @@
 <?php 
 
+$name = "";
+$emailAddress = "";
+$phoneNumber = "";
+$eventDate = "";
+$eventTime = "";
+$eventLocation = "";
+$description = "";
+
+$hasName = false;
+$hasEmail = false;
+$hasPhone = false;
+$hasDate = false;
+$hasTime = false;
+$hasLocation = false;
+$hasMessage = false;
+
+
 $formSubmitted = isset($_POST['submitted']);
-
-$response = "";
-
-
 
 if($formSubmitted) {
 
@@ -57,7 +70,6 @@ if($formSubmitted) {
 		}
 	}
 
-
 	$allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && hasMessage;
 
 	if($allInfoFilledOut) {
@@ -75,9 +87,14 @@ if($formSubmitted) {
 		show($formContent);
 
 		mail('info@ninjastrings.net', 'TEST EMAIL', $formContent);
-	}
-};
 
+		$response = "The email was sent!";
+	} else {
+		$response = "There was a problem. :/";
+	}
+} else {
+	echo "Form hasn't been submitted yet.";
+}
 ?>
 
 <section class="contact">
@@ -133,7 +150,7 @@ if($formSubmitted) {
 
 	</form>
 
-
+<p class='form-response'><?=$response?></p>
 
 </section> <!--contact-->
 
