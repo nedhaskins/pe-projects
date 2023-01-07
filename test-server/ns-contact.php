@@ -33,6 +33,7 @@ $hasTime = false;
 $hasLocation = false;
 $hasMessage = false;
 
+$response = "";
 
 $formSubmitted = isset($_POST['submitted']);
 
