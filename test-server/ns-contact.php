@@ -88,7 +88,7 @@ if($formSubmitted) {
 		}
 	}
 
-	$allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && hasMessage;
+	$allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && $hasMessage;
 
 	if($allInfoFilledOut) {
 
