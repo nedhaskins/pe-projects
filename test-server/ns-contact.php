@@ -42,7 +42,7 @@ if($formSubmitted) {
 	$formData = "";
 
 	foreach($_POST as $key => $value) {
-		$formData .= $key . ": " . $value . "<br>";
+		$formData .= $key . ": " . $value . "\n";
 	}
 	// $allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && $hasMessage;
 
