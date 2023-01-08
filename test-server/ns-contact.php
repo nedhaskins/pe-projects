@@ -39,77 +39,32 @@ $formSubmitted = isset($_POST['submitted']);
 
 if($formSubmitted) {
 
-	if( isset($_POST['name']) ) {
-		$name = $_POST['name'];
-		if($name) {
-			$hasName = true;
-		}
+	$formData = "";
+
+	foreach($_POST as $key => $value) {
+		$formData .= $key . ": " . $value . "<br>";
 	}
+	// $allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && $hasMessage;
 
-	if( isset($_POST['email-address']) ) {
-		$emailAddress = $_POST['email-address'];
-		if($emailAddress) {
-			$hasEmail = true;
-		}
-	}
+	// if($allInfoFilledOut) {
 
-	if( isset($_POST['phone-number']) ) {
-		$phoneNumber = $_POST['phone-number'];
-		if($phoneNumber) {
-			$hasPhone = true;
-		}
-	}
-
-	if( isset($_POST['event-date']) ) {
-		$eventDate = $_POST['event-date'];
-		if($eventDate) {
-			$hasDate = true;
-		}
-	}
-
-	if( isset($_POST['event-time']) ) {
-		$eventTime = $_POST['event-time'];
-		if($eventTime) {
-			$hasTime = true;
-		}
-	}
-
-	if( isset($_POST['event-location']) ) {
-		$eventLocation = $_POST['event-location'];
-		if($eventLocation) {
-			$hasLocation = true;
-		}
-	}
-
-	if( isset($_POST['message']) ) {
-		$message = $_POST['message'];
-		if($message) {
-			$hasMessage = true;
-		}
-	}
-
-	$allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && $hasMessage;
-
-	if($allInfoFilledOut) {
-
-		$formContent = "
-			Name: " . $name . "\n
-			Email Address: " . $emailAddress . "\n
-			Phone Number: " . $phoneNumber . "\n
-			Event Date: " . $eventDate . "\n
-			Event Time: " . $_POST['event-time'] . "\n
-			Event Location: " . $_POST['event-location'] . "\n
-			Message: " . $_POST['message']
-		;
+	// 	$formContent = "
+	// 		Name: " . $name . "\n
+	// 		From: " . $emailAddress . "\n
+	// 		Phone Number: " . $phoneNumber . "\n
+	// 		Event Date: " . $eventDate . "\n
+	// 		Event Time: " . $_POST['event-time'] . "\n
+	// 		Event Location: " . $_POST['event-location'] . "\n
+	// 		Message: " . $_POST['message']
+	// 	;
 		
-		show($formContent);
+	// 	show($formContent);
 
-		mail('info@ninjastrings.net', 'TEST EMAIL', $formContent);
+	mail('info@ninjastrings.net', 'Test 1/7/23', $formData);
+	$response = "The email was sent!";
+// } else {
+// 	$response = "There was a problem. :/";
 
-		$response = "The email was sent!";
-	} else {
-		$response = "There was a problem. :/";
-	}
 } else {
 	echo "Form hasn't been submitted yet.";
 }
