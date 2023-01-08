@@ -16,23 +16,6 @@ function show($things) { //$things = any set variable
 	echo '</code>';
 }
 
-
-$name = "";
-$emailAddress = "";
-$phoneNumber = "";
-$eventDate = "";
-$eventTime = "";
-$eventLocation = "";
-$description = "";
-
-$hasName = false;
-$hasEmail = false;
-$hasPhone = false;
-$hasDate = false;
-$hasTime = false;
-$hasLocation = false;
-$hasMessage = false;
-
 $response = "";
 
 $formSubmitted = isset($_POST['submitted']);
@@ -44,38 +27,19 @@ if($formSubmitted) {
 	foreach($_POST as $key => $value) {
 		$formData .= $key . ": " . $value . "\n";
 	}
-	// $allInfoFilledOut = $hasName && $hasEmail && $hasPhone && $hasDate && $hasTime && $hasLocation && $hasMessage;
-
-	// if($allInfoFilledOut) {
-
-	// 	$formContent = "
-	// 		Name: " . $name . "\n
-	// 		From: " . $emailAddress . "\n
-	// 		Phone Number: " . $phoneNumber . "\n
-	// 		Event Date: " . $eventDate . "\n
-	// 		Event Time: " . $_POST['event-time'] . "\n
-	// 		Event Location: " . $_POST['event-location'] . "\n
-	// 		Message: " . $_POST['message']
-	// 	;
-		
-	// 	show($formContent);
-
 	mail('info@ninjastrings.net', 'Test 1/7/23', $formData);
 	$response = "The email was sent!";
-// } else {
-// 	$response = "There was a problem. :/";
 
 } else {
 	echo "Form hasn't been submitted yet.";
 }
+
 ?>
 
 <section class="contact">
 
 	<contact-header>
-
 		<h1>Let's get started.</h1>
-
 		<p>How can we help with your event or project today?</p>
 		<p>Please be as specific as possible!</p>
 		<p>You'll receive a response within 24 hours.</p>
@@ -126,4 +90,3 @@ if($formSubmitted) {
 <p class='form-response'><?=$response?></p>
 
 </section> <!--contact-->
-
