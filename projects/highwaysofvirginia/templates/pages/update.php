@@ -10,6 +10,8 @@ The name of the image is not saved in the update form.
 
 	<?php
 
+	// show($_FILES);
+
 	//Pulling in the current highway data (before updating)
 	$currentHighwayId = $_GET['slug'];
 	$highway = getHighwayById($currentHighwayId);
@@ -34,7 +36,7 @@ The name of the image is not saved in the update form.
 			'startLocation' => $_POST['start-location'],
 			'endLocation' => $_POST['end-location'],
 			'description' => $_POST['description'],
-			'image' => $image ?? uploadImageFile(),
+			'image' => uploadImageFile() ?? $highway['image'],
 		);
 
 		$highways = getHighways();

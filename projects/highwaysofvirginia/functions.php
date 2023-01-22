@@ -1,12 +1,12 @@
 <?php
 
-// function showErrors() {
-// 	ini_set('display_errors', '1');
-// 	ini_set('display_startup_errors', '1');
-// 	error_reporting(E_ALL);
-// }
+function showErrors() {
+	ini_set('display_errors', '1');
+	ini_set('display_startup_errors', '1');
+	error_reporting(E_ALL);
+}
 
-// showErrors();
+showErrors();
 
 function show($things) { //$things = any set variable
 	echo "<code class='show-code'>";
@@ -60,8 +60,8 @@ function uploadImageFile() {
 			if($fileSize < 500000) {
           
           //now we can start uploading after all the checks
-				$fileNameNew = uniqid('', true) . "." . $fileActualExt;
-				$fileDestination = "images/$fileNameNew";
+				// $fileNameNew = uniqid('', true) . "." . $fileActualExt;
+				$fileDestination = "images/" . $fileName;
 
 				//now move the file from the tmp folder to the destination folder
 				move_uploaded_file($fileTmpName, $fileDestination);

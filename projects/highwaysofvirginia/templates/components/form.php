@@ -8,7 +8,14 @@ $endLocation = $highway['endLocation'];
 $image = $highway['image'] ?? false;
 $description = $highway['description'];
 
-$buttonMessage = 'Update highway';
+
+if($page == 'create') {
+    $buttonMessage = 'Add highway';
+} elseif($page == 'update') {
+    $buttonMessage = 'Update highway';
+}
+
+
 
 ?>
 
@@ -17,7 +24,7 @@ enctype="multipart/form-data">
 
     <field>
         <label>Highway Shield Photo</label>
-        <input type="file" name="image-file" value="<?=$image?>" required> <!--value was href before -->
+        <input type="file" name="image-file" value="<?=$image?>"> <!--value was href before -->
     </field>
 
     <?php if($page == 'create') { ?>
