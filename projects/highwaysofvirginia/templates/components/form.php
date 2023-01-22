@@ -1,12 +1,12 @@
 <?php
 
-$type = $highway['type'];
-$number = $highway['number'];
-$lengthInMiles = $highway['length'];
-$startLocation = $highway['startLocation'];
-$endLocation = $highway['endLocation'];
+$type = $highway['type'] ?? false;
+$number = $highway['number'] ?? false;
+$lengthInMiles = $highway['length'] ?? false;
+$startLocation = $highway['startLocation'] ?? false;
+$endLocation = $highway['endLocation'] ?? false;
 $image = $highway['image'] ?? false;
-$description = $highway['description'];
+$description = $highway['description'] ?? false;
 
 
 if($page == 'create') {
