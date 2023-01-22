@@ -17,7 +17,7 @@ enctype="multipart/form-data">
 
     <field>
         <label>Highway Shield Photo</label>
-        <input type="file" name="image-file" href="<?=$image?>">
+        <input type="file" name="image-file" value="<?=$image?>" required> <!--value was href before -->
     </field>
 
     <?php if($page == 'create') { ?>

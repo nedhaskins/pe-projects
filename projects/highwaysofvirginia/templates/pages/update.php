@@ -1,3 +1,9 @@
+<!--Current issues:  WHen the page refreshes, an entirely new image is copied and uploaded.
+The name of the image is not saved in the update form.
+
+-->
+
+
 <div class="update-page">
 
 	<h2>Update Route Info</h2>
@@ -28,7 +34,7 @@
 			'startLocation' => $_POST['start-location'],
 			'endLocation' => $_POST['end-location'],
 			'description' => $_POST['description'],
-			'image' => uploadImageFile() ?? $image,
+			'image' => $image ?? uploadImageFile(),
 		);
 
 		$highways = getHighways();

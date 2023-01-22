@@ -7,6 +7,6 @@ import HelloWorld from './components/HelloWorld.vue'
   <HelloWorld />
 </template>
 
-<style scoped>
+<style>
 
 </style>
