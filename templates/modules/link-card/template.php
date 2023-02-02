@@ -1,66 +1,34 @@
-		<?php
-
-		$hasCaseStudy = $hasCaseStudy ?? false;
-		$isExternalLink = $isExternalLink ?? false;
-		$image = $link['image'] ?? "images/collage.jpg";
+<?php
+$hasCaseStudy = $hasCaseStudy ?? false;
+$isExternalLink = $isExternalLink ?? false;
+$image = $link['image'] ?? "images/collage.jpg";
 ?>
 
-		<div class='link-card' style=
-		'background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$image?>");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;'>
+<div class='link-card' style=
+	'background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$image?>");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;'>
 
+	<?php if($_GET['page'] == 'style-guide') { ?>
+		<a class='attention-voice' href="#"><?=$name?></a>
 
+	<!--if it is a local project and has no case study-->
+	<?php } elseif (!$hasCaseStudy && !$isExternalLink) { ?>
+		<a class='attention-voice' href="?page=<?=$slug?>"><?=$name?></a>
 
+	<!--if it is a local project and has a case study-->
+	<?php } elseif ($hasCaseStudy && !$isExternalLink) { ?>
+		<a class='attention-voice' href="?page=case-study&slug=<?=$slug?>" target=""><?=$name?></a>
 
+	<!--if it's an external link'-->
+	<?php } elseif ($isExternalLink) { ?>
+		<a class='attention-voice' href="<?=$url?>" target="<?=$url?>"><?=$name?></a>
 
-		
+	<?php } else {
+		include('templates/pages/404.php');
+	} ?>
 
-		<?php if($_GET['page'] == 'style-guide') { ?>
+	<p><?=$description?></p>
 
-				<a class='attention-voice' href="#"><?=$name?>
-				</a>
-
-
-
-
-
-
-
-
-		<!--if it is a local project and has no case study-->
-		<?php } elseif (!$hasCaseStudy && !$isExternalLink) { ?>
-			<a class='attention-voice' href="?page=<?=$slug?>">
-				<?=$name?>
-			</a>
-
-		<!--if it is a local project and has a case study-->
-		<?php } elseif ($hasCaseStudy && !$isExternalLink) { ?>
-			<a class='attention-voice' href="?page=case-study&slug=<?=$slug?>" target="">
-				<?=$name?>			
-			</a>
-
-		<!--if it's an external link'-->
-		<?php } elseif ($isExternalLink) { ?>
-			<a class='attention-voice' href="<?=$url?>" target="<?=$url?>">
-				<?=$name?>			
-			</a>
-
-		<?php } else {
-			include('templates/pages/404.php');
-		} ?>
-
-			<p><?=$description?></p>
-		</div>
-
-
-
-
-
-
-
-
-
-
-
+</div>

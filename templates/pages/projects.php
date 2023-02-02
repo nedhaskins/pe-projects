@@ -2,15 +2,14 @@
 
 <?php
 
-$header = $pageData['header'];
-$copy = $pageData['copy'];
+	$header = $pageData['header'];
+	$copy = $pageData['copy'];
 
-include('templates/modules/header-and-text/template.php'); 
+	include('templates/modules/header-and-text/template.php'); 
 
-$projects = $pageData['projects'];
+	$projects = $pageData['projects'];
 
 	//$linkcard = $section; // coming from section loop in parent file (either the-lab or projects
-
 
 	foreach($projects as $link) {
 		$name = $link['name'];
@@ -24,8 +23,9 @@ $projects = $pageData['projects'];
 
 		$hasCaseStudy = ($caseStudy != []); //brackets needed here...because the object's been translated into a PHP array
 		
-		include('templates/modules/link-card/template.php');  
- 
-	 } ?>
+		include('templates/modules/link-card/template.php');  	 
+ 	}
+
+ ?>
 
 </section>

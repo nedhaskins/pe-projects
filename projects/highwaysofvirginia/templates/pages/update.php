@@ -15,7 +15,7 @@ The name of the image is not saved in the update form.
 	//Pulling in the current highway data (before updating)
 	$currentHighwayId = $_GET['slug'];
 	$highway = getHighwayById($currentHighwayId);
-	$highwayShield = $highway['image'];
+	$highwayShield = $highway['image'] ?? false;
 
 	if ( isset($_POST['submitted']) ) {
 

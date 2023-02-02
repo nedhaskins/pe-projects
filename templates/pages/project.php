@@ -1,12 +1,9 @@
 <?php
-
-$sections = $pageData['sections'];
-
+	$sections = $pageData['sections'];
 ?>
 
-
-
 <section class='project'>
+
 <?php
 
 //I need only the specified template to return here.
@@ -18,8 +15,8 @@ $sections = $pageData['sections'];
 
 foreach($sections as $section) {
 
-		if($section['slug'] == $_GET['slug']) {
-			include("projects/" . $section['slug'] . "/index." . $section['extensionType']);
+	if($section['slug'] == $_GET['slug']) {
+		include("projects/" . $section['slug'] . "/index." . $section['extensionType']);
 		} //  else {
 		// 		include("index.php");
 		// }
