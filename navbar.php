@@ -5,10 +5,9 @@ $pageData = json_decode($json, true);
 
 $links = $pageData['links'];
 
-
 if( isset($_GET['page']) ) {
 	$currentPage = $_GET['page'];
-	} else {
+} else {
 	$currentPage = 'home';
 }
 
@@ -16,45 +15,45 @@ if( isset($_GET['page']) ) {
 
 <ul>
 
-<?php
+	<?php
 
-foreach($links as $link) {
+	foreach($links as $link) {
 
-	if($link['slug'] == $currentPage && $link['slug'] != 'substack') { ?>
+		if($link['slug'] == $currentPage && $link['slug'] != 'substack') { ?>
 
-		<li class='active'>
-			<div class='link-logo'>
-				<?php include('images/windmill.svg'); ?>
-			</div>
-			<a class='active' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
-		</li>
+			<li class='active'>
+				<div class='link-logo'>
+					<?php include('images/windmill.svg'); ?>
+				</div>
+				<a class='active' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
+			</li>
 
-	<?php } elseif($link['slug'] == 'about') { ?>
+		<?php } elseif($link['slug'] == 'about') { ?>
 
-		<li class='inactive'>
-			<div class='link-logo'>
-				<?php include('images/windmill.svg'); ?>
-			</div>
-			<a class='link' href="?page=<?=$link['slug']?>&id=1" alt=""><?=$link['name']?></a>
-		</li>
+			<li class='inactive'>
+				<div class='link-logo'>
+					<?php include('images/windmill.svg'); ?>
+				</div>
+				<a class='link' href="?page=<?=$link['slug']?>&id=1" alt=""><?=$link['name']?></a>
+			</li>
 
-	<?php } elseif($link['slug'] == 'substack') { ?>
+		<?php } elseif($link['slug'] == 'substack') { ?>
 
-		<li class='inactive'>
-			<div class='link-logo'>
-				<?php include('images/windmill.svg'); ?>
-			</div>
-			<a class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a>
-		</li>
+			<li class='inactive'>
+				<div class='link-logo'>
+					<?php include('images/windmill.svg'); ?>
+				</div>
+				<a class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a>
+			</li>
 
-	<?php } else { ?>
+		<?php } else { ?>
 
-		<li class='inactive'>
-			<div class='link-logo'>
-				<?php include('images/windmill.svg'); ?>
-			</div>
-			<a class='link' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
-		</li>
+			<li class='inactive'>
+				<div class='link-logo'>
+					<?php include('images/windmill.svg'); ?>
+				</div>
+				<a class='link' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
+			</li>
 
 	<?php }
 

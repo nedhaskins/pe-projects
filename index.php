@@ -1,13 +1,13 @@
 <?php include('functions.php');
 
 if( isset($_GET['page']) ) {
-$page = $_GET['page']; 
+	$page = $_GET['page']; 
 } else {
 	$page = 'home';
 }
 
 if( isset($_GET['slug']) ) {
-$slug = $_GET['slug'];
+	$slug = $_GET['slug'];
 }
 
 ?>
@@ -31,8 +31,6 @@ $slug = $_GET['slug'];
 	<title>Ned Haskins - Web Designer - Richmond, VA</title>
 
 </head>
-
-
 
 <?php if($page == 'home' || $page == '404') { ?>
 
@@ -65,9 +63,7 @@ $slug = $_GET['slug'];
 	<body class='e4p-detail'>
 		<?php include('templates/modules/graphic-list.php');
 ?>
-<!--come back to this and finish it!-->
-
-
+<!--come back to this and finish it -- add vanilla JS and Vue options-->
 
 <?php } else { ?>            
 

@@ -6,6 +6,23 @@
     ],
     "projects": [
         {
+            "id": "0",
+            "slug": "funko-pop-store",
+            "name": "funko pop store",
+            "caseStudy": true,
+            "description": "The capstone project of the Design for the Web course.  Built from scratch with the Vue framework, running on the Node.js runtime environment.",
+            "image": "images/Funko-Pop-Figures.webp",
+            "url": "",
+            "languages": [
+                "JavaScript",
+                "SCSS"
+            ],
+            "keywords": [
+                "Frameworks",
+                "Content Strategy"
+            ]
+        },
+        {
             "id": 1,
             "slug": "that-food-truck",
             "name": "that food truck",

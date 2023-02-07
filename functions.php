@@ -11,8 +11,6 @@ function queryString() {
 	return $_SERVER['QUERY_STRING'];
 }
 
-
-
 function show($things) { //$things = any set variable
   echo "<code class='show-code'>";
   echo '<pre>';
@@ -21,9 +19,6 @@ function show($things) { //$things = any set variable
   echo '</code>';
   }
 
-
-
-
 function activePage() {
   if( isset($_GET['page']) ) {
     return $_GET['page'];
@@ -31,7 +26,6 @@ function activePage() {
     return "home";
   }
 }
-
 
 function getPageData() {
   $page = activePage();
@@ -44,7 +38,6 @@ function getPageData() {
   //hold this array to be called later  
   return $pageData;
 }
-
 
 function fetchPage() {
   $filepath = "templates/pages/" . activePage() . ".php";
