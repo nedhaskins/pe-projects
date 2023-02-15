@@ -118,21 +118,35 @@
 	width: 60%;
 }
 
-
+/*FORM COMPONENT*/
 
 
 .create-update-form {
 	display: flex;
 	flex-direction: column;
-	
-}
-
-.create-update-form field {
-	margin-top: 10px;
+	background-color: #4f3d2a; /*deep bronze*/
+	border: 2px solid black;
+	padding: 30px;
 }
 
 .create-update-form label {
-	margin-right: 20px;
+	font-size: 32px;
+}
+
+.create-update-form input, select, textarea {
+	font-size: 18px;
+	max-width: 70%;
+}
+
+.create-update-form field {
+display: flex;
+flex-direction:column;
+align-items: start;
+margin-left: 40px;
+}
+
+.create-update-form label, input, select, textarea {
+margin-top: 12px;
 }
 
 .create-update-form .description-field {
