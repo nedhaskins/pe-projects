@@ -38,8 +38,9 @@
 
 .email-submit-2 input {
 	background: url('../../images/envelope.svg') no-repeat;
+	background-position: 10px;
 	flex-basis: 100%;
-	padding: 10px 0px 10px 15px;
+	padding: 10px 0px 10px 45px;
 }
 
 
