@@ -15,8 +15,6 @@ if($page == 'create') {
     $buttonMessage = 'Update highway';
 }
 
-
-
 ?>
 
 <form class="create-update-form" method="POST"
