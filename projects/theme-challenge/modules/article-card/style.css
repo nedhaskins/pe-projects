@@ -17,6 +17,11 @@
 	box-shadow: 4px 4px var(--x11gray);
 }
 
+
+.article-card .teaser {
+	margin: 6px 0px 6px 0px;
+}
+
 @media (prefers-color-scheme: dark) {
 	
 	.article-card {
