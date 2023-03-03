@@ -3,7 +3,7 @@
 
 	<nav class='site-menu'>
 		<ul>
-			<li>
+			<li class="svg-wrapper">
 				<a class='svg home' href='#'>
 					<?php include('images/new-waves-realty.php'); ?>
 				</a>
@@ -22,7 +22,7 @@
 	<nav class='user-menu'>
 		<ul>
 			<li>
-				<a class='button' href='#'>Sign<br>in</a>
+				<a class='button' href='#'>Sign in</a>
 			</li>
 		</ul>
 	</nav>

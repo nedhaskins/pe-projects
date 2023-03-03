@@ -38,20 +38,6 @@ body {
 	color: var(--cadorange);
 }
 
-.attention-voice {
-	color: var(--black);
-	/*padding: 0px 30px;*/
-}
-
-
-
-@media (prefers-color-scheme: dark) {
-	.attention-voice {
-	color: var(--tradewinds);
-	/*padding: 0px 30px;*/
-	}
-
-}
 
 
 
