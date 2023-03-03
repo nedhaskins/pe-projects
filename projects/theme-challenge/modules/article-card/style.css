@@ -22,22 +22,7 @@
 	.article-card {
 		background-color: #200900;
 	}
-
-
 }
-
-
-
-.article {
-	/*border: 4px solid green;*/
-}
-
-
-
-
-
-
-
 
 
 .article-card text-content {
@@ -47,10 +32,6 @@
 	align-items: center;
 	/*align-items: flex-start;*/ /*took this out to allow the button to fill parent */
 }
-
-/*.article-card a {
-	margin: 20px 0px 0px 20px;
-}*/
 
 text-content h1 {
 	text-align: center;

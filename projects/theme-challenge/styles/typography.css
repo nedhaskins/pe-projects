@@ -1,27 +1,17 @@
 /* Should we pull in @fonts here? */
 
 .loud-voice	{
-	font-family: "Yuji Boku";
+	font-family: "Golos Text";
 	font-size: clamp(40px, 7vw, 50px);
 	text-align: center;
-}
-@media (min-width: 600px) {
-	.loud-voice {
-		font-weight: 700; /* or variable font */
-	}
+	letter-spacing: 0.05em;
+	font-weight:700;
 }
 
-/*h1.loud-voice {
-	padding: 0px 30px;
-}
-*/
 .attention-voice	{
-	font-family: "Yuji Boku";
+	font-family: "Golos Text";
 	font-size: 30px;
 }
-
-
-
 
 @media (prefers-color-scheme: dark) {
 	h2.heading.attention-voice {
@@ -29,23 +19,12 @@
 	}
 }
 
-
 .strong-voice {
-	font-family: "Yuji Boku";
+	font-family: "Shantell Sans";
 	font-weight: 700;
 	font-size:  1.5rem;
 
 }
-
-/*h1.strong-voice {
-	margin-left: 20px;
-}*/
-
-
-/*h1.title.strong-voice, p.teaser {
-	margin: 10px 20px 10px 20px;
-}*/
-
 
 @media (prefers-color-scheme: dark){
 	h1.title.strong-voice{
@@ -57,12 +36,8 @@
 	
 }
 
-
-
-
-
 .calm-voice, p, li {
-	font-family: "Josefin Sans";
+	font-family: "Shantell Sans";
 	font-size: 1rem;
 	line-height: 1.4;
 }

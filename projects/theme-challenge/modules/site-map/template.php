@@ -2,14 +2,11 @@
 <site-map>
 
 
-	<nav class='site-menu'>
+	<nav class='x-menu top'>
+		<svg-wrapper>
+			<?php include('images/new-waves-realty.php'); ?>
+		</svg-wrapper>
 		<ul>
-			<li>
-				<a href='#'>
-					<?php include('modules/logo.php'); ?>
-				</a>
-			</li>
-
 			<li>
 				<a href='#'>Home</a>
 			</li>
@@ -86,10 +83,5 @@
 			</li>
 		</ul>
 	</nav>
-
-
-
-
-
 
 </site-map>

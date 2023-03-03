@@ -1,17 +1,13 @@
 
 site-map {
-	display: block;
-	/*border: 4px solid green;*/
-
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 	grid-gap: 20px;
-
-	padding: 10vh 0 15vh;
-	margin-left: 20px;
+	padding: 20px;
 }
 
 site-map .logo {
+	border: 3px solid black;
 	max-width: 180px;
 	margin-bottom: 20px;
 }
@@ -22,4 +18,10 @@ site-map .logo * {
 
 site-map h3 {
 	margin-bottom: 20px;
+}
+
+site-map svg-wrapper {
+	max-width: 223px;
+	display: block;
+	margin: 0px 0px 15px 0px;
 }

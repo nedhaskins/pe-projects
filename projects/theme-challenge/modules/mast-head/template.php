@@ -4,8 +4,8 @@
 	<nav class='site-menu'>
 		<ul>
 			<li>
-				<a class='home' href='#'>
-					<?php include('modules/logo.php'); ?>
+				<a class='svg home' href='#'>
+					<?php include('images/new-waves-realty.php'); ?>
 				</a>
 			</li>
 
@@ -14,7 +14,7 @@
 			</li>
 
 			<li>
-				<a href='#'>Outer Banks Info</a>
+				<a href='#'>Outer <wbr>Banks <wbr>Info</a>
 			</li>
 		</ul>
 	</nav>
@@ -22,7 +22,7 @@
 	<nav class='user-menu'>
 		<ul>
 			<li>
-				<a class='button' href='#'>Sign in</a>
+				<a class='button' href='#'>Sign<br>in</a>
 			</li>
 		</ul>
 	</nav>
