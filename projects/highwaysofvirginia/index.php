@@ -17,12 +17,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-	<title></title>
+	<title>Highways of Virginia</title>
 
 </head>
 <body>
 	<inner-column>
-		<h1 class="main-header-text">Highways of Virginia</h1>
+<?php include('./templates/components/title-header/template.php');?>
 		<?php pageTemplate($page); ?>
 	</inner-column>
 </body>

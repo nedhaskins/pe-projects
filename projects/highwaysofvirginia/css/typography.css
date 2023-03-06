@@ -1,5 +1,10 @@
 /* TEXT SIZING / TYPOGRAPHY */
 
+@font-face {
+	font-family: 'Highway Gothic';
+	src: url('../fonts/HWYGWDE.TTF');
+}
+
 html {
 	--floor: calc(14px + 1vw);
 
@@ -23,9 +28,10 @@ em {
 
 
 h1 {
-	font-family: 'Permanent Marker';
+	font-family: 'Highway Gothic';
 	color: yellow;
 	font-size: var(--stepThree);
+	letter-spacing: 0.07em;
 	text-align: center;
 }
 

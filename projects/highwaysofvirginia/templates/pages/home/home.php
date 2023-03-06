@@ -1,3 +1,5 @@
+<page-left>
+
 <p>Welcome to the site!</p>
 
 <p>This site offers historical information, statistics, and photogaphs of the road network of the state of Virginia.</p>
@@ -14,12 +16,15 @@
 
 <p>Enjoy! :)</p>
 
+</page-left>
+</page-content>
 
-
-
+<page-right>
 
 <nav class="page-menu">
     <ul>
         <li><a href='?page=route-list'>View the routes</a></li>
     </ul>
 </nav>
+
+</page-right>

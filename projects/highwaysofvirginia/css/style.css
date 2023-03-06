@@ -4,6 +4,8 @@
 @import 'structure.css';
 @import 'typography.css';
 
+@import '../templates/components/title-header/style.css';
+
 
 body {
 	background: linear-gradient( rgba(76, 45, 18, 0.6), rgba(76, 45, 18, 0.6)), url('../images/main-background.jpeg');
