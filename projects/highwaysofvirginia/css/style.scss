@@ -1,11 +1,9 @@
-@import 'reset.css';
-@import 'setup.css';
-@import 'settings.css';
-@import 'structure.css';
-@import 'typography.css';
-
-@import '../templates/components/title-header/style.css';
-
+@import 'base/reset';
+@import 'base/setup';
+@import 'base/variables';
+@import 'base/structure';
+@import 'base/typography';
+@import 'base/modules';
 
 body {
 	background: linear-gradient( rgba(76, 45, 18, 0.6), rgba(76, 45, 18, 0.6)), url('../images/main-background.jpeg');

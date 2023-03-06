@@ -1,0 +1,353 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*THIS CONTAINS DISPLAY, WIDTH, HEIGHT*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
+}
+
+/*SETTINGS*/
+html {
+  --sweetcorn: #f6e579;
+  --falured: #81201b;
+  --phthaloblue: #04167d;
+  --gulfblue: #00175c;
+  --tolopea: #160f46;
+  --desire: #e23f53;
+  --cgred: #dd3b30;
+  --palegreen: #95f598;
+  --fadedlime: #7df383;
+  --anakiwa: #8acde4;
+  --lightgreen: #4af2a1;
+  --amazon: #36745c;
+  --paper: var(--sweetcorn);
+  --ink: var(--falured);
+  --paper-dark: var(--tolopea);
+  --ink-dark: var(--sweetcorn);
+}
+
+.update-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0px 30px 0px;
+}
+
+.route-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.route-list li {
+  margin-top: 18px;
+}
+
+/*MENUS*/
+.route-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.route-menu li a {
+  display: inline-block;
+  border: 3px solid var(--fadedlime);
+  font-size: 20px;
+  color: var(--fadedlime);
+  padding: 15px;
+  text-align: center;
+}
+
+.route-menu li a:hover {
+  background-color: var(--fadedlime);
+  color: black;
+}
+
+.page-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.page-menu li a {
+  display: inline-block;
+  border: 3px solid yellow;
+  font-size: 20px;
+  color: yellow;
+  padding: 15px;
+  text-align: center;
+}
+
+.page-menu li a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/*FORM ELEMENTS*/
+.form-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-button {
+  background-color: yellow;
+  color: black;
+  margin-top: 20px;
+  padding: 8px;
+  width: 30%;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filter-form field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-form select {
+  margin-top: 20px;
+  padding: 8px;
+  font-family: "Baskerville";
+  text-align: center;
+  width: 60%;
+}
+
+/*FORM COMPONENT*/
+.create-update-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #4f3d2a; /*deep bronze*/
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.create-update-form label {
+  font-size: 32px;
+}
+
+.create-update-form input, select, textarea {
+  font-size: 18px;
+  max-width: 70%;
+}
+
+.create-update-form field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 40px;
+}
+
+.create-update-form label, input, select, textarea {
+  margin-top: 12px;
+}
+
+.create-update-form .description-field {
+  display: flex;
+}
+
+/* TEXT SIZING / TYPOGRAPHY */
+@font-face {
+  font-family: "Highway Gothic";
+  src: url("../fonts/HWYGWDE.TTF");
+}
+html {
+  --floor: calc(14px + 1vw);
+  --stepOne: 1.272019rem; /* floor * golden ratio^0.5 */
+  --stepTwo: 1.618033rem; /* floor * golden ratio */
+  --stepThree: 2.058171rem; /* floor * golden ratio^1.5 */
+  --stepFour: 2.618034rem; /* floor * golden ratio^2 */
+  font-size: var(--floor);
+}
+
+body {
+  font-family: "Baskerville";
+  color: wheat;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-family: "Highway Gothic";
+  color: yellow;
+  font-size: var(--stepThree);
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.main-header-text {
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: "Permanent Marker";
+  color: white;
+  font-size: var(--stepTwo);
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--stepOne);
+}
+
+p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.success {
+  margin-top: 10px;
+  color: var(--fadedlime);
+}
+
+/*Title-header*/
+.title-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-header title-wrapper, .title-header svg-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title-header title-wrapper h1 {
+  font-family: "Highway Gothic";
+}
+
+page-left.home {
+  display: block;
+  text-align: left;
+}
+page-left.home p + p {
+  margin-top: 10px;
+}
+
+body {
+  background: linear-gradient(rgba(76, 45, 18, 0.6), rgba(76, 45, 18, 0.6)), url("../images/main-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+picture {
+  max-width: 200px;
+}
+
+pre {
+  background-color: black;
+  color: lime;
+  font-family: "Courier";
+  font-size: 16px;
+  padding: 20px;
+}
+
+inner-column {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 500px;
+  min-height: 100vh;
+}
+
+.update-photo {
+  padding: 20px;
+}

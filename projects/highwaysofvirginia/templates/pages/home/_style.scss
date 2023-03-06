@@ -1,0 +1,8 @@
+page-left.home {
+	display: block;
+	text-align: left;
+
+	p + p {
+		margin-top: 10px;
+	}
+}

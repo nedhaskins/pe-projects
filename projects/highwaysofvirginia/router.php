@@ -8,30 +8,30 @@ if ( isset($_GET['page']) ) {
 
 function pageTemplate($page){
 	if($page == 'home') {
-		include('templates/pages/home.php');
+		include('templates/pages/home/template.php');
 	}
 
 	if($page == 'create') {
-		include('templates/pages/create.php');
+		include('templates/pages/create/template.php');
 	}
 
 	if($page == 'route') {
-		include('templates/pages/route.php');
+		include('templates/pages/route-detail/template.php');
 	}
 
 	if($page == 'route-list') {
-		include('templates/pages/route-list.php');
+		include('templates/pages/route-list/template.php');
 	}
 
 	if($page == 'update') {
-		include('templates/pages/update.php');
+		include('templates/pages/update/template.php');
 	}
 
 	if($page == 'delete') {
-		include('templates/pages/delete.php');
+		include('templates/pages/delete/template.php');
 	}
 
 	if($page == 'success') {
-		include('templates/pages/success.php');
+		include('templates/pages/success/template.php');
 	}
 }
