@@ -1,7 +1,12 @@
 /* Should we pull in @fonts here? */
 
-.loud-voice	{
+
+a, p {
 	font-family: "Golos Text";
+}
+
+.loud-voice	{
+	font-family: "Shantell Sans";
 	font-size: clamp(40px, 7vw, 50px);
 	text-align: center;
 	letter-spacing: 0.05em;
@@ -9,7 +14,7 @@
 }
 
 .attention-voice	{
-	font-family: "Golos Text";
+	font-family: "Shantell Sans";
 	font-size: 30px;
 }
 
@@ -36,8 +41,8 @@
 	
 }
 
-.calm-voice, p, li {
-	font-family: "Shantell Sans";
+/*.calm-voice, p, li {
+	font-family: "Golos Text";
 	font-size: 1rem;
 	line-height: 1.4;
 }
@@ -48,7 +53,7 @@
 
 :is(.calm-voice, p, li) strong {
 	font-weight: 700;
-}
+}*/
 
 /* these would be scoped to section or to an article element */
 /* this is just a loose setting for now */

@@ -1,23 +1,27 @@
 
 <mast-head>
-
-	<nav class='site-menu'>
-		<ul>
-			<li class="svg-wrapper">
-				<a class='svg home' href='#'>
+	<div class="left">
+		<div class="svg-wrapper">
+			<a class='svg home' href='#'>
 					<?php include('images/new-waves-realty.php'); ?>
-				</a>
-			</li>
+			</a>
+		</div>
 
-			<li>
-				<a href='#'>Home</a>
-			</li>
+		<nav class='site-menu'>
 
-			<li>
-				<a href='#'>Outer <wbr>Banks <wbr>Info</a>
-			</li>
-		</ul>
-	</nav>
+
+			<ul>
+
+				<li>
+					<a href='#'>Home</a>
+				</li>
+
+				<li>
+					<a href='#'>Outer <wbr>Banks <wbr>Info</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
 	<nav class='user-menu'>
 		<ul>

@@ -17,12 +17,21 @@ mast-head .logo * {
 	fill: var(--tradewinds);
 }
 
-mast-head nav ul {
+mast-head .left{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	gap: 20px;
 }
+
+mast-head nav ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 20px;
+}
+
+
 
 mast-head nav ul li {
 	display: flex;
@@ -46,7 +55,7 @@ mast-head nav a:not(.home) {
 .user-menu {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-self: end ;
 }
 @media(max-width: 419px) {
 	.user-menu {
@@ -73,6 +82,11 @@ mast-head nav a:not(.home) {
 
 	.svg {
 /*		margin-top: -3px;*/
+	}
+
+	mast-head .left {
+		flex-direction: row;
+		flex: 1;
 	}
 
 	mast-head nav ul {

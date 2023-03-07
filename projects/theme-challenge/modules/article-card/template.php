@@ -14,7 +14,9 @@
 		<h1 class='title strong-voice'><?=$heading?></h1>
 
 		<p class='teaser'><?=$description?></p>
-
-		<a class='button' href='#'>Details</a>
+		<button-wrapper>
+			<a class='button' href='#'>Details</a>
+		</button-wrapper>
 	</text-content>
+
 </article>

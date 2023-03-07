@@ -9,7 +9,6 @@
 	fill the parent */
 }
 
-
 .article-card { /*changed the styling to be on the card instead of the <li>*/
 	background-color: #ffffff;
 	/*padding-bottom: 20px;*/
@@ -17,9 +16,14 @@
 	box-shadow: 4px 4px var(--x11gray);
 }
 
-
 .article-card .teaser {
-	margin: 6px 0px 6px 0px;
+/*	margin: 6px 0px 6px 0px;*/
+}
+
+button-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,11 +37,19 @@
 .article-card text-content {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
-	align-items: center;
-	/*align-items: flex-start;*/ /*took this out to allow the button to fill parent */
+	padding: 18px;
+/*	align-items: center;*/
+	gap: 10px;
+	/*align-items: flex-start; /*took this out to allow the button to fill parent */
+}
+.article-card text-content h1 {
+	margin: 0;
 }
 
-text-content h1 {
-	text-align: center;
+.article-card text-content h1 + p {
+	margin-top: 0px;
+	text-align: left;
+}
+.article-card .button, .article-card h1 {
+	margin-top: 10px;
 }
