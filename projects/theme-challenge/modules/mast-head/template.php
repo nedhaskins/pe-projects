@@ -8,21 +8,16 @@
 		</div>
 
 		<nav class='site-menu'>
-
-
 			<ul>
-
 				<li>
 					<a href='#'>Home</a>
 				</li>
-
 				<li>
 					<a href='#'>Outer <wbr>Banks <wbr>Info</a>
 				</li>
 			</ul>
 		</nav>
 	</div>
-
 	<nav class='user-menu'>
 		<ul>
 			<li>

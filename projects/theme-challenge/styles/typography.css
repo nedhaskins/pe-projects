@@ -5,6 +5,7 @@ a, p {
 	font-family: "Golos Text";
 }
 
+
 .loud-voice	{
 	font-family: "Shantell Sans";
 	font-size: clamp(40px, 7vw, 50px);

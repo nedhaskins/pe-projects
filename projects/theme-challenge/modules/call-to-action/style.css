@@ -8,6 +8,10 @@ call-to-action {
 	padding: 7vh 2vh;
 }
 
+call-to-action p {
+	max-width: 52ch;
+}
+
 call-to-action .button {
 	margin-top: 20px;
 	font-family: "Rock Salt";
