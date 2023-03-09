@@ -36,8 +36,13 @@
 	flex-direction: row;
 	justify-content: center;
 	gap: 16px;
-	width: 485px;
-	height: 44px;
+}
+
+@media(min-width: 960px) {
+
+	.email-submit-2 { 
+		width: 485px;
+	}
 }
 
 .email-submit-2 input {
@@ -51,9 +56,9 @@
 
 .hero.three .email-submit-2 input {
 	background: url('../../images/envelope-white.svg') no-repeat;
-	background-position: 10px;
+	background-position: 19px;
 	flex-basis: 100%;
-	padding: 10px 0px 10px 45px;
+	padding: 20px 0px 20px 54px;
 	color: white;
 }
 
@@ -61,7 +66,7 @@
 
 
 .email-submit-2 button {
-	width: 102px;
+	width: 117px;
 	border: 0;
 	border-radius: 5px;
 

@@ -15,9 +15,14 @@
 	line-height: 30px;
 	text-align: center;
 	color: white;
+	margin-top: 16px; /*from Figma*/
 }
 
-
+@media(min-width: 980px) {
+	.hero.three p {
+		max-width: 60%;
+	}
+}
 
 /* HEADER TEXT */
 
@@ -75,8 +80,11 @@ color: white;
 
 
 :is(.hero.one, .hero.two, .hero.three) inner-column {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	max-width: 80%;
 	padding-top: 195.5px;
 padding-bottom: 195.5px;
