@@ -3,11 +3,6 @@
   
 
 
-.hero.one {
-
-	background-image: url('../../../images/backgrounds/hero-background1.svg');
-}
-
 :is(.hero.one, .hero.two) p {
 	font-size: 20px;
 	line-height: 24.2px;
@@ -61,6 +56,16 @@ color: white;
 /*MODULE CHARACTERISTICS*/
 
 
+
+.hero.one {
+
+	background-image: url('../../../images/backgrounds/hero-background1.svg');
+		background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
 .hero.two {
 	background-image: url('../../../images/backgrounds/hero-background2.svg');
 	background-size: cover;
@@ -79,7 +84,17 @@ padding-bottom: 195.5px;
 }
 
 
+.hero.three .form-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
+.hero.three .form-wrapper .email-submit-2 input {
+	background-color: var(--palatinateBlue);
+	border: none;
+	border-radius: 10px;
+}
 
 .hero.three {
 	background-color: var(--royalBlue);
