@@ -77,7 +77,7 @@ color: white;
 :is(.hero.one, .hero.two, .hero.three) inner-column {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 974px;
+	max-width: 80%;
 	padding-top: 195.5px;
 padding-bottom: 195.5px;
 
@@ -88,12 +88,14 @@ padding-bottom: 195.5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-top: 50px;
 }
 
 .hero.three .form-wrapper .email-submit-2 input {
 	background-color: var(--palatinateBlue);
 	border: none;
 	border-radius: 10px;
+	color: white;
 }
 
 .hero.three {
@@ -106,5 +108,10 @@ padding-bottom: 195.5px;
 
 .hero.two .start-free-trial {
 	display: none;
+}
+
+.hero.three .email-submit-2 button {
+	background-color: white;
+	color: var(--royalBlue);
 }
 

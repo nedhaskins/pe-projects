@@ -12,8 +12,12 @@ html {
 }
 
 
-a {
+a, img, picture, svg, inner-column, logo {
 	display: block;
+}
+
+
+a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -24,23 +28,13 @@ p a {
 	text-decoration: underline;
 }
 
-picture {
-	display: block;
-}
-
 img {
-	display: block;
 	width: 100%;
 	height: auto;
 }
 
 svg {
-	display: block;
 	width: 100%;
-	}
-
-logo, inner-column {
-	display: block;
 }
 
 em {

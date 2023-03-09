@@ -3,7 +3,12 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	padding: 22px 120px;
+	padding: 20px;
+}
+
+.navigation.three {
+	display: grid;
+	grid-template-columns: 1fr 30% 1fr;
 }
 
 .navigation.two {
@@ -20,14 +25,35 @@
 .navigation nav ul {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 	gap: 30px;
+	padding: 30px;
+	text-align: center;
 }
 
 .navigation-right {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+}
+
+
+
+
+
+@media(min-width: 860px) {
+	.navigation.three {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+	.navigation-right {
+		flex-direction: row;
+	}
+	.navigation nav ul {
+		flex-wrap: nowrap;
+	}
 }
 
 
@@ -56,7 +82,6 @@
 	padding: 8px 22px;
 	border-radius: 5px;
 	letter-spacing: 0.46px;
-
 }
 
 .navigation.two .login {
@@ -71,4 +96,5 @@
 		padding: 8px 22px;
 	border-radius: 5px;
 	letter-spacing: 0.46px;
+	text-align: center;
 }

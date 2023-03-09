@@ -45,7 +45,19 @@
 	background-position: 10px;
 	flex-basis: 100%;
 	padding: 10px 0px 10px 45px;
+	color: white;
+	stroke: white;
 }
+
+.hero.three .email-submit-2 input {
+	background: url('../../images/envelope-white.svg') no-repeat;
+	background-position: 10px;
+	flex-basis: 100%;
+	padding: 10px 0px 10px 45px;
+	color: white;
+}
+
+
 
 
 .email-submit-2 button {

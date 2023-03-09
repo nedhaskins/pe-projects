@@ -1,11 +1,18 @@
 :is(.center-content.one, .center-content.two, .center-content.three) inner-column {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	max-width: 960px;
 	padding-top: 80px;
-		padding-bottom: 80px;
+	padding-bottom: 80px;
 }
 
+
+
+@media(min-width: 600px) {
+
+	:is(.center-content.one, .center-content.two, .center-content.three) inner-column {
+		max-width: 90%;
+	}
+}
 
 
 
@@ -89,7 +96,14 @@
 	letter-spacing: 0.46px;
 	text-align: center;
 	color: var(--sonicSilver);
+	max-width: 70%;
+	margin-top: 16px; /*got from Figma */
 }
 
+.center-content.three .content-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 
