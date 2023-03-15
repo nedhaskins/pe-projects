@@ -3,6 +3,13 @@
 	max-width: 960px;
 	padding-top: 80px;
 	padding-bottom: 80px;
+
+}
+
+@media(min-width: 750px) {
+	:is(.center-content.one, .center-content.two, .center-content.three) inner-column {
+
+	}
 }
 
 

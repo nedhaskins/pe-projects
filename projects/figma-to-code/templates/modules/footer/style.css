@@ -31,9 +31,9 @@ footer.one {
 footer.one .links {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 	margin-top: 34px;
 	gap: 5vw;
-	flex: 3;
 }
 
 footer.one .loud-voice {
@@ -46,6 +46,11 @@ footer.one .subscribe-module {
 }
 
 @media(min-width: 900px) {
+
+footer.one .links {
+	flex: 3;
+}
+
 	footer.one .subscribe-module {
 		flex: 2;
 		margin-top: 0px;

@@ -49,15 +49,16 @@
 
 
 
-
-
-
-
 .cta-card {
 	background-color: #f7f9fe;
 	margin: 40px;
-	padding: 60px 124px;
+	padding: 60px 66px;
+}
 
+@media(min-width: 720px) {
+	.cta-card {
+		padding: 60px 124px;
+	}
 }
 
 

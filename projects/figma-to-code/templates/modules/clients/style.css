@@ -1,8 +1,25 @@
-
 .clients {
-	padding: 80px 120px;
+	padding: 20px 30px;
 }
 
+
+
+@media(min-width: 900px){
+	.clients {
+		padding: 80px 120px;
+	}
+}
+
+.review-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+@media(min-width: 900px){
+	.review-wrapper {
+		flex-direction: row;
+		gap: 42px;
+	}
+}
 
 .clients .header-and-text h3 {
 	line-height: 58.09px;
