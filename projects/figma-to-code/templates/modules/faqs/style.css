@@ -13,11 +13,22 @@ border-bottom: 1px solid var(--ink-dark);
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 843px;
+	max-width: 550px;
+}
+
+
+@media(min-width: 900px) {
+	.faqs inner-column {
+		max-width: 843px;
+	}
 }
 
 .faqs.three .dropdowns {
 	margin-top: 40px;
+}
+
+.faqs.one .dropdowns article + article {
+	margin-top: 20px;
 }
 
 
@@ -31,10 +42,12 @@ border-bottom: 1px solid var(--ink-dark);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		flex: 2.5;
 	}
 
 	.faqs.three .dropdowns {
 		margin-top: 0px;
+		flex: 1.5;
 	}
 }
 
@@ -120,8 +133,8 @@ border-bottom: 1px solid var(--ink-dark);
 
 
 
-.faqs.two .dropdowns details[open] {
-	margin-bottom: 20px;
+:is(.faqs.one, .faqs.two) .dropdowns details[open] {
+	margin-bottom: 25px;
 }
 
 

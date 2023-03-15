@@ -38,7 +38,7 @@
 
 			<?php include('templates/modules/faqs/template-2.php'); ?>
 
-						<?php include('templates/modules/footer/template-2.php'); ?>
+			<?php include('templates/modules/footer/template-2.php'); ?>
 
 
 

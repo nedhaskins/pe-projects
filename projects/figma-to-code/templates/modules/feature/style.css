@@ -13,8 +13,16 @@
 	display: none;
 }
 
+.feature-list.one .feature-item {
+	margin-top: 15px;
+}
 
 
+@media(min-width:960px) {
+	.feature-list.one .feature-item {
+		margin-top: 0px;
+	}
+}
 
 /* THIS IS MODULE STYLING */
 
@@ -100,8 +108,8 @@
 
 
 .feature.one picture {
-	margin-top: 40px;
-	max-width: 626px;
+	margin: 30px auto 0 auto;
+	max-width: 450px;
 	max-height: 491px;
 }
 
@@ -111,21 +119,19 @@
 @media (min-width: 600px) {
 
 	.feature.one {
-		flex-direction: row;
-		gap: 66px;
-	}
-
-	.feature.one {
 		padding: 80px 120px;
 	}
-
-
 	.feature.two, .feature.three {
 		flex-direction: column;
 	}
 }
 
-
+@media(min-width: 960px) {
+	.feature.one {
+		flex-direction: row;
+		gap: 66px;
+	}
+}
 
 /*FEATURE LIST ONE*/
 

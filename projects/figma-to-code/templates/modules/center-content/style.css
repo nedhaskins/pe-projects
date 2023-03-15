@@ -6,14 +6,24 @@
 }
 
 
+.center-content-one svg {
+	height: 520;
+}
+
+
 
 @media(min-width: 600px) {
 
 	:is(.center-content.one, .center-content.two, .center-content.three) inner-column {
 		max-width: 90%;
 	}
-}
 
+	.center-content-one svg {
+		height: 300;
+	}
+
+
+}
 
 
 

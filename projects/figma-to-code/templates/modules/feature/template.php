@@ -2,7 +2,7 @@
 
 	<div class="feature-head">
 		<?php include('components/header-and-text/template.php'); ?>
-
+		
 		<picture>
 			<?php include('images/feature-one-photo.php'); ?>
 		</picture>

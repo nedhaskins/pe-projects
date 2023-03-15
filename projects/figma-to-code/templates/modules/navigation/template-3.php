@@ -7,15 +7,15 @@
 	</logo>
 
 
+
 	<nav>
 		<ul>
-			<a href="#">Home</a>
-			<a href="#">Updates</a>
-			<a href="#">Services</a>
-			<a href="#">Features</a>
-			<a href="#">About Us</a>
+			<a href="/projects/figma-to-code">Homepage 1</a>
+			<a href="homepage-2.php">Homepage 2</a>
+			<a href="#">Homepage 3</a>
 		</ul>
 	</nav>
+
 
 
 	<div class='navigation-right'>
