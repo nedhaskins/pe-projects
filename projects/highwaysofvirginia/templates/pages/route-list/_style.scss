@@ -1,0 +1,46 @@
+.route-list {
+	display: block;
+
+	page-left, page-right {
+		display: block;
+		padding: 0px 30px 0px 30px;
+	}
+
+	page-left {
+
+		h2 {
+			text-align: left;
+		}
+
+		.filter-form {
+			display: flex;
+			flex-direction: row;
+			// justify-content: center;
+		}
+
+		.filter-form field {
+			display: flex;
+			flex-direction: column;
+			// align-items: center;
+		}
+
+		.filter-form select {
+			margin-top: 20px;
+			padding: 8px;
+			font-family: 'Baskerville';
+			text-align: center;
+			width: 60%;
+		}
+	}
+}
+
+@media(min-width: 960px) {
+	.route-list {
+		display: flex;
+		flex-direction: row;
+		page-left, page-right {
+			width: 50%;
+		}
+
+	}
+}

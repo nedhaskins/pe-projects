@@ -21,8 +21,13 @@
 
 </head>
 <body>
+	<?php if($page == 'home') {
+		include('./templates/components/title-header/template.php');
+	} else {
+		include ('./templates/components/site-header/template.php');
+	} ?>
 	<inner-column>
-<?php include('./templates/components/title-header/template.php');?>
+
 		<?php pageTemplate($page); ?>
 	</inner-column>
 </body>

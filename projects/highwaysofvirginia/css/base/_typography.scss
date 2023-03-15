@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'Highway Gothic';
-	src: url('../fonts/HWYGWDE.TTF');
+	src: url('./fonts/HWYGWDE.TTF');
 }
 
 html {
@@ -41,9 +41,10 @@ h1 {
 
 
 h2 {
-	font-family: 'Permanent Marker';
+	font-family: 'Highway Gothic';
 	color: white;
 	font-size: var(--stepTwo);
+		letter-spacing: 0.07em;
 	text-align: center;
 }
 

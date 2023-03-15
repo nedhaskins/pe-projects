@@ -50,7 +50,7 @@ The name of the image is not saved in the update form.
 
 	}
 
-	include('templates/components/form.php');
+	include('templates/components/form/template.php');
 
 	?>
 
@@ -61,13 +61,5 @@ The name of the image is not saved in the update form.
 
 
 	<?php show($highway); ?>
-
-	<nav class="page-menu">
-	    <ul>
-	        <li><a href='?'>Home</a></li>
-	        <li><a href='?page=route-list'>Route List</a></li>
-	        <li><a href='?page=create'>Create a route</a></li>
-	    </ul>
-	</nav>
 
 </div>

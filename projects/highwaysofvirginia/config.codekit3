@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "212AEE98-87DB-4B1A-B68F-50C25C148333"
+      "uuidString" : "89D1C0F9-A015-477A-BF63-B476B7A689A1"
     }
   ],
   "creatorBuild" : "34418",
@@ -408,6 +408,29 @@
       "oAP" : "\/templates\/components\/form\/template.php",
       "oF" : 0
     },
+    "\/templates\/components\/site-header\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/templates\/components\/site-header\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/components\/site-header\/template.php",
+      "oF" : 0
+    },
     "\/templates\/components\/test-update-script.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -478,6 +501,21 @@
       "oAP" : "\/templates\/pages\/home\/template.php",
       "oF" : 0
     },
+    "\/templates\/pages\/route-detail\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/templates\/pages\/route-detail\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -485,6 +523,21 @@
       "oA" : 0,
       "oAP" : "\/templates\/pages\/route-detail\/template.php",
       "oF" : 0
+    },
+    "\/templates\/pages\/route-list\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/pages\/route-list\/template.php" : {
       "cB" : 0,
@@ -518,10 +571,10 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 688062863.28178096,
+    "creationDate" : 700548186.71851099,
     "displayValue" : "highwaysofvirginia",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets_orange",
+    "iconImageName" : "brackets-cafe",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {

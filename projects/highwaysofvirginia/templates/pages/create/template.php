@@ -11,7 +11,7 @@ $routeImage = "";
 $description = "";
 $buttonMessage = 'Add route';
 
-include('templates/components/form.php');
+include('templates/components/form/template.php');
 
 if ( isset($_POST['submitted']) ) {
 
