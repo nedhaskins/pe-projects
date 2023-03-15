@@ -122,22 +122,19 @@ inner-column {
   max-width: 960px;
 }
 
-.update-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  margin: 20px 0px 30px 0px;
+code {
+  display: block;
 }
 
-.route-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.route-list li {
-  margin-top: 18px;
+/* from mooff in discord */
+/* these are a pain to get right. suitable as a baseline.. */
+pre {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*MENUS*/
@@ -429,15 +426,23 @@ page-left.home p + p {
 }
 .route-list page-right ul li {
   width: 80%;
+  margin-top: 18px;
 }
 
 @media (min-width: 960px) {
   .route-list {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
   }
   .route-list page-left, .route-list page-right {
     width: 50%;
+  }
+  .route-list li:nth-of-type(1) {
+    margin-top: 0px;
+  }
+  .route-list page-right li + li {
+    margin-top: 18px;
   }
 }
 .route-detail picture {
@@ -462,6 +467,39 @@ page-left.home p + p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.update-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 30px 0px;
+}
+.update-page page-left, .update-page page-right {
+  width: 80%;
+}
+.update-page page-left {
+  display: flex;
+  flex-direction: column;
+}
+.update-page page-left .photo-and-array {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-page page-left .photo-and-array .update-photo {
+  flex: 1;
+  max-width: 225px;
+}
+.update-page page-left .photo-and-array code {
+  flex: 1;
+  max-width: 70%;
+}
+.update-page page-left .photo-and-array code pre {
+  font-size: 12px;
+}
+.update-page page-right {
+  display: block;
 }
 
 body {
