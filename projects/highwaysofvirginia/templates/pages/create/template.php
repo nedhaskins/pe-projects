@@ -15,6 +15,8 @@ $buttonMessage = 'Add route';
 
 <section class="create-route">
 
+    <h2>Create New Route</h2>
+
 <?php
 
     include('templates/components/form/template.php');

@@ -19,6 +19,7 @@
 .create-update-form {
 	display: flex;
 	flex-direction: column;
+	margin-top: 24px;
 	background-color: #4f3d2a; /*deep bronze*/
 	box-shadow: 10px 10px black;
 	padding: 24px;
@@ -69,6 +70,7 @@
 	.create-update-form {
 		flex-direction: row;
 		justify-content: space-evenly;
+
 		// border: 3px solid blue;
 		// gap: 24px;
 

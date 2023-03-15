@@ -317,6 +317,7 @@ p {
 .create-update-form {
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
   background-color: #4f3d2a; /*deep bronze*/
   box-shadow: 10px 10px black;
   padding: 24px;
@@ -383,11 +384,32 @@ page-left.home p + p {
   padding: 0px 30px 0px 30px;
 }
 .route-list page-left h2 {
-  text-align: left;
+  text-align: center;
+}
+.route-list page-left text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.route-list page-left text-wrapper p {
+  line-height: 1.3;
+  width: 80%;
+  margin-top: 10px;
+}
+.route-list page-left form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
 }
 .route-list page-left .filter-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 80%;
+}
+.route-list page-left .filter-form label {
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 .route-list page-left .filter-form field {
   display: flex;
@@ -399,6 +421,14 @@ page-left.home p + p {
   font-family: "Baskerville";
   text-align: center;
   width: 60%;
+}
+.route-list page-right ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.route-list page-right ul li {
+  width: 80%;
 }
 
 @media (min-width: 960px) {
