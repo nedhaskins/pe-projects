@@ -1,10 +1,14 @@
-<h3>Delete Route Page</h3>
-
 <?php
 
 $highways = getHighways();
-
 $currentHighwayId = $_GET['slug'];
+
+?>
+
+<section class="route-deleted">
+
+
+<?php
 
 foreach( $highways as $highwayId => $highwayData) {
 	if( $currentHighwayId == $highwayId) {
@@ -16,9 +20,13 @@ foreach( $highways as $highwayId => $highwayData) {
 }
 
 if( isset($deletedData) ) {
-		echo $deletedData['name'] . " was taken out of the database.";
+		echo "<p class='success' style='font-size: 32px;'>" . $deletedData['name'] . " was taken out of the database.</p>";
 	}
 ?>
-<button>
-	<a href="?page=home">Back to home page</a>
-</button>
+<button-wrapper>
+	<button>
+		<a href="?page=home">Back to home page</a>
+	</button>
+</button-wrapper>
+
+</section>

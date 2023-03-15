@@ -11,6 +11,8 @@ $routeImage = "";
 $description = "";
 $buttonMessage = 'Add route';
 
+$response = "";
+
 ?>
 
 <section class="create-route">
@@ -47,11 +49,14 @@ $buttonMessage = 'Add route';
         $encoded = json_encode($highways);
 
         if( file_put_contents('data/highways.json', $encoded) ) {
-           include('templates/pages/success.php');
+           // include('templates/pages/success/template.php');
+          echo "<p class='success'>" . $highway['name'] . " was uploaded to the database.";
            // header("Location: templates/pages/success.php");
         }
     }
 
 ?>
+
+<output><?=$response?></output>
 
 </section>
