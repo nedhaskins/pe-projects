@@ -15,6 +15,12 @@
 		title-wrapper h1 {
 			font-family: 'Highway Gothic';
 		}
+
+		svg-wrapper {
+			svg {
+				max-width: 250px;
+			}
+		}
 	}
 
 	.site-menu {
@@ -44,7 +50,6 @@
 		}
 	}
 }
-
 
 
 
