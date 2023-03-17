@@ -72,9 +72,9 @@ color: white;
 
 
 .hero.two {
-	background-image: url('../../../images/backgrounds/hero-background2.svg');
+	background-image: url('../../../images/backgrounds/new-background2!.svg');
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 }
 

@@ -4,7 +4,8 @@
 
 
 <section class="footer-top">
-	
+
+<section class="links">	
 	<div class="link-column">
 		<p class="loud-voice">Product</p>
 		<ul>	
@@ -17,6 +18,7 @@
 		</ul>
 	</div>
 
+
 	<div class="link-column">
 		<p class="loud-voice">Information</p>
 		<ul>	
@@ -25,6 +27,7 @@
 			<li><a href="#">Netus</a></li>
 		</ul>
 	</div>
+	
 
 	<div class="link-column">
 		<p class="loud-voice">Company</p>
@@ -35,6 +38,8 @@
 			<li><a href="#">Suspendisse vivera</a></li>
 		</ul>
 	</div>
+
+</section>
 
 
 
@@ -51,12 +56,11 @@
 		<?php include('images/logoipsum.svg'); ?>
 	</logo>
 
-
 	<nav>
 		<ul>
-			<li><a href="#">Terms</a></li>
-			<li><a href="#">Privacy</a></li>
-			<li><a href="#">Cookies</a></li>
+			<a href="/projects/figma-to-code">Homepage 1</a>
+			<a href="#">Homepage 2</a>
+			<a href="homepage-3.php">Homepage 3</a>
 		</ul>
 	</nav>
 

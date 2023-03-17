@@ -161,7 +161,7 @@
 
 .feature-list.two, .feature-list.three {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 			grid-gap: 20px;
 }
 
