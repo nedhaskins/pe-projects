@@ -1,4 +1,4 @@
-<section class="faqs three">
+<p><section class="faqs three">
 	
 <inner-column>
 
@@ -12,25 +12,25 @@
 
 		<article>
 			<details>
-				<summary>How soon will my order ship?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>How soon will my order ship?</summary><p>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>Are there any warranty exclusions?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>Are there any warranty exclusions?</summary><p>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>Are there any return exclusions?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>Are there any return exclusions?</summary><p>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 		</article>
 
 		<article>
 			<details>
-				<summary>Will I be charged for a replacement item?</summary>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.
+				<summary>Will I be charged for a replacement item?</summary><p>Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.</p>
 			</details>
 		</article>
 

@@ -196,7 +196,7 @@ footer nav ul {
 	flex-direction: column;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 650px) {
 	.icon-section {
 		flex-direction: row;
 		gap: 15px;

@@ -94,10 +94,22 @@ padding-bottom: 195.5px;
 
 .hero.three .form-wrapper {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	margin-top: 50px;
 }
+
+
+@media(min-width: 400px) {
+	.hero.three .form-wrapper {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+
+
+
 
 .hero.three .form-wrapper .email-submit-2 input {
 	background-color: var(--palatinateBlue);

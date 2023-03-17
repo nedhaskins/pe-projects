@@ -183,12 +183,12 @@ border-bottom: 1px solid var(--ink-dark);
 }
 
 
-.faqs.three .dropdowns details p {
+/*.faqs.three .dropdowns details p {
 	border-left: 3px solid black;
 	margin-left: 20px;
 	padding-left: 10px;
 }
-
+*/
 
 
 .faqs.three .dropdowns details[open] {
@@ -200,6 +200,7 @@ border-bottom: 1px solid var(--ink-dark);
 	margin: 15px 0px 15px 0px;
 	list-style-type: none;
 	text-transform: capitalize;
+	justify-content: space-between;
 }
 
 
