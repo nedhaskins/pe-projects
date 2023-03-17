@@ -147,6 +147,8 @@ p.review {
 }
 
 
+
+
 .client-block, .chevron-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -162,6 +164,13 @@ p.review {
 	margin-top: 8px;
 }
 
+@media(max-width: 500px) {
+	.chevron-wrapper {
+		display: none;
+	}
+}
+
+
 
 
 
@@ -176,6 +185,7 @@ p.review {
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0.2px;
+	text-align: left;
 }
 
 .clients.two .client-job {

@@ -8,17 +8,23 @@
 	flex-direction: column;
 }
 
+.feature.one {
+	padding: 0px 30px;
+}
+
 
 .feature.one .eyebrow {
 	display: none;
 }
 
-.feature-list.one .feature-item {
+.feature-list.one, .feature-list.one .feature-item {
 	margin-top: 15px;
 }
 
 
 @media(min-width:960px) {
+
+	.feature-list.one,
 	.feature-list.one .feature-item {
 		margin-top: 0px;
 	}

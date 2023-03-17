@@ -2,14 +2,20 @@
 
 .hero-buttons {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 30px;
-	margin-top: 52px;
+	flex-direction: column;
+			gap: 30px;
+		margin-top: 52px;
 
 }
 
+@media(min-width: 600px) {
+	.hero-buttons {
+		flex-direction: row;
+		justify-content: center;
 
+
+	};
+}
 
 
 .get-started {

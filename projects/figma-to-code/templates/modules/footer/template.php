@@ -5,8 +5,7 @@
 
 <section class="footer-top">
 	
-	<div class="links">
-
+	<section class="links">
 		<div class="link-column">
 			<p class="loud-voice">Product</p>
 			<ul>	
@@ -37,9 +36,7 @@
 				<li><a href="#">Suspendisse vivera</a></li>
 			</ul>
 		</div>
-
-	</div>
-
+	</section>
 
 
 <?php include('components/subscribe/template.php'); ?>

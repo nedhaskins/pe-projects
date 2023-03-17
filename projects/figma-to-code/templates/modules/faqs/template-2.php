@@ -18,13 +18,13 @@
 
 					<article>
 						<details>
-							<summary>Are there any warranty exclusions?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim di</am. 
+							<summary>Are there any warranty exclusions?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam.</p> 
 						</details>
 					</article>
 
 					<article>
 						<details>
-							<summary>Are there any return exclusions?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim </diam. 
+							<summary>Are there any return exclusions?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam.</p> 
 						</details>
 					</article>
 
@@ -36,7 +36,7 @@
 
 					<article>
 						<details>
-							<summary>How can I track my orders and payment?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam.</p> 
+							<summary>How can I track my orders and payment?</summary><p>Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. 
 						</details>
 					</article>
 
