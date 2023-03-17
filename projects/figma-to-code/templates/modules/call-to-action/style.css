@@ -122,6 +122,7 @@
 	.call-to-action.three {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		
 	}
 }
