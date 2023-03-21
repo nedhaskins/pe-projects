@@ -6,13 +6,30 @@
     ],
     "projects": [
         {
+            "id": "111",
+            "slug": "ninja-strings",
+            "name": "ninja strings",
+            "caseStudy": false,
+            "description": "WordPress-based website for a booking agency for string players in central and northern Virginia.",
+            "image": "images/ninja-strings-background.png",
+            "url": "https://stage.ninjastrings.net",
+            "languages": [
+                "PHP",
+                "SCSS"
+            ],
+            "keywords": [
+                "Frameworks",
+                "Content Strategy"
+            ]
+        },
+        {
             "id": "0",
             "slug": "funko-pop-store",
             "name": "funko pop store",
-            "caseStudy": true,
+            "caseStudy": false,
             "description": "The capstone project of the Design for the Web course.  Built from scratch with the Vue framework, running on the Node.js runtime environment.",
             "image": "images/Funko-Pop-Figures.webp",
-            "url": "",
+            "url": "https://tall-dragon.surge.sh",
             "languages": [
                 "JavaScript",
                 "SCSS"
@@ -23,37 +40,41 @@
             ]
         },
         {
-            "id": 1,
-            "slug": "that-food-truck",
-            "name": "that food truck",
+            "id": 43,
+            "slug": "figma-to-code",
+            "name": "figma-to-code",
             "caseStudy": true,
-            "description": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
-            "image": "images/los-angeles-skyline.jpeg",
-            "url": "",
+            "description": "Coding out a pixel-perfect rendering of three Figma templates composed from a library of components and UI kits.",
+            "image": "images/figma-to-code.png",
+            "url": "https://peprojects.dev/alpha-4/ned/projects/figma-to-code",
             "languages": [
                 "HTML",
-                "CSS"
+                "CSS",
+                "PHP"
             ],
             "keywords": [
-                "Pre-Responsive",
-                "Theming",
-                "Client Relations"
+                "Responsive",
+                "Routing",
+                "Theming"
             ]
         },
-        {
-            "id": 2,
-            "slug": "responsive-layout-challenge",
-            "name": "responsive layout challenge",
+                {
+            "id": 4,
+            "slug": "highwaysofvirginia",
+            "name": "highways of virginia",
             "caseStudy": true,
-            "description": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
-            "image": "images/saigon-skyline.jpeg",
+            "description": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
+            "image": "images/i-95.jpeg",
             "url": "",
             "languages": [
                 "HTML",
-                "CSS"
+                "CSS",
+                "PHP"
             ],
             "keywords": [
-                "Responsive"
+                "Responsive",
+                "Routing",
+                "Theming"
             ]
         },
         {
@@ -74,25 +95,6 @@
                 "Framework",
                 "Theming",
                 "Research"
-            ]
-        },
-        {
-            "id": 4,
-            "slug": "highwaysofvirginia",
-            "name": "highways of virginia",
-            "caseStudy": true,
-            "description": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
-            "image": "images/i-95.jpeg",
-            "url": "",
-            "languages": [
-                "HTML",
-                "CSS",
-                "PHP"
-            ],
-            "keywords": [
-                "Responsive",
-                "Routing",
-                "Theming"
             ]
         }
     ]

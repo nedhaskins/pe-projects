@@ -1,0 +1,34 @@
+// {
+        //     "id": 1,
+        //     "slug": "that-food-truck",
+        //     "name": "that food truck",
+        //     "caseStudy": true,
+        //     "description": "This project drew together the concepts of content strategy, theming, and client relations for the first time.  We were given a choice of fictional clients to collaborate with on creating a brand and web presence for their business.",
+        //     "image": "images/los-angeles-skyline.jpeg",
+        //     "url": "",
+        //     "languages": [
+        //         "HTML",
+        //         "CSS"
+        //     ],
+        //     "keywords": [
+        //         "Pre-Responsive",
+        //         "Theming",
+        //         "Client Relations"
+        //     ]
+        // },
+        // {
+        //     "id": 2,
+        //     "slug": "responsive-layout-challenge",
+        //     "name": "responsive layout challenge",
+        //     "caseStudy": true,
+        //     "description": "We made use of all of the responsive elements we had learned at this point in the class to build this layout.",
+        //     "image": "images/saigon-skyline.jpeg",
+        //     "url": "",
+        //     "languages": [
+        //         "HTML",
+        //         "CSS"
+        //     ],
+        //     "keywords": [
+        //         "Responsive"
+        //     ]
+        // },
