@@ -82,7 +82,7 @@
 		"slug": "highwaysofvirginia",
 		"siteXtensionType": "php",
 		"header": "highways of virginia",
-		"copy": "Dynamically creating pages with PHP scripts.  Full CRUD (create-read-updae-delete functionality).",
+		"copy": "Dynamically creating pages with PHP scripts.  Full CRUD (create-read-update-delete functionality).",
 		"sections": [
 			{
 				"moduleType": "subheader-and-text",
