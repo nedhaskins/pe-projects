@@ -3,11 +3,8 @@
 	<inner-column>
 	
 		<div class="cta-top">
-
 			<?php include('components/header-and-text/template.php'); ?>
-
-
-				<?php include('components/forms/email-submit-2.php'); ?>
+			<?php include('components/forms/email-submit-2.php'); ?>
 			</div>
 
 		</div> <!--cta-top-->

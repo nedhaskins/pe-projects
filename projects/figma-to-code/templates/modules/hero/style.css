@@ -108,16 +108,6 @@ padding-bottom: 195.5px;
 }
 
 
-
-
-
-.hero.three .form-wrapper .email-submit-2 input {
-	background-color: var(--palatinateBlue);
-	border: none;
-	border-radius: 10px;
-	color: white;
-}
-
 .hero.three {
 	background-color: var(--royalBlue);
 }
@@ -130,8 +120,5 @@ padding-bottom: 195.5px;
 	display: none;
 }
 
-.hero.three .email-submit-2 button {
-	background-color: white;
-	color: var(--royalBlue);
-}
+
 

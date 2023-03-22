@@ -1,3 +1,5 @@
+<!--Used in subscribe modules-->
+
 <form class='email-submit'>
 
 	<input type='email'>

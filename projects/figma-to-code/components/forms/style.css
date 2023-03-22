@@ -1,5 +1,4 @@
 
-
 .email-submit {
 	display: flex;
 	flex-direction: row;
@@ -7,10 +6,8 @@
 }
 
 .email-submit input {
-	flex-basis: 100%;
+	flex-basis: 100%;s
 }
-
-
 
 .email-submit button {
 	display: block;
@@ -19,7 +16,6 @@
 	background-color: var(--royalBlue);
 	padding: 10px;
 }
-
 
 .email-submit svg path {
 	stroke: white;
@@ -36,36 +32,33 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 16px;
+/*	height: 36px;*/
 }
 
-@media(min-width: 610px) {
-
-	.email-submit-2 {
-		flex-direction: row;
-	justify-content: center; 
-		width: 485px;
-	}
+.hero.three .email-submit-2 {
+/*	height: 80px;*/
 }
 
 .email-submit-2 input {
 	background: url('../../images/envelope.svg') no-repeat;
 	background-position: 10px;
 	flex-basis: 100%;
-	padding: 10px 0px 10px 45px;
+/*	padding: 10px 0px 10px 45px;*/
 	color: white;
 	stroke: white;
 }
 
 .hero.three .email-submit-2 input {
+	border: none;
+	border-radius: 10px;
 	background: url('../../images/envelope-white.svg') no-repeat;
-	background-position: 19px;
+	background-color: var(--palatinateBlue);
+	background-position: 13px;
 	flex-basis: 100%;
-	padding: 20px 0px 20px 54px;
+/*	height: 36px;*/
+	padding: 13px 0px 13px 52px;
 	color: white;
 }
-
-
-
 
 .email-submit-2 button {
 	width: 117px;
@@ -73,6 +66,7 @@
 	border-radius: 5px;
 
 	background-color: var(--royalBlue);
+/*	height: 36px;*/
 	padding: 10px;
 	color: white;
 	font-size: 16px;
@@ -81,7 +75,15 @@
 	vertical-align: top;
 }
 
+.hero.three .email-submit-2 button {
+	background-color: white;
+	color: var(--royalBlue);
+}
 
-
-
-
+@media(min-width: 610px) {
+	.email-submit-2 {
+		flex-direction: row;
+	justify-content: center; 
+		width: 485px;
+	}
+}

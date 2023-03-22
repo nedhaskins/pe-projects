@@ -1,15 +1,22 @@
 .navigation {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+	display: block;
 	padding: 20px;
 }
 
-.navigation.three {
+
+@media(min-width: 500px) {
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+}
+
+/*.navigation.three {
 	display: grid;
 	grid-template-columns: 1fr 30% 1fr;
-}
+}*/
 
 .navigation.two {
 	background-color: var(--royalBlue);
