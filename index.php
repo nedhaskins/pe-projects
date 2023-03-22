@@ -61,8 +61,11 @@ if( isset($_GET['slug']) ) {
 <?php } elseif($page == 'exercise' && isset($GET['slug'] ) ) { ?>
 
 	<body class='e4p-detail'>
-		<?php include('templates/modules/graphic-list.php');
-?>
+		<main class='page-content'>
+			<?php fetchPage(); ?>
+		</main>
+	</body>
+
 <!--come back to this and finish it -- add vanilla JS and Vue options-->
 
 <?php } else { ?>            

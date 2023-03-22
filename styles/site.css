@@ -6,12 +6,6 @@
 
 @import '../templates/components/style.css';
 
-@import '../templates/pages/home/style.css';
-@import '../templates/pages/projects/style.css';
-@import '../templates/pages/the-lab/style.css';
-@import '../templates/pages/contact/style.css';
-@import '../templates/pages/404/style.css';
-
 @import '../templates/modules/home/style.css';
 @import '../templates/modules/header-and-text/style.css';
 @import '../templates/modules/subheader-and-text/style.css';
