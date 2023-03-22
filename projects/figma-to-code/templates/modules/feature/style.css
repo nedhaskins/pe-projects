@@ -76,7 +76,7 @@
 
 :is(.feature.two, .feature.three) .header-and-text h3 {
 	text-align: center;
-	max-width: 952px;
+	max-width: 850px;
 }
 
 
