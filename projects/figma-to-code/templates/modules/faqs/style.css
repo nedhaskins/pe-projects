@@ -13,13 +13,13 @@ border-bottom: 1px solid var(--ink-dark);
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 306px;
+	max-width: 80%;
 }
 
 
 @media(min-width: 700px) {
 	.faqs inner-column {
-		max-width: 843px;
+		max-width: 80%;
 	}
 }
 
