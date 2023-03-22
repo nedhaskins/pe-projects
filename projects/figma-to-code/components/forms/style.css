@@ -36,7 +36,7 @@
 }
 
 .hero.three .email-submit-2 {
-/*	height: 80px;*/
+	width: 100%;
 }
 
 .email-submit-2 input {
@@ -44,6 +44,13 @@
 	flex-basis: 100%;
 	border-radius: 10px;
 	padding: 13px 0px 13px 52px;
+	width: 80%;
+}
+
+@media(min-width: 690px) {
+	.hero.three .email-submit-2 {
+		width: 80%;
+	}
 }
 
 /*MODULE-SPECIFIC CHARACTERISTICS*/

@@ -1,16 +1,22 @@
 :is(.feature.two, .feature.three) inner-column {
 	margin: 0 auto;
-	max-width: 80%;
+/*	max-width: 80%;*/
 }
 
 .feature {
 	display: flex;
 	flex-direction: column;
+	padding: 80px;
 }
 
 .feature.one {
 	padding: 0px 30px;
 }
+
+.feature.two {
+
+}
+
 
 
 .feature.one .eyebrow {
