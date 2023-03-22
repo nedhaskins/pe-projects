@@ -14,20 +14,19 @@
 
 
 .call-to-action.three inner-column {
-	max-width: 1200px;	
 	display: flex;
-	flex-direction: row;
-	gap: 48px;
+	flex-direction: column;
 	padding: 91px 60px;
 }
 
 
-
-
-
-
-
-
+@media(min-width: 900px) {
+	.call-to-action.three inner-column {
+		max-width: 1200px;	
+		flex-direction: row;
+		gap: 48px;
+	}
+}
 
 :is(.call-to-action.one, .call-to-action.two) .header-and-text {
 	text-align: center;

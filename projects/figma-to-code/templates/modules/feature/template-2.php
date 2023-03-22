@@ -2,10 +2,10 @@
 
 	<inner-column>
 	<div class="header-and-text">
-
-		<h3>Etiam nulla lectus amet nunc molestie at vulputate.</h3>
-		<p>Neque, pulvinar vestibulum non aliquam.</p>
-
+		<text-wrapper>
+			<h3>Etiam nulla lectus amet nunc molestie at vulputate.</h3>
+			<p>Neque, pulvinar vestibulum non aliquam.</p>
+		</text-wrapper>
 	</div>
 
 	<div class="feature-list two">
