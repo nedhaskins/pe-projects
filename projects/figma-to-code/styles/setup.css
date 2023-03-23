@@ -40,3 +40,7 @@ svg {
 em {
 	font-weight: 700;
 }
+
+body {
+	-webkit-font-smoothing: antialiased;
+}

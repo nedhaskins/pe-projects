@@ -34,11 +34,12 @@
 }
 
 .client-name {
-	color: var(--sonicSilver);
 	text-align: center;
 }
 
-
+.client-job {
+	color: var(--sonicSilver);
+}
 
 
 p.review {
