@@ -26,18 +26,24 @@ foreach($caseStudies as $caseStudy) {
 
 				$tag = $block['tag'] ?? false;
 				$content = $block['content'] ?? false;
+				$imageSource = $block['src'] ?? false;
+				$imageCaption = $block['figcaption'] ?? false;
 
 				echo "<" . $tag . ">";
 
-				if(gettype($content) == 'array') {
+				if($tag === 'picture') { 
+					echo "<img src='" . $imageSource . "'/>";
+					echo "<figcaption>" . $imageCaption . "</figcaption>";
+
+				} elseif($tag === 'ul') {
 					foreach($content as $contentBlock) {
 						echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
 					}
 				} else {
 					echo $content;
 				}
-				echo "</" . $tag . ">";
 
+				echo "</" . $tag . ">";
 			} ?>
 
 			<!--Why is this class here?-->

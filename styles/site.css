@@ -273,6 +273,13 @@ svg .curve {
 	}
 }
 
+.case-study code {
+	background-color: black;
+	color: var(--desire);
+	font-family: 'Courier';
+	font-size: 15px;
+	padding: 5px;
+}
 
 
 

@@ -75,8 +75,9 @@
 				"content": "I took note of the colors used -- shades of green and blue took center stage on nearly every page, followed by tan and white. It fit the sites' goal of evoking a \"beach\" vibe."
 			},
 			{
-				"tag": "figcaption",
-				"content": "One of the sites researched - Sun Realty, Outer Banks, NC"
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/sun-realty.jpeg",
+				"figcaption": "One of the sites researched - Sun Realty, Outer Banks, NC"
 			},
 			{
 				"tag": "p",
@@ -85,6 +86,11 @@
 			{
 				"tag": "p",
 				"content": "For all of the sites, further down, a module showed \"categories\" of rentals to choose from (\"Oceanside Rentals\", \"Last Minute Deals\", etc)."
+			},
+			{
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/rental-searches.webp",
+				"figcaption": ""
 			},
 			{
 				"tag": "p",
@@ -115,6 +121,11 @@
 				"content": "Two color palettes to be used with site elements, header fonts, and fonts used for paragraph text were included."
 			},
 			{
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/style-tile.webp",
+				"figcaption": ""
+			},
+			{
 				"tag": "h3",
 				"content": "Days 5 and 6"
 			},
@@ -127,68 +138,134 @@
 				"content": "The first pass"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-1.webp",
+				"figcaption": "Figure 1.1"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-2.webp",
+				"figcaption": "Figure 1.2"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-3.webp",
+				"figcaption": "Figure 1.3"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "The first phase. I’d just placed the photos and new fonts into the layout and incorporated some color choices. Immediate issues included getting the first page-wide image to not repeat — and for it to be centered. The spacing in the first section hadn’t been worked out yet, but user feedback told me there wasn’t enough space between the image and the first bit of text content. (fig. 1)."
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "Our site template included an <article> section. The PHP element of the project came into play here — data from an associative array was used to populate each of the &lt;article-card&gt; elements. I didn’t change too much about the initial card styling on the first pass, but added images and the chosen heading and “normal text” fonts (fig. 2)."
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "The module in fig. 3 is a module of the same type as the bottom half of fig. 1. It mostly served to test out which color was the most effective for the space."
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "h3",
+				"content": "The second pass"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-4.webp",
+				"figcaption": "Figure 1.4"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "From a spacing standpoint, it’s an improvement from the first pass. User feedback about the legibility (or lack thereof) of the heading font led me to try another one."
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-5.jpeg",
+				"figcaption": "Figure 1.5"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "I worked up the cards a good bit for this pass. I added box-shadow to the edges of each card and used an orange-black color scheme for the headings and text to reflect how this info appeared on one of the researched sites."
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "I removed the padding from the <code>&lt;img&gt;</code> elements to allow them to fill the card. <code>align-items: flex-start</code> had been applied to the <text-content> element inside the card; I removed this to allow the button to expand out across the card (fig. 5). I reorganized the code to keep the default stylings for each “type” of module in their respective stylesheets — NOT the general “site.css” file."
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "h3",
+				"content": "Final iteration"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "I had a few tasks I wanted to check off for the home stretch. First — double- and triple-check and make sure the site looks good on a small screen. (Could the spacing between the top navbar and the button below it in the first section look a little more harmonious even now?)"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-6.webp"
 			},
 			{
-				"tag": "",
-				"content": ""
+				"tag": "p",
+				"content": "I realized after looking at the sites I had researched that virtually all of them included a backdrop of a beachscape as the primary “attention-getter” on their landing pages. So — I made the change and put it into my layout."
+			},
+			{
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-7.jpeg"
+			},
+			{
+				"tag": "p",
+				"content": "I created a custom logo for this final pass and incorporated it into the header and footer. I did what I could to address all of the clear spacing issues in this round; adding the <code>vw</code> and <code>vh</code> element to some elements got me the consistency in spacing across screen sizes that I was looking for."
+			},
+			{
+				"tag": "p",
+				"content": "I found a nice technique to work with a background image's opacity without affecting the overlaying text — critical for the success of the dark version..."
+			},
+			{
+				"tag": "p",
+				"content": "In this technique, the gradient \"transitions\" between two separate translucent \"filters\". Unlike the normal opacity property, it doesn’t effect the child elements."
+			},
+			{
+				"tag": "picture",
+				"src": "data/case-studies/outer-banks/figure-8.jpeg"
+			},
+			{
+				"tag": "h3",
+				"content": "Conclusion"
+			},
+			{
+				"tag": "p",
+				"content": "I learned a great deal about code organization from this project. Placing typographical elements in the correct places is of paramount importance when websites grow to have dozens of modules and hundreds, if not thousands, of components across multiple pages. Certain practices such as putting “one-off” changes in a broadly defined “site.css” file were helpful in keeping the default module stylings “clean” and ready to be used again for another purpose if needed."
+			},
+			{
+				"tag": "p",
+				"content": "Later, I received feedback about visualizing and working with a grid layout from the start, among other things, and I'm looking forward to implementing these suggestions in my next project."
+			},
+			{
+				"tag": "p",
+				"content": "For the next iteration of this project I want to think more deeply about user experience from the very outset. I will treat feedback as the most valuable form of information I can get about my work after its completion."
+			},
+			{
+				"tag": "p",
+				"content": "Key concepts for a successful user experience:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "<em>Legibility.</em> If they can’t read it, they can’t use it."
+					},
+					{
+						"tag": "li",
+						"content": "<em>Where are you leading the eye? / The emotional response comes from more than the text.</em> How is everything on the page working together to lead the user to have the kind of experience you want them to have (or lead them to the type of information they’re looking for — or deliver the kind of feedback YOU’RE looking for)?"
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "My classmates created some really impressive work for this past project. It was inspiring to see, and it’s spurred me on to dig much deeper into the entire front-end toolkit."
+			},
+			{
+				"tag": "p",
+				"content": "Improvement comes through PRACTICE. I’m looking forward to doing much, much more of it."
 			}
 		]
 	}
