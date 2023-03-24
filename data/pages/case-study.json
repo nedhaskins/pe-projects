@@ -1,109 +1,194 @@
 [
 	{
-		"slug": "that-food-truck",
-		"siteXtensionType": "html",
-		"header": "that food truck",
-		"copy": "Creating a minimalist web presence for a client.",
-		"sections": [
-			{
-				"moduleType": "subheader-and-text",
-				"header": "Description",
-				"copy": [
-					"The client needed a simple landing page with a description of their business and contact information.  The project reflects my understanding of HTML after about a month and a half of study."
-				]
-			},
-			{
-				"moduleType": "subheader-figure-caption",
-				"image-header": "Here's an example image",
-				"image": "images/los-angeles-skyline.jpeg",
-				"alt": "Los Angeles skyline",
-				"figcaption": "I used this background photo on the site landing to convey a feeling of excitement in an urban setting."
-			},
-			{
-				"moduleType": "subheader-and-text",
-				"header": "Summary",
-				"copy": [
-					"This project forced us into the arenas of content strategy, client relations, and foundational user experience."
-				]
-			}
-		]
-	},
-	{
-		"slug": "responsive-layout-challenge",
-		"siteXtensionType": "html",
-		"header": "responsive layout challenge",
-		"copy": "Bringing together the foundational elements of responsive layouts.",
-		"sections": [
-			{
-				"moduleType": "subheader-and-text",
-				"header": "Research",
-				"copy": [
-					"At this point in the Design for the Web course we had spoken a lot about responsive web design.  What elements make a site successfully responsive?  How can a designer take a site from breakpoint to breakpoint in a way that keeps the content at the center of the user experience?  With this project we aimed to coalesce our understanding of these elements into a single-page showcase."
-				]
-			},
-			{
-				"moduleType": "subheader-figure-caption",
-				"image-header": "Here's an example image",
-				"image": "images/saigon-skyline.jpeg",
-				"alt": "Saigon skyline"
-			}
-		]
-	},
-	{
 		"slug": "theme-challenge",
 		"siteXtensionType": "php",
-		"header": "outer banks vacation rentals",
-		"copy": "Theming, CSS frameworks, and replication.",
-		"sections": [
+		"title": "outer banks vacation rentals",
+		"subtitle": "Theming, CSS frameworks, and replication.",
+		"htmlContent": [
 			{
-				"moduleType": "subheader-and-text",
-				"header": "Description",
-				"copy": [
-					"For this project we were provided a CSS framework.  We were to choose a theme that a business or other entity could use and build out a site using only the elements in that framework."
+				"tag": "p",
+				"content": "Each student in the Design for the Web course recently completed a week-long \"responsive theme challenge\"."
+			},
+			{
+				"tag": "p",
+				"content": "This project tied together many elements we'd been studying in the course up to this point:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "HTML structure; the \"hierarchy\" of elements;"
+					},
+					{
+						"tag": "li",
+						"content": "CSS - work with responsive elements, section spacing, color choices, typography, and making a \"unified whole\" or \"unified statement\""
+					},
+					{
+						"tag": "li",
+						"content": "PHP - creating associative arrays and pulling the data to be used for dynamic content (section) creation"
+					},
+					{
+						"tag": "li",
+						"content": "Time was a factor; we were given six days to complete the project."
+					}
 				]
 			},
 			{
-				"moduleType": "subheader-figure-caption",
-				"image-header": "Here's an example image",
-				"image": "images/shoreline-2.jpeg",
-				"alt": "Picture of a shoreline",
-				"figcaption": "We edited the CSS styling with minimal, if any, changes to the HTML to achieve the theme."
+				"tag": "h3",
+				"content": "Day 1"
 			},
 			{
-				"moduleType": "subheader-and-text",
-				"header": "Conclusion",
-				"copy": [
-					"CSS frameworks offer a great deal of freedom even if it doesn't appear so at first. The more vanilla code a developer knows and can utilize, the more personalized they can make their projects.  In general, it appears that certain structural components such as headers and footers can have a definite appearance in a framework, relieving the developer of the need to design and position these elements."
-				]
-			}
-		]
-	},
-	{
-		"slug": "highwaysofvirginia",
-		"siteXtensionType": "php",
-		"header": "highways of virginia",
-		"copy": "Dynamically creating pages with PHP scripts.  Full CRUD (create-read-update-delete functionality).",
-		"sections": [
-			{
-				"moduleType": "subheader-and-text",
-				"header": "Description",
-				"copy": [
-					"At this point in the course we had been working with PHP for some time.  The goal here was to create a site that demonstrated knowledge of GET and POST requests and how forms add dynamic functionality to a page by allowing a user to make and receive these requests."
-				]
+				"tag": "p",
+				"content": "As an individual exercise both in in site layout and getting familiar with the tools and languages to be used in the project, each student wrote out all of the code needed to recreate a sample responsive layout as accurately as possible."
 			},
 			{
-				"moduleType": "subheader-figure-caption",
-				"image-header": "Here's an example image",
-				"image": "images/i-95.jpeg",
-				"alt": "Interstate 95",
-				"figcaption": "The site allows the user to view, enter, update, and delete data for roads and highways in the state of Virginia."
+				"tag": "h3",
+				"content": "Day 2"
 			},
 			{
-				"moduleType": "subheader-and-text",
-				"header": "Conclusion",
-				"copy": [
-					"I dove deep with this project and gained a great deal of confidence with PHP. Reading the documentation was essential to making critical choices and eliminating non-working solutions for this project."
-				]
+				"tag": "p",
+				"content": "We reviewed the code from this initial exercise with the instructor to check for understanding and accuracy."
+			},
+			{
+				"tag": "h3",
+				"content": "Day 3"
+			},
+			{
+				"tag": "p",
+				"content": "We chose an industry or \"niche\" to research. The idea was to gather in one place as many visual tricks and layout elements that were common to all of the sites researched. What colors / color schemes were favored the most? Font pairings? How was spacing used throughout the site? Was there enough between the elements, or were things packed too closely together, like sardines?"
+			},
+			{
+				"tag": "p",
+				"content": "It also became apparent during this step that one had to ask the question, “What’s the best way to do research for a project like this?” It had to fall in line with the time constraints we had — at this point we could reasonably expect to have three days maximum to write out the code for the site after the research."
+			},
+			{
+				"tag": "p",
+				"content": "My initial thought process for the research went something like this: Treat it like a spree. I chose half a dozen websites and grabbed everything I could off of them as quickly as I could."
+			},
+			{
+				"tag": "p",
+				"content": "I began by looking up rental agency websites in a familiar location - the Outer Banks of North Carolina, a popular resort area in the Mid-Atlantic region."
+			},
+			{
+				"tag": "p",
+				"content": "I took note of the colors used -- shades of green and blue took center stage on nearly every page, followed by tan and white. It fit the sites' goal of evoking a \"beach\" vibe."
+			},
+			{
+				"tag": "figcaption",
+				"content": "One of the sites researched - Sun Realty, Outer Banks, NC"
+			},
+			{
+				"tag": "p",
+				"content": "Beach landscape photographs were used as a backdrop for header text on every site I visited. Some websites immediately showed a date/time/number of guests component right off the bat (\"Choose your destination\"); users were able to cut down on their browsing time by being given back only the available results within their specified time period."
+			},
+			{
+				"tag": "p",
+				"content": "For all of the sites, further down, a module showed \"categories\" of rentals to choose from (\"Oceanside Rentals\", \"Last Minute Deals\", etc)."
+			},
+			{
+				"tag": "p",
+				"content": "After the initial passes on the chosen websites I read a little on font pairings and dug into Google Fonts to find some typefaces that might fit my chosen theme."
+			},
+			{
+				"tag": "p",
+				"content": "All of this research prepared us for the following day — the style tile."
+			},
+			{
+				"tag": "h3",
+				"content": "Day 4"
+			},
+			{
+				"tag": "p",
+				"content": "A style tile is a visual device used in project management and implementation to convey ideas about theming, layout and typography to a stakeholder."
+			},
+			{
+				"tag": "p",
+				"content": "Our goal was to take all of the ideas found in the research and mock up a style tile as a prelude to the actual implementation of the code."
+			},
+			{
+				"tag": "p",
+				"content": "Getting all of the elements into a presentable \"layout\" format was less important at this stage to me than getting a cohesive feeling about the elements going. The colors, the fonts, the shapes — all of it needed to convey what all of us can probably collectively agree can be called “the beach vibe”. Relaxed. Free. Calming. A piña colada."
+			},
+			{
+				"tag": "p",
+				"content": "Two color palettes to be used with site elements, header fonts, and fonts used for paragraph text were included."
+			},
+			{
+				"tag": "h3",
+				"content": "Days 5 and 6"
+			},
+			{
+				"tag": "p",
+				"content": "It was time to get the code rolling — to use our tools, research and visual devices to make the final layout as close as possible to the sites we had researched."
+			},
+			{
+				"tag": "h3",
+				"content": "The first pass"
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
+			},
+			{
+				"tag": "",
+				"content": ""
 			}
 		]
 	}

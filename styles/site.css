@@ -20,6 +20,8 @@
 @import '../templates/modules/font-overview/style.css';
 @import '../templates/modules/404/style.css';
 
+@import '../templates/pages/case-studies/outer-banks/style.css';
+
 
 .site-menu {
 	display: flex;

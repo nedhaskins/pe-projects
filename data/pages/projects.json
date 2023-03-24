@@ -43,7 +43,7 @@
             "id": 43,
             "slug": "figma-to-code",
             "name": "figma-to-code",
-            "caseStudy": true,
+            "caseStudy": false,
             "description": "Coding out a pixel-perfect rendering of three Figma templates composed from a library of components and UI kits.",
             "image": "images/figma-to-code.png",
             "url": "https://peprojects.dev/alpha-4/ned/projects/figma-to-code",
@@ -58,7 +58,7 @@
                 "Theming"
             ]
         },
-                {
+        {
             "id": 4,
             "slug": "highwaysofvirginia",
             "name": "highways of virginia",
@@ -82,6 +82,7 @@
             "slug": "theme-challenge",
             "name": "outer banks vacation rentals",
             "caseStudy": true,
+            "caseStudyURL": "http://pe-projects:8888/projects/theme-challenge/case-study.html",
             "description": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible the major attributes of the chosen theme -- typefaces, color scheme, and overall layout.",
             "image": "images/shoreline-2.jpeg",
             "url": "",

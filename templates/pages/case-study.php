@@ -6,11 +6,12 @@ $caseStudies = $pageData;
 
 foreach($caseStudies as $caseStudy) {
 
-	$header = $caseStudy ['header'];
-	$copy = $caseStudy ['copy'];
-	$sections = $caseStudy['sections'];
 	$slug = $caseStudy['slug'];
 	$siteXtensionType = $caseStudy['siteXtensionType'];
+	$title = $caseStudy ['title'];
+	$subtitle = $caseStudy ['subtitle'];
+	$htmlContent = $caseStudy['htmlContent'];
+	
 
 	if($caseStudy['slug'] == $_GET['slug']) { ?>
 
@@ -18,22 +19,28 @@ foreach($caseStudies as $caseStudy) {
 
 			<a class='linktype-1' href='?page=projects'>Back to Projects</a>
 
-			<h2 class='attention-voice case-study'><?=$header?></h2>
-			<p class='body-copy case-study'><?=$copy?></p>
+			<h2 class='attention-voice case-study'><?=$title?></h2>
+			<p class='body-copy case-study'><?=$subtitle?></p>
 
-			<?php	foreach($sections as $section) {
+			<?php	foreach($htmlContent as $block) {
 
-				$moduleType = $section['moduleType'];
-				$header = $section['header'] ?? false;
-				$copy = $section['copy'] ?? false;
-				$imageHeader = $section['imageHeader'] ?? false;
-				$image = $section['image'] ?? false;
-				$alt = $section['alt'] ?? false;
-				$figCaption = $section['figcaption'] ?? false;
+				$tag = $block['tag'] ?? false;
+				$content = $block['content'] ?? false;
 
-				include("templates/modules/$moduleType/template.php");	
+				echo "<" . $tag . ">";
+
+				if(gettype($content) == 'array') {
+					foreach($content as $contentBlock) {
+						echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
+					}
+				} else {
+					echo $content;
+				}
+				echo "</" . $tag . ">";
+
 			} ?>
 
+			<!--Why is this class here?-->
 			<a class='linktype-1' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
 
 		</section>

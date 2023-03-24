@@ -1,0 +1,121 @@
+<h1>Outer Banks vacation rentals!</h1>
+<h2>A theming project employing HTML, CSS and PHP.</h2>
+
+<p>Each student in the Design for the Web course recently completed a week-long "responsive theme challenge".
+
+<p>This project tied together many elements we'd been studying in the course up to this point:
+
+<ul>
+	<li>HTML structure; the "hierarchy" of elements;</li>
+	<li>CSS - work with responsive elements, section spacing, color choices, typography, and making a "unified whole" or "unified statement"</li>
+	<li>PHP - creating associative arrays and pulling the data to be used for dynamic content (section) creation</li>
+	<li>Time was a factor; we were given six days to complete the project.</li>
+</ul>
+
+<h3>Day 1</h3>
+<p>As an individual exercise both in in site layout and getting familiar with the tools and languages to be used in the project, each student wrote out all of the code needed to recreate a sample responsive layout as accurately as possible.</p>
+
+<h3>Day 2</h3>
+<p>We reviewed the code from this initial exercise with the instructor to check for understanding and accuracy.</p>
+
+<h3>Day 3</h3>
+<p>We chose an industry or "niche" to research. The idea was to gather in one place as many visual tricks and layout elements that were common to all of the sites researched. What colors / color schemes were favored the most? Font pairings? How was spacing used throughout the site? Was there enough between the elements, or were things packed too closely together, like sardines?</p>
+
+<p>It also became apparent during this step that one had to ask the question, “What’s the best way to do research for a project like this?” It had to fall in line with the time constraints we had — at this point we could reasonably expect to have three days maximum to write out the code for the site after the research.</p>
+
+<p>My initial thought process for the research went something like this: Treat it like a spree. I chose half a dozen websites and grabbed everything I could off of them as quickly as I could.</p>
+
+<p>I began by looking up rental agency websites in a familiar location - the Outer Banks of North Carolina, a popular resort area in the Mid-Atlantic region.</p>
+
+<p>I took note of the colors used -- shades of green and blue took center stage on nearly every page, followed by tan and white. It fit the sites' goal of evoking a "beach" vibe.</p>
+
+
+<figcaption>One of the sites researched - Sun Realty, Outer Banks, NC</figcaption>
+<p>Beach landscape photographs were used as a backdrop for header text on every site I visited. Some websites immediately showed a date/time/number of guests component right off the bat ("Choose your destination"); users were able to cut down on their browsing time by being given back only the available results within their specified time period.</p>
+
+<p>For all of the sites, further down, a module showed "categories" of rentals to choose from ("Oceanside Rentals", "Last Minute Deals", etc).</p>
+
+
+<p>After the initial passes on the chosen websites I read a little on font pairings and dug into Google Fonts to find some typefaces that might fit my chosen theme.</p>
+
+<p>All of this research prepared us for the following day — the style tile.</p>
+
+<h3>Day 4</h3>
+<p>A style tile is a visual device used in project management and implementation to convey ideas about theming, layout and typography to a stakeholder.</p>
+
+<p>Our goal was to take all of the ideas found in the research and mock up a style tile as a prelude to the actual implementation of the code.</p>
+
+<p>Getting all of the elements into a presentable "layout" format was less important at this stage to me than getting a cohesive feeling about the elements going. The colors, the fonts, the shapes — all of it needed to convey what all of us can probably collectively agree can be called “the beach vibe”. Relaxed. Free. Calming. A piña colada.</p>
+
+<p>Two color palettes to be used with site elements, header fonts, and fonts used for paragraph text were included.</p>
+
+
+<h3>Days 5 and 6</h3>
+<p>It was time to get the code rolling — to use our tools, research and visual devices to make the final layout as close as possible to the sites we had researched.</p>
+
+<h3>The first pass</h3>
+
+<figcaption>Figure 1</figcaption>
+
+<figcaption>Figure 2</figcaption>
+
+<figcaption>Figure 3</figcaption>
+<p>The first phase. I’d just placed the photos and new fonts into the layout and incorporated some color choices. Immediate issues included getting the first page-wide image to not repeat — and for it to be centered. The spacing in the first section hadn’t been worked out yet, but user feedback told me there wasn’t enough space between the image and the first bit of text content. (fig. 1).</p>
+
+<p>Our site template included an <article> section. The PHP element of the project came into play here — data from an associative array was used to populate each of the <article-card> elements. I didn’t change too much about the initial card styling on the first pass, but added images and the chosen heading and “normal text” fonts (fig. 2).</article-card>
+
+<p>The module in fig. 3 is a module of the same type as the bottom half of fig. 1. It mostly served to test out which color was the most effective for the space.</p>
+
+<h3>The second pass</h3>
+
+<figcaption>Figure 4</figcaption>
+<p>From a spacing standpoint, it’s an improvement from the first pass. User feedback about the legibility (or lack thereof) of the heading font led me to try another one.</p>
+
+
+<figcaption>Figure 5</figcaption>
+<p>I worked up the cards a good bit for this pass.</p>
+
+<p>I added box-shadow to the edges of each card.</p>
+
+<p>I used an orange-black color scheme for the headings and text to reflect how this info appeared on one of the researched sites.</p>
+
+<p>I removed the padding from the <img> elements to allow them to fill the card. align-items: flex-start had been applied to the <text-content> element inside the card; I removed this to allow the button to expand out across the card (fig. 5).</text-content>
+
+<p>I reorganized the code to keep the default stylings for each “type” of module in their respective stylesheets — NOT the general “site.css” file.</p>
+
+<h3>Final iteration</h3>
+<p>I had a few tasks I wanted to check off for the home stretch. First — double- and triple-check and make sure the site looks good on a small screen. (Could the spacing between the top navbar and the button below it in the first section look a little more harmonious even now?)</p>
+
+
+<figcaption>Figure 6</figcaption>
+<p>I realized after looking at the sites I had researched that virtually all of them included a backdrop of a beachscape as the primary “attention-getter” on their landing pages. So — I made the change and put it into my layout.</p>
+
+
+<figcaption>Figure 7</figcaption>
+<p>I created a custom logo for this final pass and incorporated it into the header and footer. I did what I could to address all of the clear spacing issues in this round; adding the vw and vh element to some elements got me the consistency in spacing across screen sizes that I was looking for.</p>
+
+<p>I found a nice technique to work with a background image’s opacity without affecting the overlaying text — critical for the success of the dark version.</p>
+
+<code>background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("someurl.domain");</code>
+
+<p>In this technique, the gradient “transitions” between two separate translucent “filters”. Unlike the normal opacity property, it doesn’t effect the child elements.</p>
+
+
+<figcaption>Figure 8</figcaption>
+<h3>Conclusion<h3>
+<p>I learned a great deal about code organization from this project. Placing typographical elements in the correct places is of paramount importance when websites grow to have dozens of modules and hundreds, if not thousands, of components across multiple pages. Certain practices such as putting “one-off” changes in a broadly defined “site.css” file were helpful in keeping the default module stylings “clean” and ready to be used again for another purpose if needed.</p>
+
+<p>Later, I received feedback about visualizing and working with a grid layout from the start, among other things, and I'm looking forward to implementing these suggestions in my next project.</p>
+
+<p>For the next iteration of this project I want to think more deeply about user experience from the very outset. I will treat feedback as the most valuable form of information I can get about my work after its completion.</p>
+
+<p>Key concepts for a successful user experience:</p>
+
+<ul>
+	<li>Legibility. If they can’t read it, they can’t use it.</li>
+	<li><em>Where are you leading the eye? / The emotional response comes from more than the text.</em> How is everything on the page working together to lead the user to have the kind of experience you want them to have (or lead them to the type of information they’re looking for — or deliver the kind of feedback YOU’RE looking for)?</li>
+</ul>
+
+<p>My classmates created some really impressive work for this past project. It was inspiring to see, and it’s spurred me on to dig much deeper into the entire front-end toolkit.</p>
+
+<p>Improvement comes through PRACTICE. I’m looking forward to doing much, much more of it.</p>

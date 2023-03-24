@@ -1,0 +1,12 @@
+{
+	"outer-banks": [
+		{
+			"tag": "h1",
+			"content": "Outer Banks vacation rentals!"
+		},
+		{
+			"tag": "h2",
+			"content": "A theming project employing HTML, CSS and PHP."
+		}
+	]
+}

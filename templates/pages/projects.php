@@ -19,7 +19,10 @@
 		$url = $link['url'] ?? false;
 		$isExternalLink = ($url !== "");
 		
-		$caseStudy = $link['caseStudy'] ?? false; 
+		$caseStudy = $link['caseStudy'] ?? false;
+
+		//Rerouting the case studies for now while the revised layout is being worked out. 3/24/23
+		// $caseStudyURL = $link['caseStudyURL']; 
 
 		$hasCaseStudy = ($caseStudy != []); //brackets needed here...because the object's been translated into a PHP array
 		
