@@ -19,6 +19,7 @@ foreach($caseStudies as $caseStudy) {
 			<inner-column>
 				<h2><?=$title?></h2>
 				<h3><?=$subtitle?></h3>
+				<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
 
 				<?php	foreach($htmlContent as $block) {
 
@@ -48,7 +49,6 @@ foreach($caseStudies as $caseStudy) {
 
 				} ?>
 
-				<!--Why is this class here?-->
 				<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
 			</inner-column>
 		</section>
