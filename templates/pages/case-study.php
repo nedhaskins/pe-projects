@@ -31,6 +31,7 @@ foreach($caseStudies as $caseStudy) {
 
 					if($tag === 'picture') { 
 						echo "<img src='" . $imageSource . "'/>";
+						echo "<figcaption>" . $imageCaption . "</figcaption>";
 					} elseif($tag === 'ul') {
 						foreach($content as $contentBlock) {
 							echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";

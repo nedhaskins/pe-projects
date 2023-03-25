@@ -284,12 +284,12 @@ svg .curve {
 .case-study inner-column {
 	width: 80%;
 }
-.case-study h3, h2, p, ul, li, picture {
+.case-study h3, .case-study h2, .case-study p, .case-study ul, .case-study li, .case-study picture {
 	margin-top: 12px;
 }
 
 .case-study figcaption {
-	margin: 0;
+	margin-top: 24px;
 }
 
 .case-study p:nth-of-type(1) {
@@ -305,14 +305,21 @@ svg .curve {
 
 .case-study h3 {
 	font-size: 30px;
+	letter-spacing: 0.05em;
 	font-style: italic;
 }
 
 .case-study p, ul, li {
 	font-size: 24px;
+	letter-spacing: 0.02em;
+	line-height: 1.5;
 }
 
-ul {
+.case-study picture {
+	margin: 30px 0px 30px 0px;
+}
+
+.case-study ul {
 	list-style: square;
 	margin-left: 20px;
 
@@ -325,7 +332,7 @@ ul {
 	background-color: black;
 	color: var(--desire);
 	font-family: 'Courier', monospace;
-	font-size: 15px;
+	font-size: 20px;
 	padding: 5px;
 }
 
