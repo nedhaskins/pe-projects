@@ -322,6 +322,12 @@ svg .curve {
 	padding: 10px;
 }
 
+@media(prefers-color-scheme: dark) {
+	.case-study picture {
+		border: 3px solid var(--paper);
+	}
+}
+
 
 .case-study ul {
 	list-style: square;
