@@ -16,41 +16,34 @@ foreach($caseStudies as $caseStudy) {
 	if($caseStudy['slug'] == $_GET['slug']) { ?>
 
 		<section class='case-study'>
+			<inner-column>
+				<h2><?=$title?></h2>
+				<h3><?=$subtitle?></h3>
 
-			<a class='linktype-1' href='?page=projects'>Back to Projects</a>
+				<?php	foreach($htmlContent as $block) {
 
-			<h2 class='attention-voice case-study'><?=$title?></h2>
-			<p class='body-copy case-study'><?=$subtitle?></p>
+					$tag = $block['tag'] ?? false;
+					$content = $block['content'] ?? false;
+					$imageSource = $block['src'] ?? false;
+					$imageCaption = $block['figcaption'] ?? false;
 
-			<?php	foreach($htmlContent as $block) {
+					echo "<" . $tag . ">";
 
-				$tag = $block['tag'] ?? false;
-				$content = $block['content'] ?? false;
-				$imageSource = $block['src'] ?? false;
-				$imageCaption = $block['figcaption'] ?? false;
-
-				echo "<" . $tag . ">";
-
-				if($tag === 'picture') { 
-					echo "<img src='" . $imageSource . "'/>";
-					echo "<figcaption>" . $imageCaption . "</figcaption>";
-
-				} elseif($tag === 'ul') {
-					foreach($content as $contentBlock) {
-						echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
+					if($tag === 'picture') { 
+						echo "<img src='" . $imageSource . "'/>";
+					} elseif($tag === 'ul') {
+						foreach($content as $contentBlock) {
+							echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
+							}
+					} else {
+						echo $content;
 					}
-				} else {
-					echo $content;
-				}
+					echo "</" . $tag . ">";
+				} ?>
 
-				echo "</" . $tag . ">";
-			} ?>
-
-			<!--Why is this class here?-->
-			<a class='linktype-1' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
-
+				<!--Why is this class here?-->
+				<a class='linktype-1' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
+			</inner-column>
 		</section>
-	
 	<?php }
-
-	} ?>
+} ?>

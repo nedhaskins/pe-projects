@@ -90,7 +90,7 @@
 			{
 				"tag": "picture",
 				"src": "data/case-studies/outer-banks/rental-searches.webp",
-				"figcaption": ""
+				"figcaption": false
 			},
 			{
 				"tag": "p",
@@ -158,7 +158,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "Our site template included an <article> section. The PHP element of the project came into play here — data from an associative array was used to populate each of the &lt;article-card&gt; elements. I didn’t change too much about the initial card styling on the first pass, but added images and the chosen heading and “normal text” fonts (fig. 2)."
+				"content": "Our site template included an <code>&lt;article&gt;</code> section. The PHP element of the project came into play here — data from an associative array was used to populate each of the <code>&lt;article-card&gt;</code> elements. I didn’t change too much about the initial card styling on the first pass, but added images and the chosen heading and “normal text” fonts (fig. 2)."
 			},
 			{
 				"tag": "p",

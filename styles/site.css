@@ -273,13 +273,65 @@ svg .curve {
 	}
 }
 
+
+/*CASE-STUDY PAGE*/
+
+
+.case-study {
+/*	padding: var(--modulePadding);*/
+}
+
+.case-study inner-column {
+	width: 80%;
+}
+.case-study h3, h2, p, ul, li, picture {
+	margin-top: 12px;
+}
+
+.case-study figcaption {
+	margin: 0;
+}
+
+.case-study p:nth-of-type(1) {
+	margin-top: 40px;
+}
+
+.case-study h2 {
+	font-size: 36px;
+	font-style: italic;
+	letter-spacing: 0.2em;
+	margin-top: 30px;
+}
+
+.case-study h3 {
+	font-size: 30px;
+	font-style: italic;
+}
+
+.case-study p, ul, li {
+	font-size: 24px;
+}
+
+ul {
+	list-style: square;
+	margin-left: 20px;
+
+}
+
+
+
+
 .case-study code {
 	background-color: black;
 	color: var(--desire);
-	font-family: 'Courier';
+	font-family: 'Courier', monospace;
 	font-size: 15px;
 	padding: 5px;
 }
+
+
+
+
 
 
 
