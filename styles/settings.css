@@ -18,6 +18,17 @@ html {
 
 }
 
+
+body {
+	--modulePadding: 27px 27px 0px 27px;
+	--standardTopMargin: 27px;
+
+}
+
+
+
+
+
 body {
 	background-color: var(--paper);
 	color: var(--ink);

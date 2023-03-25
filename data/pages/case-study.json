@@ -75,7 +75,7 @@
 				"content": "I took note of the colors used -- shades of green and blue took center stage on nearly every page, followed by tan and white. It fit the sites' goal of evoking a \"beach\" vibe."
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
 				"src": "data/case-studies/outer-banks/sun-realty.jpeg",
 				"figcaption": "One of the sites researched - Sun Realty, Outer Banks, NC"
 			},
@@ -88,7 +88,8 @@
 				"content": "For all of the sites, further down, a module showed \"categories\" of rentals to choose from (\"Oceanside Rentals\", \"Last Minute Deals\", etc)."
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-0",
 				"src": "data/case-studies/outer-banks/rental-searches.webp",
 				"figcaption": false
 			},
@@ -121,7 +122,8 @@
 				"content": "Two color palettes to be used with site elements, header fonts, and fonts used for paragraph text were included."
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-1",
 				"src": "data/case-studies/outer-banks/style-tile.webp",
 				"figcaption": ""
 			},
@@ -138,17 +140,19 @@
 				"content": "The first pass"
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
 				"src": "data/case-studies/outer-banks/figure-1.webp",
 				"figcaption": "Figure 1.1"
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-2",
 				"src": "data/case-studies/outer-banks/figure-2.webp",
 				"figcaption": "Figure 1.2"
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-3",
 				"src": "data/case-studies/outer-banks/figure-3.webp",
 				"figcaption": "Figure 1.3"
 			},
@@ -169,7 +173,8 @@
 				"content": "The second pass"
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-4",
 				"src": "data/case-studies/outer-banks/figure-4.webp",
 				"figcaption": "Figure 1.4"
 			},
@@ -178,7 +183,8 @@
 				"content": "From a spacing standpoint, it’s an improvement from the first pass. User feedback about the legibility (or lack thereof) of the heading font led me to try another one."
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-5",
 				"src": "data/case-studies/outer-banks/figure-5.jpeg",
 				"figcaption": "Figure 1.5"
 			},
@@ -199,7 +205,8 @@
 				"content": "I had a few tasks I wanted to check off for the home stretch. First — double- and triple-check and make sure the site looks good on a small screen. (Could the spacing between the top navbar and the button below it in the first section look a little more harmonious even now?)"
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-6",
 				"src": "data/case-studies/outer-banks/figure-6.webp"
 			},
 			{
@@ -207,7 +214,8 @@
 				"content": "I realized after looking at the sites I had researched that virtually all of them included a backdrop of a beachscape as the primary “attention-getter” on their landing pages. So — I made the change and put it into my layout."
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-7",
 				"src": "data/case-studies/outer-banks/figure-7.jpeg"
 			},
 			{
@@ -223,7 +231,8 @@
 				"content": "In this technique, the gradient \"transitions\" between two separate translucent \"filters\". Unlike the normal opacity property, it doesn’t effect the child elements."
 			},
 			{
-				"tag": "picture",
+				"tag": "figure",
+				"class": "figure-8",
 				"src": "data/case-studies/outer-banks/figure-8.jpeg"
 			},
 			{

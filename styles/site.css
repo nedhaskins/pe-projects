@@ -226,10 +226,10 @@ svg .curve {
 
 }
 
-.linktype-1 {
+.project-link {
     text-decoration: underline;
     font-style: italic;
-    padding: var(--modulePadding);
+    margin-top: var(--standardTopMargin);
     letter-spacing: 0.2em;
 }
 
@@ -246,7 +246,7 @@ svg .curve {
 .bio picture {
 	border: 3px solid var(--ink);
 	padding: 10px;
-	margin: 27px 0px 0px 27px;
+	margin-top: 27px;
 	max-width: 264px;
 	filter: sepia(125%);
 }
@@ -290,6 +290,7 @@ svg .curve {
 
 .case-study figcaption {
 	margin-top: 24px;
+	font-style: italic;
 }
 
 .case-study p:nth-of-type(1) {
@@ -316,8 +317,12 @@ svg .curve {
 }
 
 .case-study picture {
-	margin: 30px 0px 30px 0px;
+/*	margin: 30px 0px 30px 0px;*/
+	border: 3px solid var(--ink);
+	padding: 10px;
+	max-width: 300px;
 }
+
 
 .case-study ul {
 	list-style: square;
@@ -325,7 +330,9 @@ svg .curve {
 
 }
 
-
+.case-study :is( .figure-2, .figure-6) {
+	max-width: 300px;
+} 
 
 
 .case-study code {

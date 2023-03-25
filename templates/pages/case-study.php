@@ -23,27 +23,33 @@ foreach($caseStudies as $caseStudy) {
 				<?php	foreach($htmlContent as $block) {
 
 					$tag = $block['tag'] ?? false;
+					$class = $block['class'] ?? false;
 					$content = $block['content'] ?? false;
 					$imageSource = $block['src'] ?? false;
 					$imageCaption = $block['figcaption'] ?? false;
 
-					echo "<" . $tag . ">";
-
-					if($tag === 'picture') { 
+					if($tag === 'figure') {
+						echo "<" . $tag . " class=" . $class . ">";
+						echo "<picture>";
 						echo "<img src='" . $imageSource . "'/>";
-						echo "<figcaption>" . $imageCaption . "</figcaption>";
+						echo "</picture>";
+						if($imageCaption == true) {
+							echo "<figcaption>" . $imageCaption . "</figcaption>";							
+						}
 					} elseif($tag === 'ul') {
 						foreach($content as $contentBlock) {
 							echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
 							}
 					} else {
+						echo "<" . $tag . ">";
 						echo $content;
 					}
 					echo "</" . $tag . ">";
+
 				} ?>
 
 				<!--Why is this class here?-->
-				<a class='linktype-1' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
+				<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
 			</inner-column>
 		</section>
 	<?php }
