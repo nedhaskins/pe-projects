@@ -293,9 +293,20 @@ svg .curve {
 	font-style: italic;
 }
 
-.case-study p:nth-of-type(1) {
+.case-study h4 {
 	margin-top: 40px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.04em;
 }
+
+.case-study h5 {
+	margin-top: 30px;
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 0.04em;
+}
+
 
 .case-study h2 {
 	font-size: 36px;

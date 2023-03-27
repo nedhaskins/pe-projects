@@ -277,5 +277,213 @@
 				"content": "Improvement comes through PRACTICE. I’m looking forward to doing much, much more of it."
 			}
 		]
+	},
+	{
+		"slug": "figma-to-code",
+		"siteXtensionType": "php",
+		"title": "figma-to-code",
+		"subtitle": "Working with designers, removing the built-in friction that can result in an environment with code as a component, and reproducing the designs faithfully.",
+		"htmlContent": [
+			{
+				"tag": "h4",
+				"content": "What is Figma?"
+			},
+			{
+				"tag": "p",
+				"content": "Figma is an application used by designers and developers to create interactive webpage mockups.  It easily simulates the path a user may take through an application by providing a “prototype” option to make connections between the desired pages.  The designer/developer can then run the demo and make changes as needed to the UX based on user feedback."
+			},
+			{
+				"tag": "h4",
+				"content": "Design"
+			},
+			{
+				"tag": "p",
+				"content": "We were provided three unique templates composed with variations of UI objects, which were in turn composed with smaller visual components — a header background, a button with text, an icon, etc."
+			},
+			{
+				"tag": "figure",
+				"class": "figure-1",
+				"src": "data/case-studies/figma-to-code/figure-1.png",
+				"figcaption": "The fully composed templates."
+			},
+			{
+				"tag": "figure",
+				"class": "figure-2",
+				"src": "data/case-studies/figma-to-code/figure-2.png",
+				"figcaption": "Each UI kit organizes the available components in a unique way, allowing for various iterations of a website, depending on what the client gravitates toward."
+			},
+			{
+				"tag": "p",
+				"content": "Taking this angle gave a clue on how to organize the files.  All of the modules that shared the same structural components were grouped under a similar folder name under “modules”:  “call-to-action”, “center-content”, etc.   The components themselves - which could appear in any module regardless of type -  were stored in the “components” folder."
+			},
+			{
+				"tag": "p",
+				"content": "Having organized the files, modules, and components, the next step was to begin to think about how to make a totally exact rendition of the final designs.  My initial thoughts went something like this:"
+			},
+			{
+				"tag": "p",
+				"content": "<em>\"The width of the templates is 1440px — the browser width of a 13-inch laptop.  It looks like the pixel values have been provided.  I’ll input those as the pixel values in the CSS.\" (In hindsight, it’s clear now that what these values are expressing is the maximum width/height allowed.  The margins and padding should respond to the screen size;in the second round this was one of the first things I cleared up.  See figure 3 for an example of how the standard site padding looked on a small screen…)</em>"
+			},
+			{
+				"tag": "figure",
+				"class": "figure-3",
+				"src": "data/case-studies/figma-to-code/figure-3.png",
+				"figcaption": "Too much padding on the sides for such a small screen!"
+			},
+			{
+				"tag": "h4",
+				"content": "Architect"
+			},
+			{
+				"tag": "p",
+				"content": "All of the text in the templates could in theory be converted to JSON data, as much of it is placeholder text that's repeated across all templates, but hard-coding the text inside each module (as each module was repeatable anyway) was the solution I went for."
+			},
+			{
+				"tag": "h5",
+				"content": "All of the templates for this project are modules; combinations of these modules are used to create each of the three final webpage mockups."
+			},
+			{
+				"tag": "p",
+				"content": "Each of the modules corresponds to one of the “primary” structures, or boxes, used for content groups.  A “module” can be thought of as a collection of media – text, movies, graphics, animations – that share a common thread of meaning or functionality.  (The word “component” could also possibly be used here, but in this project I reserved that word for the smaller pieces of code and functionality that are contained within each module.) The “hero” component, for example, is the “banner” of the site – it gives the title in the largest heading and a smaller, optional component for email input or principal links – and no matter what page the hero module is used in, it would, at the very minimum, play the same role on each page."
+			},
+			{
+				"tag": "h5",
+				"content": "How are the modules unique – how can one switch out / customize components?"
+			},
+			{
+				"tag": "p",
+				"content": "The template for each module has baseline characteristics any “child” or “variation” module will have.  Design decision:  separate templates or having them all draw off the same template? In this case it makes more sense to keep the templates separate – if the design team, or two people, land on the same idea and want to save it, it’ll require less digging to put the module together if it’s already been hard-coded out."
+			},
+			{
+				"tag": "figure",
+				"class": "three-features",
+				"src": "data/case-studies/figma-to-code/three-features.png",
+				"figcaption": "Three interpretations of the same module.  What options need to be available to the visitor?"
+			},
+			{
+				"tag": "p",
+				"content": "The “Feature” modules look very different from each other, but the content gives the necessary clue to their connection -- all of them contain the option for eyebrow headers, an <code>&lt;h2&gt;</code> element, and six \"feature items\" denoted either with numbers or icons."
+			},
+			{
+				"tag": "p",
+				"content": "All of the components used inside the modules are available in the UI kits created by the designers.  The basic process to build out each went something like this – create a file that stores that particular “variation” of the module.  Each variation of the module will read off the same stylesheet."
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "Stacked boxes - block, flex, or grid – and read off values provided by Figma for padding, etc.  Inserted inner-column into each section - INSIDE it – to keep it from overexpanding at large screen sizes."
+					},
+					{
+						"tag": "li",
+						"content": "This was essentially the process for each module.  I brought in components that were unique to each module variation with PHP partials.  Styling for all of the elements in each module was taken care of in the collective stylesheet, and any components that would remain consistent across the site wouldn’t need any new classes put on them."
+					},
+					{
+						"tag": "li",
+						"content": "Key was to keep margin-top on each module, remembering that each additional module will add this extra space when it’s added."
+					}
+				]
+			},
+			{
+				"tag": "h4",
+				"content": "Implement"
+			},
+			{
+				"tag": "p",
+				"content": "This is an exercise in paying attention! The small details are essential.  Some examples: the border-radius on the feature grid-boxes; the font colors for every text element. <code>display: flex</code> was used to keep pictures and list-content beside each other at large screens (and stacked vertically for small screens)."
+			},
+			{
+				"tag": "h4",
+				"content": "Challenges"
+			},
+			{
+				"tag": "h5",
+				"content": "Designing for mobile"
+			},
+			{
+				"tag": "p",
+				"content": "We didn't get any small-screen mockups at the outset! Where does the design process fit in here?  In a real-world situation, we would get a designer involved as soon as possible to give some direction and temper some possible misdirected ideas. A review of basic responsive layout tenets would probably be in order. What’s the smallest possible screen size that a user can have?  (I treat 360px as the smallest value these days.) When I revisited this project, at the smallest screen sizes, I took a block approach to each module and went with simply stacking most content boxes on top of each other.  The variation that each module showcases and the games that each of them plays with the content show up at larger screen sizes."
+			},
+			{
+				"tag": "h5",
+				"content": "The email-submit module"
+			},
+			{
+				"tag": "p",
+				"content": "The envelope icon -- used as background on the form's input element -- was a challenge to rope in. Three CSS properties allowed for the correct positioning of the icon:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "<code>background</code>"
+					},
+					{
+						"tag": "li",
+						"content": "<code>background-position</code> to move the icon away from the edge of the <code>&lt;input&gt;</code>. (This value is \"passively affected\" by the <code>padding</code> value of the text. -- and the <code>padding</code> value itself, to move the text past the envelope."
+					}
+				]
+			},
+			{
+				"tag": "h5",
+				"content": "The stubborn SVG"
+			},
+			{
+				"tag": "p",
+				"content": "A persistent issue throughout this project was replicating this background:"
+			},
+			{
+				"tag": "p",
+				"content": "A persistent issue throughout this project was replicating this background:"
+			},
+			{
+				"tag": "figure",
+				"class": "figure-4",
+				"src": "data/case-studies/figma-to-code/figure-4.png"
+			},
+			{
+				"tag": "p",
+				"content": "My initial thought was to set the background-position to center and the background-size to cover.  In this situation, if the SVG begins to break out of its container (to preserve its aspect ratio), it will begin to clip.  It’s necessary to set the background-position to bottom here so any clipping will take place at the top of the image, where the effect is negligible."
+			},
+			{
+				"tag": "h5",
+				"content": "Some final pieces"
+			},
+			{
+				"tag": "p",
+				"content": "For the final editing pass, finessing the size of all objects was the focus.  This played the biggest part in the working-out of the details on the small-screen sizes.  Long-term lessons for the future are to bake in default <code>margin-top</code> values for all modules (they being the main “classes” of components that make up the web page."
+			},
+			{
+				"tag": "p",
+				"content": "Overall, what was the biggest progress-blocker during the final revisions?  The way the components were used within the modules for the first pass of the project.  The most glaring example was an <code>&lt;input&gt;</code> component that was used for completely different form variations (part of the “email-submit” module referenced above) – it should have been unique to each element.  Unlooked-for changes in size showed up while editing because of this."
+			},
+			{
+				"tag": "p",
+				"content": "The project easily proved its value and is continuing to do so – it’s evolving into a larger HTML boilerplate project that I plan to treat as a “blank canvas” for future client projects.  The project stressed the following concepts strongly:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "communicating ideas in a way that is understandable by everyone on a team;"
+					},
+					{
+						"tag": "li",
+						"content": "reusing module components whenever and wherever possible (this will create a sense of unity of intention across all designs);"
+					},
+					{
+						"tag": "li",
+						"content": "understanding how to delegate tasks, both for one’s own work and for each team member’s work;"
+					},
+					{
+						"tag": "li",
+						"content": "the perhaps counterintuitive realization that designing the webpage – visually and how it will work – should- take longer than actually writing the code out.  Nothing will slow a developer down more than trying to think through a complex design problem while actually writing out the code.  Better to go through a few iterations on a whiteboard first – then tackle it in the code editor."
+					}
+				]
+			}
+		]
 	}
 ]

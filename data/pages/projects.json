@@ -43,10 +43,10 @@
             "id": 43,
             "slug": "figma-to-code",
             "name": "figma-to-code",
-            "caseStudy": false,
+            "caseStudy": true,
             "description": "Coding out a pixel-perfect rendering of three Figma templates composed from a library of components and UI kits.",
             "image": "images/figma-to-code.png",
-            "url": "https://peprojects.dev/alpha-4/ned/projects/figma-to-code",
+            "url": "",
             "languages": [
                 "HTML",
                 "CSS",
