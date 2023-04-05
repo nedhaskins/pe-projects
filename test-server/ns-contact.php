@@ -83,8 +83,10 @@ if($formSubmitted) {
 			<textarea name='message' rows='20' required></textarea>
 		</field>
 
-		<button type="submit" name="submitted">Submit</button>
-
+		<button-wrapper>
+			<button class="contact-submit" type="submit" name="submitted">Submit</button>
+		</button-wrapper>
+		
 	</form>
 
 <p class='form-response'><?=$response?></p>
