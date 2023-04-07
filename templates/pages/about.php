@@ -1,4 +1,4 @@
-<?php include('templates/components/about-navbar.php');
+<?php include('templates/components/navbar/about-navbar.php');
 
 //this will be a function
 

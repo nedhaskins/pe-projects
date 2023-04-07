@@ -2,24 +2,38 @@ html {
 	font-family: 'Baskerville';
 }
 
-
+h1 {
+	font-size: 33px;
+}
 
 h2{ 
 	font-size: 26px;
 }
 
+h3 {
+	font-size: 24px;
+}
+
 p {
 	font-size: 1.2rem;
 	line-height: 1.3;
+	letter-spacing: 0.01em;
+}
+
+em {
+	font-style: italic;
 	letter-spacing: 0.03em;
 }
 
 
 
 
+/*VOICES*/
 
-
-
+.emphasis-voice {
+	font-style: italic;
+	letter-spacing: 0.05em;
+}
 
 
 /*CASE-STUDY STYLES*/
@@ -42,7 +56,7 @@ code {
 	line-height: 1.2;
 }
 
-.block-title-voice, article h3 {
+.bold-voice, article h3 {
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: 0.02em;

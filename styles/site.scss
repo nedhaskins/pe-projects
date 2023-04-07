@@ -4,7 +4,7 @@
 @import 'structure';
 @import 'typography';
 
-@import '../templates/components/_style.scss';
+@import '../templates/components/navbar/_style.scss';
 
 @import "../templates/modules/home/_style.scss";
 @import '../templates/modules/header-and-text/_style.scss';
@@ -21,108 +21,12 @@
 @import '../templates/modules/404/_style.scss';
 
 
-.site-menu {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: var(--modulePadding);
-
-	a {
-		font-size: 1.4em;
-		font-style: italic;
-		letter-spacing: 0.1em;
-	}
-}
-
-
-/*NAVBAR ELEMENTS*/
-
-
-.navbar {
-	// border: 2px solid magenta;
-	display: flex;
-	justify-content: center;
-	max-width: 440px;
-
-	ul {
-		// border: 3px solid cyan;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 20px;
-
-		link-wrapper {
-			// border: 2px solid red;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-
-			li.active, li.inactive {
-				// border: 3px solid lime;
-				display: flex;
-				flex-direction: row;
-				justify-content: start;
-				// width: 0%;
-
-			}
-
-			a:hover {
-				color: white;
-			}
-		}
-	}
-}
-
-@media(min-width: 430px) {
-
-	li.active, li.inactive {
-
-				width: 70%;
-
-			}
-
-
-
-}
-
-
-:is(.navbar, .about-navbar) .active {
-	opacity: 75%;
-	font-style: italic;
-	letter-spacing: 0.1em;
-}
-
-
-
-
-.link-logo {
-	width: 5%;
-	margin-right: 10px;
-
-	svg {
-		fill: var(--ink);
-	}
-
-}
-
-
-
-.inactive svg {
-	visibility: hidden;
-}
-
-
-
-
-
-
-
 
 /*LOGO - SVG PARENT ELEMENTS*/
 
 
 .logo {
-	/*padding: 40px;*/
-	margin-top: 27px;
+padding: var(--modulePadding);
 }
 
 

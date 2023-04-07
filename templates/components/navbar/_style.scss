@@ -1,0 +1,61 @@
+.navbar {
+		padding: var(--modulePadding);
+
+	ul {
+		// border: 3px solid cyan;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+	li {
+		position: relative;
+		// border: 3px solid lime;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: start;
+
+		&.inactive .link-logo {
+			visibility: hidden;
+		}
+	}
+			
+	.link-logo {
+		// display: none;
+		position: absolute;
+		width: 15px;
+		right: 100%;
+		top: 50%; //relative to the parent element
+		transform: translate(0, -50%); //relative to the element itself.  No percentage value for the x-value.
+		margin-right: 7px;
+
+		svg {
+			// border: 3px solid orange;
+			fill: var(--ink);
+		}
+
+		@media(prefers-color-scheme: dark) {
+			svg {
+				fill: var(--ink-dark);
+			}
+		}
+	}
+
+	a {
+		// border: 2px solid yellow;
+		font-size: 1.4rem;
+		letter-spacing: 0.08em;
+		font-style: italic;
+	}
+	
+		a:hover {
+			color: white;
+		}
+	}
+
+:is(.navbar, .about-navbar) .active {
+	opacity: 75%;
+	font-style: italic;
+	letter-spacing: 0.1em;
+}

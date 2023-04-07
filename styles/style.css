@@ -171,14 +171,33 @@ html {
   font-family: "Baskerville";
 }
 
+h1 {
+  font-size: 33px;
+}
+
 h2 {
   font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+em {
+  font-style: italic;
   letter-spacing: 0.03em;
+}
+
+/*VOICES*/
+.emphasis-voice {
+  font-style: italic;
+  letter-spacing: 0.05em;
 }
 
 /*CASE-STUDY STYLES*/
@@ -200,7 +219,7 @@ code {
   line-height: 1.2;
 }
 
-.block-title-voice, article h3 {
+.bold-voice, article h3 {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -288,31 +307,53 @@ article figcaption {
   letter-spacing: 0.02em;
 }
 
-.about-navbar {
+.navbar {
   padding: var(--modulePadding);
-  display: flex;
-  justify-content: center;
 }
-
-.about-navbar ul {
+.navbar ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
-.about-navbar ul a {
-  font-size: 1.4em;
-  font-style: italic;
-  letter-spacing: 0.1em;
+.navbar li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
 }
-
-.about-navbar li:hover {
+.navbar li.inactive .link-logo {
+  visibility: hidden;
+}
+.navbar .link-logo {
+  position: absolute;
+  width: 15px;
+  right: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-right: 7px;
+}
+.navbar .link-logo svg {
+  fill: var(--ink);
+}
+@media (prefers-color-scheme: dark) {
+  .navbar .link-logo svg {
+    fill: var(--ink-dark);
+  }
+}
+.navbar a {
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  font-style: italic;
+}
+.navbar a:hover {
   color: white;
 }
 
-/*ABOUT NAVBAR ELEMENTS*/
-.about-navbar .active, .about-navbar .inactive {
-  display: flex;
-  align-items: center;
+:is(.navbar, .about-navbar) .active {
+  opacity: 75%;
+  font-style: italic;
+  letter-spacing: 0.1em;
 }
 
 .home {
@@ -346,7 +387,7 @@ article figcaption {
   font-style: italic;
   letter-spacing: 0.2em;
 }
-.header-and-text :is(h2 + p) {
+.header-and-text :is(h2 + p, p + p) {
   margin-top: 1em;
 }
 
@@ -367,6 +408,9 @@ article figcaption {
   display: flex;
   flex-direction: column;
 }
+.goals :is(h1 + h2) {
+  margin-top: 1em;
+}
 
 .goals h3 {
   margin-top: 28px;
@@ -375,7 +419,7 @@ article figcaption {
 .goals li {
   line-height: 1.3em;
   margin-top: 18px;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 
 li.goal-item {
@@ -386,6 +430,16 @@ li.goal-item {
   padding: var(--modulePadding);
   display: flex;
   flex-direction: column;
+}
+.resume :is(h1 + ul, ul + ul, ul + h1) {
+  margin-top: 2em;
+}
+.resume :is(li + li) {
+  margin-top: 1em;
+}
+.resume :is(h2 + h3),
+.resume :is(h3 + p) {
+  margin-top: 0.5em;
 }
 
 .link-card {
@@ -602,10 +656,11 @@ output {
   height: 100%;
   padding: var(--modulePadding);
 }
-
-.contact p {
-  line-height: 1.3em;
-  margin-top: 20px;
+.contact :is(h1 + p) {
+  margin-top: 1.5em;
+}
+.contact :is(p + p) {
+  margin-top: 1em;
 }
 
 .contact a:hover {
@@ -678,70 +733,9 @@ font-overview {
     width: 100%;
   }
 }
-.site-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--modulePadding);
-}
-.site-menu a {
-  font-size: 1.4em;
-  font-style: italic;
-  letter-spacing: 0.1em;
-}
-
-/*NAVBAR ELEMENTS*/
-.navbar {
-  display: flex;
-  justify-content: center;
-  max-width: 440px;
-}
-.navbar ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-.navbar ul link-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.navbar ul link-wrapper li.active, .navbar ul link-wrapper li.inactive {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-}
-.navbar ul link-wrapper a:hover {
-  color: white;
-}
-
-@media (min-width: 430px) {
-  li.active, li.inactive {
-    width: 70%;
-  }
-}
-:is(.navbar, .about-navbar) .active {
-  opacity: 75%;
-  font-style: italic;
-  letter-spacing: 0.1em;
-}
-
-.link-logo {
-  width: 5%;
-  margin-right: 10px;
-}
-.link-logo svg {
-  fill: var(--ink);
-}
-
-.inactive svg {
-  visibility: hidden;
-}
-
 /*LOGO - SVG PARENT ELEMENTS*/
 .logo {
-  /*padding: 40px;*/
-  margin-top: 27px;
+  padding: var(--modulePadding);
 }
 
 .landing-404 .logo {

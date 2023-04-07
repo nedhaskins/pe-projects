@@ -38,7 +38,7 @@ if( isset($_GET['slug']) ) {
 		<header>
 			<div class='site-menu'>
 				<nav class='navbar'>
-					<?php include('navbar.php'); ?>
+					<?php include('templates/components/navbar/main-navbar.php'); ?>
 				</nav>
 				<div class='logo'>
 					<?php include('images/full-logo.svg'); ?>
@@ -74,7 +74,7 @@ if( isset($_GET['slug']) ) {
 		<header>
 			<div class='site-menu'>
 				<nav class='navbar'>
-					<?php include('navbar.php'); ?>
+					<?php include('templates/components/navbar/main-navbar.php'); ?>
 				</nav>
 				<div class='logo'>
 					<?php include('images/full-logo.svg'); ?>

@@ -3,6 +3,14 @@
 	padding: var(--modulePadding);
 	display: flex;
 	flex-direction: column;
+
+
+:is(h1 + h2) {
+	margin-top: 1em;
+}
+
+
+
 }
 
 
@@ -18,7 +26,7 @@
 .goals li {
 	line-height: 1.3em;
 	margin-top: 18px;
-	font-size: 0.9rem;
+	font-size: 1.3rem;
 }
 
 li.goal-item  {

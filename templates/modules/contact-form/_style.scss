@@ -5,11 +5,15 @@
     height: 100%;
     padding: var(--modulePadding);
 
- }
 
- .contact p {
- 	line-height: 1.3em;
- 	margin-top: 20px;
+
+    :is(h1 + p) {
+      margin-top: 1.5em;
+    }
+
+    :is(p + p) {
+      margin-top: 1em;
+    }
  }
 
  .contact a:hover {

@@ -2,4 +2,18 @@
 	padding: var(--modulePadding);;
 	display: flex;
 	flex-direction: column;
+
+	:is(h1 + ul, ul + ul, ul + h1) {
+		margin-top: 2em;
+	}
+
+	:is(li + li) {
+		margin-top: 1em;
+	}
+
+
+	:is(h2 + h3),
+	:is(h3 + p) {
+		margin-top: 0.5em;
+	}
 }

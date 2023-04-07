@@ -1700,14 +1700,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/navbar.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/navbar.php",
-      "oF" : 0
-    },
     "\/ns-site-outline.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -6625,7 +6617,15 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/templates\/components\/_style.scss" : {
+    "\/templates\/components\/lab-item-navbar.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/components\/lab-item-navbar.php",
+      "oF" : 0
+    },
+    "\/templates\/components\/navbar\/_style.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -6640,20 +6640,20 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/templates\/components\/about-navbar.php" : {
+    "\/templates\/components\/navbar\/about-navbar.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/components\/about-navbar.php",
+      "oAP" : "\/templates\/components\/navbar\/about-navbar.php",
       "oF" : 0
     },
-    "\/templates\/components\/lab-item-navbar.php" : {
+    "\/templates\/components\/navbar\/main-navbar.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/components\/lab-item-navbar.php",
+      "oAP" : "\/templates\/components\/navbar\/main-navbar.php",
       "oF" : 0
     },
     "\/templates\/modules\/404\/_style.scss" : {

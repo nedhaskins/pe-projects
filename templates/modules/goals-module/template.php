@@ -1,7 +1,7 @@
 <section class='goals'>
 
-	<h1 class='attention-voice'><?=$name?></h1>
-	<h3 class='attention-voice'><?=$updated?></h3>
+	<h1 class='title-voice'><?=$name?></h1>
+	<h2 class='attention-voice'><?=$updated?></h2>
 
 	<div class='line'></div>
 
@@ -14,7 +14,7 @@
 	foreach($sections as $subSection) { ?>
 
 		<li class='goal-section'>
-			<h3 class='attention-voice'><?=$subSection["heading"]?></h3>
+			<h3 class='emphasis-voice'><?=$subSection["heading"]?></h3>
 				<ul>
 					<?php foreach ($subSection["goals"] as $goal) { ?>
 						<li class='goal-item'><?=$goal?></li>
