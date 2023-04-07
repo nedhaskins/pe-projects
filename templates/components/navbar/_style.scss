@@ -1,6 +1,10 @@
 .navbar {
 		padding: var(--modulePadding);
 
+	&.about {
+		padding-bottom: 27px;
+	}
+
 	ul {
 		// border: 3px solid cyan;
 		display: grid;
@@ -24,11 +28,12 @@
 	.link-logo {
 		// display: none;
 		position: absolute;
-		width: 15px;
+		width: 12px;
 		right: 100%;
 		top: 50%; //relative to the parent element
 		transform: translate(0, -50%); //relative to the element itself.  No percentage value for the x-value.
 		margin-right: 7px;
+		margin-top: 0.1em;
 
 		svg {
 			// border: 3px solid orange;

@@ -130,7 +130,7 @@ body.index, body.landing-404 {
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-rows: auto 1fr;
-  margin-bottom: 27px;
+  padding-bottom: 108px;
   /*background-image: linear-gradient(30deg, white, gray);*/
 }
 
@@ -194,6 +194,10 @@ em {
   letter-spacing: 0.03em;
 }
 
+:is(h1 + p) {
+  margin-top: 1em;
+}
+
 /*VOICES*/
 .emphasis-voice {
   font-style: italic;
@@ -208,10 +212,9 @@ code {
   font-family: "Courier", monospace;
 }
 
-.title-voice, article h1 {
-  font-size: 33px;
+.title-voice {
   font-style: italic;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .subtitle-voice, article h2 {
@@ -310,6 +313,9 @@ article figcaption {
 .navbar {
   padding: var(--modulePadding);
 }
+.navbar.about {
+  padding-bottom: 27px;
+}
 .navbar ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -327,11 +333,12 @@ article figcaption {
 }
 .navbar .link-logo {
   position: absolute;
-  width: 15px;
+  width: 12px;
   right: 100%;
   top: 50%;
   transform: translate(0, -50%);
   margin-right: 7px;
+  margin-top: 0.1em;
 }
 .navbar .link-logo svg {
   fill: var(--ink);
@@ -446,20 +453,13 @@ li.goal-item {
   position: relative;
   padding: 27px;
   margin-top: 27px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?=$item['image']?>");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.link-card a {
-  font-size: var(--stepOne);
-}
-
-.link-card:hover {
+.link-card :hover {
   filter: sepia(125%);
 }
-
 .link-card a::before {
   content: "";
   position: absolute;
@@ -469,17 +469,12 @@ li.goal-item {
   width: 100%;
   height: 100%;
 }
-
-/*.projects, .the-lab h2 {
-	text-align: center;
-}*/
-.link-card > * {
-  color: var(--paper);
+.link-card :is(a + p) {
+  margin-top: 1em;
 }
 
-.link-card p {
-  font-size: 0.9rem;
-  margin-top: 20px;
+.link-card > * {
+  color: var(--paper);
 }
 
 graphic-list {

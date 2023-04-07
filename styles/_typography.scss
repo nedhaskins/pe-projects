@@ -25,7 +25,9 @@ em {
 	letter-spacing: 0.03em;
 }
 
-
+:is(h1 + p) {
+	margin-top: 1em;
+}
 
 
 /*VOICES*/
@@ -45,10 +47,9 @@ code {
 	font-family: 'Courier', monospace;
 }
 
-.title-voice, article h1 {
-	font-size: 33px;
+.title-voice {
 	font-style: italic;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.08em;
 }
 
 .subtitle-voice, article h2 {

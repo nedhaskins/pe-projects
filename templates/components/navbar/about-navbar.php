@@ -1,4 +1,4 @@
-<nav class='navbar'>
+<nav class='navbar about'>
 	<ul>
 		<?php foreach($pageData as $subpage) { ?>
 			

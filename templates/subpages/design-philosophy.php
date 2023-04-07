@@ -14,7 +14,7 @@ $sections = $pageData[1]['sections'];
 		$header = $section['header'];
 		$copy = $section['copy'];
 		
-		include('templates/modules/header-and-text/template.php');
+		include('templates/modules/subheader-and-text/template.php');
 	} ?>
 
 </section>
