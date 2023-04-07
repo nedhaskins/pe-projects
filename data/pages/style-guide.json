@@ -12,24 +12,17 @@
         },
         {
             "type": "header-and-text",
-            "header": "Header - step two",
+            "header": "H1 header + text",
             "copy": [
                 "Here's some sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
             ]
         },
         {
             "type": "subheader-and-text",
-            "header": "Header - step two",
+            "header": "H2 header + text",
             "copy": [
                 "Here's some sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
             ]
-        },
-        {
-            "type": "subheader-figure-caption",
-            "image-header": "A picture's worth a thousand words.",
-            "image": "images/collage.jpg",
-            "alt": "Some text for screen readers.",
-            "figcaption": "The above photo has some embedded text for screen readers!"
         },
         {
             "type": "goals-module",

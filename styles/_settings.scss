@@ -13,9 +13,6 @@ html {
 --paper: var(--sweetcorn);
 --ink: var(--falured);
 
---paper-dark: var(--tolopea);
---ink-dark: var(--sweetcorn);
-
 }
 
 
@@ -25,18 +22,14 @@ body {
 
 }
 
-
-
-
-
 body {
 	background-color: var(--paper);
 	color: var(--ink);
 }
 
 @media(prefers-color-scheme: dark) {
-	body {
-		background-color: var(--paper-dark);
-		color: var(--ink-dark);
+	html {
+		--paper: var(--tolopea);
+		--ink: var(--sweetcorn);
 	}
 }

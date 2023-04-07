@@ -3,7 +3,7 @@
 <section class="<?=$pageData['slug']?>">
 
 	<section class='header-and-text'>
-	  <h2 class='attention-voice'><?=$pageData['header']?></h2>
+	  <h1 class='title-voice'><?=$pageData['header']?></h1>
 	  <p class='body-copy'><?=$pageData['copy']?></p>
 	</section>
 

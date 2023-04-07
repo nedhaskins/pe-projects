@@ -39,12 +39,6 @@
 			// border: 3px solid orange;
 			fill: var(--ink);
 		}
-
-		@media(prefers-color-scheme: dark) {
-			svg {
-				fill: var(--ink-dark);
-			}
-		}
 	}
 
 	a {

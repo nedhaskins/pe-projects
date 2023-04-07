@@ -100,28 +100,6 @@ svg .curve {
 
 
 
-@media(prefers-color-scheme: dark) {
-
-	.active svg {
-	fill: var(--ink-dark);
-	}
-
-	svg .windmill {
-	fill: var(--ink-dark);
-	}
-
-	svg .curve {
-	stroke: var(--ink-dark);
-	}
-}
-
-
-
-
-
-
-
-
 
 
 .line {
@@ -129,13 +107,13 @@ svg .curve {
 	margin-top: 27px;
 }
 
-@media(prefers-color-scheme: dark) {
+// @media(prefers-color-scheme: dark) {
 
-	.line {
-		border: 1px solid var(--ink-dark);
-	}
+// 	.line {
+// 		border: 1px solid var(--ink-dark);
+// 	}
 
-}
+// }
 
 .project-link {
     text-decoration: underline;

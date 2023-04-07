@@ -2,50 +2,33 @@
 font-overview {
 	display: block;
 	padding: var(--modulePadding);
+
+
+	:is(h1 + div) {
+		margin-top: 1em;
+	}
+
+	.specimen + .specimen {
+		margin-top: 1em;
+	}
+
+
+
 }
 
 
 
 
-.example {
-	margin-top: 30px;
+// .example {
+// 	margin-top: 30px;
 
-}
+// }
 
 
 .style-guide .home h1 {
 	text-align: left;
 }
 
-
-.style-guide .goals h1 {
-	margin-top: 0px;
-}
-
-
-.floor {
-	font-size: var(--floor);
-}
-
-.step-one {
-		font-size: var(--stepOne);
-}
-
-
-.step-two {
-		font-size: var(--stepTwo);
-}
-
-.step-three {
-		font-size: var(--stepThree);
-}
-.voices {
-
-}
-
-
-
 .voices > * {
-	font-size: var(--stepOne);
-	margin-top: 10px;
+	margin-top: 1em;
 }
