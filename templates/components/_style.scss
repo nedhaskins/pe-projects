@@ -8,6 +8,12 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 20px;
+
+		a {
+		font-size: 1.4em;
+		font-style: italic;
+		letter-spacing: 0.1em;
+	}
 }
 
 .about-navbar li:hover {
@@ -19,9 +25,4 @@
 .about-navbar .active, .about-navbar .inactive {
 	display: flex;
 	align-items: center;
-}
-
-link-wrapper {
-	display: flex;
-	flex-direction: column;
 }

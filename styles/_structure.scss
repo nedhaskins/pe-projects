@@ -1,32 +1,3 @@
-/*STRUCTURE*/
-
-/*body {
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-margin: 20px;
-
-}
-
-
-inner-column {
-	display: flex;
-	flex-direction: column;
-}
-
-
-@media (min-width: 715px){
-	inner-column {
-	max-width: 1400px;
-	min-height: 100vh;
-	padding: 0px 40px 0px 40px;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	}
-}
-*/
-
 
 /*BODY CLASS STYLES */
 
@@ -81,6 +52,8 @@ inner-column {
 
 /*STANDARD MODULE PADDING*/
 
-
+link-wrapper {
+	display: block;
+}
 
 

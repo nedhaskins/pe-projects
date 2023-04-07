@@ -1,14 +1,18 @@
 
 .header-and-text {
 	padding: var(--modulePadding);
+
+	h2 {
+		font-style: italic;
+		letter-spacing: 0.2em;
+	}
+
+	:is(h2 + p) {
+		margin-top: 1em;
+	}
+
 }
 
 
 
-.header-and-text p {
-	line-height: 1.3em;
-}
 
-.header-and-text :is(p, p + h2) {
-	margin-top: 28px;
-}
