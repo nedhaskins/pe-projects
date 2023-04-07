@@ -1,0 +1,19 @@
+.subheader-figure-caption {
+	padding: var(--modulePadding);
+   display: flex;
+   flex-direction: column;
+}
+
+.subheader-figure-caption img {
+	max-width: 344px;
+	padding: 10px;
+	border: 3px solid var(--ink);
+
+}
+
+
+@media(prefers-color-scheme: dark) {
+.subheader-figure-caption img {
+	border: 3px solid var(--ink-dark);
+	}
+}

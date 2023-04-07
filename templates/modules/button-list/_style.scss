@@ -1,0 +1,28 @@
+.button-list {
+	display: block;
+	padding: var(--modulePadding);
+}
+
+
+.link-container {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 27px;
+}
+
+
+
+.link-container li {
+	border: 3px solid var(--ink);
+	padding: 19px;
+	border-radius: 28px;
+	font-size: 1.2rem;
+}
+
+@media(prefers-color-scheme: dark) {
+
+.link-container li {
+	border: 3px solid var(--ink-dark);
+
+}
+}

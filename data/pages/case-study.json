@@ -285,7 +285,7 @@
 		"subtitle": "Working with designers, removing the built-in friction that can result in an environment with code as a component, and reproducing the designs faithfully.",
 		"htmlContent": [
 			{
-				"tag": "h4",
+				"tag": "h3",
 				"content": "What is Figma?"
 			},
 			{
@@ -293,7 +293,7 @@
 				"content": "Figma is an application used by designers and developers to create interactive webpage mockups.  It easily simulates the path a user may take through an application by providing a “prototype” option to make connections between the desired pages.  The designer/developer can then run the demo and make changes as needed to the UX based on user feedback."
 			},
 			{
-				"tag": "h4",
+				"tag": "h3",
 				"content": "Design"
 			},
 			{
@@ -331,7 +331,7 @@
 				"figcaption": "Too much padding on the sides for such a small screen!"
 			},
 			{
-				"tag": "h4",
+				"tag": "h3",
 				"content": "Architect"
 			},
 			{
@@ -339,7 +339,7 @@
 				"content": "All of the text in the templates could in theory be converted to JSON data, as much of it is placeholder text that's repeated across all templates, but hard-coding the text inside each module (as each module was repeatable anyway) was the solution I went for."
 			},
 			{
-				"tag": "h5",
+				"tag": "h4",
 				"content": "All of the templates for this project are modules; combinations of these modules are used to create each of the three final webpage mockups."
 			},
 			{
@@ -347,7 +347,7 @@
 				"content": "Each of the modules corresponds to one of the “primary” structures, or boxes, used for content groups.  A “module” can be thought of as a collection of media – text, movies, graphics, animations – that share a common thread of meaning or functionality.  (The word “component” could also possibly be used here, but in this project I reserved that word for the smaller pieces of code and functionality that are contained within each module.) The “hero” component, for example, is the “banner” of the site – it gives the title in the largest heading and a smaller, optional component for email input or principal links – and no matter what page the hero module is used in, it would, at the very minimum, play the same role on each page."
 			},
 			{
-				"tag": "h5",
+				"tag": "h4",
 				"content": "How are the modules unique – how can one switch out / customize components?"
 			},
 			{
@@ -386,7 +386,7 @@
 				]
 			},
 			{
-				"tag": "h4",
+				"tag": "h3",
 				"content": "Implement"
 			},
 			{
@@ -394,11 +394,11 @@
 				"content": "This is an exercise in paying attention! The small details are essential.  Some examples: the border-radius on the feature grid-boxes; the font colors for every text element. <code>display: flex</code> was used to keep pictures and list-content beside each other at large screens (and stacked vertically for small screens)."
 			},
 			{
-				"tag": "h4",
+				"tag": "h3",
 				"content": "Challenges"
 			},
 			{
-				"tag": "h5",
+				"tag": "h4",
 				"content": "Designing for mobile"
 			},
 			{
@@ -406,7 +406,7 @@
 				"content": "We didn't get any small-screen mockups at the outset! Where does the design process fit in here?  In a real-world situation, we would get a designer involved as soon as possible to give some direction and temper some possible misdirected ideas. A review of basic responsive layout tenets would probably be in order. What’s the smallest possible screen size that a user can have?  (I treat 360px as the smallest value these days.) When I revisited this project, at the smallest screen sizes, I took a block approach to each module and went with simply stacking most content boxes on top of each other.  The variation that each module showcases and the games that each of them plays with the content show up at larger screen sizes."
 			},
 			{
-				"tag": "h5",
+				"tag": "h4",
 				"content": "The email-submit module"
 			},
 			{
@@ -422,12 +422,16 @@
 					},
 					{
 						"tag": "li",
-						"content": "<code>background-position</code> to move the icon away from the edge of the <code>&lt;input&gt;</code>. (This value is \"passively affected\" by the <code>padding</code> value of the text. -- and the <code>padding</code> value itself, to move the text past the envelope."
+						"content": "<code>background-position</code> to move the icon away from the edge of the <code>&lt;input&gt;</code>. (This value is \"passively affected\" by the <code>padding</code> value of the text.)"
+					},
+					{
+						"tag": "li",
+						"content": "The <code>padding</code> value itself, to move the text past the envelope."
 					}
 				]
 			},
 			{
-				"tag": "h5",
+				"tag": "h4",
 				"content": "The stubborn SVG"
 			},
 			{
@@ -448,7 +452,7 @@
 				"content": "My initial thought was to set the background-position to center and the background-size to cover.  In this situation, if the SVG begins to break out of its container (to preserve its aspect ratio), it will begin to clip.  It’s necessary to set the background-position to bottom here so any clipping will take place at the top of the image, where the effect is negligible."
 			},
 			{
-				"tag": "h5",
+				"tag": "h4",
 				"content": "Some final pieces"
 			},
 			{

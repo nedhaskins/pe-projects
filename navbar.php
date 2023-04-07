@@ -21,41 +21,49 @@ if( isset($_GET['page']) ) {
 
 		if($link['slug'] == $currentPage && $link['slug'] != 'substack') { ?>
 
-			<li class='active'>
-				<div class='link-logo'>
-					<?php include('images/windmill.svg'); ?>
-				</div>
-				<a class='active' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
-			</li>
+			<link-wrapper>
+				<li class='active'>
+					<div class='link-logo'>
+						<?php include('images/windmill.svg'); ?>
+					</div>
+					<a class='active' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
+				</li>
+			</link-wrapper>
 
 		<?php } elseif($link['slug'] == 'about') { ?>
 
-			<li class='inactive'>
-				<div class='link-logo'>
-					<?php include('images/windmill.svg'); ?>
-				</div>
-				<a class='link' href="?page=<?=$link['slug']?>&id=1" alt=""><?=$link['name']?></a>
-			</li>
+			<link-wrapper>
+				<li class='inactive'>
+					<div class='link-logo'>
+						<?php include('images/windmill.svg'); ?>
+					</div>
+					<a class='link' href="?page=<?=$link['slug']?>&id=1" alt=""><?=$link['name']?></a>
+				</li>
+			</link-wrapper>
 
 		<?php } elseif($link['slug'] == 'substack') { ?>
 
-			<li class='inactive'>
-				<div class='link-logo'>
-					<?php include('images/windmill.svg'); ?>
-				</div>
-				<a class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a>
-			</li>
+			<link-wrapper>
+				<li class='inactive'>
+					<div class='link-logo'>
+						<?php include('images/windmill.svg'); ?>
+					</div>
+					<a class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a>
+				</li>
+			</link-wrapper>
 
 		<?php } else { ?>
 
-			<li class='inactive'>
-				<div class='link-logo'>
-					<?php include('images/windmill.svg'); ?>
-				</div>
-				<a class='link' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
-			</li>
-
-	<?php }
+			<link-wrapper>
+				<li class='inactive'>
+					<div class='link-logo'>
+						<?php include('images/windmill.svg'); ?>
+					</div>
+					<a class='link' href="?page=<?=$link['slug']?>" alt=""><?=$link['name']?></a>
+				</li>
+			</link-wrapper>
+	
+		<?php }
 
 	} ?>
 

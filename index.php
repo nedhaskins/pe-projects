@@ -24,7 +24,7 @@ if( isset($_GET['slug']) ) {
 
 	<?php } else { ?>
 
-		<link rel='stylesheet' href='styles/site.css'>
+		<link rel='stylesheet' href='styles/style.css'>
 
 	<?php } ?>
 

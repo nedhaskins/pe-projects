@@ -1,0 +1,43 @@
+
+
+.home {
+	padding: var(--modulePadding);
+	text-align: center;
+
+
+	h1 {
+		margin-top: 103px;
+		font-style: unset;
+		font-size: 53px;
+		letter-spacing: 0.23em;
+	}
+
+
+
+
+
+
+
+}
+
+
+
+@media(max-width: 899px) {
+
+
+}
+
+
+@media(min-width: 900px) {
+	.home {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: right;
+		}
+
+	.home h1 {
+		margin-top: 0px;
+	}
+}

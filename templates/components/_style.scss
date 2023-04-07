@@ -1,0 +1,27 @@
+.about-navbar {
+	padding: var(--modulePadding);
+	display: flex;
+	justify-content: center;
+}
+
+.about-navbar ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.about-navbar li:hover {
+	color: white;
+}
+
+/*ABOUT NAVBAR ELEMENTS*/
+
+.about-navbar .active, .about-navbar .inactive {
+	display: flex;
+	align-items: center;
+}
+
+link-wrapper {
+	display: flex;
+	flex-direction: column;
+}

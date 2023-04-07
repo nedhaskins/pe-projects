@@ -17,39 +17,43 @@ foreach($caseStudies as $caseStudy) {
 
 		<section class='case-study'>
 			<inner-column>
-				<h2><?=$title?></h2>
-				<h3><?=$subtitle?></h3>
-				<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
+				<article>
+					<h1><?=$title?></h1>
+					<h2><?=$subtitle?></h2>
+					<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
 
-				<?php	foreach($htmlContent as $block) {
+					<?php	foreach($htmlContent as $block) {
 
-					$tag = $block['tag'] ?? false;
-					$class = $block['class'] ?? false;
-					$content = $block['content'] ?? false;
-					$imageSource = $block['src'] ?? false;
-					$imageCaption = $block['figcaption'] ?? false;
+						$tag = $block['tag'] ?? false;
+						$class = $block['class'] ?? false;
+						$content = $block['content'] ?? false;
+						$imageSource = $block['src'] ?? false;
+						$imageCaption = $block['figcaption'] ?? false;
 
-					if($tag === 'figure') {
-						echo "<" . $tag . " class=" . $class . ">";
-						echo "<picture>";
-						echo "<img src='" . $imageSource . "'/>";
-						echo "</picture>";
-						if($imageCaption == true) {
-							echo "<figcaption>" . $imageCaption . "</figcaption>";							
-						}
-					} elseif($tag === 'ul') {
-						foreach($content as $contentBlock) {
-							echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
+						if($tag === 'figure') {
+							echo "<" . $tag . " class=" . $class . ">";
+							echo "<picture>";
+							echo "<img src='" . $imageSource . "'/>";
+							echo "</picture>";
+							if($imageCaption == true) {
+								echo "<figcaption>" . $imageCaption . "</figcaption>";							
 							}
-					} else {
-						echo "<" . $tag . ">";
-						echo $content;
-					}
-					echo "</" . $tag . ">";
+						} elseif($tag === 'ul') {
+							echo "<ul>";
+							foreach($content as $contentBlock) {
+								echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
+							}
+							echo "</ul>";
+						} else {
+							echo "<" . $tag . ">";
+							echo $content;
+						}
+						echo "</" . $tag . ">";
 
-				} ?>
+					} ?>
 
-				<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
+					<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
+				</article>
 			</inner-column>
 		</section>
 	<?php }
