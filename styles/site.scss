@@ -122,14 +122,14 @@ svg .curve {
 
 .bio picture-wrapper {
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
+	padding-left: 27px;
 }
 
 
 .bio picture {
 	border: 3px solid var(--ink);
 	padding: 10px;
-	margin-top: 27px;
 	max-width: 264px;
 	filter: sepia(125%);
 }

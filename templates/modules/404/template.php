@@ -13,7 +13,7 @@
 
 <section class='four-oh-four'>
 	<text-wrapper>
-		<h1 class='title-voice'><?=$header?></h1>
+		<h1 class='loud-voice'><?=$header?></h1>
 		<h2 class='attention-voice'><?=$copy?></h2>
 	</text-wrapper>
 </section>

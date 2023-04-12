@@ -202,6 +202,10 @@ em {
   letter-spacing: 0.05em;
 }
 
+.loud-voice {
+  letter-spacing: 0.23em;
+}
+
 /*CASE-STUDY STYLES*/
 code {
   font-size: 1.1rem;
@@ -364,7 +368,6 @@ article figcaption {
   margin-top: 103px;
   font-style: unset;
   font-size: 53px;
-  letter-spacing: 0.23em;
 }
 
 @media (min-width: 900px) {
@@ -778,13 +781,12 @@ svg .curve {
 
 .bio picture-wrapper {
   display: flex;
-  justify-content: center;
+  padding-left: 27px;
 }
 
 .bio picture {
   border: 3px solid var(--ink);
   padding: 10px;
-  margin-top: 27px;
   max-width: 264px;
   filter: sepia(125%);
 }

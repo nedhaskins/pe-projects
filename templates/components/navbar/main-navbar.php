@@ -19,8 +19,8 @@ if( isset($_GET['page']) ) {
 
 	foreach($links as $link) {
 
-		if($link['slug'] == $currentPage && $link['slug'] != 'substack') { ?>
 
+		if($link['slug'] == $currentPage && $link['slug'] != 'substack') { ?>
 				<li class='active'>
 					<div class='link-logo'>
 						<?php include('images/windmill.svg'); ?>
@@ -45,7 +45,7 @@ if( isset($_GET['page']) ) {
 					<div class='link-logo'>
 						<?php include('images/windmill.svg'); ?>
 					</div>
-					<a class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a>
+					<a id="substack" class='link' href="http://nedhaskins.substack.com" alt=""><?=$link['name']?></a>
 				</li>
 
 
@@ -65,3 +65,20 @@ if( isset($_GET['page']) ) {
 	} ?>
 
 </ul>
+
+<script>
+	
+	const substackLink = document.querySelector('#substack');
+
+	substackLink.addEventListener('click', function(event) {
+
+		event.preventDefault();
+		let userConfirmation = confirm('You\'re about to navigate away from nedhaskins.io. Keep going?');
+		if(userConfirmation) {
+			window.location.href = substackLink.href;
+		} else {
+			window.close();
+		}
+	});
+
+</script>

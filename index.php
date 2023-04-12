@@ -37,7 +37,7 @@ if( isset($_GET['slug']) ) {
 	<body class='landing-404'>
 		<header>
 			<div class='site-menu'>
-				<nav class='navbar'>
+				<nav id='navbar' class='navbar'>
 					<?php include('templates/components/navbar/main-navbar.php'); ?>
 				</nav>
 				<div class='logo'>
