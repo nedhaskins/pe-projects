@@ -14,5 +14,14 @@ inner-column {
 	}
 }
 
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 /*maybe a min-height 100vh for body? */

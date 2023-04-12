@@ -25,6 +25,7 @@ inner-column {
 
 .layout-5 .navbar ol {
 	display: flex;
+	list-style: none;
 }
 
 
@@ -32,6 +33,7 @@ inner-column {
 	display: block;
 	text-decoration: none;
 	padding: 10px;
+	color: var(--ink);
 }
 
 photo-module, footer-top, box {

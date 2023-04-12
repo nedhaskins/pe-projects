@@ -29,8 +29,8 @@
 	.layout-6 picture-section {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		align-items: start;
-		padding: 20px;
+		// align-items: start;
+		grid-gap: 10px;
 	}
 }
 
