@@ -136,6 +136,13 @@ body.layout {
   display: block;
 }
 
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
 @media (min-width: 900px) and (min-height: 600px) {
   /*changed this from 700 to 900*/
   body.index, body.landing-404 {
@@ -150,21 +157,21 @@ body.layout {
     top: 0;
   }
 }
-/*	.page-content {
-	grid-row: 1 / 3;
-	}	
-}*/
 inner-column {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*STANDARD MODULE PADDING*/
 link-wrapper {
   display: block;
 }
 
+@media (min-width: 1048px) {
+  .bio, .the-lab, .projects, .e4p, .case-study, .style-guide, .contact {
+    max-width: 512px;
+  }
+}
 html {
   font-family: "Baskerville";
 }
@@ -467,6 +474,9 @@ li.goal-item {
 }
 .link-card :is(a + p) {
   margin-top: 1em;
+}
+.link-card :is(h2 + p) {
+  margin-top: 0.7em;
 }
 
 .link-card > * {

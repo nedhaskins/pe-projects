@@ -83,7 +83,7 @@ if( isset($_GET['slug']) ) {
 		</header>
 
 		<main class='page-content'>
-			<?php fetchPage(); ?>
+				<?php fetchPage(); ?>
 		</main>
 	</body>
 

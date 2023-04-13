@@ -25,3 +25,9 @@ img {
 }
 
 /*maybe a min-height 100vh for body? */
+
+@media(min-width: 1048px) {
+	.page-content {
+		max-width: 1048px;
+	}
+}
