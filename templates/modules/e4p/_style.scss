@@ -61,18 +61,8 @@ form {
 	border: 3px solid var(--ink);
 	margin-top: 20px;
 	padding: 28px;
-/*	border-radius: 20px;*/
+
 }
-
-
-
-
-@media(prefers-color-scheme: dark) {
-	form {
-		border: 3px solid var(--ink-dark);
-	}
-}
-
 
 input {
 	font-family: 'Baskerville';
@@ -102,28 +92,6 @@ input {
 	color: var(--paper);
 	border: 3px solid var(--paper);
 }
-
-@media(prefers-color-scheme: dark) {
-
-	.form-button {
-		background-color: var(--paper-dark);
-		color: var(--ink-dark);
-		border: 3px solid var(--ink-dark);
-	}
-
-	.form-button:hover {
-		background-color: var(--ink-dark);
-		color: var(--paper-dark);
-		border: 3px solid var(--paper-dark);
-	}
-
-
-}
-
-
-
-
-
 
 output {
 display: block;

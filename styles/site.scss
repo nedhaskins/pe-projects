@@ -107,13 +107,6 @@ svg .curve {
 	margin-top: 27px;
 }
 
-// @media(prefers-color-scheme: dark) {
-
-// 	.line {
-// 		border: 1px solid var(--ink-dark);
-// 	}
-
-// }
 
 .project-link {
     text-decoration: underline;
@@ -134,13 +127,6 @@ svg .curve {
 	filter: sepia(125%);
 }
 
-@media(prefers-color-scheme: dark) {
-
-	.bio picture {
-		border: 3px solid var(--ink-dark);
-	}
-
-}
 
 .style-guide .home h1.title-voice {
 	margin-top: 0px;

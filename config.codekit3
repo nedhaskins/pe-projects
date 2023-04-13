@@ -1852,147 +1852,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/cello-exercise-app\/first-exercise-test.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/first-exercise-test-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/fresh-app.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/fresh-app-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/fri-lesson.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/fri-lesson-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/from-memory.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/from-memory-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/cello-exercise-app\/monday.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/monday-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/objects.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/objects-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/sat-cello-class-app.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/sat-cello-class-app-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/cello-exercise-app\/thu-local-storage.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/thu-local-storage-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/tuesday-refactored.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/tuesday-refactored-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/tuesday.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/tuesday-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/cello-exercise-app\/wed-constructors.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/cello-exercise-app\/wed-constructors-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/projects\/figma-to-code\/case-study.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -3553,51 +3412,192 @@
       "oAP" : "\/projects\/highwaysofvirginia\/templates\/pages\/update\/template.php",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/{\"created\":\"2022-10-17T16:37:25.250Z\",\"count\":3699" : {
+    "\/projects\/in-progress\/cello-exercise-app\/first-exercise-test.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/first-exercise-test-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/fresh-app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/fresh-app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/fri-lesson.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/fri-lesson-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/from-memory.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/from-memory-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/{\"created\":\"2022-10-17T16:37:25.250Z\",\"count\":3699",
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/index.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/coding process map.afdesign" : {
+    "\/projects\/in-progress\/cello-exercise-app\/monday.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/monday-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/objects.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/objects-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/sat-cello-class-app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/sat-cello-class-app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/thu-local-storage.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/thu-local-storage-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/tuesday-refactored.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/tuesday-refactored-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/tuesday.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/tuesday-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/cello-exercise-app\/wed-constructors.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/cello-exercise-app\/wed-constructors-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/JS-music-playlist\/{\"created\":\"2022-10-17T16:37:25.250Z\",\"count\":3699" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/coding process map.afdesign",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/{\"created\":\"2022-10-17T16:37:25.250Z\",\"count\":3699",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/database-pull-1.json" : {
+    "\/projects\/in-progress\/JS-music-playlist\/coding process map.afdesign" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/coding process map.afdesign",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/JS-music-playlist\/database-pull-1.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/database-pull-1-min.json",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/database-pull-1-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/JS-music-playlist\/dereak 9:12 talk notes.rtf" : {
+    "\/projects\/in-progress\/JS-music-playlist\/dereak 9:12 talk notes.rtf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/dereak 9:12 talk notes.rtf",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/dereak 9:12 talk notes.rtf",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/genres.json" : {
+    "\/projects\/in-progress\/JS-music-playlist\/genres.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/genres-min.json",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/genres-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/JS-music-playlist\/images\/rabbit_1f407.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/images\/rabbit_1f407.png" : {
       "ft" : 32768,
       "iS" : 4074,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/images\/rabbit_1f407.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/images\/rabbit_1f407.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3606,11 +3606,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/images\/turtle_1f422.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/images\/turtle_1f422.png" : {
       "ft" : 32768,
       "iS" : 23783,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/images\/turtle_1f422.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/images\/turtle_1f422.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3619,123 +3619,123 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/IMG_0682.HEIC" : {
+    "\/projects\/in-progress\/JS-music-playlist\/IMG_0682.HEIC" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/IMG_0682.HEIC",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/IMG_0682.HEIC",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/js-app-pseudocode-10.17.22.rtf" : {
+    "\/projects\/in-progress\/JS-music-playlist\/js-app-pseudocode-10.17.22.rtf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/js-app-pseudocode-10.17.22.rtf",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/js-app-pseudocode-10.17.22.rtf",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/landing.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/landing.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/landing.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/landing.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/music site mockup.afdesign" : {
+    "\/projects\/in-progress\/JS-music-playlist\/music site mockup.afdesign" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/music site mockup.afdesign",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/music site mockup.afdesign",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/create-user.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/create-user.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/create-user.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/create-user.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/decade.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/decade.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/decade.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/decade.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/genre.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/genre.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/genre.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/genre.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/setlist-view.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/setlist-view.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/setlist-view.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/setlist-view.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/setlist.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/setlist.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/setlist.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/setlist.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/sign-in.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/sign-in.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/sign-in.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/sign-in.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/speed.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/speed.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/speed.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/speed.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/traits.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/traits.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/traits.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/traits.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/welcome-back.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/welcome-back.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/welcome-back.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/welcome-back.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pages\/welcome-new.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pages\/welcome-new.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pages\/welcome-new.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pages\/welcome-new.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/playlist-site-mockup.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/playlist-site-mockup.png" : {
       "ft" : 32768,
       "iS" : 5457973,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/playlist-site-mockup.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/playlist-site-mockup.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3744,27 +3744,27 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/pseudo-landing.html" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pseudo-landing.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pseudo-landing.html",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pseudo-landing.html",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/pseudocode" : {
+    "\/projects\/in-progress\/JS-music-playlist\/pseudocode" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/pseudocode",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/pseudocode",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.51 PM.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.51 PM.png" : {
       "ft" : 32768,
       "iS" : 508160,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.51 PM.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.51 PM.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3773,11 +3773,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.55 PM.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.55 PM.png" : {
       "ft" : 32768,
       "iS" : 69818,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.55 PM.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.46.55 PM.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3786,11 +3786,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.59.03 PM.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.59.03 PM.png" : {
       "ft" : 32768,
       "iS" : 215327,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.59.03 PM.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-12 at 8.59.03 PM.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3799,11 +3799,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/Screen Shot 2022-09-20 at 8.27.27 AM.png" : {
+    "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-20 at 8.27.27 AM.png" : {
       "ft" : 32768,
       "iS" : 57538,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/Screen Shot 2022-09-20 at 8.27.27 AM.png",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/Screen Shot 2022-09-20 at 8.27.27 AM.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3812,12 +3812,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/setlist-background.jpeg" : {
+    "\/projects\/in-progress\/JS-music-playlist\/setlist-background.jpeg" : {
       "ft" : 16384,
       "iS" : 74223,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/setlist-background.jpg",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/setlist-background.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3825,7 +3825,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/JS-music-playlist\/styles\/reset.css" : {
+    "\/projects\/in-progress\/JS-music-playlist\/styles\/reset.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -3833,11 +3833,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/styles\/reset-min.css",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/styles\/reset-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/JS-music-playlist\/styles\/settings.css" : {
+    "\/projects\/in-progress\/JS-music-playlist\/styles\/settings.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -3845,11 +3845,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/styles\/settings-min.css",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/styles\/settings-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/JS-music-playlist\/styles\/setup.css" : {
+    "\/projects\/in-progress\/JS-music-playlist\/styles\/setup.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -3857,11 +3857,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/styles\/setup-min.css",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/styles\/setup-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/JS-music-playlist\/styles\/site.css" : {
+    "\/projects\/in-progress\/JS-music-playlist\/styles\/site.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -3869,11 +3869,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/styles\/site-min.css",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/styles\/site-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/JS-music-playlist\/styles\/structure.css" : {
+    "\/projects\/in-progress\/JS-music-playlist\/styles\/structure.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -3881,11 +3881,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/styles\/structure-min.css",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/styles\/structure-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/JS-music-playlist\/styles\/typography.css" : {
+    "\/projects\/in-progress\/JS-music-playlist\/styles\/typography.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -3893,84 +3893,84 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/styles\/typography-min.css",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/styles\/typography-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/JS-music-playlist\/test.json" : {
+    "\/projects\/in-progress\/JS-music-playlist\/test.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/test-min.json",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/test-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/JS-music-playlist\/tuesday 9:13 to-do list.rtf" : {
+    "\/projects\/in-progress\/JS-music-playlist\/tuesday 9:13 to-do list.rtf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/JS-music-playlist\/tuesday 9:13 to-do list.rtf",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/tuesday 9:13 to-do list.rtf",
       "oF" : 0
     },
-    "\/projects\/JS-music-playlist\/users.json" : {
+    "\/projects\/in-progress\/JS-music-playlist\/users.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/JS-music-playlist\/users-min.json",
+      "oAP" : "\/projects\/in-progress\/JS-music-playlist\/users-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/lotr-mongo\/.env" : {
+    "\/projects\/in-progress\/lotr-mongo\/.env" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/lotr-mongo\/.env",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/.env",
       "oF" : 0
     },
-    "\/projects\/lotr-mongo\/.gitignore" : {
+    "\/projects\/in-progress\/lotr-mongo\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/lotr-mongo\/.gitignore",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/.gitignore",
       "oF" : 0
     },
-    "\/projects\/lotr-mongo\/index.js" : {
+    "\/projects\/in-progress\/lotr-mongo\/index.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/projects\/lotr-mongo\/index-min.js",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/index-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/projects\/lotr-mongo\/node_modules" : {
+    "\/projects\/in-progress\/lotr-mongo\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
-      "oAP" : "\/projects\/lotr-mongo\/node_modules",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/node_modules",
       "oF" : 0
     },
-    "\/projects\/lotr-mongo\/package-lock.json" : {
+    "\/projects\/in-progress\/lotr-mongo\/package-lock.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/lotr-mongo\/package-lock-min.json",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/package-lock-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/lotr-mongo\/package.json" : {
+    "\/projects\/in-progress\/lotr-mongo\/package.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/lotr-mongo\/package-min.json",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/package-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/lotr-mongo\/readme.md" : {
+    "\/projects\/in-progress\/lotr-mongo\/readme.md" : {
       "cB" : 0,
       "cS" : 0,
       "eF" : 1,
@@ -3980,7 +3980,7 @@
       "ft" : 4096,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/lotr-mongo\/readme.html",
+      "oAP" : "\/projects\/in-progress\/lotr-mongo\/readme.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -3988,6 +3988,1225 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/__dirname-challenge\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/__dirname-challenge\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/__dirname-challenge\/module.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/__dirname-challenge\/module-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/__dirname-challenge\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/__dirname-challenge\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/app-tests.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/app-tests-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/reset.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/reset-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/structure.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/structure-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/styles-minified.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/css\/styles-minified-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/howler-test.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/howler-test.mp3",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/css-compiling-example\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/monsters.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/monsters-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/public\/home.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/public\/home.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/sample.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/sample.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/footer.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/footer.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/header.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/header.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/home.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/home.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/monster-generator.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/monster-generator.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/monsters.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/express-js-project-1\/views\/monsters.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/accessing-array-values.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/accessing-array-values-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/array-filtering.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/array-filtering-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/arrays.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/arrays-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/for-loop.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/for-loop-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/function-arguments.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/function-arguments-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/functions.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/functions-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/if-statement.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/if-statement-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/introduction.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/introduction-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/looping-through-arrays.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/looping-through-arrays-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/number-to-string" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/number-to-string",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/number-to-string.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/number-to-string-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/numbers.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/numbers-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/object-keys.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/object-keys-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/object-properties.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/object-properties-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/objects.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/objects-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/revising-strings.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/revising-strings-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/rounding-numbers.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/rounding-numbers-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/scope.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/scope-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/string-length.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/string-length-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/strings.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/strings-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/javascripting\/variables.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/javascripting\/variables-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/baby-steps.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/baby-steps-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/filtered-ls.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/filtered-ls-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/hello-world.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/hello-world-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/http-client.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/http-client-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/http-collect.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/http-collect-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/juggling-async.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/juggling-async-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/make-it-modular.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/make-it-modular-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/my-first-async-io.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/my-first-async-io-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/my-first-io.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/my-first-io-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/mymodule.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/mymodule-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/learnyounode\/process-argv-invoker.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/learnyounode\/process-argv-invoker-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/aule.jpeg" : {
+      "ft" : 16384,
+      "iS" : 87114,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/aule.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/elendil.jpeg" : {
+      "ft" : 16384,
+      "iS" : 67908,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/elendil.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/gandalf.jpeg" : {
+      "ft" : 16384,
+      "iS" : 15119,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/gandalf.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/gothmog.jpeg" : {
+      "ft" : 16384,
+      "iS" : 43879,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/gothmog.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/thingol.jpeg" : {
+      "ft" : 16384,
+      "iS" : 75720,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/images\/thingol.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/lotr-data.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/lotr-data-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/404.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/404.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/characters.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/characters.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/home.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/home.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/test-view.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/lotr-info\/views\/test-view.ejs",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/404.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/404.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/about.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/contact.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/contact.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/home.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/home.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/new-server\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/new-server\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/node-example\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/node-example\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/node-example\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/node-example\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/node-example\/node-map.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/node-example\/node-map-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/node-js-projects\/node-example\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/node-example\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/node-example\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/node-example\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/node-js-projects\/server.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/node-js-projects\/server-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/.gitignore",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/.vscode\/extensions.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/pos-system\/.vscode\/extensions-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/pos-system\/dist\/assets\/index-b1a87a93.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/dist\/assets\/index-b1a87a93-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/dist\/assets\/index-c16bd851.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/dist\/assets\/index-c16bd851-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/dist\/CNAME" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/dist\/CNAME",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/dist\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/dist\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/dist\/vite.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/pos-system\/dist\/vite.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/pos-system\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/pos-system\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/pos-system\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/in-progress\/pos-system\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/in-progress\/pos-system\/public\/CNAME" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/public\/CNAME",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/public\/vite.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/pos-system\/public\/vite.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/src\/App.vue" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/src\/App.vue",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/src\/assets\/vue.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/in-progress\/pos-system\/src\/assets\/vue.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/src\/components\/HelloWorld.vue" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/src\/components\/HelloWorld.vue",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/src\/main.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/src\/main-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/src\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/src\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/pos-system\/vite.config.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/pos-system\/vite.config-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/11.3.22.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/11.3.22-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/first-exercise-test.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/first-exercise-test-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/fri-lesson.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/fri-lesson-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/from-memory.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/from-memory-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/library.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/library-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/monday.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/monday-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/objects.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/objects-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/question-file.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/question-file-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/sat-todo-class-app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/sat-todo-class-app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/thu-local-storage.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/thu-local-storage-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/tuesday-refactored.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/tuesday-refactored-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/tuesday.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/tuesday-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/in-progress\/todo-app\/wed-constructors.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/in-progress\/todo-app\/wed-constructors-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/projects\/new-e4p-template.afdesign" : {
       "cB" : 0,
@@ -3996,1062 +5215,6 @@
       "oA" : 0,
       "oAP" : "\/projects\/new-e4p-template.afdesign",
       "oF" : 0
-    },
-    "\/projects\/node-js-projects\/__dirname-challenge\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/__dirname-challenge\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/__dirname-challenge\/module.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/__dirname-challenge\/module-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/__dirname-challenge\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/__dirname-challenge\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/app-tests.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/app-tests-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/css\/reset.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/css\/reset-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/css\/structure.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/css\/structure-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/css\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/css\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/css\/styles-minified.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/css\/styles-minified-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/howler-test.mp3" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/howler-test.mp3",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/css-compiling-example\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/css-compiling-example\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/app.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/app-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/monsters.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/monsters-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/public\/home.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/public\/home.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/sample.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/sample.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/views\/footer.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/views\/footer.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/views\/header.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/views\/header.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/views\/home.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/views\/home.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/views\/monster-generator.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/views\/monster-generator.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/express-js-project-1\/views\/monsters.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/express-js-project-1\/views\/monsters.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/accessing-array-values.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/accessing-array-values-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/array-filtering.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/array-filtering-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/arrays.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/arrays-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/for-loop.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/for-loop-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/function-arguments.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/function-arguments-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/functions.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/functions-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/if-statement.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/if-statement-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/introduction.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/introduction-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/looping-through-arrays.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/looping-through-arrays-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/number-to-string" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/number-to-string",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/number-to-string.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/number-to-string-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/numbers.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/numbers-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/object-keys.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/object-keys-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/object-properties.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/object-properties-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/objects.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/objects-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/revising-strings.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/revising-strings-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/rounding-numbers.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/rounding-numbers-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/scope.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/scope-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/string-length.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/string-length-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/strings.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/strings-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/javascripting\/variables.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/javascripting\/variables-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/baby-steps.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/baby-steps-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/filtered-ls.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/filtered-ls-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/hello-world.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/hello-world-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/http-client.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/http-client-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/http-collect.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/http-collect-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/juggling-async.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/juggling-async-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/make-it-modular.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/make-it-modular-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/my-first-async-io.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/my-first-async-io-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/my-first-io.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/my-first-io-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/mymodule.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/mymodule-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/learnyounode\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/learnyounode\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/learnyounode\/process-argv-invoker.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/learnyounode\/process-argv-invoker-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/lotr-info\/images\/aule.jpeg" : {
-      "ft" : 16384,
-      "iS" : 87114,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/images\/aule.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/node-js-projects\/lotr-info\/images\/elendil.jpeg" : {
-      "ft" : 16384,
-      "iS" : 67908,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/images\/elendil.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/node-js-projects\/lotr-info\/images\/gandalf.jpeg" : {
-      "ft" : 16384,
-      "iS" : 15119,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/images\/gandalf.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/node-js-projects\/lotr-info\/images\/gothmog.jpeg" : {
-      "ft" : 16384,
-      "iS" : 43879,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/images\/gothmog.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/node-js-projects\/lotr-info\/images\/thingol.jpeg" : {
-      "ft" : 16384,
-      "iS" : 75720,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/images\/thingol.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/node-js-projects\/lotr-info\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/lotr-info\/lotr-data.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/lotr-data-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/lotr-info\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/lotr-info\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/lotr-info\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/lotr-info\/views\/404.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/views\/404.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/lotr-info\/views\/characters.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/views\/characters.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/lotr-info\/views\/home.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/views\/home.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/lotr-info\/views\/test-view.ejs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/lotr-info\/views\/test-view.ejs",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/404.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/404.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/about.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/about.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/contact.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/contact.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/home.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/home.html",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/new-server\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/new-server\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/new-server\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/node-example\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/node-example\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/node-example\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/node-js-projects\/node-example\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/node-js-projects\/node-example\/node-map.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/node-example\/node-map-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/node-js-projects\/node-example\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/node-example\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/node-example\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/node-js-projects\/node-example\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/node-js-projects\/server.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/node-js-projects\/server-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/pos-system\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/.gitignore",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/.vscode\/extensions.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/pos-system\/.vscode\/extensions-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/pos-system\/dist\/assets\/index-b1a87a93.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/dist\/assets\/index-b1a87a93-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/pos-system\/dist\/assets\/index-c16bd851.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/dist\/assets\/index-c16bd851-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/pos-system\/dist\/CNAME" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/dist\/CNAME",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/dist\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/dist\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/dist\/vite.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/pos-system\/dist\/vite.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/pos-system\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/pos-system\/node_modules",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/pos-system\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/pos-system\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/pos-system\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/pos-system\/public\/CNAME" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/public\/CNAME",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/public\/vite.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/pos-system\/public\/vite.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/pos-system\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/README.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
-    },
-    "\/projects\/pos-system\/src\/App.vue" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/src\/App.vue",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/src\/assets\/vue.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/pos-system\/src\/assets\/vue.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/pos-system\/src\/components\/HelloWorld.vue" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/src\/components\/HelloWorld.vue",
-      "oF" : 0
-    },
-    "\/projects\/pos-system\/src\/main.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/src\/main-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/pos-system\/src\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/src\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/pos-system\/vite.config.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/pos-system\/vite.config-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/projects\/responsive-layout-challenge\/css\/reset.css" : {
       "aP" : 1,
@@ -5894,169 +6057,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/todo-app\/11.3.22.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/11.3.22-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/first-exercise-test.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/first-exercise-test-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/fri-lesson.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/fri-lesson-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/from-memory.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/from-memory-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/todo-app\/library.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/library-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/monday.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/monday-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/objects.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/objects-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/question-file.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/question-file-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/sat-todo-class-app.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/sat-todo-class-app-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/todo-app\/thu-local-storage.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/thu-local-storage-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/tuesday-refactored.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/tuesday-refactored-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/tuesday.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/tuesday-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/todo-app\/wed-constructors.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/todo-app\/wed-constructors-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/readme.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -6169,6 +6169,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/styles\/layout-garden-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/layout-garden-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/styles\/layout-garden.css" : {
       "aP" : 1,

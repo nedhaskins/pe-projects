@@ -18,7 +18,7 @@ foreach($caseStudies as $caseStudy) {
 		<section class='case-study'>
 			<inner-column>
 				<article>
-					<h1><?=$title?></h1>
+					<h1 class='title-voice'><?=$title?></h1>
 					<h2><?=$subtitle?></h2>
 					<a class='project-link' href="projects/<?=$slug?>/index.<?=$siteXtensionType?>">Link to the project</a> 
 

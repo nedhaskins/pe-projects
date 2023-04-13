@@ -32,7 +32,7 @@ em {
 
 /*VOICES*/
 
-.emphasis-voice {
+.emphasis-voice { //maybe not needed here
 	font-style: italic;
 	letter-spacing: 0.05em;
 }
@@ -126,16 +126,15 @@ article {
 	h2,
 	h3,
 	.project-link,
-	:is(p + p),
-	:is(h4 + p),
 	:is(h3 + p),
+	:is(h3 + h4),
+	:is(h4 + p),
 	:is(li + h3),
-	:is(h3 + h4),
-	:is(figcaption + p),
-	:is(h3 + h4),
-	:is(p + figure),
 	:is(figure + figure),
 	:is(figure + p),
+	:is(figcaption + p),
+	:is(p + figure),
+	:is(p + p),
 	:is(p + ul),
 	:is(p + h4),
 	:is(p + ul),
@@ -148,7 +147,8 @@ article {
 	:is(p + h3),
 	:is(figure + h3),
 	:is(ul + h3),
-	:is(a + h3) {
+	:is(a + h3),
+	:is(a + p) {
 		margin-top: 2em;
 	}
 

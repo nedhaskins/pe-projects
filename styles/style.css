@@ -284,16 +284,15 @@ article :is(ul, ol) :is(li + li) {
 article h2,
 article h3,
 article .project-link,
-article :is(p + p),
-article :is(h4 + p),
 article :is(h3 + p),
+article :is(h3 + h4),
+article :is(h4 + p),
 article :is(li + h3),
-article :is(h3 + h4),
-article :is(figcaption + p),
-article :is(h3 + h4),
-article :is(p + figure),
 article :is(figure + figure),
 article :is(figure + p),
+article :is(figcaption + p),
+article :is(p + figure),
+article :is(p + p),
 article :is(p + ul),
 article :is(p + h4),
 article :is(p + ul),
@@ -303,7 +302,8 @@ article :is(ul + h4) {
 article :is(p + h3),
 article :is(figure + h3),
 article :is(ul + h3),
-article :is(a + h3) {
+article :is(a + h3),
+article :is(a + p) {
   margin-top: 2em;
 }
 article figcaption {
@@ -562,14 +562,8 @@ form {
   border: 3px solid var(--ink);
   margin-top: 20px;
   padding: 28px;
-  /*	border-radius: 20px;*/
 }
 
-@media (prefers-color-scheme: dark) {
-  form {
-    border: 3px solid var(--ink-dark);
-  }
-}
 input {
   font-family: "Baskerville";
   font-size: var(--stepOne);
@@ -596,18 +590,6 @@ input {
   border: 3px solid var(--paper);
 }
 
-@media (prefers-color-scheme: dark) {
-  .form-button {
-    background-color: var(--paper-dark);
-    color: var(--ink-dark);
-    border: 3px solid var(--ink-dark);
-  }
-  .form-button:hover {
-    background-color: var(--ink-dark);
-    color: var(--paper-dark);
-    border: 3px solid var(--paper-dark);
-  }
-}
 output {
   display: block;
   background-color: black;
@@ -630,11 +612,6 @@ output {
   border: 3px solid var(--ink);
 }
 
-@media (prefers-color-scheme: dark) {
-  .subheader-figure-caption img {
-    border: 3px solid var(--ink-dark);
-  }
-}
 .contact {
   display: flex;
   flex-direction: column;
@@ -655,7 +632,7 @@ output {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 .contact link-wrapper a {
   border: 3px solid var(--ink);
@@ -791,11 +768,6 @@ svg .curve {
   filter: sepia(125%);
 }
 
-@media (prefers-color-scheme: dark) {
-  .bio picture {
-    border: 3px solid var(--ink-dark);
-  }
-}
 .style-guide .home h1.title-voice {
   margin-top: 0px;
 }
