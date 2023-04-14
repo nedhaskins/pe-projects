@@ -54,7 +54,15 @@ link-wrapper {
 }
 
 @media(min-width: 1048px) {
-	.bio, .the-lab, .projects, .e4p, .case-study, .style-guide, .contact {
+	.bio,
+	.the-lab,
+	.projects,
+	.e4p,
+	.resume,
+	.goals,
+	.case-study,
+	.style-guide,
+	.contact {
 		max-width: 512px;
 	}
 }
