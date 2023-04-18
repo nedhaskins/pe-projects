@@ -41,7 +41,7 @@ foreach($caseStudies as $caseStudy) {
 						} elseif($tag === 'ul') {
 							echo "<ul>";
 							foreach($content as $contentBlock) {
-								echo "<" . $contentBlock['tag'] . ">" . $contentBlock['content'] . "</" . $contentBlock['tag'] . ">";
+								echo "<li>" . $contentBlock['content'] . "</li>";
 							}
 							echo "</ul>";
 						} else {
