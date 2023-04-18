@@ -9,10 +9,10 @@
             "id": "111",
             "slug": "ninja-strings",
             "name": "ninja strings",
-            "caseStudy": false,
+            "caseStudy": true,
             "description": "Custom WordPress theme for a booking agency for string players in central and northern Virginia.",
             "image": "images/ninja-strings-background.png",
-            "url": "https://ninjastrings.net",
+            "url": "",
             "languages": [
                 "PHP",
                 "SCSS"

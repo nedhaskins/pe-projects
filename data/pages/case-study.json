@@ -489,5 +489,195 @@
 				]
 			}
 		]
+	},
+	{
+		"slug": "ninja-strings",
+		"siteXtensionType": "php",
+		"title": "ninja strings",
+		"subtitle": "Building a custom WordPress theme from scratch and setting it up on the Internet.",
+		"htmlContent": [
+			{
+				"tag": "p",
+				"content": "The client for this project is a booking agent based in Richmond, Virginia.  The original site was built with GoDaddy’s Website Builder, but as the client’s business grew, to remain competitive, he knew that a significant upgrade to the site’s design was needed.  This was confirmed when he got on a support call with a GoDaddy representative, and they said as much. “This is definitely the old version of our website builder!”"
+			},
+			{
+				"tag": "p",
+				"content": "The site had an attractive basic layout, but its structure didn’t take responsivity or user accessibility into account — there was no “mobile” version of the site.  Because of its templated nature, it wasn’t going to be possible for the client to add custom media elements or create custom modules — it all had to fit into the provided layouts — and in order to get more options — the client would have to pay more."
+			},
+			{
+				"tag": "h3",
+				"content": "Design"
+			},
+			{
+				"tag": "h4",
+				"content": "Research"
+			},
+			{
+				"tag": "p",
+				"content": "I enlisted the aid of my top UX feedback expert (aka my better half) to help with the research."
+			},
+			{
+				"tag": "p",
+				"content": "The first step in any design process is to think about the end product — but from a “feeling” or “overall impression” angle.  What do you want the client, customer, or visitor to feel about your product or service?"
+			},
+			{
+				"tag": "p",
+				"content": "The business is a booking agency for string instrumentalists.  The jobs these players are typically hired for are high-end private events — weddings, church services, fundraising galas, museum exhibit openings, etc.  In the past, classical and jazz music were the favored styles/genres at these types of jobs, but as tastes have evolved and become more progressive and inclusive, clients are just as likely to ask for Taylor Swift or A$AP Ferg at their wedding as they are to ask for Pachelbel’s Canon."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/first-logo.png"
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/color-palette.png"
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/initial-moodboard.png"
+			},
+			{
+				"tag": "p",
+				"content": "I started with these initial ideas.  The client had this logo designed years ago by a Sri Lankan artist named Dushan; he definitely wanted to keep it for the site upgrade. The photos, typography, and colors and textures were gathered from websites whose businesses were similar to the client's -- music performance for private events."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/style-tile-light.png"
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/style-tile-dark.png"
+			},
+			{
+				"tag": "p",
+				"content": "I constructed some style tiles to get some basic ideas down for colors and textures I wanted to include on the site. The decisions were driven by what words and ideas the choices evoked -- and if they were in line with the kind of vibe that the client wanted for their company!"
+			},
+			{
+				"tag": "p",
+				"content": "Some of the key words some users brought back for feedback: <em>Luxury. Playful.  Edgy. Adventurous. Bold/daring.</em> It looks like I may be onto something."
+			},
+			{
+				"tag": "p",
+				"content": "Here are some of the final layouts made in Affinity Designer."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/home-small-screen.jpg"
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/home-large-screen.jpg"
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/contact-small-screen.jpg"
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/contact-large-screen.jpg"
+			},
+			{
+				"tag": "h4",
+				"src": "Building out the custom WordPress theme from scratch"
+			},
+			{
+				"tag": "p",
+				"content": "I kept more or less the same page structure from the client’s previous site: a home page, a basic content page describing what the business does, links to audio and video clips of the musicians, a list of the group’s current repertoire, and a contact form. "
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "header.php and footer.php files.  The <code>wp_head()</code> function can be used to grab local stylesheets."
+					},
+					{
+						"content": "some functions to customize how CSS is loaded into the project"
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "Recent use of Codekit in projects has allowed for CSS files to be compiled into one large style.css.  I’ll use a framework I’ve been using for the past several projects, with compartmentalized CSS files for reset attributes, variables, typography, and reusable modules — and all of these will end up getting compiled into a single file after Codekit’s done with it."
+			},
+			{
+				"tag": "h3",
+				"content": "Architect"
+			},
+			{
+				"tag": "p",
+				"content": "Basic scaffolding was addressed first.  I created a Git repository for the project and hooked in the CSS framework (composed of SCSS files, and a single style.css sheet for those files to compile to)."
+			},
+			{
+				"tag": "p",
+				"content": "I had some ideas about which CSS properties I would need to implement the designs.  With grid layouts, the developer can specify the exact width and height of one or any combination of grid cells — and responsive units (percentages, viewport width / height) can also be used."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/ns-grid-setup.png"
+			},
+			{
+				"tag": "p",
+				"content": "Keeping the spacing and content proportional throughout all screen sizes is part of the definition of responsive design.  Words like “flowing” and “balanced” will naturally begin to appear to describe such a setup.  The <code>flex-basis</code> property offers one simple way to help preserve these planned-out ratios.  The value that's on a <code>flex-basis</code> (shorthand - <code>flex</code>) property on a child container within a flexbox will dictate how much space that container's allowed to take up.  If two children both have <code>flex: 1</code>, they’ll each take up half the available space.  If three children have <code>flex: 1</code>, each child will take up one third of the available space."
+			},
+			{
+				"tag": "h4",
+				"content": "Registering menus in the WordPress CMS"
+			},
+			{
+				"tag": "p",
+				"content": "If the developer would like to offload menu handling onto the WP framework, WordPress offers built-in menu functions and an interface within the CMS."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/ninja-strings/register-nav-menu.png"
+			},
+			{
+				"tag": "p",
+				"content": "I had the initial idea of placing a custom icon next to the current active page link.  This is not an easy task within the WP menu setup due to how the framework automatically renders HTML tags (placing an SVG inside, or next to, list items, requires an extra div wrapper — and the custom function that builds menus is based on an array of items only — and lists and list items are automatically generated from this array without the possibility of including extra HTML elements)."
+			},
+			{
+				"tag": "p",
+				"content": "It may be a better solution for the developer to hard-code in the menu if they have specific ideas about integrating icons into menu list items."
+			},
+			{
+				"tag": "h3",
+				"content": "Implement"
+			},
+			{
+				"tag": "p",
+				"content": "Hosting the live site will require a server, just as a local server is required to run PHP scripts.  The short stack consists of:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "An Amazon Lightsail instance for the server itself.  Amazon Web Services offers a similar service, Elastic Compute Cloud (EC2) for larger, more data-intensive applications, but for a lean site with a small amount of initial traffic, Lightsail is a good starting point."
+					},
+					{
+						"content": "SpinupWP for the server’s front-facing control panel. On the backend side, the app also provides an SSL certificate and a database."
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "I explored switching the domain / DNS info over from GoDaddy’s systems to a custom setup, but due to the time constraints and negligible cost of keeping them hosted there, I decided to leave them for now."
+			},
+			{
+				"tag": "p",
+				"content": "I installed the WPMigrate plugin locally in order to be able to push local code changes up to the live site.  This plugin allows for the creation of custom push rules and the ability to save these rules into a group that can be run repeatedly."
+			},
+			{
+				"tag": "p",
+				"content": "I went through the same logic with the email server;  GoDaddy offers this service at a negligible cost, so it will stay in place for now."
+			},
+			{
+				"tag": "h3",
+				"content": "Conclusion"
+			},
+			{
+				"tag": "p",
+				"content": "This project offered several wonderful challenges and gave me a look at the complete tech stack needed for any website.  All aspects of the design process were included - content strategy, research, layout design, UX/UI feedback, code writing, working within content management systems (WordPress), breaking out of the CMS when needed to write custom code (i.e. custom functions), and responsive design, implemented through well-written and well-organized CSS."
+			}
+		]
 	}
 ]
