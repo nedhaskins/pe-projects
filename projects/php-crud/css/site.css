@@ -1,0 +1,45 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'header.css';
+@import 'typography.css';
+@import 'components.css';
+@import 'forms.css';
+@import 'route-card.css';
+
+
+body {
+
+	--anakiwa: #8acde4;
+	--lightgreen: #4af2a1;
+	--amazon: #36745c;
+
+	background: linear-gradient( rgba(130, 170, 155, 0.8), rgba(130, 170, 155, 0.8)), url('../images/i-95.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+/*.page-content {
+	border: 3px dashed lime;
+}*/
+
+/*picture {
+	width: 50%;
+}*/
+
+
+
+.detail-image {
+	width: clamp(200px, 40vw, 250px);
+}
+
+footer {
+	background-color: var(--amazon);
+}
+
+footer p {
+	padding: 20px;
+}
+

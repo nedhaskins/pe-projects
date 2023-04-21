@@ -679,5 +679,214 @@
 				"content": "This project offered several wonderful challenges and gave me a look at the complete tech stack needed for any website.  All aspects of the design process were included - content strategy, research, layout design, UX/UI feedback, code writing, working within content management systems (WordPress), breaking out of the CMS when needed to write custom code (i.e. custom functions), and responsive design, implemented through well-written and well-organized CSS."
 			}
 		]
+	},
+	{
+		"slug": "highways-of-virginia",
+		"siteXtensionType": "php",
+		"title": "highways of virginia",
+		"subtitle": "Building a fully-functional CRUD app in vanilla PHP.",
+		"htmlContent": [
+			{
+				"tag": "h3",
+				"content": "The first run"
+			},
+			{
+				"tag": "p",
+				"content": "The first iteration of this project was a sort of “trial run” to see how much knowledge of PHP I had absorbed through research and practice.  What I knew about layout design at this juncture was also incorporated into this setup."
+			},
+			{
+				"tag": "figure",
+				"class": "original",
+				"src": "data/case-studies/highways-of-virginia/original-1.png"
+			},
+			{
+				"tag": "p",
+				"content": "Flexbox and grid were still fairly new to me at this point, but they were, and are, the solutions for some challenges that come with designing for different screen sizes."
+			},
+			{
+				"tag": "figure",
+				"class": "original",
+				"src": "data/case-studies/highways-of-virginia/original-2.png"
+			},
+			{
+				"tag": "p",
+				"content": "Grid is the solution for moving between small and large screens for the route-list – but these photos are way too large at the small scale."
+			},
+			{
+				"tag": "figure",
+				"class": "original",
+				"src": "data/case-studies/highways-of-virginia/original-3.png"
+			},
+			{
+				"tag": "p",
+				"content": "It's clear that this project was not left in a finished state!"
+			},
+			{
+				"tag": "figure",
+				"class": "original",
+				"src": "data/case-studies/highways-of-virginia/original-4.png"
+			},
+			{
+				"tag": "p",
+				"content": "And for icing on the cake – a form that wasn’t totally functional."
+			},
+			{
+				"tag": "figure",
+				"class": "original",
+				"src": "data/case-studies/highways-of-virginia/original-5.png"
+			},
+			{
+				"tag": "p",
+				"content": "The time limit had been reached.  I left this project for the moment, but my appetite for PHP had been whetted.  I returned to this project a couple of months later, set on having a totally functional CRUD app."
+			},
+			{
+				"tag": "h3",
+				"content": "The second run"
+			},
+			{
+				"tag": "h4",
+				"content": "Making a Figma mockup"
+			},
+			{
+				"tag": "p",
+				"content": "Figma is a collaborative application for interface design.  It’s useful for mockups in that you can simulate the user experience by using the “Prototype” feature — once you’ve created all the screens you want, you can connect screen mockups with dynamic components and simulate the user journey through the site."
+			},
+			{
+				"tag": "figure",
+				"class": "figma",
+				"src": "data/case-studies/highways-of-virginia/figma-1.png"
+			},
+			{
+				"tag": "figure",
+				"class": "figma",
+				"src": "data/case-studies/highways-of-virginia/figma-2.png"
+			},
+			{
+				"tag": "figure",
+				"class": "figma",
+				"src": "data/case-studies/highways-of-virginia/figma-3.png"
+			},
+			{
+				"tag": "p",
+				"content": "The site contains the following pages:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "Home page - the site's landing page."
+					},
+					{
+						"content": "Route List - a list of all of the routes currently in the site's database"
+					},
+					{
+						"content": "Create route - a page with a form template containing all of the attributes needed to add a new entry to the database"
+					},
+					{
+						"content": "Update route - a page with a form template whose fields are already filled out with the current data in the database.  The user can update these values."
+					},
+					{
+						"content": "Delete route - a page that delivers a simple confirmation statement that the requested data was removed from the database."
+					}
+				]
+			},
+			{
+				"tag": "h3",
+				"content": "Writing the code"
+			},
+			{
+				"tag": "p",
+				"content": "In the first run of the project, all site data was stored in a JSON object.  The same paradigm was used here."
+			},
+			{
+				"tag": "p",
+				"content": "A functions.php file was made to cut down on the amount of repeated code and to place all “actions” into repeatable “component” functions."
+			},
+			{
+				"tag": "p",
+				"content": "The “create route” and “update route” pages use the same form template, with conditional PHP statements in each respective page to determine how the form will behave. "
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/form-initial-values.png",
+				"figcaption": "Setting initial conditions for the form – blank values if none are fetched, values from the database if values are found."
+			},
+			{
+				"tag": "h3",
+				"content": "Updating the form data"
+			},
+			{
+				"tag": "p",
+				"content": "This was by far the biggest challenge of the project.  It consisted of two phases:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "isolating the specific data that needed to be changed"
+					},
+					{
+						"content": "showing the updated data on the route’s form once submitted."
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "The code had to be written carefully; each variable needed to be defined at a certain point, as PHP scripts out line-by-line, in order."
+			},
+			{
+				"tag": "p",
+				"content": "The logic goes like this:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "The variable <code>$currentHighwayId</code> is equal to the current page slug (which is the same as the item identifier in the database).  This will be used later as the index of the item that’s going to be overwritten in the database"
+					},
+					{
+						"content": "The variable <code>$highway</code> populates the page form with the current highway data."
+					}
+				]
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/update-1.png"
+			},
+			{
+				"tag": "p",
+				"content": "Once the user updates the data, <code>$highway</code>’s values will be updated to the new data.  It still remains, though, to actually push this data up to the database and overwrite the old data."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/update-2.png"
+			},
+			{
+				"tag": "p",
+				"content": "The above codeblock is the key!"
+			},
+			{
+				"tag": "p",
+				"content": "If the update form is submitted, the variable <code>$highway</code> gets new values.  It hasn’t been pushed up to the database yet, though!"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "The <code>getHighways()</code> function decodes the JSON database object and prepares it for editing."
+					},
+					{
+						"content": "The second line of code locates the object in the database whose index matches the current slug of the page and makes the values in that object equal to the newly submitted user values in <code>$highway</code>."
+					},
+					{
+						"content": "The remaining code \"wraps up\" the new data into the database, encoding it back into JSON format and putting it back into the database file.  A confirmation will appear on the page after the update."
+					}
+				]
+			},
+			{
+				"tag": "h3",
+				"content": "User feedback on the second pass"
+			}
+		]
 	}
 ]

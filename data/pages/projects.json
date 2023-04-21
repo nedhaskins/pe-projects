@@ -60,12 +60,12 @@
         },
         {
             "id": 4,
-            "slug": "highwaysofvirginia",
+            "slug": "highways-of-virginia",
             "name": "highways of virginia",
-            "caseStudy": false,
+            "caseStudy": true,
             "description": "A responsive multi-page site that allows users to dynamically create their own data as well as make changes to it. As with the previous projects, we continued with the ideas of theming, typography and other layout elements.",
             "image": "images/i-95.jpeg",
-            "url": "https://peprojects.dev/alpha-4/ned/projects/highwaysofvirginia",
+            "url": "",
             "languages": [
                 "HTML",
                 "CSS",

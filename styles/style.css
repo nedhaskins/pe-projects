@@ -826,3 +826,11 @@ svg .curve {
 .case-study :is(.figure-2, .figure-6) {
   max-width: 300px;
 }
+
+.original picture {
+  max-width: 450px;
+}
+
+.figma picture {
+  max-width: 300px;
+}
