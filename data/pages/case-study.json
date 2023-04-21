@@ -886,6 +886,43 @@
 			{
 				"tag": "h3",
 				"content": "User feedback on the second pass"
+			},
+			{
+				"tag": "p",
+				"content": "The project up to this point heavily favored the programming aspect over the design aspect; the layout at this stage was really just a validation that everything was \"working as it should\"."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/second-pass-1.png"
+			},
+			{
+				"tag": "p",
+				"content": "The \"text-align-center\" approach on the home page isn't as convincing here as I imagined."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/second-pass-2.png"
+			},
+			{
+				"tag": "p",
+				"content": "There aren't enough common alignment points on this page -- everything looks disjointed and it doesn't feel \"solid\"."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/second-pass-3.png"
+			},
+			{
+				"tag": "p",
+				"content": "Once again, the centering idea isn't playing out to my benefit.  The position of the code output doesn't really clarify what it is or where it originated!"
+			},
+			{
+				"tag": "p",
+				"content": "With the functionality in place, time for the UX/UI developer to come out and play."
+			},
+			{
+				"tag": "figure",
+				"src": "data/case-studies/highways-of-virginia/mockups-1.png",
+				"figcaption": "Some extremely rough initial mockups brought to you by Affinity Designer."
 			}
 		]
 	}

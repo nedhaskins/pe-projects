@@ -1,0 +1,30 @@
+@import 'base/reset';
+@import 'base/setup';
+@import 'base/variables';
+@import 'base/structure';
+@import 'base/typography';
+@import 'base/modules';
+
+body {
+	background: linear-gradient( rgba(76, 45, 18, 0.6), rgba(76, 45, 18, 0.6)), url('./images/main-background.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+	padding-bottom: 30px;
+}
+
+
+pre {
+	background-color: black;
+	color: lime;
+	font-family: 'Courier';
+	font-size: 16px;
+	padding: 20px;
+}
+
+
+
+.update-photo {
+	padding: 20px;
+}
