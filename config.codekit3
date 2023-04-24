@@ -3309,6 +3309,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/projects\/highways-of-virginia\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/highways-of-virginia\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/projects\/highways-of-virginia\/css\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3318,8 +3330,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/styles\/style.css",
-      "oF" : 0,
+      "oAP" : "\/projects\/highways-of-virginia\/css\/style.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -3441,6 +3453,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/projects\/highways-of-virginia\/images\/minneapolis-1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 120039,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/highways-of-virginia\/images\/minneapolis-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/projects\/highways-of-virginia\/images\/updated!.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -3460,6 +3485,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/projects\/highways-of-virginia\/images\/us-11-photo.jpg" : {
+      "ft" : 16384,
+      "iS" : 236029,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/highways-of-virginia\/images\/us-11-photo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/projects\/highways-of-virginia\/images\/US-11.svg" : {
       "ft" : 2097152,
@@ -3500,6 +3538,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/projects\/highways-of-virginia\/images\/va-20-photo.jpeg" : {
+      "ft" : 16384,
+      "iS" : 124466,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/highways-of-virginia\/images\/va-20-photo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/projects\/highways-of-virginia\/images\/VA-208.svg" : {
       "ft" : 2097152,
@@ -3577,18 +3628,6 @@
       "oAP" : "\/projects\/highways-of-virginia\/router.php",
       "oF" : 0
     },
-    "\/projects\/highways-of-virginia\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/highways-of-virginia\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/projects\/highways-of-virginia\/templates\/components\/form\/_style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3641,29 +3680,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/highways-of-virginia\/templates\/components\/test-update-script.html",
-      "oF" : 0
-    },
-    "\/projects\/highways-of-virginia\/templates\/components\/title-header\/_style.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/styles\/_style.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/projects\/highways-of-virginia\/templates\/components\/title-header\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/highways-of-virginia\/templates\/components\/title-header\/template.php",
       "oF" : 0
     },
     "\/projects\/highways-of-virginia\/templates\/pages\/create\/_style.scss" : {

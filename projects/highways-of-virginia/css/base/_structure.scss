@@ -1,7 +1,24 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+
+
+main {
+	flex: 1;
+	padding: 40px;
+	border: 3px solid lime;
+}
+
+
 inner-column {
 	display: block;
 	margin: 0 auto;
 	max-width: 960px;
+	border: 3px solid red;
+
 }
 
 

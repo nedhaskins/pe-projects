@@ -39,8 +39,11 @@ svg {
 	width: 100%;
 	}
 
-picture-wrapper {
+link-wrapper, picture-wrapper {
 	display: flex;
 	flex-direction: column;
+}
+
+picture-wrapper {
 	align-items: center;
 }

@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<meta property='og:image' content='https://peprojects.dev/alpha-4/ned/projects/php-crud/images/i-95.jpeg'> 
 	<meta name='description' content='Resource for information on Virginia highways and byways.'>
@@ -21,14 +21,11 @@
 
 </head>
 <body>
-	<?php if($page == 'home') {
-		include('./templates/components/title-header/template.php');
-	} else {
-		include ('./templates/components/site-header/template.php');
-	} ?>
-	<inner-column>
-
-		<?php pageTemplate($page); ?>
-	</inner-column>
+	<?php include ('./templates/components/site-header/template.php'); ?>
+	<main>
+		<inner-column>
+			<?php pageTemplate($page); ?>
+		</inner-column>
+	</main>
 </body>
 </html>
