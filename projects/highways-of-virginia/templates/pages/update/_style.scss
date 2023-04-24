@@ -1,13 +1,17 @@
 .update-page {
 	display:flex;
 	flex-direction: column;
-	align-items: center;
+	// align-items: center;
 
 	// gap: 40px;
-	margin: 20px 0px 30px 0px;
+	// margin: 20px 0px 30px 0px;
+
+	h2 {
+		margin-top: 20px;
+	}
 
 	page-left, page-right {
-		width: 80%;
+		flex: 1;
 	}
 	page-left {
 		display: flex;
@@ -16,37 +20,30 @@
 		.photo-and-array {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
-			// margin-top: 24px;
+			justify-content: space-evenly;
 
 			.update-photo {
 				flex: 1;
 				max-width: 225px;
+				margin-top: 30px;
 			}
 
 			code {
 				flex: 1;
 				max-width: 70%;
+				margin-top: 30px;
 
 				pre {
 					font-size: 12px;
 				}
 			}
 		}
-
-
-
-
-
 	}
-
-
-	page-right {
-		display: block;
-	}
-
-
 }
 
-
+@media(min-width: 800px) {
+	.update-page {
+		flex-direction: row;
+	}
+}
 

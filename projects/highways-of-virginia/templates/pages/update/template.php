@@ -39,7 +39,7 @@ if ( isset($_POST['submitted']) ) {
 <section class="update-page">
 	<page-left>
 		<text-wrapper>
-			<h2>Update Route Info</h2>
+			<h2 class='page-title'>Update Route Info</h2>
 		</text-wrapper>
 		<div class="photo-and-array">
 			<picture class="update-photo">

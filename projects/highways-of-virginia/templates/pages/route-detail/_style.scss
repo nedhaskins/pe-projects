@@ -13,7 +13,6 @@
 
 	page-left, page-right {
 		flex: 1;
-		border: 3px solid orange;
 	}
 
 
@@ -38,14 +37,6 @@
 		font-family: 'Highway Gothic';
 	}
 }
-
-// @media(max-width: 599px) {
-// 	.route-detail text-wrapper p {
-// 		width: 92%;
-// 	}
-// }
-
-
 
 @media(min-width: 700px) {
 	.route-detail {

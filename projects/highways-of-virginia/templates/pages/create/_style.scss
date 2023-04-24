@@ -4,25 +4,23 @@
 	// align-items: center;
 	gap: 30px;
 
+	page-right {
 
-page-
-
-page-right {
-	picture {
-		max-width: 330px;
+		picture {
+			max-width: 450px;
+		}
 	}
-}
 
 
 	page-left, page-right {
 		flex: 1;
-		border: 3px solid orange;
+		// border: 3px solid orange;
 	}
 
 
 }
 
-@media(min-width: 700px) {
+@media(min-width: 800px) {
 	.create-route {
 		flex-direction: row;
 	}
