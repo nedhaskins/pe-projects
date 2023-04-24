@@ -435,6 +435,7 @@ title-wrapper {
 }
 .create-update-form form-left label, .create-update-form form-right label {
   font-size: 18px;
+  font-family: "Highway Gothic";
 }
 .create-update-form form-left input, .create-update-form form-left select, .create-update-form form-left textarea, .create-update-form form-right input, .create-update-form form-right select, .create-update-form form-right textarea {
   font-size: 16px;
@@ -455,15 +456,6 @@ title-wrapper {
   display: flex;
 }
 
-@media (min-width: 814px) {
-  .create-update-form {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .create-update-form form-right field {
-    margin-top: unset;
-  }
-}
 .home {
   border: 3px solid cyan;
   display: flex;
@@ -624,9 +616,21 @@ page-right picture {
 .create-route {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+}
+.create-route page- page-right picture {
+  max-width: 330px;
+}
+.create-route page-left, .create-route page-right {
+  flex: 1;
+  border: 3px solid orange;
 }
 
+@media (min-width: 700px) {
+  .create-route {
+    flex-direction: row;
+  }
+}
 .update-page {
   display: flex;
   flex-direction: column;
