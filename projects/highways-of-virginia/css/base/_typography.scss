@@ -14,6 +14,9 @@ h2{
 	font-size: 26px;
 }
 
+
+
+
 h3 {
 	font-size: 24px;
 }
@@ -40,13 +43,11 @@ em {
 
 /*VOICES*/
 
-.emphasis-voice { //maybe not needed here
-	font-style: italic;
-	letter-spacing: 0.05em;
-}
-
-.loud-voice {
-	letter-spacing: 0.23em;
+.page-title {
+	text-align: left;
+	font-family: 'Highway Gothic';
+	color: yellow;
+	letter-spacing: 0.04em;
 }
 
 

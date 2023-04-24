@@ -1,12 +1,12 @@
 .home {
 	border: 3px solid cyan;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 20px;
 	// padding: 20px;
 }
 
-text-wrapper {
+.home text-wrapper {
 	display: block;
 	margin-top: 20px;
 
@@ -26,7 +26,8 @@ link-wrapper {
 		font-family: 'Highway Gothic';
 		color: yellow;
 		border: 3px solid yellow;
-		padding: 20px;
+		padding: 14px;
+		font-size: 18px;
 	}
 
 }
@@ -37,4 +38,11 @@ page-right {
 		padding: 20px;
 	}
 
+}
+
+
+@media(min-width: 700px) {
+	.home {
+		flex-direction: row;
+	}
 }
