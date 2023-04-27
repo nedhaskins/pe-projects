@@ -19,70 +19,36 @@
 /*FORM COMPONENT*/
 
 .create-update-form {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	gap: 16px;
 	margin-top: 24px;
 	background-color: #face98; /*peach orange*/
 	box-shadow: 10px 10px black;
 	padding: 24px;
 	max-width: 452px;
 
-	form-left, form-right {
+ 	label {
+		font-size: 0.8rem;
+		font-family: 'Highway Gothic';
+		padding-bottom: 4px;
+	}
+	input, select, textarea {
+		font-size: 1rem; //16px
+		// padding: 0.5em 1em;
+	}
+
+	field {
 		display: flex;
-		flex-direction: column;
-
-
-		// padding: 16px 0px 16px 16px;
-
-	 	label {
-			font-size: 18px;
-			font-family: 'Highway Gothic';
-		}
-		input, select, textarea {
-			font-size: 16px;
-			
-			// max-width: 95%;
-		}
-
-		field {
-			display: flex;
-			flex-direction:column;
-			align-items: start;
-			// margin-top: 12px;
-		}
-
-		field + field,  input, select, textarea {
-			margin-top: 12px;
-		}
+		flex-direction:column;
+		align-items: start;
 	}
 
-	form-right {
-		field {
-			margin-top: 12px;
-		}
+	field + field,  input, select, textarea {
+		// margin-top: 12px;
 	}
 }
 
-.create-update-form label, input, select, textarea {
-	// margin-top: 12px;
-}
 
 .create-update-form .description-field {
 	display: flex;
 }
-
-// @media (min-width: 814px) {
-// 	.create-update-form {
-// 		flex-direction: row;
-// 		justify-content: space-evenly;
-
-// 		// border: 3px solid blue;
-// 		// gap: 24px;
-
-// 		form-right {
-// 			field {
-// 				margin-top: unset;
-// 			}
-// 		}
-// 	}
-// }

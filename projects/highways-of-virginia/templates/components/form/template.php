@@ -19,8 +19,6 @@ if($page == 'create') {
 
 <form class="create-update-form" method="POST"
 enctype="multipart/form-data">
-<form-left>
-
     <field>
         <label>Highway Shield Photo</label>
         <input type="file" name="image-file" value="<?=$image?>"> <!--value was href before -->
@@ -77,9 +75,6 @@ enctype="multipart/form-data">
         <input name='length-in-miles' type='number' min="0" value='<?=$lengthInMiles?>' required>
     </field>
 
-</form-left>
-<form-right>
-
     <field>
         <label>Starting Location</label>
         <input name='start-location' type='text' value='<?=$startLocation?>' required>
@@ -97,5 +92,4 @@ enctype="multipart/form-data">
     <button-wrapper class="form-button-wrapper">
         <button class='form-button' type="submit" name='submitted'><?=$buttonMessage?></button>
     </button-wrapper>
-</form-right>
 </form>

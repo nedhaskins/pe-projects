@@ -492,37 +492,27 @@ svg-wrapper {
 
 /*FORM COMPONENT*/
 .create-update-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 16px;
   margin-top: 24px;
   background-color: #face98; /*peach orange*/
   box-shadow: 10px 10px black;
   padding: 24px;
   max-width: 452px;
 }
-.create-update-form form-left, .create-update-form form-right {
-  display: flex;
-  flex-direction: column;
-}
-.create-update-form form-left label, .create-update-form form-right label {
-  font-size: 18px;
+.create-update-form label {
+  font-size: 0.8rem;
   font-family: "Highway Gothic";
+  padding-bottom: 4px;
 }
-.create-update-form form-left input, .create-update-form form-left select, .create-update-form form-left textarea, .create-update-form form-right input, .create-update-form form-right select, .create-update-form form-right textarea {
-  font-size: 16px;
+.create-update-form input, .create-update-form select, .create-update-form textarea {
+  font-size: 1rem;
 }
-.create-update-form form-left field, .create-update-form form-right field {
+.create-update-form field {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-.create-update-form form-left field + field, .create-update-form form-left input, .create-update-form form-left select, .create-update-form form-left textarea, .create-update-form form-right field + field, .create-update-form form-right input, .create-update-form form-right select, .create-update-form form-right textarea {
-  margin-top: 12px;
-}
-.create-update-form form-right field {
-  margin-top: 12px;
-}
-
 .create-update-form .description-field {
   display: flex;
 }
