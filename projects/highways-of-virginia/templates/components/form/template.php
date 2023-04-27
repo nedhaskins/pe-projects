@@ -74,7 +74,7 @@ enctype="multipart/form-data">
     </field>
         <field>
         <label>Length in Miles</label>
-        <input name='length-in-miles' type='number' value='<?=$lengthInMiles?>' required>
+        <input name='length-in-miles' type='number' min="0" value='<?=$lengthInMiles?>' required>
     </field>
 
 </form-left>
