@@ -6,10 +6,12 @@
 		background-position: center;
 		background-attachment: fixed;
 		inner-column {
-					display: flex;
-		flex-direction: row;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
 		}
-
 	}
 
 	header > * {
@@ -18,41 +20,52 @@
 		// box-shadow: 2px 2px gray;
 	}
 
-	title-wrapper,  svg-wrapper {
+	svg-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
-	title-wrapper h1 {
+
+	.title {
 		font-family: 'Highway Gothic';
+		font-size: 28px;
 		color: yellow;
-		text-align: center;
+		margin-right: auto;
 		letter-spacing: 0.05em;
 	}
 
-	.road-icon svg {
-		max-width: 150px;
+	.road-icon {
+		max-width: 120px;
 	}
 
 	.menu-icon  {
-		svg {
-			max-width: 80px;
-		}
+		max-width: 80px;
 	}
 
-	.road-icon, .menu-icon {
-		flex: 1;
-	}
+	// .road-icon, .menu-icon {
+	// 	flex: 1;
+	// }
 
-	title-wrapper {
-		flex: 1.5;
-	}
+	// title-wrapper {
+	// 	flex: 1.5;
+	// }
 
-	@media(max-width: 599px) {
+	@media(max-width: 799px) {
 		// .site-menu {
 		// 	display: none;
 		// }
 		/* only if small! */
+
+		button.toggle * {
+			pointer-events: none;
+		}
+
+		button.toggle {
+			background-color: transparent;
+			border: none;
+			padding: 8px;
+		}
+
 		.site-menu {
 			position: fixed;
 			top: 0;
@@ -100,9 +113,6 @@
 				background-color: white;
 				color: #00326b;
 			}
-
-
-
 		}
 
 		  body.small-menu-open .site-menu {
@@ -134,7 +144,7 @@
 	}
 
 
-	@media(min-width: 600px) {
+	@media(min-width: 800px) {
 		.menu-icon {
 			display: none;
 		}
@@ -146,13 +156,14 @@
 			display: flex;
 			align-items: center;
 
+			button {
+				display: none;
+			}
+
 			ul {
-				// border: 3px solid yellow;
 				display: flex;
 				flex-direction: row;
-				justify-content: space-evenly;
-				flex-wrap: wrap;
-				gap: 16px;
+				justify-content: flex-end;
 				width: 100%;
 			}
 
@@ -161,7 +172,7 @@
 				// border: 3px solid pink;
 				font-size: 16px;
 				color: yellow;
-				// padding: 15px;
+				padding: 15px;
 				text-align: center;
 				font-family: 'Highway Gothic';
 			}

@@ -52,19 +52,19 @@ $response = "";
 
                 if( file_put_contents('data/highways.json', $encoded) ) {
                    // include('templates/pages/success/template.php');
-                  echo "<p class='success'>" . $highway['name'] . " was uploaded to the database.";
+                  $response = "<p class='success'>" . $highway['name'] . " was uploaded to the database.";
                    // header("Location: templates/pages/success.php");
                 }
             }
 
         ?>
 
-    <output><?=$response?></output>
+    <p class='success'><?=$response?></p>
 
 </page-left>
-<page-right>
-            <picture class='stock-photo'><img src="images/minneapolis-1.jpeg"></picture>
-        <picture class='stock-photo'><img src="images/us-11-photo.jpg"></picture>
-        <picture class='stock-photo'><img src="images/va-20-photo.jpeg"></picture>
+<page-right class='photos'>
+    <picture class='stock-photo'><img src="images/minneapolis-1.jpeg"></picture>
+    <picture class='stock-photo'><img src="images/us-11-photo.jpg"></picture>
+    <picture class='stock-photo'><img src="images/va-20-photo.jpeg"></picture>
 </page-right>
 </section>

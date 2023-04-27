@@ -29,7 +29,7 @@ $highwayData = getHighwayById($_GET['slug']); ?>
 			</ul>
 		</nav>
 	</page-left>
-	<page-right>
+	<page-right class='photos'>
 		
         <picture class='stock-photo'><img src="images/minneapolis-1.jpeg"></picture>
         <picture class='stock-photo'><img src="images/us-11-photo.jpg"></picture>

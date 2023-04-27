@@ -2,7 +2,20 @@
 $highways = getHighways();
 if( empty($highways) ) {
 	echo "There aren't any routes yet!  Click on \"Create Route\" to create one.";
-} ?>
+}
+
+function isSelected($value) {
+
+	if ($_POST['route-filter'] === $value) {
+		return 'selected';
+	} else {
+		return '';
+	}
+}
+
+
+
+ ?>
 
 <section class="route-list">
 	<page-left>
@@ -18,10 +31,11 @@ if( empty($highways) ) {
 
 			      <select name="route-filter" id="route-filter" required>
 
-			      	<option value="all-routes">All routes</option>
-			      	<option value="interstate">Interstate</option>
-			      	<option value="us-route">US Route</option>
-			      	<option value="state-route">State Route</option>
+			      	<option disabled selected>Choose filter</option>
+			      	<option value="all-routes" <?=isSelected('all-routes')?>>All routes</option>
+			      	<option value="interstate" <?=isSelected('interstate')?>>Interstate</option>
+			      	<option value="us-route" <?=isSelected('us-route')?>>US Route</option>
+			      	<option value="state-route" <?=isSelected('state-route')?>>State Route</option>
 			     
 			      </select> 
 			  	<button class="form-button" type="submit" name="submitted">Filter routes</button>

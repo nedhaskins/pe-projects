@@ -9,7 +9,6 @@ body {
 main {
 	flex: 1;
 	padding: 40px;
-	// border: 3px solid lime;
 }
 
 
@@ -17,8 +16,6 @@ inner-column {
 	display: block;
 	margin: 0 auto;
 	max-width: 960px;
-	// border: 3px solid red;
-
 }
 
 
@@ -42,7 +39,7 @@ pre {
 
 .route-menu ul {
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 	gap: 28px;
 }
 

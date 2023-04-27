@@ -3,12 +3,13 @@
 		<svg-wrapper class='road-icon'>
 			<?php include('./images/winding-road.php'); ?>
 		</svg-wrapper>
-		<title-wrapper>
-			<h1>Highways of Virginia</h1>
-		</title-wrapper>
-		<svg-wrapper class='toggle menu-icon'>
+
+		<h1 class='title'>Highways of Virginia</h1>
+		
+		<button class='toggle menu-icon'>
 				<?php include('./images/menu-icon.php'); ?>
-		</svg-wrapper>
+		</button>
+		
 		<nav class="site-menu">
 			<ul>
 				<li><a href='?'>Home Page</a></li>
@@ -21,28 +22,23 @@
 </header>
 
 <script>
-	
 
+	var body = document.querySelector('body');
+	// console.log('test');
 
+	// set up a "listener" that will 
+	// listen for "clicks" (and taps) on the whole page!
+	document.addEventListener('click', function(event) {
 
+	  if ( event.target.matches('.toggle') ) {
+	    body.classList.toggle('small-menu-open');
+	    console.log('SVG clicked');
+	  }
 
+	  // if ( event.target.matches('a') ) {
+	  //   alert(`I'm a link for ${event.target.textContent}`);
+	  // }
 
-var body = document.querySelector('body');
-// console.log('test');
-
-// set up a "listener" that will 
-// listen for "clicks" (and taps) on the whole page!
-document.addEventListener('click', function(event) {
-
-  if ( event.target.matches('.toggle') ) {
-    body.classList.toggle('small-menu-open');
-    console.log('SVG clicked');
-  }
-
-  // if ( event.target.matches('a') ) {
-  //   alert(`I'm a link for ${event.target.textContent}`);
-  // }
-
-});
+	});
 
 </script>

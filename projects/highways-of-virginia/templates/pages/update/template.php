@@ -2,6 +2,7 @@
 $currentHighwayId = $_GET['slug'];
 $highway = getHighwayById($currentHighwayId);
 $highwayShield = $highway['image'] ?? false;
+$response = '';
 
 if ( isset($_POST['submitted']) ) {
 
@@ -32,7 +33,8 @@ if ( isset($_POST['submitted']) ) {
 	$json = json_encode($highways);
 	file_put_contents('data/highways.json', $json);
 
-	echo "<p class='success'>The route was successfully updated!</p>";
+	// echo "<p class='success'>The route was successfully updated!</p>";
+	$response = 'The route was successfully updated!';
 
 } ?>
 
@@ -46,7 +48,7 @@ if ( isset($_POST['submitted']) ) {
 				<img src="<?=$highway['image']?>" alt="todo">
 			</picture>
 			<?php show($highway); ?>
-		</div>
+			<p class='success'><?=$response?></p>
 		</div>
 	</page-left>
 	<page-right>
