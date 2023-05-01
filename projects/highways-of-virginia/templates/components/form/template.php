@@ -28,7 +28,7 @@ enctype="multipart/form-data">
 
         <field>
             <label>Route Type</label>
-            <select name="route-type" id="route-type" required>
+            <select class='user-input' name="route-type" id="route-type" required>
                 <option value="" selected="true" disabled>What type of route is this?</option>
                 <option value="interstate" selected>Interstate</option>
                 <option value="state-route">State Route</option>
@@ -41,7 +41,7 @@ enctype="multipart/form-data">
          <field>
             <label>Route Type</label>
 
-            <select name="route-type" id="route-type" required>
+            <select class='user-input' name="route-type" id="route-type" required>
 
                 <option value="" selected="true" disabled>What type of route is this?</option>
 
@@ -68,26 +68,26 @@ enctype="multipart/form-data">
 
     <field>
         <label>Route Number</label>
-        <input name='route-number' type='number' min="1" max="999" value='<?=$number?>' required>
+        <input class='user-input' name='route-number' type='number' min="1" max="999" value='<?=$number?>' required>
     </field>
         <field>
         <label>Length in Miles</label>
-        <input name='length-in-miles' type='number' min="0" value='<?=$lengthInMiles?>' required>
+        <input class='user-input' name='length-in-miles' type='number' min="0" value='<?=$lengthInMiles?>' required>
     </field>
 
     <field>
         <label>Starting Location</label>
-        <input name='start-location' type='text' value='<?=$startLocation?>' required>
+        <input class='user-input' name='start-location' type='text' value='<?=$startLocation?>' required>
     </field>
 
     <field>
         <label>End Location</label>
-        <input name='end-location' type='text' value='<?=$endLocation?>' required>
+        <input class='user-input' name='end-location' type='text' value='<?=$endLocation?>' required>
     </field>
 
     <field class="description-field">
         <label>Description</label>
-        <textarea cols=32 rows=10 name='description' type='text' value='' required><?=$description?></textarea>
+        <textarea class='user-input' cols=32 rows=10 name='description' type='text' value='' required><?=$description?></textarea>
     </field>
     <button-wrapper class="form-button-wrapper">
         <button class='form-button' type="submit" name='submitted'><?=$buttonMessage?></button>

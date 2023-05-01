@@ -477,7 +477,6 @@ svg-wrapper {
 .form-button-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .form-button {
@@ -501,12 +500,16 @@ svg-wrapper {
   max-width: 452px;
 }
 .create-update-form label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: "Highway Gothic";
   padding-bottom: 4px;
 }
 .create-update-form input, .create-update-form select, .create-update-form textarea {
   font-size: 1rem;
+  font-family: sans-serif;
+}
+.create-update-form .user-input {
+  padding: 0.5em 1em;
 }
 .create-update-form field {
   display: flex;

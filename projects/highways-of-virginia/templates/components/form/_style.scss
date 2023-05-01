@@ -3,7 +3,7 @@
 .form-button-wrapper {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	// justify-content: center;
 }
 
 .form-button {
@@ -28,13 +28,17 @@
 	max-width: 452px;
 
  	label {
-		font-size: 0.8rem;
+		font-size: 1rem;
 		font-family: 'Highway Gothic';
 		padding-bottom: 4px;
 	}
 	input, select, textarea {
 		font-size: 1rem; //16px
-		// padding: 0.5em 1em;
+		font-family: sans-serif;
+	}
+
+	.user-input {
+		padding: 0.5em 1em;
 	}
 
 	field {
