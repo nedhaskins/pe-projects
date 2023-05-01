@@ -1,8 +1,6 @@
 <?php
 $highways = getHighways();
-if( empty($highways) ) {
-	echo "There aren't any routes yet!  Click on \"Create Route\" to create one.";
-}
+$noRoutes = "There aren't any routes yet!  Click on \"Create Route\" to create one.";
 
 function isSelected($value) {
 
@@ -13,14 +11,17 @@ function isSelected($value) {
 	}
 }
 
-
-
- ?>
+?>
 
 <section class="route-list">
 	<page-left>
 		<text-wrapper>
-		<h2 class='page-title'>Route List</h2>
+
+			<?php if( empty($highways) ) { ?>
+				<p class='no-routes'><?=$noRoutes?></p>
+			<?php } ?>
+			
+			<h2 class='page-title'>Route List</h2>
 			<p>From here, you can view all routes or filter them by type, or create a new route.</p>
 			<p>Each detail page has information about each route.  You can edit the current data or delete the route from the database from that page.</p>
 		</text-wrapper>
