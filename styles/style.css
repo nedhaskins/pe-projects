@@ -808,6 +808,9 @@ svg .curve {
 .case-study .is-selected, .case-study .php-code {
   max-width: 350px;
 }
+.case-study .original {
+  max-width: 200px;
+}
 
 .case-study article {
   padding: 20px;
