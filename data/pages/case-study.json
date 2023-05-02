@@ -851,6 +851,7 @@
 			},
 			{
 				"tag": "figure",
+				"class": "php-code",
 				"src": "data/case-studies/highways-of-virginia/update-1.png"
 			},
 			{
@@ -923,6 +924,94 @@
 				"tag": "figure",
 				"src": "data/case-studies/highways-of-virginia/mockups-1.png",
 				"figcaption": "Some extremely rough initial mockups brought to you by Affinity Designer."
+			},
+			{
+				"tag": "h4",
+				"content": "Final changes: typography"
+			},
+			{
+				"tag": "p",
+				"content": "The typography was originally based on a “golden ratio” framework, where each “step” of font-size was 1.618 times greater than the previous step.  On paper, this appealed to my aesthetics, but it didn’t work out in practice — the type became too large too quickly, and this had a negative effect on readability."
+			},
+			{
+				"tag": "p",
+				"content": "The new setup:  normal copy is 16px, and the ratios between headers have been noticeably tightened."
+			},
+			{
+				"tag": "figure",
+				"class": "text-ratios",
+				"src": "data/case-studies/highways-of-virginia/text-ratios.png"
+			},
+			{
+				"tag": "p",
+				"content": "I revamped the header's layout -- I aligned the icon and site title to the left and the menu icon to the right with <code>justify-content: flex-end</code>."
+			},
+			{
+				"tag": "figure",
+				"class": "",
+				"src": "data/case-studies/highways-of-virginia/new-header.png"
+			},
+			{
+				"tag": "p",
+				"content": "I removed extraneous element wrappers whose original purpose was to align elements more easily — but they ended up interfering with the communication between parent and child elements -- and objects could be more easily aligned in relation to the parent without one of these \"middlemen\"."
+			},
+			{
+				"tag": "p",
+				"content": "One piece of the UX feedback centered on contrast and readability on the create / update form.  I updated the background color and type color on the forms to address this."
+			},
+			{
+				"tag": "figure",
+				"class": "form-before",
+				"src": "data/case-studies/highways-of-virginia/form-before.jpg",
+				"figcaption": "Original color and spacing scheme"
+			},
+			{
+				"tag": "figure",
+				"class": "form-after",
+				"src": "data/case-studies/highways-of-virginia/form-after.jpg",
+				"figcaption": "Updated color and spacing scheme. The new ratios are more than enough for the eye to distinguish between header sizes in practice."
+			},
+			{
+				"tag": "h4",
+				"content": "Showing the chosen route filter on the route list page"
+			},
+			{
+				"tag": "p",
+				"content": "Another user presented a nice UX challenge:  on the route-list page, when the user filters routes by type, the “route-type” menu reverts to the “all-routes” selection when the filtered results are shown.  This presents inconsistent information.  The menu should show the current filter at all times."
+			},
+			{
+				"tag": "p",
+				"content": "What’s the best way to reason through this problem?  With pseudocode!"
+			},
+			{
+				"tag": "p",
+				"content": "\"In order for the <code>&lt;select&gt;</code> element to show the correct filter after the <code>$_POST</code> request is mode, the selected <code>&lt;option&gt;</code> needs to display the attribute <code>selected</code> inside that tag.\""
+			},
+			{
+				"tag": "p",
+				"content": "I wrote a PHP function to return a ‘selected’ string if the $_POST value of the route filter is equal to the value of the option the user chooses."
+			},
+			{
+				"tag": "figure",
+				"class": "is-selected",
+				"src": "data/case-studies/highways-of-virginia/isSelected-1.png"
+			},
+			{
+				"tag": "p",
+				"content": "Here’s the HTML that contains the PHP function in action."
+			},
+			{
+				"tag": "figure",
+				"class": "",
+				"src": "data/case-studies/highways-of-virginia/isSelected-2.png"
+			},
+			{
+				"tag": "h3",
+				"content": "Conclusion"
+			},
+			{
+				"tag": "p",
+				"content": "This project, overall, was a several-months-long journey.  It started out as a simple exploration of CRUD concepts, evolved into a fully-functional CRUD site, and ended with some serious considerations on the nature of visual design and user experience as they pertain to websites and how best to integrate these considerations into the site."
 			}
 		]
 	}

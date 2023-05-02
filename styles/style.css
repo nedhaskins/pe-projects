@@ -799,8 +799,14 @@ svg .curve {
   }
 }
 /*CASE-STUDY PAGE*/
-.case-study {
-  /*	padding: var(--modulePadding);*/
+.case-study .form-before, .case-study .form-after {
+  max-width: 300px;
+}
+.case-study .text-ratios {
+  max-width: 400px;
+}
+.case-study .is-selected, .case-study .php-code {
+  max-width: 350px;
 }
 
 .case-study article {

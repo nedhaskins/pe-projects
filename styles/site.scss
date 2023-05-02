@@ -147,13 +147,17 @@ svg .curve {
 
 
 .case-study {
-/*	padding: var(--modulePadding);*/
+	.form-before, .form-after {
+		max-width: 300px;
+	}
 
-	// figure {
-	// 	display: flex;
-	// 	flex-direction: row;
-	// 	justify-content: center;
-	// }
+	.text-ratios {
+		max-width: 400px;
+	}
+
+	.is-selected, .php-code {
+		max-width: 350px;
+	}
 
 }
 

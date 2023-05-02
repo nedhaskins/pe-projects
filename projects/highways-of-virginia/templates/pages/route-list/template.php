@@ -3,7 +3,6 @@ $highways = getHighways();
 $noRoutes = "There aren't any routes yet!  Click on \"Create Route\" to create one.";
 
 function isSelected($value) {
-
 	if ($_POST['route-filter'] === $value) {
 		return 'selected';
 	} else {
@@ -38,7 +37,8 @@ function isSelected($value) {
 			      	<option value="us-route" <?=isSelected('us-route')?>>US Route</option>
 			      	<option value="state-route" <?=isSelected('state-route')?>>State Route</option>
 			     
-			      </select> 
+			      </select>
+			      
 			  	<button class="form-button" type="submit" name="submitted">Filter routes</button>
 			  </field>
 			</form>
