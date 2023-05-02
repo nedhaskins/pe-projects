@@ -985,7 +985,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "\"In order for the <code>&lt;select&gt;</code> element to show the correct filter after the <code>$_POST</code> request is mode, the selected <code>&lt;option&gt;</code> needs to display the attribute <code>selected</code> inside that tag.\""
+				"content": "\"In order for the <code>&lt;select&gt;</code> element to show the correct filter after the <code>$_POST</code> request is made, the selected <code>&lt;option&gt;</code> needs to display the attribute <code>selected</code> inside that tag.\""
 			},
 			{
 				"tag": "p",
