@@ -1014,5 +1014,17 @@
 				"content": "This project, overall, was a several-months-long journey.  It started out as a simple exploration of CRUD concepts, evolved into a fully-functional CRUD site, and ended with some serious considerations on the nature of visual design and user experience as they pertain to websites and how best to integrate these considerations into the site."
 			}
 		]
+	},
+	{
+		"slug": "funko-pop-east-coast",
+		"siteXtensionType": "php",
+		"title": "funko pop east coast",
+		"subtitle": "An exploration of Vue, NoSQL databases, and the elements that make up an e-commerce site.",
+		"htmlContent": [
+			{
+				"tag": "codepen",
+				"penID": "oNaErzJ"
+			}
+		]
 	}
 ]

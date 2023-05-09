@@ -44,6 +44,13 @@ foreach($caseStudies as $caseStudy) {
 								echo "<li>" . $contentBlock['content'] . "</li>";
 							}
 							echo "</ul>";
+						} elseif($tag === 'codepen') {
+
+							$penID = $block['penID'] ?? null;
+							$codeType = $block['codeType'] ?? null;
+
+							include('templates/components/codepen-example.php');
+
 						} else {
 							echo "<" . $tag . ">";
 							echo $content;

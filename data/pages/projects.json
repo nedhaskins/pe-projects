@@ -24,12 +24,12 @@
         },
         {
             "id": "0",
-            "slug": "funko-pop-store",
-            "name": "funko pop store",
-            "caseStudy": false,
+            "slug": "funko-pop-east-coast",
+            "name": "funko pop east coast",
+            "caseStudy": true,
             "description": "The capstone project of the Design for the Web course.  Built from scratch with the Vue framework, running on the Node.js runtime environment.",
             "image": "images/Funko-Pop-Figures.webp",
-            "url": "https://tall-dragon.surge.sh",
+            "url": "",
             "languages": [
                 "JavaScript",
                 "SCSS"
