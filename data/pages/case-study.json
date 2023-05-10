@@ -1105,10 +1105,6 @@
 				"content": "Project components"
 			},
 			{
-				"tag": "h4",
-				"content": "Preparatory work"
-			},
-			{
 				"tag": "p",
 				"content": "Vue, Firebase, and Pinia are the main components of this project."
 			},
@@ -1127,6 +1123,28 @@
 			{
 				"tag": "p",
 				"content": "<em>Pinia</em> is a store library and state management framework for Vue.  It allows for the creation of “services” that can contain multiple functional elements that can be called anywhere in the application."
+			},
+			{
+				"tag": "h3",
+				"content": "Design"
+			},
+			{
+				"tag": "p",
+				"content": "The lifecycle of a Vue app begins in the <code>index.html</code> file.  The <code>&lt;script&gt;</code> tag in this file brings in the <code>main.js</code> file, which contains the internal code needed to initialize and mount the app.  The main application file, <code>App.vue</code>, is the “single-page” element that the entire application runs in; this “single-page” setup allows for individual components to be reloaded on a page without having to reload the entire page. This is known as <em>hot-module reloading</em>."
+			},
+			{
+				"tag": "p",
+				"content": "Computed properties are one of the primary paradigms used in Vue. They allow for multiple pieces of functionality to be stored in a single variable (whose value could change depending on other values, i.e. which user is currently logged in) that can be called in the HTML to return a custom value."
+			},
+			{
+				"tag": "p",
+				"content": "Computed properties can also simply help with code readability by storing long queried values (such as those that come up in chaining) into one callable variable:"
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/user-id.png",
+				"figcaption": ""
 			},
 			{
 				"tag": "h4",
@@ -1150,12 +1168,120 @@
 				]
 			},
 			{
-				"tag": "h3",
-				"content": "Design"
+				"tag": "h4",
+				"content": "Foundational elements"
+			},
+			{
+				"tag": "p",
+				"content": "All of the high-level pages and subpages are referred to as “views” in this framework. (Smaller components also take the form of Vue files, and they’re imported as needed across the application.)"
+			},
+			{
+				"tag": "p",
+				"content": "I designed the homepage to have a “Featured Figures” list.  This could be customized according to what the vendor wants to showcase on the site, but for the moment, a function will generate three random figure cards from the collection and place them on the home page."
+			},
+			{
+				"tag": "p",
+				"content": "I used the shuffle method in the NPM package <code>lodash</code> to generate the random figures."
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/lodash.png",
+				"figcaption": ""
+			},
+			{
+				"tag": "p",
+				"content": "In the database, each “figure” document has key-value pairs that describe what category and subcategory of product the figure belongs to.  These values are used in the application to filter items, so only the items that have those specific values will be shown on the “Category” and “Subcategory” pages."
+			},
+			{
+				"tag": "p",
+				"content": "The site header, the individual figure cards, the checkout form, and the rest of the smaller components on the site are imported into the pages and subpages as needed."
 			},
 			{
 				"tag": "h4",
-				"content": "Project components"
+				"content": "Second-layer elements"
+			},
+			{
+				"tag": "p",
+				"content": "The content of the site is now in place.  The rest of the functionality of the site will depend on the choices the user makes.  Making a user login system will open the door for more custom components."
+			},
+			{
+				"tag": "p",
+				"content": "I used Pinia to bundle everything needed to isolate users and their data into one “storage object”.  This object is called later, most notably on the home page, to show current user login info and other custom elements, such as user favorites, that are contained within that specific user’s data."
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/user-info.png",
+				"figcaption": ""
+			},
+			{
+				"tag": "p",
+				"content": "Administrators (users with a role of “admin”) have access to a dashbaord that allows for creating, updating, and removal of figures, categories, and subcategories:"
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/admin-dashboard.png",
+				"figcaption": ""
+			},
+			{
+				"tag": "p",
+				"content": "<code>@click</code> is shorthand for the <code>v-on</code> directive, which handles events in the same way as the familiar JavaScript method <code>addEventListener</code>."
+			},
+			{
+				"tag": "h4",
+				"content": "Additional user capabilities"
+			},
+			{
+				"tag": "p",
+				"content": "Each user needs a unique shopping cart.  To store each user’s unique selections for their favorites and cart, I connected Pinia first to the browser’s local storage and then to a Firebase instance in the cloud."
+			},
+			{
+				"tag": "p",
+				"content": "Getting the cart to be specific to each users requires putting the data in the proper place in the hierarchy.  Each user document in Firebase will have its own “cart” collection that can then be accessed depending on which user is logged in."
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/cart-service.png",
+				"figcaption": ""
+			},
+			{
+				"tag": "p",
+				"content": "When storing multiples of one item, the user doesn’t want to be stuck with one line for every single item in the cart.  The items need to be grouped by type.  I made a computed property using the <code>reduce</code> method to take care of this…."
+			},
+			{
+				"tag": "h4",
+				"content": "Exploratory elements - Favorites"
+			},
+			{
+				"tag": "p",
+				"content": "Users often want to bookmark an item before committing to a purchase.  When a user clicks the “favorites” icon an item, the CSS class of the icon changes.  Additionally, based on the boolean value of the <code>isFavorited</code> variable, that item either will or will not be filtered and show up in the user’s “favorites” collection in the database."
+			},
+			{
+				"tag": "p",
+				"content": "The <code>favoritedFigures</code> computed property returns only the items that the user has “favorited”, places them in an array, and makes them available for the HTML template."
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/favorited-figures-1.png",
+				"figcaption": ""
+			},
+			{
+				"tag": "figure",
+				"class": "code-photo",
+				"src": "data/case-studies/funko-pop-east-coast/favorited-figures-2.png",
+				"figcaption": ""
+			},
+			{
+				"tag": "h4",
+				"content": "Conclusion"
+			},
+			{
+				"tag": "p",
+				"content": "I got a ton of exposure to many new programming concepts as seen through the Vue lens with this project, but the overarching theme of it ended up being, as it ends up being with any good application, “good design.”  When we talk about design, we’re talking about much more than clean visuals and well-written code.  These things exist, and are necessary, so that the things we build are attractive and useful.  If something exists in an application, and it isn’t clear to the user or the developer why it’s there and what it’s doing, should it really be there in the first place?  The journey of software development is one of continuous improvement and empathy.  This project greatly increased my technical skills and confidence with JavaScript and brought home the notion that all of the tools we use don’t exist in isolation, so it was ultimately a journey to a “higher level of resolution” in my work and thought processes."
 			}
 		]
 	}
