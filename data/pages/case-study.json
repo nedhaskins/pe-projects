@@ -1011,7 +1011,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "This project, overall, was a several-months-long journey.  It started out as a simple exploration of CRUD concepts, evolved into a fully-functional CRUD site, and ended with some serious considerations on the nature of visual design and user experience as they pertain to websites and how best to integrate these considerations into the site."
+				"content": "This project started out as a simple exploration of CRUD concepts, evolved into a fully-functional CRUD site, and ended with some serious considerations on the nature of visual design and user experience as they pertain to websites and how best to integrate these considerations into the site."
 			}
 		]
 	},
@@ -1022,8 +1022,140 @@
 		"subtitle": "An exploration of Vue, NoSQL databases, and the elements that make up an e-commerce site.",
 		"htmlContent": [
 			{
+				"tag": "h3",
+				"content": "Introduction"
+			},
+			{
+				"tag": "p",
+				"content": "This project brings together many of the most important concepts found in web design and development:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "content, design, and layout strategy"
+					},
+					{
+						"content": "e-commerce site design"
+					},
+					{
+						"content": "application design with Vue"
+					},
+					{
+						"content": "cloud databases, specifically the Firebase NoSQL database"
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "The large-scale goals for this project were to"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "gain proficiency with Vue version 3"
+					},
+					{
+						"content": "gain proficiency with Firebase"
+					},
+					{
+						"content": "implement an accessible and responsive layout based on multiple passes of user feedback"
+					},
+					{
+						"content": "successfully implement the major components present in modern e-commerce sites"
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "What are the main elements of a successful e-commerce site?"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "Ease of navigation. Each element on the page has a clear role to play."
+					},
+					{
+						"content": "Users need to be able to filter items by type, add items to a “favorites” collection, add items to a shopping cart, and purchase those items."
+					}
+				]
+			},
+			{
+				"tag": "h3",
+				"content": "Preparatory work"
+			},
+			{
+				"tag": "p",
+				"content": "To get a better handle on Vue I went through several exercises in Brian Hogan's book \"Exercises for Programmers\" using Vue version 3.  Check them out in the Codepens below."
+			},
+			{
 				"tag": "codepen",
-				"penID": "oNaErzJ"
+				"penID": "NWBprew",
+				"codeType": "js"
+			},
+			{
+				"tag": "codepen",
+				"penID": "bGjqzyd",
+				"codeType": "js"
+			},
+			{
+				"tag": "h3",
+				"content": "Project components"
+			},
+			{
+				"tag": "h4",
+				"content": "Preparatory work"
+			},
+			{
+				"tag": "p",
+				"content": "Vue, Firebase, and Pinia are the main components of this project."
+			},
+			{
+				"tag": "p",
+				"content": "<em>Vue</em> is a JavaScript framework used to build static and dynamic websites and applications. The general structure is based on \"views\", individual components that can be pages, sections of pages, or modules that have a specific function or purpose.  Each \"view\" has a scripting area that stores JavaScript code, a templating area that stores HTML, and a styling area that stores CSS. The CSS can be scoped for each view, or store styling directives that cascade down to other views in the project."
+			},
+			{
+				"tag": "p",
+				"content": "<em>Firebase</em> is a cloud NoSQL databse. Instead of organizing data into tables composed of rows and columns, data is organized into flexible, format-agnostic \"documents\" and \"collections\"."
+			},
+			{
+				"tag": "p",
+				"content": "In classical database design, normalization and non-repetition of data are key concepts. Because of this emphasis on non-repetition, as the size of the database increases, the speed at which some elements can be read and accessed is slowed down. As the sheer amount of accessible information has increased, other paradigms of data access and storage are emerging.  The NoSQL database model, while possibly introducing more data repetition into the setup, addresses the need for faster read speeds (this ties into user accessibility, which is becoming a common theme across all vantage points in software development."
+			},
+			{
+				"tag": "p",
+				"content": "<em>Pinia</em> is a store library and state management framework for Vue.  It allows for the creation of “services” that can contain multiple functional elements that can be called anywhere in the application."
+			},
+			{
+				"tag": "h4",
+				"content": "Setting up the project"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"content": "Installed Vue"
+					},
+					{
+						"content": "LSP Volar for language support, type-checking"
+					},
+					{
+						"content": "JSPrettier for auto-code formatting"
+					},
+					{
+						"content": "ESLint for code optimization"
+					}
+				]
+			},
+			{
+				"tag": "h3",
+				"content": "Design"
+			},
+			{
+				"tag": "h4",
+				"content": "Project components"
 			}
 		]
 	}

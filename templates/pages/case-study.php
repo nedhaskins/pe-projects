@@ -38,12 +38,14 @@ foreach($caseStudies as $caseStudy) {
 							if($imageCaption == true) {
 								echo "<figcaption>" . $imageCaption . "</figcaption>";							
 							}
+
 						} elseif($tag === 'ul') {
 							echo "<ul>";
 							foreach($content as $contentBlock) {
 								echo "<li>" . $contentBlock['content'] . "</li>";
 							}
 							echo "</ul>";
+						
 						} elseif($tag === 'codepen') {
 
 							$penID = $block['penID'] ?? null;
