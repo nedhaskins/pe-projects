@@ -493,6 +493,7 @@
 	{
 		"slug": "ninja-strings",
 		"siteXtensionType": "php",
+		"url": "https://ninjastrings.net",
 		"title": "ninja strings",
 		"subtitle": "Building a custom WordPress theme from scratch and setting it up on the Internet.",
 		"htmlContent": [
@@ -1018,6 +1019,7 @@
 	{
 		"slug": "funko-pop-east-coast",
 		"siteXtensionType": "php",
+		"url": "https://tall-dragon.surge.sh",
 		"title": "funko pop east coast",
 		"subtitle": "An exploration of Vue, NoSQL databases, and the elements that make up an e-commerce site.",
 		"htmlContent": [

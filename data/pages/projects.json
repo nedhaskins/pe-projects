@@ -82,7 +82,6 @@
             "slug": "theme-challenge",
             "name": "outer banks vacation rentals",
             "caseStudy": true,
-            "caseStudyURL": "http://pe-projects:8888/projects/theme-challenge/case-study.html",
             "description": "Theming, research, and replication. After choosing a topic to research, we made use of a custom CSS framework to imitate as closely as possible the major attributes of the chosen theme -- typefaces, color scheme, and overall layout.",
             "image": "images/shoreline-2.jpeg",
             "url": "",
