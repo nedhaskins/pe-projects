@@ -26,6 +26,7 @@
 
 
 .logo {
+max-width: 500px;
 padding: var(--modulePadding);
 }
 
@@ -39,6 +40,7 @@ padding: var(--modulePadding);
 @media (min-width: 900px) and (min-height: 600px) {
 	.logo {
     	margin-top: 129px;
+    	max-width: unset;
     }
 
     .landing-404 .logo {

@@ -1254,10 +1254,9 @@
 				"content": "When storing multiples of one item, the user doesn’t want to be stuck with one line for every single item in the cart.  The items need to be grouped by type.  I made a computed property using the <code>reduce</code> method to take care of this…."
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/grouping-reduce.png",
-				"figcaption": ""
+				"tag": "code",
+				"class": "code-snippet",
+				"content": "<pre>\nconst <span style='color:#f6e579;''>cartGrouping</span> = computed(function () {\n   return list.value?.reduce(function (group, item) {\n     group[item.name] = group[item.name] ?? [];\n     group[item.name].push(item);\n     return group;\n   }, {}); <span style='color: gray;'>//the accumulator</span>\n});</pre>"
 			},
 			{
 				"tag": "h4",

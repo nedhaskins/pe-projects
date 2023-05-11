@@ -5,7 +5,7 @@ $pageData = json_decode($json, true);
 $caseStudies = $pageData;
 
 function linkToProject($url, $slug, $siteXtensionType) {
-	if (isset($url) ) {
+	if ( isset($url) ) {
 		echo "<a class='project-link' href='" . $url . "'>Link to the project</a>"; 
 	} else {
 		echo "<a class='project-link' href='projects/" . $slug . "/index." . $siteXtensionType . "'>Link to the project</a>";
@@ -64,7 +64,7 @@ foreach($caseStudies as $caseStudy) {
 							include('templates/components/codepen-example.php');
 
 						} else {
-							echo "<" . $tag . ">";
+							echo "<" . $tag . " class=" . $class . ">";
 							echo $content;
 						}
 						echo "</" . $tag . ">";

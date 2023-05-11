@@ -82,6 +82,8 @@ code {
 	code {
 		font-size: 0.8em;
 		display: inline-block;
+		padding: 0em 0.3em;
+		border-radius: 4px;
 	}
 }
 
@@ -96,6 +98,8 @@ article li {
 	code {
 		font-size: 0.8em;
 		display: inline-block;
+		padding: 0em 0.3em;
+		border-radius: 4px;
 	}
 }
 
@@ -121,7 +125,7 @@ article :is(:is(ol, ul) + p) {
 }
 
 article :is(ul, ol) :is(li + li) {
-	margin-top: .5em;
+	margin-top: .2em;
 }
 
 article {
@@ -131,6 +135,7 @@ article {
 	:is(h3 + p),
 	:is(h3 + h4),
 	:is(h4 + p),
+	:is(h4 + ul),
 	:is(li + h3),
 	:is(figure + figure),
 	:is(figure + p),
@@ -140,8 +145,7 @@ article {
 	:is(p + ul),
 	:is(p + h4),
 	:is(p + ul),
-	:is(ul + h4)
-	 {
+	:is(ul + h4) {
 		margin-top: 1em;
 	}
 
@@ -150,7 +154,8 @@ article {
 	:is(figure + h3),
 	:is(ul + h3),
 	:is(a + h3),
-	:is(a + p) {
+	:is(a + p),
+	:is(ul + p) {
 		margin-top: 2em;
 	}
 
@@ -158,5 +163,33 @@ article {
 		margin-top: 0.5em;
 		font-style: italic;
 		letter-spacing: 0.02em;
+	}
+
+	.cp_embed_wrapper {
+		margin-top: 3em;
+	}
+
+.code-snippet {
+	display: inline-block;
+	margin-top: 20px;
+			pre {
+			/* these are a pain to get right. suitable as a baseline.. */
+			/* Credit: Discord user mooff, channel cascading-style-sheets, 3/1/2023. */
+			max-width: 100%;
+			max-height: 100%;
+			overflow: auto;
+			white-space: pre-wrap;
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+
+			/*custom properties*/
+			// display: inline-block;
+			background-color: black;
+			color: white;
+			font-family: 'Courier', sans-serif;
+			font-size: 1em;
+			padding: 15px;
+			border-radius: 6px;
+		}
 	}
 }

@@ -22,14 +22,14 @@ body.layout {
 .page-content {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	// align-items: center;
 	justify-self: center;
 }
 
 @media (min-width: 900px) and (min-height: 600px) {
 	/*changed this from 700 to 900*/
 	body.index, body.landing-404 {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
 			/*gap: 20px;*/
 	}
 
@@ -63,7 +63,7 @@ link-wrapper {
 	.case-study,
 	.style-guide,
 	.contact {
-		max-width: 512px;
+		max-width: 669px;
 	}
 }
 
