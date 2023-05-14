@@ -1143,10 +1143,8 @@
 				"content": "Computed properties can also simply help with code readability by storing long queried values (such as those that come up in chaining) into one callable variable:"
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/user-id.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/user-id.php"
 			},
 			{
 				"tag": "h4",
@@ -1183,13 +1181,11 @@
 			},
 			{
 				"tag": "p",
-				"content": "I used the shuffle method in the NPM package <code>lodash</code> to generate the random figures."
+				"content": "I used the shuffle method in the NPM package <span class='inline-code'>lodash</span> to generate the random figures."
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/lodash.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/lodash.php"
 			},
 			{
 				"tag": "p",
@@ -1212,20 +1208,16 @@
 				"content": "I used Pinia to bundle everything needed to isolate users and their data into one “storage object”.  This object is called later, most notably on the home page, to show current user login info and other custom elements, such as user favorites, that are contained within that specific user’s data."
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/user-info.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/user-info.php"
 			},
 			{
 				"tag": "p",
 				"content": "Administrators (users with a role of “admin”) have access to a dashbaord that allows for creating, updating, and removal of figures, categories, and subcategories:"
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/admin-dashboard.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/admin-dashboard.php"
 			},
 			{
 				"tag": "p",
@@ -1244,19 +1236,16 @@
 				"content": "Getting the cart to be specific to each users requires putting the data in the proper place in the hierarchy.  Each user document in Firebase will have its own “cart” collection that can then be accessed depending on which user is logged in."
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/cart-service.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/cart-service.php"
 			},
 			{
 				"tag": "p",
 				"content": "When storing multiples of one item, the user doesn’t want to be stuck with one line for every single item in the cart.  The items need to be grouped by type.  I made a computed property using the <code>reduce</code> method to take care of this…."
 			},
 			{
-				"tag": "code",
-				"class": "code-snippet",
-				"content": "<pre>\nconst <span style='color:#f6e579;''>cartGrouping</span> = computed(function () {\n   return list.value?.reduce(function (group, item) {\n     group[item.name] = group[item.name] ?? [];\n     group[item.name].push(item);\n     return group;\n   }, {}); <span style='color: gray;'>//the accumulator</span>\n});</pre>"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/grouping-reduce.php"
 			},
 			{
 				"tag": "h4",
@@ -1271,16 +1260,12 @@
 				"content": "The <code>favoritedFigures</code> computed property returns only the items that the user has “favorited”, places them in an array, and makes them available for the HTML template."
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/favorited-figures-1.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/favorited-figures-1.php"
 			},
 			{
-				"tag": "figure",
-				"class": "code-photo",
-				"src": "data/case-studies/funko-pop-east-coast/favorited-figures-2.png",
-				"figcaption": ""
+				"tag": "codeblock",
+				"filepath": "data/case-studies/funko-pop-east-coast/codeblocks/favorited-figures-2.php"
 			},
 			{
 				"tag": "h4",

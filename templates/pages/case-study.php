@@ -57,11 +57,15 @@ foreach($caseStudies as $caseStudy) {
 							echo "</ul>";
 						
 						} elseif($tag === 'codepen') {
-
+							
 							$penID = $block['penID'] ?? null;
 							$codeType = $block['codeType'] ?? null;
-
 							include('templates/components/codepen-example.php');
+
+						} elseif($tag == 'codeblock') {
+
+							$filepath = $block['filepath'];
+							include($filepath);
 
 						} else {
 							echo "<" . $tag . " class=" . $class . ">";

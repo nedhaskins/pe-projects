@@ -112,19 +112,6 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/data\/case-studies\/funko-pop-east-coast\/admin-dashboard.png" : {
-      "ft" : 32768,
-      "iS" : 45221,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/admin-dashboard.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/data\/case-studies\/funko-pop-east-coast\/cart-page-1.png" : {
       "ft" : 32768,
       "iS" : 83002,
@@ -138,18 +125,69 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/data\/case-studies\/funko-pop-east-coast\/cart-service.png" : {
-      "ft" : 32768,
-      "iS" : 128816,
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/admin-dashboard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/cart-service.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/admin-dashboard.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/cart-service.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/cart-service.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/favorited-figures-1.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/favorited-figures-1.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/favorited-figures-2.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/favorited-figures-2.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/grouping-reduce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/grouping-reduce.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/lodash.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/lodash.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/user-id.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/user-id.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/user-info.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/codeblocks\/user-info.php",
+      "oF" : 0
     },
     "\/data\/case-studies\/funko-pop-east-coast\/eslint-1.png" : {
       "ft" : 32768,
@@ -182,71 +220,6 @@
       "iS" : 52823,
       "oA" : 0,
       "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/favorited-figures-2.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/funko-pop-east-coast\/favorited-figures.png" : {
-      "ft" : 32768,
-      "iS" : 76634,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/favorited-figures.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/funko-pop-east-coast\/grouping-reduce.png" : {
-      "ft" : 32768,
-      "iS" : 105320,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/grouping-reduce.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/funko-pop-east-coast\/lodash.png" : {
-      "ft" : 32768,
-      "iS" : 74184,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/lodash.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/funko-pop-east-coast\/user-id.png" : {
-      "ft" : 32768,
-      "iS" : 53207,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/user-id.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/funko-pop-east-coast\/user-info.png" : {
-      "ft" : 32768,
-      "iS" : 121563,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/funko-pop-east-coast\/user-info.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -6891,6 +6864,17 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/scripts\/prism.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scripts\/prism-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/styles\/_reset.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -7044,6 +7028,30 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/styles\/prism-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/prism-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/styles\/prism.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/prism-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/styles\/site.scss" : {
       "aP" : 0,
