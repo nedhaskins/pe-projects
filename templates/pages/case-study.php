@@ -65,9 +65,10 @@ foreach($caseStudies as $caseStudy) {
 						} elseif($tag == 'codeblock') {
 
 							$filepath = $block['filepath'];
-							include($filepath);
-
+								include($filepath);
+						
 						} else {
+						
 							echo "<" . $tag . " class=" . $class . ">";
 							echo $content;
 						}

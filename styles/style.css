@@ -166,7 +166,7 @@ link-wrapper {
   display: block;
 }
 
-@media (min-width: 1048px) {
+@media (min-width: 900px) {
   .bio,
   .the-lab,
   .projects,
@@ -842,6 +842,7 @@ svg .curve {
 
 .case-study article {
   padding: 20px;
+  max-width: 100vw;
 }
 
 .case-study picture {
@@ -862,6 +863,11 @@ svg .curve {
 
 .case-study :is(.figure-2, .figure-6) {
   max-width: 300px;
+}
+
+/*CODE SNIPPETS*/
+pre[class*=language-] {
+  margin-top: 100px;
 }
 
 .original picture {
