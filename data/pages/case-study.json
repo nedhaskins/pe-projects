@@ -362,7 +362,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "The “Feature” modules look very different from each other, but the content gives the necessary clue to their connection -- all of them contain the option for eyebrow headers, an <code>&lt;h2&gt;</code> element, and six \"feature items\" denoted either with numbers or icons."
+				"content": "The “Feature” modules look very different from each other, but the content gives the necessary clue to their connection -- all of them contain the option for eyebrow headers, an <code class='inline-code'>&lt;h2&gt;</code> element, and six \"feature items\" denoted either with numbers or icons."
 			},
 			{
 				"tag": "p",
@@ -391,7 +391,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "This is an exercise in paying attention! The small details are essential.  Some examples: the border-radius on the feature grid-boxes; the font colors for every text element. <code>display: flex</code> was used to keep pictures and list-content beside each other at large screens (and stacked vertically for small screens)."
+				"content": "This is an exercise in paying attention! The small details are essential.  Some examples: the border-radius on the feature grid-boxes; the font colors for every text element. <code class='inline-code'>display: flex</code> was used to keep pictures and list-content beside each other at large screens (and stacked vertically for small screens)."
 			},
 			{
 				"tag": "h3",
@@ -418,25 +418,21 @@
 				"content": [
 					{
 						"tag": "li",
-						"content": "<code>background</code>"
+						"content": "<code class='inline-code'>background</code>"
 					},
 					{
 						"tag": "li",
-						"content": "<code>background-position</code> to move the icon away from the edge of the <code>&lt;input&gt;</code>. (This value is \"passively affected\" by the <code>padding</code> value of the text.)"
+						"content": "<code class='inline-code'>background-position</code> to move the icon away from the edge of the <code class='inline-code'>&lt;input&gt;</code>. (This value is \"passively affected\" by the <code class='inline-code'>padding</code> value of the text.)"
 					},
 					{
 						"tag": "li",
-						"content": "The <code>padding</code> value itself, to move the text past the envelope."
+						"content": "The <code class='inline-code'>padding</code> value itself, to move the text past the envelope."
 					}
 				]
 			},
 			{
 				"tag": "h4",
 				"content": "The stubborn SVG"
-			},
-			{
-				"tag": "p",
-				"content": "A persistent issue throughout this project was replicating this background:"
 			},
 			{
 				"tag": "p",
@@ -457,11 +453,11 @@
 			},
 			{
 				"tag": "p",
-				"content": "For the final editing pass, finessing the size of all objects was the focus.  This played the biggest part in the working-out of the details on the small-screen sizes.  Long-term lessons for the future are to bake in default <code>margin-top</code> values for all modules (they being the main “classes” of components that make up the web page."
+				"content": "For the final editing pass, finessing the size of all objects was the focus.  This played the biggest part in the working-out of the details on the small-screen sizes.  Long-term lessons for the future are to bake in default <code class='inline-code'>margin-top</code> values for all modules (they being the main “classes” of components that make up the web page."
 			},
 			{
 				"tag": "p",
-				"content": "Overall, what was the biggest progress-blocker during the final revisions?  The way the components were used within the modules for the first pass of the project.  The most glaring example was an <code>&lt;input&gt;</code> component that was used for completely different form variations (part of the “email-submit” module referenced above) – it should have been unique to each element.  Unlooked-for changes in size showed up while editing because of this."
+				"content": "Overall, what was the biggest progress-blocker during the final revisions?  The way the components were used within the modules for the first pass of the project.  The most glaring example was an <code class='inline-code'>&lt;input&gt;</code> component that was used for completely different form variations (part of the “email-submit” module referenced above) – it should have been unique to each element.  Unlooked-for changes in size showed up while editing because of this."
 			},
 			{
 				"tag": "p",
@@ -591,7 +587,7 @@
 				"tag": "ul",
 				"content": [
 					{
-						"content": "header.php and footer.php files.  The <code>wp_head()</code> function can be used to grab local stylesheets."
+						"content": "<code class='inline-code'>header.php</code> and <code class='inline-code'>footer.php</code> files.  The <code class='inline-code'>wp_head()</code> function can be used to grab local stylesheets."
 					},
 					{
 						"content": "some functions to customize how CSS is loaded into the project"
@@ -620,7 +616,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "Keeping the spacing and content proportional throughout all screen sizes is part of the definition of responsive design.  Words like “flowing” and “balanced” will naturally begin to appear to describe such a setup.  The <code>flex-basis</code> property offers one simple way to help preserve these planned-out ratios.  The value that's on a <code>flex-basis</code> (shorthand - <code>flex</code>) property on a child container within a flexbox will dictate how much space that container's allowed to take up.  If two children both have <code>flex: 1</code>, they’ll each take up half the available space.  If three children have <code>flex: 1</code>, each child will take up one third of the available space."
+				"content": "Keeping the spacing and content proportional throughout all screen sizes is part of the definition of responsive design.  Words like “flowing” and “balanced” will naturally begin to appear to describe such a setup.  The <code class='inline-code'>flex-basis</code> property offers one simple way to help preserve these planned-out ratios.  The value that's on a <code class='inline-code'>flex-basis</code> (shorthand - <code class='inline-code'>flex</code>) property on a child container within a flexbox will dictate how much space that container's allowed to take up.  If two children both have <code class='inline-code'>flex: 1</code>, they’ll each take up half the available space.  If three children have <code class='inline-code'>flex: 1</code>, each child will take up one third of the available space."
 			},
 			{
 				"tag": "h4",
@@ -844,10 +840,10 @@
 				"tag": "ul",
 				"content": [
 					{
-						"content": "The variable <code>$currentHighwayId</code> is equal to the current page slug (which is the same as the item identifier in the database).  This will be used later as the index of the item that’s going to be overwritten in the database"
+						"content": "The variable <code class='inline-code'>$currentHighwayId</code> is equal to the current page slug (which is the same as the item identifier in the database).  This will be used later as the index of the item that’s going to be overwritten in the database"
 					},
 					{
-						"content": "The variable <code>$highway</code> populates the page form with the current highway data."
+						"content": "The variable <code class='inline-code'>$highway</code> populates the page form with the current highway data."
 					}
 				]
 			},
@@ -857,7 +853,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "Once the user updates the data, <code>$highway</code>’s values will be updated to the new data.  It still remains, though, to actually push this data up to the database and overwrite the old data."
+				"content": "Once the user updates the data, <code class='inline-code'>$highway</code>’s values will be updated to the new data.  It still remains, though, to actually push this data up to the database and overwrite the old data."
 			},
 			{
 				"tag": "codeblock",
@@ -869,16 +865,16 @@
 			},
 			{
 				"tag": "p",
-				"content": "If the update form is submitted, the variable <code>$highway</code> gets new values.  It hasn’t been pushed up to the database yet, though!"
+				"content": "If the update form is submitted, the variable <code class='inline-code'>$highway</code> gets new values.  It hasn’t been pushed up to the database yet, though!"
 			},
 			{
 				"tag": "ul",
 				"content": [
 					{
-						"content": "The <code>getHighways()</code> function decodes the JSON database object and prepares it for editing."
+						"content": "The <code class='inline-code'>getHighways()</code> function decodes the JSON database object and prepares it for editing."
 					},
 					{
-						"content": "The second line of code locates the object in the database whose index matches the current slug of the page and makes the values in that object equal to the newly submitted user values in <code>$highway</code>."
+						"content": "The second line of code locates the object in the database whose index matches the current slug of the page and makes the values in that object equal to the newly submitted user values in <code class='inline-code'>$highway</code>."
 					},
 					{
 						"content": "The remaining code \"wraps up\" the new data into the database, encoding it back into JSON format and putting it back into the database file.  A confirmation will appear on the page after the update."
@@ -945,7 +941,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "I revamped the header's layout -- I aligned the icon and site title to the left and the menu icon to the right with <code>justify-content: flex-end</code>."
+				"content": "I revamped the header's layout -- I aligned the icon and site title to the left and the menu icon to the right with <code class='inline-code'>justify-content: flex-end</code>."
 			},
 			{
 				"tag": "figure",
@@ -986,7 +982,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "\"In order for the <code>&lt;select&gt;</code> element to show the correct filter after the <code>$_POST</code> request is made, the selected <code>&lt;option&gt;</code> needs to display the attribute <code>selected</code> inside that tag.\""
+				"content": "\"In order for the <code class='inline-code'>&lt;select&gt;</code> element to show the correct filter after the <code class='inline-code'>$_POST</code> request is made, the selected <code class='inline-code'>&lt;option&gt;</code> needs to display the attribute <code class='inline-code'>selected</code> inside that tag.\""
 			},
 			{
 				"tag": "p",
@@ -1130,7 +1126,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "The lifecycle of a Vue app begins in the <code>index.html</code> file.  The <code>&lt;script&gt;</code> tag in this file brings in the <code>main.js</code> file, which contains the internal code needed to initialize and mount the app.  The main application file, <code>App.vue</code>, is the “single-page” element that the entire application runs in; this “single-page” setup allows for individual components to be reloaded on a page without having to reload the entire page. This is known as <em>hot-module reloading</em>."
+				"content": "The lifecycle of a Vue app begins in the <code class='inline-code'>index.html</code> file.  The <code class='inline-code'>&lt;script&gt;</code> tag in this file brings in the <code class='inline-code'>main.js</code> file, which contains the internal code needed to initialize and mount the app.  The main application file, <code class='inline-code'>App.vue</code>, is the “single-page” element that the entire application runs in; this “single-page” setup allows for individual components to be reloaded on a page without having to reload the entire page. This is known as <em>hot-module reloading</em>."
 			},
 			{
 				"tag": "p",
@@ -1219,7 +1215,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "<code>@click</code> is shorthand for the <code>v-on</code> directive, which handles events in the same way as the familiar JavaScript method <code>addEventListener</code>."
+				"content": "<code class='inline-code'>@click</code> is shorthand for the <code>v-on</code> directive, which handles events in the same way as the familiar JavaScript method <code class='inline-code'>addEventListener</code>."
 			},
 			{
 				"tag": "h4",
@@ -1239,7 +1235,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "When storing multiples of one item, the user doesn’t want to be stuck with one line for every single item in the cart.  The items need to be grouped by type.  I made a computed property using the <code>reduce</code> method to take care of this…."
+				"content": "When storing multiples of one item, the user doesn’t want to be stuck with one line for every single item in the cart.  The items need to be grouped by type.  I made a computed property using the <code class='inline-code'>reduce</code> method to take care of this…."
 			},
 			{
 				"tag": "codeblock",
@@ -1251,11 +1247,11 @@
 			},
 			{
 				"tag": "p",
-				"content": "Users often want to bookmark an item before committing to a purchase.  When a user clicks the “favorites” icon, the CSS class of the icon changes.  Additionally, based on the boolean value of the <code>isFavorited</code> variable, that item either will or will not be filtered and show up in the user’s “favorites” collection in the database."
+				"content": "Users often want to bookmark an item before committing to a purchase.  When a user clicks the “favorites” icon, the CSS class of the icon changes.  Additionally, based on the boolean value of the <code class='inline-code'>isFavorited</code> variable, that item either will or will not be filtered and show up in the user’s “favorites” collection in the database."
 			},
 			{
 				"tag": "p",
-				"content": "The <code>favoritedFigures</code> computed property returns only the items that the user has “favorited”, places them in an array, and makes them available for the HTML template."
+				"content": "The <code class='inline-code'>favoritedFigures</code> computed property returns only the items that the user has “favorited”, places them in an array, and makes them available for the HTML template."
 			},
 			{
 				"tag": "codeblock",

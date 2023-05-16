@@ -27,7 +27,7 @@ foreach($caseStudies as $caseStudy) {
 		<section class='case-study'>
 			<inner-column>
 				<article>
-					<h1 class='title-voice'><?=$title?></h1>
+					<h1 class='case-study-title'><?=$title?></h1>
 
 					<div class='subtitle-wrapper'>
 						<h2><?=$subtitle?></h2>

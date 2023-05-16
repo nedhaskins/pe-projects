@@ -223,10 +223,11 @@ em {
 }
 
 /*CASE-STUDY STYLES*/
-.case-study h1 {
+.case-study-title {
   font-size: 42px;
   font-style: unset;
   font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .inline-code {
@@ -239,6 +240,7 @@ em {
   border-radius: 4px;
 }
 
+/*----------*/
 .title-voice {
   font-style: italic;
   letter-spacing: 0.08em;
