@@ -28,10 +28,12 @@ foreach($caseStudies as $caseStudy) {
 			<inner-column>
 				<article>
 					<h1 class='title-voice'><?=$title?></h1>
-					<h2><?=$subtitle?></h2>
 
-					<?php linkToProject($url, $slug, $siteXtensionType); ?>
-
+					<div class='subtitle-wrapper'>
+						<h2><?=$subtitle?></h2>
+						<?php linkToProject($url, $slug, $siteXtensionType); ?>
+					</div>
+					
 					<?php	foreach($htmlContent as $block) {
 
 						$tag = $block['tag'] ?? false;
@@ -41,8 +43,8 @@ foreach($caseStudies as $caseStudy) {
 						$imageCaption = $block['figcaption'] ?? false;
 
 						if($tag === 'figure') {
-							echo "<" . $tag . " class=" . $class . ">";
-							echo "<picture>";
+							echo "<figure>";
+							echo "<picture class='" . $class . "'>";
 							echo "<img src='" . $imageSource . "'/>";
 							echo "</picture>";
 							if($imageCaption == true) {
