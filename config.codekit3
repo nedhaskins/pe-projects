@@ -241,6 +241,46 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/form-initial-values.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/form-initial-values.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-1.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-1.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-2.html",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/update-1.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/update-1.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/update-2.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/update-2.php",
+      "oF" : 0
+    },
     "\/data\/case-studies\/highways-of-virginia\/figma-1.png" : {
       "ft" : 32768,
       "iS" : 26022,
@@ -317,19 +357,6 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/highways-of-virginia\/form-initial-values.png" : {
-      "ft" : 32768,
-      "iS" : 45333,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/highways-of-virginia\/form-initial-values.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
       "rq" : 75
     },
     "\/data\/case-studies\/highways-of-virginia\/isSelected-1.png" : {
@@ -493,32 +520,6 @@
       "iS" : 107683,
       "oA" : 0,
       "oAP" : "\/data\/case-studies\/highways-of-virginia\/text-ratios.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/highways-of-virginia\/update-1.png" : {
-      "ft" : 32768,
-      "iS" : 15899,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/highways-of-virginia\/update-1.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/highways-of-virginia\/update-2.png" : {
-      "ft" : 32768,
-      "iS" : 30450,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/highways-of-virginia\/update-2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

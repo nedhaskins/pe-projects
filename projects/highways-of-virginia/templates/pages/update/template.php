@@ -32,8 +32,7 @@ if ( isset($_POST['submitted']) ) {
 
 	$json = json_encode($highways);
 	file_put_contents('data/highways.json', $json);
-
-	// echo "<p class='success'>The route was successfully updated!</p>";
+	
 	$response = 'The route was successfully updated!';
 
 } ?>

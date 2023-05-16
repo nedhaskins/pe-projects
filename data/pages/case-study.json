@@ -808,9 +808,8 @@
 				"content": "The “create route” and “update route” pages use the same form template, with conditional PHP statements in each respective page to determine how the form will behave. "
 			},
 			{
-				"tag": "figure",
-				"src": "data/case-studies/highways-of-virginia/form-initial-values.png",
-				"figcaption": "Setting initial conditions for the form – blank values if none are fetched, values from the database if values are found."
+				"tag": "codeblock",
+				"filepath": "data/case-studies/highways-of-virginia/codeblocks/form-initial-values.php"
 			},
 			{
 				"tag": "h3",
@@ -851,17 +850,16 @@
 				]
 			},
 			{
-				"tag": "figure",
-				"class": "php-code",
-				"src": "data/case-studies/highways-of-virginia/update-1.png"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/highways-of-virginia/codeblocks/update-1.php"
 			},
 			{
 				"tag": "p",
 				"content": "Once the user updates the data, <code>$highway</code>’s values will be updated to the new data.  It still remains, though, to actually push this data up to the database and overwrite the old data."
 			},
 			{
-				"tag": "figure",
-				"src": "data/case-studies/highways-of-virginia/update-2.png"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/highways-of-virginia/codeblocks/update-2.php"
 			},
 			{
 				"tag": "p",
@@ -993,18 +991,16 @@
 				"content": "I wrote a PHP function to return a ‘selected’ string if the $_POST value of the route filter is equal to the value of the option the user chooses."
 			},
 			{
-				"tag": "figure",
-				"class": "is-selected",
-				"src": "data/case-studies/highways-of-virginia/isSelected-1.png"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/highways-of-virginia/codeblocks/isSelected-1.php"
 			},
 			{
 				"tag": "p",
 				"content": "Here’s the HTML that contains the PHP function in action."
 			},
 			{
-				"tag": "figure",
-				"class": "",
-				"src": "data/case-studies/highways-of-virginia/isSelected-2.png"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/highways-of-virginia/codeblocks/isSelected-2.html"
 			},
 			{
 				"tag": "h3",
