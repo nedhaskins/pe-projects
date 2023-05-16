@@ -303,13 +303,13 @@
 			{
 				"tag": "figure",
 				"class": "figure-1",
-				"src": "data/case-studies/figma-to-code/figure-1.png",
+				"src": "data/case-studies/figma-to-code/photo-exports/figma-templates.jpg",
 				"figcaption": "The fully composed templates."
 			},
 			{
 				"tag": "figure",
 				"class": "figure-2",
-				"src": "data/case-studies/figma-to-code/figure-2.png",
+				"src": "data/case-studies/figma-to-code/photo-exports/ui-kits.jpg",
 				"figcaption": "Each UI kit organizes the available components in a unique way, allowing for various iterations of a website, depending on what the client gravitates toward."
 			},
 			{
@@ -357,7 +357,7 @@
 			{
 				"tag": "figure",
 				"class": "three-features",
-				"src": "data/case-studies/figma-to-code/three-features.png",
+				"src": "data/case-studies/figma-to-code/photo-exports/three-versions.jpg",
 				"figcaption": "Three interpretations of the same module.  What options need to be available to the visitor?"
 			},
 			{

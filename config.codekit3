@@ -99,6 +99,45 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/data\/case-studies\/figma-to-code\/photo-exports\/figma-templates.jpg" : {
+      "ft" : 16384,
+      "iS" : 106878,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/figma-to-code\/photo-exports\/figma-templates.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/data\/case-studies\/figma-to-code\/photo-exports\/three-versions.jpg" : {
+      "ft" : 16384,
+      "iS" : 344599,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/figma-to-code\/photo-exports\/three-versions.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/data\/case-studies\/figma-to-code\/photo-exports\/ui-kits.jpg" : {
+      "ft" : 16384,
+      "iS" : 79940,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/figma-to-code\/photo-exports\/ui-kits.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/data\/case-studies\/figma-to-code\/three-features.png" : {
       "ft" : 32768,
       "iS" : 458862,
