@@ -257,12 +257,12 @@
       "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-1.php",
       "oF" : 0
     },
-    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-2.html" : {
+    "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-2.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-2.html",
+      "oAP" : "\/data\/case-studies\/highways-of-virginia\/codeblocks\/isSelected-2.php",
       "oF" : 0
     },
     "\/data\/case-studies\/highways-of-virginia\/codeblocks\/update-1.php" : {
@@ -528,18 +528,21 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/data\/case-studies\/ninja-strings\/color-palette.png" : {
-      "ft" : 32768,
-      "iS" : 36560,
+    "\/data\/case-studies\/ninja-strings\/codeblocks\/homepage-grid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/data\/case-studies\/ninja-strings\/color-palette.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
+      "oAP" : "\/data\/case-studies\/ninja-strings\/codeblocks\/homepage-grid.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/ninja-strings\/codeblocks\/register-menu.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/ninja-strings\/codeblocks\/register-menu.php",
+      "oF" : 0
     },
     "\/data\/case-studies\/ninja-strings\/contact-large-screen.jpg" : {
       "ft" : 16384,
@@ -565,19 +568,6 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
-      "rq" : 75
-    },
-    "\/data\/case-studies\/ninja-strings\/first-logo.png" : {
-      "ft" : 32768,
-      "iS" : 175968,
-      "oA" : 0,
-      "oAP" : "\/data\/case-studies\/ninja-strings\/first-logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
       "rq" : 75
     },
     "\/data\/case-studies\/ninja-strings\/home-large-screen.jpg" : {
@@ -658,6 +648,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/data\/case-studies\/ninja-strings\/ns-logo.jpg" : {
+      "ft" : 16384,
+      "iS" : 73357,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/ninja-strings\/ns-logo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/data\/case-studies\/ninja-strings\/register-nav-menu.png" : {
       "ft" : 32768,
       "iS" : 23312,
@@ -708,6 +711,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/data\/case-studies\/ninja-strings\/tricolor.jpg" : {
+      "ft" : 16384,
+      "iS" : 30284,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/ninja-strings\/tricolor.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/data\/case-studies\/outer-banks\/figure-1.webp" : {
@@ -811,6 +827,58 @@
       "oA" : 0,
       "oAP" : "\/data\/case-studies\/outer-banks\/outer-banks-case-study.html",
       "oF" : 0
+    },
+    "\/data\/case-studies\/outer-banks\/photo-exports\/background-repeat.jpg" : {
+      "ft" : 16384,
+      "iS" : 93507,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/outer-banks\/photo-exports\/background-repeat.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/data\/case-studies\/outer-banks\/photo-exports\/popular-searches.jpg" : {
+      "ft" : 16384,
+      "iS" : 224527,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/outer-banks\/photo-exports\/popular-searches.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/data\/case-studies\/outer-banks\/photo-exports\/style-tile.jpg" : {
+      "ft" : 16384,
+      "iS" : 332496,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/outer-banks\/photo-exports\/style-tile.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/data\/case-studies\/outer-banks\/photo-exports\/sunrealtync.jpg" : {
+      "ft" : 16384,
+      "iS" : 64902,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/outer-banks\/photo-exports\/sunrealtync.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/data\/case-studies\/outer-banks\/rental-searches.webp" : {
       "ft" : 8388608,

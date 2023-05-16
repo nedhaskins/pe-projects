@@ -76,7 +76,7 @@
 			},
 			{
 				"tag": "figure",
-				"src": "data/case-studies/outer-banks/sun-realty.jpeg",
+				"src": "data/case-studies/outer-banks/photo-exports/sunrealtync.jpg",
 				"figcaption": "One of the sites researched - Sun Realty, Outer Banks, NC"
 			},
 			{
@@ -90,7 +90,7 @@
 			{
 				"tag": "figure",
 				"class": "figure-0",
-				"src": "data/case-studies/outer-banks/rental-searches.webp",
+				"src": "data/case-studies/outer-banks/photo-exports/popular-searches.jpg",
 				"figcaption": false
 			},
 			{
@@ -124,7 +124,7 @@
 			{
 				"tag": "figure",
 				"class": "figure-1",
-				"src": "data/case-studies/outer-banks/style-tile.webp",
+				"src": "data/case-studies/outer-banks/photo-exports/style-tile.jpg",
 				"figcaption": ""
 			},
 			{
@@ -141,7 +141,7 @@
 			},
 			{
 				"tag": "figure",
-				"src": "data/case-studies/outer-banks/figure-1.webp",
+				"src": "data/case-studies/outer-banks/photo-exports/background-repeat.jpg",
 				"figcaption": "Figure 1.1"
 			},
 			{
@@ -527,11 +527,13 @@
 			},
 			{
 				"tag": "figure",
-				"src": "data/case-studies/ninja-strings/first-logo.png"
+				"class": "ns-logo",
+				"src": "data/case-studies/ninja-strings/ns-logo.jpg"
 			},
 			{
 				"tag": "figure",
-				"src": "data/case-studies/ninja-strings/color-palette.png"
+				"class": "tricolor",
+				"src": "data/case-studies/ninja-strings/tricolor.jpg"
 			},
 			{
 				"tag": "figure",
@@ -613,8 +615,8 @@
 				"content": "I had some ideas about which CSS properties I would need to implement the designs.  With grid layouts, the developer can specify the exact width and height of one or any combination of grid cells — and responsive units (percentages, viewport width / height) can also be used."
 			},
 			{
-				"tag": "figure",
-				"src": "data/case-studies/ninja-strings/ns-grid-setup.png"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/ninja-strings/codeblocks/homepage-grid.php"
 			},
 			{
 				"tag": "p",
@@ -629,8 +631,8 @@
 				"content": "If the developer would like to offload menu handling onto the WP framework, WordPress offers built-in menu functions and an interface within the CMS."
 			},
 			{
-				"tag": "figure",
-				"src": "data/case-studies/ninja-strings/register-nav-menu.png"
+				"tag": "codeblock",
+				"filepath": "data/case-studies/ninja-strings/codeblocks/register-menu.php"
 			},
 			{
 				"tag": "p",
@@ -1000,7 +1002,7 @@
 			},
 			{
 				"tag": "codeblock",
-				"filepath": "data/case-studies/highways-of-virginia/codeblocks/isSelected-2.html"
+				"filepath": "data/case-studies/highways-of-virginia/codeblocks/isSelected-2.php"
 			},
 			{
 				"tag": "h3",
