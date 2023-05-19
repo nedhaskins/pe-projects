@@ -320,6 +320,7 @@ article .project-link,
 article :is(div + p),
 article :is(h3 + p),
 article :is(h3 + h4),
+article :is(h3 + figure),
 article :is(h4 + p),
 article :is(h4 + ul),
 article :is(li + h3),
@@ -346,6 +347,7 @@ article figcaption {
   margin-top: 0.5em;
   font-style: italic;
   letter-spacing: 0.02em;
+  font-size: 1.5em;
 }
 article .cp_embed_wrapper {
   margin-top: 3em;
