@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style>
+
+	@import 'reset.css';
+
+	ul {
+		display: block;
+		background: gray;
+	}
+
+	li {
+		display: block;
+		border: 2px solid black;
+		padding: 20px;
+	}
+
+	#menu-sections {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+</style>
+
+
+</head>
+<body>
+
+
+	<div id='menu-sections'></div>
+
+	<script>
+
+		let menuSections = document.querySelector('#menu-sections');
+
+
+		//List out all of the functions, more or less in chronological order.
+
+		async function loadJSONData() {
+		  try {
+		    const response = await fetch("https://raw.githubusercontent.com/neodigm/FED_Programming_Challenge/gh-pages/products.json");
+		    if (!response.ok) {
+		      throw new Error("Error fetching JSON data. Status: " + response.status);
+		    }
+		    const jsonData = await response.json();
+		    return jsonData;
+		  } catch (error) {
+		    console.error("Error loading JSON data:", error);
+		    throw error;
+		  }
+		}
+
+		async function getUniqueCats() {
+			let menuCategories = [];
+			const data = await loadJSONData();
+			data.forEach(function(item) {
+				menuCategories.push(item.cat);
+			})
+			let set = [...new Set(menuCategories)];
+			return set;
+		}
+
+		async function renderCategories() {
+			const categories = await getUniqueCats();
+			let template = `<ul id='categories'>`;
+			
+			categories.forEach(function(category) {
+				template += `<li id='selected-cat'>${category}</li>`;	
+			})
+
+			template += `</ul>`;
+			menuSections.insertAdjacentHTML('beforeend', template);
+		}
+
+		renderCategories();
+
+
+
+
+
+
+
+
+		//Now render the appropriate items for each category when the mouse hovers over them.
+
+		async function loadItems() {
+			//Collect all of the items into a static array.
+			let items = [];
+			const jsonData = await loadJSONData();
+			jsonData.forEach(function(item) {
+				items.push(item);
+			})
+		}
+
+			//Create a rendered unordered list to collect the filtered items.
+			let renderedItemList = document.createElement('ul');
+			renderedItemList.id = 'items';
+	
+			let categoriesList = document.querySelector('#categories');
+
+			categoriesList.addEventListener("mouseover", (event) => {
+				//The following can be compartmentalized into another function.
+				loadItems();
+				items.forEach( function(item) {
+					if(item.cat === event.target.textContent) {
+						let newItem = document.createElement('li');
+						newItem.textContent = item.product;
+						renderedItemList.appendChild(newItem);
+					}
+				})	
+				menuSections.appendChild(renderedItemList);
+			});
+
+			categoriesList.addEventListener("mouseout", (event) => {
+				loadItems();
+				items = [];	
+				menuSections.removeChild(renderedItemList);
+			});
+
+		
+		
+
+		renderItems();
+
+	</script>
+
+</body>
+</html>

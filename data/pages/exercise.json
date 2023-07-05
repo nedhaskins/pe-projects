@@ -279,6 +279,32 @@
                 "name": "submitted",
                 "text": "Submit"
             }
+        },
+        {
+            "id": 21,
+            "pageType": "exercise",
+            "language": "PHP",
+            "slug": "21-numbers-to-names",
+            "name": "Numbers to Names",
+            "image": "images/e4p/16.svg",
+            "form":
+            {
+                "field":
+                {
+                    "label": "Enter a number between 1 and 12.",
+                    "type": "number",
+                    "name": "number",
+                    "min": 1,
+                    "max": 12,
+                    "value": "Value betwwen 1 and 12"
+                }
+            },
+            "button":
+            {
+                "type": "submit",
+                "name": "submitted",
+                "text": "Submit"
+            }
         }
     ]
 }
