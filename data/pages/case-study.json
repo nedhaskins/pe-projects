@@ -1114,7 +1114,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "In classical database design, normalization and non-repetition of data are key concepts. Because of this emphasis on non-repetition, as the size of the database increases, the speed at which some elements can be read and accessed is slowed down. As the sheer amount of accessible information has increased, other paradigms of data access and storage are emerging.  The NoSQL database model, while possibly introducing more data repetition into the setup, addresses the need for faster read speeds (this ties into user accessibility, which is becoming a common theme across all vantage points in software development."
+				"content": "In classical database design, normalization and non-repetition of data are key concepts. Because of this emphasis on non-repetition, as the size of the database increases, the speed at which some elements can be read and accessed is slowed down. As the sheer amount of accessible information has increased, other paradigms of data access and storage are emerging.  The NoSQL database model, while possibly introducing more data repetition into the setup, addresses the need for faster read speeds (this ties into user accessibility, which is becoming a common theme across all vantage points in software development)."
 			},
 			{
 				"tag": "p",
