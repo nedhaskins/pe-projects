@@ -9,6 +9,18 @@
 
 	@import 'reset.css';
 
+	icon-wrapper {
+		display: block;
+		max-width: 40px;
+		margin-left: 40px;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
 	.category {
 		background: #ffea9c;
 	}
@@ -19,11 +31,36 @@
 		gap: 20px;
 	}
 
+	summary {
+		display: flex;
+	}
+
+	summary h2 {
+		vertical-align: middle;
+		font-size: 48px;
+	}
+
+/*	summary::marker {
+		content: none;
+	}*/
+
+/*	summary::after {
+		content: url("./red-triangle.svg");
+	}
+
+	details[open] summary::after {
+		content: '';
+	}*/
+
 	li {
 	/*display: block;*/
 		border: 2px solid black;
 		background: red;
 		padding: 20px;
+	}
+
+	svg path {
+		fill: #ff4560;
 	}
 
 </style>
@@ -104,9 +141,10 @@
 			var template = `
 					<details>
 						<summary>
-							<button>
-								<h2>${category.name}</h2>			
-							</button>
+							<h2>${category.name}</h2>
+							<icon-wrapper>
+								<svg width="100%" height="100%" viewBox="0 0 347 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M346.326,199.957l-346.326,199.958l-0,-399.915l346.326,199.957Z"/></svg>
+							</icon-wrapper>
 						</summary>
 						<div class="products">${renderProducts(category.products)}</div>
 					</details>
@@ -136,10 +174,30 @@
 		}
 		
 		renderCategories(array);
-	
 	}
 
+	//Execute the functions from the above list.
+
 	renderData();
+
+	
+
+		const svgPath = document.querySelector('path');
+		const categories = document.querySelectorAll('.category');
+
+		categories.addEventListener("toggle", (event) => {
+		
+			//when the class of details is open,
+			//transform and do a color change.
+			if(!event.target.open) {
+				svgPath.style.fill = '#45ff5c';
+			} else {
+				svgPath.style.fill = '#ff4560';
+			}
+			console.log('events were logged');
+		});
+	
+
 
 
 
