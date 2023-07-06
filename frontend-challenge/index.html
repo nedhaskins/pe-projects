@@ -9,28 +9,52 @@
 
 	@import 'reset.css';
 
-	icon-wrapper {
-		display: block;
-		max-width: 40px;
-		margin-left: 40px;
+	html {
+		--neonFuchsia: #ff4560;
 	}
 
-	img {
-		display: block;
-		width: 100%;
-		height: auto;
+	body {
+		padding: 5px;
 	}
 
 	.category {
-		background: #ffea9c;
+		border: 2px solid black;
+		background-color: white;
+		color: black;
+		font-family: 'Arial', sans-serif;
+		letter-spacing: 0.06em;
+		font-style: italic;
+	}
+
+	/*SVG attributes*/
+
+	icon-wrapper {
+		max-width: 35px;
+	}
+
+	svg path {
+		fill: red;	
+	}
+
+	details[open] svg {
+		transform: rotate(90deg);
+	}
+
+	.category {
+		padding: 10px;
 	}
 
 	.product-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		gap: 20px;
+		margin-top: 20px;
 	}
 
+	.product-list li {
+		border: 2px solid red;
+		padding: 20px;
+	}
 	summary {
 		display: flex;
 	}
@@ -40,27 +64,35 @@
 		font-size: 48px;
 	}
 
-/*	summary::marker {
-		content: none;
-	}*/
-
-/*	summary::after {
-		content: url("./red-triangle.svg");
+	/* details #triangle {
+		width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 34.641px solid var(--neonFuchsia);
 	}
 
-	details[open] summary::after {
-		content: '';
-	}*/
+	details[open] #triangle {
+		animation-name: rotate;
+		animation-duration: 0.5s;
+	} */
 
-	li {
-	/*display: block;*/
-		border: 2px solid black;
-		background: red;
-		padding: 20px;
+	@keyframes rotate {
+	  0% {
+	    transform: rotate(0);
+	  }
+	  100% {
+	    transform: rotate(90deg);
+	  }
 	}
 
-	svg path {
-		fill: #ff4560;
+
+
+	icon-wrapper {
+		display: block;
+		margin-left: 30px;
+		margin-top: 6px;
 	}
 
 </style>
@@ -71,6 +103,7 @@
 	<main></main>
 
 <script>
+	
 	console.clear();
 
 	const outlet = document.querySelector('main');
@@ -142,7 +175,7 @@
 					<details>
 						<summary>
 							<h2>${category.name}</h2>
-							<icon-wrapper>
+														<icon-wrapper>
 								<svg width="100%" height="100%" viewBox="0 0 347 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M346.326,199.957l-346.326,199.958l-0,-399.915l346.326,199.957Z"/></svg>
 							</icon-wrapper>
 						</summary>
@@ -172,34 +205,45 @@
 				</product-card>
 			`;
 		}
+
+		// function addEventListeners() {
+		// 	const svgPath = document.querySelector('path');
+		// 	const categories = document.querySelectorAll('.category');
+
+		// 	categories.addEventListener("click", (event) => {
+			
+		// 		//when the class of details is open,
+		// 		//transform and do a color change.
+		// 		if(!event.target.open) {
+		// 			svgPath.style.fill = '#45ff5c';
+		// 		} else {
+		// 			svgPath.style.fill = '#ff4560';
+		// 		}
+		// 		console.log('events were logged');
+		// });}
+
 		
 		renderCategories(array);
+		// addEventListeners();
 	}
 
 	//Execute the functions from the above list.
 
 	renderData();
 
-	
 
-		const svgPath = document.querySelector('path');
-		const categories = document.querySelectorAll('.category');
-
-		categories.addEventListener("toggle", (event) => {
-		
-			//when the class of details is open,
-			//transform and do a color change.
-			if(!event.target.open) {
-				svgPath.style.fill = '#45ff5c';
-			} else {
-				svgPath.style.fill = '#ff4560';
-			}
-			console.log('events were logged');
-		});
-	
+const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 
 
+
+
+
+const number = 3;
+
+favorites.push(number);
+
+console.log(favorites);
 
 </script>
 </body>
