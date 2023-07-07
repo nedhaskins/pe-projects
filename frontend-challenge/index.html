@@ -95,6 +95,14 @@
 		margin-top: 6px;
 	}
 
+	button.favorited {
+		background-color: yellow;
+	}
+
+	button.not-favorited {
+		background-color: unset;
+	}
+
 </style>
 
 
@@ -106,7 +114,19 @@
 	
 	console.clear();
 
+	//Initialize local storage and place all favorites data into an accessible object.
+	var favorites = [];
+
+	const data = JSON.parse( localStorage.getItem('favorites') ) || [];
+	data.forEach((item) => {
+		favorites = [...favorites, item];
+	});
+
+	//Set up an area to put event listeners.
 	const outlet = document.querySelector('main');
+
+
+	//Cascading async functions.
 
 	async function fetchData() {
 		try {
@@ -164,7 +184,7 @@
 			// 	template += `<li>${store[i].name}</li>`
 			// }
 			array.forEach(function(category) {
-				template += `<li class='category'>${renderCategory(category)}</li>`;
+				template += `<li class='category' data-id="${category.name}">${renderCategory(category)}</li>`;
 			})
 			template += `</ul>`;
 			outlet.innerHTML = template;
@@ -198,10 +218,11 @@
 
 		function renderProduct(product) {
 			return `
-				<product-card>
+				<product-card data-id="${product.name}">
 					<h1 class="name">${product.name}</h1>
 					<p class="price">${product.price}</p>
-					<button class="favorite">favorite</button>
+					<p class="sale">${product.sale}</p>
+					<button class="not-favorited">not favorited</button>
 				</product-card>
 			`;
 		}
@@ -232,18 +253,49 @@
 	renderData();
 
 
-const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 
+	outlet.addEventListener('click', (event) => {
 
+		if(event.target.tagName === 'BUTTON') {
+			const productName = event.target.closest('product-card').dataset.id;
+			const category = event.target.closest('.category').dataset.id;
+			const price = outlet.querySelector('.price').textContent; 
+			const sale = outlet.querySelector('.sale').textContent;
+		
 
+			if(event.target.className === 'not-favorited') {
+				
+				const product = {
+					category: category,
+					name: productName,
+					price: price,
+					sale: sale,
+				}
 
+				favorites.push(product);
+				localStorage.setItem('favorites', JSON.stringify(favorites));
+				console.log(`${productName} was aved to local storage successfully`, favorites);
+		
+				event.target.className = 'favorited';
+				event.target.style.backgroundColor = 'pink';
+				event.target.textContent = 'favorited';
 
-const number = 3;
+			} else if(event.target.className === 'favorited') {
 
-favorites.push(number);
+				const filtered = favorites.filter(product => product.name != productName);
+			
+				favorites = [...filtered];
+				localStorage.setItem('favorites', JSON.stringify(favorites));
+				console.log(`${productName} was removed from local storage.`, favorites)
+				
 
-console.log(favorites);
+				event.target.className = 'not-favorited';
+				event.target.style.backgroundColor = 'unset';
+				event.target.textContent = 'not favorited';
+			}
+		}
+	})
 
 </script>
 </body>
