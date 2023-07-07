@@ -17,6 +17,9 @@ class CelloExerciseBook {
 
 	setUpApp() {
 		const data = JSON.parse( localStorage.getItem('celloExercises') ) || [];
+
+		//This is needed because every unique object created from the constructor needs
+		//a "placeholder" exercises object that's empty.[]
 		data.forEach( (exerciseData) => {
 			this.exercises = [...this.exercises, exerciseData];	
 		});

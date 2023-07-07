@@ -115,12 +115,7 @@
 	console.clear();
 
 	//Initialize local storage and place all favorites data into an accessible object.
-	var favorites = [];
-
-	const data = JSON.parse( localStorage.getItem('favorites') ) || [];
-	data.forEach((item) => {
-		favorites = [...favorites, item];
-	});
+	var favorites = JSON.parse( localStorage.getItem('favorites') ) || [];
 
 	//Set up an area to put event listeners.
 	const outlet = document.querySelector('main');
@@ -155,7 +150,8 @@
 						{
 							name: item.product,
 							price: parseFloat(item.price),
-							sale: parseFloat(item.sale)
+							sale: parseFloat(item.sale),
+							isFavorited: false,
 						}
 					]
 				});
@@ -165,7 +161,8 @@
 				existingCategory.products.push({
 				name: item.product,
 				price: parseFloat(item.price),
-				sale: parseFloat(item.sale)
+				sale: parseFloat(item.sale),
+				isFavorited: false,
 			});
 			}
 			return acc;
@@ -216,44 +213,46 @@
 			return template;
 		}
 
+/**
+ * The next two functions work together.
+ * The iconClass() function compares the product's name to the products in the favorites list.
+ * The return value of this function becomes the class of the button inside the product card.
+ **/
+
+
+		function iconClass(product) {
+			const favorited = favorites.find(favorite => favorite.name === product.name);
+			//returns true or false
+
+			if(favorited) {
+				return "favorited";
+				} else {
+					return "not-favorited";
+				}
+		}
+
 		function renderProduct(product) {
 			return `
 				<product-card data-id="${product.name}">
 					<h1 class="name">${product.name}</h1>
 					<p class="price">${product.price}</p>
 					<p class="sale">${product.sale}</p>
-					<button class="not-favorited">not favorited</button>
+					<button class="${iconClass(product)}">${iconClass(product)}</button>
 				</product-card>
 			`;
 		}
 
-		// function addEventListeners() {
-		// 	const svgPath = document.querySelector('path');
-		// 	const categories = document.querySelectorAll('.category');
-
-		// 	categories.addEventListener("click", (event) => {
-			
-		// 		//when the class of details is open,
-		// 		//transform and do a color change.
-		// 		if(!event.target.open) {
-		// 			svgPath.style.fill = '#45ff5c';
-		// 		} else {
-		// 			svgPath.style.fill = '#ff4560';
-		// 		}
-		// 		console.log('events were logged');
-		// });}
-
-		
+		//Begin the function chain by rendering the categories, which will trigger the other functions, ending with the last .outerHTML statement.
 		renderCategories(array);
-		// addEventListeners();
+
 	}
 
-	//Execute the functions from the above list.
+	
 
+	//Execute the functions from the above list.
 	renderData();
 
-
-
+	console.log(favorites);
 
 	outlet.addEventListener('click', (event) => {
 
@@ -263,7 +262,6 @@
 			const price = outlet.querySelector('.price').textContent; 
 			const sale = outlet.querySelector('.sale').textContent;
 		
-
 			if(event.target.className === 'not-favorited') {
 				
 				const product = {
@@ -271,6 +269,7 @@
 					name: productName,
 					price: price,
 					sale: sale,
+					isFavorited: true,
 				}
 
 				favorites.push(product);
@@ -288,7 +287,6 @@
 				favorites = [...filtered];
 				localStorage.setItem('favorites', JSON.stringify(favorites));
 				console.log(`${productName} was removed from local storage.`, favorites)
-				
 
 				event.target.className = 'not-favorited';
 				event.target.style.backgroundColor = 'unset';
@@ -296,6 +294,11 @@
 			}
 		}
 	})
+
+
+	//Next, the rendered data has to reflect what's present in local storage, i.e. the favorites buttons have to be on if the objects are in there.  You'll need a renderFavorites() function that runs close to the beginning of the app.
+
+	//All that needs to be on the page visually is that the favorites button needs the right class.
 
 </script>
 </body>
