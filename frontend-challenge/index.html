@@ -96,7 +96,7 @@
 	}
 
 	button.favorited {
-		background-color: yellow;
+		background-color: pink;
 	}
 
 	button.not-favorited {
@@ -277,8 +277,7 @@
 				console.log(`${productName} was aved to local storage successfully`, favorites);
 		
 				event.target.className = 'favorited';
-				event.target.style.backgroundColor = 'pink';
-				event.target.textContent = 'favorited';
+
 
 			} else if(event.target.className === 'favorited') {
 
@@ -289,8 +288,7 @@
 				console.log(`${productName} was removed from local storage.`, favorites)
 
 				event.target.className = 'not-favorited';
-				event.target.style.backgroundColor = 'unset';
-				event.target.textContent = 'not favorited';
+
 			}
 		}
 	})
