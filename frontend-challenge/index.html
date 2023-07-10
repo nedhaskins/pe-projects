@@ -11,6 +11,7 @@
 
 	html {
 		--neonFuchsia: #ff4560;
+		background-color: black;
 	}
 
 	body {
@@ -18,13 +19,106 @@
 	}
 
 	.category {
-		border: 2px solid black;
-		background-color: white;
-		color: black;
+		color: white;
 		font-family: 'Arial', sans-serif;
 		letter-spacing: 0.06em;
 		font-style: italic;
+		padding: 10px;
+		background-color: black;
+		border: 3px solid white;
+		animation-name: colorchange;
+		animation-iteration-count: infinite;
+		animation-duration: 7s;
 	}
+
+
+
+
+	@keyframes colorchange {
+		0% {
+			border: 3px solid red;
+		}
+		
+		14% {
+			border: 3px solid orange;
+		}
+		
+		28% {
+			border: 3px solid yellow;
+		}
+		
+		43% {
+			border: 3px solid lime;
+		}
+
+		57% {
+			border: 3px solid blue;
+		}
+		
+		71% {
+			border: 3px solid indigo;
+		}
+		
+		86% {
+			border: 3px solid violet;
+		}
+		
+		100% {
+			border: 3px solid red;
+		}
+	}
+
+	@keyframes svgColorChange {
+		0% {
+			fill: 3px solid red;
+		}
+		
+		14% {
+			fill: 3px solid orange;
+		}
+		
+		28% {
+			fill: 3px solid yellow;
+		}
+		
+		43% {
+			fill: 3px solid lime;
+		}
+
+		57% {
+			fill: 3px solid blue;
+		}
+		
+		71% {
+			fill: 3px solid indigo;
+		}
+		
+		86% {
+			fill: 3px solid violet;
+		}
+		
+		100% {
+			fill: 3px solid red;
+		}
+	}
+
+
+
+
+	.product-list li {
+		animation-name: colorchange;
+		animation-iteration-count: infinite;
+		animation-duration: 7s;
+	}
+
+
+
+
+
+
+
+
+
 
 	/*SVG attributes*/
 
@@ -33,16 +127,31 @@
 	}
 
 	svg path {
-		fill: red;	
+		fill: red;
+		animation-name: svgColorChange;
+		animation-iteration-count: infinite;
+		animation-duration: 7s;
 	}
 
 	details[open] svg {
 		transform: rotate(90deg);
 	}
 
-	.category {
-		padding: 10px;
+	details[open] svg path {
+		fill: lime;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 	.product-list {
 		display: grid;
@@ -226,9 +335,9 @@
 
 			if(favorited) {
 				return "favorited";
-				} else {
-					return "not-favorited";
-				}
+			} else {
+				return "not-favorited";
+			}
 		}
 
 		function renderProduct(product) {
@@ -274,9 +383,10 @@
 
 				favorites.push(product);
 				localStorage.setItem('favorites', JSON.stringify(favorites));
-				console.log(`${productName} was aved to local storage successfully`, favorites);
+				console.log(`${productName} was added to local storage successfully`, favorites);
 		
 				event.target.className = 'favorited';
+				event.target.textContent = 'favorited';
 
 
 			} else if(event.target.className === 'favorited') {
@@ -288,6 +398,7 @@
 				console.log(`${productName} was removed from local storage.`, favorites)
 
 				event.target.className = 'not-favorited';
+				event.target.textContent = 'not-favorited';
 
 			}
 		}
