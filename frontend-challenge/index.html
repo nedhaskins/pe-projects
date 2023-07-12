@@ -399,7 +399,7 @@
 									stroke-miterlimit: 1.5;
 								"">
 								<path class="heart"
-									d="M128.956,45.358c25.832,-46.015 77.498,-46.015 103.331,-27.609c25.833,18.406 25.833,55.218 -0,92.029c-18.083,27.609 -64.582,55.218 -103.331,73.624c-38.75,-18.406 -85.248,-46.015 -103.331,-73.624c-25.833,-36.811 -25.833,-73.623 -0,-92.029c25.832,-18.406 77.498,-18.406 103.331,27.609Z"/>
+									d="M128.956,45.358c25.832,-46.015 77.498,-46.015 103.331,-27.609c25.833,18.406 25.833,55.218 -0,92.029c-18.083,27.609 -64.582,55.218 -103.331,73.624c-38.75,-18.406 -85.248,-46.015 -103.331,-73.624c-25.833,-36.811 -25.833,-73.623 -0,-92.029c25.832,-18.406 77.498,-18.406 103.331,27.609Z"></path>
 							</svg>
 						</button>
 					</card-bottom>
@@ -421,7 +421,7 @@
 
 	outlet.addEventListener('click', (event) => {
 
-		if(event.target.matches('.heart')) {
+		if(event.target.tagName === 'BUTTON') {
 			const favoritesButton = event.target.closest('button');
 			const productName = event.target.closest('product-card').dataset.id;
 			const category = event.target.closest('.category').dataset.id;
