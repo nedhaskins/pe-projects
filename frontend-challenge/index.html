@@ -422,13 +422,12 @@
 	outlet.addEventListener('click', (event) => {
 
 		if(event.target.tagName === 'BUTTON') {
-			const favoritesButton = event.target.closest('button');
 			const productName = event.target.closest('product-card').dataset.id;
 			const category = event.target.closest('.category').dataset.id;
 			const price = outlet.querySelector('.price').textContent; 
 			const sale = outlet.querySelector('.sale').textContent;
 		
-			if(favoritesButton.className === 'not-favorited') {
+			if(event.target.className === 'not-favorited') {
 				
 				const product = {
 					category: category,
@@ -442,11 +441,11 @@
 				localStorage.setItem('favorites', JSON.stringify(favorites));
 				console.log(`${productName} was added to local storage successfully`, favorites);
 		
-				favoritesButton.className = 'favorited';
+				event.target.className = 'favorited';
 				// event.target.textContent = 'favorited';
 
 
-			} else if(favoritesButton.className === 'favorited') {
+			} else if(event.target.className === 'favorited') {
 
 				const filtered = favorites.filter(product => product.name != productName);
 			
@@ -454,7 +453,7 @@
 				localStorage.setItem('favorites', JSON.stringify(favorites));
 				console.log(`${productName} was removed from local storage.`, favorites)
 
-				favoritesButton.className = 'not-favorited';
+				event.target.className = 'not-favorited';
 				// event.target.textContent = 'not-favorited';
 
 			}
