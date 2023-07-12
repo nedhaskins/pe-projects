@@ -335,14 +335,15 @@
 		function detailsOpenCheck(category) {
 			const isOpen = openMenus.find(item => item === category);
 			if(isOpen) {
-				return "open";
-			//else...it returns undefined
+				return `<details open>`;
+			} else {
+				return `<details>`;
 			}
 		}
 
 		function renderCategory(category) {
 			var template = `
-					<details ${detailsOpenCheck(category.name)}>
+					${detailsOpenCheck(category.name)}
 						<summary>
 							<h2>${category.name}</h2>
 							<icon-wrapper>
