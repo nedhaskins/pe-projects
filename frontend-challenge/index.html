@@ -86,19 +86,22 @@
 		--lightgreen: #4af2a1;
 		--amazon: #36745c;
 		--vividTangerine: #ffa88c;
-		background-color: var(--vividTangerine);
 	}
 
 	body {
 		padding: 5px;
 	}
 
+	.category-list {
+		background-color: var(--vividTangerine);
+		max-width: 700px;
+	}
+
 	.category {
-		color: white;
+		color: black;
 		font-family: 'Arial', sans-serif;
 		letter-spacing: 0.06em;
 		padding: 10px;
-		background-color: black;
 	}
 
 	/*.category h2 {
@@ -112,20 +115,22 @@
 	}*/
 
 	.category {
-		border-top: 3px solid red;
-		border-right: 3px solid red;
-		border-left: 3px solid red;
+		border-top: 2px solid black;
+		border-right: 2px solid black;
+		border-left: 2px solid black;
 	}
 
 	.category:last-of-type {
-		border-bottom: 3px solid red;
+		border-bottom: 2px solid black;
 	}
 
 
 	/*SVG attributes*/
 
 	icon-wrapper {
+		display: block;
 		max-width: 35px;
+		margin-left: 30px;
 	}
 
 	.arrow path {
@@ -145,23 +150,26 @@
 
 	.product-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 		gap: 10px;
 		margin-top: 10px;
 	}
 
 	.product-list li {
-		border: 2px solid red;
-		padding: 20px;
-		max-width: 200px;
+		border: 2px solid black;
+		padding: 8px;
+		max-width: 300px;
+		box-shadow: 3px 3px;
 	}
 
 
 	summary {
-		display: flex;
+		display: grid;
+		grid-template-columns: auto auto 1fr;
 	}
 
 	summary h2 {
+		align-self: center;
 		font-size: 1.5rem;
 	}
 
@@ -183,24 +191,20 @@
 
 
 
-	icon-wrapper {
-		display: block;
-		margin-left: 30px;
-		margin-top: 6px;
-	}
 
 
 	/*Product Card Styles*/
 
 	product-card {
 		display: grid;
-		grid-template-rows: auto 1fr 1fr;
+		grid-template-rows: auto 1fr auto;
 		height: 100%;
-		border: 3px solid yellow;
+		grid-gap: 8px;
+
 	}
 
 	product-card picture {
-/*		width: 236px;*/
+		border: 2px solid black;
 	}
 
 	product-card h3 {
@@ -209,13 +213,13 @@
 
 	product-card text-wrapper {
 		display: block;
-		border: 3px solid cyan;
+/*		border: 3px solid cyan; */
 	}
 
 	product-card card-bottom {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		border: 3px solid lime;
+/*		border: 3px solid lime;*/
 	}
 
 	
@@ -243,7 +247,7 @@
 	}
 
 	button.favorited svg, button.not-favorited svg {
-		stroke: white;
+		stroke: black;
 		stroke-width: 12.25px;
 	}
 
