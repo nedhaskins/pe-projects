@@ -250,12 +250,12 @@
 	
 	console.clear();
 
-	//Initialize local storage and place all favorites data into an accessible object.
+	//Initialize local storage and place all favorites data and open menus into an accessible object.
 	var favorites = JSON.parse( localStorage.getItem('favorites') ) || [];
+	var openMenus = JSON.parse( localStorage.getItem('openMenus') ) || [];
 
 	//Set up an area to put event listeners.
 	const outlet = document.querySelector('main');
-
 
 	//Cascading async functions.
 
@@ -323,9 +323,26 @@
 			outlet.innerHTML = template;
 		}
 
+		/**
+ * The following function provides a return value for the "details-open class".
+ * Local storage will be checked for menus with a details class of open.
+ * If that value is true, return "open"
+ * if false, return undefined
+ * 
+ * It's connected to the function after it.
+ * **/
+
+		function detailsOpenCheck(category) {
+			const isOpen = openMenus.find(item => item === category);
+			if(isOpen) {
+				return "open";
+			//else...it returns undefined
+			}
+		}
+
 		function renderCategory(category) {
 			var template = `
-					<details>
+					<details ${detailsOpenCheck(category.name)}>
 						<summary>
 							<h2>${category.name}</h2>
 							<icon-wrapper>
@@ -349,6 +366,8 @@
 			return template;
 		}
 
+
+
 /**
  * The next two functions work together.
  * The iconClass() function compares the product's name to the products in the favorites list.``
@@ -366,6 +385,7 @@
 				return "not-favorited";
 			}
 		}
+
 
 		function renderProduct(product) {
 			return `
@@ -421,17 +441,20 @@
 
 	outlet.addEventListener('click', (event) => {
 
+	//Initial variables to use in DOM and event listeners
+	const price = outlet.querySelector('.price').textContent; 
+	const sale = outlet.querySelector('.sale').textContent;
+
+
 		if(event.target.tagName === 'BUTTON') {
-			const productName = event.target.closest('product-card').dataset.id;
-			const category = event.target.closest('.category').dataset.id;
-			const price = outlet.querySelector('.price').textContent; 
-			const sale = outlet.querySelector('.sale').textContent;
-		
+
+			const productId = event.target.closest('product-card').dataset.id;
+
 			if(event.target.className === 'not-favorited') {
 				
 				const product = {
 					category: category,
-					name: productName,
+					name: productId,
 					price: price,
 					sale: sale,
 					isFavorited: true,
@@ -439,26 +462,47 @@
 
 				favorites.push(product);
 				localStorage.setItem('favorites', JSON.stringify(favorites));
-				console.log(`${productName} was added to local storage successfully`, favorites);
+				console.log(`${productId} was added to local storage successfully`, favorites);
 		
 				event.target.className = 'favorited';
-				// event.target.textContent = 'favorited';
-
 
 			} else if(event.target.className === 'favorited') {
 
-				const filtered = favorites.filter(product => product.name != productName);
-			
+				const filtered = favorites.filter(product => product.name != productId);
 				favorites = [...filtered];
+
 				localStorage.setItem('favorites', JSON.stringify(favorites));
-				console.log(`${productName} was removed from local storage.`, favorites)
+				console.log(`${productId} was removed from local storage.`, favorites)
 
 				event.target.className = 'not-favorited';
-				// event.target.textContent = 'not-favorited';
-
 			}
 		}
 	})
+
+	outlet.addEventListener('click', (event) => {
+
+	//Event listener variables.  Order them in DOM order.
+	const categoryId = event.target.closest('.category').dataset.id;
+	const details = event.target.closest('details');
+		
+		if(event.target.tagName === 'ICON-WRAPPER') {
+		
+			if(!details.open) {
+				//add the menu's data-id to local storage
+				openMenus.push(categoryId);
+				localStorage.setItem('openMenus', JSON.stringify(openMenus));
+				console.log('This menu is open and it\'s been stored in local storage!');			
+			} else {
+				//remove the menu's data-id from local storage	
+				const filtered = openMenus.filter(menuName => menuName != categoryId);
+				openMenus = [...filtered];
+
+				localStorage.setItem('openMenus', JSON.stringify(openMenus));
+				console.log('This menu is open and it\'s been stored in local storage!');	
+			}
+		}
+	})
+
 
 
 	//Next, the rendered data has to reflect what's present in local storage, i.e. the favorites buttons have to be on if the objects are in there.  You'll need a renderFavorites() function that runs close to the beginning of the app.
