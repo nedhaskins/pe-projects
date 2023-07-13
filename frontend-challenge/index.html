@@ -85,21 +85,72 @@
 		--anakiwa: #8acde4;
 		--lightgreen: #4af2a1;
 		--amazon: #36745c;
-		--vividTangerine: #ffa88c;
+		--rajah: #ffa863;
+		--peach: #ffcfa9;
+
+		color: black;
+		font-family: 'Arial', sans-serif;
 	}
 
 	body {
 		padding: 5px;
+/*		display: grid;
+		grid-template-rows: auto 1fr;*/
+		background-color: var(--rajah);
+	}
+
+
+	/*Header styles*/
+
+	header inner-column {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		grid-gap: 20px;
+	}
+
+	header inner-column img-wrapper {
+		width: 72px;
+
+	}
+
+	img-wrapper img {
+		border: 2px solid black;
+		border-radius: 100%;
+	}
+
+
+	header inner-column h1 {
+		align-self: center;
+		text-transform: uppercase;
+	}
+
+
+	nav {
+		display: grid;
+	}
+
+	nav ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+		place-items: center;
+	}
+
+
+
+
+	inner-column {
+		display: block;
+		margin: 0 auto;
+		max-width: 960px;
 	}
 
 	.category-list {
-		background-color: var(--vividTangerine);
-		max-width: 700px;
+		margin-top: 8px;
 	}
 
 	.category {
-		color: black;
-		font-family: 'Arial', sans-serif;
+
 		letter-spacing: 0.06em;
 		padding: 10px;
 	}
@@ -158,7 +209,7 @@
 	.product-list li {
 		border: 2px solid black;
 		padding: 8px;
-		max-width: 300px;
+		max-width: 232px;
 		box-shadow: 3px 3px;
 	}
 
@@ -267,7 +318,29 @@
 
 </head>
 <body>
-	<main></main>
+	<header>
+		<inner-column>
+			<img-wrapper class='road-icon'>
+				<img src="photos/Eye-of-horus.jpg" alt="Eye of Horus icon">
+			</img-wrapper>
+
+			<h1 class='title'>Front End Engineer Challenge</h1>
+			
+		<!-- 	<button class='toggle menu-icon'>
+				<?php include('./images/menu-icon.php'); ?>
+			</button> -->
+			
+			<nav class="site-menu">
+				<ul>
+					<li><a href='#'>About</a></li>
+					<li><a href='#'>Favorites</a></li>
+					<li><a href='#'>Contact</a></li>
+				</ul>
+				<!-- <button class="toggle small-screen">Close</button> -->
+			</nav>
+		</inner-column>
+	</header>
+	<main><inner-column class="main"></inner-column></main>
 
 <script>
 	
@@ -278,7 +351,7 @@
 	var openMenus = JSON.parse( localStorage.getItem('openMenus') ) || [];
 
 	//Set up an area to put event listeners.
-	const outlet = document.querySelector('main');
+	const outlet = document.querySelector('.main');
 
 	//Cascading async functions.
 
