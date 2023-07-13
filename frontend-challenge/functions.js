@@ -155,7 +155,7 @@ function renderProduct(product) {
 				</picture>
 				
 				<text-wrapper>
-					<h3 class="name">${product.name}</h1>
+					<h3 class="name">${product.name}</h3>
 				</text-wrapper>
 				<card-bottom>
 				<div class="price"><p>$${product.price.toFixed(2)}</p></div>
@@ -204,14 +204,17 @@ function renderFavoritesView() {
 	//for each item in the local storage
 	if(favorites) {
 
-		const template = `<ul class="favorites-list>`;
+		var template = `
+			<div class="favorites">
+				<h2>favorites</h2>
+				<ul class="favorites-list">`;
 		//return a product card for each item in local storage
 		favorites.forEach((favorite) => {
 			template += `
 				<li>
 					<product-card data-id="${favorite.name}">
 						<picture>
-							<img src="">
+							<img src="photos/party-favors.jpg">
 							</img>
 						</picture>
 						
@@ -220,7 +223,7 @@ function renderFavoritesView() {
 						</text-wrapper>
 						<card-bottom>
 						<div class="price"><p>${favorite.price}</p></div>
-						<div class="sale"><p>$${favorite.sale}</p></div>
+						<div class="sale"><p>${favorite.sale}</p></div>
 							<button class="${iconClass(favorite)}">
 								<svg
 									width="100%"
@@ -245,10 +248,8 @@ function renderFavoritesView() {
 						</card-bottom>
 					</product-card>
 				</li>`;
-			template += `</ul>`;
-
-			outlet.innerHTML = template;
-
 		})
+		template += `</ul></div>`;
+		outlet.innerHTML = template;
 	}
 }	

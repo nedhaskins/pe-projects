@@ -69,6 +69,17 @@
 	  }
 	}
 
+
+	/*Typography*/
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	.category, .favorites {
+		letter-spacing: 0.06em;
+	}
+
 	/*Page Styles*/
 
 	html {
@@ -96,7 +107,7 @@
 /*		padding: 5px;*/
 /*		display: grid;
 		grid-template-rows: auto 1fr;*/
-		background-color: var(--rajah);
+		background-color: white;
 		padding: 18px;
 	}
 
@@ -151,9 +162,7 @@
 		justify-content: space-evenly;
 	}
 
-	.category {
-
-		letter-spacing: 0.06em;
+	.category, .favorites {
 		padding: 10px;
 	}
 
@@ -205,14 +214,14 @@
 	/*Product List*/
 
 
-	.product-list {
+	.product-list, .favorites-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 		gap: 10px;
 		margin-top: 10px;
 	}
 
-	.product-list li {
+	:is(.product-list, .favorites-list) li  {
 		border: 2px solid black;
 		padding: 8px;
 		max-width: 232px;
@@ -227,7 +236,6 @@
 
 	summary h2 {
 		align-self: center;
-		font-size: 1.5rem;
 	}
 
 	/*Product Card Styles*/
@@ -241,7 +249,7 @@
 	}
 
 	product-card picture {
-		border: 2px solid black;
+		border: 1px solid black;
 	}
 
 	product-card h3 {
@@ -292,7 +300,11 @@
 		fill: none;
 	}
 
+/*Favorites Page*/
 
+.favorites {
+	border: 2px solid black;
+}
 
 
 </style>
@@ -402,7 +414,7 @@ outlet.addEventListener('click', (event) => {
 			openMenus = [...filtered];
 
 			localStorage.setItem('openMenus', JSON.stringify(openMenus));
-			console.log('This menu is open and it\'s been stored in local storage!');	
+			console.log('This menu is closed and it\'s been removed from local storage!');	
 		}
 	}
 })
