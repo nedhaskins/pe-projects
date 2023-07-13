@@ -152,14 +152,6 @@ function renderProduct(product) {
 				<picture>
 					<img src="photos/truly-cans.jpg">
 					</img>
-				</picture>
-				
-				<text-wrapper>
-					<h3 class="name">${product.name}</h3>
-				</text-wrapper>
-				<card-bottom>
-				<div class="price"><p>$${product.price.toFixed(2)}</p></div>
-				<div class="sale"><p>$${product.sale.toFixed(2)}</p></div>
 					<button class="${iconClass(product)}">
 						<svg
 							width="100%"
@@ -181,7 +173,14 @@ function renderProduct(product) {
 								d="M128.956,45.358c25.832,-46.015 77.498,-46.015 103.331,-27.609c25.833,18.406 25.833,55.218 -0,92.029c-18.083,27.609 -64.582,55.218 -103.331,73.624c-38.75,-18.406 -85.248,-46.015 -103.331,-73.624c-25.833,-36.811 -25.833,-73.623 -0,-92.029c25.832,-18.406 77.498,-18.406 103.331,27.609Z"></path>
 						</svg>
 					</button>
-				</card-bottom>
+				</picture>
+				<div class="item-name">
+					<h3 class="name">${product.name}</h3>
+				</div>
+				<div class="prices">
+					<div class="price"><p>$${product.price.toFixed(2)}</p></div>
+					<div class="sale"><p>$${product.sale.toFixed(2)}</p></div>
+				</div>
 			</product-card>
 		`;
 	}

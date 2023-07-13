@@ -223,7 +223,7 @@
 
 	:is(.product-list, .favorites-list) li  {
 		border: 2px solid black;
-		padding: 8px;
+/*		padding: 8px;*/
 		max-width: 232px;
 		box-shadow: 3px 3px;
 	}
@@ -244,16 +244,31 @@
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		height: 100%;
-		grid-gap: 8px;
-
 	}
 
 	product-card picture {
+		position: relative;
 		border: 1px solid black;
 	}
 
-	product-card h3 {
+	product-card button {
+		position: absolute;
+		top: 4%;
+		right: 2%;
+	}
+
+	button.favorited, button.not-favorited {
+		width: 40px;
+	}
+
+	product-card .item-name {
 		font-style: italic;
+		padding: 8px 8px 0px 8px;
+		text-wrap: wrap;
+	}
+
+	product-card .prices {
+		padding: 8px;
 	}
 
 	product-card text-wrapper {
@@ -261,9 +276,16 @@
 /*		border: 3px solid cyan; */
 	}
 
-	product-card card-bottom {
+/*	product-card card-bottom {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr auto;
+		height: 100%;
+	}
+*/
+	card-bottom .prices {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 
 	div.price, div.sale {
@@ -273,6 +295,16 @@
 	div.price p, div.sale p {
 		place-self: center;
 	}
+
+
+
+
+
+
+
+
+
+
 
 	card-bottom div.price p {
 		text-decoration: line-through;
@@ -299,6 +331,13 @@
 	button.not-favorited svg path {
 		fill: none;
 	}
+
+
+
+
+
+
+
 
 /*Favorites Page*/
 
