@@ -162,6 +162,10 @@
 		justify-content: space-evenly;
 	}
 
+	/*body {
+		overflow: hidden;
+	}*/
+
 	.category, .favorites {
 		padding: 10px;
 	}
@@ -222,7 +226,8 @@
 	}
 
 	:is(.product-list, .favorites-list) li  {
-		border: 2px solid black;
+		place-self: center;
+		border: 1px solid black;
 /*		padding: 8px;*/
 		max-width: 232px;
 		box-shadow: 3px 3px;
@@ -287,24 +292,6 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
-
-	div.price, div.sale {
-		display: grid;
-	}
-
-	div.price p, div.sale p {
-		place-self: center;
-	}
-
-
-
-
-
-
-
-
-
-
 
 	card-bottom div.price p {
 		text-decoration: line-through;
@@ -396,7 +383,7 @@ console.log(favorites);
 outlet.addEventListener('click', (event) => {
 
 	//Initial variables to use in DOM and event listeners
-	const categoryId = event.target.closest('.category').dataset.id;
+	const categoryId = event.target.closest('.category')?.dataset.id;
 	const price = outlet.querySelector('.price').textContent; 
 	const sale = outlet.querySelector('.sale').textContent;
 
@@ -430,6 +417,9 @@ outlet.addEventListener('click', (event) => {
 			console.log(`${productId} was removed from local storage.`, favorites)
 
 			event.target.className = 'not-favorited';
+
+			//Re-render the updated favorites page, as the data might have changed!!
+			renderFavoritesView();
 		}
 	}
 })
@@ -437,7 +427,7 @@ outlet.addEventListener('click', (event) => {
 outlet.addEventListener('click', (event) => {
 
 	//Event listener variables.  Order them in DOM order.
-	const categoryId = event.target.closest('.category').dataset.id;
+	const categoryId = event.target.closest('.category')?.dataset.id;
 	const details = event.target.closest('details');
 		
 	if(event.target.tagName === 'ICON-WRAPPER') {

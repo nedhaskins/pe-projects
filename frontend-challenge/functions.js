@@ -47,24 +47,18 @@ async function transformData() {
 async function renderData() {	
 	var array = await transformData();
 
-
-
-
-
-
 	//Prepare stored photos for the renderProduct() function.
 	const photosArray = ["photos/gift-cards.jpg", "photos/holiday-gifts.jpg", "photos/invitations-1.jpg", "photos/matches.jpg", "photos/napkin-plate.jpg", "photos/party-favors.jpg", "photos/plates.jpg", "photos/truly-cans.jpg"];
-
 
 	/**This function chooses a photo from the list of photos in the above array, then chooses a random one to insert into each product card.**/
 
 		//Begin the function chain by rendering the categories, which will trigger the other functions, ending with the last .outerHTML statement.
-	renderCategories(array);
+	renderHomeView(array);
 }	
 
 
 
-function renderCategories(categories) {
+function renderHomeView(categories) {
 	var template = `<ul class="category-list">`;
 	//Each list item in here is a category name in the JSON.
 	// for(let i = 0; i < store.length; i++) {
@@ -116,7 +110,7 @@ function renderProducts(products) {
 	//for each product that matches the category,
 	//return the product.
 	products.forEach(function(product) {
-		template += `<li>${renderProduct(product)}</li>`;		
+		template += `<li>${renderCard(product)}</li>`;		
 	})
 	template +=	`</ul>`;
 	return template;
@@ -135,8 +129,8 @@ function randomPhoto(array) {
  **/
 
 
-function iconClass(product) {
-	const favorited = favorites.find(favorite => favorite.name === product.name);
+function iconClass(item) {
+	const favorited = favorites.find(favorite => favorite.name === item.name);
 	//returns true or false
 
 	if(favorited) {
@@ -146,47 +140,49 @@ function iconClass(product) {
 	}
 }
 
-function renderProduct(product) {
-		return `
-			<product-card data-id="${product.name}">
-				<picture>
-					<img src="photos/truly-cans.jpg">
-					</img>
-					<button class="${iconClass(product)}">
-						<svg
-							width="100%"
-							height="100%"
-							viewBox="0 0 258 190"
-							version="1.1"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							xml:space="preserve"
-							xmlns:serif="http://www.serif.com/"
-							style="
-								fill-rule: evenodd;
-								clip-rule: evenodd;
-								stroke-linecap: round;
-								stroke-linejoin: round;
-								stroke-miterlimit: 1.5;
-							"">
-							<path class="heart"
-								d="M128.956,45.358c25.832,-46.015 77.498,-46.015 103.331,-27.609c25.833,18.406 25.833,55.218 -0,92.029c-18.083,27.609 -64.582,55.218 -103.331,73.624c-38.75,-18.406 -85.248,-46.015 -103.331,-73.624c-25.833,-36.811 -25.833,-73.623 -0,-92.029c25.832,-18.406 77.498,-18.406 103.331,27.609Z"></path>
-						</svg>
-					</button>
-				</picture>
-				<div class="item-name">
-					<h3 class="name">${product.name}</h3>
-				</div>
-				<div class="prices">
-					<div class="price"><p>$${product.price.toFixed(2)}</p></div>
-					<div class="sale"><p>$${product.sale.toFixed(2)}</p></div>
-				</div>
-			</product-card>
-		`;
-	}
+function renderCard(item) {
+	return `
+		<product-card data-id="${item.name}">
+			<picture>
+				<img src="photos/truly-cans.jpg">
+				</img>
+				<button class="${iconClass(item)}">
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 258 190"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xml:space="preserve"
+						xmlns:serif="http://www.serif.com/"
+						style="
+							fill-rule: evenodd;
+							clip-rule: evenodd;
+							stroke-linecap: round;
+							stroke-linejoin: round;
+							stroke-miterlimit: 1.5;
+						"">
+						<path class="heart"
+							d="M128.956,45.358c25.832,-46.015 77.498,-46.015 103.331,-27.609c25.833,18.406 25.833,55.218 -0,92.029c-18.083,27.609 -64.582,55.218 -103.331,73.624c-38.75,-18.406 -85.248,-46.015 -103.331,-73.624c-25.833,-36.811 -25.833,-73.623 -0,-92.029c25.832,-18.406 77.498,-18.406 103.331,27.609Z"></path>
+					</svg>
+				</button>
+			</picture>
+			<div class="item-name">
+				<h3 class="name">${item.name}</h3>
+			</div>
+			<div class="prices">
+				<div class="price"><p>${item.price}</p></div>
+				<div class="sale"><p>${item.sale}</p></div>
+			</div>
+		</product-card>
+	`;
+}
+
+
+
 
 function renderAboutPage() {
-
 	const template = `
 		<section class="about">
 			<p>This is a frontend engineer challenge.</p>
@@ -198,6 +194,10 @@ function renderAboutPage() {
 	outlet.innerHTML = template;
 }
 
+
+
+
+
 function renderFavoritesView() {
 	//check local storage for items that are in favorites
 	//for each item in the local storage
@@ -207,47 +207,12 @@ function renderFavoritesView() {
 			<div class="favorites">
 				<h2>favorites</h2>
 				<ul class="favorites-list">`;
+
 		//return a product card for each item in local storage
 		favorites.forEach((favorite) => {
-			template += `
-				<li>
-					<product-card data-id="${favorite.name}">
-						<picture>
-							<img src="photos/party-favors.jpg">
-							</img>
-						</picture>
-						
-						<text-wrapper>
-							<h3 class="name">${favorite.name}</h1>
-						</text-wrapper>
-						<card-bottom>
-						<div class="price"><p>${favorite.price}</p></div>
-						<div class="sale"><p>${favorite.sale}</p></div>
-							<button class="${iconClass(favorite)}">
-								<svg
-									width="100%"
-									height="100%"
-									viewBox="0 0 258 190"
-									version="1.1"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-									xml:space="preserve"
-									xmlns:serif="http://www.serif.com/"
-									style="
-										fill-rule: evenodd;
-										clip-rule: evenodd;
-										stroke-linecap: round;
-										stroke-linejoin: round;
-										stroke-miterlimit: 1.5;
-									"">
-									<path class="heart"
-										d="M128.956,45.358c25.832,-46.015 77.498,-46.015 103.331,-27.609c25.833,18.406 25.833,55.218 -0,92.029c-18.083,27.609 -64.582,55.218 -103.331,73.624c-38.75,-18.406 -85.248,-46.015 -103.331,-73.624c-25.833,-36.811 -25.833,-73.623 -0,-92.029c25.832,-18.406 77.498,-18.406 103.331,27.609Z"></path>
-								</svg>
-							</button>
-						</card-bottom>
-					</product-card>
-				</li>`;
+			template += `<li>${renderCard(favorite)}</li>`;
 		})
+
 		template += `</ul></div>`;
 		outlet.innerHTML = template;
 	}
