@@ -10,6 +10,12 @@
 	@import 'reset.css';
 	@import 'setup.css';
 
+	/*Dealing with the particular <details> element issue on this site.*/
+
+	details div {
+		box-sizing: border-box;
+	}
+
 	/*Keyframes*/
 
 	@keyframes colorChangeOne {
@@ -72,6 +78,10 @@
 
 	/*Typography*/
 
+	h1 {
+		letter-spacing: 0.06em;
+	}
+
 	h2 {
 		font-size: 1.5rem;
 	}
@@ -99,6 +109,7 @@
 		--rajah: #ffa863;
 		--peach: #ffcfa9;
 
+		--defaultSpacing: 20px;
 		color: black;
 		font-family: 'Arial', sans-serif;
 	}
@@ -108,7 +119,7 @@
 /*		display: grid;
 		grid-template-rows: auto 1fr;*/
 		background-color: white;
-		padding: 18px;
+		padding: var(--defaultSpacing);
 		overflow-y: scroll;
 	}
 
@@ -128,7 +139,7 @@
 	header inner-column {
 		display: grid;
 		grid-template-columns: auto 1fr auto;
-		grid-gap: 20px;
+		grid-gap: var(--defaultSpacing);
 /*		padding: 18px;*/
 	}
 
@@ -164,7 +175,7 @@
 	}
 
 	.category, .favorites {
-		padding: 10px;
+		padding: var(--defaultSpacing);
 	}
 
 	/*.category h2 {
@@ -215,14 +226,14 @@
 	/*Product List*/
 
 
-	.product-list, .favorites-list {
+	.product-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-		gap: 10px;
+		gap: var(--defaultSpacing);
 		margin-top: 10px;
 	}
 
-	:is(.product-list, .favorites-list) li  {
+	.product-list li  {
 		place-self: center;
 		border: 1px solid black;
 /*		padding: 8px;*/
@@ -260,13 +271,12 @@
 	}
 
 	button.favorited, button.not-favorited {
-		width: 40px;
+		width: 58px;
 	}
 
 	product-card .item-name {
 		font-style: italic;
 		padding: 8px 8px 0px 8px;
-		text-wrap: wrap;
 	}
 
 	product-card .prices {

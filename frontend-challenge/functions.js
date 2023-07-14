@@ -46,13 +46,6 @@ async function transformData() {
 
 async function renderData() {	
 	var array = await transformData();
-
-	//Prepare stored photos for the renderProduct() function.
-	const photosArray = ["photos/gift-cards.jpg", "photos/holiday-gifts.jpg", "photos/invitations-1.jpg", "photos/matches.jpg", "photos/napkin-plate.jpg", "photos/party-favors.jpg", "photos/plates.jpg", "photos/truly-cans.jpg"];
-
-	/**This function chooses a photo from the list of photos in the above array, then chooses a random one to insert into each product card.**/
-
-		//Begin the function chain by rendering the categories, which will trigger the other functions, ending with the last .outerHTML statement.
 	renderHomeView(array);
 }	
 
@@ -206,7 +199,7 @@ function renderFavoritesView() {
 		var template = `
 			<div class="favorites">
 				<h2>favorites</h2>
-				<ul class="favorites-list">`;
+				<ul class="product-list">`;
 
 		//return a product card for each item in local storage
 		favorites.forEach((favorite) => {
