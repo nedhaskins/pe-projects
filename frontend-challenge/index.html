@@ -188,6 +188,8 @@
 		animation-duration: 6s;
 	}*/
 
+	/*Top-level attributes*/
+
 	.category {
 		border-top: 2px solid black;
 		border-right: 2px solid black;
@@ -197,6 +199,14 @@
 	.category:last-of-type {
 		border-bottom: 2px solid black;
 	}
+
+		/*favorites page*/
+
+	.favorites {
+		border: 2px solid black;
+	}
+
+
 
 
 	/*SVG attributes*/
@@ -330,20 +340,6 @@
 		background: none;
 	}
 
-	
-
-
-
-
-
-
-
-/*Favorites Page*/
-
-.favorites {
-	border: 2px solid black;
-}
-
 
 </style>
 
@@ -387,98 +383,9 @@ var openMenus = JSON.parse( localStorage.getItem('openMenus') ) || [];
 const header = document.querySelector('header');
 const outlet = document.querySelector('.main');
 
-//imported function
 renderData();
 
-console.log(favorites);
-
-outlet.addEventListener('click', (event) => {
-
-	//Initial variables to use in DOM and event listeners
-	const categoryId = event.target.closest('.category')?.dataset.id;
-	const price = outlet.querySelector('.price').textContent; 
-	const sale = outlet.querySelector('.sale').textContent;
-
-
-	if(event.target.tagName === 'BUTTON') {
-
-		const productId = event.target.closest('product-card').dataset.id;
-
-		if(!event.target.classList.contains('active')) {
-			
-			const product = {
-				category: categoryId,
-				name: productId,
-				price: price,
-				sale: sale,
-				isFavorited: true,
-			}
-
-			favorites.push(product);
-			localStorage.setItem('favorites', JSON.stringify(favorites));
-			console.log(`${productId} was added to local storage successfully`, favorites);
-	
-			event.target.classList.add('active');
-
-		} else {
-
-			const filtered = favorites.filter(product => product.name != productId);
-			favorites = [...filtered];
-
-			localStorage.setItem('favorites', JSON.stringify(favorites));
-			console.log(`${productId} was removed from local storage.`, favorites)
-
-			event.target.classList.remove('active');
-
-			//Re-render the updated favorites page, as the data might have changed!!
-			renderFavoritesView();
-		}
-	}
-})
-
-outlet.addEventListener('click', (event) => {
-
-	//Event listener variables.  Order them in DOM order.
-	const categoryId = event.target.closest('.category')?.dataset.id;
-	const details = event.target.closest('details');
-		
-	if(event.target.tagName === 'ICON-WRAPPER') {
-	
-		if(!details.open) {
-			//add the menu's data-id to local storage
-			openMenus.push(categoryId);
-			localStorage.setItem('openMenus', JSON.stringify(openMenus));
-			console.log('This menu is open and it\'s been stored in local storage!');			
-		} else {
-			//remove the menu's data-id from local storage	
-			const filtered = openMenus.filter(menuName => menuName != categoryId);
-			openMenus = [...filtered];
-
-			localStorage.setItem('openMenus', JSON.stringify(openMenus));
-			console.log('This menu is closed and it\'s been removed from local storage!');	
-		}
-	}
-})
-
-header.addEventListener('click', (event) => {
-	event.preventDefault();
-	if(event.target.id === 'about') {
-		renderAboutPage();
-	}
-
-	if(event.target.id === 'home') {
-		renderData();
-	}
-
-	if(event.target.id === 'favorites') {
-		renderFavoritesView();
-	}
-})
-
-
-	//Next, the rendered data has to reflect what's present in local storage, i.e. the favorites buttons have to be on if the objects are in there.  You'll need a renderFavorites() function that runs close to the beginning of the app.
-
-	//All that needs to be on the page visually is that the favorites button needs the right class.
+addEventListeners();
 
 </script>
 </body>

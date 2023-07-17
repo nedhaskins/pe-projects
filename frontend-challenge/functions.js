@@ -128,7 +128,9 @@ function iconClass(item) {
 
 	if(favorited) {
 		return "active";
-	} //will break out if no condition is here
+	} else {
+		return "";
+	}
 }
 
 function renderCard(item) {
@@ -207,4 +209,89 @@ function renderFavoritesView() {
 		template += `</ul></div>`;
 		outlet.innerHTML = template;
 	}
-}	
+}
+
+function addEventListeners() {
+/**Event listeners for 'outlet', the main output area for the application -- can hold any of the views available**/
+
+	outlet.addEventListener('click', (event) => {
+
+		//Initial variables to use in DOM and event listeners
+		const categoryId = event.target.closest('.category')?.dataset.id;
+		const price = outlet.querySelector('.price').textContent; 
+		const sale = outlet.querySelector('.sale').textContent;
+		const details = event.target.closest('details');
+
+
+		if(event.target.tagName === 'BUTTON') {
+
+			const productId = event.target.closest('product-card').dataset.id;
+
+			if(!event.target.classList.contains('active')) {
+				
+				const product = {
+					category: categoryId,
+					name: productId,
+					price: price,
+					sale: sale,
+					isFavorited: true,
+				}
+
+				favorites.push(product);
+				localStorage.setItem('favorites', JSON.stringify(favorites));
+				console.log(`${productId} was added to local storage successfully`, favorites);
+		
+				event.target.classList.add('active');
+
+			} else if (event.target.classList.contains('active')) {
+
+				const filtered = favorites.filter(product => product.name != productId);
+				favorites = [...filtered];
+
+				localStorage.setItem('favorites', JSON.stringify(favorites));
+				console.log(`${productId} was removed from local storage.`, favorites)
+
+				event.target.classList.remove('active');
+
+				//Re-render the updated favorites page, as the data might have changed!!
+				if(event.target.closest('div').className === 'favorites') {
+					renderFavoritesView();
+				}
+			}
+		}
+			
+		if(event.target.tagName === 'ICON-WRAPPER') {
+		
+			if(!details.open) {
+				//add the menu's data-id to local storage
+				openMenus.push(categoryId);
+				localStorage.setItem('openMenus', JSON.stringify(openMenus));
+				console.log('This menu is open and it\'s been stored in local storage!');			
+			} else {
+				//remove the menu's data-id from local storage	
+				const filtered = openMenus.filter(menuName => menuName != categoryId);
+				openMenus = [...filtered];
+
+				localStorage.setItem('openMenus', JSON.stringify(openMenus));
+				console.log('This menu is closed and it\'s been removed from local storage!');	
+			}
+		}
+	})
+
+	/**Event listeners for the header of the app.**/
+
+	header.addEventListener('click', (event) => {
+		event.preventDefault();
+		if(event.target.id === 'about') {
+			renderAboutPage();
+		}
+
+		if(event.target.id === 'home') {
+			renderData();
+		}
+
+		if(event.target.id === 'favorites') {
+			renderFavoritesView();
+		}
+	})
+}
