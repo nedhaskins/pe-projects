@@ -23,8 +23,8 @@ async function transformData() {
 				products: [
 					{
 						name: item.product,
-						price: parseFloat(item.price),
-						sale: parseFloat(item.sale),
+						price: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.price),
+						sale: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.sale),
 						isFavorited: false,
 					}
 				]
@@ -34,8 +34,8 @@ async function transformData() {
 		} else {
 			existingCategory.products.push({
 			name: item.product,
-			price: parseFloat(item.price),
-			sale: parseFloat(item.sale),
+			price: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.price),
+			sale: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.sale),
 			isFavorited: false,
 		});
 		}
@@ -134,6 +134,7 @@ function iconClass(item) {
 }
 
 function renderCard(item) {
+
 	return `
 		<product-card data-id="${item.name}">
 			<picture>
@@ -165,14 +166,14 @@ function renderCard(item) {
 				<h3 class="name">${item.name}</h3>
 			</div>
 			<div class="prices">
-				<div class="price"><p>${item.price}</p></div>
-				<div class="sale"><p>${item.sale}</p></div>
+				<p class="price">${item.price}</p>
+				<p class="sale">${item.sale}</p>
 			</div>
 		</product-card>
 	`;
 }
 
-
+//I need something that will return the original data as is if it's the favorites page.
 
 
 function renderAboutPage() {
@@ -195,7 +196,6 @@ function renderFavoritesView() {
 	//check local storage for items that are in favorites
 	//for each item in the local storage
 	if(favorites) {
-
 		var template = `
 			<div class="favorites">
 				<h2>favorites</h2>
@@ -218,15 +218,14 @@ function addEventListeners() {
 
 		//Initial variables to use in DOM and event listeners
 		const categoryId = event.target.closest('.category')?.dataset.id;
-		const price = outlet.querySelector('.price').textContent; 
-		const sale = outlet.querySelector('.sale').textContent;
 		const details = event.target.closest('details');
-
 
 		if(event.target.tagName === 'BUTTON') {
 
 			const productId = event.target.closest('product-card').dataset.id;
-
+			const price = event.target.closest('product-card').querySelector('.price').textContent; 
+			const sale = event.target.closest('product-card').querySelector('.sale').textContent;
+			
 			if(!event.target.classList.contains('active')) {
 				
 				const product = {
