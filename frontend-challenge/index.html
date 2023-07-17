@@ -264,15 +264,32 @@
 		border: 1px solid black;
 	}
 
-	product-card button {
+
+
+
+
+	/*Favorites icon styles.*/
+
+	.favorite-toggle {
 		position: absolute;
 		top: 4%;
 		right: 2%;
-	}
-
-	button.favorited, button.not-favorited {
 		width: 58px;
 	}
+
+	.favorite-toggle svg {
+		stroke: black;
+		stroke-width: 12.25px;
+	}
+
+	.favorite-toggle svg path {
+		fill: none;
+	}
+
+	.favorite-toggle.active svg path {
+		fill: red;
+	}
+
 
 	product-card .item-name {
 		font-style: italic;
@@ -313,19 +330,7 @@
 		background: none;
 	}
 
-	button.favorited svg, button.not-favorited svg {
-		stroke: black;
-		stroke-width: 12.25px;
-	}
-
-	button.favorited svg path {
-		fill: red;
-	}
-
-	button.not-favorited svg path {
-		fill: none;
-	}
-
+	
 
 
 
@@ -399,7 +404,7 @@ outlet.addEventListener('click', (event) => {
 
 		const productId = event.target.closest('product-card').dataset.id;
 
-		if(event.target.className === 'not-favorited') {
+		if(!event.target.classList.contains('active')) {
 			
 			const product = {
 				category: categoryId,
@@ -413,9 +418,9 @@ outlet.addEventListener('click', (event) => {
 			localStorage.setItem('favorites', JSON.stringify(favorites));
 			console.log(`${productId} was added to local storage successfully`, favorites);
 	
-			event.target.className = 'favorited';
+			event.target.classList.add('active');
 
-		} else if(event.target.className === 'favorited') {
+		} else {
 
 			const filtered = favorites.filter(product => product.name != productId);
 			favorites = [...filtered];
@@ -423,7 +428,7 @@ outlet.addEventListener('click', (event) => {
 			localStorage.setItem('favorites', JSON.stringify(favorites));
 			console.log(`${productId} was removed from local storage.`, favorites)
 
-			event.target.className = 'not-favorited';
+			event.target.classList.remove('active');
 
 			//Re-render the updated favorites page, as the data might have changed!!
 			renderFavoritesView();

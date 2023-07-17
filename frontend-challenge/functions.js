@@ -127,10 +127,8 @@ function iconClass(item) {
 	//returns true or false
 
 	if(favorited) {
-		return "favorited";
-	} else {
-		return "not-favorited";
-	}
+		return "active";
+	} //will break out if no condition is here
 }
 
 function renderCard(item) {
@@ -139,7 +137,7 @@ function renderCard(item) {
 			<picture>
 				<img src="photos/truly-cans.jpg">
 				</img>
-				<button class="${iconClass(item)}">
+				<button class="favorite-toggle ${iconClass(item)}">
 					<svg
 						width="100%"
 						height="100%"

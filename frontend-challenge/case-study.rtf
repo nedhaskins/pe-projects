@@ -58,7 +58,7 @@ put splash photos consistently in the right places\'85\
 \
 \
 \
-A great example of optional chaining.  This is necessary to reuse the product-card, as on the favorites page, the event listener won\'92t find an event target with a class of category\'94.\
+A great example of optional chaining.  This is necessary to reuse the product-card, as on the favorites page, the event listener won\'92t find an event target with a class of category\'94.  These are connected to the behavior of async functions!\
 \
 const categoryId = event.target.closest('.category')?.dataset.id;\
  \'97Using the renderFavorites() function to rerender after changes are made to the favorites page.\
@@ -66,5 +66,9 @@ const categoryId = event.target.closest('.category')?.dataset.id;\
 7/14\
 \
 The heart that changes sizes \'97 what causes this??\
--Codewars problem in PHP.\
--Making a VPN with PHP.}
+\
+The details element doesn\'92t deal with boxsizing properly.  More specifically, it doesn\'92t inherit the box-sizing attribute from its parent.  This causes some wonky size changes etc.\
+\
+*show a low-res video of the sizes changing*\
+\
+What causes this?  The presence of a details element on the main page changed how the box-sizing was being inherited on all of the elements below \'93details\'94.  \'93Details\'94 for some reason, did not inherit the box-sizing of its parent as specificed in the reset.}
