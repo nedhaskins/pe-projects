@@ -7,6 +7,10 @@ async function fetchData() {
 	}
 }
 
+function matchPhoto(item) {
+
+}
+
 async function transformData() {
 	var object = await fetchData();	
 	var transformedObject = object.reduce(function(acc, item) {
@@ -26,6 +30,7 @@ async function transformData() {
 						price: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.price),
 						sale: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.sale),
 						isFavorited: false,
+						photo: item.cat + "/" + item.product + ".jpg",
 					}
 				]
 			});
@@ -37,6 +42,7 @@ async function transformData() {
 			price: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.price),
 			sale: new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' }).format(item.sale),
 			isFavorited: false,
+			photo: item.cat + "/" + item.product + ".jpg",
 		});
 		}
 		return acc;
@@ -138,7 +144,8 @@ function renderCard(item) {
 	return `
 		<product-card data-id="${item.name}">
 			<picture>
-				<img src="photos/truly-cans.jpg">
+				<img src="photos/${item.photo}">
+
 				</img>
 				<button class="favorite-toggle ${iconClass(item)}">
 					<svg

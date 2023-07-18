@@ -242,7 +242,7 @@
 
 	.product-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 		gap: var(--defaultSpacing);
 		margin-top: 10px;
 	}
@@ -250,8 +250,10 @@
 	.product-list li  {
 		place-self: center;
 		border: 1px solid black;
-/*		padding: 8px;*/
-		max-width: 232px;
+
+		/*fluid type / shape sizing*/
+/*		max-width: 1fr;*/
+		height: 100%;
 		box-shadow: 3px 3px;
 	}
 
@@ -270,12 +272,12 @@
 	product-card {
 		display: grid;
 		grid-template-rows: auto 1fr auto;
-		height: 100%;
+
 	}
 
 	product-card picture {
 		position: relative;
-		border: 1px solid black;
+		border-bottom: 1px solid black;
 	}
 
 
@@ -297,7 +299,7 @@
 	}
 
 	.favorite-toggle svg path {
-		fill: none;
+		fill: white; /*grayChateau*/
 	}
 
 	.favorite-toggle.active svg path {
