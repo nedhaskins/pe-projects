@@ -241,6 +241,7 @@ function addEventListeners() {
 					price: price,
 					sale: sale,
 					isFavorited: true,
+					photo: categoryId + "/" + productId + ".jpg",
 				}
 
 				favorites.push(product);
