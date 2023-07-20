@@ -19,6 +19,11 @@ body.layout {
 	display: block;
 }
 
+body.layout .page-content {
+	margin: 0 auto;
+}
+
+
 .page-content {
 	display: flex;
 	flex-direction: column;

@@ -5,9 +5,9 @@ inner-column {
 
 
 .layout-5 {
-	display: flex;
+/*	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     width: 100%;
 }
 

@@ -131,6 +131,12 @@ svg .curve {
 	margin-top: 0px;
 }
 
+.style-guide {
+	.contact, .exercise, .four-oh-four {
+		height: unset;
+	}
+}
+
 @media (min-width: 900px) {
 	.style-guide .home, .style-guide .four-oh-four {
 		min-height: auto;

@@ -194,10 +194,6 @@ function renderAboutView() {
 	outlet.innerHTML = template;
 }
 
-
-
-
-
 function renderFavoritesView() {
 	//check local storage for items that are in favorites
 	//for each item in the local storage

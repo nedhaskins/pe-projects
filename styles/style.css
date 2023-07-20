@@ -138,6 +138,10 @@ body.layout {
   display: block;
 }
 
+body.layout .page-content {
+  margin: 0 auto;
+}
+
 .page-content {
   display: flex;
   flex-direction: column;
@@ -833,6 +837,10 @@ svg .curve {
 
 .style-guide .home h1.title-voice {
   margin-top: 0px;
+}
+
+.style-guide .contact, .style-guide .exercise, .style-guide .four-oh-four {
+  height: unset;
 }
 
 @media (min-width: 900px) {

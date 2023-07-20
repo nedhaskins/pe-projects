@@ -24,8 +24,8 @@
 
 @media(min-width: 600px) {
 	.layout-2 {
-	display: flex;
-	justify-content: center;
+/*	display: flex;
+	justify-content: center;*/
 	}
 }
 

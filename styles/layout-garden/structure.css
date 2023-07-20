@@ -1,10 +1,15 @@
-inner-column {
+.page-content {
 	display: block;
-/*	flex-direction: column;*/
-		max-width: 1920px; /*default*/
-		padding: 10px;
+	margin: 0 auto;
 }
 
+inner-column {
+	display: block;
+	margin: 0 auto;
+/*	flex-direction: column;*/
+		max-width: 960px; /*default*/
+		padding: 10px;
+}
 
 @media (min-width: 715px){
 	inner-column {
