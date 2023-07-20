@@ -218,6 +218,18 @@ function renderFavoritesView() {
 	}
 }
 
+function renderContactView() {
+	var template = `
+		<div class='contact'>
+			<h1>Want to learn more?</h1>
+			<p>Ned Haskins is a web designer based in Richmond, Virginia.</p>
+			<p>He loves to connect with clients and work with them to achieve their goals!</p>
+			<p>Email him at <a href="mailto:hello@nedhaskins.io">hello@nedhaskins.io</a> to start a conversation!</p>
+		</div>
+	`;
+	outlet.innerHTML = template;
+}
+
 function addEventListeners() {
 /**Event listeners for 'outlet', the main output area for the application -- can hold any of the views available**/
 
@@ -289,16 +301,20 @@ function addEventListeners() {
 
 	header.addEventListener('click', (event) => {
 		event.preventDefault();
-		if(event.target.id === 'about') {
-			renderAboutPage();
-		}
-
 		if(event.target.id === 'home') {
 			renderData();
 		}
 
+		if(event.target.id === 'about') {
+			renderAboutPage();
+		}
+
 		if(event.target.id === 'favorites') {
 			renderFavoritesView();
+		}
+
+		if(event.target.id === 'contact') {
+			renderContactView();
 		}
 	})
 }

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="photos/favicon.png" />
 	<title>Front End Engineer Challenge</title>
 	<meta property="og:image" content="photos/escher-relativity.jpg">
 	<meta name="description" content="Using native HTML, CSS and JavaScript to craft a simple frontend prototype for an e-commerce site.">
@@ -158,6 +159,10 @@
 		border-radius: 100%;
 	}
 
+	#home {
+		cursor: pointer;
+	}
+
 
 	header inner-column h1 {
 		align-self: center;
@@ -248,11 +253,8 @@
 	}
 
 	.product-list li  {
-		place-self: center;
+/*		place-self: center;*/
 		border: 1px solid black;
-
-		/*fluid type / shape sizing*/
-/*		max-width: 1fr;*/
 		height: 100%;
 		box-shadow: 3px 3px;
 	}
@@ -271,7 +273,7 @@
 
 	product-card {
 		display: grid;
-		grid-template-rows: auto 1fr auto;
+		grid-template-rows: auto 1fr 1fr;
 
 	}
 
@@ -345,6 +347,27 @@
 	button {
 		border: none;
 		background: none;
+	}
+
+	/*Contact page styles*/
+
+	.contact {
+		display: grid;
+	}
+
+	.contact h1 {
+		font-size: 28px;
+		font-weight: 700;
+		margin-top: 20px;
+	}
+
+	.contact p {
+		font-size: 18px;
+		line-height: 1.7em;
+	}
+
+	.contact p:nth-of-type(1) {
+		margin-top: 20px;
 	}
 
 
