@@ -16,6 +16,14 @@ a {
 	color: inherit;
 }
 
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: purple;
+}
+
 p a {
 	display: inline;
 	color: blue;

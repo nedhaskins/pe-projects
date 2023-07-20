@@ -183,13 +183,12 @@ function renderCard(item) {
 //I need something that will return the original data as is if it's the favorites page.
 
 
-function renderAboutPage() {
+function renderAboutView() {
 	const template = `
 		<section class="about">
-			<p>This is a frontend engineer challenge.</p>
-			<p>State the goals of the project.</p>
-			<p>Explain each component.</p>
-			<p>In fact, the entire case study should probably go here.</p>
+			<p>The objective of this project was to use native HTML, CSS and JavaScript to craft<br>a simple frontend prototype for an e-commerce site.</p>
+			<p>Click <a href="https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf">here</a> to view the project requirements!</p>
+			<p>Click <a href="#">here</a> to read an in-depth case study of the project.</p>
 		</section>`;
 
 	outlet.innerHTML = template;
@@ -306,7 +305,7 @@ function addEventListeners() {
 		}
 
 		if(event.target.id === 'about') {
-			renderAboutPage();
+			renderAboutView();
 		}
 
 		if(event.target.id === 'favorites') {
