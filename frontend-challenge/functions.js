@@ -7,10 +7,6 @@ async function fetchData() {
 	}
 }
 
-function matchPhoto(item) {
-
-}
-
 async function transformData() {
 	var object = await fetchData();	
 	var transformedObject = object.reduce(function(acc, item) {
@@ -140,12 +136,10 @@ function iconClass(item) {
 }
 
 function renderCard(item) {
-
 	return `
 		<product-card data-id="${item.name}">
 			<picture>
-				<img src="photos/${item.photo}">
-
+				<img src="photos/${item.photo}" alt="${item.name}">
 				</img>
 				<button class="favorite-toggle ${iconClass(item)}">
 					<svg

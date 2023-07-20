@@ -1,9 +1,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 HelveticaNeue-BoldItalic;
+}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red2\green2\blue2;\red211\green214\blue218;
-}
+\red2\green2\blue2;\red211\green214\blue218;}
 {\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c785\c785\c784\c5882;\cssrgb\c85986\c87164\c88233;
-}
+\cssrgb\c785\c785\c784\c5882;\cssrgb\c85986\c87164\c88233;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \margl1440\margr1440\vieww13660\viewh15680\viewkind0
@@ -92,7 +93,7 @@ Front End Engineer Challenge\
 \
 \pard\pardeftab720\partightenfactor0
 
-\f1\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec4 Using native HTML, CSS and JavaScript to craft a simple frontend prototype for an e-commerce site.\
 \
 At the outset of this project I wanted to be clear what needed to be done \'97 and be able to read between the lines and discern the hidden requirements.\
@@ -103,20 +104,13 @@ What are the written goals?\
 -Each product has a favorites toggle that adds and removes items from local storage, making choices persistent.\
 -Semantic (custom HTML tags), accessible(easy for screen readers to parse), responsive(displays well across all screen sizes), and discoverable(includes metadata).\
 \
-\
-\
-\
 What are the unwritten goals?\
 -Proper scoping of JavaScript.\
 -Using a visual design language that\'92s clear and to the point.\
 \
-\
-\
-\
-\
-\
-\
-Designing the layout\
+
+\f2\i\b\fs48 Designing the layout
+\f1\i0\b0\fs36 \
 \
 The layout needed to follow a tried-and-tested format.  While inventiveness is rewarding as a creative endeavor and learning exercise, it\'92s not relevant for this project.  The components of the site need to be immediately familiar so the logic of what to do next is perfectly clear.\
 \
@@ -124,10 +118,39 @@ The layout needed to follow a tried-and-tested format.  While inventiveness is r
 \
 What layout works best?  Started with unordered lists and list items.  Having a conversation with a fellow developer revealed the native HTML elements that create a built-in hierarchy:  <details> and <summary>.\
 \
-Each product list\
+The category list is in block format, and the dropdown of product cards is the \'93slot\'94 value inside the <details> tag.  The <summary> tag holds the category title.\
+\
+Each product list is displayed with all product cards in a grid.  Each card has a photo of the product, its name, a normal price (crossed out), a sale price(in bold), and a favorites icon, which can be toggled on and off and has a class that is tied to that event.\
 \
 \
-Architecting the code\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b\fs48 \cf2 \cb5 \outl0\strokewidth0 Architecting the code
+\f1\i0\b0\fs36 \cb3 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+The app runs off the following files:\
+an index.html file.  The CSS for the project is all contained in a single <style> tag in this file.\
+a functions.js file\
+a main.css stylesheet\
+\
+As many functions as possible are used to achieve various tasks within the app.\
+The main points of interest are:\
+-Using JavaScript to render out the appropriate HTML\
+-Having a function to add all event listeners\
+-Using responsive layout techniques with CSS\
+	-Grid was used for nearly all flexible items.  Flexbox was used for one item in the header that needed a wrap property.\
+\
+-Having the visual traits of the dropdown arrow change as the <detail>\'92s tag changes from open to closed (done with CSS)\
+\
+-Using functions to change the HTML output (using the .outerHTML method) depending on if a method has a certain ID attached\
+\
+\
+\
+\
+\
+\
 \
 \
 Accesibility\

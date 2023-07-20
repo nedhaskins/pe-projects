@@ -13,7 +13,7 @@
 	@import 'reset.css';
 	@import 'setup.css';
 
-	/*Dealing with the particular <details> element issue on this site.*/
+	/*Dealing with the particular <details> element issue on this site where box-sizing isn't properly inherited on the page*/
 
 	details div {
 		box-sizing: border-box;
@@ -81,7 +81,7 @@
 
 	/*Typography*/
 
-	h1 {
+	h1.title {
 		letter-spacing: 0.06em;
 		line-height: 1.1em;
 	}
@@ -118,7 +118,7 @@
 		font-family: 'Arial', sans-serif;
 	}
 
-	@media(prefers-color-scheme: dark) {
+/*	@media(prefers-color-scheme: dark) {
 		html {
 			color: white;
 		}
@@ -126,7 +126,7 @@
 		body {
 			background-color: black;
 		}
-	}
+	}*/
 
 	body {
 /*		padding: 5px;*/
@@ -382,6 +382,14 @@
 
 	.contact p:nth-of-type(1) {
 		margin-top: 20px;
+	}
+
+	section.about {
+		margin-top: 40px;
+	}
+
+	.contact h1 {
+		letter-spacing: 0.02em;
 	}
 
 
