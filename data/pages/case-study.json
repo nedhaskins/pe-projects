@@ -1274,5 +1274,67 @@
 				"content": "The journey of software development is one of continuous improvement and empathy.  This project greatly increased my technical skills and confidence with JavaScript and brought home the notion that all of the tools we use don’t exist in isolation, so it was ultimately a journey to a “higher level of resolution” in my work and thought processes."
 			}
 		]
+	},
+	{
+		"slug": "frontend-challenge",
+		"siteXtensionType": "html",
+		"title": "front end engineer challenge",
+		"subtitle": "Using native HTML, CSS and JavaScript to craft a simple frontend prototype for an e-commerce site.",
+		"htmlContent": [
+			{
+				"tag": "details",
+				"content": [
+					{
+						"tag": "summary",
+						"content": [
+							{
+								"tag": "h2",
+								"content": "Secondary header. Design"
+							}
+						]
+					},
+					{
+						"tag": "p",
+						"content": "Chandler doubloon jury mast killick to go on account hang the jib Admiral of the Black swing the lead take a caulk fire ship. Rigging overhaul doubloon ye topmast capstan chase Sail ho wherry cog. Coffer quarter hogshead Yellow Jack clap of thunder barkadeer pressgang brigantine Pirate Round scurvy."
+					}
+				]
+			},
+			{
+				"tag": "details",
+				"content": [
+					{
+						"tag": "summary",
+						"content": [
+							{
+								"tag": "h2",
+								"content": "Secondary header. Architect"
+							}
+						]
+					},
+					{
+						"tag": "p",
+						"content": "Pirate scallywag Cat o'nine tails prow execution dock spanker gibbet tack Nelsons folly fore. Transom rutters run a shot across the bow rigging run a rig Barbary Coast red ensign doubloon scuppers tackle. Ho Shiver me timbers boatswain cutlass Blimey hail-shot Nelsons folly smartly Corsair chantey."
+					}
+				]
+			},
+			{
+				"tag": "details",
+				"content": [
+					{
+						"tag": "summary",
+						"content": [
+							{
+								"tag": "h2",
+								"content": "Secondary header. Implement"
+							}
+						]
+					},
+					{
+						"tag": "p",
+						"content": "Run a shot across the bow bounty Sail ho yard hempen halter long clothes fluke handsomely nipperkin hornswaggle. Yawl Pirate Round landlubber or just lubber loaded to the gunwalls red ensign fluke run a rig Brethren of the Coast weigh anchor poop deck. Letter of Marque booty me run a shot across the bow hearties wench snow trysail overhaul line."
+					}
+				]
+			}
+		]
 	}
 ]

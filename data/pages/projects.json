@@ -6,7 +6,6 @@
     ],
     "projects": [
         {
-            "id": "111",
             "slug": "ninja-strings",
             "name": "ninja strings",
             "caseStudy": true,
@@ -22,8 +21,26 @@
                 "Content Strategy"
             ]
         },
+                {
+            "slug": "frontend-challenge",
+            "name": "front end engineer challenge",
+            "caseStudy": true,
+            "description": "Using native HTML, CSS and JavaScript to craft a simple frontend prototype for an e-commerce site.",
+            "image": "images/frontend-challenge-cover.png",
+            "url": "",
+            "languages": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "keywords": [
+                "Responsive",
+                "Vanilla code",
+                "Theming",
+                "Accessibility"
+            ]
+        },
         {
-            "id": "0",
             "slug": "funko-pop-east-coast",
             "name": "funko pop east coast",
             "caseStudy": true,
@@ -40,7 +57,6 @@
             ]
         },
         {
-            "id": 43,
             "slug": "figma-to-code",
             "name": "figma-to-code",
             "caseStudy": true,
@@ -59,7 +75,6 @@
             ]
         },
         {
-            "id": 4,
             "slug": "highways-of-virginia",
             "name": "highways of virginia",
             "caseStudy": true,
@@ -78,7 +93,6 @@
             ]
         },
         {
-            "id": 3,
             "slug": "theme-challenge",
             "name": "outer banks vacation rentals",
             "caseStudy": true,
