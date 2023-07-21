@@ -1,3 +1,5 @@
+<!--For projects without a case study.-->
+
 <?php
 	$sections = $pageData['sections'];
 ?>

@@ -8,6 +8,16 @@
 	<meta property="og:image" content="photos/escher-relativity.jpg">
 	<meta name="description" content="Using native HTML, CSS and JavaScript to craft a simple frontend prototype for an e-commerce site.">
 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELQD10N4WN"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-ELQD10N4WN');
+	</script>
+
 <style>
 
 	@import 'reset.css';
@@ -78,7 +88,6 @@
 	  }
 	}
 
-
 	/*Typography*/
 
 	h1.title {
@@ -118,20 +127,7 @@
 		font-family: 'Arial', sans-serif;
 	}
 
-/*	@media(prefers-color-scheme: dark) {
-		html {
-			color: white;
-		}
-
-		body {
-			background-color: black;
-		}
-	}*/
-
 	body {
-/*		padding: 5px;*/
-/*		display: grid;
-		grid-template-rows: auto 1fr;*/
 		background-color: white;
 		padding: var(--defaultSpacing);
 		overflow-y: scroll;
@@ -147,14 +143,12 @@
 		max-width: 720px;
 	}
 
-
 	/*Header styles*/
 
 	header inner-column {
 		display: grid;
 		grid-template-columns: auto 1fr auto;
 		grid-gap: var(--defaultSpacing);
-/*		padding: 18px;*/
 	}
 
 	header inner-column img-wrapper {
@@ -176,7 +170,6 @@
 	#home:hover {
 		stroke: red;
 	}
-
 
 	header inner-column h1 {
 		align-self: center;
@@ -297,9 +290,6 @@
 	}
 
 
-
-
-
 	/*Favorites icon styles.*/
 
 	.favorite-toggle {
@@ -392,10 +382,7 @@
 		letter-spacing: 0.02em;
 	}
 
-
 </style>
-
-
 </head>
 <body>
 	<header>
@@ -403,43 +390,37 @@
 			<img-wrapper class='road-icon'>
 				<img id="home" src="photos/Eye-of-Horus.jpg" alt="Eye of Horus icon">
 			</img-wrapper>
-
 			<h1 class='title'>Front End Engineer Challenge</h1>
-			
-		<!-- 	<button class='toggle menu-icon'>
-				<?php include('./images/menu-icon.php'); ?>
-			</button> -->
-			
 			<nav class="site-menu">
 				<ul>
 					<li><a id="about" href=''>About</a></li>
 					<li><a id="favorites" href='#'>Favorites</a></li>
 					<li><a id="contact" href='#'>Contact</a></li>
 				</ul>
-				<!-- <button class="toggle small-screen">Close</button> -->
 			</nav>
 		</inner-column>
 	</header>
-	<main><inner-column class="main"></inner-column></main>
+	<main>
+		<inner-column class="main"></inner-column>
+	</main>
+	<script src="functions.js"></script>
+	<script>
+		
+	console.clear();
 
-<script src="functions.js"></script>
-<script>
-	
-console.clear();
+	//Initialize local storage and place all favorites data and open menus into an accessible object.
+	var favorites = JSON.parse( localStorage.getItem('favorites') ) || [];
+	var openMenus = JSON.parse( localStorage.getItem('openMenus') ) || [];
 
-//Initialize local storage and place all favorites data and open menus into an accessible object.
-var favorites = JSON.parse( localStorage.getItem('favorites') ) || [];
-var openMenus = JSON.parse( localStorage.getItem('openMenus') ) || [];
+	//Set up an area to put event listeners.
+	const header = document.querySelector('header');
+	const outlet = document.querySelector('.main');
 
-//Set up an area to put event listeners.
-const header = document.querySelector('header');
-const outlet = document.querySelector('.main');
+	renderData();
 
-renderData();
+	addEventListeners();
 
-addEventListeners();
-
-</script>
+	</script>
 </body>
 </html>
 

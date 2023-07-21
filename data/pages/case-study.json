@@ -1289,6 +1289,7 @@
 						"content": [
 							{
 								"tag": "h2",
+								"class": "summary-title",
 								"content": "Secondary header. Design"
 							}
 						]
@@ -1307,6 +1308,7 @@
 						"content": [
 							{
 								"tag": "h2",
+								"class": "summary-title",
 								"content": "Secondary header. Architect"
 							}
 						]
@@ -1325,6 +1327,7 @@
 						"content": [
 							{
 								"tag": "h2",
+								"class": "summary-title",
 								"content": "Secondary header. Implement"
 							}
 						]

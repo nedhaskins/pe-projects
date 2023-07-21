@@ -39,14 +39,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/data\/archive-projects.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/data\/archive-projects-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/data\/case-studies\/figma-to-code\/figure-1.png" : {
       "ft" : 32768,
       "iS" : 99385,
@@ -1018,6 +1010,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/data\/pages\/frontend-challenge.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/data\/pages\/frontend-challenge-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/data\/pages\/home.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1070,14 +1070,6 @@
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/data\/pages\/the-lab-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/data\/site-map.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/data\/site-map-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
@@ -1144,6 +1136,32 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/frontend-challenge\/case-study\/initial-data.jpg" : {
+      "ft" : 16384,
+      "iS" : 69233,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/frontend-challenge\/case-study\/initial-data.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/frontend-challenge\/case-study\/transformed-data.jpg" : {
+      "ft" : 16384,
+      "iS" : 221795,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/frontend-challenge\/case-study\/transformed-data.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/frontend-challenge\/data-munging.js" : {
@@ -1823,6 +1841,17 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/frontend-challenge\/scratch.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/frontend-challenge\/scratch-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/frontend-challenge\/setup.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1987,6 +2016,19 @@
       "iS" : 60348,
       "oA" : 0,
       "oAP" : "\/images\/figma-to-code.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/images\/frontend-challenge-cover.png" : {
+      "ft" : 32768,
+      "iS" : 123703,
+      "oA" : 0,
+      "oAP" : "\/images\/frontend-challenge-cover.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

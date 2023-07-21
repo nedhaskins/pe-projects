@@ -49,6 +49,7 @@ async function transformData() {
 async function renderData() {	
 	var array = await transformData();
 	renderHomeView(array);
+	console.log(array);
 }	
 
 
