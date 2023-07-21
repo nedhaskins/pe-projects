@@ -16,9 +16,7 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'G-ELQD10N4WN');
-	  gtag('event', 'favorite_trigger', {
-	  	test: 'test'
-	  })
+
 	</script>
 
 <style>
@@ -422,6 +420,12 @@
 	renderData();
 
 	addEventListeners();
+
+	window.addEventListener('click', (event) => {
+		if(event.target.dataset.gtag === 'favorite_trigger') {
+			gtag('event', 'favorite_trigger', { test: 'test2' });
+		}
+	})
 
 	</script>
 </body>

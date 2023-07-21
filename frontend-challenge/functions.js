@@ -142,7 +142,7 @@ function renderCard(item) {
 			<picture>
 				<img src="photos/${item.photo}" alt="${item.name}">
 				</img>
-				<button class="favorite-toggle ${iconClass(item)}">
+				<button class="favorite-toggle ${iconClass(item)}" data-gtag="favorite_trigger">
 					<svg
 						width="100%"
 						height="100%"
