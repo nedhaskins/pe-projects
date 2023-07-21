@@ -57,7 +57,6 @@ foreach($caseStudies as $caseStudy) {
 								echo "<li>" . $contentBlock['content'] . "</li>";
 							}
 
-						
 						} elseif($tag === 'codepen') {
 							
 							$penID = $block['penID'] ?? null;
@@ -69,9 +68,6 @@ foreach($caseStudies as $caseStudy) {
 							$filepath = $block['filepath'];
 								include($filepath);
 
-
-
-						//If the tag is a <details> element, 
 						} elseif($tag === 'details') {
 							echo "<details>";
 							foreach($content as $contentBlock) {
@@ -80,10 +76,15 @@ foreach($caseStudies as $caseStudy) {
 								if($contentBlock['tag'] === 'summary') {
 									echo "<summary>";
 									//loop through the items and render each of them
+									echo "<svg-wrapper>";
+									include('images/windmill.svg');
+									echo "</svg-wrapper>";
+									
 									foreach($contentBlock['content'] as $item) {
-										echo "<" . $item['tag'] . ">";
+										echo "<" . $item['tag'] . " class='" . $item['class'] . "'>";
 										echo $item['content'];
 										echo "</" . $item['tag'] . ">";
+									
 									}
 									echo "</summary>";
 

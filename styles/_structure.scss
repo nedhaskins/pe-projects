@@ -73,4 +73,41 @@ link-wrapper {
 	}
 }
 
+/*CASE STUDY CLASS STYLES*/
+
+
+
+summary {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+
+	svg-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+	
+		svg {
+			fill: var(--sweetcorn);
+		}
+	}
+
+	h2.summary-title {
+		margin-top: unset;
+	}
+}
+
+// summary .icon {
+// 	position: absolute;
+// 	width: 30px;
+// 	right: 100%;
+// 	top: 50%;
+// 	transform: translate(0, 50%);
+// 	margin-right: 7px;
+// 	margin-top: 0.1em;
+// }
+
 

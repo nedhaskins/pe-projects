@@ -186,6 +186,27 @@ link-wrapper {
     max-width: 669px;
   }
 }
+/*CASE STUDY CLASS STYLES*/
+summary {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+summary svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+summary svg-wrapper svg {
+  fill: var(--sweetcorn);
+}
+summary h2.summary-title {
+  margin-top: unset;
+}
+
 html {
   font-family: "Baskerville";
 }
