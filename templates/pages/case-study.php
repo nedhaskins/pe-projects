@@ -20,7 +20,7 @@ foreach($caseStudies as $caseStudy) {
 	$subtitle = $caseStudy ['subtitle'];
 	$htmlContent = $caseStudy['htmlContent'];
 
-	$url = $caseStudy ['url'];
+	$url = $caseStudy ['url'] ?? false;
 	
 	if($caseStudy['slug'] == $_GET['slug']) { ?>
 
@@ -56,7 +56,7 @@ foreach($caseStudies as $caseStudy) {
 							foreach($content as $contentBlock) {
 								echo "<li>" . $contentBlock['content'] . "</li>";
 							}
-							echo "</ul>";
+
 						
 						} elseif($tag === 'codepen') {
 							
@@ -68,13 +68,39 @@ foreach($caseStudies as $caseStudy) {
 
 							$filepath = $block['filepath'];
 								include($filepath);
-						
+
+
+
+						//If the tag is a <details> element, 
+						} elseif($tag === 'details') {
+							echo "<details>";
+							foreach($content as $contentBlock) {
+
+								//If the content block has a tag of "summary"
+								if($contentBlock['tag'] === 'summary') {
+									echo "<summary>";
+									//loop through the items and render each of them
+									foreach($contentBlock['content'] as $item) {
+										echo "<" . $item['tag'] . ">";
+										echo $item['content'];
+										echo "</" . $item['tag'] . ">";
+									}
+									echo "</summary>";
+
+								} else {
+									echo "<" . $contentBlock['tag'] . " class=" . $contentBlock['class'] . ">";
+									echo $contentBlock['content'];
+									echo "</" . $contentBlock['tag'] . ">"; 
+								}
+							}			
+							echo "</details>";
+
+						//The catch for all other tags.
 						} else {
-						
 							echo "<" . $tag . " class=" . $class . ">";
 							echo $content;
 						}
-						echo "</" . $tag . ">";
+						echo "</" . $tag . ">"; //this catches all of the possible tag endings
 
 					} ?>
 
