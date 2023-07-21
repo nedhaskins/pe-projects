@@ -423,7 +423,8 @@
 
 	window.addEventListener('click', (event) => {
 		if(event.target.dataset.gtag === 'favorite_trigger') {
-			gtag('event', 'favorite_trigger', { test: 'test2' });
+			const name = event.target.closest('product-card').dataset.id;
+			gtag('event', 'favorite_trigger', { productName: name });
 		}
 	})
 
