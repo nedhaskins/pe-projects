@@ -1191,6 +1191,17 @@
       "oAP" : "\/frontend-challenge\/frontend-arrays.afdesign",
       "oF" : 0
     },
+    "\/frontend-challenge\/functions-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/frontend-challenge\/functions-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/frontend-challenge\/functions.js" : {
       "bF" : 0,
       "ft" : 64,

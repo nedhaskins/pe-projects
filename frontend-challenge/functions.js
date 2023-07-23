@@ -307,4 +307,13 @@ function addEventListeners() {
 			renderContactView();
 		}
 	})
+
+	/**Event listeners for the gtag (Google Analytics) captures.**/
+
+	window.addEventListener('click', (event) => {
+		if(event.target.dataset.gtag === 'favorite_trigger') {
+			const name = event.target.closest('product-card').dataset.id;
+			gtag('event', 'favorite_trigger', { productName: name });
+		}
+	})
 }

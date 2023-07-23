@@ -71,7 +71,6 @@ foreach($caseStudies as $caseStudy) {
 						} elseif($tag === 'details') {
 							echo "<details>";
 							foreach($content as $contentBlock) {
-
 								//If the content block has a tag of "summary"
 								if($contentBlock['tag'] === 'summary') {
 									echo "<summary>";
@@ -79,15 +78,12 @@ foreach($caseStudies as $caseStudy) {
 									echo "<svg-wrapper>";
 									include('images/windmill.svg');
 									echo "</svg-wrapper>";
-									
 									foreach($contentBlock['content'] as $item) {
 										echo "<" . $item['tag'] . " class='" . $item['class'] . "'>";
 										echo $item['content'];
 										echo "</" . $item['tag'] . ">";
-									
 									}
 									echo "</summary>";
-
 								} else {
 									echo "<" . $contentBlock['tag'] . " class=" . $contentBlock['class'] . ">";
 									echo $contentBlock['content'];

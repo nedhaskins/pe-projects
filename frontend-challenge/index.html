@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -420,13 +420,6 @@
 	renderData();
 
 	addEventListeners();
-
-	window.addEventListener('click', (event) => {
-		if(event.target.dataset.gtag === 'favorite_trigger') {
-			const name = event.target.closest('product-card').dataset.id;
-			gtag('event', 'favorite_trigger', { productName: name });
-		}
-	})
 
 	</script>
 </body>
