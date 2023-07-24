@@ -140,7 +140,7 @@ function renderCard(item) {
 	return `
 		<product-card data-id="${item.name}">
 			<picture>
-				<img src="photos/${item.photo}" alt="${item.name}">
+				<img width="300" height="300" src="photos/${item.photo}" alt="${item.name}">
 				</img>
 				<button class="favorite-toggle ${iconClass(item)}" data-gtag="favorite_trigger">
 					<svg
