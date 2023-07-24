@@ -1337,6 +1337,204 @@
 						"content": "Run a shot across the bow bounty Sail ho yard hempen halter long clothes fluke handsomely nipperkin hornswaggle. Yawl Pirate Round landlubber or just lubber loaded to the gunwalls red ensign fluke run a rig Brethren of the Coast weigh anchor poop deck. Letter of Marque booty me run a shot across the bow hearties wench snow trysail overhaul line."
 					}
 				]
+			},
+			{
+				"tag": "p",
+				"content": "At the outset of this project I wanted to be clear what needed to be done — and be able to read between the lines and discern the hidden requirements."
+			},
+			{
+				"tag": "h4",
+				"content": "What are the written goals?"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "Create a dropdown menu that displays products."
+					},
+					{
+						"tag": "li",
+						"content": "Each product has a favorites toggle that adds and removes items from local storage, making choices persistent."
+					},
+					{
+						"tag": "li",
+						"content": "Semantic (custom HTML tags), accessible (easy for screen readers to parse), responsive (displays well across all screen sizes), and discoverable (includes metadata)."
+					}
+				]
+			},
+			{
+				"tag": "h4",
+				"content": "What are the unwritten goals?"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "Proper scoping of JavaScript."
+					},
+					{
+						"tag": "li",
+						"content": "Using a visual design language that’s clear and to the point."
+					}
+				]
+			},
+			{
+				"tag": "h3",
+				"content": "Designing the layout"
+			},
+			{
+				"tag": "p",
+				"content": "The layout needed to follow a tried-and-tested format.  While inventiveness is rewarding as a creative endeavor and learning exercise, it’s not relevant for this project.  The components of the site need to be immediately familiar so the logic of what to do next is perfectly clear."
+			},
+			{
+				"tag": "p",
+				"content": "What layout works best?  Started with unordered lists and list items.  Having a conversation with a fellow developer revealed the native HTML elements that create a built-in hierarchy: <code class='inline-code'>&lt;details&gt;</code> and <code class='inline-code'>&lt;summary&gt;</code>."
+			},
+			{
+				"tag": "p",
+				"content": "The category list is in block format, and the dropdown of product cards is the “slot” value inside the <code class='inline-code'>&lt;details&gt;</code> tag.  The <code>&lt;summary&gt;</code> tag holds the category title."
+			},
+			{
+				"tag": "p",
+				"content": "Each product list is displayed with all product cards in a grid.  Each card has a photo of the product, its name, a normal price (crossed out), a sale price(in bold), and a favorites icon, which can be toggled on and off and has a class that is tied to that event."
+			},
+			{
+				"tag": "h3",
+				"content": "Architecting the code"
+			},
+			{
+				"tag": "p",
+				"content": "The app runs off the following files:"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "an <code class='inline-code'>index.html</code> file.  The CSS for the project is all contained in a single <code class='inline-code'>&lt;style&gt;</code> tag in this file."
+					},
+					{
+						"tag": "li",
+						"content": "a <code class='inline-code'>functions.js</code> file"
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "As many functions as possible are used to achieve various tasks within the app. The main points of interest are"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "Using JavaScript to render out the appropriate HTML"
+					},
+					{
+						"tag": "li",
+						"content": "Having a function to add all event listeners"
+					},
+					{
+						"tag": "li",
+						"content": "Using responsive layout techniques with CSS. <code>display: grid</code> was used for nearly all flexible items.  Flexbox was used for one item in the header that needed a wrap property."
+					},
+					{
+						"tag": "li",
+						"content": "Having the visual traits of the dropdown arrow change as the <detail>’s tag changes from open to closed (done with CSS)"
+					},
+					{
+						"tag": "li",
+						"content": "Using functions to change the HTML output (using the <code>.outerHTML</code> method) depending on if a method has a certain <code>id</code> attached"
+					},
+					{
+						"tag": "li",
+						"content": "Having a function to add all event listeners"
+					}
+				]
+			},
+			{
+				"tag": "h4",
+				"content": "A responsive web page"
+			},
+			{
+				"tag": "p",
+				"content": "<code class='inline-code'>display: grid</code> is used for most of the major components of the site.-the header inner-column"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "the <code class='inline-code'>&lt;summary&gt;</code> section"
+					},
+					{
+						"tag": "li",
+						"content": "the <product-list> unordered list"
+					},
+					{
+						"tag": "li",
+						"content": "the <product-cards> themselves.  The grid for these is set to <code>auto 1fr 1fr</code>, a cell each for the product photo, the list price, and the sale price.  The <code>auto</code> cell allows for the photo to grow and shrink as need without creating any extra padding / unused space.  The <code>1 fr</code> setting"
+					}
+				]
+			},
+			{
+				"tag": "h4",
+				"content": "Accessibility"
+			},
+			{
+				"tag": "p",
+				"content": "Google's Lighthouse test revealed that <code class='inline-code'>&lt;button&gt;</code> elements need a name attribute to be picked up by screen readers."
+			},
+			{
+				"tag": "h3",
+				"content": "Challenges"
+			},
+			{
+				"tag": "h4",
+				"content": "Performance"
+			},
+			{
+				"tag": "p",
+				"content": "The two biggest contributors to the pass/fail condition of the Lighthouse tests in this case are"
+			},
+			{
+				"tag": "ul",
+				"content": [
+					{
+						"tag": "li",
+						"content": "if the <code class='inline-code'>&lt;button&gt;</code> tag has a name that's accessible to screen readers"
+					},
+					{
+						"tag": "li",
+						"content": "if there's an explicit width / height set for <img> elements - and if the rendered image size is less than or equal to the intrinsic size"
+					},
+					{
+						"tag": "li",
+						"content": "the <product-cards> themselves.  The grid for these is set to <code>auto 1fr 1fr</code>, a cell each for the product photo, the list price, and the sale price.  The <code class='inline-code'>auto</code> cell allows for the photo to grow and shrink as need without creating any extra padding / unused space.  The <code class='inline-code'>1 fr</code> setting"
+					}
+				]
+			},
+			{
+				"tag": "p",
+				"content": "The image condition is difficult to set - it's a compromise between image quality and how long it takes to load that image.  Modern responsive image tools include CDNs made specifically for this purpose and using the <code>srcset</code> attribute within <code><img></code> elements to import specifc image files based on the current window size."
+			},
+			{
+				"tag": "h4",
+				"content": "Number formatting"
+			},
+			{
+				"tag": "p",
+				"content": "The numeric data in the JSON file pulled from the API is in string format — and when it’s stored in local storage, will remain in string format.  The numbers needed to be formatted in currency and fixed to two decimal places — but the <code>.toFixed()</code> method can’t be used on strings."
+			},
+			{
+				"tag": "h3",
+				"content": "Conclusion"
+			},
+			{
+				"tag": "p",
+				"content": "The most important aspect of building any protoype is to give proper attention and care to the planning phase. By breaking up a project into components with definable \"touch points\" to signal the end of one task and the start of another, it's easier not only to define those tasks but also to delegate those tasks to people with the subject-matter expertise to handle them.  This project, at its highest level, can be broken up into two phases - \"everything before the code\" and \"the coding phase\". The first phase involves research, visual design, researching UI prototypes, and writing as much pseudocode as possible (for by doing this one is actually writing out a lot of the logic for each of the components of the prototype -- and this, if the developer plays their cards right -- will be easily transferable into whatever language they're working in!"
 			}
 		]
 	}

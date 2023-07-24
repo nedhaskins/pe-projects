@@ -1512,12 +1512,25 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/frontend-challenge\/photos\/gifts\/Gift Cards.jpg" : {
+    "\/frontend-challenge\/photos\/Frost Flex.jpg" : {
+      "ft" : 16384,
+      "iS" : 5176,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/frontend-challenge\/photos\/Frost Flex.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/frontend-challenge\/photos\/gifts\/GIft Cards.jpg" : {
       "ft" : 16384,
       "iS" : 378157,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/frontend-challenge\/photos\/gifts\/Gift Cards.jpg",
+      "oAP" : "\/frontend-challenge\/photos\/gifts\/GIft Cards.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

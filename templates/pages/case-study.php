@@ -1,8 +1,8 @@
 <?php
 
 $json = file_get_contents('data/pages/case-study.json');
-$pageData = json_decode($json, true);
-$caseStudies = $pageData;
+$caseStudies = json_decode($json, true);
+
 
 function linkToProject($url, $slug, $siteXtensionType) {
 	if ( isset($url) ) {
@@ -11,6 +11,18 @@ function linkToProject($url, $slug, $siteXtensionType) {
 		echo "<a class='project-link' href='projects/" . $slug . "/index." . $siteXtensionType . "'>Link to the project</a>";
 	}
 }
+
+
+//Checking to see if there are any values for "class" in the JSON.
+function assignTagClass($tag) {
+	if (($tag['class'] != false) ) {
+		echo "class='" . $tag['class'] . "'>";
+	} else {
+		echo ">";
+	}
+}
+
+
 
 foreach($caseStudies as $caseStudy) {
 
@@ -71,6 +83,8 @@ foreach($caseStudies as $caseStudy) {
 						} elseif($tag === 'details') {
 							echo "<details>";
 							foreach($content as $contentBlock) {
+
+
 								//If the content block has a tag of "summary"
 								if($contentBlock['tag'] === 'summary') {
 									echo "<summary>";
@@ -78,16 +92,20 @@ foreach($caseStudies as $caseStudy) {
 									echo "<svg-wrapper>";
 									include('images/windmill.svg');
 									echo "</svg-wrapper>";
+
+
 									foreach($contentBlock['content'] as $item) {
-										echo "<" . $item['tag'] . " class='" . $item['class'] . "'>";
-										echo $item['content'];
-										echo "</" . $item['tag'] . ">";
+										echo "<" . $item['tag'] .
+										" class='" . $item['class'] . "'>" .
+										$item['content'] .
+										"</" . $item['tag'] . ">";
 									}
 									echo "</summary>";
+
 								} else {
-									echo "<" . $contentBlock['tag'] . " class=" . $contentBlock['class'] . ">";
-									echo $contentBlock['content'];
-									echo "</" . $contentBlock['tag'] . ">"; 
+									echo "<" . $contentBlock['tag'] . ">" .
+									$contentBlock['content'] .
+									"</" . $contentBlock['tag'] . ">"; 
 								}
 							}			
 							echo "</details>";
