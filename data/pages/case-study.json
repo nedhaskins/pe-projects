@@ -1282,63 +1282,6 @@
 		"subtitle": "Using native HTML, CSS and JavaScript to craft a simple frontend prototype for an e-commerce site.",
 		"htmlContent": [
 			{
-				"tag": "details",
-				"content": [
-					{
-						"tag": "summary",
-						"content": [
-							{
-								"tag": "h2",
-								"class": "summary-title",
-								"content": "Secondary header. Design"
-							}
-						]
-					},
-					{
-						"tag": "p",
-						"content": "Chandler doubloon jury mast killick to go on account hang the jib Admiral of the Black swing the lead take a caulk fire ship. Rigging overhaul doubloon ye topmast capstan chase Sail ho wherry cog. Coffer quarter hogshead Yellow Jack clap of thunder barkadeer pressgang brigantine Pirate Round scurvy."
-					}
-				]
-			},
-			{
-				"tag": "details",
-				"content": [
-					{
-						"tag": "summary",
-						"content": [
-							{
-								"tag": "h2",
-								"class": "summary-title",
-								"content": "Secondary header. Architect"
-							}
-						]
-					},
-					{
-						"tag": "p",
-						"content": "Pirate scallywag Cat o'nine tails prow execution dock spanker gibbet tack Nelsons folly fore. Transom rutters run a shot across the bow rigging run a rig Barbary Coast red ensign doubloon scuppers tackle. Ho Shiver me timbers boatswain cutlass Blimey hail-shot Nelsons folly smartly Corsair chantey."
-					}
-				]
-			},
-			{
-				"tag": "details",
-				"content": [
-					{
-						"tag": "summary",
-						"content": [
-							{
-								"tag": "h2",
-								"class": "summary-title",
-								"content": "Secondary header. Implement"
-							}
-						]
-					},
-					{
-						"tag": "p",
-						"content": "Run a shot across the bow bounty Sail ho yard hempen halter long clothes fluke handsomely nipperkin hornswaggle. Yawl Pirate Round landlubber or just lubber loaded to the gunwalls red ensign fluke run a rig Brethren of the Coast weigh anchor poop deck. Letter of Marque booty me run a shot across the bow hearties wench snow trysail overhaul line."
-					}
-				]
-			},
-			{
 				"tag": "p",
 				"content": "At the outset of this project I needed to be clear on the written requirements -- and be able to read between the lines and discern the hidden ones."
 			},
@@ -1489,7 +1432,11 @@
 			},
 			{
 				"tag": "p",
-				"content": "Google's Lighthouse test revealed that <code class='inline-code'>&lt;button&gt;</code> elements need a name attribute to be picked up by screen readers."
+				"content": "Google's Lighthouse test revealed that <code class='inline-code'>&lt;button&gt;</code> elements need a name attribute to be picked up by screen readers. By adding a name, there's no ambiguity about what the element does."
+			},
+			{
+				"tag": "codeblock",
+				"filepath": "data/case-studies/frontend-challenge/codeblocks/button-name.php"
 			},
 			{
 				"tag": "h3",
@@ -1501,7 +1448,7 @@
 			},
 			{
 				"tag": "p",
-				"content": "The two biggest contributors to the pass/fail condition of the Lighthouse tests in this case are"
+				"content": "The biggest contributors to the pass/fail condition of the Lighthouse tests in this case are"
 			},
 			{
 				"tag": "ul",
@@ -1516,7 +1463,7 @@
 					},
 					{
 						"tag": "li",
-						"content": "the <product-cards> themselves.  The grid for these is set to <code>auto 1fr 1fr</code>, a cell each for the product photo, the list price, and the sale price.  The <code class='inline-code'>auto</code> cell allows for the photo to grow and shrink as need without creating any extra padding / unused space.  The <code class='inline-code'>1 fr</code> setting"
+						"content": "the <product-cards> themselves.  The grid for these is set to <code class='inline-code'>auto 1fr 1fr</code>, a cell each for the product photo, the list price, and the sale price.  The <code class='inline-code'>auto</code> cell allows for the photo to grow and shrink as needed without creating any extra padding / unused space.  The <code class='inline-code'>1 fr</code> setting splits the remaining space in the grid cell in two (this allows the product name area to remain consistent size-wise, even if the length of the product name might vary)."
 					}
 				]
 			},
@@ -1531,6 +1478,14 @@
 			{
 				"tag": "p",
 				"content": "The numeric data in the JSON file pulled from the API is in string format — and when it’s stored in local storage, will remain in string format.  The numbers needed to be formatted in currency and fixed to two decimal places — but the <code class='inline-code'>.toFixed()</code> method can’t be used on strings."
+			},
+			{
+				"tag": "p",
+				"content": "<code class='inline-code'>Intl.NumberFormat().format()</code> can format both strings and number values -- important, because the data must be in string format for local storage, and this in turn will allow data to be stored persistently across web sessions."
+			},
+			{
+				"tag": "codeblock",
+				"filepath": "data/case-studies/frontend-challenge/codeblocks/number-formatting.php"
 			},
 			{
 				"tag": "h3",

@@ -914,6 +914,7 @@ picture.ns-logo, picture.tricolor {
 
 .case-study picture {
   border: 3px solid var(--ink);
+  max-width: 460px;
   padding: 10px;
 }
 

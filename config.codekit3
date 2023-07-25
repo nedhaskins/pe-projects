@@ -143,6 +143,22 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/data\/case-studies\/frontend-challenge\/codeblocks\/button-name.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/frontend-challenge\/codeblocks\/button-name.php",
+      "oF" : 0
+    },
+    "\/data\/case-studies\/frontend-challenge\/codeblocks\/number-formatting.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/case-studies\/frontend-challenge\/codeblocks\/number-formatting.php",
+      "oF" : 0
+    },
     "\/data\/case-studies\/frontend-challenge\/details-summary.png" : {
       "ft" : 32768,
       "iS" : 54798,
@@ -958,6 +974,14 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/data\/details-element-formatting.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/data\/details-element-formatting-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/data\/e4p\/state-tax.json" : {
       "ft" : 524288,
