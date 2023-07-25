@@ -121,3 +121,26 @@ function fetchBodyContent($page) {
 }
 
 // ^^^come back to this and finish it -- add vanilla JS and Vue options
+
+
+//Case study page functions.
+
+function linkToProject($url, $slug, $siteXtensionType) {
+  if ( isset($url) ) {
+    echo "<a class='project-link' href='" . $url . "'>Link to the project</a>"; 
+  } else {
+    echo "<a class='project-link' href='projects/" . $slug . "/index." . $siteXtensionType . "'>Link to the project</a>";
+  }
+}
+
+
+//Checking to see if there are any values for "class" in the JSON.
+function buildBlockItem($item) {
+    echo "<" . $item['tag'];
+    if ( isset($item['class']) ) {
+      echo " class='" . $item['class'] . "'>";
+    } else {
+      echo ">";
+    }
+  echo $item['content'] . "</" . $item ['tag'] . ">";
+}

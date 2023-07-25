@@ -3,27 +3,6 @@
 $json = file_get_contents('data/pages/case-study.json');
 $caseStudies = json_decode($json, true);
 
-
-function linkToProject($url, $slug, $siteXtensionType) {
-	if ( isset($url) ) {
-		echo "<a class='project-link' href='" . $url . "'>Link to the project</a>"; 
-	} else {
-		echo "<a class='project-link' href='projects/" . $slug . "/index." . $siteXtensionType . "'>Link to the project</a>";
-	}
-}
-
-
-//Checking to see if there are any values for "class" in the JSON.
-function assignTagClass($tag) {
-	if (($tag['class'] != false) ) {
-		echo "class='" . $tag['class'] . "'>";
-	} else {
-		echo ">";
-	}
-}
-
-
-
 foreach($caseStudies as $caseStudy) {
 
 	$slug = $caseStudy['slug'];
@@ -32,7 +11,7 @@ foreach($caseStudies as $caseStudy) {
 	$subtitle = $caseStudy ['subtitle'];
 	$htmlContent = $caseStudy['htmlContent'];
 
-	$url = $caseStudy ['url'] ?? false;
+	$url = $caseStudy ['url'] ?? null;
 	
 	if($caseStudy['slug'] == $_GET['slug']) { ?>
 
@@ -62,12 +41,14 @@ foreach($caseStudies as $caseStudy) {
 							if($imageCaption == true) {
 								echo "<figcaption>" . $imageCaption . "</figcaption>";							
 							}
+							echo "</figure>";
 
 						} elseif($tag === 'ul') {
 							echo "<ul>";
 							foreach($content as $contentBlock) {
 								echo "<li>" . $contentBlock['content'] . "</li>";
 							}
+							echo "</ul>";
 
 						} elseif($tag === 'codepen') {
 							
@@ -95,27 +76,21 @@ foreach($caseStudies as $caseStudy) {
 
 
 									foreach($contentBlock['content'] as $item) {
-										echo "<" . $item['tag'] .
-										" class='" . $item['class'] . "'>" .
-										$item['content'] .
-										"</" . $item['tag'] . ">";
+										buildBlockItem($item);
 									}
 									echo "</summary>";
 
 								} else {
-									echo "<" . $contentBlock['tag'] . ">" .
-									$contentBlock['content'] .
-									"</" . $contentBlock['tag'] . ">"; 
+									buildBlockItem($contentBlock);
 								}
 							}			
 							echo "</details>";
 
 						//The catch for all other tags.
 						} else {
-							echo "<" . $tag . " class=" . $class . ">";
-							echo $content;
+							buildBlockItem($block);
 						}
-						echo "</" . $tag . ">"; //this catches all of the possible tag endings
+//this catches all of the possible tag endings
 
 					} ?>
 
