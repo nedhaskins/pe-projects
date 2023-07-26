@@ -32,16 +32,13 @@
 
 	/*Typography*/
 
-	.title {
-		letter-spacing: 0.06em;
-		line-height: 1.1em;
-	}
+
 
 	h2 {
 		font-size: 1.5rem;
 	}
 
-	.category, .favorites {
+	.category, .favorites-section {
 		letter-spacing: 0.06em;
 	}
 
@@ -87,20 +84,20 @@
 
 	/*Header styles*/
 
-	header inner-column {
+	.header__inner-column {
 		display: grid;
 		grid-template-columns: auto 1fr auto;
 		grid-gap: var(--defaultSpacing);
 	}
 
-	header inner-column img-wrapper {
+	.road-icon {
 		display: block;
 		width: 53px;
 		align-self: center;
 
 	}
 
-	img-wrapper img {
+	.road-icon__img {
 		border: 2px solid black;
 		border-radius: 100%;
 	}
@@ -113,16 +110,18 @@
 		stroke: red;
 	}
 
-	header inner-column h1 {
+	.site-title {
+		letter-spacing: 0.06em;
+		line-height: 1.1em;
 		align-self: center;
 		text-transform: uppercase;
 	}
 
-	nav {
+	.site-menu {
 		display: grid;
 	}
 
-	nav ul {
+	.site-menu__links {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -131,7 +130,7 @@
 		justify-content: space-evenly;
 	}
 
-	.category, .favorites {
+	.category, .favorites-section {
 		padding: var(--defaultSpacing);
 	}
 
@@ -145,9 +144,9 @@
 		border-bottom: 2px solid black;
 	}
 
-		/*favorites page*/
+	/*favorites page*/
 
-	.favorites {
+	.favorites-section {
 		border: 2px solid black;
 	}
 
@@ -158,12 +157,13 @@
 		width: 23px;
 		margin-left: auto;
 	}
-	.arrow path {
+
+	.arrow__path {
 		stroke: black;
 		stroke-width: 20px;
 	}
 
-	.arrow path {
+	.arrow__path {
 		fill: red;
 	}
 
@@ -171,12 +171,11 @@
 		transform: rotate(90deg);
 	}
 
-	details[open] .arrow path {
+	details[open] .arrow__path {
 		fill: lime;
 	}
 
 	/*Product List*/
-
 
 	.product-list {
 		display: grid;
@@ -192,13 +191,12 @@
 		box-shadow: 3px 3px;
 	}
 
-
-	summary {
+	.category-header {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
 
-	summary h2 {
+	.category-name {
 		align-self: center;
 	}
 
@@ -210,11 +208,10 @@
 
 	}
 
-	product-card picture {
+	.product-picture {
 		position: relative;
 		border-bottom: 1px solid black;
 	}
-
 
 	/*Favorites icon styles.*/
 
@@ -238,80 +235,62 @@
 		fill: red;
 	}
 
-	product-card .item-name {
+	.product-name__copy {
 		font-style: italic;
 		padding: 8px 8px 0px 8px;
 	}
 
-	product-card .prices {
+	.product-prices {
 		padding: 8px;
 	}
 
-	product-card text-wrapper {
-		display: block;
-	}
-
-	card-bottom .prices {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-
-	.prices .price {
+	.product-prices__price {
 		text-decoration: line-through;
 	}
 
-	.prices .sale {
+	.product-prices__sale {
 		margin-top: 8px;
 		font-weight: 700;
 	}
 
-	button {
-		border: none;
-		background: none;
-	}
-
 	/*Contact page styles*/
 
-	.contact {
+	.about-section {
+		margin-top: 40px;
+	}
+
+	.contact-section {
 		display: grid;
 	}
 
-	.contact h1 {
+	.contact-section__header {
 		font-size: 28px;
 		font-weight: 700;
 		margin-top: 20px;
+		letter-spacing: 0.02em;
 	}
 
-	:is(.contact, .about) p {
+	.about-section__copy, .contact-section__copy {
 		font-size: 18px;
 		line-height: 1.7em;
 	}
 
-	.contact p:nth-of-type(1) {
+	.contact-section__copy:nth-of-type(1) {
 		margin-top: 20px;
-	}
-
-	section.about {
-		margin-top: 40px;
-	}
-
-	.contact h1 {
-		letter-spacing: 0.02em;
 	}
 
 </style>
 </head>
 <body>
 	<header>
-		<inner-column>
+		<inner-column class='header__inner-column'>
 			<img-wrapper class='road-icon'>
-				<img width="53" height="53" id="home" src="photos/Eye-of-Horus.jpg" alt="Eye of Horus icon">
+				<img class='road-icon__img' width="53" height="53" id="home" src="photos/Eye-of-Horus.jpg" alt="Eye of Horus icon">
 			</img-wrapper>
-			<h1 class='title'>Front End Engineer Challenge</h1>
+			<h1 class='site-title'>Front End Engineer Challenge</h1>
 			<nav class="site-menu">
-				<ul>
-					<li><a id="about" href=''>About</a></li>
+				<ul class="site-menu__links">
+					<li><a id="about" href='#'>About</a></li>
 					<li><a id="favorites" href='#'>Favorites</a></li>
 					<li><a id="contact" href='#'>Contact</a></li>
 				</ul>

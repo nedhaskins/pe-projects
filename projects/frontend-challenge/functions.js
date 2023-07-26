@@ -89,10 +89,10 @@ function detailsOpenCheck(category) {
 function renderCategory(category) {
 	var template = `
 			${detailsOpenCheck(category.name)}
-				<summary>
-					<h2>${category.name}</h2>
+				<summary class='category-header'>
+					<h2 class='category-name'>${category.name}</h2>
 					<icon-wrapper>
-						<svg class="arrow" width="100%" height="100%" viewBox="0 0 347 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M346.326,199.957l-346.326,199.958l-0,-399.915l346.326,199.957Z"/></svg>
+						<svg class="arrow" width="100%" height="100%" viewBox="0 0 347 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path class='arrow__path' d="M346.326,199.957l-346.326,199.958l-0,-399.915l346.326,199.957Z"/></svg>
 					</icon-wrapper>
 				</summary>
 				<div class="products">${renderProducts(category.products)}</div>
@@ -139,8 +139,8 @@ function iconClass(item) {
 function renderCard(item) {
 	return `
 		<product-card data-id="${item.name}">
-			<picture>
-				<img width="300" height="300" src="photos/${item.photo}" alt="${item.name}">
+			<picture class='product-picture'>
+				<img class='product-picture__img' width="300" height="300" src="photos/${item.photo}" alt="${item.name}">
 				</img>
 				<button title="Favorites Icon" class="favorite-toggle ${iconClass(item)}" data-gtag="favorite_trigger">
 					<svg
@@ -164,12 +164,12 @@ function renderCard(item) {
 					</svg>
 				</button>
 			</picture>
-			<div class="item-name">
-				<h3 class="name">${item.name}</h3>
+			<div class="product-name">
+				<h3 class="product-name__copy">${item.name}</h3>
 			</div>
-			<div class="prices">
-				<p class="price">${item.price}</p>
-				<p class="sale">${item.sale}</p>
+			<div class="product-prices">
+				<p class="product-prices__price">${item.price}</p>
+				<p class="product-prices__sale">${item.sale}</p>
 			</div>
 		</product-card>
 	`;
@@ -180,10 +180,10 @@ function renderCard(item) {
 
 function renderAboutView() {
 	const template = `
-		<section class="about">
-			<p>The objective of this project was to use native HTML, CSS and JavaScript to craft<br>a simple frontend prototype for an e-commerce site.</p>
-			<p>Click <a href="https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf">here</a> to view the project requirements!</p>
-			<p>Click <a href="#">here</a> to read an in-depth case study of the project.</p>
+		<section class="about-section">
+			<p class='about-section__copy'>The objective of this project was to use native HTML, CSS and JavaScript to craft<br>a simple frontend prototype for an e-commerce site.</p>
+			<p class='about-section__copy'>Click <a href="https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf">here</a> to view the project requirements!</p>
+			<p class='about-section__copy'>Click <a href="#">here</a> to read an in-depth case study of the project.</p>
 		</section>`;
 
 	outlet.innerHTML = template;
@@ -194,7 +194,7 @@ function renderFavoritesView() {
 	//for each item in the local storage
 	if(favorites) {
 		var template = `
-			<div class="favorites">
+			<div class="favorites-section">
 				<h2>favorites</h2>
 				<ul class="product-list">`;
 
@@ -210,11 +210,11 @@ function renderFavoritesView() {
 
 function renderContactView() {
 	var template = `
-		<div class='contact'>
-			<h1>Want to learn more?</h1>
-			<p>Ned Haskins is a web designer based in Richmond, Virginia.</p>
-			<p>He loves to connect with clients and work with them to achieve their goals!</p>
-			<p>Email him at <a href="mailto:hello@nedhaskins.io">hello@nedhaskins.io</a> to start a conversation!</p>
+		<div class='contact-section'>
+			<h1 class='contact-section__header'>Want to learn more?</h1>
+			<p class='contact-section__copy'>Ned Haskins is a web designer based in Richmond, Virginia.</p>
+			<p class='contact-section__copy'>He loves to connect with clients and work with them to achieve their goals!</p>
+			<p class='contact-section__copy'>Email him at <a href="mailto:hello@nedhaskins.io">hello@nedhaskins.io</a> to start a conversation!</p>
 		</div>
 	`;
 	outlet.innerHTML = template;
