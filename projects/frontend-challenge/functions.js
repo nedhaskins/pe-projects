@@ -232,8 +232,8 @@ function addEventListeners() {
 		if(event.target.tagName === 'BUTTON') {
 
 			const productId = event.target.closest('product-card').dataset.id;
-			const price = event.target.closest('product-card').querySelector('.price').textContent; 
-			const sale = event.target.closest('product-card').querySelector('.sale').textContent;
+			const price = event.target.closest('product-card').querySelector('.product-prices__price').textContent; 
+			const sale = event.target.closest('product-card').querySelector('.product-prices__sale').textContent;
 			
 			if(!event.target.classList.contains('active')) {
 				
@@ -263,7 +263,7 @@ function addEventListeners() {
 				event.target.classList.remove('active');
 
 				//Re-render the updated favorites page, as the data might have changed!!
-				if(event.target.closest('div').className === 'favorites') {
+				if(event.target.closest('div').className === 'favorites-section') {
 					renderFavoritesView();
 				}
 			}
