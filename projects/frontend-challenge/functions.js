@@ -183,7 +183,7 @@ function renderAboutView() {
 		<section class="about-section">
 			<p class='about-section__copy'>The objective of this project was to use native HTML, CSS and JavaScript to craft<br>a simple frontend prototype for an e-commerce site.</p>
 			<p class='about-section__copy'>Click <a href="https://github.com/neodigm/FED_Programming_Challenge/blob/gh-pages/Advanced_FED_Programming_Challenge.pdf">here</a> to view the project requirements!</p>
-			<p class='about-section__copy'>Click <a href="#">here</a> to read an in-depth case study of the project.</p>
+			<p class='about-section__copy'>Click <a href="https://peprojects.dev/alpha-4/ned/?page=case-study&slug=frontend-challenge">here</a> to read an in-depth case study of the project.</p>
 		</section>`;
 
 	outlet.innerHTML = template;
