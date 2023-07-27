@@ -192,7 +192,7 @@ function renderAboutView() {
 function renderFavoritesView() {
 	//check local storage for items that are in favorites
 	//for each item in the local storage
-	if(favorites) {
+	if(favorites.length !== 0) {
 		var template = `
 			<div class="favorites-section">
 				<h2>favorites</h2>
@@ -204,6 +204,12 @@ function renderFavoritesView() {
 		})
 
 		template += `</ul></div>`;
+		outlet.innerHTML = template;
+	} else {
+		var template = `
+			<div class="favorites-section">
+				<h3>There aren't any favorites yet! Check out our available products.</h3>	
+			</div>`;
 		outlet.innerHTML = template;
 	}
 }
