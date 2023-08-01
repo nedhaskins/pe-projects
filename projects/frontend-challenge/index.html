@@ -306,12 +306,34 @@
 	//Initialize local storage and place all favorites data and open menus into an accessible object.
 	var favorites = JSON.parse( localStorage.getItem('favorites') ) || [];
 	var openMenus = JSON.parse( localStorage.getItem('openMenus') ) || [];
+	
+	//Gets the current view on the site.
+	var currentPage = localStorage.getItem('currentPage');
+	if(!currentPage) {
+		localStorage.setItem('currentPage', 'home');
+		currentPage = localStorage.getItem('currentPage');
+	}
 
 	//Set up an area to put event listeners.
 	const header = document.querySelector('header');
 	const outlet = document.querySelector('.main');
 
-	renderData();
+
+	if(currentPage === 'home') {
+		renderData();
+	}
+
+	if(currentPage === 'about') {
+		renderAboutView();
+	}
+
+	if(currentPage === 'favorites') {
+		renderFavoritesView();
+	}
+
+	if(currentPage === 'contact') {
+		renderContactView();
+	}
 
 	addEventListeners();
 

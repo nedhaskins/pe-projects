@@ -46,13 +46,22 @@ async function transformData() {
 	return transformedObject;
 }
 
-async function renderData() {	
+
+async function storeLocalData() {
 	var array = await transformData();
-	renderHomeView(array);
-	console.log(array);
+	localStorage.setItem('productData', JSON.stringify(array));
+}
+
+async function renderData() {
+	var productData = JSON.parse(localStorage.getItem('productData'));
+	if(!productData) {
+		await storeLocalData();
+		productData = JSON.parse(localStorage.getItem('productData'));
+		renderHomeView(productData);
+	} else {
+		renderHomeView(productData);
+	}
 }	
-
-
 
 function renderHomeView(categories) {
 	var template = `<ul class="category-list">`;
@@ -298,18 +307,22 @@ function addEventListeners() {
 	header.addEventListener('click', (event) => {
 		event.preventDefault();
 		if(event.target.id === 'home') {
+			localStorage.setItem('currentPage', 'home');
 			renderData();
 		}
 
 		if(event.target.id === 'about') {
+			localStorage.setItem('currentPage', 'about');
 			renderAboutView();
 		}
 
 		if(event.target.id === 'favorites') {
+			localStorage.setItem('currentPage', 'favorites');
 			renderFavoritesView();
 		}
 
 		if(event.target.id === 'contact') {
+			localStorage.setItem('currentPage', 'contact');
 			renderContactView();
 		}
 	})
