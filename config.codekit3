@@ -1863,6 +1863,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/funko-fire\/categories\/tv.jpg" : {
+      "ft" : 16384,
+      "iS" : 59411,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/funko-fire\/categories\/tv.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/funko-fire\/categories\/tv\/breaking-bad\/walter-white.jpg" : {
       "ft" : 16384,
       "iS" : 133721,
@@ -3413,44 +3426,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/frontend-challenge\/data-munging.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/data-munging-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/frontend-challenge\/derek's good bullet list.rtf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/derek's good bullet list.rtf",
-      "oF" : 0
-    },
-    "\/projects\/frontend-challenge\/frontend-arrays.afdesign" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/frontend-arrays.afdesign",
-      "oF" : 0
-    },
-    "\/projects\/frontend-challenge\/functions-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/functions-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/projects\/frontend-challenge\/functions.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -3468,14 +3443,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/frontend-challenge\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/frontend-challenge\/initial-code.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/initial-code.html",
       "oF" : 0
     },
     "\/projects\/frontend-challenge\/photos\/bags, tags + favors\/Cake Boxes.jpg" : {
@@ -3774,12 +3741,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/frontend-challenge\/photos\/gifts\/GIft Cards.jpg" : {
+    "\/projects\/frontend-challenge\/photos\/gifts\/Gift Cards.jpg" : {
       "ft" : 16384,
-      "iS" : 378157,
+      "iS" : 20266,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/photos\/gifts\/GIft Cards.jpg",
+      "oAP" : "\/projects\/frontend-challenge\/photos\/gifts\/Gift Cards.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -4113,17 +4080,6 @@
       "oAP" : "\/projects\/frontend-challenge\/reset-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/projects\/frontend-challenge\/scratch.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/projects\/frontend-challenge\/scratch-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/projects\/frontend-challenge\/setup.css" : {
       "aP" : 1,

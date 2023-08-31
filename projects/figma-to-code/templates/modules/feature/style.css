@@ -31,9 +31,9 @@
 @media(min-width:960px) {
 
 	.feature-list.one,
-	.feature-list.one .feature-item {
-		margin-top: 0px;
-	}
+		.feature-list.one .feature-item:nth-of-type(1) {
+			margin-top: unset;
+		}
 }
 
 /* THIS IS MODULE STYLING */

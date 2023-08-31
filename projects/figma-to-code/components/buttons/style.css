@@ -12,9 +12,7 @@
 	.hero-buttons {
 		flex-direction: row;
 		justify-content: center;
-
-
-	};
+	}
 }
 
 
@@ -34,7 +32,7 @@
 }
 
 
-
+/*GET FREE QUOTES, FREE SIGNUP */
 
 .get-free-quotes, .free-signup {
 	width: 204px;
